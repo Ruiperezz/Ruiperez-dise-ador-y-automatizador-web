@@ -1,30 +1,35 @@
 # Ruipérez.dev — Diseñador Web & Automatización IA
 
-Web personal de **Ruipérez** — freelance especializado en diseño web y automatización con IA para negocios en Cartagena y Murcia.
+Web personal de **Ruipérez** — freelance especializado en diseño web a medida y automatización con IA para negocios en Cartagena y Murcia.
 
-## 🌐 Stack
+## Stack
 
-- HTML5 / CSS3 / Vanilla JS (sin dependencias, sin npm)
-- GSAP 3.12 para animaciones
-- Archetype: Mouse-Reactive Gradient Dark
-- Totalmente responsive y mobile-first
+- HTML5 / CSS3 / Vanilla JS — sin dependencias, sin npm, single file
+- Archetype 05: Mouse-Reactive Gradient Dark
+- Totalmente responsive, mobile-first
 
-## ✨ Características
+## Secciones
 
-- Gradiente interactivo que reacciona al movimiento del ratón
-- Cursor personalizado con ring animado
-- Splash loader con barra de progreso
-- Reveal on scroll con IntersectionObserver
-- Contadores animados
-- Nav sticky con blur al hacer scroll
-- Mockup visual de Floristería Alameda (primer cliente)
+1. Hero con gradiente reactivo al ratón
+2. Manifiesto de posicionamiento  
+3. Comparativa vs agencia — precios reales 2026
+4. Servicios con precios actualizados y justificados
+5. Proceso transparente en 4 pasos
+6. Portfolio — Floristería Alameda (primer cliente)
+7. Testimonial verificado
+8. FAQ con 8 preguntas reales + accordion animado
+9. Sobre mí — sin información de relleno
+10. Contacto + garantías
 
-## 📦 Despliegue
+## Precios (datos competencia 2026)
 
-Sube la carpeta completa a Hostinger, Netlify o cualquier hosting estático.
-No requiere build step, npm ni servidor.
+| | Plantilla DIY | **Ruipérez** | Agencia |
+|---|---|---|---|
+| Web corporativa | 200-400€/año | **950-1.800€** | 3.000-10.000€ |
+| Automatización | — | **600-1.500€** | 2.000-5.000€ |
+| Mantenimiento | incluido | **90-150€/mes** | 200-500€/mes |
 
-## 📞 Contacto
+## Contacto
 
 - WhatsApp: [642 08 40 42](https://wa.me/34642084042)
 - Email: ruiperezalvaro7@gmail.com
