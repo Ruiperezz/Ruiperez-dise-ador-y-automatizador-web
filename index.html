@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Ruipérez — Diseño Web & Automatización IA · Cartagena</title>
-<meta name="description" content="Tu competencia ya tiene web. La tuya tiene que vender. Diseño web profesional y automatización con IA para negocios en Cartagena y Murcia. Desde 950€.">
-<meta name="keywords" content="diseño web Cartagena, diseño web Murcia, automatización IA Murcia, páginas web para negocios locales, desarrollador web freelance Cartagena, SEO local Cartagena">
+<meta name="description" content="Tu competencia ya tiene web. La tuya tiene que vender. Diseño web profesional, automatización con IA y gestión de redes sociales para negocios en Cartagena y Murcia. Desde 890€.">
+<meta name="keywords" content="diseño web Cartagena, diseño web Murcia, automatización IA Murcia, gestión redes sociales Cartagena, marketing digital Murcia, páginas web para negocios locales, desarrollador web freelance Cartagena, SEO local Cartagena">
 <meta name="author" content="Ruipérez">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Ruipérez — Diseño Web & Automatización IA · Cartagena">
@@ -20,11 +20,11 @@
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "Ruipérez — Diseño Web & Automatización IA",
-  "description": "Diseño web a medida y automatización con IA para negocios locales en Cartagena y Murcia. Webs desde 950€, automatizaciones desde 600€.",
+  "description": "Diseño web a medida, automatización con IA y gestión de redes sociales para negocios locales en Cartagena y Murcia. Webs desde 890€, automatizaciones desde 550€, redes sociales desde 200€/mes.",
   "url": "https://ruiperez.dev",
   "telephone": "+34642084042",
   "email": "ruiperezalvaro7@gmail.com",
-  "priceRange": "950€–2500€",
+  "priceRange": "200€–2200€",
   "areaServed": [
     {"@type": "City", "name": "Cartagena"},
     {"@type": "AdministrativeArea", "name": "Región de Murcia"}
@@ -49,13 +49,20 @@
       "@type": "Offer",
       "itemOffered": {"@type": "Service", "name": "Diseño Web a medida", "description": "Web profesional, código propio, SEO local y mobile-first."},
       "priceCurrency": "EUR",
-      "price": "950"
+      "price": "890"
     },
     {
       "@type": "Offer",
       "itemOffered": {"@type": "Service", "name": "Automatización con IA", "description": "Chatbots, flujos n8n y automatizaciones con WhatsApp Business."},
       "priceCurrency": "EUR",
-      "price": "600"
+      "price": "550"
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {"@type": "Service", "name": "Marketing Digital / Redes Sociales", "description": "Gestión de redes sociales, Google Business y calendario de contenido."},
+      "priceCurrency": "EUR",
+      "price": "200",
+      "priceSpecification": {"@type": "UnitPriceSpecification", "price": "200", "priceCurrency": "EUR", "unitText": "MONTH"}
     }
   ]
 }
@@ -251,7 +258,8 @@ body::after{content:"";position:fixed;inset:0;z-index:1;pointer-events:none;opac
 
 /* ── SERVICIOS ── */
 .svcs-grid{display:grid;grid-template-columns:1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r2);overflow:hidden;margin-top:2.75rem;perspective:1200px}
-@media(min-width:700px){.svcs-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:700px){.svcs-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1100px){.svcs-grid{grid-template-columns:repeat(4,1fr)}}
 .svc{background:var(--bgc);padding:2.25rem;display:flex;flex-direction:column;gap:.85rem;position:relative;overflow:hidden;transition:background .25s;transform-style:preserve-3d;will-change:transform}
 .svc:hover{background:var(--bgc2)}
 .svc::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(79,70,229,.1) 0%,transparent 65%);opacity:0;transition:opacity .35s;pointer-events:none}
@@ -543,7 +551,7 @@ footer{padding:1.75rem 0;border-top:1px solid var(--line)}
 
     <div class="hstats rv" data-delay="0.58">
       <div>
-        <span class="hsv" style="color:var(--lime)" data-count-to="950">0</span><span class="hsv" style="color:var(--lime)">€</span>
+        <span class="hsv" style="color:var(--lime)" data-count-to="890">0</span><span class="hsv" style="color:var(--lime)">€</span>
         <span class="hsl">Web desde</span>
       </div>
       <div class="hdiv"></div>
@@ -580,6 +588,7 @@ footer{padding:1.75rem 0;border-top:1px solid var(--line)}
     <span class="mqitem">GPT APIs <span>✦</span></span>
     <span class="mqitem">Google Maps <span>✦</span></span>
     <span class="mqitem">Chatbots IA <span>✦</span></span>
+    <span class="mqitem">Redes Sociales <span>✦</span></span>
     <span class="mqitem">HTML · CSS · JS <span>✦</span></span>
     <span class="mqitem">React <span>✦</span></span>
     <span class="mqitem">SEO Local <span>✦</span></span>
@@ -635,7 +644,7 @@ footer{padding:1.75rem 0;border-top:1px solid var(--line)}
       <div class="vs-col hl rv" data-delay="0.09" data-tilt>
         <div class="vs-who">Opción 2 — Recomendada</div>
         <div class="vs-name" style="background:linear-gradient(135deg,var(--lime),var(--limel));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Ruipérez.dev</div>
-        <div class="vs-price" style="color:var(--ink)">950–2.500€<small>pago único, tuya para siempre</small></div>
+        <div class="vs-price" style="color:var(--ink)">890–2.200€<small>pago único, tuya para siempre</small></div>
         <div class="vs-list">
           <div class="vs-li"><span class="vs-ck">✓</span>Diseño a medida, código propio</div>
           <div class="vs-li"><span class="vs-ck">✓</span>SEO local desde el día 1</div>
@@ -678,7 +687,7 @@ footer{padding:1.75rem 0;border-top:1px solid var(--line)}
         <div class="svc-ttl">Diseño Web</div>
         <p class="svc-desc">Web profesional a medida: rápida, bien posicionada en Google y pensada para que tus clientes te contacten. Código propio, no plantillas que todo el mundo tiene.</p>
         <div class="svc-tags"><span class="tag">HTML/CSS/JS</span><span class="tag">SEO local</span><span class="tag">Diseño propio</span><span class="tag">Mobile-first</span></div>
-        <div class="svc-price">Desde 950€ · Pago único</div>
+        <div class="svc-price">Desde 890€ · Pago único</div>
       </div>
       <div class="svc svc-feat rv" data-delay="0.08" data-tilt>
         <div class="svc-ico">⟡</div>
@@ -686,11 +695,19 @@ footer{padding:1.75rem 0;border-top:1px solid var(--line)}
         <div class="svc-ttl">Automatización IA</div>
         <p class="svc-desc">Chatbots que responden clientes a las 2am, flujos que procesan pedidos solos, alertas automáticas. Tu negocio trabajando incluso cuando estás cerrado.</p>
         <div class="svc-tags"><span class="tag">Chatbots IA</span><span class="tag">Flujos n8n</span><span class="tag">WhatsApp Bot</span><span class="tag">Claude / GPT</span></div>
-        <div class="svc-price">Desde 600€ · Por proyecto</div>
+        <div class="svc-price">Desde 550€ · Por proyecto</div>
       </div>
       <div class="svc rv" data-delay="0.16" data-tilt>
+        <div class="svc-ico">◆</div>
+        <div class="svc-n">03 — Social Media</div>
+        <div class="svc-ttl">Marketing Digital</div>
+        <p class="svc-desc">Gestiono tus redes sociales para que tú te centres en tu negocio: contenido, publicaciones, Google Business y crecimiento de tu comunidad de forma constante.</p>
+        <div class="svc-tags"><span class="tag">Instagram/Facebook</span><span class="tag">Google Business</span><span class="tag">Calendario contenido</span><span class="tag">Reels/Posts</span></div>
+        <div class="svc-price">Desde 200€/mes · Sin permanencia</div>
+      </div>
+      <div class="svc rv" data-delay="0.24" data-tilt>
         <div class="svc-ico">◈</div>
-        <div class="svc-n">03 — Mantenimiento</div>
+        <div class="svc-n">04 — Mantenimiento</div>
         <div class="svc-ttl">Mantenimiento</div>
         <p class="svc-desc">Tu web siempre actualizada y segura. Cambios de contenido, soporte directo y backups automáticos. Sin tickets, sin esperas de días para un pequeño ajuste.</p>
         <div class="svc-tags"><span class="tag">Actualizaciones</span><span class="tag">Soporte WhatsApp</span><span class="tag">Backups</span></div>
@@ -861,7 +878,7 @@ footer{padding:1.75rem 0;border-top:1px solid var(--line)}
       Lo que me preguntan<br><span class="grad-lime">siempre.</span>
     </h2>
     <div class="faq-list">
-      <div class="fi rv"><button class="fq">¿Cuánto cuesta exactamente una web?<span class="ficon">+</span></button><div class="fa">Una <strong>web informativa básica</strong> (inicio, servicios, sobre mí, contacto) parte desde <span class="hl">950€</span>. Con más páginas, blog o integraciones puede llegar a <span class="hl">1.800–2.500€</span>. Precio cerrado siempre, antes de empezar. Sin extras.</div></div>
+      <div class="fi rv"><button class="fq">¿Cuánto cuesta exactamente una web?<span class="ficon">+</span></button><div class="fa">Una <strong>web informativa básica</strong> (inicio, servicios, sobre mí, contacto) parte desde <span class="hl">890€</span>. Con más páginas, blog o integraciones puede llegar a <span class="hl">1.600–2.200€</span>. Precio cerrado siempre, antes de empezar. Sin extras.</div></div>
       <div class="fi rv"><button class="fq">¿Por qué eres más barato que una agencia?<span class="ficon">+</span></button><div class="fa">Trabajo solo — sin comerciales, project managers ni estructura de empresa que mantener. Hago el trabajo yo directamente. El resultado es el mismo nivel de calidad a <strong>entre un 50% y 70% menos</strong> de coste. Una agencia standard cobra 3.000–8.000€ por lo mismo.</div></div>
       <div class="fi rv"><button class="fq">¿En cuánto tiempo tienes lista mi web?<span class="ficon">+</span></button><div class="fa">Web estándar: <strong>1 a 3 semanas</strong> desde que me das el contenido. Si necesitas algo urgente, hablamos. Proyectos con tienda o integraciones especiales: 4–5 semanas. Siempre digo el plazo exacto antes de empezar y lo cumplo.</div></div>
       <div class="fi rv"><button class="fq">¿La web es mía o dependo de ti?<span class="ficon">+</span></button><div class="fa"><strong>La web es tuya al 100%</strong> desde el día que la entrego. Acceso completo al código, hosting y dominio. Si en el futuro quieres trabajar con otro profesional, puedes sin ningún problema. Sin suscripciones obligatorias.</div></div>

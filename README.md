@@ -52,8 +52,9 @@ y automatización con IA para negocios en Cartagena y Murcia.
 
 | | Plantilla DIY | **Ruipérez** | Agencia |
 |---|---|---|---|
-| Web corporativa | 200–400€/año | **950–2.500€** | 3.000–10.000€ |
-| Automatización IA | — | **600€+** | 2.000–5.000€ |
+| Web corporativa | 200–400€/año | **890–2.200€** | 3.000–10.000€ |
+| Automatización IA | — | **550€+** | 2.000–5.000€ |
+| Marketing Digital / RRSS | — | **200€/mes+** | 350–700€/mes |
 | Mantenimiento | incluido | **90–150€/mes** | 200–500€/mes |
 
 ## Contacto
