@@ -460,6 +460,57 @@ footer{padding:1.75rem 0;border-top:1px solid var(--line)}
 @media(max-width:400px){
   .hh1{font-size:2.3rem}
 }
+/* ── BARRA DE CONFIANZA ── */
+.trust-bar{padding:1.1rem 0;border-bottom:1px solid var(--line);background:var(--bg2)}
+.trust-items{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem 1.6rem;font-size:.78rem;color:var(--soft)}
+.trust-items span{display:inline-flex;align-items:center;gap:.35rem;white-space:nowrap}
+.trust-items .tc{color:var(--green);font-weight:700;font-size:.7rem}
+.trust-contact{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem 1.4rem;margin-top:.55rem;font-family:var(--fm);font-size:.62rem;color:var(--mute);letter-spacing:.02em}
+.trust-contact a{color:var(--mute);transition:color .2s}.trust-contact a:hover{color:var(--lime)}
+
+/* ── CTA BAND ── */
+.cta-band{padding:clamp(2.5rem,5vw,3.5rem) 0;text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cta-band p{font-family:var(--fd);font-size:clamp(1.1rem,2.5vw,1.5rem);font-weight:700;letter-spacing:-.02em;margin-bottom:1.2rem;color:var(--ink)}
+
+/* ── GARANTÍAS ── */
+.garant{padding:clamp(4.5rem,9vw,7rem) 0;background:var(--bg2)}
+.garant-grid{display:grid;grid-template-columns:1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r2);overflow:hidden;margin-top:2.75rem}
+@media(min-width:600px){.garant-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.garant-grid{grid-template-columns:repeat(3,1fr)}}
+.garant-item{background:var(--bgc);padding:1.75rem;display:flex;align-items:flex-start;gap:.85rem;transition:background .2s}
+.garant-item:hover{background:var(--bgc2)}
+.garant-ck{color:var(--green);font-size:1rem;font-weight:700;flex-shrink:0;margin-top:.15rem}
+.garant-ttl{font-family:var(--fd);font-size:.95rem;font-weight:700;letter-spacing:-.02em;margin-bottom:.25rem}
+.garant-desc{font-size:.82rem;color:var(--soft);line-height:1.65}
+
+/* ── LOGOS CLIENTES ── */
+.logos-sec{padding:clamp(3rem,6vw,4.5rem) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.logos-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:2rem 3rem;margin-top:2rem}
+.logo-client{display:flex;flex-direction:column;align-items:center;gap:.5rem;text-decoration:none;transition:opacity .2s;opacity:.5}
+.logo-client:hover{opacity:1}
+.logo-client .lc-name{font-family:var(--fd);font-size:1rem;font-weight:700;letter-spacing:-.02em;color:var(--ink)}
+.logo-client .lc-type{font-family:var(--fm);font-size:.58rem;text-transform:uppercase;letter-spacing:.1em;color:var(--mute)}
+
+/* ── TESTIMONIOS GRID ── */
+.testi-grid{display:grid;grid-template-columns:1fr;gap:1.25rem;max-width:900px;margin:2.5rem auto 0}
+@media(min-width:700px){.testi-grid{grid-template-columns:repeat(2,1fr)}}
+.testi-card{border-radius:var(--r2);border:1px solid var(--line);background:var(--bgc);padding:1.75rem;display:flex;flex-direction:column;gap:.75rem;transition:border-color .3s}
+.testi-card:hover{border-color:rgba(163,230,53,.28)}
+.testi-card blockquote{font-size:.88rem;color:var(--soft);line-height:1.7;font-style:italic}
+.testi-card .tc-foot{display:flex;align-items:center;gap:.7rem;margin-top:auto;padding-top:.75rem;border-top:1px solid var(--line)}
+.testi-card .tc-av{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--ind),var(--lime));display:flex;align-items:center;justify-content:center;font-family:var(--fd);font-size:.7rem;font-weight:800;color:#fff;flex-shrink:0}
+.testi-card .tc-name{font-weight:600;font-size:.82rem}
+.testi-card .tc-role{font-family:var(--fm);font-size:.6rem;color:var(--mute)}
+.testi-card .tc-stars{color:var(--yell);font-size:.72rem;letter-spacing:.02em}
+.testi-placeholder{border:1px dashed var(--lines);border-radius:var(--r2);padding:1.75rem;text-align:center;color:var(--mute);font-size:.82rem;display:flex;align-items:center;justify-content:center}
+
+/* ── CASO DE ESTUDIO ── */
+.case-label{font-family:var(--fm);font-size:.6rem;text-transform:uppercase;letter-spacing:.12em;color:var(--ind);margin-bottom:.35rem}
+.case-block{display:flex;flex-direction:column;gap:.3rem;padding:.8rem;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.02)}
+.case-block .cb-title{font-family:var(--fd);font-size:.78rem;font-weight:700;letter-spacing:-.01em;color:var(--ink)}
+.case-block .cb-text{font-size:.8rem;color:var(--soft);line-height:1.55}
+.case-blocks{display:flex;flex-direction:column;gap:.65rem;margin-top:.75rem}
+
 /* ── Reduced motion: solo intrusivos ── */
 @media(prefers-reduced-motion:reduce){
   .hgrad{transition:none;filter:none}
@@ -489,7 +540,7 @@ footer{padding:1.75rem 0;border-top:1px solid var(--line)}
       <a href="#vsagencia" class="nl">Precios</a>
       <a href="#trabajo" class="nl">Portfolio</a>
       <a href="#faq" class="nl">FAQ</a>
-      <a href="#contacto" class="nl ncta">Hablamos →</a>
+      <a href="#contacto" class="nl ncta">Pedir presupuesto →</a>
     </nav>
     <button class="burger" id="burger" aria-label="Menú" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -606,6 +657,24 @@ footer{padding:1.75rem 0;border-top:1px solid var(--line)}
   </div>
 </div>
 
+<!-- ══ BARRA DE CONFIANZA ══ -->
+<div class="trust-bar">
+  <div class="wrap">
+    <div class="trust-items">
+      <span><span class="tc">✓</span> Negocios locales</span>
+      <span><span class="tc">✓</span> Presupuesto cerrado</span>
+      <span><span class="tc">✓</span> Trato directo</span>
+      <span><span class="tc">✓</span> Soporte real</span>
+      <span><span class="tc">✓</span> Sin permanencias</span>
+    </div>
+    <div class="trust-contact">
+      <a href="https://wa.me/34642084042" target="_blank" rel="noopener">📞 642 08 40 42</a>
+      <span>📍 Cartagena, Murcia</span>
+      <a href="mailto:ruiperezalvaro7@gmail.com">✉️ ruiperezalvaro7@gmail.com</a>
+    </div>
+  </div>
+</div>
+
 <!-- ══ MANIFIESTO ══ -->
 <section class="manif">
   <div class="wrap">
@@ -621,26 +690,26 @@ footer{padding:1.75rem 0;border-top:1px solid var(--line)}
 <section class="vs sec-alt" id="vsagencia">
   <div class="wrap">
     <div class="vs-intro rv">
-      <span class="ey">Comparativa real</span>
+      <span class="ey">Comparativa</span>
       <h2 style="font-size:clamp(1.9rem,4.5vw,3.2rem);font-weight:800;letter-spacing:-.04em">
-        ¿Por qué no<br><span class="grad-lime">una agencia?</span>
+        Cada negocio necesita<br><span class="grad-lime">una solución diferente.</span>
       </h2>
-      <p>Puedes. Pero mira los números primero. Datos reales del mercado español 2026.</p>
+      <p>No hay una opción buena y otra mala — hay la que encaja con tu situación. Compara y decide.</p>
     </div>
 
     <div class="vs-grid">
       <div class="vs-col rv" data-delay="0" data-tilt>
         <div class="vs-who">Opción 1</div>
-        <div class="vs-name">Plantilla Wix / Squarespace</div>
-        <div class="vs-price">200–400€<small>al año + tiempo tuyo</small></div>
+        <div class="vs-name">Plantilla DIY</div>
+        <div class="vs-price">200–400€<small>al año + tu tiempo</small></div>
         <div class="vs-list">
           <div class="vs-li"><span class="vs-ck">✓</span>Precio bajo de entrada</div>
-          <div class="vs-li"><span class="vs-cx">✗</span>Igual que miles de otras webs</div>
-          <div class="vs-li"><span class="vs-cx">✗</span>SEO limitado, sin código propio</div>
-          <div class="vs-li"><span class="vs-cx">✗</span>Tú gestionas todo (horas = dinero)</div>
-          <div class="vs-li"><span class="vs-cx">✗</span>Sin automatización IA</div>
+          <div class="vs-li"><span class="vs-ck">✓</span>Tú controlas todo el proceso</div>
+          <div class="vs-li"><span style="color:var(--mute);font-size:.76rem;font-weight:700;flex-shrink:0;margin-top:.06rem">●</span>Diseño limitado a plantillas disponibles</div>
+          <div class="vs-li"><span style="color:var(--mute);font-size:.76rem;font-weight:700;flex-shrink:0;margin-top:.06rem">●</span>SEO básico, sin optimización avanzada</div>
+          <div class="vs-li"><span style="color:var(--mute);font-size:.76rem;font-weight:700;flex-shrink:0;margin-top:.06rem">●</span>Requiere dedicarle horas cada semana</div>
         </div>
-        <span class="vs-badge ok">Para quienes tienen tiempo</span>
+        <span class="vs-badge ok">Ideal si tienes tiempo y presupuesto ajustado</span>
       </div>
 
       <div class="vs-col hl rv" data-delay="0.09" data-tilt>
@@ -649,12 +718,13 @@ footer{padding:1.75rem 0;border-top:1px solid var(--line)}
         <div class="vs-price" style="color:var(--ink)">890–2.200€<small>pago único, tuya para siempre</small></div>
         <div class="vs-list">
           <div class="vs-li"><span class="vs-ck">✓</span>Diseño a medida, código propio</div>
-          <div class="vs-li"><span class="vs-ck">✓</span>SEO local desde el día 1</div>
+          <div class="vs-li"><span class="vs-ck">✓</span>SEO local optimizado desde el día 1</div>
           <div class="vs-li"><span class="vs-ck">✓</span>Automatización con IA disponible</div>
-          <div class="vs-li"><span class="vs-ck">✓</span>Hablas directamente conmigo</div>
+          <div class="vs-li"><span class="vs-ck">✓</span>Trato directo — hablas conmigo</div>
+          <div class="vs-li"><span class="vs-ck">✓</span>Entrega rápida: 1–3 semanas</div>
           <div class="vs-li"><span class="vs-ck">✓</span>Precio cerrado, sin sorpresas</div>
         </div>
-        <span class="vs-badge best">Mejor relación calidad-precio</span>
+        <span class="vs-badge best">Ideal para negocios locales</span>
       </div>
 
       <div class="vs-col rv" data-delay="0.18" data-tilt>
@@ -662,18 +732,26 @@ footer{padding:1.75rem 0;border-top:1px solid var(--line)}
         <div class="vs-name">Agencia digital</div>
         <div class="vs-price">3.000–10.000€<small>+ mantenimiento 200–500€/mes</small></div>
         <div class="vs-list">
-          <div class="vs-li"><span class="vs-ck">✓</span>Equipo multidisciplinar</div>
-          <div class="vs-li"><span class="vs-cx">✗</span>Coste muy alto para negocio local</div>
-          <div class="vs-li"><span class="vs-cx">✗</span>Hablas con un comercial, no el que trabaja</div>
-          <div class="vs-li"><span class="vs-cx">✗</span>Plazos largos: 4–12 semanas</div>
-          <div class="vs-li"><span class="vs-cx">✗</span>Cambios futuros = más presupuesto</div>
+          <div class="vs-li"><span class="vs-ck">✓</span>Equipos multidisciplinares</div>
+          <div class="vs-li"><span class="vs-ck">✓</span>Ideal para proyectos grandes y complejos</div>
+          <div class="vs-li"><span class="vs-ck">✓</span>Soporte continuado con equipo dedicado</div>
+          <div class="vs-li"><span style="color:var(--mute);font-size:.76rem;font-weight:700;flex-shrink:0;margin-top:.06rem">●</span>Procesos más largos: 4–12 semanas</div>
+          <div class="vs-li"><span style="color:var(--mute);font-size:.76rem;font-weight:700;flex-shrink:0;margin-top:.06rem">●</span>Coste más elevado por estructura de empresa</div>
         </div>
-        <span class="vs-badge exp">Para grandes empresas</span>
+        <span class="vs-badge ok">Ideal para empresas grandes</span>
       </div>
     </div>
-    <p class="vs-note rv">Fuentes: Osyris, BierzoSEO, Madra — precios reales mercado español 2026</p>
+    <p class="vs-note rv">Precios medios del mercado español 2026 · Fuentes: Osyris, BierzoSEO, Madra</p>
   </div>
 </section>
+
+<!-- ══ CTA BAND POST-COMPARATIVA ══ -->
+<div class="cta-band">
+  <div class="wrap rv">
+    <p>¿No sabes qué opción encaja con tu negocio?</p>
+    <a href="https://wa.me/34642084042" target="_blank" rel="noopener" class="btn btn-lime" data-magnetic>Solicitar valoración gratuita →</a>
+  </div>
+</div>
 
 <!-- ══ SERVICIOS ══ -->
 <section class="sec" id="servicios">
@@ -685,39 +763,47 @@ footer{padding:1.75rem 0;border-top:1px solid var(--line)}
     <div class="svcs-grid">
       <div class="svc rv" data-delay="0" data-tilt>
         <div class="svc-ico">✦</div>
-        <div class="svc-n">01 — Web Design</div>
-        <div class="svc-ttl">Diseño Web</div>
-        <p class="svc-desc">Web profesional a medida: rápida, bien posicionada en Google y pensada para que tus clientes te contacten. Código propio, no plantillas que todo el mundo tiene.</p>
-        <div class="svc-tags"><span class="tag">HTML/CSS/JS</span><span class="tag">SEO local</span><span class="tag">Diseño propio</span><span class="tag">Mobile-first</span></div>
+        <div class="svc-n">01 — Resultado</div>
+        <div class="svc-ttl">Más clientes desde Google</div>
+        <p class="svc-desc">Tu negocio visible cuando alguien busca lo que ofreces. Web rápida, optimizada para móvil y posicionada en Google para que recibas más llamadas y solicitudes de presupuesto.</p>
+        <div class="svc-tags"><span class="tag">SEO local</span><span class="tag">Mobile-first</span><span class="tag">Código propio</span><span class="tag">Diseño a medida</span></div>
         <div class="svc-price">Desde 890€ · Pago único</div>
       </div>
       <div class="svc svc-feat rv" data-delay="0.08" data-tilt>
         <div class="svc-ico">⟡</div>
-        <div class="svc-n">02 — AI Automation</div>
-        <div class="svc-ttl">Automatización IA</div>
-        <p class="svc-desc">Chatbots que responden clientes a las 2am, flujos que procesan pedidos solos, alertas automáticas. Tu negocio trabajando incluso cuando estás cerrado.</p>
-        <div class="svc-tags"><span class="tag">Chatbots IA</span><span class="tag">Flujos n8n</span><span class="tag">WhatsApp Bot</span><span class="tag">Claude / GPT</span></div>
+        <div class="svc-n">02 — Resultado</div>
+        <div class="svc-ttl">Atención automática 24/7</div>
+        <p class="svc-desc">Tu negocio responde clientes a las 2 de la mañana, procesa pedidos sin que tú intervengas y te avisa cuando hay algo importante. Ahorro de horas en tareas repetitivas cada semana.</p>
+        <div class="svc-tags"><span class="tag">Chatbot WhatsApp</span><span class="tag">Automatización IA</span><span class="tag">Flujos inteligentes</span><span class="tag">Alertas</span></div>
         <div class="svc-price">Desde 550€ · Por proyecto</div>
       </div>
       <div class="svc rv" data-delay="0.16" data-tilt>
         <div class="svc-ico">◆</div>
-        <div class="svc-n">03 — Social Media</div>
-        <div class="svc-ttl">Marketing Digital</div>
-        <p class="svc-desc">Gestiono tus redes sociales para que tú te centres en tu negocio: contenido, publicaciones, Google Business y crecimiento de tu comunidad de forma constante.</p>
+        <div class="svc-n">03 — Resultado</div>
+        <div class="svc-ttl">Más visibilidad en redes</div>
+        <p class="svc-desc">Contenido profesional y constante para que tu negocio esté presente donde están tus clientes. Tú te centras en tu trabajo, yo me encargo de que te vean y te encuentren.</p>
         <div class="svc-tags"><span class="tag">Instagram/Facebook</span><span class="tag">Google Business</span><span class="tag">Calendario contenido</span><span class="tag">Reels/Posts</span></div>
         <div class="svc-price">Desde 200€/mes · Sin permanencia</div>
       </div>
       <div class="svc rv" data-delay="0.24" data-tilt>
         <div class="svc-ico">◈</div>
-        <div class="svc-n">04 — Mantenimiento</div>
-        <div class="svc-ttl">Mantenimiento</div>
-        <p class="svc-desc">Tu web siempre actualizada y segura. Cambios de contenido, soporte directo y backups automáticos. Sin tickets, sin esperas de días para un pequeño ajuste.</p>
-        <div class="svc-tags"><span class="tag">Actualizaciones</span><span class="tag">Soporte WhatsApp</span><span class="tag">Backups</span></div>
+        <div class="svc-n">04 — Resultado</div>
+        <div class="svc-ttl">Tu web siempre al día</div>
+        <p class="svc-desc">Cambios de contenido, soporte directo por WhatsApp y backups automáticos. Sin tickets, sin esperas de días. Me escribes y te lo resuelvo — así de simple.</p>
+        <div class="svc-tags"><span class="tag">Actualizaciones</span><span class="tag">Soporte directo</span><span class="tag">Backups</span></div>
         <div class="svc-price">90–150€/mes · Sin permanencia</div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- ══ CTA BAND POST-SERVICIOS ══ -->
+<div class="cta-band">
+  <div class="wrap rv">
+    <p>¿Quieres saber qué necesita tu negocio?</p>
+    <a href="https://wa.me/34642084042" target="_blank" rel="noopener" class="btn btn-p" data-magnetic>Recibir presupuesto personalizado →</a>
+  </div>
+</div>
 
 <!-- ══ PROCESO ══ -->
 <section class="sec sec-alt" id="proceso">
@@ -749,11 +835,14 @@ footer{padding:1.75rem 0;border-top:1px solid var(--line)}
       <div class="wcard" data-tilt-strong>
         <div class="wlayout">
           <div class="wbody">
-            <div class="wmeta"><span class="wtag">Web corporativa</span><span class="wyr">2025 · Cartagena</span></div>
+            <div class="wmeta"><span class="wtag">Caso de estudio</span><span class="wyr">2025 · Cartagena</span></div>
             <h3 class="wttl">Floristería Alameda</h3>
-            <p class="wdesc">Negocio local de Cartagena con 4.9 estrellas y más de 300 reseñas en Google. Rediseñé su web por completo: de una plantilla genérica a una página a medida que transmite la identidad del negocio y convierte visitas en pedidos por WhatsApp.</p>
-            <div class="wtags"><span class="tag">HTML/CSS/JS</span><span class="tag">SEO local</span><span class="tag">WhatsApp directo</span><span class="tag">Google Maps</span></div>
-            <div class="wres"><span class="wrl">Resultado</span><span class="wrt">Web profesional que refleja la calidad del negocio y facilita el pedido directo. Clientes llegando desde Google.</span></div>
+            <div class="case-blocks">
+              <div class="case-block"><div class="case-label">Problema</div><div class="cb-text">Negocio con 4.9★ y más de 300 reseñas en Google, pero una web con plantilla genérica que no representaba la calidad real del negocio ni facilitaba el contacto.</div></div>
+              <div class="case-block"><div class="case-label">Solución</div><div class="cb-text">Rediseño completo a medida: identidad visual propia, botón de pedido por WhatsApp, SEO local optimizado y Google Maps integrado.</div></div>
+              <div class="case-block" style="border-color:rgba(34,197,94,.2);background:rgba(34,197,94,.04)"><div class="case-label" style="color:var(--green)">Resultado</div><div class="cb-text">Mejor experiencia de usuario, más facilidad para pedidos por WhatsApp, presencia online profesional acorde al negocio y clientes llegando desde Google.</div></div>
+            </div>
+            <div class="wtags"><span class="tag">SEO local</span><span class="tag">WhatsApp directo</span><span class="tag">Diseño a medida</span><span class="tag">Google Maps</span></div>
             <div class="wst-row"><span class="wst">★★★★★</span><span class="wstx">4.9 · 311 reseñas verificadas · Google</span></div>
             <a href="https://floristeriaalameda.com/" target="_blank" rel="noopener" class="btn btn-lime" style="font-size:.82rem;padding:.65rem 1.3rem;width:fit-content;margin-top:.3rem">Ver web en vivo →</a>
           </div>
@@ -834,11 +923,14 @@ footer{padding:1.75rem 0;border-top:1px solid var(--line)}
             </div>
           </a>
           <div class="wbody">
-            <div class="wmeta"><span class="wtag">Web desde cero</span><span class="wyr">2026 · Cartagena</span></div>
+            <div class="wmeta"><span class="wtag">Caso de estudio</span><span class="wyr">2026 · Cartagena</span></div>
             <h3 class="wttl">Casa del Sushi</h3>
-            <p class="wdesc">Restaurante recién montado en Plaza del Rey, Cartagena. Sin presencia online previa. Construí su web completa desde cero: diseño oscuro y elegante con fotos reales del local, carta, sistema de reservas y enfoque en su buffet libre.</p>
-            <div class="wtags"><span class="tag">Next.js</span><span class="tag">Diseño desde 0</span><span class="tag">Reservas</span><span class="tag">Vercel</span></div>
-            <div class="wres"><span class="wrl">Resultado</span><span class="wrt">Un negocio nuevo con visibilidad online desde el día de apertura. Web lista para captar reservas antes incluso de abrir.</span></div>
+            <div class="case-blocks">
+              <div class="case-block"><div class="case-label">Problema</div><div class="cb-text">Restaurante recién abierto en Plaza del Rey, Cartagena. Sin presencia online, sin web, sin forma de captar reservas digitalmente.</div></div>
+              <div class="case-block"><div class="case-label">Solución</div><div class="cb-text">Web completa desde cero: diseño elegante con fotos reales del local, carta digital, sistema de reservas y enfoque en el buffet libre.</div></div>
+              <div class="case-block" style="border-color:rgba(34,197,94,.2);background:rgba(34,197,94,.04)"><div class="case-label" style="color:var(--green)">Resultado</div><div class="cb-text">Visibilidad online desde el día de apertura. Web profesional lista para captar reservas y transmitir la imagen del negocio.</div></div>
+            </div>
+            <div class="wtags"><span class="tag">Diseño desde cero</span><span class="tag">Carta digital</span><span class="tag">Reservas online</span><span class="tag">SEO local</span></div>
             <div class="wst-row"><span class="wst">★★★★★</span><span class="wstx">4.9 · en Google · Buffet 17,80€</span></div>
             <a href="https://casa-del-sushi.vercel.app/" target="_blank" rel="noopener" class="btn btn-lime" style="font-size:.82rem;padding:.65rem 1.3rem;width:fit-content;margin-top:.3rem">Ver web en vivo →</a>
           </div>
@@ -855,18 +947,90 @@ footer{padding:1.75rem 0;border-top:1px solid var(--line)}
   </div>
 </section>
 
-<!-- ══ TESTIMONIAL ══ -->
-<section class="testi">
+<!-- ══ CTA BAND POST-PORTFOLIO ══ -->
+<div class="cta-band">
+  <div class="wrap rv">
+    <p>¿Tu negocio necesita un cambio así?</p>
+    <a href="https://wa.me/34642084042" target="_blank" rel="noopener" class="btn btn-lime" data-magnetic>Hablar por WhatsApp →</a>
+  </div>
+</div>
+
+<!-- ══ LOGOS CLIENTES ══ -->
+<section class="logos-sec">
+  <div class="wrap" style="text-align:center">
+    <span class="ey rv">Confianza</span>
+    <h2 class="rv" style="font-size:clamp(1.5rem,3.5vw,2.2rem);font-weight:800;letter-spacing:-.04em">
+      Negocios que han<br><span class="grad-lime">confiado en mí.</span>
+    </h2>
+    <div class="logos-grid rv">
+      <a href="https://floristeriaalameda.com/" target="_blank" rel="noopener" class="logo-client">
+        <span class="lc-name">🌹 Floristería Alameda</span>
+        <span class="lc-type">Floristería · Cartagena</span>
+      </a>
+      <a href="https://casa-del-sushi.vercel.app/" target="_blank" rel="noopener" class="logo-client">
+        <span class="lc-name">🍣 Casa del Sushi</span>
+        <span class="lc-type">Restaurante · Cartagena</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIOS ══ -->
+<section class="testi" id="testimonios">
+  <div class="wrap" style="text-align:center">
+    <span class="ey rv">Testimonios</span>
+    <h2 class="rv" style="font-size:clamp(1.9rem,4.5vw,3.2rem);font-weight:800;letter-spacing:-.04em">
+      Lo que dicen<br><span class="grad-lime">mis clientes.</span>
+    </h2>
+    <div class="testi-grid">
+      <div class="testi-card rv">
+        <div class="tc-stars">★★★★★</div>
+        <blockquote>Ruipérez nos hizo la web y en dos semanas teníamos clientes nuevos llegando desde Google. Sabe lo que hace, lo explica sin tecnicismos y cumplió el plazo exacto que acordamos.</blockquote>
+        <div class="tc-foot">
+          <div class="tc-av">FA</div>
+          <div style="text-align:left"><div class="tc-name">Floristería Alameda</div><div class="tc-role">Floristería · Cartagena · 4.9★ Google</div></div>
+        </div>
+      </div>
+      <div class="testi-placeholder rv" data-delay="0.1">
+        <span style="color:var(--mute);font-size:.78rem">Próximamente más testimonios de clientes reales</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ GARANTÍAS ══ -->
+<section class="garant" id="garantias">
   <div class="wrap">
-    <div class="testi-in rv">
-      <div class="testi-q" aria-hidden="true">"</div>
-      <blockquote class="testi-txt">
-        Ruipérez nos hizo la web y en dos semanas teníamos clientes nuevos llegando desde Google. Sabe lo que hace, lo explica sin tecnicismos y cumplió el plazo exacto que acordamos.
-      </blockquote>
-      <div style="display:flex;flex-direction:column;align-items:center;gap:.2rem">
-        <div class="ta-stars">★★★★★</div>
-        <span class="ta-name">Floristería Alameda</span>
-        <span class="ta-role">Cliente · Cartagena, Murcia · 4.9★ en Google</span>
+    <div style="text-align:center">
+      <span class="ey rv">Compromiso</span>
+      <h2 class="rv" style="font-size:clamp(1.9rem,4.5vw,3.2rem);font-weight:800;letter-spacing:-.04em">
+        Lo que<br><span class="grad-lime">garantizo.</span>
+      </h2>
+    </div>
+    <div class="garant-grid">
+      <div class="garant-item rv">
+        <span class="garant-ck">✓</span>
+        <div><div class="garant-ttl">Presupuesto cerrado desde el inicio</div><div class="garant-desc">Sabes exactamente cuánto vas a pagar antes de empezar. Sin sorpresas, sin extras ocultos.</div></div>
+      </div>
+      <div class="garant-item rv" data-delay="0.06">
+        <span class="garant-ck">✓</span>
+        <div><div class="garant-ttl">Sin cuotas ocultas</div><div class="garant-desc">Pago único por tu web. Sin suscripciones obligatorias ni costes mensuales forzosos.</div></div>
+      </div>
+      <div class="garant-item rv" data-delay="0.12">
+        <span class="garant-ck">✓</span>
+        <div><div class="garant-ttl">Comunicación directa conmigo</div><div class="garant-desc">Nada de intermediarios ni departamentos. Me escribes y te contesto yo.</div></div>
+      </div>
+      <div class="garant-item rv" data-delay="0.18">
+        <span class="garant-ck">✓</span>
+        <div><div class="garant-ttl">Revisiones durante el desarrollo</div><div class="garant-desc">Ves el progreso antes de la entrega y me das tu feedback. Nada se publica sin tu aprobación.</div></div>
+      </div>
+      <div class="garant-item rv" data-delay="0.24">
+        <span class="garant-ck">✓</span>
+        <div><div class="garant-ttl">Soporte tras la entrega</div><div class="garant-desc">30 días de ajustes incluidos gratis. Si algo no funciona, lo resuelvo sin coste adicional.</div></div>
+      </div>
+      <div class="garant-item rv" data-delay="0.3">
+        <span class="garant-ck">✓</span>
+        <div><div class="garant-ttl">Dominio y hosting a tu nombre</div><div class="garant-desc">Todo queda a tu nombre desde el principio. Si decides cambiar de profesional, puedes hacerlo sin problemas.</div></div>
       </div>
     </div>
   </div>
@@ -881,16 +1045,26 @@ footer{padding:1.75rem 0;border-top:1px solid var(--line)}
     </h2>
     <div class="faq-list">
       <div class="fi rv"><button class="fq">¿Cuánto cuesta exactamente una web?<span class="ficon">+</span></button><div class="fa">Una <strong>web informativa básica</strong> (inicio, servicios, sobre mí, contacto) parte desde <span class="hl">890€</span>. Con más páginas, blog o integraciones puede llegar a <span class="hl">1.600–2.200€</span>. Precio cerrado siempre, antes de empezar. Sin extras.</div></div>
-      <div class="fi rv"><button class="fq">¿Por qué eres más barato que una agencia?<span class="ficon">+</span></button><div class="fa">Trabajo solo — sin comerciales, project managers ni estructura de empresa que mantener. Hago el trabajo yo directamente. El resultado es el mismo nivel de calidad a <strong>entre un 50% y 70% menos</strong> de coste. Una agencia standard cobra 3.000–8.000€ por lo mismo.</div></div>
+      <div class="fi rv"><button class="fq">¿El pago es único o hay cuotas mensuales?<span class="ficon">+</span></button><div class="fa">El pago por la web es <strong>único</strong> — no hay cuotas mensuales obligatorias. La web es tuya para siempre. El mantenimiento es opcional y sin permanencia. Puedes cancelarlo cuando quieras.</div></div>
+      <div class="fi rv"><button class="fq">¿Por qué cuestas menos que una agencia?<span class="ficon">+</span></button><div class="fa">Trabajo directamente contigo, sin comerciales, project managers ni estructura de empresa. El resultado es el mismo nivel de calidad a <strong>entre un 50% y 70% menos</strong> de coste, porque no mantengo una oficina de 10 personas.</div></div>
       <div class="fi rv"><button class="fq">¿En cuánto tiempo tienes lista mi web?<span class="ficon">+</span></button><div class="fa">Web estándar: <strong>1 a 3 semanas</strong> desde que me das el contenido. Si necesitas algo urgente, hablamos. Proyectos con tienda o integraciones especiales: 4–5 semanas. Siempre digo el plazo exacto antes de empezar y lo cumplo.</div></div>
-      <div class="fi rv"><button class="fq">¿La web es mía o dependo de ti?<span class="ficon">+</span></button><div class="fa"><strong>La web es tuya al 100%</strong> desde el día que la entrego. Acceso completo al código, hosting y dominio. Si en el futuro quieres trabajar con otro profesional, puedes sin ningún problema. Sin suscripciones obligatorias.</div></div>
-      <div class="fi rv"><button class="fq">¿Qué pasa con los cambios después de entregarlo?<span class="ficon">+</span></button><div class="fa">Los primeros 30 días incluyen ajustes sin coste. Después: plan de mantenimiento desde <span class="hl">90€/mes</span> (cambios de contenido + soporte + backups) o cambios puntuales a <span class="hl">40€/hora</span>.</div></div>
+      <div class="fi rv"><button class="fq">¿La web es mía o dependo de ti?<span class="ficon">+</span></button><div class="fa"><strong>La web es tuya al 100%</strong> desde el día que la entrego. Acceso completo al código, hosting y dominio a tu nombre. Si en el futuro quieres trabajar con otro profesional, puedes sin ningún problema.</div></div>
+      <div class="fi rv"><button class="fq">¿Incluyes SEO o se paga aparte?<span class="ficon">+</span></button><div class="fa"><strong>El SEO local está incluido</strong> en todas las webs. Eso significa: estructura optimizada para Google, velocidad de carga rápida, etiquetas correctas, Schema JSON-LD, y configuración de Google Business si lo necesitas. Sin coste adicional.</div></div>
+      <div class="fi rv"><button class="fq">¿Puedo solicitar cambios durante el desarrollo?<span class="ficon">+</span></button><div class="fa">Sí. Te muestro el progreso durante el desarrollo y recojo tu feedback antes de publicar nada. Nada se pone en vivo sin tu aprobación.</div></div>
+      <div class="fi rv"><button class="fq">¿Qué ocurre después de la entrega?<span class="ficon">+</span></button><div class="fa">Los primeros <strong>30 días incluyen ajustes sin coste</strong>. Después: plan de mantenimiento opcional desde <span class="hl">90€/mes</span> (cambios, soporte, backups) o cambios puntuales a <span class="hl">40€/hora</span>. Tú decides.</div></div>
       <div class="fi rv"><button class="fq">¿Puedo pagar a plazos?<span class="ficon">+</span></button><div class="fa">Sí. Trabajo con <strong>50% al inicio y 50% al entregar</strong>. Para proyectos más grandes también acepto tres pagos. Nunca pido el 100% por adelantado.</div></div>
       <div class="fi rv"><button class="fq">¿Qué es exactamente la automatización con IA?<span class="ficon">+</span></button><div class="fa">Sistemas que hacen tareas repetitivas solos. Ejemplos reales: <strong>chatbot en WhatsApp</strong> que responde a las 2am, email automático cuando alguien rellena un formulario, alerta cuando recibes un pedido. Tecnología real, no ciencia ficción. Instalada en 1–2 semanas.</div></div>
-      <div class="fi rv"><button class="fq">¿Tienes experiencia suficiente?<span class="ficon">+</span></button><div class="fa">Llevo trabajando en diseño web y automatización desde los 16 años. Tengo clientes reales con resultados comprobables. Soy honesto: no tengo 10 años de trayectoria, pero domino las herramientas actuales porque me he formado en las tecnologías de 2025–2026. Puedes ver mi trabajo y juzgarlo tú mismo.</div></div>
     </div>
   </div>
 </section>
+
+<!-- ══ CTA BAND POST-FAQ ══ -->
+<div class="cta-band">
+  <div class="wrap rv">
+    <p>¿Tienes más preguntas? Te respondo sin compromiso</p>
+    <a href="https://wa.me/34642084042" target="_blank" rel="noopener" class="btn btn-p" data-magnetic>Hablar por WhatsApp →</a>
+  </div>
+</div>
 
 <!-- ══ SOBRE MÍ ══ -->
 <section class="sec" id="sobre">
@@ -933,8 +1107,8 @@ footer{padding:1.75rem 0;border-top:1px solid var(--line)}
     <div class="cgrid">
       <div class="rv">
         <span class="ey">Contacto</span>
-        <h2 class="cttl">¿Empezamos?<br><span class="grad-lime">Escríbeme.</span></h2>
-        <p class="csub">Presupuesto gratuito en menos de 24h. Sin compromiso, sin letra pequeña.</p>
+        <h2 class="cttl">¿Listo para tener<br><span class="grad-lime">una web que venda?</span></h2>
+        <p class="csub">Cuéntame qué necesitas y te mando presupuesto personalizado en menos de 24h. Sin compromiso, sin letra pequeña.</p>
         <div class="copts">
           <a href="https://wa.me/34642084042" target="_blank" rel="noopener" class="copt copt-p">
             <span class="coi">💬</span>
@@ -986,7 +1160,7 @@ footer{padding:1.75rem 0;border-top:1px solid var(--line)}
         <a href="#faq" class="fl">FAQ</a>
         <a href="#contacto" class="fl">Contacto</a>
       </div>
-      <span class="fcopy">© 2025 Ruipérez Studio · Cartagena</span>
+      <span class="fcopy">© 2025 Ruipérez Studio · 📍 Cartagena, Murcia · 📞 <a href="https://wa.me/34642084042" target="_blank" rel="noopener" style="color:var(--mute);text-decoration:underline;text-underline-offset:2px">642 08 40 42</a></span>
     </div>
   </div>
 </footer>
