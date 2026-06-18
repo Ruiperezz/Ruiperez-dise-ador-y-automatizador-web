@@ -1289,18 +1289,21 @@ function initHero3D(){
 function initCursor(){
   if(!fH)return;
   var dot=$("#cdot"),ring=$("#cring");if(!dot||!ring)return;
-  var tx=0,ty=0,rx=0,ry=0,rdy=false;
+  var tx=0,ty=0,rx=0,ry=0,rdy=false,running=false;
   window.addEventListener("mousemove",function(e){
     tx=e.clientX;ty=e.clientY;
     dot.style.transform="translate3d("+tx+"px,"+ty+"px,0)";
     if(!rdy){rdy=true;rx=tx;ry=ty;ring.style.transform="translate3d("+rx+"px,"+ry+"px,0)";ring.classList.add("rdy");}
+    if(!running){running=true;tick();}
   },{passive:true});
-  (function tick(){
-    rx+=(tx-rx)*0.18;ry+=(ty-ry)*0.18;
+  function tick(){
+    var dx=tx-rx,dy=ty-ry;
+    rx+=dx*0.35;ry+=dy*0.35;
     ring.style.transform="translate3d("+rx.toFixed(1)+"px,"+ry.toFixed(1)+"px,0)";
-    requestAnimationFrame(tick);
-  })();
-  var H="a,button,.vs-col,.svc,.wcard,.copt,.proc,.fi,.pcard,.btn";
+    if(Math.abs(dx)>0.5||Math.abs(dy)>0.5){requestAnimationFrame(tick);}
+    else{rx=tx;ry=ty;ring.style.transform="translate3d("+rx+"px,"+ry+"px,0)";running=false;}
+  }
+  var H="a,button,.vs-col,.svc,.wcard,.copt,.proc,.fi,.pcard,.btn,.garant-item,.testi-card,.logo-client";
   document.addEventListener("mouseover",function(e){if(e.target.closest(H))ring.classList.add("h")});
   document.addEventListener("mouseout",function(e){if(e.target.closest(H)&&!e.relatedTarget?.closest?.(H))ring.classList.remove("h")});
 }
