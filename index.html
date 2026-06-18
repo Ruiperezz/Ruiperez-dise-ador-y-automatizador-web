@@ -175,7 +175,7 @@ body::after{content:"";position:fixed;inset:0;z-index:1;pointer-events:none;opac
     radial-gradient(circle 500px at 50% 30%,var(--g2) 0%,transparent 52%),
     radial-gradient(circle 350px at 24% 66%,var(--g3) 0%,transparent 48%),
     var(--bg);
-  filter:blur(18px);
+  filter:blur(12px);
   will-change:transform}
 .hgrid{position:absolute;inset:0;z-index:0;background-image:radial-gradient(circle,rgba(244,244,252,.12) 1px,transparent 1px);background-size:32px 32px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,#000,transparent);will-change:transform}
 /* ── HERO 3D — ventana flotante mouse-reactive ── */
@@ -1254,34 +1254,45 @@ function initNav(){
   });
 }
 
-/* ── Gradiente reactivo — desplaza el blob ya pintado vía transform (GSAP compone con el scroll parallax) ── */
+/* ── Gradiente reactivo ── */
 function initGrad(){
   if(!fH||reduced)return;
   var grad=$("#hgrad");if(!grad)return;
+  var tx=0,ty=0,cx=0,cy=0,vis=true,raf=null;
+  var obs=new IntersectionObserver(function(es){vis=es[0].isIntersecting},{threshold:0});
+  obs.observe(grad);
   window.addEventListener("mousemove",function(e){
-    var x=(e.clientX/window.innerWidth-0.5)*36;
-    var y=(e.clientY/window.innerHeight-0.5)*36;
-    if(hasGSAP)gsap.to(grad,{x:x,y:y,duration:.9,ease:"power2.out",overwrite:"auto"});
-    else grad.style.transform="translate3d("+x.toFixed(1)+"px,"+y.toFixed(1)+"px,0)";
+    if(!vis)return;
+    tx=(e.clientX/window.innerWidth-0.5)*30;
+    ty=(e.clientY/window.innerHeight-0.5)*30;
+    if(!raf)raf=requestAnimationFrame(loop);
   },{passive:true});
+  function loop(){
+    cx+=(tx-cx)*0.08;cy+=(ty-cy)*0.08;
+    grad.style.transform="translate3d("+cx.toFixed(1)+"px,"+cy.toFixed(1)+"px,0)";
+    raf=(Math.abs(tx-cx)>0.3||Math.abs(ty-cy)>0.3)?requestAnimationFrame(loop):null;
+  }
 }
 
 /* ── Hero 3D — ventana flotante mouse-reactive ── */
 function initHero3D(){
   if(reduced||!matchMedia("(min-width:1280px)").matches)return;
-  var win=$("#h3dwin");if(!win)return;
-  var tx=6,ty=-16,cx=6,cy=-16,raf=null;
+  var win=$("#h3dwin"),h3d=$("#h3d");if(!win||!h3d)return;
+  var tx=6,ty=-16,cx=6,cy=-16,raf=null,vis=true;
+  var obs=new IntersectionObserver(function(es){vis=es[0].isIntersecting},{threshold:0});
+  obs.observe(h3d);
   window.addEventListener("mousemove",function(e){
+    if(!vis)return;
     var px=e.clientX/window.innerWidth-0.5;
     var py=e.clientY/window.innerHeight-0.5;
-    tx=6-py*16;ty=-16+px*22;
+    tx=6-py*12;ty=-16+px*18;
     if(!raf)raf=requestAnimationFrame(loop);
   },{passive:true});
   function loop(){
-    cx+=(tx-cx)*0.06;cy+=(ty-cy)*0.06;
+    cx+=(tx-cx)*0.12;cy+=(ty-cy)*0.12;
     win.style.setProperty("--h3rx",cx.toFixed(2)+"deg");
     win.style.setProperty("--h3ry",cy.toFixed(2)+"deg");
-    raf=(Math.abs(tx-cx)>0.02||Math.abs(ty-cy)>0.02)?requestAnimationFrame(loop):null;
+    raf=(Math.abs(tx-cx)>0.05||Math.abs(ty-cy)>0.05)?requestAnimationFrame(loop):null;
   }
 }
 
@@ -1398,7 +1409,7 @@ function initFaq(){
 function initMagnetic(){
   if(!fH)return;
   $$("[data-magnetic]").forEach(function(el){
-    var strength=0.28,tx=0,ty=0,cx=0,cy=0,raf=null;
+    var strength=0.22,tx=0,ty=0,cx=0,cy=0,raf=null;
     el.addEventListener("mousemove",function(e){
       var r=el.getBoundingClientRect();
       tx=((e.clientX-r.left)-r.width/2)*strength;
@@ -1407,7 +1418,7 @@ function initMagnetic(){
     });
     el.addEventListener("mouseleave",function(){tx=0;ty=0;if(!raf)raf=requestAnimationFrame(loop)});
     function loop(){
-      cx+=(tx-cx)*0.18;cy+=(ty-cy)*0.18;
+      cx+=(tx-cx)*0.25;cy+=(ty-cy)*0.25;
       el.style.transform="translate3d("+cx.toFixed(2)+"px,"+cy.toFixed(2)+"px,0)";
       raf=(Math.abs(tx-cx)>0.1||Math.abs(ty-cy)>0.1)?requestAnimationFrame(loop):null;
     }
@@ -1431,7 +1442,7 @@ function initTilt(){
       });
       card.addEventListener("mouseleave",function(){tx=0;ty=0;if(!raf)raf=requestAnimationFrame(loop)});
       function loop(){
-        cx+=(tx-cx)*0.13;cy+=(ty-cy)*0.13;
+        cx+=(tx-cx)*0.2;cy+=(ty-cy)*0.2;
         card.style.transform="perspective(900px) rotateX("+cx.toFixed(2)+"deg) rotateY("+cy.toFixed(2)+"deg)";
         raf=(Math.abs(tx-cx)>0.05||Math.abs(ty-cy)>0.05)?requestAnimationFrame(loop):null;
       }
