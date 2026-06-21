@@ -26,7 +26,7 @@
 <link rel="apple-touch-icon" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
 <script type="application/ld+json">
 {
@@ -101,7 +101,7 @@
   --ind:#6360e0; --indl:#7b78f0; --lime:#a3e635; --limel:#bef264;
   --line:rgba(244,243,240,.07); --lines:rgba(244,243,240,.13);
   --green:#34d399; --yell:#fbbf24;
-  --fs:'Inter',sans-serif; --fm:'JetBrains Mono',monospace;
+  --fd:'Space Grotesk',sans-serif; --fs:'Inter',sans-serif; --fm:'JetBrains Mono',monospace;
   --nav:58px; --mw:1040px; --gap:clamp(1.5rem,4vw,2.2rem); --r:12px; --r2:16px;
   --ease:cubic-bezier(.16,1,.3,1);
 }
@@ -112,12 +112,12 @@ img,svg{display:block;max-width:100%}
 button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
 a{color:inherit;text-decoration:none}
 p{line-height:1.75;text-wrap:pretty;color:var(--soft)}
-h1,h2,h3,h4{font-family:var(--fs);line-height:1.08;letter-spacing:-.035em;text-wrap:balance;font-weight:800;color:var(--ink)}
+h1,h2,h3,h4{font-family:var(--fd);line-height:1.08;letter-spacing:-.03em;text-wrap:balance;font-weight:700;color:var(--ink)}
 ::selection{background:var(--ind);color:#fff}
 :focus-visible{outline:2px solid var(--lime);outline-offset:3px;border-radius:4px}
 
 .wrap{width:100%;max-width:var(--mw);margin:0 auto;padding:0 var(--gap)}
-.ey{font-family:var(--fm);font-size:.6rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--ind);display:inline-block;margin-bottom:1.4rem}
+.ey{font-family:var(--fm);font-size:.6rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--lime);opacity:.7;display:inline-block;margin-bottom:1.4rem}
 .grad-lime{color:var(--lime)}
 .sec{padding:clamp(6rem,12vw,10rem) 0}
 .sec-alt{background:var(--bg2)}
@@ -130,7 +130,7 @@ h1,h2,h3,h4{font-family:var(--fs);line-height:1.08;letter-spacing:-.035em;text-w
 #nav{position:fixed;top:0;left:0;right:0;z-index:500;height:var(--nav);border-bottom:1px solid transparent;transition:background .35s,border-color .35s}
 #nav.sc{background:rgba(6,6,14,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-color:var(--line)}
 .nav-i{max-width:var(--mw);margin:0 auto;padding:0 var(--gap);height:100%;display:flex;align-items:center;justify-content:space-between}
-.logo{font-family:var(--fs);font-weight:700;font-size:1rem;letter-spacing:-.02em;display:inline-flex;align-items:center;gap:.4rem}
+.logo{font-family:var(--fd);font-weight:700;font-size:1rem;letter-spacing:-.02em;display:inline-flex;align-items:center;gap:.4rem}
 .logo em{font-style:normal;color:var(--lime)}
 .logo svg{flex-shrink:0}
 .nlinks{display:none;align-items:center;gap:.2rem}
@@ -209,7 +209,7 @@ h1,h2,h3,h4{font-family:var(--fs);line-height:1.08;letter-spacing:-.035em;text-w
 .vs-grid{display:grid;grid-template-columns:1fr;gap:1.25rem}
 @media(min-width:600px){.vs-grid{grid-template-columns:repeat(2,1fr)}}
 .vs-col{border-radius:var(--r2);border:1px solid var(--line);background:var(--bgc);padding:1.75rem;display:flex;flex-direction:column;gap:.85rem;transition:border-color .3s}
-.vs-col.hl{border-color:rgba(163,230,53,.3);background:linear-gradient(135deg,var(--bgc) 0%,rgba(163,230,53,.05) 100%)}
+.vs-col.hl{border-color:rgba(163,230,53,.35);background:linear-gradient(160deg,var(--bgc) 0%,rgba(163,230,53,.08) 100%)}
 .vs-col.hl:hover{border-color:rgba(163,230,53,.5)}
 .vs-who{font-family:var(--fm);font-size:.58rem;text-transform:uppercase;letter-spacing:.14em;color:var(--mute);margin-bottom:.2rem}
 .vs-name{font-family:var(--fs);font-size:1.2rem;font-weight:800;letter-spacing:-.03em}
@@ -483,7 +483,7 @@ footer{padding:1.75rem 0;border-top:1px solid var(--line)}
 .testi-placeholder{border:1px dashed var(--lines);border-radius:var(--r2);padding:1.75rem;text-align:center;color:var(--mute);font-size:.82rem;display:flex;align-items:center;justify-content:center}
 
 /* ── CASO DE ESTUDIO ── */
-.case-label{font-family:var(--fm);font-size:.6rem;text-transform:uppercase;letter-spacing:.12em;color:var(--ind);margin-bottom:.35rem}
+.case-label{font-family:var(--fd);font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:var(--ind);margin-bottom:.35rem;font-weight:600}
 .case-block{display:flex;flex-direction:column;gap:.3rem;padding:.8rem;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.02)}
 .case-block .cb-title{font-family:var(--fs);font-size:.78rem;font-weight:700;letter-spacing:-.01em;color:var(--ink)}
 .case-block .cb-text{font-size:.8rem;color:var(--soft);line-height:1.55}
@@ -543,13 +543,13 @@ footer{padding:1.75rem 0;border-top:1px solid var(--line)}
     </div>
 
     <h1 class="hh1 rv" data-delay="0.1">
-      <span class="line">Creo webs que trabajan</span>
-      <span class="line line-acc">por tu negocio.</span>
+      <span class="line">Tu negocio merece</span>
+      <span class="line line-acc">una web que venda.</span>
     </h1>
 
     <p class="hsub rv" data-delay="0.2">
-      Diseño webs que atraen clientes y automatizo lo que te quita tiempo.
-      Para negocios de Cartagena y Murcia que quieren crecer de verdad.
+      Diseño web estratégico y automatización de procesos para negocios
+      de Cartagena y Murcia. Más clientes, menos trabajo manual.
     </p>
 
     <div class="hctas rv" data-delay="0.3">
@@ -1037,8 +1037,8 @@ footer{padding:1.75rem 0;border-top:1px solid var(--line)}
     <div class="cgrid">
       <div class="rv">
         <span class="ey">Contacto</span>
-        <h2 class="cttl">Tu negocio merece<br><span class="grad-lime">una web que venda.</span></h2>
-        <p class="csub">Escríbeme y te cuento cómo puedo ayudarte. Respondo personalmente en menos de 24h con un presupuesto cerrado y sin compromiso.</p>
+        <h2 class="cttl">Empecemos.</h2>
+        <p class="csub">Cuéntame qué necesita tu negocio. Respondo personalmente en menos de 24 horas.</p>
         <div class="copts">
           <a href="https://wa.me/34642084042" target="_blank" rel="noopener" class="copt copt-p">
             <span class="coi">💬</span>
