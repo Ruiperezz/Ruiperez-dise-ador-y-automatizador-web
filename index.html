@@ -96,7 +96,7 @@
    RUIPÉREZ STUDIO v7 — Premium Polish
 ══════════════════════════════════════════ */
 :root{
-  --bg:#0a0a12; --bg2:#0e0e18; --bgc:#12121f; --bgc2:#161628;
+  --bg:#0b0b14; --bg2:#0f0f1a; --bgc:#131320; --bgc2:#17172a;
   --ink:#f5f4f1; --soft:rgba(245,244,241,.62); --mute:rgba(245,244,241,.35);
   --ind:#6360e0; --indl:#7b78f0; --lime:#a3e635; --limel:#bef264;
   --line:rgba(244,243,240,.07); --lines:rgba(244,243,240,.13);
@@ -162,14 +162,12 @@ h1,h2,h3,h4{font-family:var(--fd);line-height:1.08;letter-spacing:-.03em;text-wr
 
 /* ── HERO ── */
 .hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;padding:calc(var(--nav)+5rem) var(--gap) 7rem}
-.hgrad{position:absolute;inset:-20%;z-index:0;
+.hgrad{position:absolute;inset:0;z-index:0;
   background:
-    radial-gradient(circle 650px at 20% 30%,rgba(99,96,224,.38) 0%,transparent 55%),
-    radial-gradient(circle 450px at 58% 12%,rgba(163,230,53,.12) 0%,transparent 50%),
-    radial-gradient(circle 400px at 10% 75%,rgba(123,120,240,.22) 0%,transparent 48%),
-    radial-gradient(circle 300px at 80% 60%,rgba(99,96,224,.15) 0%,transparent 42%),
-    var(--bg);
-  filter:blur(10px);will-change:transform}
+    radial-gradient(ellipse 80% 70% at 25% 40%,rgba(99,96,224,.25) 0%,transparent 70%),
+    radial-gradient(ellipse 60% 50% at 70% 20%,rgba(163,230,53,.07) 0%,transparent 60%),
+    radial-gradient(ellipse 50% 60% at 10% 80%,rgba(123,120,240,.15) 0%,transparent 65%),
+    var(--bg)}
 .hero-in{position:relative;z-index:2;max-width:580px;width:100%;margin:0 auto}
 .hbadge{display:inline-flex;align-items:center;gap:.5rem;padding:.32rem .8rem .32rem .55rem;border-radius:100px;border:1px solid var(--lines);font-size:.7rem;font-weight:500;color:var(--mute);margin-bottom:2.5rem;letter-spacing:.02em}
 .pulse{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 8px rgba(34,197,94,.6);flex-shrink:0;animation:pulse 2.5s ease-in-out infinite}
@@ -429,14 +427,6 @@ footer{padding:1.75rem 0;border-top:1px solid var(--line)}
 @media(max-width:400px){
   .hh1{font-size:2rem}
 }
-/* ── Hero gradient float ── */
-@keyframes gradFloat{
-  0%{transform:translate3d(0,0,0) scale(1)}
-  33%{transform:translate3d(15px,-10px,0) scale(1.02)}
-  66%{transform:translate3d(-10px,8px,0) scale(0.98)}
-  100%{transform:translate3d(0,0,0) scale(1)}
-}
-@media(prefers-reduced-motion:reduce){.hgrad{animation:none!important}}
 
 /* ── BARRA DE CONFIANZA ── */
 .trust-bar{padding:1.3rem 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2)}
@@ -491,7 +481,6 @@ footer{padding:1.75rem 0;border-top:1px solid var(--line)}
 
 /* ── Reduced motion: solo intrusivos ── */
 @media(prefers-reduced-motion:reduce){
-  .hgrad{transition:none;filter:none}
   .scue,.pulse{animation:none}
   .mqtrack{animation-play-state:paused}
 }
@@ -1183,11 +1172,7 @@ function initNav(){
 }
 
 /* ── Gradiente reactivo ── */
-function initGrad(){
-  if(reduced)return;
-  var grad=$("#hgrad");if(!grad)return;
-  grad.style.animation="gradFloat 20s ease-in-out infinite";
-}
+function initGrad(){}
 
 /* ── Hero 3D — ventana flotante mouse-reactive ── */
 function initHero3D(){
@@ -1410,8 +1395,7 @@ function initTilt(){
 function initParallax(){
   if(!hasGSAP||!hasST||reduced)return;
 
-  var grad=$("#hgrad"),heroIn=$("#hero-in");
-  if(grad)gsap.to(grad,{yPercent:25,ease:"none",scrollTrigger:{trigger:".hero",start:"top top",end:"bottom top",scrub:true}});
+  var heroIn=$("#hero-in");
   if(heroIn)gsap.to(heroIn,{yPercent:-5,opacity:.8,ease:"none",scrollTrigger:{trigger:".hero",start:"top top",end:"bottom top",scrub:true}});
 
   $$(".browser").forEach(function(br){
