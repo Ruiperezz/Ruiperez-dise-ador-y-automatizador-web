@@ -174,7 +174,8 @@ h1,h2,h3,h4{font-family:var(--fd);line-height:1.08;letter-spacing:-.03em;text-wr
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.75)}}
 .hh1{font-size:clamp(2.2rem,4.8vw,3.4rem);font-weight:800;line-height:1.12;letter-spacing:-.035em;margin-bottom:1.5rem}
 .hh1 .line{display:block}
-.hh1 .line-acc{color:var(--lime)}
+.hh1 .line-acc{background:linear-gradient(90deg,var(--lime),var(--indl),var(--lime));background-size:200% 100%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 6s ease-in-out infinite}
+@keyframes shimmer{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
 .hsub{font-size:clamp(.9rem,1.6vw,1.02rem);color:var(--soft);max-width:480px;line-height:1.8;margin-bottom:2.4rem}
 .hctas{display:flex;gap:.65rem;flex-wrap:wrap;margin-bottom:3.5rem}
 .hstats{display:inline-flex;flex-wrap:wrap;align-items:center;gap:1.4rem;padding:.85rem 1.4rem;border-radius:var(--r);border:1px solid var(--line);background:rgba(255,255,255,.015)}
