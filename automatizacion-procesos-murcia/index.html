@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Automatización de Procesos para Negocios en Murcia | Ruipérez Studio</title>
+<meta name="description" content="Automatización de procesos para negocios en Murcia y Cartagena. Reservas automáticas, emails de confirmación, chatbots y flujos con n8n y Make. Desde 590€.">
+<link rel="canonical" href="https://ruiperezstudio.es/automatizacion-procesos-murcia/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Automatización de Procesos en Murcia | Ruipérez Studio">
+<meta property="og:description" content="Automatización de tareas repetitivas para negocios en Murcia. Reservas online, emails automáticos, chatbots. Desde 590€.">
+<meta property="og:url" content="https://ruiperezstudio.es/automatizacion-procesos-murcia/">
+<meta property="og:locale" content="es_ES">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Service",
+  "name":"Automatización de procesos para negocios en Murcia",
+  "description":"Sistemas de automatización de tareas para negocios en Murcia y Cartagena: reservas online, emails automáticos de confirmación, flujos con n8n y Make. Sin intervención manual.",
+  "provider":{"@type":"LocalBusiness","name":"Ruipérez Studio","url":"https://ruiperezstudio.es","telephone":"+34642084042","address":{"@type":"PostalAddress","addressLocality":"Cartagena","addressRegion":"Región de Murcia","addressCountry":"ES"}},
+  "areaServed":[{"@type":"City","name":"Murcia"},{"@type":"City","name":"Cartagena"},{"@type":"AdministrativeArea","name":"Región de Murcia"}],
+  "offers":{"@type":"Offer","priceCurrency":"EUR","price":"590","description":"Sistema de automatización de procesos básico"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Inicio","item":"https://ruiperezstudio.es"},
+    {"@type":"ListItem","position":2,"name":"Automatización de procesos en Murcia","item":"https://ruiperezstudio.es/automatizacion-procesos-murcia/"}
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#0b0b14;--bg2:#0f0f1a;--bgc:#131320;--bgc2:#17172a;
+  --ink:#f5f4f1;--soft:rgba(245,244,241,.62);--mute:rgba(245,244,241,.50);
+  --ind:#6360e0;--indl:#7b78f0;--lime:#a3e635;--limel:#bef264;
+  --line:rgba(244,243,240,.07);--lines:rgba(244,243,240,.13);
+  --green:#34d399;--purple:#818cf8;
+  --fd:'Space Grotesk',sans-serif;--fs:'Inter',sans-serif;--fm:'JetBrains Mono',monospace;
+  --nav:58px;--mw:1040px;--gap:clamp(1.5rem,4vw,2.2rem);--r:12px;--r2:16px;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{font-family:var(--fs);background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:clip;font-size:15.5px;line-height:1.65}
+img,svg{display:block;max-width:100%}
+button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
+a{color:inherit;text-decoration:none}
+p{line-height:1.75;text-wrap:pretty;color:var(--soft)}
+h1,h2,h3{font-family:var(--fd);line-height:1.08;letter-spacing:-.03em;text-wrap:balance;font-weight:700;color:var(--ink)}
+:focus-visible{outline:2px solid var(--lime);outline-offset:3px;border-radius:4px}
+.wrap{width:100%;max-width:var(--mw);margin:0 auto;padding:0 var(--gap)}
+.ey{font-family:var(--fm);font-size:.65rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--lime);opacity:.7;display:inline-block;margin-bottom:1.2rem}
+.grad-lime{color:var(--lime)}
+.sec{padding:clamp(4rem,9vw,7rem) 0}
+.sec-alt{background:var(--bg2)}
+.tag{font-family:var(--fm);font-size:.58rem;padding:.22rem .6rem;border-radius:6px;background:rgba(79,70,229,.08);border:1px solid rgba(79,70,229,.18);color:var(--indl);letter-spacing:.03em}
+.tags{display:flex;flex-wrap:wrap;gap:.38rem;margin-top:.8rem}
+#nav{position:fixed;top:0;left:0;right:0;z-index:500;height:var(--nav);border-bottom:1px solid var(--line);background:rgba(6,6,14,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.nav-i{max-width:var(--mw);margin:0 auto;padding:0 var(--gap);height:100%;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:var(--fd);font-weight:700;font-size:1rem;letter-spacing:-.02em;display:inline-flex;align-items:center;gap:.4rem}
+.logo-accent{color:var(--lime)}
+.nav-right{display:flex;align-items:center;gap:.5rem}
+.nl{padding:.46rem .85rem;border-radius:100px;font-size:.84rem;font-weight:500;color:var(--soft);transition:color .2s,background .2s}
+.nl:hover{color:var(--ink);background:rgba(255,255,255,.05)}
+.btn{display:inline-flex;align-items:center;gap:.4rem;padding:.78rem 1.6rem;border-radius:9px;font-size:.86rem;font-weight:600;transition:all .22s var(--ease)}
+.btn-lime{background:var(--lime);color:#050509;font-weight:700}
+.btn-lime:hover{background:var(--limel);transform:translateY(-1px)}
+.btn-g{border:1px solid var(--lines);color:var(--soft)}
+.btn-g:hover{border-color:rgba(238,238,246,.3);color:var(--ink);transform:translateY(-1px)}
+.hero{position:relative;min-height:90svh;display:flex;align-items:center;padding:calc(var(--nav)+5rem) var(--gap) 6rem}
+.hgrad{position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse 80% 70% at 15% 40%,rgba(99,96,224,.38) 0%,transparent 65%),radial-gradient(ellipse 50% 45% at 80% 20%,rgba(129,140,248,.1) 0%,transparent 55%),var(--bg)}
+.hero-in{position:relative;z-index:1;max-width:600px;width:100%}
+.hbadge{display:inline-flex;align-items:center;gap:.5rem;padding:.32rem .8rem .32rem .55rem;border-radius:100px;border:1px solid var(--lines);font-size:.7rem;font-weight:500;color:var(--mute);margin-bottom:2rem;letter-spacing:.02em}
+.pulse{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 8px rgba(34,197,94,.6);flex-shrink:0;animation:pulse 2.5s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.75)}}
+.h1{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:700;line-height:1.1;letter-spacing:-.03em;margin-bottom:1.4rem;color:#fff}
+.hsub{font-size:clamp(.9rem,1.6vw,1rem);color:var(--soft);max-width:480px;line-height:1.8;margin-bottom:2rem}
+.hctas{display:flex;gap:.65rem;flex-wrap:wrap;margin-bottom:2.5rem}
+.bread{font-family:var(--fm);font-size:.62rem;color:var(--mute);display:flex;align-items:center;gap:.4rem;margin-bottom:2rem}
+.bread a{color:var(--mute);transition:color .2s}.bread a:hover{color:var(--lime)}
+.bread span{opacity:.4}
+
+/* Use cases grid */
+.uses-grid{display:grid;grid-template-columns:1fr;gap:1rem}
+@media(min-width:620px){.uses-grid{grid-template-columns:repeat(2,1fr)}}
+.use{border-radius:var(--r2);border:1px solid var(--line);background:var(--bgc);padding:1.5rem}
+.use-label{font-family:var(--fm);font-size:.58rem;text-transform:uppercase;letter-spacing:.1em;color:var(--purple);margin-bottom:.6rem;display:block}
+.use h3{font-family:var(--fd);font-size:.95rem;font-weight:700;letter-spacing:-.02em;margin-bottom:.5rem}
+.use p{font-size:.82rem;color:var(--mute);line-height:1.6}
+
+/* Flow diagram */
+.flow{display:flex;flex-direction:column;gap:0;max-width:540px}
+.flow-step{display:flex;align-items:flex-start;gap:1.2rem;padding:1.2rem 1.4rem;border-radius:var(--r2);border:1px solid var(--line);background:var(--bgc);position:relative}
+.flow-step+.flow-step::before{content:'';display:block;width:2px;height:1.2rem;background:linear-gradient(to bottom,rgba(99,102,241,.3),rgba(99,102,241,.3));margin:0 0 0 26px}
+.flow-num{width:36px;height:36px;border-radius:50%;background:rgba(99,102,241,.12);border:1px solid rgba(99,102,241,.3);display:flex;align-items:center;justify-content:center;font-family:var(--fm);font-size:.7rem;font-weight:600;color:var(--purple);flex-shrink:0}
+.flow-ttl{font-family:var(--fd);font-size:.9rem;font-weight:700;letter-spacing:-.01em;margin-bottom:.25rem}
+.flow-desc{font-size:.8rem;color:var(--mute);line-height:1.55}
+.flow-ok .flow-num{background:rgba(34,197,94,.1);border-color:rgba(34,197,94,.25);color:var(--green)}
+
+/* Case study */
+.case-study{border-radius:var(--r2);border:1px solid rgba(99,102,241,.22);background:linear-gradient(160deg,var(--bgc),rgba(99,102,241,.05));padding:2rem}
+.case-blocks{display:flex;flex-direction:column;gap:.65rem;margin-top:1rem}
+.case-block{border-radius:var(--r);border:1px solid var(--line);background:rgba(255,255,255,.02);padding:.8rem}
+.case-block-label{font-family:var(--fd);font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:var(--indl);margin-bottom:.3rem;font-weight:600}
+.case-block p{font-size:.8rem;color:var(--soft);line-height:1.55}
+
+/* Pricing */
+.price-grid{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:1.5rem}
+@media(min-width:580px){.price-grid{grid-template-columns:repeat(2,1fr)}}
+.p-item{border-radius:var(--r);border:1px solid var(--line);background:var(--bgc2);padding:1.3rem}
+.p-name{font-family:var(--fm);font-size:.62rem;text-transform:uppercase;letter-spacing:.12em;color:var(--mute);margin-bottom:.4rem}
+.p-price{font-family:var(--fd);font-size:1.5rem;font-weight:800;letter-spacing:-.03em;color:var(--lime)}
+.p-desc{font-size:.8rem;color:var(--mute);line-height:1.6;margin-top:.5rem}
+
+/* Related */
+.related-grid{display:grid;grid-template-columns:1fr;gap:.75rem}
+@media(min-width:580px){.related-grid{grid-template-columns:repeat(2,1fr)}}
+.rel-link{border-radius:var(--r2);border:1px solid var(--line);background:var(--bgc);padding:1.2rem 1.4rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;transition:border-color .25s}
+.rel-link:hover{border-color:rgba(163,230,53,.3)}
+.rel-link-ttl{font-family:var(--fd);font-size:.9rem;font-weight:600;letter-spacing:-.01em}
+.rel-link-sub{font-family:var(--fm);font-size:.6rem;text-transform:uppercase;letter-spacing:.1em;color:var(--mute);margin-top:.2rem}
+.rel-arrow{color:var(--lime);flex-shrink:0;font-size:1.1rem}
+.cta-band{background:linear-gradient(135deg,rgba(99,96,224,.15),rgba(163,230,53,.08));border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:3rem 0}
+.cta-band .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem}
+.cta-band p{font-family:var(--fd);font-size:clamp(1.1rem,2.5vw,1.5rem);font-weight:700;letter-spacing:-.02em;color:var(--ink);max-width:480px}
+footer{padding:2rem 0;border-top:1px solid var(--line)}
+.foot-in{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.foot-copy{font-size:.78rem;color:var(--mute)}
+.foot-links{display:flex;gap:1.2rem}
+.foot-links a{font-size:.78rem;color:var(--mute);transition:color .2s}.foot-links a:hover{color:var(--ink)}
+</style>
+</head>
+<body>
+
+<nav id="nav" aria-label="Navegación principal">
+  <div class="nav-i">
+    <a href="/" class="logo" aria-label="Ruipérez Studio — inicio">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M17 17h.01M14 20h.01M20 14h.01M20 20h.01"/></svg>
+      Ruipérez<span class="logo-accent">Studio</span>
+    </a>
+    <div class="nav-right">
+      <a href="/" class="nl">← Volver</a>
+      <a href="https://wa.me/34642084042" target="_blank" rel="noopener noreferrer" class="btn btn-lime" style="padding:.42rem 1rem;font-size:.84rem">Contactar →</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<section class="hero">
+  <div class="hgrad" aria-hidden="true"></div>
+  <div class="hero-in">
+    <nav class="bread" aria-label="Ruta de navegación">
+      <a href="/">ruiperezstudio.es</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">Automatización de procesos en Murcia</span>
+    </nav>
+    <div class="hbadge" role="status">
+      <span class="pulse" aria-hidden="true"></span>
+      Disponible para proyectos en Murcia y Cartagena
+    </div>
+    <h1 class="h1">
+      Automatización de procesos<br>
+      <span class="grad-lime">para negocios en Murcia</span>
+    </h1>
+    <p class="hsub">Sistemas que hacen tus tareas repetitivas de forma automática: reservas online, emails de confirmación al instante, alertas y flujos sin intervención manual. Desde 590€.</p>
+    <div class="hctas">
+      <a href="https://wa.me/34642084042" target="_blank" rel="noopener noreferrer" class="btn btn-lime">Pedir presupuesto gratis →</a>
+      <a href="/" class="btn btn-g">Ver portfolio</a>
+    </div>
+    <div class="tags">
+      <span class="tag">n8n · Make</span>
+      <span class="tag">Murcia y Cartagena</span>
+      <span class="tag">Sin código</span>
+      <span class="tag">Email automático</span>
+      <span class="tag">Desde 590€</span>
+    </div>
+  </div>
+</section>
+
+<!-- QUÉ ES -->
+<section class="sec">
+  <div class="wrap">
+    <span class="ey">¿Qué es la automatización?</span>
+    <h2 style="font-size:clamp(1.5rem,3.5vw,2.2rem);font-weight:800;letter-spacing:-.035em;margin-bottom:1rem">
+      Tareas que haces a mano hoy<br><span class="grad-lime">que mañana se hacen solas.</span>
+    </h2>
+    <p style="max-width:600px;margin-bottom:2.5rem">La automatización de procesos conecta tus herramientas y sistemas para que trabajen juntos sin que tengas que intervenir. No es solo "tecnología" — es tiempo que recuperas cada día.</p>
+    <div class="uses-grid">
+      <div class="use">
+        <span class="use-label">Reservas y citas</span>
+        <h3>Reservas online automáticas</h3>
+        <p>El cliente elige fecha, hora y servicio en tu web. En ese momento recibe un email de confirmación automático. Tú recibes otro con los detalles. Sin teléfono, sin notas en papel, sin errores.</p>
+      </div>
+      <div class="use">
+        <span class="use-label">Comunicación</span>
+        <h3>Emails automáticos de seguimiento</h3>
+        <p>Cuando alguien rellena tu formulario de contacto, recibe un email de bienvenida al instante. Cuando llega una reserva, tú recibes una alerta. Todo sin que tengas que hacer nada.</p>
+      </div>
+      <div class="use">
+        <span class="use-label">Gestión de pedidos</span>
+        <h3>Alertas cuando llega un pedido</h3>
+        <p>Recibes una notificación inmediata — por email, WhatsApp o Telegram — cada vez que llega un pedido, una reserva o un nuevo contacto desde tu web.</p>
+      </div>
+      <div class="use">
+        <span class="use-label">Sincronización</span>
+        <h3>Conexión entre tus herramientas</h3>
+        <p>Un lead en tu web que se añade solo a tu hoja de cálculo. Un nuevo cliente que se registra solo en tu CRM. Apps que antes no se hablaban, conectadas de forma automática.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASO REAL -->
+<section class="sec sec-alt">
+  <div class="wrap">
+    <span class="ey">Un caso real en Cartagena</span>
+    <h2 style="font-size:clamp(1.5rem,3.5vw,2.2rem);font-weight:800;letter-spacing:-.035em;margin-bottom:2rem">
+      De gestionar reservas por teléfono<br><span class="grad-lime">a confirmaciones automáticas.</span>
+    </h2>
+
+    <div style="display:grid;grid-template-columns:1fr;gap:1.5rem;align-items:start">
+      <div class="case-study">
+        <div style="font-family:var(--fm);font-size:.6rem;text-transform:uppercase;letter-spacing:.12em;color:var(--purple);margin-bottom:.5rem">Clientes · Floristería Alameda y Tuk Tuk Cartagena</div>
+        <h3 style="font-size:1.1rem;font-weight:700;letter-spacing:-.02em;margin-bottom:.3rem">Sistema de reservas + confirmación automática</h3>
+        <div class="case-blocks">
+          <div class="case-block">
+            <div class="case-block-label">Problema</div>
+            <p>Las reservas se gestionaban por teléfono. Dependía de que alguien cogiese el teléfono en horario de apertura, anotase la reserva manualmente y recordase confirmársela al cliente. Fuera de horario, la reserva se perdía.</p>
+          </div>
+          <div class="case-block">
+            <div class="case-block-label">Solución implementada</div>
+            <p>Sistema de reservas online integrado en la web: el cliente elige fecha, hora y servicio. En ese mismo momento recibe un email de confirmación automático con todos los detalles. El negocio recibe otro email con los datos de la reserva. Sin intervención manual en ningún paso.</p>
+          </div>
+          <div class="case-block" style="border-color:rgba(34,197,94,.2);background:rgba(34,197,94,.04)">
+            <div class="case-block-label" style="color:var(--green)">Resultado</div>
+            <p>Reservas disponibles 24 horas, sin necesidad de estar al teléfono. El cliente recibe confirmación al instante. El negocio no tiene que gestionar nada manualmente — la reserva llega ya confirmada y registrada.</p>
+          </div>
+        </div>
+        <div class="tags" style="margin-top:1.2rem">
+          <span class="tag">Reservas online</span>
+          <span class="tag">Email automático</span>
+          <span class="tag">Resend API</span>
+          <span class="tag">Stripe</span>
+          <span class="tag">Sin intervención manual</span>
+        </div>
+      </div>
+
+      <div>
+        <div style="font-family:var(--fm);font-size:.58rem;text-transform:uppercase;letter-spacing:.14em;color:var(--purple);margin-bottom:1rem">Cómo funciona el flujo</div>
+        <div class="flow">
+          <div class="flow-step">
+            <div class="flow-num">1</div>
+            <div>
+              <div class="flow-ttl">El cliente elige fecha y hora</div>
+              <div class="flow-desc">Formulario de reserva en la web. Disponible 24 horas, 7 días a la semana.</div>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num">2</div>
+            <div>
+              <div class="flow-ttl">Se procesa el pago (si aplica)</div>
+              <div class="flow-desc">Stripe gestiona el cobro de forma segura. El cliente paga en el momento de reservar.</div>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num">3</div>
+            <div>
+              <div class="flow-ttl">Email de confirmación al instante</div>
+              <div class="flow-desc">El cliente recibe un correo con todos los detalles de su reserva. El negocio recibe otro aviso simultáneo.</div>
+            </div>
+          </div>
+          <div class="flow-step flow-ok">
+            <div class="flow-num">✓</div>
+            <div>
+              <div class="flow-ttl" style="color:var(--green)">Reserva completada sin intervención</div>
+              <div class="flow-desc">Nada que anotar, nada que confirmar, nada que recordar. El sistema lo gestiona todo.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HERRAMIENTAS -->
+<section class="sec">
+  <div class="wrap">
+    <span class="ey">Tecnología</span>
+    <h2 style="font-size:clamp(1.5rem,3.5vw,2.2rem);font-weight:800;letter-spacing:-.035em;margin-bottom:1rem">
+      Sin código, sin complejidad.<br><span class="grad-lime">Solo resultados.</span>
+    </h2>
+    <p style="max-width:580px;margin-bottom:2rem">Trabajo con herramientas de automatización probadas en producción. No tienes que entender cómo funcionan — solo ver que funciona.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:.75rem">
+      <div style="padding:.9rem 1.2rem;border-radius:var(--r);border:1px solid var(--line);background:var(--bgc)">
+        <div style="font-family:var(--fd);font-size:.88rem;font-weight:700;margin-bottom:.2rem">n8n</div>
+        <div style="font-size:.75rem;color:var(--mute)">Orquestación de flujos · self-hosted</div>
+      </div>
+      <div style="padding:.9rem 1.2rem;border-radius:var(--r);border:1px solid var(--line);background:var(--bgc)">
+        <div style="font-family:var(--fd);font-size:.88rem;font-weight:700;margin-bottom:.2rem">Make (Integromat)</div>
+        <div style="font-size:.75rem;color:var(--mute)">Automatización visual sin código</div>
+      </div>
+      <div style="padding:.9rem 1.2rem;border-radius:var(--r);border:1px solid var(--line);background:var(--bgc)">
+        <div style="font-family:var(--fd);font-size:.88rem;font-weight:700;margin-bottom:.2rem">Resend API</div>
+        <div style="font-size:.75rem;color:var(--mute)">Emails transaccionales automáticos</div>
+      </div>
+      <div style="padding:.9rem 1.2rem;border-radius:var(--r);border:1px solid var(--line);background:var(--bgc)">
+        <div style="font-family:var(--fd);font-size:.88rem;font-weight:700;margin-bottom:.2rem">Stripe</div>
+        <div style="font-size:.75rem;color:var(--mute)">Pagos y reservas con cobro integrado</div>
+      </div>
+      <div style="padding:.9rem 1.2rem;border-radius:var(--r);border:1px solid var(--line);background:var(--bgc)">
+        <div style="font-family:var(--fd);font-size:.88rem;font-weight:700;margin-bottom:.2rem">WhatsApp Business API</div>
+        <div style="font-size:.75rem;color:var(--mute)">Notificaciones y chatbots</div>
+      </div>
+      <div style="padding:.9rem 1.2rem;border-radius:var(--r);border:1px solid var(--line);background:var(--bgc)">
+        <div style="font-family:var(--fd);font-size:.88rem;font-weight:700;margin-bottom:.2rem">Claude API / OpenAI</div>
+        <div style="font-size:.75rem;color:var(--mute)">IA generativa para chatbots y clasificación</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRECIOS -->
+<section class="sec sec-alt">
+  <div class="wrap">
+    <span class="ey">Precios</span>
+    <h2 style="font-size:clamp(1.5rem,3.5vw,2.2rem);font-weight:800;letter-spacing:-.035em;margin-bottom:.6rem">
+      Inversión que se amortiza<br><span class="grad-lime">en semanas, no en años.</span>
+    </h2>
+    <p style="max-width:520px;margin-bottom:2rem">Un sistema de automatización ahorra tiempo cada día. El precio se recupera solo.</p>
+    <div class="price-grid">
+      <div class="p-item" style="border-color:rgba(163,230,53,.22);background:linear-gradient(160deg,var(--bgc2),rgba(163,230,53,.06))">
+        <div class="p-name">Automatización básica</div>
+        <div class="p-price">Desde 590€</div>
+        <div class="p-desc">Un flujo automatizado: reservas + email de confirmación, formulario de contacto + notificación, o un proceso repetitivo específico de tu negocio.</div>
+      </div>
+      <div class="p-item">
+        <div class="p-name">Chatbot IA para WhatsApp</div>
+        <div class="p-price">Desde 890€</div>
+        <div class="p-desc">Asistente que responde preguntas de clientes 24 horas por WhatsApp, toma reservas y cualifica leads. Más 60€/mes de mantenimiento.</div>
+      </div>
+      <div class="p-item">
+        <div class="p-name">Email marketing automatizado</div>
+        <div class="p-price">Desde 190€/mes</div>
+        <div class="p-desc">Secuencias de correos que se envían solos: bienvenida, seguimiento post-compra, recordatorios, carritos abandonados.</div>
+      </div>
+      <div class="p-item">
+        <div class="p-name">Proyecto a medida</div>
+        <div class="p-price">Presupuesto cerrado</div>
+        <div class="p-desc">Si tienes un proceso concreto que quieres automatizar, cuéntamelo y te digo si es viable y cuánto costaría. Sin compromiso.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS RELACIONADOS -->
+<section class="sec">
+  <div class="wrap">
+    <span class="ey">Servicios relacionados</span>
+    <h2 style="font-size:clamp(1.3rem,3vw,1.8rem);font-weight:800;letter-spacing:-.03em;margin-bottom:1.5rem">Otros servicios para tu negocio</h2>
+    <div class="related-grid">
+      <a href="/chatbot-whatsapp-cartagena/" class="rel-link">
+        <div>
+          <div class="rel-link-ttl">Chatbot IA para WhatsApp</div>
+          <div class="rel-link-sub">Respuestas 24 horas · IA generativa · desde 890€</div>
+        </div>
+        <span class="rel-arrow" aria-hidden="true">→</span>
+      </a>
+      <a href="/diseno-web-cartagena/" class="rel-link">
+        <div>
+          <div class="rel-link-ttl">Diseño web en Cartagena</div>
+          <div class="rel-link-sub">Código propio · SEO local · desde 590€</div>
+        </div>
+        <span class="rel-arrow" aria-hidden="true">→</span>
+      </a>
+      <a href="/diseno-web-murcia/" class="rel-link">
+        <div>
+          <div class="rel-link-ttl">Diseño web en Murcia</div>
+          <div class="rel-link-sub">Toda la Región · SEO incluido · desde 590€</div>
+        </div>
+        <span class="rel-arrow" aria-hidden="true">→</span>
+      </a>
+      <a href="/" class="rel-link">
+        <div>
+          <div class="rel-link-ttl">Portfolio completo</div>
+          <div class="rel-link-sub">Proyectos reales · precios · testimonios</div>
+        </div>
+        <span class="rel-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div class="cta-band">
+  <div class="wrap">
+    <p>¿Qué proceso de tu negocio quieres automatizar?</p>
+    <a href="https://wa.me/34642084042" target="_blank" rel="noopener noreferrer" class="btn btn-lime">Cuéntamelo por WhatsApp →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap foot-in">
+    <span class="foot-copy">© 2025–2026 Ruipérez Studio · Cartagena, Murcia</span>
+    <div class="foot-links">
+      <a href="/">Inicio</a>
+      <a href="/#trabajo">Portfolio</a>
+      <a href="/#contacto">Contacto</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
