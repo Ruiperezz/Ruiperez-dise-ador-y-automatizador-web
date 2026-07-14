@@ -68,7 +68,8 @@
   "currenciesAccepted": "EUR",
   "openingHours": "Mo-Fr 09:00-20:00",
   "sameAs": [
-    "https://instagram.com/ruiperez.dev",
+    "https://www.instagram.com/RuiperezStudio/",
+    "https://x.com/RuiperezStudio",
     "https://www.linkedin.com/in/alvaro-ruiperez-15b173417/?skipRedirect=true"
   ],
   "hasOfferCatalog": {
@@ -411,8 +412,13 @@ h1,h2,h3,h4{font-family:var(--fd);line-height:1.08;letter-spacing:-.03em;text-wr
 .coarr{margin-left:auto;color:var(--lime);font-size:1rem;transition:transform .2s;flex-shrink:0}
 .copt:hover .coarr{transform:translateX(4px)}
 .csocs{display:flex;align-items:center;gap:.7rem;font-size:.83rem;color:var(--mute)}
-.soc{font-weight:500;transition:color .2s}.soc:hover{color:var(--lime)}
+.soc{display:inline-flex;align-items:center;gap:.4rem;font-weight:500;transition:color .2s}.soc:hover{color:var(--lime)}
+.soc-ico{flex-shrink:0;width:20px;height:20px}
 .ssep{color:var(--line)}
+.fsocs{display:flex;gap:.55rem;align-items:center}
+.fsoc{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:8px;border:1px solid var(--line);transition:border-color .2s,transform .2s}
+.fsoc:hover{border-color:rgba(163,230,53,.4);transform:translateY(-2px)}
+.fsoc svg{width:18px;height:18px}
 .gcard{border-radius:var(--r2);border:1px solid var(--line);background:var(--bgc);padding:1.9rem}
 @media(min-width:900px){.gcard{position:sticky;top:calc(var(--nav) + 1rem)}}
 .glbl{font-family:var(--fm);font-size:.62rem;text-transform:uppercase;letter-spacing:.14em;color:var(--mute);margin-bottom:1.5rem}
@@ -1334,9 +1340,20 @@ footer{padding:2.5rem 0 1.5rem;border-top:1px solid var(--line)}
           </a>
         </div>
         <div class="csocs">
-          <a href="https://instagram.com/ruiperez.dev" target="_blank" rel="noopener noreferrer" class="soc">Instagram</a>
+          <a href="https://www.instagram.com/RuiperezStudio/" target="_blank" rel="noopener noreferrer" class="soc" aria-label="Instagram de Ruipérez Studio">
+            <svg class="soc-ico" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><radialGradient id="ig-c" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><rect width="24" height="24" rx="6" fill="url(#ig-c)"/><rect x="2.5" y="2.5" width="19" height="19" rx="4.5" fill="none" stroke="white" stroke-width="1.5"/><circle cx="12" cy="12" r="4" fill="none" stroke="white" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="white"/></svg>
+            Instagram
+          </a>
           <span class="ssep">·</span>
-          <a href="https://www.linkedin.com/in/alvaro-ruiperez-15b173417/?skipRedirect=true" target="_blank" rel="noopener noreferrer" class="soc">LinkedIn</a>
+          <a href="https://x.com/RuiperezStudio" target="_blank" rel="noopener noreferrer" class="soc" aria-label="Twitter / X de Ruipérez Studio">
+            <svg class="soc-ico" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#000"/><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="white"/></svg>
+            Twitter / X
+          </a>
+          <span class="ssep">·</span>
+          <a href="https://www.linkedin.com/in/alvaro-ruiperez-15b173417/?skipRedirect=true" target="_blank" rel="noopener noreferrer" class="soc" aria-label="LinkedIn de Ruipérez Studio">
+            <svg class="soc-ico" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#0A66C2"/><path d="M8.4 19H5.8V10h2.6v9zM7.1 8.8a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM19 19h-2.6v-4.4c0-1-.02-2.3-1.4-2.3-1.4 0-1.6 1.1-1.6 2.2V19H10.8V10h2.5v1.2h.04c.35-.66 1.2-1.36 2.47-1.36 2.64 0 3.13 1.74 3.13 4V19z" fill="white"/></svg>
+            LinkedIn
+          </a>
         </div>
       </div>
       <div class="rv" data-delay="0.14">
@@ -1369,6 +1386,17 @@ footer{padding:2.5rem 0 1.5rem;border-top:1px solid var(--line)}
         <a href="#vsagencia" class="fl">Precios</a>
         <a href="#faq" class="fl">FAQ</a>
         <a href="#contacto" class="fl">Contacto</a>
+      </div>
+      <div class="fsocs">
+        <a href="https://www.instagram.com/RuiperezStudio/" target="_blank" rel="noopener noreferrer" class="fsoc" aria-label="Instagram de Ruipérez Studio">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><radialGradient id="ig-f" cx="30%" cy="107%" r="150%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><rect width="24" height="24" rx="6" fill="url(#ig-f)"/><rect x="2.5" y="2.5" width="19" height="19" rx="4.5" fill="none" stroke="white" stroke-width="1.5"/><circle cx="12" cy="12" r="4" fill="none" stroke="white" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.2" fill="white"/></svg>
+        </a>
+        <a href="https://x.com/RuiperezStudio" target="_blank" rel="noopener noreferrer" class="fsoc" aria-label="Twitter / X de Ruipérez Studio">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#000"/><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="white"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/alvaro-ruiperez-15b173417/?skipRedirect=true" target="_blank" rel="noopener noreferrer" class="fsoc" aria-label="LinkedIn de Ruipérez Studio">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#0A66C2"/><path d="M8.4 19H5.8V10h2.6v9zM7.1 8.8a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM19 19h-2.6v-4.4c0-1-.02-2.3-1.4-2.3-1.4 0-1.6 1.1-1.6 2.2V19H10.8V10h2.5v1.2h.04c.35-.66 1.2-1.36 2.47-1.36 2.64 0 3.13 1.74 3.13 4V19z" fill="white"/></svg>
+        </a>
       </div>
     </div>
     <div class="foot-bottom">
