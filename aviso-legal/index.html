@@ -63,13 +63,6 @@ footer{border-top:1px solid var(--line);padding:1.6rem 0}
 .fl-legal a{font-size:.8rem;color:var(--mute);text-decoration:none}
 .fl-legal a:hover{color:var(--lime)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-.cookie-banner{position:fixed;left:0;right:0;bottom:0;z-index:8000;background:#0e0e1a;border-top:1px solid rgba(244,243,240,.13);padding:1rem 1.4rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:1rem;transform:translateY(100%);transition:transform .4s cubic-bezier(.16,1,.3,1)}
-.cookie-banner.show{transform:translateY(0)}
-.cookie-banner p{font-size:.86rem;color:rgba(245,244,241,.72);margin:0;max-width:38rem}
-.cookie-banner a{color:#a3e635;text-decoration:underline}
-.cookie-btns{display:flex;gap:.6rem}
-.cookie-btn{font-family:inherit;font-size:.84rem;font-weight:600;padding:.55rem 1.2rem;border-radius:8px;cursor:pointer;border:1px solid rgba(244,243,240,.18);background:transparent;color:#f5f4f1}
-.cookie-accept{background:#a3e635;color:#0b0b14;border-color:#a3e635}
 </style>
 </head>
 <body>
@@ -110,26 +103,6 @@ footer{border-top:1px solid var(--line);padding:1.6rem 0}
     <div class="fl-legal"><a href="/aviso-legal/">Aviso legal</a><a href="/privacidad/">Privacidad</a><a href="/cookies/">Cookies</a></div>
   </div>
 </footer>
-<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Consentimiento de cookies">
-  <p>Uso cookies analíticas para mejorar tu experiencia. Puedes aceptar o rechazarlas. <a href="/cookies/">Más información</a></p>
-  <div class="cookie-btns">
-    <button class="cookie-btn cookie-accept" id="cookie-accept">Aceptar</button>
-    <button class="cookie-btn cookie-reject" id="cookie-reject">Rechazar</button>
-  </div>
-</div>
-<script>
-(function(){
-  var b=document.getElementById("cookie-banner");if(!b)return;
-  var c=null;try{c=localStorage.getItem("cookie-consent")}catch(e){}
-  function load(){if(document.getElementById("va-script"))return;
-    var s=document.createElement("script");s.id="va-script";s.defer=true;
-    s.src="https://cdn.vercel-insights.com/v1/script.js";document.head.appendChild(s)}
-  if(c==="accepted"){load()}
-  else if(c!=="rejected"){setTimeout(function(){b.classList.add("show")},1500)}
-  var a=document.getElementById("cookie-accept"),r=document.getElementById("cookie-reject");
-  if(a)a.addEventListener("click",function(){try{localStorage.setItem("cookie-consent","accepted")}catch(e){}b.classList.remove("show");load()});
-  if(r)r.addEventListener("click",function(){try{localStorage.setItem("cookie-consent","rejected")}catch(e){}b.classList.remove("show")});
-})();
-</script>
+<script src="/js/consent.js" defer></script>
 </body>
 </html>
