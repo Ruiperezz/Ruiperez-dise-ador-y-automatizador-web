@@ -23,16 +23,16 @@ HTML + CSS + JavaScript **estático puro**. Sin `package.json`, sin npm, sin bun
 
 ## Estructura
 
-16 páginas, una carpeta por URL:
+17 páginas, una carpeta por URL:
 
 | Grupo | Rutas |
 |---|---|
 | Home | `/` |
-| Servicios (8) | `/web-corporativa/` `/landing-page/` `/tienda-online/` `/automatizacion/` `/chatbot-whatsapp/` `/seo-local/` `/email-marketing/` `/mantenimiento-web/` |
+| Servicios (9) | `/web-corporativa/` `/landing-page/` `/tienda-online/` `/automatizacion/` `/chatbot-whatsapp/` `/seo-local/` `/email-marketing/` `/mantenimiento-web/` `/gestion-redes-sociales/` |
 | Ciudad (4) | `/diseno-web-cartagena/` `/diseno-web-murcia/` `/automatizacion-procesos-murcia/` `/chatbot-whatsapp-cartagena/` |
 | Legales (3) | `/aviso-legal/` `/privacidad/` `/cookies/` |
 
-Otros archivos: `sitemap.xml` (16 URLs), `robots.txt`, `vercel.json` (CSP, HSTS, X-Frame-Options, cache de `/img/`), `favicon.svg`, `apple-touch-icon.png`, `img/`.
+Otros archivos: `sitemap.xml` (17 URLs), `robots.txt`, `vercel.json` (CSP, HSTS, X-Frame-Options, cache de `/img/`), `favicon.svg`, `apple-touch-icon.png`, `img/`.
 
 ## Precios oficiales
 
@@ -46,7 +46,8 @@ Otros archivos: `sitemap.xml` (16 URLs), `robots.txt`, `vercel.json` (CSP, HSTS,
 | Automatización de procesos | desde 900€ |
 | Chatbot IA para WhatsApp | desde 1.200€ + 120€/mes |
 | Email marketing | desde 190€/mes |
-| SEO local | ver `PLAN.md` fase 1.11 |
+| SEO local | desde 290€/mes |
+| Gestión de redes sociales | desde 350€/mes |
 | Mantenimiento web | 90–150€/mes |
 
 Cambios puntuales fuera de contrato: 55€/hora.
@@ -74,7 +75,8 @@ No uses ningún otro nombre de negocio. Si necesitas un dato, una cifra o un tes
 ## Reglas técnicas
 
 - Las preguntas y respuestas del `FAQPage` en JSON-LD **deben coincidir literalmente** con el FAQ visible. Si cambias una, cambia la otra en el mismo commit.
-- La CSP de `vercel.json` solo permite `fonts.googleapis.com`, `fonts.gstatic.com` y `cdn.vercel-insights.com`. Cualquier otro recurso externo se bloquea sin aviso en consola.
+- La CSP de `vercel.json` permite las fuentes de Google y los dominios de Meta, TikTok y Google Analytics, y nada más. Cualquier otro recurso externo **se bloquea sin aviso en consola**.
+- El consentimiento y la medición viven en `/js/consent.js`, compartido por las 17 páginas. Ver `docs/medicion.md`. No lo dupliques en línea.
 - Imágenes con `width` y `height` reales y `height:auto` en CSS. Declarar una proporción incorrecta deforma la imagen.
 - Ningún script de terceros se ejecuta antes del consentimiento de cookies.
 - Contraste WCAG AA, foco visible, `alt` en todas las imágenes, objetivos táctiles de 44px o más.
