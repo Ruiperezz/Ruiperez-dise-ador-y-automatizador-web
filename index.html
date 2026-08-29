@@ -44,7 +44,7 @@
   "description": "Ruipérez Studio — estudio de diseño web profesional en Cartagena y Murcia. Webs a medida desde 590€, automatización de procesos e IA, chatbots WhatsApp para negocios locales.",
   "url": "https://ruiperezstudio.es",
   "telephone": "+34642084042",
-  "email": "ruiperezyasociadoss@gmail.com",
+  "email": "hola@ruiperezstudio.es",
   "priceRange": "€€",
   "image": "https://ruiperezstudio.es/img/og-image.png",
   "logo": "https://ruiperezstudio.es/img/logo-ruiperezstudio.png",
@@ -96,7 +96,7 @@
     {"@type": "Question", "name": "¿Cuánto cuesta exactamente una web?", "acceptedAnswer": {"@type": "Answer", "text": "Una landing page parte desde 590€ y una web corporativa completa desde 890€. Con tienda online desde 1.990€. Todos los precios son sin IVA (+ 21%). Precio cerrado siempre, antes de empezar. Sin extras ni sorpresas."}},
     {"@type": "Question", "name": "¿El pago es único o hay cuotas mensuales?", "acceptedAnswer": {"@type": "Answer", "text": "El pago por la web es único. No hay cuotas mensuales obligatorias. El código te lo entregamos al cierre del proyecto. El mantenimiento es opcional y sin permanencia."}},
     {"@type": "Question", "name": "¿En cuánto tiempo tienes lista mi web?", "acceptedAnswer": {"@type": "Answer", "text": "Web estándar: 1 a 3 semanas desde que me das el contenido. Proyectos con tienda o integraciones especiales: 4-5 semanas. Siempre digo el plazo exacto antes de empezar."}},
-    {"@type": "Question", "name": "¿La web es mía o dependo de ti?", "acceptedAnswer": {"@type": "Answer", "text": "El código es tuyo al 100% desde la entrega. Acceso completo al código fuente incluido en el precio. El alojamiento está gestionado por Ruipérez Studio — si en el futuro decides migrar, te acompañamos sin coste adicional."}},
+    {"@type": "Question", "name": "¿La web es mía o dependo de ti?", "acceptedAnswer": {"@type": "Answer", "text": "El código es tuyo al 100% desde la entrega, con acceso completo al código fuente incluido en el precio. El alojamiento va en Vercel, que en el plan que uso para estas webs no tiene coste. El único gasto recurrente es el dominio, unos 12€ al año, que gestiono yo y te repercuto sin recargo; si prefieres ponerlo a tu nombre, también puedes. Si algún día quieres llevarte la web a otro proveedor, no tienes que pedirme permiso ni pagarme nada: te entrego el código y te ayudo con la migración sin coste."}},
     {"@type": "Question", "name": "¿Incluyes SEO o se paga aparte?", "acceptedAnswer": {"@type": "Answer", "text": "El SEO local está incluido en todas las webs: estructura optimizada para Google, velocidad de carga, etiquetas correctas, Schema JSON-LD y configuración de Google Business. Sin coste adicional."}},
     {"@type": "Question", "name": "¿Qué ocurre después de la entrega?", "acceptedAnswer": {"@type": "Answer", "text": "Los primeros 30 días incluyen ajustes sin coste. Después: plan de mantenimiento opcional desde 90€/mes o cambios puntuales a 55€/hora. Sin permanencia."}},
     {"@type": "Question", "name": "¿Qué es exactamente la automatización de procesos?", "acceptedAnswer": {"@type": "Answer", "text": "Sistemas que hacen tareas repetitivas solos: email automático cuando llega un lead, chatbot en WhatsApp que responde y toma reservas a las 2am, alertas de pedidos, sincronización entre apps. Desde 900€."}},
@@ -286,6 +286,7 @@ html.js .anim.go .msg,html.js .anim.go .chat-foot{opacity:1;transform:none;trans
 .band-i+.band-i{border-left:1px solid rgba(247,242,233,.14)}
 .band-n{font-family:var(--fd);font-size:clamp(2.1rem,4vw,2.9rem);line-height:1;color:var(--sand);font-weight:400}
 .band-l{font-size:.82rem;color:rgba(247,242,233,.68);margin-top:.5rem;line-height:1.4}
+.band-nota{margin-top:.9rem;font-size:.84rem;color:var(--mute);line-height:1.55;max-width:52rem}
 
 /* ══ servicios ══ */
 .svc{position:relative}
@@ -387,6 +388,9 @@ html.js .anim.go .msg,html.js .anim.go .chat-foot{opacity:1;transform:none;trans
 .tst-w{margin-top:auto;display:flex;align-items:center;gap:.75rem;padding-top:1.1rem;border-top:1px solid #EDE4D4}
 .av{width:40px;height:40px;border-radius:50%;background:var(--olive);color:var(--bg);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.82rem;flex:none}
 .tst-n{font-weight:700;font-size:.94rem}
+.tst-link{margin-top:1.4rem;font-size:.92rem;font-weight:700}
+.vs-sub2{font-size:.8rem;color:rgba(247,242,233,.6);margin:.35rem 0 1.2rem;position:relative}
+.pill small{display:block;font-size:.6rem;opacity:.8;margin-top:.1rem;line-height:1.2}
 .tst-r{font-size:.78rem;color:var(--mute)}
 
 /* ══ faq ══ */
@@ -531,7 +535,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
           <div class="chat-foot" style="--d:2200ms"><span class="dot"></span>atendido sin que tú estuvieras</div>
         </div>
       </div>
-      <div class="pill"><b>+30%</b><span>más clientes</span></div>
+      <div class="pill"><b>+30%</b><span>más clientes<br><small>según el cliente</small></span></div>
     </div>
   </div>
 </section>
@@ -546,14 +550,12 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
           <li class="mq-i"><b>Floristería Alameda</b><i>Cartagena</i></li>
           <li class="mq-i"><b>Casa del Sushi</b><i>Cartagena</i></li>
           <li class="mq-i"><b>TukTuk Cartagena</b><i>Turismo</i></li>
-          <li class="mq-i"><b>Zenconfort</b><i>Descanso</i></li>
-        </ul>
+                  </ul>
         <ul class="mq-l" aria-hidden="true">
           <li class="mq-i"><b>Floristería Alameda</b><i>Cartagena</i></li>
           <li class="mq-i"><b>Casa del Sushi</b><i>Cartagena</i></li>
           <li class="mq-i"><b>TukTuk Cartagena</b><i>Turismo</i></li>
-          <li class="mq-i"><b>Zenconfort</b><i>Descanso</i></li>
-        </ul>
+                  </ul>
       </div>
     </div>
   </div>
@@ -604,11 +606,12 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
       </div>
     </div>
     <div class="band rv" id="band">
-      <div class="band-i"><div class="band-n"><span class="cnt" data-to="30" data-pre="+" data-suf="%">+30%</span></div><div class="band-l">más clientes en el primer caso medido</div></div>
+      <div class="band-i"><div class="band-n"><span class="cnt" data-to="311">311</span></div><div class="band-l">reseñas de 4,9★ que ahora sí se ven en su web</div></div>
       <div class="band-i"><div class="band-n"><span class="cnt" data-to="24" data-suf="/7">24/7</span></div><div class="band-l">tu negocio atiende aunque esté cerrado</div></div>
       <div class="band-i"><div class="band-n"><span class="cnt" data-to="3" data-pre="1–" data-suf=" sem">1–3 sem</span></div><div class="band-l">desde que me pasas el contenido</div></div>
-      <div class="band-i"><div class="band-n"><span class="cnt" data-to="0" data-suf="€">0€</span></div><div class="band-l">de cuota mensual obligatoria</div></div>
+      <div class="band-i"><div class="band-n"><span class="cnt" data-to="0" data-suf="€">0€</span></div><div class="band-l">de cuota en la web</div></div>
     </div>
+    <p class="band-nota rv">La web es pago único: no tiene cuota. Los servicios de automatización, chatbot y mantenimiento sí llevan cuota mensual, y está indicada en cada uno.</p>
   </div>
 </section>
 
@@ -681,7 +684,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
         <p>Posicionamiento continuo en Google y Google Maps para que te encuentren cuando buscan lo que ofreces en Cartagena o Murcia. Informe mensual de resultados reales.</p>
         <div class="forwho"><b>Para ti si:</b> ya tienes web pero no apareces cuando buscan tu servicio en tu ciudad.</div>
         <div class="chips"><span class="chip">Google Maps</span><span class="chip">Palabras clave locales</span><span class="chip">Informe mensual</span></div>
-        <div class="svc-foot"><div><div class="svc-pr"><span class="pfx">Desde</span>450€/mes</div><div class="svc-q">Sin permanencia</div><span class="iva">+ 21% IVA</span></div><span class="svc-go">Ver detalle <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        <div class="svc-foot"><div><div class="svc-pr"><span class="pfx">Desde</span>290€/mes</div><div class="svc-q">Sin permanencia</div><span class="iva">+ 21% IVA</span></div><span class="svc-go">Ver detalle <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
       </a>
       <a class="card svc rv" style="--d:90ms" href="/email-marketing/">
         <div class="svc-top"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg></span><div class="svc-lab">Clientes que vuelven</div></div>
@@ -717,7 +720,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
         <h2>311 reseñas y una web<br>que <em>no las merecía</em>.</h2>
         <p>Floristería Alameda tenía 4,9 estrellas en Google y una plantilla genérica con textos de ejemplo. Rediseño completo, pedidos por WhatsApp integrados y ficha de Google ordenada.</p>
         <div class="stats">
-          <div class="stat"><b>+30%</b><span>más clientes</span></div>
+          <div class="stat"><b>+30%</b><span>más clientes<br>según datos del cliente</span></div>
           <div class="stat"><b>4,9★</b><span>311 reseñas</span></div>
           <div class="stat"><b>2 sem</b><span>de entrega</span></div>
         </div>
@@ -743,10 +746,10 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
       <p class="sec-note">Una agencia mantiene oficina, comerciales y departamentos. Yo no, y eso lo notas en el presupuesto.</p>
     </div>
     <div class="vs">
-      <div class="vs-c vs-a rv"><div class="vs-who">Agencia tradicional</div><div class="vs-pr">2.500–8.000€</div><div class="vs-sub">+ cuota mensual de 200–500€</div><ul><li>Hablas con un comercial</li><li>Plazos de 1 a 3 meses</li><li>Cuotas mensuales obligatorias</li><li>Cambios = más presupuesto</li><li>La web suele depender de ellos</li></ul></div>
-      <div class="vs-c vs-b rv" style="--d:90ms"><div class="vs-who">Ruipérez Studio</div><div class="vs-pr">590–2.500€</div><div class="vs-sub">pago único (+ 21% IVA) — el código es tuyo desde la entrega</div><ul><li>Interlocutor único desde el inicio</li><li>Lista en 1–3 semanas</li><li>Sin cuotas mensuales obligatorias</li><li>30 días de ajustes incluidos</li><li>Código fuente entregado al completo</li><li>SEO local incluido en todas las webs</li></ul></div>
+      <div class="vs-c vs-a rv"><div class="vs-who">Agencia tradicional</div><div class="vs-pr">Presupuesto a medida</div><div class="vs-sub">habitualmente con cuota mensual</div><ul><li>Hablas con un comercial</li><li>Plazos de 1 a 3 meses</li><li>Cuotas mensuales obligatorias</li><li>Cambios = más presupuesto</li><li>La web suele depender de ellos</li></ul></div>
+      <div class="vs-c vs-b rv" style="--d:90ms"><div class="vs-who">Ruipérez Studio</div><div class="vs-pr">590–2.500€</div><div class="vs-sub2">en webs · los proyectos de automatización van aparte</div><div class="vs-sub">pago único (+ 21% IVA) — el código es tuyo desde la entrega</div><ul><li>Interlocutor único desde el inicio</li><li>Lista en 1–3 semanas</li><li>Sin cuotas mensuales obligatorias</li><li>30 días de ajustes incluidos</li><li>Código fuente entregado al completo</li><li>SEO local incluido en todas las webs</li></ul></div>
     </div>
-    <div class="vs-note rv"><strong>¿Y las webs de 180–300€?</strong> Las plantillas de Wix o WordPress básico tienen su lugar si el presupuesto no da para más. El problema es lo que no incluyen: SEO local real, diseño único y costes anuales ocultos (hosting, plugins, dominio, renovación del tema) que hacen que el precio real acabe siendo mayor. <em>Precios medios del mercado en Murcia · 2026.</em></div>
+    <div class="vs-note rv"><strong>¿Y las webs de 180–300€?</strong> Las plantillas de Wix o WordPress básico tienen su lugar si el presupuesto no da para más. El problema es lo que no incluyen: SEO local real, diseño único y costes anuales ocultos (hosting, plugins, dominio, renovación del tema) que hacen que el precio real acabe siendo mayor.</div>
   </div>
 </section>
 
@@ -773,9 +776,10 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
     </div>
     <div class="g3">
       <div class="tst rv" style="--d:0ms"><div class="stars" aria-label="5 de 5 estrellas">★★★★★</div><p>Quiero agradecer a Ruipérez el excelente trabajo realizado en la creación de nuestra página web. Desde el primer momento demostró una gran profesionalidad, creatividad y dedicación. Supo entender perfectamente nuestras necesidades y transformarlas en una web moderna, atractiva y fácil de usar.</p><div class="tst-w"><span class="av" aria-hidden="true">FA</span><div><div class="tst-n">Floristería Alameda</div><div class="tst-r">Floristería · Cartagena · 4,9★ en Google</div></div></div></div>
-      <div class="tst rv" style="--d:90ms"><div class="stars" aria-label="5 de 5 estrellas">★★★★★</div><p>Quedé muy satisfecho con el servicio. Desde el primer momento la atención fue excelente, muy profesional y cercana. Supieron entender perfectamente lo que necesitaba y lo plasmaron en un diseño moderno, funcional y adaptado a mi proyecto.</p><div class="tst-w"><span class="av" aria-hidden="true">PN</span><div><div class="tst-n">Pepe Narváez</div><div class="tst-r">Cliente · Reseña en Google</div></div></div></div>
-      <div class="tst rv" style="--d:180ms"><div class="stars" aria-label="5 de 5 estrellas">★★★★★</div><p>Me creó una web moderna y profesional para mi negocio y estoy muy satisfecho con el resultado. Ha cuidado todos los detalles, desde el diseño hasta la velocidad de carga y la adaptación a móvil.</p><div class="tst-w"><span class="av" aria-hidden="true">CS</span><div><div class="tst-n">Casa del Sushi</div><div class="tst-r">Restauración · Cartagena</div></div></div></div>
+      <div class="tst rv" style="--d:90ms"><div class="stars" aria-label="5 de 5 estrellas">★★★★★</div><p>Me creó una web moderna y profesional para mi negocio y estoy muy satisfecho con el resultado. Ha cuidado todos los detalles, desde el diseño hasta la velocidad de carga y la adaptación a móvil.</p><div class="tst-w"><span class="av" aria-hidden="true">CS</span><div><div class="tst-n">Casa del Sushi</div><div class="tst-r">Restauración · Cartagena</div></div></div></div>
+      <div class="tst rv" style="--d:180ms"><div class="stars" aria-label="5 de 5 estrellas">★★★★★</div><p>Quedé muy satisfecho con el servicio. Desde el primer momento la atención fue excelente, muy profesional y cercana. Supieron entender perfectamente lo que necesitaba y lo plasmaron en un diseño moderno, funcional y adaptado a mi proyecto.</p><div class="tst-w"><span class="av" aria-hidden="true">PN</span><div><div class="tst-n">Pepe Narváez</div><div class="tst-r">Cliente · Reseña en Google</div></div></div></div>
     </div>
+    <p class="tst-link rv" style="color:var(--red)">[PEDIR AL CLIENTE] URL de la ficha de Google Business — aquí va el enlace «Ver las reseñas en Google →»</p>
   </div>
 </section>
 
@@ -784,7 +788,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
     <div class="sec-hd rv">
       <div><span class="ey">Dudas</span><h2>Lo que más te vas a <em>preguntar</em></h2></div>
     </div>
-    <div class="faq rv"><div><button class="fq" aria-expanded="false">¿Cuánto cuesta exactamente una web?<span class="ficon" aria-hidden="true">+</span></button><div class="fa"><p>Una landing page parte desde 590€ y una web corporativa completa desde 890€. Con tienda online desde 1.990€. Todos los precios son sin IVA (+ 21%). Precio cerrado siempre, antes de empezar. Sin extras ni sorpresas.</p></div></div><div><button class="fq" aria-expanded="false">¿El pago es único o hay cuotas mensuales?<span class="ficon" aria-hidden="true">+</span></button><div class="fa"><p>El pago por la web es único. No hay cuotas mensuales obligatorias. El código te lo entregamos al cierre del proyecto. El mantenimiento es opcional y sin permanencia.</p></div></div><div><button class="fq" aria-expanded="false">¿En cuánto tiempo tienes lista mi web?<span class="ficon" aria-hidden="true">+</span></button><div class="fa"><p>Web estándar: 1 a 3 semanas desde que me das el contenido. Proyectos con tienda o integraciones especiales: 4-5 semanas. Siempre digo el plazo exacto antes de empezar.</p></div></div><div><button class="fq" aria-expanded="false">¿La web es mía o dependo de ti?<span class="ficon" aria-hidden="true">+</span></button><div class="fa"><p>El código es tuyo al 100% desde la entrega. Acceso completo al código fuente incluido en el precio. El alojamiento está gestionado por Ruipérez Studio — si en el futuro decides migrar, te acompañamos sin coste adicional.</p></div></div><div><button class="fq" aria-expanded="false">¿Incluyes SEO o se paga aparte?<span class="ficon" aria-hidden="true">+</span></button><div class="fa"><p>El SEO local está incluido en todas las webs: estructura optimizada para Google, velocidad de carga, etiquetas correctas, Schema JSON-LD y configuración de Google Business. Sin coste adicional.</p></div></div><div><button class="fq" aria-expanded="false">¿Qué ocurre después de la entrega?<span class="ficon" aria-hidden="true">+</span></button><div class="fa"><p>Los primeros 30 días incluyen ajustes sin coste. Después: plan de mantenimiento opcional desde 90€/mes o cambios puntuales a 55€/hora. Sin permanencia.</p></div></div><div><button class="fq" aria-expanded="false">¿Qué es exactamente la automatización de procesos?<span class="ficon" aria-hidden="true">+</span></button><div class="fa"><p>Sistemas que hacen tareas repetitivas solos: email automático cuando llega un lead, chatbot en WhatsApp que responde y toma reservas a las 2am, alertas de pedidos, sincronización entre apps. Desde 900€.</p></div></div><div><button class="fq" aria-expanded="false">¿Por qué no contratar una web de 180–300€?<span class="ficon" aria-hidden="true">+</span></button><div class="fa"><p>Las webs de 180-300€ son plantillas genéricas sin SEO local real, lentas en móvil y con costes anuales ocultos (hosting, dominio, plugins). Con código a medida obtienes diseño único, velocidad y posicionamiento real en Google.</p></div></div></div>
+    <div class="faq rv"><div><button class="fq" aria-expanded="false">¿Cuánto cuesta exactamente una web?<span class="ficon" aria-hidden="true">+</span></button><div class="fa"><p>Una landing page parte desde 590€ y una web corporativa completa desde 890€. Con tienda online desde 1.990€. Todos los precios son sin IVA (+ 21%). Precio cerrado siempre, antes de empezar. Sin extras ni sorpresas.</p></div></div><div><button class="fq" aria-expanded="false">¿El pago es único o hay cuotas mensuales?<span class="ficon" aria-hidden="true">+</span></button><div class="fa"><p>El pago por la web es único. No hay cuotas mensuales obligatorias. El código te lo entregamos al cierre del proyecto. El mantenimiento es opcional y sin permanencia.</p></div></div><div><button class="fq" aria-expanded="false">¿En cuánto tiempo tienes lista mi web?<span class="ficon" aria-hidden="true">+</span></button><div class="fa"><p>Web estándar: 1 a 3 semanas desde que me das el contenido. Proyectos con tienda o integraciones especiales: 4-5 semanas. Siempre digo el plazo exacto antes de empezar.</p></div></div><div><button class="fq" aria-expanded="false">¿La web es mía o dependo de ti?<span class="ficon" aria-hidden="true">+</span></button><div class="fa"><p>El código es tuyo al 100% desde la entrega, con acceso completo al código fuente incluido en el precio. El alojamiento va en Vercel, que en el plan que uso para estas webs no tiene coste. El único gasto recurrente es el dominio, unos 12€ al año, que gestiono yo y te repercuto sin recargo; si prefieres ponerlo a tu nombre, también puedes. Si algún día quieres llevarte la web a otro proveedor, no tienes que pedirme permiso ni pagarme nada: te entrego el código y te ayudo con la migración sin coste.</p></div></div><div><button class="fq" aria-expanded="false">¿Incluyes SEO o se paga aparte?<span class="ficon" aria-hidden="true">+</span></button><div class="fa"><p>El SEO local está incluido en todas las webs: estructura optimizada para Google, velocidad de carga, etiquetas correctas, Schema JSON-LD y configuración de Google Business. Sin coste adicional.</p></div></div><div><button class="fq" aria-expanded="false">¿Qué ocurre después de la entrega?<span class="ficon" aria-hidden="true">+</span></button><div class="fa"><p>Los primeros 30 días incluyen ajustes sin coste. Después: plan de mantenimiento opcional desde 90€/mes o cambios puntuales a 55€/hora. Sin permanencia.</p></div></div><div><button class="fq" aria-expanded="false">¿Qué es exactamente la automatización de procesos?<span class="ficon" aria-hidden="true">+</span></button><div class="fa"><p>Sistemas que hacen tareas repetitivas solos: email automático cuando llega un lead, chatbot en WhatsApp que responde y toma reservas a las 2am, alertas de pedidos, sincronización entre apps. Desde 900€.</p></div></div><div><button class="fq" aria-expanded="false">¿Por qué no contratar una web de 180–300€?<span class="ficon" aria-hidden="true">+</span></button><div class="fa"><p>Las webs de 180-300€ son plantillas genéricas sin SEO local real, lentas en móvil y con costes anuales ocultos (hosting, dominio, plugins). Con código a medida obtienes diseño único, velocidad y posicionamiento real en Google.</p></div></div></div>
   </div>
 </section>
 
