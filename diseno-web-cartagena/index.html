@@ -319,6 +319,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 .caso-real{color:var(--olive);background:rgba(86,102,63,.13)}
 .caso-tipo{color:var(--terra);background:rgba(181,82,47,.11);border:1px solid rgba(181,82,47,.24)}
 .caso h3{font-size:clamp(1.4rem,2.6vw,1.95rem);margin-bottom:.8rem}
+.caso-precio{display:inline-block;vertical-align:middle;font-family:var(--fs);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--olive);background:rgba(86,102,63,.12);border-radius:100px;padding:.25rem .7rem;margin-left:.5rem;white-space:nowrap}
 .caso-g{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1.3rem}
 .caso-b{background:#F1EADD;border-radius:11px;padding:1rem}
 .caso-b h4{font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:.4rem;font-family:var(--fs);font-weight:700}
@@ -402,7 +403,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
   <div class="wrap">
     <div class="caso">
       <span class="caso-t caso-real">Caso real · cliente verificable</span>
-      <h3>Floristería Alameda · Cartagena</h3>
+      <h3>Floristería Alameda · Cartagena <span class="caso-precio">Web corporativa · 890€ + IVA</span></h3>
       <div class="caso-g">
         <div class="caso-b"><h4>El problema</h4><p>Negocio con 4,9★ y 311 reseñas en Google cuya web de plantilla no reflejaba nada de esa reputación.</p></div>
         <div class="caso-b"><h4>Qué hice</h4><p>Rediseño completo con fotos del local, pedidos por WhatsApp y ficha de Google ordenada.</p></div>
@@ -417,9 +418,9 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
   <div class="wrap">
     <div class="pbox">
       <div>
-        <span class="ey" style="color:var(--sand)">Inversión</span>
-        <div class="p-amt">590€</div>
-        <div class="p-q">Desde · pago único</div>
+        <span class="ey" style="color:var(--sand)">Precios en Cartagena</span>
+        <div class="p-amt">590€ · 890€</div>
+        <div class="p-q">Landing page desde 590€ · Web corporativa desde 890€. Pago único.</div>
         <span class="iva">+ 21% IVA</span>
         <p style="color:rgba(247,242,233,.78);margin-top:1.1rem;max-width:34rem">Este es el resumen para Cartagena. El detalle completo del servicio, todo lo que incluye y cómo funciona paso a paso está en <a href="/web-corporativa/" style="color:var(--sand);text-decoration:underline">Web corporativa</a>.</p>
       </div>
@@ -462,7 +463,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
   </div>
 </footer>
 <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Consentimiento de cookies">
-  <p>Utilizamos cookies analíticas para mejorar tu experiencia. Puedes aceptar o rechazarlas. <a href="/cookies/">Más información</a></p>
+  <p>Uso cookies analíticas para mejorar tu experiencia. Puedes aceptar o rechazarlas. <a href="/cookies/">Más información</a></p>
   <div class="cookie-btns"><button class="cookie-btn cookie-accept" id="cookie-accept">Aceptar</button><button class="cookie-btn cookie-reject" id="cookie-reject">Rechazar</button></div>
 </div>
 <script>
