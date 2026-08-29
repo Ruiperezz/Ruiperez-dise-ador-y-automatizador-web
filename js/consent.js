@@ -231,6 +231,9 @@
     'display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:1rem 1.6rem;',
     'transform:translateY(110%);transition:transform .45s cubic-bezier(.16,1,.3,1);font-family:Karla,system-ui,sans-serif;box-shadow:0 -10px 40px -20px rgba(0,0,0,.6)}',
     '.rsc-b.on{transform:none}',
+    /* el foco se mueve aqui solo para anunciar el banner a un lector de
+       pantalla; no es un elemento navegable, asi que no lleva anillo */
+    '.rsc-b:focus{outline:none}',
     '.rsc-b[hidden]{display:none}',
     '.rsc-b p{margin:0;font-size:.86rem;line-height:1.55;color:rgba(247,242,233,.82);max-width:40rem}',
     '.rsc-b a{color:#E4A57F;text-decoration:underline}',
