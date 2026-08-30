@@ -164,7 +164,7 @@ html.js .rv.in{opacity:1;transform:none;transition:opacity .75s var(--ease),tran
 .nlinks{display:flex;align-items:center;gap:1.5rem}
 .nl{position:relative;font-size:.93rem;color:var(--soft);padding:.25rem 0}
 .nl::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1.5px;background:var(--terra);transform:scaleX(0);transform-origin:0 50%;transition:transform .35s var(--ease)}
-.nl:hover{color:var(--terra)}
+.nl:hover{color:var(--terra-txt)}
 .nl:hover::after,.nl.act::after{transform:scaleX(1)}
 .nl.act{color:var(--ink);font-weight:600}
 .nav-cta{display:inline-flex;align-items:center;gap:.5rem;background:var(--ink);color:var(--bg);padding:.72rem 1.25rem;border-radius:100px;font-size:.9rem;font-weight:700;min-height:44px;transition:transform .22s var(--ease),background .22s}
@@ -209,7 +209,7 @@ html.js .rv.in{opacity:1;transform:none;transition:opacity .75s var(--ease),tran
 .hsub{font-size:clamp(1rem,1.35vw,1.1rem);color:var(--soft);line-height:1.6;margin-bottom:.85rem;max-width:29rem;text-wrap:pretty}
 .hfor{font-size:.94rem;color:var(--mute);margin-bottom:1.4rem;display:flex;align-items:baseline;gap:.4rem;flex-wrap:wrap}
 .rot{display:inline-block;position:relative;min-width:9.4rem;height:1.5em;overflow:hidden;vertical-align:bottom}
-.rot span{position:absolute;left:0;top:0;white-space:nowrap;font-weight:700;color:var(--terra);opacity:0;transform:translateY(100%)}
+.rot span{position:absolute;left:0;top:0;white-space:nowrap;font-weight:700;color:var(--terra-txt);opacity:0;transform:translateY(100%)}
 .rot span.on{opacity:1;transform:none;transition:opacity .45s var(--ease),transform .45s var(--ease)}
 .rot span.out{opacity:0;transform:translateY(-100%);transition:opacity .4s var(--ease),transform .4s var(--ease)}
 .hctas{display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:1.6rem}
@@ -420,13 +420,13 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 .ft-h{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);font-weight:700;margin-bottom:.9rem}
 .ft-l{display:flex;flex-direction:column;gap:.55rem}
 .ft-l a{font-size:.9rem;color:var(--soft)}
-.ft-l a:hover{color:var(--terra)}
+.ft-l a:hover{color:var(--terra-txt)}
 .ft-b{border-top:1px solid var(--line);padding-top:1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 .fcopy{font-size:.82rem;color:var(--mute)}
 .fcopy a{text-decoration:underline}
 .fl-legal{display:flex;gap:1.3rem;flex-wrap:wrap}
 .fl-legal a{font-size:.82rem;color:var(--mute)}
-.fl-legal a:hover{color:var(--terra)}
+.fl-legal a:hover{color:var(--terra-txt)}
 
 
 /* ══ responsive ══ */
@@ -533,7 +533,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
           <div class="chat-foot" style="--d:2200ms"><span class="dot"></span>atendido sin que tú estuvieras</div>
         </div>
       </div>
-      <div class="pill"><b>+30%</b><span>más clientes<br><small>según el cliente</small></span></div>
+      <div class="pill"><b>4,9★</b><span>311 reseñas<br><small>en Google</small></span></div>
     </div>
   </div>
 </section>
@@ -827,7 +827,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
       </div>
       <div>
         <div class="ft-h">Por ciudad y estudio</div>
-        <div class="ft-l"><a href="/diseno-web-cartagena/">Diseño web en Cartagena</a><a href="/diseno-web-murcia/">Diseño web en Murcia</a><a href="/automatizacion-procesos-murcia/">Automatización en Murcia</a><a href="/chatbot-whatsapp-cartagena/">Chatbot en Cartagena</a><a href="/sobre-mi/">Quién soy</a><a href="/casos/">Casos reales</a></div>
+        <div class="ft-l"><a href="/diseno-web-cartagena/">Diseño web en Cartagena</a><a href="/diseno-web-murcia/">Diseño web en Murcia</a><a href="/automatizacion-procesos-murcia/">Automatización en Murcia</a><a href="/chatbot-whatsapp-cartagena/">Chatbot en Cartagena</a><a href="/sobre-mi/">Quién soy</a></div>
       </div>
     </div>
     <div class="ft-b">

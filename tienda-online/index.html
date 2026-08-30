@@ -40,7 +40,7 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://ruiperezstudio.es"},{"@type":"ListItem","position":2,"name":"Servicios","item":"https://ruiperezstudio.es/#servicios"},{"@type":"ListItem","position":3,"name":"Tienda Online","item":"https://ruiperezstudio.es/tienda-online/"}]}
 </script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Tengo que subir yo los productos?", "acceptedAnswer": {"@type": "Answer", "text": "Los primeros 50 productos los subo yo. Solo necesito que me envíes las fotos, descripciones y precios. Si tienes más, los adicionales son 5€/producto."}}, {"@type": "Question", "name": "¿Cómo cobro el dinero de las ventas?", "acceptedAnswer": {"@type": "Answer", "text": "El dinero va directamente a tu cuenta bancaria a través de Stripe o PayPal. Yo no intermedio en los pagos. Las transferencias se realizan cada pocos días según la pasarela elegida."}}, {"@type": "Question", "name": "¿Está incluido el dominio?", "acceptedAnswer": {"@type": "Answer", "text": "El dominio no está incluido en el precio base (~12€/año). Lo gestiono por tu cuenta. El hosting de Shopify lo paga el cliente directamente a Shopify (~29€/mes). Con WooCommerce el hosting está incluido en el mantenimiento mensual."}}, {"@type": "Question", "name": "¿Puedo gestionar yo los pedidos después?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Incluyo formación básica sobre el panel de gestión. Podrás ver pedidos, marcarlos como enviados y gestionar devoluciones sin necesidad de saber programar."}}, {"@type": "Question", "name": "¿Qué pasa si necesito más de 50 productos?", "acceptedAnswer": {"@type": "Answer", "text": "Los productos adicionales son 5€/unidad. Si tienes un catálogo muy grande (+200 productos), cuéntanoslo antes del presupuesto para ajustar el precio correctamente."}}, {"@type": "Question", "name": "¿Incluye envíos internacionales?", "acceptedAnswer": {"@type": "Answer", "text": "Puedo configurar envíos nacionales e internacionales. Las tarifas de envío las defines tú (precio fijo, por peso, gratis desde X€). Lo configuro según lo que necesites."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Tengo que subir yo los productos?", "acceptedAnswer": {"@type": "Answer", "text": "Los primeros 50 productos los subo yo. Solo necesito que me envíes las fotos, descripciones y precios. Si tienes más, los adicionales son 5€/producto."}}, {"@type": "Question", "name": "¿Cómo cobro el dinero de las ventas?", "acceptedAnswer": {"@type": "Answer", "text": "El dinero va directamente a tu cuenta bancaria a través de Stripe o PayPal. Yo no intermedio en los pagos. Las transferencias se realizan cada pocos días según la pasarela elegida."}}, {"@type": "Question", "name": "¿Está incluido el dominio?", "acceptedAnswer": {"@type": "Answer", "text": "El dominio no está incluido en el precio base (~12€/año). Lo gestiono por tu cuenta. El hosting de Shopify lo paga el cliente directamente a Shopify (~29€/mes). Con WooCommerce el hosting está incluido en el mantenimiento mensual."}}, {"@type": "Question", "name": "¿Puedo gestionar yo los pedidos después?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Incluyo formación básica sobre el panel de gestión. Podrás ver pedidos, marcarlos como enviados y gestionar devoluciones sin necesidad de saber programar."}}, {"@type": "Question", "name": "¿Qué pasa si necesito más de 50 productos?", "acceptedAnswer": {"@type": "Answer", "text": "Los productos adicionales son 5€/unidad. Si tienes un catálogo muy grande (+200 productos), cuéntamelo antes del presupuesto para ajustar el precio correctamente."}}, {"@type": "Question", "name": "¿Incluye envíos internacionales?", "acceptedAnswer": {"@type": "Answer", "text": "Puedo configurar envíos nacionales e internacionales. Las tarifas de envío las defines tú (precio fijo, por peso, gratis desde X€). Lo configuro según lo que necesites."}}]}</script>
 <style>
 :focus-visible{outline:2.5px solid var(--terra);outline-offset:3px;border-radius:4px}
 :root{
@@ -81,7 +81,7 @@ img{max-width:100%;display:block}
 .lwm-s{font-weight:400;font-size:.52rem;letter-spacing:.62em;color:var(--mute);margin-top:.26rem}
 .nlinks{display:flex;align-items:center;gap:1.6rem}
 .nl{font-size:.94rem;color:var(--soft)}
-.nl:hover{color:var(--terra)}
+.nl:hover{color:var(--terra-txt)}
 .nav-cta{display:inline-flex;align-items:center;gap:.5rem;background:var(--ink);color:var(--bg);padding:.72rem 1.25rem;border-radius:100px;font-size:.9rem;font-weight:700;min-height:44px}
 .nav-cta:hover{background:#000;color:var(--bg)}
 .burger{display:none;width:44px;height:44px;background:none;border:0;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer}
@@ -222,13 +222,13 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 .ft-h{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);font-weight:700;margin-bottom:.9rem}
 .ft-l{display:flex;flex-direction:column;gap:.55rem}
 .ft-l a{font-size:.9rem;color:var(--soft)}
-.ft-l a:hover{color:var(--terra)}
+.ft-l a:hover{color:var(--terra-txt)}
 .ft-b{border-top:1px solid var(--line);padding-top:1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 .fcopy{font-size:.82rem;color:var(--mute)}
 .fcopy a{text-decoration:underline}
 .fl-legal{display:flex;gap:1.3rem;flex-wrap:wrap}
 .fl-legal a{font-size:.82rem;color:var(--mute)}
-.fl-legal a:hover{color:var(--terra)}
+.fl-legal a:hover{color:var(--terra-txt)}
 /* responsive */
 @media(max-width:960px){
   .hero-g,.case,.vs{grid-template-columns:1fr}
@@ -310,7 +310,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 /* breadcrumb */
 .bread{font-size:.78rem;color:var(--mute);padding:1rem 0 0}
 .bread a{color:var(--mute)}
-.bread a:hover{color:var(--terra)}
+.bread a:hover{color:var(--terra-txt)}
 .bread span{margin:0 .45rem;color:var(--line)}
 /* precio destacado */
 .pbox{background:var(--ink);color:var(--bg);border-radius:18px;padding:clamp(1.6rem,3vw,2.4rem);display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center}
@@ -407,7 +407,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
   </div>
 </section>
 
-<section class="sec" id="faq"><div class="wrap"><div class="sec-hd"><div><span class="ey">Dudas</span><h2>Lo que más te vas a preguntar</h2></div></div><div class="faq"><div><button class="fq" aria-expanded="false">¿Tengo que subir yo los productos?<span class="ficon">+</span></button><div class="fa"><p>Los primeros 50 productos los subo yo. Solo necesito que me envíes las fotos, descripciones y precios. Si tienes más, los adicionales son 5€/producto.</p></div></div><div><button class="fq" aria-expanded="false">¿Cómo cobro el dinero de las ventas?<span class="ficon">+</span></button><div class="fa"><p>El dinero va directamente a tu cuenta bancaria a través de Stripe o PayPal. Yo no intermedio en los pagos. Las transferencias se realizan cada pocos días según la pasarela elegida.</p></div></div><div><button class="fq" aria-expanded="false">¿Está incluido el dominio?<span class="ficon">+</span></button><div class="fa"><p>El dominio no está incluido en el precio base (~12€/año). Lo gestiono por tu cuenta. El hosting de Shopify lo paga el cliente directamente a Shopify (~29€/mes). Con WooCommerce el hosting está incluido en el mantenimiento mensual.</p></div></div><div><button class="fq" aria-expanded="false">¿Puedo gestionar yo los pedidos después?<span class="ficon">+</span></button><div class="fa"><p>Sí. Incluyo formación básica sobre el panel de gestión. Podrás ver pedidos, marcarlos como enviados y gestionar devoluciones sin necesidad de saber programar.</p></div></div><div><button class="fq" aria-expanded="false">¿Qué pasa si necesito más de 50 productos?<span class="ficon">+</span></button><div class="fa"><p>Los productos adicionales son 5€/unidad. Si tienes un catálogo muy grande (+200 productos), cuéntanoslo antes del presupuesto para ajustar el precio correctamente.</p></div></div><div><button class="fq" aria-expanded="false">¿Incluye envíos internacionales?<span class="ficon">+</span></button><div class="fa"><p>Puedo configurar envíos nacionales e internacionales. Las tarifas de envío las defines tú (precio fijo, por peso, gratis desde X€). Lo configuro según lo que necesites.</p></div></div></div></div></section>
+<section class="sec" id="faq"><div class="wrap"><div class="sec-hd"><div><span class="ey">Dudas</span><h2>Lo que más te vas a preguntar</h2></div></div><div class="faq"><div><button class="fq" aria-expanded="false">¿Tengo que subir yo los productos?<span class="ficon">+</span></button><div class="fa"><p>Los primeros 50 productos los subo yo. Solo necesito que me envíes las fotos, descripciones y precios. Si tienes más, los adicionales son 5€/producto.</p></div></div><div><button class="fq" aria-expanded="false">¿Cómo cobro el dinero de las ventas?<span class="ficon">+</span></button><div class="fa"><p>El dinero va directamente a tu cuenta bancaria a través de Stripe o PayPal. Yo no intermedio en los pagos. Las transferencias se realizan cada pocos días según la pasarela elegida.</p></div></div><div><button class="fq" aria-expanded="false">¿Está incluido el dominio?<span class="ficon">+</span></button><div class="fa"><p>El dominio no está incluido en el precio base (~12€/año). Lo gestiono por tu cuenta. El hosting de Shopify lo paga el cliente directamente a Shopify (~29€/mes). Con WooCommerce el hosting está incluido en el mantenimiento mensual.</p></div></div><div><button class="fq" aria-expanded="false">¿Puedo gestionar yo los pedidos después?<span class="ficon">+</span></button><div class="fa"><p>Sí. Incluyo formación básica sobre el panel de gestión. Podrás ver pedidos, marcarlos como enviados y gestionar devoluciones sin necesidad de saber programar.</p></div></div><div><button class="fq" aria-expanded="false">¿Qué pasa si necesito más de 50 productos?<span class="ficon">+</span></button><div class="fa"><p>Los productos adicionales son 5€/unidad. Si tienes un catálogo muy grande (+200 productos), cuéntamelo antes del presupuesto para ajustar el precio correctamente.</p></div></div><div><button class="fq" aria-expanded="false">¿Incluye envíos internacionales?<span class="ficon">+</span></button><div class="fa"><p>Puedo configurar envíos nacionales e internacionales. Las tarifas de envío las defines tú (precio fijo, por peso, gratis desde X€). Lo configuro según lo que necesites.</p></div></div></div></div></section>
 
 <section class="sec">
   <div class="wrap">
@@ -430,7 +430,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
       </div>
       <div>
         <div class="ft-h">Por ciudad y estudio</div>
-        <div class="ft-l"><a href="/diseno-web-cartagena/">Diseño web en Cartagena</a><a href="/diseno-web-murcia/">Diseño web en Murcia</a><a href="/automatizacion-procesos-murcia/">Automatización en Murcia</a><a href="/chatbot-whatsapp-cartagena/">Chatbot en Cartagena</a><a href="/sobre-mi/">Quién soy</a><a href="/casos/">Casos reales</a></div>
+        <div class="ft-l"><a href="/diseno-web-cartagena/">Diseño web en Cartagena</a><a href="/diseno-web-murcia/">Diseño web en Murcia</a><a href="/automatizacion-procesos-murcia/">Automatización en Murcia</a><a href="/chatbot-whatsapp-cartagena/">Chatbot en Cartagena</a><a href="/sobre-mi/">Quién soy</a></div>
       </div>
     </div>
     <div class="ft-b">

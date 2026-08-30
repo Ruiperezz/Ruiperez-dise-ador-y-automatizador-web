@@ -266,8 +266,8 @@
     '.rsc-m .rsc-btn.pri{background:#B5522F;border-color:#B5522F;color:#FDFBF7}',
     '.rsc-m .rsc-btn.pri:hover{background:#8E3F23;border-color:#8E3F23}',
     /* hereda el color del pie: funciona igual en la paleta crema y en la oscura */
-    '.rsc-pref{background:none;border:0;padding:0;font:inherit;font-size:.82rem;color:inherit;opacity:.8;text-decoration:underline;cursor:pointer}',
-    '.rsc-pref:hover{opacity:1}',
+    '.rsc-pref{background:none;border:0;padding:0;font:inherit;font-size:.82rem;color:var(--soft,#4A443C);text-decoration:underline;cursor:pointer}',
+    '.rsc-pref:hover{color:var(--terra-txt,#A84A28)}',
     '@media (prefers-reduced-motion:reduce){.rsc-b,.rsc-sw,.rsc-sw::after{transition:none}}',
     '@media(max-width:640px){.rsc-b{justify-content:stretch}.rsc-acts{width:100%}.rsc-btn{flex:1;min-width:0}}'
   ].join("");
