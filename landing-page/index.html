@@ -98,6 +98,15 @@ img{max-width:100%;height:auto;display:block}
 .nav-cta:hover{background:#000;color:var(--bg)}
 .burger{display:none;width:44px;height:44px;background:none;border:0;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer}
 .burger span{width:22px;height:1.8px;background:var(--ink);transition:.25s}
+.burger[aria-expanded="true"] span:first-child{transform:translateY(3.4px) rotate(45deg)}
+.burger[aria-expanded="true"] span:last-child{transform:translateY(-3.4px) rotate(-45deg)}
+@media(max-width:720px){
+  .nlinks{position:absolute;top:var(--nav,74px);left:0;right:0;flex-direction:column;align-items:stretch;gap:0;
+    background:var(--bg);border-bottom:1px solid var(--line);box-shadow:0 18px 40px -24px rgba(33,29,24,.34);
+    padding:.5rem clamp(1.25rem,5vw,6rem) 1.1rem}
+  .nlinks.open{display:flex}
+  .nlinks .nl{padding:.85rem 0;border-bottom:1px solid var(--line);font-size:1rem}
+}
 /* hero */
 .hero{padding:clamp(2.2rem,4vw,3.4rem) 0 clamp(2.6rem,4.5vw,3.6rem)}
 .hero-head{margin-bottom:clamp(1.6rem,3vw,2.4rem)}
@@ -342,11 +351,12 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 <header id="nav">
   <div class="nav-i">
     <a href="/" class="logo"><svg viewBox="0 0 120 120" width="34" height="34" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter"><path d="M21.05 102.00 L21.05 15.05 L60.00 15.05 A30.95 30.95 0 0 1 90.95 46.00 L90.95 44.00 A30.95 30.95 0 0 1 60.00 74.95 L21.05 74.95 M80.87 74.95 L99.81 102.00" stroke-width="8.0"/><path d="M34.00 102.00 L34.00 28.00 L60.00 28.00 A18.00 18.00 0 0 1 78.00 46.00 L78.00 44.00 A18.00 18.00 0 0 1 60.00 62.00 L34.00 62.00 M56.00 62.00 L84.00 102.00" stroke-width="9.5"/></g></svg><span class="lwm"><span class="lwm-n">RUIPÉREZ</span><span class="lwm-s">STUDIO</span></span></a>
-    <nav class="nlinks" aria-label="Navegación principal">
+    <nav class="nlinks" id="nlinks" aria-label="Navegación principal">
       <a href="/#servicios" class="nl">Servicios</a><a href="/#caso" class="nl">Caso real</a>
       <a href="/#comparativa" class="nl">Precios</a><a href="/casos/" class="nl">Proyectos</a><a href="/sobre-mi/" class="nl">Quién soy</a><a href="/#faq" class="nl">Dudas</a>
     </nav>
     <a href="https://wa.me/34642084042?text=Hola,%20quiero%20información%20sobre%20Landing%20page" target="_blank" rel="noopener noreferrer" class="nav-cta"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg> Escríbeme</a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nlinks"><span></span><span></span></button>
   </div>
 </header>
 <main id="main-content">
@@ -452,6 +462,19 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
   </div>
 </footer>
 <script>
+(function(){"use strict";
+var b=document.getElementById("burger"),n=document.getElementById("nlinks");
+if(!b||!n)return;
+b.addEventListener("click",function(){
+  var o=n.classList.toggle("open");
+  b.setAttribute("aria-expanded",String(o));
+  b.setAttribute("aria-label",o?"Cerrar menú":"Abrir menú");
+});
+n.addEventListener("click",function(e){
+  if(e.target.classList.contains("nl")){n.classList.remove("open");
+    b.setAttribute("aria-expanded","false");b.setAttribute("aria-label","Abrir menú")}
+});
+})();
 (function(){"use strict";
 document.querySelectorAll(".fq").forEach(function(q){q.addEventListener("click",function(){
   var o=q.getAttribute("aria-expanded")==="true",a=q.nextElementSibling;
