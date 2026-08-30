@@ -20,7 +20,7 @@
   var RS_CONFIG = {
     metaPixelId:   "",              // [PEDIR AL CLIENTE] Meta Events Manager → ID del píxel (15-16 dígitos)
     tiktokPixelId: "",              // [PEDIR AL CLIENTE] TikTok Events Manager → ID del píxel
-    ga4Id:         "",              // [PEDIR AL CLIENTE] GA4 → «G-XXXXXXXXXX»
+    ga4Id:         "G-D61B7R46V5", // Google Analytics 4 · propiedad ruiperezstudio.es
     vercelAnalytics: true,
     appendOriginToWhatsApp: true    // añade la campaña de origen al mensaje de WhatsApp
   };

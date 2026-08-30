@@ -102,6 +102,7 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 - El consentimiento y la medición viven en `/js/consent.js`, compartido por las 17 páginas. Ver `docs/medicion.md`. No lo dupliques en línea.
 - Imágenes con `width` y `height` reales y **`height:auto` en el CSS de esa página**. Sin `height:auto`, el navegador usa el atributo `height` y deforma la imagen. Pasó en 17 páginas a la vez: si creas una página nueva, comprueba la regla `img{}`.
 - Ningún script de terceros se ejecuta antes del consentimiento de cookies.
+- **GA4 activo:** `G-D61B7R46V5`, en `RS_CONFIG` de `js/consent.js`. Meta y TikTok siguen con el ID vacío, así que no cargan. Si añades uno, actualiza también la tabla de `/cookies/` en el mismo commit.
 - Contraste WCAG AA, foco visible, `alt` en todas las imágenes, objetivos táctiles de 44px o más.
 - `--terra` (#B5522F) da 4,47:1 sobre el fondo crema: **no vale para texto pequeño**. Para texto usa `--terra-txt` (#A84A28, 5,12:1). Para rellenos, `--terra`.
 - El pie tiene que ser idéntico en las 15 páginas que lo llevan. Si añades una página, añádela al pie de todas.

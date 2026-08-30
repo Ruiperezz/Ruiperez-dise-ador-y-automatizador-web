@@ -4,13 +4,13 @@ Qué se mide, desde qué botón, y qué hace falta para encenderlo. Todo vive en
 
 ## Antes de gastar el primer euro
 
-Los tres píxeles están montados pero **apagados**: sus IDs están vacíos en `RS_CONFIG`, al principio de `js/consent.js`. Mientras estén vacíos no se carga nada y la web funciona igual. Para encenderlos, rellena:
+Google Analytics 4 **ya está activo** (solo con consentimiento de analítica). Meta y TikTok siguen apagados: sus IDs están vacíos en `RS_CONFIG`, al principio de `js/consent.js`, y mientras lo estén no cargan nada. Para encenderlos, rellena:
 
 | Campo | Dónde se saca | Formato |
 |---|---|---|
 | `metaPixelId` | Meta Events Manager → Orígenes de datos → tu píxel | 15–16 dígitos |
 | `tiktokPixelId` | TikTok Ads Manager → Herramientas → Eventos → Web | alfanumérico |
-| `ga4Id` | Google Analytics → Administrar → Flujos de datos | `G-XXXXXXXXXX` |
+| ~~`ga4Id`~~ | **Hecho** — `G-D61B7R46V5`, propiedad de ruiperezstudio.es | ✅ |
 
 No hace falta tocar nada más: la CSP de `vercel.json` ya permite los dominios de Meta, TikTok y Google.
 
@@ -105,7 +105,8 @@ Si en el paso 3 no aparece nada, mira la consola por si es la CSP: cualquier dom
 
 ## Pendiente
 
-- [ ] Rellenar los tres IDs en `RS_CONFIG`
+- [x] GA4 configurado (`G-D61B7R46V5`)
+- [ ] Rellenar `metaPixelId` y `tiktokPixelId` en `RS_CONFIG`
 - [ ] Marcar `Contact` como conversión personalizada en Meta y en TikTok
 - [ ] Comprobar con Pixel Helper los seis pasos de arriba
 - [ ] Actualizar `/cookies/` quitando las marcas «(pendiente)» el día que se activen los píxeles
