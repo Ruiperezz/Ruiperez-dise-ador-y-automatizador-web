@@ -235,7 +235,7 @@
        pantalla; no es un elemento navegable, asi que no lleva anillo */
     '.rsc-b:focus{outline:none}',
     '.rsc-b[hidden]{display:none}',
-    '.rsc-b p{margin:0;font-size:.86rem;line-height:1.55;color:rgba(247,242,233,.82);max-width:40rem}',
+    '.rsc-b p{margin:0;font-size:.86rem;line-height:1.55;color:rgba(247,242,233,.9);max-width:40rem}',
     '.rsc-b a{color:#E4A57F;text-decoration:underline}',
     '.rsc-acts{display:flex;gap:.6rem;flex-wrap:wrap}',
     /* Los tres botones son idénticos en tamaño Y en tratamiento visual: destacar
@@ -266,8 +266,8 @@
     '.rsc-m .rsc-btn.pri{background:#B5522F;border-color:#B5522F;color:#FDFBF7}',
     '.rsc-m .rsc-btn.pri:hover{background:#8E3F23;border-color:#8E3F23}',
     /* hereda el color del pie: funciona igual en la paleta crema y en la oscura */
-    '.rsc-pref{background:none;border:0;padding:0;font:inherit;font-size:.82rem;color:inherit;opacity:.8;text-decoration:underline;cursor:pointer}',
-    '.rsc-pref:hover{opacity:1}',
+    '.rsc-pref{background:none;border:0;padding:0;font:inherit;font-size:.82rem;color:var(--soft,#4A443C);text-decoration:underline;cursor:pointer}',
+    '.rsc-pref:hover{color:var(--terra-txt,#A84A28)}',
     '@media (prefers-reduced-motion:reduce){.rsc-b,.rsc-sw,.rsc-sw::after{transition:none}}',
     '@media(max-width:640px){.rsc-b{justify-content:stretch}.rsc-acts{width:100%}.rsc-btn{flex:1;min-width:0}}'
   ].join("");

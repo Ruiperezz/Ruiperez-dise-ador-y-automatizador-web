@@ -36,11 +36,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#F7F2E9; --surf:#FDFBF7; --ink:#211D18; --soft:#4A443C; --mute:#6E675D; --faint:#8A8175;
-  --line:#E5DCCB; --line2:#E8DFCE; --terra:#B5522F; --terra-d:#8E3F23; --olive:#56663F; --sand:#E4A57F;
+  --bg:#F7F2E9; --surf:#FDFBF7; --ink:#211D18; --soft:#4A443C; --mute:#6E675D; --faint:#72695D;
+  --line:#E5DCCB; --line2:#E8DFCE; --terra:#B5522F; --terra-txt:#A84A28; --terra-d:#8E3F23; --olive:#56663F; --sand:#E4A57F;
   --fd:'Instrument Serif',Georgia,serif; --fs:'Karla','Helvetica Neue',sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
+img{max-width:100%;height:auto;display:block}
 body{background:var(--bg);color:var(--ink);font-family:var(--fs);font-size:16.5px;line-height:1.7;-webkit-font-smoothing:antialiased}
 :focus-visible{outline:2.5px solid var(--terra);outline-offset:3px;border-radius:4px}
 .skip-link{position:absolute;left:-9999px;top:0;background:var(--terra);color:#FDFBF7;padding:.7rem 1.2rem;z-index:9999;font-weight:700}
@@ -53,14 +54,14 @@ header{border-bottom:1px solid var(--line);padding:1.1rem 0;background:var(--sur
 .lwm-n{font-weight:700;font-size:.95rem;letter-spacing:.01em}
 .lwm-s{font-weight:400;font-size:.5rem;letter-spacing:.62em;color:var(--mute);margin-top:.26rem}
 .back{font-size:.88rem;color:var(--soft);text-decoration:none}
-.back:hover{color:var(--terra)}
+.back:hover{color:var(--terra-txt)}
 main{padding:3.2rem 0 4rem}
 h1{font-family:var(--fd);font-weight:400;font-size:clamp(2rem,4.4vw,2.9rem);letter-spacing:-.015em;line-height:1.08;margin-bottom:1.6rem;text-wrap:balance}
-h3{font-family:var(--fd);font-weight:400;font-size:1.35rem;letter-spacing:-.015em;line-height:1.2;margin:2.2rem 0 .6rem;color:var(--ink)}
+h2{font-family:var(--fd);font-weight:400;font-size:1.35rem;letter-spacing:-.015em;line-height:1.2;margin:2.2rem 0 .6rem;color:var(--ink)}
 p,li{color:var(--soft);margin-bottom:.8rem}
 ul{padding-left:1.2rem;margin-bottom:1rem}
 strong{color:var(--ink)}
-a{color:var(--terra)}
+a{color:var(--terra-txt)}
 a:hover{color:var(--terra-d)}
 .ck{width:100%;border-collapse:collapse;margin:1rem 0 1.6rem;font-size:.86rem;display:block;overflow-x:auto}
 .ck th,.ck td{border:1px solid var(--line);padding:.6rem .7rem;text-align:left;vertical-align:top;min-width:8rem}
@@ -73,9 +74,10 @@ a:hover{color:var(--terra-d)}
 footer{border-top:1px solid var(--line);padding:1.6rem 0;margin-top:2rem}
 .ft{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between}
 .fcopy{font-size:.8rem;color:var(--mute)}
+.fcopy a{text-decoration:underline}
 .fl-legal{display:flex;gap:1.2rem;flex-wrap:wrap;align-items:center;color:var(--mute)}
 .fl-legal a{font-size:.8rem;color:var(--mute);text-decoration:none}
-.fl-legal a:hover{color:var(--terra)}
+.fl-legal a:hover{color:var(--terra-txt)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
@@ -83,18 +85,18 @@ footer{border-top:1px solid var(--line);padding:1.6rem 0;margin-top:2rem}
 <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 <header>
   <div class="wrap hd">
-    <a href="/" class="logo" aria-label="Ruipérez Studio — Inicio"><svg viewBox="0 0 120 120" width="30" height="30" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter"><path d="M21.05 102.00 L21.05 15.05 L60.00 15.05 A30.95 30.95 0 0 1 90.95 46.00 L90.95 44.00 A30.95 30.95 0 0 1 60.00 74.95 L21.05 74.95 M80.87 74.95 L99.81 102.00" stroke-width="8.0"/><path d="M34.00 102.00 L34.00 28.00 L60.00 28.00 A18.00 18.00 0 0 1 78.00 46.00 L78.00 44.00 A18.00 18.00 0 0 1 60.00 62.00 L34.00 62.00 M56.00 62.00 L84.00 102.00" stroke-width="9.5"/></g></svg><span class="lwm"><span class="lwm-n">RUIPÉREZ</span><span class="lwm-s">STUDIO</span></span></a>
+    <a href="/" class="logo"><svg viewBox="0 0 120 120" width="30" height="30" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter"><path d="M21.05 102.00 L21.05 15.05 L60.00 15.05 A30.95 30.95 0 0 1 90.95 46.00 L90.95 44.00 A30.95 30.95 0 0 1 60.00 74.95 L21.05 74.95 M80.87 74.95 L99.81 102.00" stroke-width="8.0"/><path d="M34.00 102.00 L34.00 28.00 L60.00 28.00 A18.00 18.00 0 0 1 78.00 46.00 L78.00 44.00 A18.00 18.00 0 0 1 60.00 62.00 L34.00 62.00 M56.00 62.00 L84.00 102.00" stroke-width="9.5"/></g></svg><span class="lwm"><span class="lwm-n">RUIPÉREZ</span><span class="lwm-s">STUDIO</span></span></a>
     <a href="/" class="back">← Volver al inicio</a>
   </div>
 </header>
 <main id="main-content">
   <div class="wrap">
     <h1>Política de Privacidad</h1>
-    <h3>Responsable del tratamiento</h3>
+    <h2>Responsable del tratamiento</h2>
     <p>Ruipérez Studio · Email: ruiperezyasociadoss@gmail.com · Teléfono: 642 08 40 42</p>
-    <h3>Datos que recopilo</h3>
+    <h2>Datos que recopilo</h2>
     <p>Este sitio web no dispone de formularios de contacto. La comunicación se realiza a través de WhatsApp, email o teléfono. Los datos que me facilites voluntariamente por estos canales (nombre, email, teléfono, detalles del proyecto) serán tratados exclusivamente para responder a tu consulta y gestionar el servicio solicitado.</p>
-    <h3>Destinatarios y encargados del tratamiento</h3>
+    <h2>Destinatarios y encargados del tratamiento</h2>
 <p>Para prestar el servicio recurro a los siguientes proveedores. Con los que actúan como encargados del tratamiento tengo suscrito el contrato que exige el art. 28 del RGPD:</p>
 <ul>
   <li><strong>WhatsApp Ireland Ltd. (Meta) — WhatsApp Business.</strong> Es mi canal principal de contacto. Si me escribes por ahí, tu número de teléfono, tu nombre de perfil y el contenido de la conversación se tratan también en la infraestructura de WhatsApp. Conviene que lo sepas: respecto a esos datos WhatsApp no actúa como encargado mío, sino como <em>responsable independiente</em> bajo sus propias condiciones, que no controlo. Implica transferencia internacional a Estados Unidos. Si prefieres no usar ese canal, tienes el email y el teléfono.</li>
@@ -102,22 +104,22 @@ footer{border-top:1px solid var(--line);padding:1.6rem 0;margin-top:2rem}
   <li><strong>Vercel Inc. (EE. UU.) — alojamiento web y analítica.</strong> Procesa los registros de acceso al sitio.</li>
   <li><strong>Meta Platforms Ireland Ltd. y TikTok Technology Ltd. — medición publicitaria.</strong> Solo si aceptas las cookies de publicidad.</li>
 </ul>
-<h3>Transferencias internacionales</h3>
+<h2>Transferencias internacionales</h2>
 <p>Algunos de estos proveedores tratan datos fuera del Espacio Económico Europeo, principalmente en Estados Unidos. Esas transferencias se amparan en cláusulas contractuales tipo aprobadas por la Comisión Europea y, cuando procede, en el Marco de Privacidad de Datos UE-EE. UU. Puedes pedirme copia de las garantías aplicadas.</p>
-<h3>Finalidad del tratamiento</h3>
+<h2>Finalidad del tratamiento</h2>
     <ul>
       <li>Responder a consultas y solicitudes de presupuesto</li>
       <li>Gestionar la relación comercial y prestación de servicios</li>
       <li>Análisis estadístico del uso del sitio web (solo con tu consentimiento)</li>
       <li>Medición de la eficacia de mis campañas de publicidad en Meta y TikTok (solo con tu consentimiento)</li>
     </ul>
-    <h3>Base legal</h3>
+    <h2>Base legal</h2>
     <p>Depende de la finalidad. Responder a tu consulta y gestionar el servicio: ejecución de un contrato o de medidas precontractuales a petición tuya (art. 6.1.b RGPD). Analítica y publicidad: tu consentimiento expreso (art. 6.1.a RGPD), que puedes retirar en cualquier momento desde «Preferencias de cookies» en el pie de página, sin que ello afecte a la licitud del tratamiento anterior.</p>
-    <h3>Conservación de datos</h3>
+    <h2>Conservación de datos</h2>
     <p>Las consultas que no derivan en contrato se conservan un año. Si contratamos, los datos se guardan mientras dure la relación y después durante los plazos de prescripción legal: seis años para la documentación mercantil (art. 30 del Código de Comercio) y cuatro para las obligaciones fiscales.</p>
-    <h3>Derechos</h3>
+    <h2>Derechos</h2>
     <p>Puedes ejercer tus derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición enviando un email a ruiperezyasociadoss@gmail.com indicando tu solicitud. Si consideras que no he atendido correctamente tu petición, puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer">aepd.es</a>).</p>
-    <h3>Cookies</h3>
+    <h2>Cookies</h2>
     <p>Uso cookies necesarias, analíticas y de publicidad. Las dos últimas están bloqueadas por defecto y solo se activan si las aceptas. Consulta mi <a href="/cookies/">Política de Cookies</a> para el detalle de cada una, su duración y las transferencias que implican.</p>
     <p class="upd">Última actualización: 29 de agosto de 2026.</p>
   </div>

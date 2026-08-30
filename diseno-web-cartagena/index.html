@@ -57,9 +57,10 @@
 </script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Trabajas presencialmente en Cartagena?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Vivo en Cartagena y puedo reunirme contigo en tu negocio si lo prefieres. También trabajo perfectamente por WhatsApp y videollamada si te resulta más cómodo."}}, {"@type": "Question", "name": "¿Cuánto cuesta una web para un negocio de Cartagena?", "acceptedAnswer": {"@type": "Answer", "text": "Una landing page desde 590€ y una web corporativa completa desde 890€, ambas con IVA aparte y pago único. El precio se cierra por escrito antes de empezar."}}, {"@type": "Question", "name": "¿Aparecerá mi negocio en Google cuando busquen en Cartagena?", "acceptedAnswer": {"@type": "Answer", "text": "Todas las webs incluyen SEO local: datos estructurados, optimización de tu ficha de Google Business y contenido orientado a las búsquedas que hace la gente de la zona."}}, {"@type": "Question", "name": "¿Cuánto tardas en entregar?", "acceptedAnswer": {"@type": "Answer", "text": "Entre 1 y 3 semanas según el tipo de web. Una landing suele estar lista en una semana; una web corporativa completa, en dos o tres."}}]}</script>
 <style>
+:focus-visible{outline:2.5px solid var(--terra);outline-offset:3px;border-radius:4px}
 :root{
-  --bg:#F7F2E9; --surf:#FDFBF7; --ink:#211D18; --soft:#4A443C; --mute:#6E675D; --faint:#8A8175;
-  --line:#E5DCCB; --line2:#E8DFCE; --terra:#B5522F; --terra-d:#8E3F23; --olive:#56663F; --sand:#E4A57F;
+  --bg:#F7F2E9; --surf:#FDFBF7; --ink:#211D18; --soft:#4A443C; --mute:#6E675D; --faint:#72695D;
+  --line:#E5DCCB; --line2:#E8DFCE; --terra:#B5522F; --terra-txt:#A84A28; --terra-d:#8E3F23; --olive:#56663F; --sand:#E4A57F;
   --fd:'Instrument Serif',Georgia,serif; --fs:'Karla','Helvetica Neue',sans-serif;
   --mw:1180px; --pad:clamp(1.25rem,5vw,6rem); --nav:74px;
 }
@@ -67,9 +68,9 @@
 html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav) + 1rem)}
 body{background:var(--bg);color:var(--ink);font-family:var(--fs);font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 h1,h2,h3{font-family:var(--fd);font-weight:400;letter-spacing:-.015em;line-height:1.05;text-wrap:balance}
-a{color:var(--terra);text-decoration:none}
+a{color:var(--terra-txt);text-decoration:none}
 a:hover{color:var(--terra-d)}
-img{max-width:100%;display:block}
+img{max-width:100%;height:auto;display:block}
 .wrap{max-width:var(--mw);margin:0 auto;padding:0 var(--pad)}
 .skip-link{position:absolute;left:-9999px;top:0;background:var(--terra);color:#fff;padding:.7rem 1.2rem;z-index:9999;font-weight:700}
 .skip-link:focus{left:0}
@@ -95,7 +96,7 @@ img{max-width:100%;display:block}
 .lwm-s{font-weight:400;font-size:.52rem;letter-spacing:.62em;color:var(--mute);margin-top:.26rem}
 .nlinks{display:flex;align-items:center;gap:1.6rem}
 .nl{font-size:.94rem;color:var(--soft)}
-.nl:hover{color:var(--terra)}
+.nl:hover{color:var(--terra-txt)}
 .nav-cta{display:inline-flex;align-items:center;gap:.5rem;background:var(--ink);color:var(--bg);padding:.72rem 1.25rem;border-radius:100px;font-size:.9rem;font-weight:700;min-height:44px}
 .nav-cta:hover{background:#000;color:var(--bg)}
 .burger{display:none;width:44px;height:44px;background:none;border:0;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer}
@@ -131,7 +132,7 @@ img{max-width:100%;display:block}
 .chat-foot{display:flex;align-items:center;gap:.4rem;align-self:center;font-size:.65rem;color:var(--mute);margin-top:.2rem}
 .pill{position:absolute;right:-1rem;bottom:3.2rem;background:var(--olive);color:var(--bg);border-radius:13px;padding:.85rem 1.15rem;box-shadow:0 16px 34px -16px rgba(33,29,24,.55)}
 .pill b{font-family:var(--fd);font-size:1.9rem;line-height:1;display:block;font-weight:400}
-.pill span{font-size:.7rem;opacity:.85}
+.pill span{font-size:.7rem;opacity:1;color:rgba(247,242,233,.92)}
 /* confianza */
 .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:1.5rem 0}
 .trust-i{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}
@@ -236,12 +237,13 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 .ft-h{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);font-weight:700;margin-bottom:.9rem}
 .ft-l{display:flex;flex-direction:column;gap:.55rem}
 .ft-l a{font-size:.9rem;color:var(--soft)}
-.ft-l a:hover{color:var(--terra)}
+.ft-l a:hover{color:var(--terra-txt)}
 .ft-b{border-top:1px solid var(--line);padding-top:1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 .fcopy{font-size:.82rem;color:var(--mute)}
+.fcopy a{text-decoration:underline}
 .fl-legal{display:flex;gap:1.3rem;flex-wrap:wrap}
 .fl-legal a{font-size:.82rem;color:var(--mute)}
-.fl-legal a:hover{color:var(--terra)}
+.fl-legal a:hover{color:var(--terra-txt)}
 /* responsive */
 @media(max-width:960px){
   .hero-g,.case,.vs{grid-template-columns:1fr}
@@ -309,9 +311,8 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 .caso{background:var(--surf);border:1px solid var(--line2);border-radius:18px;padding:clamp(1.5rem,3vw,2.3rem)}
 .caso-t{display:inline-block;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;padding:.24rem .7rem;border-radius:100px;margin-bottom:.9rem}
 .caso-real{color:var(--olive);background:rgba(86,102,63,.13)}
-.caso-tipo{color:var(--terra);background:rgba(181,82,47,.11);border:1px solid rgba(181,82,47,.24)}
+.caso-tipo{color:var(--terra-d);background:rgba(181,82,47,.11);border:1px solid rgba(181,82,47,.24)}
 .caso h3{font-size:clamp(1.4rem,2.6vw,1.95rem);margin-bottom:.8rem}
-.caso-precio{display:inline-block;vertical-align:middle;font-family:var(--fs);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--olive);background:rgba(86,102,63,.12);border-radius:100px;padding:.25rem .7rem;margin-left:.5rem;white-space:nowrap}
 .caso-g{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1.3rem}
 .caso-b{background:#F1EADD;border-radius:11px;padding:1rem}
 .caso-b h4{font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:.4rem;font-family:var(--fs);font-weight:700}
@@ -324,7 +325,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 /* breadcrumb */
 .bread{font-size:.78rem;color:var(--mute);padding:1rem 0 0}
 .bread a{color:var(--mute)}
-.bread a:hover{color:var(--terra)}
+.bread a:hover{color:var(--terra-txt)}
 .bread span{margin:0 .45rem;color:var(--line)}
 /* precio destacado */
 .pbox{background:var(--ink);color:var(--bg);border-radius:18px;padding:clamp(1.6rem,3vw,2.4rem);display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center}
@@ -343,7 +344,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 <header id="nav">
   <div class="nav-i">
-    <a href="/" class="logo" aria-label="Ruipérez Studio — Inicio"><svg viewBox="0 0 120 120" width="34" height="34" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter"><path d="M21.05 102.00 L21.05 15.05 L60.00 15.05 A30.95 30.95 0 0 1 90.95 46.00 L90.95 44.00 A30.95 30.95 0 0 1 60.00 74.95 L21.05 74.95 M80.87 74.95 L99.81 102.00" stroke-width="8.0"/><path d="M34.00 102.00 L34.00 28.00 L60.00 28.00 A18.00 18.00 0 0 1 78.00 46.00 L78.00 44.00 A18.00 18.00 0 0 1 60.00 62.00 L34.00 62.00 M56.00 62.00 L84.00 102.00" stroke-width="9.5"/></g></svg><span class="lwm"><span class="lwm-n">RUIPÉREZ</span><span class="lwm-s">STUDIO</span></span></a>
+    <a href="/" class="logo"><svg viewBox="0 0 120 120" width="34" height="34" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter"><path d="M21.05 102.00 L21.05 15.05 L60.00 15.05 A30.95 30.95 0 0 1 90.95 46.00 L90.95 44.00 A30.95 30.95 0 0 1 60.00 74.95 L21.05 74.95 M80.87 74.95 L99.81 102.00" stroke-width="8.0"/><path d="M34.00 102.00 L34.00 28.00 L60.00 28.00 A18.00 18.00 0 0 1 78.00 46.00 L78.00 44.00 A18.00 18.00 0 0 1 60.00 62.00 L34.00 62.00 M56.00 62.00 L84.00 102.00" stroke-width="9.5"/></g></svg><span class="lwm"><span class="lwm-n">RUIPÉREZ</span><span class="lwm-s">STUDIO</span></span></a>
     <nav class="nlinks" aria-label="Navegación principal">
       <a href="/#servicios" class="nl">Servicios</a><a href="/web-corporativa/" class="nl">Web corporativa</a>
       <a href="/#comparativa" class="nl">Precios</a><a href="#faq" class="nl">Dudas</a>
@@ -395,11 +396,11 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
   <div class="wrap">
     <div class="caso">
       <span class="caso-t caso-real">Caso real · cliente verificable</span>
-      <h3>Floristería Alameda · Cartagena <span class="caso-precio">Web corporativa · 890€ + IVA</span></h3>
+      <h3>TukTuk Cartagena</h3>
       <div class="caso-g">
-        <div class="caso-b"><h4>El problema</h4><p>Negocio con 4,9★ y 311 reseñas en Google cuya web de plantilla no reflejaba nada de esa reputación.</p></div>
-        <div class="caso-b"><h4>Qué hice</h4><p>Rediseño completo con fotos del local, pedidos por WhatsApp y ficha de Google ordenada.</p></div>
-        <div class="caso-b"><h4>El resultado</h4><p>La floristería reporta un 30% más de clientes desde la nueva web.</p></div>
+        <div class="caso-b"><h4>El problema</h4><p>Un negocio de tours por el casco antiguo que empezaba de cero: sin web, sin marca digital y sin forma de que un turista reservara antes de llegar a la ciudad.</p></div>
+        <div class="caso-b"><h4>Qué hice</h4><p>La web entera desde cero, con código propio y en cuatro idiomas — español, inglés, alemán y francés — porque su cliente baja de un crucero.</p></div>
+        <div class="caso-b"><h4>El resultado</h4><p>Una sola acción posible en toda la web: reservar el tour. Publicada en tuktukcartagena.com.</p></div>
       </div>
       
     </div>
@@ -440,13 +441,17 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 <footer>
   <div class="wrap">
     <div class="ft-g">
-      <div><a href="/" class="logo" aria-label="Ruipérez Studio — Inicio"><svg viewBox="0 0 120 120" width="34" height="34" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter"><path d="M21.05 102.00 L21.05 15.05 L60.00 15.05 A30.95 30.95 0 0 1 90.95 46.00 L90.95 44.00 A30.95 30.95 0 0 1 60.00 74.95 L21.05 74.95 M80.87 74.95 L99.81 102.00" stroke-width="8.0"/><path d="M34.00 102.00 L34.00 28.00 L60.00 28.00 A18.00 18.00 0 0 1 78.00 46.00 L78.00 44.00 A18.00 18.00 0 0 1 60.00 62.00 L34.00 62.00 M56.00 62.00 L84.00 102.00" stroke-width="9.5"/></g></svg><span class="lwm"><span class="lwm-n">RUIPÉREZ</span><span class="lwm-s">STUDIO</span></span></a>
+      <div><a href="/" class="logo"><svg viewBox="0 0 120 120" width="34" height="34" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter"><path d="M21.05 102.00 L21.05 15.05 L60.00 15.05 A30.95 30.95 0 0 1 90.95 46.00 L90.95 44.00 A30.95 30.95 0 0 1 60.00 74.95 L21.05 74.95 M80.87 74.95 L99.81 102.00" stroke-width="8.0"/><path d="M34.00 102.00 L34.00 28.00 L60.00 28.00 A18.00 18.00 0 0 1 78.00 46.00 L78.00 44.00 A18.00 18.00 0 0 1 60.00 62.00 L34.00 62.00 M56.00 62.00 L84.00 102.00" stroke-width="9.5"/></g></svg><span class="lwm"><span class="lwm-n">RUIPÉREZ</span><span class="lwm-s">STUDIO</span></span></a>
       <p class="ft-tag">Diseño web y automatización con IA para negocios de Cartagena y la Región de Murcia.</p></div>
-      <div><div class="ft-h">Servicios</div><div class="ft-l"><a href="/web-corporativa/">Web corporativa</a><a href="/landing-page/">Landing page</a><a href="/tienda-online/">Tienda online</a><a href="/automatizacion/">Automatización de procesos</a><a href="/chatbot-whatsapp/">Chatbot IA para WhatsApp</a></div></div>
-      <div><div class="ft-h">Por ciudad</div><div class="ft-l">
-        <a href="/diseno-web-cartagena/">Diseño web en Cartagena</a><a href="/diseno-web-murcia/">Diseño web en Murcia</a>
-        <a href="/automatizacion-procesos-murcia/">Automatización en Murcia</a><a href="/chatbot-whatsapp-cartagena/">Chatbot en Cartagena</a>
-      </div></div>
+      
+      <div>
+        <div class="ft-h">Servicios</div>
+        <div class="ft-l"><a href="/web-corporativa/">Web corporativa</a><a href="/landing-page/">Landing page</a><a href="/tienda-online/">Tienda online</a><a href="/automatizacion/">Automatización de procesos</a><a href="/chatbot-whatsapp/">Chatbot IA para WhatsApp</a><a href="/seo-local/">SEO local</a><a href="/email-marketing/">Email marketing</a><a href="/gestion-redes-sociales/">Gestión de redes sociales</a><a href="/mantenimiento-web/">Mantenimiento web</a></div>
+      </div>
+      <div>
+        <div class="ft-h">Por ciudad y estudio</div>
+        <div class="ft-l"><a href="/diseno-web-cartagena/">Diseño web en Cartagena</a><a href="/diseno-web-murcia/">Diseño web en Murcia</a><a href="/automatizacion-procesos-murcia/">Automatización en Murcia</a><a href="/chatbot-whatsapp-cartagena/">Chatbot en Cartagena</a><a href="/sobre-mi/">Quién soy</a><a href="/casos/">Proyectos</a></div>
+      </div>
     </div>
     <div class="ft-b">
       <span class="fcopy">© 2025–2026 Ruipérez Studio · Cartagena, Murcia · <a href="https://wa.me/34642084042" target="_blank" rel="noopener noreferrer">642 08 40 42</a></span>

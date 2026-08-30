@@ -1,0 +1,9 @@
+# Nada de esto tiene que servirse en produccion
+assets-originales/
+docs/
+PLAN.md
+CLAUDE.md
+README.md
+.claude/
+.agents/
+skills-lock.json

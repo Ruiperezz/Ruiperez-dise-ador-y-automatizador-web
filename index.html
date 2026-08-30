@@ -106,8 +106,8 @@
 </script>
 <style>
 :root{
-  --bg:#F7F2E9; --surf:#FDFBF7; --ink:#211D18; --soft:#4A443C; --mute:#6E675D; --faint:#8A8175;
-  --line:#E5DCCB; --line2:#E8DFCE; --terra:#B5522F; --terra-d:#8E3F23; --olive:#56663F; --sand:#E4A57F;
+  --bg:#F7F2E9; --surf:#FDFBF7; --ink:#211D18; --soft:#4A443C; --mute:#6E675D; --faint:#72695D;
+  --line:#E5DCCB; --line2:#E8DFCE; --terra:#B5522F; --terra-txt:#A84A28; --terra-d:#8E3F23; --olive:#56663F; --sand:#E4A57F;
   --red:#9B4A3A;
   --fd:'Instrument Serif',Georgia,serif; --fs:'Karla','Helvetica Neue',sans-serif;
   --mw:1180px; --pad:clamp(1.25rem,5vw,6rem); --nav:74px;
@@ -120,7 +120,7 @@
 html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav) + 1.5rem)}
 body{background:var(--bg);color:var(--ink);font-family:var(--fs);font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 h1,h2,h3{font-family:var(--fd);font-weight:400;letter-spacing:-.015em;line-height:1.05;text-wrap:balance}
-a{color:var(--terra);text-decoration:none}
+a{color:var(--terra-txt);text-decoration:none}
 a:hover{color:var(--terra-d)}
 img{max-width:100%;height:auto;display:block}
 :focus-visible{outline:2.5px solid var(--terra);outline-offset:3px;border-radius:4px}
@@ -164,7 +164,7 @@ html.js .rv.in{opacity:1;transform:none;transition:opacity .75s var(--ease),tran
 .nlinks{display:flex;align-items:center;gap:1.5rem}
 .nl{position:relative;font-size:.93rem;color:var(--soft);padding:.25rem 0}
 .nl::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1.5px;background:var(--terra);transform:scaleX(0);transform-origin:0 50%;transition:transform .35s var(--ease)}
-.nl:hover{color:var(--terra)}
+.nl:hover{color:var(--terra-txt)}
 .nl:hover::after,.nl.act::after{transform:scaleX(1)}
 .nl.act{color:var(--ink);font-weight:600}
 .nav-cta{display:inline-flex;align-items:center;gap:.5rem;background:var(--ink);color:var(--bg);padding:.72rem 1.25rem;border-radius:100px;font-size:.9rem;font-weight:700;min-height:44px;transition:transform .22s var(--ease),background .22s}
@@ -209,7 +209,7 @@ html.js .rv.in{opacity:1;transform:none;transition:opacity .75s var(--ease),tran
 .hsub{font-size:clamp(1rem,1.35vw,1.1rem);color:var(--soft);line-height:1.6;margin-bottom:.85rem;max-width:29rem;text-wrap:pretty}
 .hfor{font-size:.94rem;color:var(--mute);margin-bottom:1.4rem;display:flex;align-items:baseline;gap:.4rem;flex-wrap:wrap}
 .rot{display:inline-block;position:relative;min-width:9.4rem;height:1.5em;overflow:hidden;vertical-align:bottom}
-.rot span{position:absolute;left:0;top:0;white-space:nowrap;font-weight:700;color:var(--terra);opacity:0;transform:translateY(100%)}
+.rot span{position:absolute;left:0;top:0;white-space:nowrap;font-weight:700;color:var(--terra-txt);opacity:0;transform:translateY(100%)}
 .rot span.on{opacity:1;transform:none;transition:opacity .45s var(--ease),transform .45s var(--ease)}
 .rot span.out{opacity:0;transform:translateY(-100%);transition:opacity .4s var(--ease),transform .4s var(--ease)}
 .hctas{display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:1.6rem}
@@ -238,7 +238,7 @@ html.js .anim.go .msg,html.js .anim.go .chat-foot{opacity:1;transform:none;trans
 .pill{position:absolute;right:-1.1rem;bottom:3.2rem;background:var(--olive);color:var(--bg);border-radius:13px;padding:.85rem 1.15rem;box-shadow:var(--sh-m);animation:float 5.5s ease-in-out infinite}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
 .pill b{font-family:var(--fd);font-size:1.9rem;line-height:1;display:block;font-weight:400}
-.pill span{font-size:.7rem;opacity:.85}
+.pill span{font-size:.7rem;opacity:1;color:rgba(247,242,233,.92)}
 
 /* ══ marquee de clientes ══ */
 .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:1.6rem 0;background:var(--surf)}
@@ -314,7 +314,7 @@ html.js .anim.go .msg,html.js .anim.go .chat-foot{opacity:1;transform:none;trans
 .pfx{display:block;font-family:var(--fs);font-size:.66rem;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);font-weight:700;margin-bottom:.3rem;line-height:1}
 .svc.dark .pfx{color:rgba(247,242,233,.55)}
 .svc-q{font-size:.78rem;color:var(--mute);margin-top:.4rem}
-.svc-go{display:inline-flex;align-items:center;gap:.35rem;font-size:.86rem;font-weight:700;color:var(--terra);white-space:nowrap}
+.svc-go{display:inline-flex;align-items:center;gap:.35rem;font-size:.86rem;font-weight:700;color:var(--terra-txt);white-space:nowrap}
 .svc-go svg{transition:transform .3s var(--ease)}
 .svc:hover .svc-go svg{transform:translateX(4px)}
 .svc.dark{background:var(--ink);border-color:var(--ink);color:var(--bg)}
@@ -392,8 +392,8 @@ html.js .anim.go .msg,html.js .anim.go .chat-foot{opacity:1;transform:none;trans
 .tst-w{margin-top:auto;display:flex;align-items:center;gap:.75rem;padding-top:1.1rem;border-top:1px solid #EDE4D4}
 .av{width:40px;height:40px;border-radius:50%;background:var(--olive);color:var(--bg);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.82rem;flex:none}
 .tst-n{font-weight:700;font-size:.94rem}
-.tst-link{margin-top:1.4rem;font-size:.92rem;font-weight:700}
-.pill small{display:block;font-size:.6rem;opacity:.8;margin-top:.1rem;line-height:1.2}
+.tst-link{margin-top:1.4rem;font-size:.92rem;font-weight:700;color:var(--terra-txt)}
+.pill small{display:block;font-size:.6rem;opacity:1;margin-top:.1rem;line-height:1.2}
 .tst-r{font-size:.78rem;color:var(--mute)}
 
 /* ══ faq ══ */
@@ -420,12 +420,13 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 .ft-h{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);font-weight:700;margin-bottom:.9rem}
 .ft-l{display:flex;flex-direction:column;gap:.55rem}
 .ft-l a{font-size:.9rem;color:var(--soft)}
-.ft-l a:hover{color:var(--terra)}
+.ft-l a:hover{color:var(--terra-txt)}
 .ft-b{border-top:1px solid var(--line);padding-top:1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 .fcopy{font-size:.82rem;color:var(--mute)}
+.fcopy a{text-decoration:underline}
 .fl-legal{display:flex;gap:1.3rem;flex-wrap:wrap}
 .fl-legal a{font-size:.82rem;color:var(--mute)}
-.fl-legal a:hover{color:var(--terra)}
+.fl-legal a:hover{color:var(--terra-txt)}
 
 
 /* ══ responsive ══ */
@@ -479,13 +480,15 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 
 <header id="nav">
   <div class="nav-i">
-    <a href="/" class="logo" aria-label="Ruipérez Studio — Inicio"><svg viewBox="0 0 120 120" width="36" height="36" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter"><path d="M21.05 102.00 L21.05 15.05 L60.00 15.05 A30.95 30.95 0 0 1 90.95 46.00 L90.95 44.00 A30.95 30.95 0 0 1 60.00 74.95 L21.05 74.95 M80.87 74.95 L99.81 102.00" stroke-width="8.0"/><path d="M34.00 102.00 L34.00 28.00 L60.00 28.00 A18.00 18.00 0 0 1 78.00 46.00 L78.00 44.00 A18.00 18.00 0 0 1 60.00 62.00 L34.00 62.00 M56.00 62.00 L84.00 102.00" stroke-width="9.5"/></g></svg><span class="lwm"><span class="lwm-n">RUIPÉREZ</span><span class="lwm-s">STUDIO</span></span></a>
+    <a href="/" class="logo"><svg viewBox="0 0 120 120" width="36" height="36" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter"><path d="M21.05 102.00 L21.05 15.05 L60.00 15.05 A30.95 30.95 0 0 1 90.95 46.00 L90.95 44.00 A30.95 30.95 0 0 1 60.00 74.95 L21.05 74.95 M80.87 74.95 L99.81 102.00" stroke-width="8.0"/><path d="M34.00 102.00 L34.00 28.00 L60.00 28.00 A18.00 18.00 0 0 1 78.00 46.00 L78.00 44.00 A18.00 18.00 0 0 1 60.00 62.00 L34.00 62.00 M56.00 62.00 L84.00 102.00" stroke-width="9.5"/></g></svg><span class="lwm"><span class="lwm-n">RUIPÉREZ</span><span class="lwm-s">STUDIO</span></span></a>
     <nav class="nlinks" id="nlinks" aria-label="Navegación principal">
       <a href="#caso" class="nl">Caso real</a>
       <a href="#beneficios" class="nl">Qué consigues</a>
       <a href="#servicios" class="nl">Servicios y precios</a>
       <a href="#proceso" class="nl">Cómo trabajo</a>
       <a href="#faq" class="nl">Dudas</a>
+      <a href="/casos/" class="nl">Proyectos</a>
+      <a href="/sobre-mi/" class="nl">Quién soy</a>
     </nav>
     <a href="https://wa.me/34642084042?text=Hola,%20quiero%20información%20sobre%20una%20web%20para%20mi%20negocio" target="_blank" rel="noopener noreferrer" class="nav-cta"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg> Escríbeme</a>
     <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nlinks"><span></span><span></span></button>
@@ -531,7 +534,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
           <div class="chat-foot" style="--d:2200ms"><span class="dot"></span>atendido sin que tú estuvieras</div>
         </div>
       </div>
-      <div class="pill"><b>+30%</b><span>más clientes<br><small>según el cliente</small></span></div>
+      <div class="pill"><b>4,9★</b><span>311 reseñas<br><small>en Google</small></span></div>
     </div>
   </div>
 </section>
@@ -539,7 +542,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 <div class="trust">
   <div class="wrap">
     <div class="trust-t"><span class="ey">Negocios que ya confían</span></div>
-    <!-- Para cambiar nombres por logos: sustituye <b>Nombre</b> por <img src="/img/logo-cliente.png" alt="Nombre"> en AMBAS listas (la segunda es la copia que hace el bucle infinito). -->
+    <!-- Para cambiar nombres por logos: sustituye <b>Nombre</b> por <img src="/img/logo-cliente.png" alt="Nombre" width="160" height="52" loading="lazy"> en AMBAS listas (la segunda es la copia que hace el bucle infinito). -->
     <div class="mq">
       <div class="mq-t">
         <ul class="mq-l">
@@ -563,7 +566,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
       <div>
         <span class="ey">Caso real · Cartagena</span>
         <h2>311 reseñas y una web<br>que <em>no las merecía</em>.</h2>
-        <p>Floristería Alameda tenía 4,9 estrellas en Google y una plantilla genérica con textos de ejemplo. Rediseño completo, pedidos por WhatsApp integrados y ficha de Google ordenada.</p>
+        <p>Floristería Alameda tenía 4,9 estrellas en Google y una plantilla genérica con los textos de ejemplo sin quitar. Le monté la tienda online entera: catálogo, carrito, pasarela de pago y pedidos por WhatsApp.</p>
         <div class="stats">
           <div class="stat"><b>+30%</b><span>más clientes<br>según datos del cliente</span></div>
           <div class="stat"><b>4,9★</b><span>311 reseñas</span></div>
@@ -815,24 +818,17 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
   <div class="wrap">
     <div class="ft-g">
       <div>
-        <a href="/" class="logo" aria-label="Ruipérez Studio — Inicio"><svg viewBox="0 0 120 120" width="34" height="34" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter"><path d="M21.05 102.00 L21.05 15.05 L60.00 15.05 A30.95 30.95 0 0 1 90.95 46.00 L90.95 44.00 A30.95 30.95 0 0 1 60.00 74.95 L21.05 74.95 M80.87 74.95 L99.81 102.00" stroke-width="8.0"/><path d="M34.00 102.00 L34.00 28.00 L60.00 28.00 A18.00 18.00 0 0 1 78.00 46.00 L78.00 44.00 A18.00 18.00 0 0 1 60.00 62.00 L34.00 62.00 M56.00 62.00 L84.00 102.00" stroke-width="9.5"/></g></svg><span class="lwm"><span class="lwm-n">RUIPÉREZ</span><span class="lwm-s">STUDIO</span></span></a>
+        <a href="/" class="logo"><svg viewBox="0 0 120 120" width="34" height="34" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter"><path d="M21.05 102.00 L21.05 15.05 L60.00 15.05 A30.95 30.95 0 0 1 90.95 46.00 L90.95 44.00 A30.95 30.95 0 0 1 60.00 74.95 L21.05 74.95 M80.87 74.95 L99.81 102.00" stroke-width="8.0"/><path d="M34.00 102.00 L34.00 28.00 L60.00 28.00 A18.00 18.00 0 0 1 78.00 46.00 L78.00 44.00 A18.00 18.00 0 0 1 60.00 62.00 L34.00 62.00 M56.00 62.00 L84.00 102.00" stroke-width="9.5"/></g></svg><span class="lwm"><span class="lwm-n">RUIPÉREZ</span><span class="lwm-s">STUDIO</span></span></a>
         <p class="ft-tag">Diseño web y automatización con IA para negocios de Cartagena y la Región de Murcia.</p>
       </div>
+      
       <div>
         <div class="ft-h">Servicios</div>
-        <div class="ft-l">
-          <a href="/web-corporativa/">Web corporativa</a><a href="/landing-page/">Landing page</a>
-          <a href="/tienda-online/">Tienda online</a><a href="/automatizacion/">Automatización</a>
-          <a href="/chatbot-whatsapp/">Chatbot IA WhatsApp</a>
-        </div>
+        <div class="ft-l"><a href="/web-corporativa/">Web corporativa</a><a href="/landing-page/">Landing page</a><a href="/tienda-online/">Tienda online</a><a href="/automatizacion/">Automatización de procesos</a><a href="/chatbot-whatsapp/">Chatbot IA para WhatsApp</a><a href="/seo-local/">SEO local</a><a href="/email-marketing/">Email marketing</a><a href="/gestion-redes-sociales/">Gestión de redes sociales</a><a href="/mantenimiento-web/">Mantenimiento web</a></div>
       </div>
       <div>
-        <div class="ft-h">Más</div>
-        <div class="ft-l">
-          <a href="/seo-local/">SEO local</a><a href="/email-marketing/">Email marketing</a>
-          <a href="/mantenimiento-web/">Mantenimiento</a><a href="/gestion-redes-sociales/">Gestión de redes sociales</a>
-          <a href="/diseno-web-cartagena/">Diseño web en Cartagena</a><a href="/diseno-web-murcia/">Diseño web en Murcia</a>
-        </div>
+        <div class="ft-h">Por ciudad y estudio</div>
+        <div class="ft-l"><a href="/diseno-web-cartagena/">Diseño web en Cartagena</a><a href="/diseno-web-murcia/">Diseño web en Murcia</a><a href="/automatizacion-procesos-murcia/">Automatización en Murcia</a><a href="/chatbot-whatsapp-cartagena/">Chatbot en Cartagena</a><a href="/sobre-mi/">Quién soy</a><a href="/casos/">Proyectos</a></div>
       </div>
     </div>
     <div class="ft-b">
