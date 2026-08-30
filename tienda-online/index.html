@@ -31,9 +31,21 @@
 <meta name="theme-color" content="#F7F2E9">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="font" type="font/woff2" href="/fonts/instrument-serif-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/fonts/karla-latin.woff2" crossorigin>
+<style>
+/* Tipografías servidas desde este mismo dominio. Antes venían de Google, que
+   bloqueaba el renderizado ~1,8s y comunicaba la IP del visitante a Google. */
+@font-face{font-family:'Instrument Serif';font-style:normal;font-weight:400;font-display:swap;
+src:url('/fonts/instrument-serif-latin.woff2') format('woff2');
+unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Instrument Serif';font-style:italic;font-weight:400;font-display:swap;
+src:url('/fonts/instrument-serif-italic-latin.woff2') format('woff2');
+unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Karla';font-style:normal;font-weight:400 700;font-display:swap;
+src:url('/fonts/karla-latin.woff2') format('woff2');
+unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+</style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Service","name":"Tienda Online para Negocios en Cartagena y Murcia","description":"Desarrollo de tiendas online con carrito de compra, pasarela de pago y gestión de pedidos para negocios en Cartagena y Murcia.","provider":{"@type":"LocalBusiness","name":"Ruipérez Studio","url":"https://ruiperezstudio.es","telephone":"+34642084042"},"offers":{"@type":"Offer","priceCurrency":"EUR","price":"1990","description":"Tienda online con carrito y pasarela de pago"}}
 </script>
