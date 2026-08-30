@@ -40,6 +40,8 @@ Otros archivos: `sitemap.xml` (19 URLs — las noindex quedan fuera), `robots.tx
 
 **Estos son los precios buenos.** Son los que están en producción. Todos **sin IVA**; cada precio visible debe llevar «+ 21% IVA» al lado.
 
+**No inventes lo que costó un caso.** Ningún caso de estudio lleva precio: el precio va en el bloque de precio del servicio, que es el oficial.
+
 | Servicio | Precio |
 |---|---|
 | Landing page | desde 590€ · pago único |
@@ -59,7 +61,7 @@ Cambios puntuales fuera de contrato: 55€/hora.
 Solo estos tres son clientes reales verificables y pueden aparecer como tales:
 
 - **TukTuk Cartagena** — turismo. Web desde cero en 4 idiomas (ES/EN/DE/FR). `tuktukcartagena.com`
-- **Floristería Alameda** — Cartagena, 4,9★ con 311 reseñas en Google
+- **Floristería Alameda** — Cartagena, 4,9★ con 311 reseñas en Google. Es una **tienda online** con catálogo, carrito y pasarela de pago. No la etiquetes como web corporativa.
 - **Casa del Sushi** — Cartagena, restauración
 
 En curso: **Finca Doña Carmen** (aplicación a medida). Se añade a `/casos/` cuando esté publicada, no antes.
@@ -69,6 +71,19 @@ En curso: **Finca Doña Carmen** (aplicación a medida). Se añade a `/casos/` c
 **No insinúes volumen que no existe.** Nada de «algunos de los muchos proyectos». Son cuatro y se enseñan los cuatro: lo que convence es que se pueden abrir y comprobar, no que parezcan muchos.
 
 No uses ningún otro nombre de negocio. Si necesitas un dato, una cifra o un testimonio que no tienes, deja `[PEDIR AL CLIENTE]` y sigue. **Nunca inventes clientes, cifras ni reseñas.**
+
+## Qué caso va en qué página
+
+Un caso repetido en todas partes no es prueba social. Cada página lleva el suyo:
+
+| Página | Caso |
+|---|---|
+| Home · `/tienda-online/` · `/seo-local/` | Floristería Alameda |
+| `/web-corporativa/` | Casa del Sushi |
+| `/diseno-web-cartagena/` | TukTuk Cartagena |
+| `/casos/` | los cuatro |
+
+Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias a propósito y van etiquetadas como tales. En cuanto haya un caso real de ese servicio, se sustituye.
 
 ## Reglas de contenido
 

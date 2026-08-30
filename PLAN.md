@@ -2,7 +2,7 @@
 
 > Documento de trabajo del proyecto. Claude Code lo lee entero antes de tocar nada.
 > Las fases se ejecutan **en orden**, con parada y aprobación humana al final de cada una.
-> Estado del proyecto: `FASE 0 — pendiente`. Actualiza esta línea al cerrar cada fase.
+> Estado del proyecto: **las seis fases cerradas y fusionadas en `main` el 30/08/2026.** Pendiente de `git push` (lo aprueba Álvaro).
 
 ---
 
@@ -260,10 +260,14 @@ Rellena esta tabla al cerrar cada fase. No la borres.
 
 | Fase | Estado | Rama | Fecha | Pendiente de mí |
 |---|---|---|---|---|
-| 0 — Reconocimiento | pendiente | — | — | — |
-| 1 — Errores objetivos | pendiente | `fix/fase-1-errores` | — | — |
-| 2 — Medición y cookies | pendiente | `fix/fase-2-medicion` | — | — |
-| 3 — Eslóganes y copy | pendiente | `fix/fase-3-copy` | — | — |
-| 4 — Reposicionamiento | pendiente | `fix/fase-4-posicionamiento` | — | — |
-| 5 — Landings de pago | pendiente | `fix/fase-5-landings` | — | — |
-| 6 — Diseño y rendimiento | pendiente | `fix/fase-6-diseno` | — | — |
+| 0 — Reconocimiento | cerrada | — | 29/08/2026 | — |
+| 1 — Errores objetivos | cerrada | `fix/fase-1-errores` | 29/08/2026 | — |
+| 2 — Medición y cookies | cerrada | `fix/fase-2-medicion` | 29/08/2026 | Rellenar los 3 IDs de píxel en `js/consent.js` |
+| 3 — Eslóganes | cerrada | `fix/fase-3-copy` | 29/08/2026 | — |
+| 4 — Reposicionamiento | cerrada | `fix/fase-4-posicionamiento` | 30/08/2026 | — |
+| 5 — Landings de pago | cerrada | `fix/fase-5-landings` | 30/08/2026 | Etiquetar los anuncios con las UTM de `docs/medicion.md` |
+| 6 — Diseño y rendimiento | cerrada | `fix/fase-6-diseno` | 30/08/2026 | `git push origin main` |
+
+**Añadido fuera del plan, a petición de Álvaro:** servicio de gestión de redes sociales (350€/mes) con su página; página `/sobre-mi/`; página `/casos/` con los cuatro proyectos reales; retirada del diseño oscuro antiguo de las tres páginas legales.
+
+**Corrección importante sobre el plan:** la fase 1.1 daba por hecho que Floristería Alameda era una web corporativa de 890€. Álvaro confirmó el 30/08 que es una **tienda online**. Los casos se repartieron: Alameda a `/tienda-online/`, Casa del Sushi a `/web-corporativa/` y TukTuk a `/diseno-web-cartagena/`. Ningún caso lleva ya precio.
