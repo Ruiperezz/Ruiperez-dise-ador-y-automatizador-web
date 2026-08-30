@@ -57,9 +57,10 @@
 </script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Trabajas con negocios de Murcia capital?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, y también con pedanías y el área metropolitana. Estoy en Cartagena, a media hora, y me desplazo sin problema si prefieres vernos en persona."}}, {"@type": "Question", "name": "¿Cuánto cuesta una web para un negocio de Murcia?", "acceptedAnswer": {"@type": "Answer", "text": "Desde 590€ una landing page y desde 890€ una web corporativa completa, IVA aparte y en pago único, con precio cerrado antes de empezar."}}, {"@type": "Question", "name": "¿Es más difícil posicionar en Murcia que en un pueblo?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, hay más competencia por las mismas búsquedas. Por eso el trabajo de SEO local pesa más: contenido específico, ficha de Google bien trabajada y reseñas."}}, {"@type": "Question", "name": "¿Incluye el SEO local en el precio?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Todas las webs salen con SEO local incluido. El servicio mensual de SEO continuo es aparte, desde 290€/mes sin permanencia."}}]}</script>
 <style>
+:focus-visible{outline:2.5px solid var(--terra);outline-offset:3px;border-radius:4px}
 :root{
-  --bg:#F7F2E9; --surf:#FDFBF7; --ink:#211D18; --soft:#4A443C; --mute:#6E675D; --faint:#8A8175;
-  --line:#E5DCCB; --line2:#E8DFCE; --terra:#B5522F; --terra-d:#8E3F23; --olive:#56663F; --sand:#E4A57F;
+  --bg:#F7F2E9; --surf:#FDFBF7; --ink:#211D18; --soft:#4A443C; --mute:#6E675D; --faint:#766D61;
+  --line:#E5DCCB; --line2:#E8DFCE; --terra:#B5522F; --terra-txt:#A84A28; --terra-d:#8E3F23; --olive:#56663F; --sand:#E4A57F;
   --fd:'Instrument Serif',Georgia,serif; --fs:'Karla','Helvetica Neue',sans-serif;
   --mw:1180px; --pad:clamp(1.25rem,5vw,6rem); --nav:74px;
 }
@@ -67,7 +68,7 @@
 html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav) + 1rem)}
 body{background:var(--bg);color:var(--ink);font-family:var(--fs);font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 h1,h2,h3{font-family:var(--fd);font-weight:400;letter-spacing:-.015em;line-height:1.05;text-wrap:balance}
-a{color:var(--terra);text-decoration:none}
+a{color:var(--terra-txt);text-decoration:none}
 a:hover{color:var(--terra-d)}
 img{max-width:100%;display:block}
 .wrap{max-width:var(--mw);margin:0 auto;padding:0 var(--pad)}
@@ -131,7 +132,7 @@ img{max-width:100%;display:block}
 .chat-foot{display:flex;align-items:center;gap:.4rem;align-self:center;font-size:.65rem;color:var(--mute);margin-top:.2rem}
 .pill{position:absolute;right:-1rem;bottom:3.2rem;background:var(--olive);color:var(--bg);border-radius:13px;padding:.85rem 1.15rem;box-shadow:0 16px 34px -16px rgba(33,29,24,.55)}
 .pill b{font-family:var(--fd);font-size:1.9rem;line-height:1;display:block;font-weight:400}
-.pill span{font-size:.7rem;opacity:.85}
+.pill span{font-size:.7rem;opacity:1;color:rgba(247,242,233,.92)}
 /* confianza */
 .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:1.5rem 0}
 .trust-i{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}
@@ -239,6 +240,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 .ft-l a:hover{color:var(--terra)}
 .ft-b{border-top:1px solid var(--line);padding-top:1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 .fcopy{font-size:.82rem;color:var(--mute)}
+.fcopy a{text-decoration:underline}
 .fl-legal{display:flex;gap:1.3rem;flex-wrap:wrap}
 .fl-legal a{font-size:.82rem;color:var(--mute)}
 .fl-legal a:hover{color:var(--terra)}
@@ -342,7 +344,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 <header id="nav">
   <div class="nav-i">
-    <a href="/" class="logo" aria-label="Ruipérez Studio — Inicio"><svg viewBox="0 0 120 120" width="34" height="34" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter"><path d="M21.05 102.00 L21.05 15.05 L60.00 15.05 A30.95 30.95 0 0 1 90.95 46.00 L90.95 44.00 A30.95 30.95 0 0 1 60.00 74.95 L21.05 74.95 M80.87 74.95 L99.81 102.00" stroke-width="8.0"/><path d="M34.00 102.00 L34.00 28.00 L60.00 28.00 A18.00 18.00 0 0 1 78.00 46.00 L78.00 44.00 A18.00 18.00 0 0 1 60.00 62.00 L34.00 62.00 M56.00 62.00 L84.00 102.00" stroke-width="9.5"/></g></svg><span class="lwm"><span class="lwm-n">RUIPÉREZ</span><span class="lwm-s">STUDIO</span></span></a>
+    <a href="/" class="logo"><svg viewBox="0 0 120 120" width="34" height="34" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter"><path d="M21.05 102.00 L21.05 15.05 L60.00 15.05 A30.95 30.95 0 0 1 90.95 46.00 L90.95 44.00 A30.95 30.95 0 0 1 60.00 74.95 L21.05 74.95 M80.87 74.95 L99.81 102.00" stroke-width="8.0"/><path d="M34.00 102.00 L34.00 28.00 L60.00 28.00 A18.00 18.00 0 0 1 78.00 46.00 L78.00 44.00 A18.00 18.00 0 0 1 60.00 62.00 L34.00 62.00 M56.00 62.00 L84.00 102.00" stroke-width="9.5"/></g></svg><span class="lwm"><span class="lwm-n">RUIPÉREZ</span><span class="lwm-s">STUDIO</span></span></a>
     <nav class="nlinks" aria-label="Navegación principal">
       <a href="/#servicios" class="nl">Servicios</a><a href="/web-corporativa/" class="nl">Web corporativa</a>
       <a href="/#comparativa" class="nl">Precios</a><a href="#faq" class="nl">Dudas</a>
@@ -439,13 +441,17 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 <footer>
   <div class="wrap">
     <div class="ft-g">
-      <div><a href="/" class="logo" aria-label="Ruipérez Studio — Inicio"><svg viewBox="0 0 120 120" width="34" height="34" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter"><path d="M21.05 102.00 L21.05 15.05 L60.00 15.05 A30.95 30.95 0 0 1 90.95 46.00 L90.95 44.00 A30.95 30.95 0 0 1 60.00 74.95 L21.05 74.95 M80.87 74.95 L99.81 102.00" stroke-width="8.0"/><path d="M34.00 102.00 L34.00 28.00 L60.00 28.00 A18.00 18.00 0 0 1 78.00 46.00 L78.00 44.00 A18.00 18.00 0 0 1 60.00 62.00 L34.00 62.00 M56.00 62.00 L84.00 102.00" stroke-width="9.5"/></g></svg><span class="lwm"><span class="lwm-n">RUIPÉREZ</span><span class="lwm-s">STUDIO</span></span></a>
+      <div><a href="/" class="logo"><svg viewBox="0 0 120 120" width="34" height="34" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter"><path d="M21.05 102.00 L21.05 15.05 L60.00 15.05 A30.95 30.95 0 0 1 90.95 46.00 L90.95 44.00 A30.95 30.95 0 0 1 60.00 74.95 L21.05 74.95 M80.87 74.95 L99.81 102.00" stroke-width="8.0"/><path d="M34.00 102.00 L34.00 28.00 L60.00 28.00 A18.00 18.00 0 0 1 78.00 46.00 L78.00 44.00 A18.00 18.00 0 0 1 60.00 62.00 L34.00 62.00 M56.00 62.00 L84.00 102.00" stroke-width="9.5"/></g></svg><span class="lwm"><span class="lwm-n">RUIPÉREZ</span><span class="lwm-s">STUDIO</span></span></a>
       <p class="ft-tag">Diseño web y automatización con IA para negocios de Cartagena y la Región de Murcia.</p></div>
-      <div><div class="ft-h">Servicios</div><div class="ft-l"><a href="/web-corporativa/">Web corporativa</a><a href="/landing-page/">Landing page</a><a href="/tienda-online/">Tienda online</a><a href="/automatizacion/">Automatización de procesos</a><a href="/chatbot-whatsapp/">Chatbot IA para WhatsApp</a></div></div>
-      <div><div class="ft-h">Por ciudad</div><div class="ft-l">
-        <a href="/diseno-web-cartagena/">Diseño web en Cartagena</a><a href="/diseno-web-murcia/">Diseño web en Murcia</a>
-        <a href="/automatizacion-procesos-murcia/">Automatización en Murcia</a><a href="/chatbot-whatsapp-cartagena/">Chatbot en Cartagena</a>
-      </div></div>
+      
+      <div>
+        <div class="ft-h">Servicios</div>
+        <div class="ft-l"><a href="/web-corporativa/">Web corporativa</a><a href="/landing-page/">Landing page</a><a href="/tienda-online/">Tienda online</a><a href="/automatizacion/">Automatización de procesos</a><a href="/chatbot-whatsapp/">Chatbot IA para WhatsApp</a><a href="/seo-local/">SEO local</a><a href="/email-marketing/">Email marketing</a><a href="/gestion-redes-sociales/">Gestión de redes sociales</a><a href="/mantenimiento-web/">Mantenimiento web</a></div>
+      </div>
+      <div>
+        <div class="ft-h">Por ciudad y estudio</div>
+        <div class="ft-l"><a href="/diseno-web-cartagena/">Diseño web en Cartagena</a><a href="/diseno-web-murcia/">Diseño web en Murcia</a><a href="/automatizacion-procesos-murcia/">Automatización en Murcia</a><a href="/chatbot-whatsapp-cartagena/">Chatbot en Cartagena</a><a href="/sobre-mi/">Quién soy</a><a href="/casos/">Casos reales</a></div>
+      </div>
     </div>
     <div class="ft-b">
       <span class="fcopy">© 2025–2026 Ruipérez Studio · Cartagena, Murcia · <a href="https://wa.me/34642084042" target="_blank" rel="noopener noreferrer">642 08 40 42</a></span>

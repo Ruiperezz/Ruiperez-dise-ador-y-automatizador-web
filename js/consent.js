@@ -235,7 +235,7 @@
        pantalla; no es un elemento navegable, asi que no lleva anillo */
     '.rsc-b:focus{outline:none}',
     '.rsc-b[hidden]{display:none}',
-    '.rsc-b p{margin:0;font-size:.86rem;line-height:1.55;color:rgba(247,242,233,.82);max-width:40rem}',
+    '.rsc-b p{margin:0;font-size:.86rem;line-height:1.55;color:rgba(247,242,233,.9);max-width:40rem}',
     '.rsc-b a{color:#E4A57F;text-decoration:underline}',
     '.rsc-acts{display:flex;gap:.6rem;flex-wrap:wrap}',
     /* Los tres botones son idénticos en tamaño Y en tratamiento visual: destacar

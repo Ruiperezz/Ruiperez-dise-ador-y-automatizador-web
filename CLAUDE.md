@@ -23,7 +23,7 @@ HTML + CSS + JavaScript **estático puro**. Sin `package.json`, sin npm, sin bun
 
 ## Estructura
 
-17 páginas, una carpeta por URL:
+21 páginas, una carpeta por URL:
 
 | Grupo | Rutas |
 |---|---|
@@ -31,8 +31,10 @@ HTML + CSS + JavaScript **estático puro**. Sin `package.json`, sin npm, sin bun
 | Servicios (9) | `/web-corporativa/` `/landing-page/` `/tienda-online/` `/automatizacion/` `/chatbot-whatsapp/` `/seo-local/` `/email-marketing/` `/mantenimiento-web/` `/gestion-redes-sociales/` |
 | Ciudad (4) | `/diseno-web-cartagena/` `/diseno-web-murcia/` `/automatizacion-procesos-murcia/` `/chatbot-whatsapp-cartagena/` |
 | Legales (3) | `/aviso-legal/` `/privacidad/` `/cookies/` |
+| Estudio (2) | `/sobre-mi/` · `/casos/` (noindex hasta tener los datos de TukTuk y Casa del Sushi) |
+| Tráfico de pago (2) | `/lp/hosteleria/` `/lp/comercio-local/` — noindex, sin menú, un solo CTA. **Nunca mandar tráfico de pago a la home.** |
 
-Otros archivos: `sitemap.xml` (17 URLs), `robots.txt`, `vercel.json` (CSP, HSTS, X-Frame-Options, cache de `/img/`), `favicon.svg`, `apple-touch-icon.png`, `img/`.
+Otros archivos: `sitemap.xml` (18 URLs — las noindex quedan fuera), `robots.txt`, `vercel.json` (CSP, HSTS, X-Frame-Options, cache de `/img/`), `favicon.svg`, `apple-touch-icon.png`, `img/`.
 
 ## Precios oficiales
 
@@ -80,6 +82,9 @@ No uses ningún otro nombre de negocio. Si necesitas un dato, una cifra o un tes
 - Imágenes con `width` y `height` reales y `height:auto` en CSS. Declarar una proporción incorrecta deforma la imagen.
 - Ningún script de terceros se ejecuta antes del consentimiento de cookies.
 - Contraste WCAG AA, foco visible, `alt` en todas las imágenes, objetivos táctiles de 44px o más.
+- `--terra` (#B5522F) da 4,47:1 sobre el fondo crema: **no vale para texto pequeño**. Para texto usa `--terra-txt` (#A84A28, 5,12:1). Para rellenos, `--terra`.
+- El pie tiene que ser idéntico en las 15 páginas que lo llevan. Si añades una página, añádela al pie de todas.
+- Referencia medida el 30/08/2026 con Lighthouse móvil: rendimiento 98, accesibilidad 100, buenas prácticas 100, SEO 100. LCP 1,9s · CLS 0,04.
 
 ## Skills de este proyecto
 

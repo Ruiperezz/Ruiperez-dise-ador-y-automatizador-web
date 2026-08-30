@@ -36,8 +36,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#F7F2E9; --surf:#FDFBF7; --ink:#211D18; --soft:#4A443C; --mute:#6E675D; --faint:#8A8175;
-  --line:#E5DCCB; --line2:#E8DFCE; --terra:#B5522F; --terra-d:#8E3F23; --olive:#56663F; --sand:#E4A57F;
+  --bg:#F7F2E9; --surf:#FDFBF7; --ink:#211D18; --soft:#4A443C; --mute:#6E675D; --faint:#766D61;
+  --line:#E5DCCB; --line2:#E8DFCE; --terra:#B5522F; --terra-txt:#A84A28; --terra-d:#8E3F23; --olive:#56663F; --sand:#E4A57F;
   --fd:'Instrument Serif',Georgia,serif; --fs:'Karla','Helvetica Neue',sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -56,11 +56,11 @@ header{border-bottom:1px solid var(--line);padding:1.1rem 0;background:var(--sur
 .back:hover{color:var(--terra)}
 main{padding:3.2rem 0 4rem}
 h1{font-family:var(--fd);font-weight:400;font-size:clamp(2rem,4.4vw,2.9rem);letter-spacing:-.015em;line-height:1.08;margin-bottom:1.6rem;text-wrap:balance}
-h3{font-family:var(--fd);font-weight:400;font-size:1.35rem;letter-spacing:-.015em;line-height:1.2;margin:2.2rem 0 .6rem;color:var(--ink)}
+h2{font-family:var(--fd);font-weight:400;font-size:1.35rem;letter-spacing:-.015em;line-height:1.2;margin:2.2rem 0 .6rem;color:var(--ink)}
 p,li{color:var(--soft);margin-bottom:.8rem}
 ul{padding-left:1.2rem;margin-bottom:1rem}
 strong{color:var(--ink)}
-a{color:var(--terra)}
+a{color:var(--terra-txt)}
 a:hover{color:var(--terra-d)}
 .ck{width:100%;border-collapse:collapse;margin:1rem 0 1.6rem;font-size:.86rem;display:block;overflow-x:auto}
 .ck th,.ck td{border:1px solid var(--line);padding:.6rem .7rem;text-align:left;vertical-align:top;min-width:8rem}
@@ -73,6 +73,7 @@ a:hover{color:var(--terra-d)}
 footer{border-top:1px solid var(--line);padding:1.6rem 0;margin-top:2rem}
 .ft{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between}
 .fcopy{font-size:.8rem;color:var(--mute)}
+.fcopy a{text-decoration:underline}
 .fl-legal{display:flex;gap:1.2rem;flex-wrap:wrap;align-items:center;color:var(--mute)}
 .fl-legal a{font-size:.8rem;color:var(--mute);text-decoration:none}
 .fl-legal a:hover{color:var(--terra)}
@@ -83,20 +84,20 @@ footer{border-top:1px solid var(--line);padding:1.6rem 0;margin-top:2rem}
 <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 <header>
   <div class="wrap hd">
-    <a href="/" class="logo" aria-label="Ruipérez Studio — Inicio"><svg viewBox="0 0 120 120" width="30" height="30" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter"><path d="M21.05 102.00 L21.05 15.05 L60.00 15.05 A30.95 30.95 0 0 1 90.95 46.00 L90.95 44.00 A30.95 30.95 0 0 1 60.00 74.95 L21.05 74.95 M80.87 74.95 L99.81 102.00" stroke-width="8.0"/><path d="M34.00 102.00 L34.00 28.00 L60.00 28.00 A18.00 18.00 0 0 1 78.00 46.00 L78.00 44.00 A18.00 18.00 0 0 1 60.00 62.00 L34.00 62.00 M56.00 62.00 L84.00 102.00" stroke-width="9.5"/></g></svg><span class="lwm"><span class="lwm-n">RUIPÉREZ</span><span class="lwm-s">STUDIO</span></span></a>
+    <a href="/" class="logo"><svg viewBox="0 0 120 120" width="30" height="30" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter"><path d="M21.05 102.00 L21.05 15.05 L60.00 15.05 A30.95 30.95 0 0 1 90.95 46.00 L90.95 44.00 A30.95 30.95 0 0 1 60.00 74.95 L21.05 74.95 M80.87 74.95 L99.81 102.00" stroke-width="8.0"/><path d="M34.00 102.00 L34.00 28.00 L60.00 28.00 A18.00 18.00 0 0 1 78.00 46.00 L78.00 44.00 A18.00 18.00 0 0 1 60.00 62.00 L34.00 62.00 M56.00 62.00 L84.00 102.00" stroke-width="9.5"/></g></svg><span class="lwm"><span class="lwm-n">RUIPÉREZ</span><span class="lwm-s">STUDIO</span></span></a>
     <a href="/" class="back">← Volver al inicio</a>
   </div>
 </header>
 <main id="main-content">
   <div class="wrap">
     <h1>Política de Cookies</h1>
-    <h3>¿Qué son las cookies?</h3>
+    <h2>¿Qué son las cookies?</h2>
     <p>Las cookies son pequeños archivos de texto que los sitios web almacenan en tu navegador para recordar información sobre tu visita.</p>
-    <h3>Cookies que uso</h3>
+    <h2>Cookies que uso</h2>
 <p class="aviso"><strong>Estado actual:</strong> los píxeles de Meta, TikTok y Google Analytics están montados pero <strong>todavía no activados</strong>. Hoy, si aceptas las analíticas, solo se activa la medición propia de Vercel, que no sale de este dominio. Las filas marcadas como «pendiente» describen lo que ocurrirá cuando se activen, y se actualizará la fecha de este documento ese mismo día.</p>
 <p>Ninguna cookie que no sea estrictamente necesaria se instala sin tu consentimiento previo. Las de analítica y las de publicidad están bloqueadas por defecto y solo se cargan si las activas en el banner o en «Preferencias de cookies», en el pie de página.</p>
 
-<h3>Cookies necesarias</h3>
+<h2>Cookies necesarias</h2>
 <p>Imprescindibles para que la web funcione y para recordar tu elección. No se pueden desactivar y no requieren consentimiento.</p>
 <table class="ck">
 <thead><tr><th>Nombre</th><th>Proveedor</th><th>Finalidad</th><th>Duración</th><th>Transferencia fuera del EEE</th></tr></thead>
@@ -104,7 +105,7 @@ footer{border-top:1px solid var(--line);padding:1.6rem 0;margin-top:2rem}
 <tr><td>rs-consent-v2</td><td>Ruipérez Studio (propia)</td><td>Guarda qué categorías has aceptado o rechazado, con la fecha. Es el registro de tu consentimiento.</td><td>Hasta que borres los datos del navegador</td><td>No</td></tr>
 </tbody></table>
 
-<h3>Cookies analíticas <span class="opt">opcionales</span></h3>
+<h2>Cookies analíticas <span class="opt">opcionales</span></h2>
 <p>Me dicen qué páginas se visitan y cuánto tardan en cargar, en conjunto. Solo se activan si las aceptas.</p>
 <table class="ck">
 <thead><tr><th>Nombre</th><th>Proveedor</th><th>Finalidad</th><th>Duración</th><th>Transferencia fuera del EEE</th></tr></thead>
@@ -113,7 +114,7 @@ footer{border-top:1px solid var(--line);padding:1.6rem 0;margin-top:2rem}
 <tr><td>_ga, _ga_* <em>(pendiente)</em></td><td>Google Ireland Ltd.</td><td>Google Analytics 4: distingue visitantes y sesiones para medir el tráfico.</td><td>Hasta 2 años</td><td>Sí — EE. UU., con cláusulas contractuales tipo</td></tr>
 </tbody></table>
 
-<h3>Cookies de publicidad <span class="opt">opcionales</span></h3>
+<h2>Cookies de publicidad <span class="opt">opcionales</span></h2>
 <p>Sirven para medir si un anuncio ha traído un cliente y para no enseñarte el mismo anuncio repetido. <strong>Implican la transferencia de tus datos a Estados Unidos.</strong> Solo se activan si las aceptas.</p>
 <table class="ck">
 <thead><tr><th>Nombre</th><th>Proveedor</th><th>Finalidad</th><th>Duración</th><th>Transferencia fuera del EEE</th></tr></thead>
@@ -123,14 +124,14 @@ footer{border-top:1px solid var(--line);padding:1.6rem 0;margin-top:2rem}
 <tr><td>rs-origen</td><td>Ruipérez Studio (propia)</td><td>Recuerda durante la sesión desde qué anuncio has llegado, para saber qué campaña ha funcionado y para añadir esa referencia si me escribes por WhatsApp.</td><td>Hasta que cierres la pestaña</td><td>No se transmite salvo en el mensaje de WhatsApp que tú envías</td></tr>
 </tbody></table>
 
-<h3>Otros servicios</h3>
+<h2>Otros servicios</h2>
 <p><strong>Google Fonts:</strong> las tipografías se sirven desde los servidores de Google, lo que implica que tu dirección IP les es comunicada. Es necesario para que la web se vea correctamente.</p>
 
-<h3>Cómo cambiar tu decisión</h3>
+<h2>Cómo cambiar tu decisión</h2>
 <p>Puedes revocar o modificar tu consentimiento cuando quieras desde el enlace <strong>«Preferencias de cookies»</strong> del pie de página, sin que eso afecte a la licitud del tratamiento anterior. Cuando retiras un permiso, <strong>borro las cookies correspondientes y recargo la página</strong>, para que dejar de consentir sea tan efectivo como consentir. También puedes borrarlas tú desde la configuración de tu navegador.</p>
 <p>Conservo el registro de tu decisión (qué aceptaste y cuándo) en tu propio navegador, como exige el RGPD para poder acreditar el consentimiento. <strong>Caduca a los 24 meses</strong>, el máximo que admite la Agencia Española de Protección de Datos, y pasado ese plazo te lo vuelvo a preguntar.</p>
 
-<h3>Más información</h3>
+<h2>Más información</h2>
 <p>Para cualquier consulta sobre mi política de cookies, escríbeme a ruiperezyasociadoss@gmail.com. Tienes más detalle sobre el tratamiento de tus datos en la <a href="/privacidad/">Política de Privacidad</a>.</p>
 <p class="upd">Última actualización: 29 de agosto de 2026.</p>
   </div>
