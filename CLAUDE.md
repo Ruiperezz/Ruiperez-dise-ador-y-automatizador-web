@@ -31,10 +31,10 @@ HTML + CSS + JavaScript **estático puro**. Sin `package.json`, sin npm, sin bun
 | Servicios (9) | `/web-corporativa/` `/landing-page/` `/tienda-online/` `/automatizacion/` `/chatbot-whatsapp/` `/seo-local/` `/email-marketing/` `/mantenimiento-web/` `/gestion-redes-sociales/` |
 | Ciudad (4) | `/diseno-web-cartagena/` `/diseno-web-murcia/` `/automatizacion-procesos-murcia/` `/chatbot-whatsapp-cartagena/` |
 | Legales (3) | `/aviso-legal/` `/privacidad/` `/cookies/` |
-| Estudio (2) | `/sobre-mi/` · `/casos/` (noindex hasta tener los datos de TukTuk y Casa del Sushi) |
+| Estudio (2) | `/sobre-mi/` · `/casos/` |
 | Tráfico de pago (2) | `/lp/hosteleria/` `/lp/comercio-local/` — noindex, sin menú, un solo CTA. **Nunca mandar tráfico de pago a la home.** |
 
-Otros archivos: `sitemap.xml` (18 URLs — las noindex quedan fuera), `robots.txt`, `vercel.json` (CSP, HSTS, X-Frame-Options, cache de `/img/`), `favicon.svg`, `apple-touch-icon.png`, `img/`.
+Otros archivos: `sitemap.xml` (19 URLs — las noindex quedan fuera), `robots.txt`, `vercel.json` (CSP, HSTS, X-Frame-Options, cache de `/img/`), `favicon.svg`, `apple-touch-icon.png`, `img/`.
 
 ## Precios oficiales
 
@@ -58,11 +58,15 @@ Cambios puntuales fuera de contrato: 55€/hora.
 
 Solo estos tres son clientes reales verificables y pueden aparecer como tales:
 
+- **TukTuk Cartagena** — turismo. Web desde cero en 4 idiomas (ES/EN/DE/FR). `tuktukcartagena.com`
 - **Floristería Alameda** — Cartagena, 4,9★ con 311 reseñas en Google
-- **Casa del Sushi** — Cartagena
-- **TukTuk Cartagena** — turismo
+- **Casa del Sushi** — Cartagena, restauración
 
-**Zenconfort es un proyecto propio, no un cliente.** Nunca debe salir en «negocios que ya confían». Si se muestra, va en una sección aparte etiquetada como proyecto propio.
+En curso: **Finca Doña Carmen** (aplicación a medida). Se añade a `/casos/` cuando esté publicada, no antes.
+
+**Zenconfort es un proyecto propio, no un cliente.** Nunca debe salir en «negocios que ya confían». En `/casos/` aparece etiquetado «Proyecto propio · No es un cliente», que es la única forma correcta de mostrarlo.
+
+**No insinúes volumen que no existe.** Nada de «algunos de los muchos proyectos». Son cuatro y se enseñan los cuatro: lo que convence es que se pueden abrir y comprobar, no que parezcan muchos.
 
 No uses ningún otro nombre de negocio. Si necesitas un dato, una cifra o un testimonio que no tienes, deja `[PEDIR AL CLIENTE]` y sigue. **Nunca inventes clientes, cifras ni reseñas.**
 
@@ -79,7 +83,7 @@ No uses ningún otro nombre de negocio. Si necesitas un dato, una cifra o un tes
 - Las preguntas y respuestas del `FAQPage` en JSON-LD **deben coincidir literalmente** con el FAQ visible. Si cambias una, cambia la otra en el mismo commit.
 - La CSP de `vercel.json` permite las fuentes de Google y los dominios de Meta, TikTok y Google Analytics, y nada más. Cualquier otro recurso externo **se bloquea sin aviso en consola**.
 - El consentimiento y la medición viven en `/js/consent.js`, compartido por las 17 páginas. Ver `docs/medicion.md`. No lo dupliques en línea.
-- Imágenes con `width` y `height` reales y `height:auto` en CSS. Declarar una proporción incorrecta deforma la imagen.
+- Imágenes con `width` y `height` reales y **`height:auto` en el CSS de esa página**. Sin `height:auto`, el navegador usa el atributo `height` y deforma la imagen. Pasó en 17 páginas a la vez: si creas una página nueva, comprueba la regla `img{}`.
 - Ningún script de terceros se ejecuta antes del consentimiento de cookies.
 - Contraste WCAG AA, foco visible, `alt` en todas las imágenes, objetivos táctiles de 44px o más.
 - `--terra` (#B5522F) da 4,47:1 sobre el fondo crema: **no vale para texto pequeño**. Para texto usa `--terra-txt` (#A84A28, 5,12:1). Para rellenos, `--terra`.
