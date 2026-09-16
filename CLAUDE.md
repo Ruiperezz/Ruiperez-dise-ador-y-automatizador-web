@@ -61,7 +61,7 @@ Cambios puntuales fuera de contrato: 55€/hora.
 Solo estos tres son clientes reales verificables y pueden aparecer como tales:
 
 - **TukTuk Cartagena** — turismo. Web desde cero en 4 idiomas (ES/EN/DE/FR). `tuktukcartagena.com`
-- **Floristería Alameda** — Cartagena, 4,9★ con 311 reseñas en Google. Es una **tienda online** con catálogo, carrito y pasarela de pago. No la etiquetes como web corporativa.
+- **Floristería Alameda** — Cartagena, **4,9★ con 333 reseñas** (verificado en floristeriaalameda.com). Es una **tienda online** con catálogo, carrito y pasarela de pago. No la etiquetes como web corporativa.
 - **Casa del Sushi** — Cartagena, restauración
 
 En curso: **Finca Doña Carmen** (aplicación a medida). Se añade a `/casos/` cuando esté publicada, no antes.
@@ -99,6 +99,7 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 - La CSP de `vercel.json` solo permite los dominios de Meta, TikTok y Google Analytics. `font-src` y `style-src` están en `'self'`. Cualquier otro recurso externo **se bloquea sin aviso en consola**.
 - **Las tipografías se sirven desde `/fonts/`, no desde Google.** Son tres WOFF2 del subconjunto `latin` (54 KB): Instrument Serif normal e italic, y Karla variable 400–700. Traerlas de Google bloqueaba el renderizado ~1,8s y comunicaba la IP del visitante a Google. Si añades un peso o un idioma, descarga el archivo a `/fonts/` — no vuelvas a enlazar `fonts.googleapis.com`.
 - `←`, `→` y `★` no están en ningún subconjunto de Google: usan la fuente del sistema. Es así a propósito.
+- **El asistente vive en `/js/asistente.js`.** Es un buscador sobre una base de conocimiento escrita a mano, **NO un modelo de lenguaje**: una web estática no puede ejecutar uno y una clave de API en el navegador se regala. **Nunca lo llames «IA»** — Álvaro vende chatbots con IA de verdad desde 1.200€, y anunciar como IA un buscador de palabras clave haría dudar de su producto. Ver `docs/asistente.md`. Si cambias un precio, cámbialo también en su `KB`: no se sincroniza sola.
 - El consentimiento y la medición viven en `/js/consent.js`, compartido por las 17 páginas. Ver `docs/medicion.md`. No lo dupliques en línea.
 - Imágenes con `width` y `height` reales y **`height:auto` en el CSS de esa página**. Sin `height:auto`, el navegador usa el atributo `height` y deforma la imagen. Pasó en 17 páginas a la vez: si creas una página nueva, comprueba la regla `img{}`.
 - Ningún script de terceros se ejecuta antes del consentimiento de cookies.
