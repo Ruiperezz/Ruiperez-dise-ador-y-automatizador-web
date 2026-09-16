@@ -252,6 +252,41 @@ html.js .anim.go .msg,html.js .anim.go .chat-foot{opacity:1;transform:none;trans
 .pill b{font-family:var(--fd);font-size:1.9rem;line-height:1;display:block;font-weight:400}
 .pill span{font-size:.7rem;opacity:1;color:rgba(247,242,233,.92)}
 
+/* ══ montaje del hero pieza a pieza ══
+   Se dispara al entrar .scene en pantalla (en escritorio eso es al cargar).
+   Solo transform y opacity: CLS 0. La IMAGEN del mockup no se toca nunca —
+   ni opacity ni filter — porque es el elemento LCP en escritorio.
+   El estado de reposo de cada pieza ES su estado final, así que al retirar
+   .hero-in todo queda donde debe sin ningún salto. */
+@keyframes heroFrame{from{transform:perspective(1400px) rotateY(-4deg) rotateX(1.5deg) translate3d(0,14px,0)}
+  to{transform:perspective(1400px) rotateY(-4deg) rotateX(1.5deg) translate3d(0,0,0)}}
+@keyframes heroBar{from{opacity:0;transform:translate3d(0,-8px,0)}to{opacity:1;transform:none}}
+@keyframes heroChat{from{opacity:0;transform:translate3d(0,16px,0) scale(.96)}to{opacity:1;transform:none}}
+@keyframes heroPill{from{opacity:0;transform:translate3d(0,12px,0) scale(.9)}to{opacity:1;transform:none}}
+
+/* estado previo: las tres piezas superpuestas esperan ocultas, el marco solo
+   desplazado. Bajo html.js para que sin JS no se oculte nada. */
+html.js .scene.hero-in .brw{transform:perspective(1400px) rotateY(-4deg) rotateX(1.5deg) translate3d(0,14px,0)}
+html.js .scene.hero-in .brw-bar,
+html.js .scene.hero-in .chat,
+html.js .scene.hero-in .pill{opacity:0;will-change:transform,opacity}
+html.js .scene.hero-in .brw{will-change:transform}
+
+/* entrada: 700 ms en total, escalonada cada 80 ms */
+html.js .scene.hero-in.go .brw{animation:heroFrame .52s cubic-bezier(.22,1,.36,1) both}
+html.js .scene.hero-in.go .brw-bar{animation:heroBar .42s cubic-bezier(.22,1,.36,1) .08s both}
+html.js .scene.hero-in.go .chat{animation:heroChat .48s cubic-bezier(.22,1,.36,1) .16s both}
+html.js .scene.hero-in.go .pill{animation:heroPill .46s cubic-bezier(.22,1,.36,1) .24s both,
+  float 5.5s ease-in-out .7s infinite}
+
+@media (prefers-reduced-motion:reduce){
+  html.js .scene.hero-in .brw,
+  html.js .scene.hero-in.go .brw{transform:perspective(1400px) rotateY(-4deg) rotateX(1.5deg);animation:none}
+  html.js .scene.hero-in .brw-bar,html.js .scene.hero-in .chat,html.js .scene.hero-in .pill,
+  html.js .scene.hero-in.go .brw-bar,html.js .scene.hero-in.go .chat,html.js .scene.hero-in.go .pill{
+    opacity:1;transform:none;animation:none;will-change:auto}
+}
+
 /* ══ marquee de clientes ══ */
 .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:1.6rem 0;background:var(--surf)}
 .trust-t{text-align:center;margin-bottom:1.1rem}
@@ -532,7 +567,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
         <div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>El código es tuyo desde la entrega</span></div>
       </div>
     </div>
-    <div class="scene">
+    <div class="scene hero-in">
       <div class="brw">
         <div class="brw-bar"><div class="brw-dots"><span></span><span></span><span></span></div><div class="brw-url">floristeriaalameda.com</div></div>
         <img src="/img/floristeria-alameda.webp" alt="Web de Floristería Alameda en Cartagena diseñada por Ruipérez Studio" width="900" height="451" loading="eager" fetchpriority="high">
@@ -896,6 +931,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
   if(!hasIO){ /* navegador antiguo: se muestra todo sin animación */
     document.querySelectorAll(".rv").forEach(function(el){el.classList.add("in")});
     var c0=document.getElementById("chat");if(c0)c0.classList.add("go");
+    var e0=document.querySelector(".scene.hero-in");if(e0)e0.classList.remove("hero-in");
   }
   if(hasIO){
 
@@ -924,6 +960,17 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
     es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");o.unobserve(e.target)}});
   },{rootMargin:"0px 0px -8% 0px",threshold:.12});
   document.querySelectorAll(".rv").forEach(function(el){rvObs.observe(el)});
+
+  /* montaje del hero, pieza a pieza. La última animación acaba a los 700 ms;
+     a los 800 se retira la clase, y con ella el will-change. */
+  var esc=document.querySelector(".scene.hero-in");
+  if(esc){
+    new IntersectionObserver(function(es,o){es.forEach(function(e){
+      if(!e.isIntersecting)return;
+      o.unobserve(e.target); e.target.classList.add("go");
+      setTimeout(function(){e.target.classList.remove("hero-in","go")},800);
+    })},{threshold:.25}).observe(esc);
+  }
 
   /* conversación del hero, mensaje a mensaje */
   var chat=document.getElementById("chat");
