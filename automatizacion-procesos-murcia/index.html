@@ -283,7 +283,15 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
   .cta{flex-direction:column;align-items:flex-start}
   .sec-hd{flex-direction:column;align-items:flex-start}
 }
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+/* ══ revelado al hacer scroll ══
+   Mismo sistema que la home. Bajo html.js: sin JS no se oculta nada.
+   Solo opacity y transform, así que CLS 0. */
+html.js .rv{opacity:0;transform:translateY(20px)}
+html.js .rv.in{opacity:1;transform:none;
+  transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1);
+  transition-delay:var(--d,0ms)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  html.js .rv{opacity:1!important;transform:none!important}}
 
 /* ── bloques gráficos de servicio ── */
 .mock{background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:1.3rem;box-shadow:0 24px 52px -30px rgba(33,29,24,.4)}
@@ -362,6 +370,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 </style>
 </head>
 <body>
+<script>document.documentElement.className+=" js";</script>
 <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 <header id="nav">
   <div class="nav-i">
@@ -401,7 +410,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 
 <section class="sec">
   <div class="wrap">
-    <div class="sec-hd"><div><span class="ey">Negocios de Murcia</span><h2>Con quién trabajo<br>en Murcia</h2></div>
+    <div class="sec-hd rv"><div><span class="ey">Negocios de Murcia</span><h2>Con quién trabajo<br>en Murcia</h2></div>
     <p class="sec-note">Negocios locales que dependen de que el cliente de la zona los encuentre.</p></div>
     <div class="g4"><div class="card"><h3>Almacén y distribución</h3><p>Pedidos que se copian a mano entre el email, el ERP y la hoja de cálculo.</p></div><div class="card"><h3>Servicios profesionales</h3><p>Presupuestos, facturas y seguimientos que alguien redacta uno a uno.</p></div><div class="card"><h3>Comercio</h3><p>Stock que se actualiza a mano en varios sitios a la vez.</p></div><div class="card"><h3>Clínicas y citas</h3><p>Recordatorios de cita que se llaman por teléfono uno por uno.</p></div></div>
   </div>
@@ -409,14 +418,14 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 
 <section class="sec">
   <div class="wrap">
-    <div class="sec-hd"><div><span class="ey">Por qué en local</span><h2>Lo que cambia cuando<br>tu proveedor está cerca</h2></div></div>
-    <div class="inc"><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Análisis presencial en tu empresa si estás en la Región</span></div><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Trabajo con las herramientas que ya tienes</span></div><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Documentación en castellano de cada flujo</span></div><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Formación para tu equipo</span></div><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Soporte el primer mes incluido</span></div></div>
+    <div class="sec-hd rv"><div><span class="ey">Por qué en local</span><h2>Lo que cambia cuando<br>tu proveedor está cerca</h2></div></div>
+    <div class="inc rv"><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Análisis presencial en tu empresa si estás en la Región</span></div><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Trabajo con las herramientas que ya tienes</span></div><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Documentación en castellano de cada flujo</span></div><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Formación para tu equipo</span></div><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Soporte el primer mes incluido</span></div></div>
   </div>
 </section>
 
 <section class="sec">
   <div class="wrap">
-    <div class="caso">
+    <div class="caso rv">
       <span class="caso-t caso-tipo">Caso tipo · ejemplo ilustrativo</span>
       <h3>Caso tipo · Distribuidora en Murcia</h3>
       <div class="caso-g">
@@ -431,7 +440,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 
 <section class="sec">
   <div class="wrap">
-    <div class="pbox">
+    <div class="pbox rv">
       <div>
         <span class="ey" style="color:var(--sand)">Inversión</span>
         <div class="p-amt">900€</div>
@@ -446,14 +455,14 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 
 <section class="sec" id="faq">
   <div class="wrap">
-    <div class="sec-hd"><div><span class="ey">Dudas</span><h2>Preguntas de negocios<br>de Murcia</h2></div></div>
-    <div class="faq"><div><button class="fq" aria-expanded="false">¿Qué es exactamente automatizar un proceso?<span class="ficon">+</span></button><div class="fa"><p>Es hacer que una tarea que hoy haces a mano ocurra sola. Por ejemplo: que al recibir un pedido se cree la ficha, se avise al cliente y se actualice tu hoja de control, sin que toques nada.</p></div></div><div><button class="fq" aria-expanded="false">¿Tengo que cambiar de programa?<span class="ficon">+</span></button><div class="fa"><p>No. Trabajo conectando las herramientas que ya usas: tu email, tu hoja de cálculo, tu CRM o tu ERP. La automatización se monta encima de lo que ya tienes.</p></div></div><div><button class="fq" aria-expanded="false">¿Cuánto cuesta y cuándo lo amortizo?<span class="ficon">+</span></button><div class="fa"><p>Desde 900€ más IVA. La referencia práctica: si el proceso te consume varias horas a la semana, la inversión se recupera en pocos meses de tiempo liberado.</p></div></div><div><button class="fq" aria-expanded="false">¿Y si algo falla?<span class="ficon">+</span></button><div class="fa"><p>Cada flujo queda documentado y con avisos de error. El primer mes de soporte va incluido, y después puedes contratar mantenimiento si lo prefieres.</p></div></div></div>
+    <div class="sec-hd rv"><div><span class="ey">Dudas</span><h2>Preguntas de negocios<br>de Murcia</h2></div></div>
+    <div class="faq rv"><div><button class="fq" aria-expanded="false">¿Qué es exactamente automatizar un proceso?<span class="ficon">+</span></button><div class="fa"><p>Es hacer que una tarea que hoy haces a mano ocurra sola. Por ejemplo: que al recibir un pedido se cree la ficha, se avise al cliente y se actualice tu hoja de control, sin que toques nada.</p></div></div><div><button class="fq" aria-expanded="false">¿Tengo que cambiar de programa?<span class="ficon">+</span></button><div class="fa"><p>No. Trabajo conectando las herramientas que ya usas: tu email, tu hoja de cálculo, tu CRM o tu ERP. La automatización se monta encima de lo que ya tienes.</p></div></div><div><button class="fq" aria-expanded="false">¿Cuánto cuesta y cuándo lo amortizo?<span class="ficon">+</span></button><div class="fa"><p>Desde 900€ más IVA. La referencia práctica: si el proceso te consume varias horas a la semana, la inversión se recupera en pocos meses de tiempo liberado.</p></div></div><div><button class="fq" aria-expanded="false">¿Y si algo falla?<span class="ficon">+</span></button><div class="fa"><p>Cada flujo queda documentado y con avisos de error. El primer mes de soporte va incluido, y después puedes contratar mantenimiento si lo prefieres.</p></div></div></div>
   </div>
 </section>
 
 <section class="sec">
   <div class="wrap">
-    <div class="cta">
+    <div class="cta rv">
       <div><h2>¿Hablamos de tu negocio<br>en Murcia?</h2><p>Te respondo yo, sin compromiso y con precio cerrado.</p></div>
       <a href="https://wa.me/34642084042?text=Hola,%20soy%20de%20Murcia%20y%20quiero%20hablar%20de%20un%20proyecto" target="_blank" rel="noopener noreferrer" class="btn btn-p"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg> 642 08 40 42</a>
     </div>
@@ -502,5 +511,17 @@ document.querySelectorAll(".fq").forEach(function(q){q.addEventListener("click",
 })();
 </script>
 <script src="/js/consent.js" defer></script>
+<script>
+(function(){"use strict";
+if(!("IntersectionObserver" in window)){
+  document.querySelectorAll(".rv").forEach(function(el){el.classList.add("in")});return;
+}
+var o=new IntersectionObserver(function(es,ob){
+  es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");ob.unobserve(e.target)}});
+},{rootMargin:"0px 0px -8% 0px",threshold:.12});
+document.querySelectorAll(".rv").forEach(function(el){o.observe(el)});
+})();
+</script>
+
 </body>
 </html>

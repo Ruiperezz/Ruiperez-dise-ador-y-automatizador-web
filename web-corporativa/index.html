@@ -268,7 +268,15 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
   .cta{flex-direction:column;align-items:flex-start}
   .sec-hd{flex-direction:column;align-items:flex-start}
 }
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+/* ══ revelado al hacer scroll ══
+   Mismo sistema que la home. Bajo html.js: sin JS no se oculta nada.
+   Solo opacity y transform, así que CLS 0. */
+html.js .rv{opacity:0;transform:translateY(20px)}
+html.js .rv.in{opacity:1;transform:none;
+  transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1);
+  transition-delay:var(--d,0ms)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  html.js .rv{opacity:1!important;transform:none!important}}
 
 /* ── bloques gráficos de servicio ── */
 .mock{background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:1.3rem;box-shadow:0 24px 52px -30px rgba(33,29,24,.4)}
@@ -347,6 +355,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 </style>
 </head>
 <body>
+<script>document.documentElement.className+=" js";</script>
 <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 <header id="nav">
   <div class="nav-i">
@@ -386,22 +395,22 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 
 <section class="sec">
   <div class="wrap">
-    <div class="sec-hd"><div><span class="ey">Qué incluye</span><h2>Todo esto va dentro<br>del precio</h2></div>
+    <div class="sec-hd rv"><div><span class="ey">Qué incluye</span><h2>Todo esto va dentro<br>del precio</h2></div>
     <p class="sec-note">Sin extras que aparecen a mitad del proyecto.</p></div>
-    <div class="inc"><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Diseño único, sin plantillas</span></div><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Textos escritos para tu negocio</span></div><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>SEO local completo desde el primer día</span></div><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Ficha de Google Business optimizada</span></div><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Botón de WhatsApp en cada pantalla</span></div><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Velocidad y móvil cuidados al detalle</span></div><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Aviso legal, privacidad y cookies</span></div><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>30 días de ajustes incluidos</span></div></div>
+    <div class="inc rv"><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Diseño único, sin plantillas</span></div><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Textos escritos para tu negocio</span></div><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>SEO local completo desde el primer día</span></div><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Ficha de Google Business optimizada</span></div><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Botón de WhatsApp en cada pantalla</span></div><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Velocidad y móvil cuidados al detalle</span></div><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Aviso legal, privacidad y cookies</span></div><div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>30 días de ajustes incluidos</span></div></div>
   </div>
 </section>
 
 <section class="sec">
   <div class="wrap">
-    <div class="sec-hd"><div><span class="ey">Cómo funciona</span><h2>Tres pasos y ya está</h2></div></div>
+    <div class="sec-hd rv"><div><span class="ey">Cómo funciona</span><h2>Tres pasos y ya está</h2></div></div>
     <div class="proc"><div class="proc-i"><div class="proc-n">01</div><div><h3>Hablamos</h3><p>Me cuentas cómo funciona tu negocio y a quién quieres atraer.</p></div></div><div class="proc-i"><div class="proc-n">02</div><div><h3>Diseño</h3><p>Te enseño el diseño antes de programar nada. Ajustamos hasta que encaje.</p></div></div><div class="proc-i"><div class="proc-n">03</div><div><h3>Publico</h3><p>Web en vivo, indexada en Google y con el código en tus manos.</p></div></div></div>
   </div>
 </section>
 
 <section class="sec">
   <div class="wrap">
-    <div class="caso">
+    <div class="caso rv">
       <span class="caso-t caso-real">Caso real · cliente verificable</span>
       <h3>Casa del Sushi · Cartagena</h3>
       <div class="caso-g">
@@ -416,7 +425,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 
 <section class="sec" id="precio">
   <div class="wrap">
-    <div class="pbox">
+    <div class="pbox rv">
       <div>
         <span class="ey" style="color:var(--sand)">Inversión</span>
         <div class="p-amt">890€</div>
@@ -429,11 +438,11 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
   </div>
 </section>
 
-<section class="sec" id="faq"><div class="wrap"><div class="sec-hd"><div><span class="ey">Dudas</span><h2>Lo que más te vas a preguntar</h2></div></div><div class="faq"><div><button class="fq" aria-expanded="false">¿Cuánto tiempo tarda exactamente?<span class="ficon">+</span></button><div class="fa"><p>Entre 2 y 3 semanas desde que me aportas el contenido. El plazo exacto lo acordamos antes de empezar y lo cumplo.</p></div></div><div><button class="fq" aria-expanded="false">¿Necesito aportar los textos yo?<span class="ficon">+</span></button><div class="fa"><p>No es obligatorio. Si no tienes textos, los escribo yo basándome en el briefing inicial. Se incluye en el precio sin extra.</p></div></div><div><button class="fq" aria-expanded="false">¿El dominio está incluido?<span class="ficon">+</span></button><div class="fa"><p>El dominio no está incluido en el precio base (cuesta ~12€/año). Lo gestiono yo y lo pago por tu cuenta, o si ya tienes uno lo uso sin problema.</p></div></div><div><button class="fq" aria-expanded="false">¿Puedo actualizar el contenido yo mismo?<span class="ficon">+</span></button><div class="fa"><p>Si lo necesitas, añado un panel de administración sencillo. Si prefieres que lo haga yo, tienes el plan de mantenimiento (90€/mes) o cambios puntuales (55€/hora).</p></div></div><div><button class="fq" aria-expanded="false">¿Incluye Google Business Profile?<span class="ficon">+</span></button><div class="fa"><p>Sí. Configuro o completo tu perfil de Google Business incluido en el precio. Es lo que aparece en Google Maps cuando alguien busca tu negocio.</p></div></div><div><button class="fq" aria-expanded="false">¿Qué pasa si necesito cambios después?<span class="ficon">+</span></button><div class="fa"><p>Los primeros 30 días los ajustes son sin coste. Después puedes contratar mantenimiento mensual (90€/mes) o cambios puntuales (55€/hora). Sin permanencia.</p></div></div></div></div></section>
+<section class="sec" id="faq"><div class="wrap"><div class="sec-hd rv"><div><span class="ey">Dudas</span><h2>Lo que más te vas a preguntar</h2></div></div><div class="faq rv"><div><button class="fq" aria-expanded="false">¿Cuánto tiempo tarda exactamente?<span class="ficon">+</span></button><div class="fa"><p>Entre 2 y 3 semanas desde que me aportas el contenido. El plazo exacto lo acordamos antes de empezar y lo cumplo.</p></div></div><div><button class="fq" aria-expanded="false">¿Necesito aportar los textos yo?<span class="ficon">+</span></button><div class="fa"><p>No es obligatorio. Si no tienes textos, los escribo yo basándome en el briefing inicial. Se incluye en el precio sin extra.</p></div></div><div><button class="fq" aria-expanded="false">¿El dominio está incluido?<span class="ficon">+</span></button><div class="fa"><p>El dominio no está incluido en el precio base (cuesta ~12€/año). Lo gestiono yo y lo pago por tu cuenta, o si ya tienes uno lo uso sin problema.</p></div></div><div><button class="fq" aria-expanded="false">¿Puedo actualizar el contenido yo mismo?<span class="ficon">+</span></button><div class="fa"><p>Si lo necesitas, añado un panel de administración sencillo. Si prefieres que lo haga yo, tienes el plan de mantenimiento (90€/mes) o cambios puntuales (55€/hora).</p></div></div><div><button class="fq" aria-expanded="false">¿Incluye Google Business Profile?<span class="ficon">+</span></button><div class="fa"><p>Sí. Configuro o completo tu perfil de Google Business incluido en el precio. Es lo que aparece en Google Maps cuando alguien busca tu negocio.</p></div></div><div><button class="fq" aria-expanded="false">¿Qué pasa si necesito cambios después?<span class="ficon">+</span></button><div class="fa"><p>Los primeros 30 días los ajustes son sin coste. Después puedes contratar mantenimiento mensual (90€/mes) o cambios puntuales (55€/hora). Sin permanencia.</p></div></div></div></div></section>
 
 <section class="sec">
   <div class="wrap">
-    <div class="cta">
+    <div class="cta rv">
       <div><h2>¿Hablamos de tu negocio?</h2><p>Te respondo yo, sin compromiso y con precio cerrado.</p></div>
       <a href="https://wa.me/34642084042?text=Hola,%20quiero%20hablar%20sobre%20Web%20corporativa" target="_blank" rel="noopener noreferrer" class="btn btn-p"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg> 642 08 40 42</a>
     </div>
@@ -482,5 +491,17 @@ document.querySelectorAll(".fq").forEach(function(q){q.addEventListener("click",
 })();
 </script>
 <script src="/js/consent.js" defer></script>
+<script>
+(function(){"use strict";
+if(!("IntersectionObserver" in window)){
+  document.querySelectorAll(".rv").forEach(function(el){el.classList.add("in")});return;
+}
+var o=new IntersectionObserver(function(es,ob){
+  es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");ob.unobserve(e.target)}});
+},{rootMargin:"0px 0px -8% 0px",threshold:.12});
+document.querySelectorAll(".rv").forEach(function(el){o.observe(el)});
+})();
+</script>
+
 </body>
 </html>
