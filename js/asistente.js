@@ -140,13 +140,22 @@
 
   /* ═══ INTERFAZ ═══ */
   var CSS = [
-    '.rsa-fab{position:fixed;right:1.1rem;bottom:1.1rem;z-index:940;display:flex;align-items:center;gap:.55rem;',
+    '.rsa-stack{position:fixed;right:1.1rem;bottom:1.1rem;z-index:940;display:flex;flex-direction:column;',
+    'align-items:flex-end;gap:.6rem}',
+    '.rsa-stack[hidden]{display:none}',
+    '.rsa-fab{display:flex;align-items:center;gap:.55rem;',
     'background:#211D18;color:#F7F2E9;border:0;border-radius:100px;padding:.85rem 1.25rem;cursor:pointer;',
     'font:700 .92rem/1 Karla,system-ui,sans-serif;box-shadow:0 14px 34px -14px rgba(33,29,24,.6);',
     'transition:transform .22s cubic-bezier(.22,1,.36,1),background .22s}',
     '.rsa-fab:hover{background:#000;transform:translateY(-2px)}',
     '.rsa-fab:focus-visible,.rsa-x:focus-visible,.rsa-s:focus-visible,.rsa-send:focus-visible{outline:2.5px solid #E4A57F;outline-offset:3px}',
     '.rsa-fab[hidden]{display:none}',
+    '.rsa-wf{width:56px;height:56px;border-radius:50%;background:#128C7E;color:#fff;flex:none;',
+    'display:flex;align-items:center;justify-content:center;text-decoration:none;',
+    'box-shadow:0 14px 34px -12px rgba(18,140,126,.8);',
+    'transition:transform .22s cubic-bezier(.22,1,.36,1),background .22s}',
+    '.rsa-wf:hover{background:#0E6B60;color:#fff;transform:translateY(-2px)}',
+    '.rsa-wf:focus-visible{outline:2.5px solid #211D18;outline-offset:3px}',
     '.rsa-p{position:fixed;right:1.1rem;bottom:1.1rem;z-index:941;width:min(23rem,calc(100vw - 2.2rem));',
     'max-height:min(34rem,calc(100vh - 2.2rem));display:none;flex-direction:column;background:#FDFBF7;',
     'border:1px solid #E5DCCB;border-radius:18px;overflow:hidden;box-shadow:0 30px 70px -24px rgba(33,29,24,.5);',
@@ -180,13 +189,18 @@
     'display:flex;align-items:center;justify-content:center}',
     '.rsa-send:hover{background:#000}',
     '.rsa-nota{font-size:.66rem;color:#6E675D;text-align:center;padding:0 .7rem .6rem;background:#FDFBF7;flex:none;line-height:1.35}',
-    '@media(max-width:720px){.rsa-fab{bottom:5.6rem}.rsa-p{bottom:.7rem;right:.7rem;left:.7rem;width:auto;max-height:calc(100vh - 1.4rem)}}',
-    '@media (prefers-reduced-motion:reduce){.rsa-fab{transition:none}}'
+    '@media(max-width:720px){.rsa-stack{right:.8rem;bottom:.8rem}',
+    'html.rsa-bar .rsa-stack{bottom:5.4rem}',
+    'html.rsa-bar .rsa-wf{display:none}',
+    '.rsa-p{bottom:.7rem;right:.7rem;left:.7rem;width:auto;max-height:calc(100vh - 1.4rem)}}',
+    '@media (prefers-reduced-motion:reduce){.rsa-fab,.rsa-wf{transition:none}}'
   ].join("");
 
   var IWA = '<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>';
 
-  var fab, panel, cuerpo, campo, ultimoFoco;
+  var IWF = '<svg viewBox="0 0 24 24" width="27" height="27" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg>';
+
+  var fab, stack, panel, cuerpo, campo, ultimoFoco;
 
   function el(t, a, h) {
     var n = document.createElement(t);
@@ -228,10 +242,27 @@
   function construir() {
     var st = el("style"); st.textContent = CSS; document.head.appendChild(st);
 
+    /* La home lleva barra CTA fija en móvil: ahí el flotante de WhatsApp sobra
+       (serían dos veces el mismo botón) y la pila tiene que subir para no taparla. */
+    if (document.querySelector(".mcta")) document.documentElement.classList.add("rsa-bar");
+
+    stack = el("div", { class: "rsa-stack" });
+
     fab = el("button", { class: "rsa-fab", type: "button", "aria-expanded": "false", "aria-controls": "rsa-panel" },
       IWA + "<span>¿Alguna duda?</span>");
     fab.onclick = abrir;
-    document.body.appendChild(fab);
+    stack.appendChild(fab);
+
+    /* El href lleva 'text=' a propósito: es lo que consent.js exige para contar
+       el evento Contact. Sin mensaje precargado no se mediría como lead. */
+    stack.appendChild(el("a", {
+      class: "rsa-wf",
+      href: wa("Hola Álvaro, te escribo desde tu web. Quería preguntarte por..."),
+      target: "_blank", rel: "noopener noreferrer",
+      "aria-label": "Escríbeme por WhatsApp al 642 08 40 42"
+    }, IWF));
+
+    document.body.appendChild(stack);
 
     panel = el("div", { class: "rsa-p", id: "rsa-panel", role: "dialog", "aria-label": "Asistente de Ruipérez Studio" });
 
@@ -270,7 +301,7 @@
 
   function abrir() {
     ultimoFoco = document.activeElement;
-    panel.classList.add("on"); fab.hidden = true; fab.setAttribute("aria-expanded", "true");
+    panel.classList.add("on"); stack.hidden = true; fab.setAttribute("aria-expanded", "true");
     if (!cuerpo.childElementCount) {
       decir('Hola. Puedo resolverte dudas sobre <strong>precios, plazos, qué incluye cada servicio y cómo trabajo</strong>.'
         + '<br>Pregunta abajo, o toca una de las sugerencias.');
@@ -278,7 +309,7 @@
     campo.focus();
   }
   function cerrar() {
-    panel.classList.remove("on"); fab.hidden = false; fab.setAttribute("aria-expanded", "false");
+    panel.classList.remove("on"); stack.hidden = false; fab.setAttribute("aria-expanded", "false");
     if (ultimoFoco && ultimoFoco.focus && ultimoFoco.offsetParent) ultimoFoco.focus(); else fab.focus();
   }
 

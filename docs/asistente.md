@@ -52,3 +52,15 @@ Coste orientativo: unos céntimos por conversación, más lo que cueste el plan 
 ## Lo que sí conviene hacer ya
 
 Revisar cada pocas semanas **qué preguntas acaban en «esto no sé contestártelo»**. Cada una de ellas es o una respuesta que falta en la base, o una duda que no está resuelta en la web. Ahora mismo eso no se registra en ningún sitio: si quieres medirlo, se puede enviar un evento a GA4 cuando el asistente no sabe responder.
+
+## El botón flotante de WhatsApp
+
+Vive en el mismo archivo, apilado debajo del lanzador del asistente. Dos flotantes en la misma esquina se tapan entre sí, así que van en un contenedor `.rsa-stack` en columna: WhatsApp abajo, donde llega el pulgar, y el asistente encima.
+
+Tres decisiones que no son cosméticas:
+
+- **El `href` lleva `text=`.** `consent.js` solo cuenta como conversión los enlaces `a[href*="wa.me/"][href*="text="]`. Un botón sin mensaje precargado funcionaría igual para el visitante y no se mediría, que es el error que hace que Meta optimice a «clic en enlace» en vez de a contacto.
+- **Verde `#128C7E`, no el `#25D366` de la marca.** El icono blanco sobre el verde claro da 1,9:1 y no llega al 3:1 que WCAG pide para un elemento gráfico. Con el verde oscuro de WhatsApp sube a 3,9:1 y se sigue reconociendo al instante.
+- **En móvil desaparece en la home.** Ahí la barra fija `.mcta` ya es un botón de WhatsApp a todo lo ancho. Dos veces el mismo botón, uno encima del otro, no duplica los contactos: solo tapa contenido.
+
+Al abrir el panel se esconde la pila entera. Si solo se escondiera el lanzador, el círculo verde quedaría flotando sobre la conversación.
