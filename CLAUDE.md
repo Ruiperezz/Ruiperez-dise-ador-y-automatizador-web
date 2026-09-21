@@ -62,7 +62,11 @@ Solo estos tres son clientes reales verificables y pueden aparecer como tales:
 
 - **TukTuk Cartagena** — turismo. Web desde cero en 4 idiomas (ES/EN/DE/FR). `tuktukcartagena.com`
 - **Floristería Alameda** — Cartagena, **4,9★ con 333 reseñas** (verificado en floristeriaalameda.com). Es una **tienda online** con catálogo, carrito y pasarela de pago. No la etiquetes como web corporativa.
-- **Casa del Sushi** — Cartagena, restauración
+- **Casa del Sushi** — Cartagena, restauración. **Ojo:** la reseña que la web le atribuía la firma en Google **«Perico Del Rey»**. Hasta que Álvaro confirme que es la misma persona, la reseña va con el nombre de Google, que es el que se puede comprobar.
+
+**Ficha de Google propia: `locations/10546771556631248285`.** 5,0★ con 7 reseñas, verificada. Enlace público `https://maps.google.com/maps?cid=16135944171140006039`; para pedir reseñas, `https://search.google.com/local/writereview?placeid=ChIJoxdRJpnbFWoRl8BVVLtj7t8`. **El 4,9★ con 333 reseñas es de Alameda, no suyo**: donde aparezca hay que decir de quién es. En el hero va su 5,0★ real.
+
+**Floristería Buccaro (Alicante) no es cliente.** Es una propuesta comercial que Álvaro diseñó para captarla, y aparece en `/landing-page/` etiquetada «Diseño de muestra · todavía no es un cliente». Sus precios son orientativos. Si algún día la contrata, se reetiqueta; mientras tanto, no se cuenta como caso real ni se le atribuyen resultados.
 
 En curso: **Finca Doña Carmen** (aplicación a medida). Se añade a `/casos/` cuando esté publicada, no antes.
 
@@ -81,6 +85,7 @@ Un caso repetido en todas partes no es prueba social. Cada página lleva el suyo
 | Home · `/tienda-online/` · `/seo-local/` | Floristería Alameda |
 | `/web-corporativa/` | Casa del Sushi |
 | `/diseno-web-cartagena/` | TukTuk Cartagena |
+| `/landing-page/` | Buccaro (propuesta, no cliente) |
 | `/casos/` | los cuatro |
 
 Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias a propósito y van etiquetadas como tales. En cuanto haya un caso real de ese servicio, se sustituye.
@@ -110,6 +115,7 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 - El pie tiene que ser idéntico en las 15 páginas que lo llevan. Si añades una página, añádela al pie de todas.
 - **En móvil el mockup del hero va ANTES del texto** (`.scene{order:-1}`). Su portfolio vende con fotografía real; el escaparate no puede esconder su única prueba tras 800px de texto, que es justo donde aterriza el tráfico de pago. Con ese orden, el elemento LCP en móvil pasa a ser la imagen y el `fetchpriority="high"` por fin sirve para algo. Medido: mismo LCP que con el texto delante.
 - Las webs de los clientes se enlazan de verdad, con `rel="noopener noreferrer nofollow"`: floristeriaalameda.com, zenconfort.es, tuktukcartagena.com y casa-del-sushi.vercel.app. La página promete «puedes abrirlas y comprobarlo», así que tienen que ser enlaces, no texto.
+- **La ficha de Google se gestiona por Windsor.ai**, conector `google_my_business`. Requiere que Álvaro tenga activado *Settings → API Access → Enable write actions*. Desde ahí se puede cambiar descripción, categorías, servicios, horarios, atributos, fotos, publicaciones y respuestas a reseñas. **La dirección no se toca:** cambiarla dispara la re-verificación de Google y puede tumbar la ficha. Search Console (`searchconsole`, propiedades `ruiperezstudio.es` y `zenconfort.es`) es **solo lectura**.
 - Referencia medida el 30/08/2026 con Lighthouse móvil: rendimiento 98, accesibilidad 100, buenas prácticas 100, SEO 100. LCP 1,9s · CLS 0,04.
 
 ## Skills de este proyecto
