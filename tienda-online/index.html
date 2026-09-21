@@ -272,7 +272,6 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 
 /* ── bloques gráficos de servicio ── */
 .mock{background:var(--surf);border:1px solid var(--line);border-radius:16px;padding:1.3rem;box-shadow:0 24px 52px -30px rgba(33,29,24,.4)}
-.mock-h{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);font-weight:700;margin-bottom:.9rem}
 /* resultado de busqueda */
 .sr{background:#fff;border:1px solid var(--line);border-radius:10px;padding:.85rem 1rem;margin-bottom:.6rem}
 .sr.top{border-color:var(--olive);box-shadow:0 0 0 2px rgba(86,102,63,.14)}
@@ -296,13 +295,6 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 .inb-p{font-size:.7rem;color:var(--mute);line-height:1.4}
 .inb-w{font-size:.64rem;color:var(--faint);margin-left:auto;white-space:nowrap}
 /* tienda */
-.shop{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem}
-.sh-p{background:#fff;border:1px solid var(--line);border-radius:9px;overflow:hidden}
-.sh-im{height:52px;background:linear-gradient(135deg,#EDE4D4,#DDD0B8)}
-.sh-b{padding:.45rem .55rem}
-.sh-n{font-size:.66rem;font-weight:600;line-height:1.25}
-.sh-pr{font-size:.7rem;color:var(--terra);font-weight:700;margin-top:.12rem}
-.sh-cart{display:flex;align-items:center;justify-content:space-between;background:var(--ink);color:var(--bg);border-radius:9px;padding:.6rem .8rem;margin-top:.6rem;font-size:.74rem}
 /* panel de estado */
 .st-r{display:flex;align-items:center;gap:.7rem;background:#fff;border:1px solid var(--line);border-radius:9px;padding:.62rem .8rem;margin-bottom:.45rem}
 .st-d{width:8px;height:8px;border-radius:50%;background:var(--olive);flex:none}
@@ -324,6 +316,12 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 .caso-b h4{font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:.4rem;font-family:var(--fs);font-weight:700}
 .caso-b p{font-size:.86rem;color:var(--soft);line-height:1.5;margin:0}
 .caso-nota{font-size:.76rem;color:var(--faint);margin-top:1rem;font-style:italic}
+.gal{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.1rem;margin-top:1.5rem}
+.gal figure{margin:0}
+.gal img{width:100%;height:auto;border-radius:11px;border:1px solid var(--line2);display:block}
+.gal figcaption{font-size:.8rem;color:var(--soft);line-height:1.5;margin-top:.55rem}
+.gal figure:last-child{grid-column:1/-1}
+@media(max-width:700px){.gal{grid-template-columns:1fr;gap:1.4rem}}
 /* incluye */
 .inc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem 1.6rem}
 .inc div{display:flex;gap:.65rem;align-items:flex-start;font-size:.95rem;color:var(--soft);line-height:1.5}
@@ -341,7 +339,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 .pbox ul{list-style:none;display:flex;flex-direction:column;gap:.55rem;margin-top:1.2rem}
 .pbox li{font-size:.92rem;color:rgba(247,242,233,.86);padding-left:1.5rem;position:relative}
 .pbox li::before{content:"✓";position:absolute;left:0;color:var(--sand);font-weight:700}
-@media(max-width:820px){.inc,.caso-g,.shop{grid-template-columns:1fr}.pbox{grid-template-columns:1fr}}
+@media(max-width:820px){.inc,.caso-g,.pbox{grid-template-columns:1fr}}
 
 .bread [aria-current]{color:var(--soft);font-weight:600}
 </style>
@@ -380,7 +378,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
         <div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Trato directo conmigo, sin comerciales</span></div>
       </div>
     </div>
-    <div><div class="mock"><div class="mock-h">Tu catálogo online</div><div class="shop"><div class="sh-p"><div class="sh-im"></div><div class="sh-b"><div class="sh-n">Ramo de temporada</div><div class="sh-pr">24,90 €</div></div></div><div class="sh-p"><div class="sh-im"></div><div class="sh-b"><div class="sh-n">Orquídea en maceta</div><div class="sh-pr">32,00 €</div></div></div><div class="sh-p"><div class="sh-im"></div><div class="sh-b"><div class="sh-n">Centro de mesa</div><div class="sh-pr">45,50 €</div></div></div><div class="sh-p"><div class="sh-im"></div><div class="sh-b"><div class="sh-n">Caja sorpresa</div><div class="sh-pr">29,90 €</div></div></div><div class="sh-p"><div class="sh-im"></div><div class="sh-b"><div class="sh-n">Planta de interior</div><div class="sh-pr">18,00 €</div></div></div><div class="sh-p"><div class="sh-im"></div><div class="sh-b"><div class="sh-n">Ramo XL</div><div class="sh-pr">58,00 €</div></div></div></div><div class="sh-cart"><span>3 productos en el carrito</span><span>Pagar 96,80 €</span></div></div></div>
+    <div><div class="mock" style="padding:0;overflow:hidden"><div class="brw" style="border:0;box-shadow:none;border-radius:0"><div class="brw-bar"><div class="brw-dots"><span></span><span></span><span></span></div><div class="brw-url">floristeriaalameda.com</div></div><img src="/img/alameda-catalogo.webp" alt="Catálogo de la tienda online de Floristería Alameda, con foto, descripción, precio y botón de pedido en cada producto" width="900" height="475" loading="lazy"></div></div></div>
   </div>
 </section>
 
@@ -408,6 +406,11 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
         <div class="caso-b"><h4>El problema</h4><p>4,9★ con 333 reseñas en Google y una web de plantilla que todavía tenía puestos los textos de ejemplo del tema: «SAMPLE 2» y «Lorem ipsum».</p></div>
         <div class="caso-b"><h4>Qué hice</h4><p>Tienda online completa: catálogo de productos, carrito, pasarela de pago y pedidos por WhatsApp integrados. Y la ficha de Google ordenada.</p></div>
         <div class="caso-b"><h4>El resultado</h4><p>Pasó de vender solo en el mostrador a vender también online. El cliente reporta un <strong>30% más de ventas totales al mes</strong> entre la tienda online y la gente que ahora le encuentra en Google.</p></div>
+      </div>
+      <div class="gal">
+        <figure><img src="/img/alameda-tienda.webp" alt="Página «Sobre nosotros» de Floristería Alameda con la foto real de la tienda y el sello de 4,9 sobre 5 en Google" width="900" height="475" loading="lazy"><figcaption>La foto real de su tienda, no un banco de imágenes. Y sus 4,9★ a la vista desde el primer scroll.</figcaption></figure>
+        <figure><img src="/img/alameda-producto.webp" alt="Ficha de producto de la tienda online: precio con IVA y portes incluidos, añadir al carrito y pedir por WhatsApp" width="900" height="475" loading="lazy"><figcaption>Cada producto con su precio final, IVA y portes incluidos. Se compra con carrito o se pide por WhatsApp, lo que prefiera el cliente.</figcaption></figure>
+        <figure><img src="/img/alameda-resenas.webp" alt="Sección de reseñas de la tienda online de Floristería Alameda con las 333 valoraciones de Google y un código QR para dejar una nueva" width="900" height="475" loading="lazy"><figcaption>Las 333 reseñas que tenía en Google, traídas a la web. Con un QR para que quien pase por la tienda deje la suya.</figcaption></figure>
       </div>
       <p class="caso-nota">Puedes comprobarlo tú mismo: <a href="https://floristeriaalameda.com/" target="_blank" rel="noopener noreferrer nofollow"><strong>floristeriaalameda.com</strong></a> está publicada y funcionando, con sus reseñas en Google.</p>
     </div>
