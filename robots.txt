@@ -1,3 +1,54 @@
+# ruiperezstudio.es
+
 User-agent: *
 Allow: /
+
+# Rastreadores de IA, permitidos de forma explícita.
+# Con "User-agent: *" ya tendrían acceso, pero declararlos uno a uno deja
+# constancia de la intención y evita que un cambio futuro los corte sin querer.
+
+# OpenAI · ChatGPT
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+
+# Google · Gemini y AI Overviews
+User-agent: Google-Extended
+Allow: /
+
+# Anthropic · Claude
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+
+# Microsoft · Copilot y Bing
+User-agent: bingbot
+Allow: /
+
+# Apple · Siri y Spotlight
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+# Common Crawl (alimenta a buena parte de los modelos)
+User-agent: CCBot
+Allow: /
+
+# Meta · Llama
+User-agent: meta-externalagent
+Allow: /
+
 Sitemap: https://ruiperezstudio.es/sitemap.xml

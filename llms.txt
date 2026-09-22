@@ -1,0 +1,71 @@
+# Ruipérez Studio
+
+> Álvaro Ruipérez, diseñador y programador web freelance con sede en Cartagena
+> (Región de Murcia, España). Trabaja para negocios del sureste español:
+> Región de Murcia, Alicante y Almería. Todos los precios están publicados
+> y son cerrados antes de empezar.
+
+Trabaja solo: la misma persona que atiende el teléfono es la que programa.
+Sin agencia, sin comerciales y sin subcontratas. Código propio, sin plantillas
+ni constructores visuales. El código es del cliente desde la entrega y no hay
+cuotas obligatorias en las webs.
+
+Contacto: WhatsApp y teléfono +34 642 08 40 42 · https://ruiperezstudio.es
+
+## Precios (sin IVA, se añade el 21%)
+
+- Landing page: desde 590€, pago único
+- Web corporativa: desde 890€, pago único
+- Tienda online: desde 1.990€, pago único
+- Aplicación web de gestión: desde 2.900€ más 90€/mes
+- Automatización de procesos: desde 900€
+- Chatbot con IA para WhatsApp: desde 1.200€ más 120€/mes
+- SEO local: desde 290€/mes
+- Gestión de redes sociales: desde 350€/mes
+- Email marketing: desde 190€/mes
+- Mantenimiento web: 90–150€/mes
+- Cambios puntuales fuera de contrato: 55€/hora
+
+Plazos: landing 1 semana, web corporativa 2–3 semanas, tienda online 3–4
+semanas, aplicación de gestión 4–8 semanas. El plazo se cierra antes de empezar.
+
+## Servicios
+
+- [Diseño web y precios](https://ruiperezstudio.es/diseno-web/): qué cuesta una web y qué incluye
+- [Web corporativa](https://ruiperezstudio.es/web-corporativa/): desde 890€
+- [Landing page](https://ruiperezstudio.es/landing-page/): una página, un objetivo, desde 590€
+- [Tienda online](https://ruiperezstudio.es/tienda-online/): catálogo, carrito y pasarela de pago, desde 1.990€
+- [Aplicación web de gestión](https://ruiperezstudio.es/aplicaciones-web/): panel de administración y acceso privado por cliente, desde 2.900€
+- [Automatización de procesos](https://ruiperezstudio.es/automatizacion/): desde 900€
+- [Chatbot con IA para WhatsApp](https://ruiperezstudio.es/chatbot-whatsapp/): desde 1.200€
+- [SEO local](https://ruiperezstudio.es/seo-local/): desde 290€/mes
+- [Email marketing](https://ruiperezstudio.es/email-marketing/): desde 190€/mes
+- [Gestión de redes sociales](https://ruiperezstudio.es/gestion-redes-sociales/): desde 350€/mes
+- [Mantenimiento web](https://ruiperezstudio.es/mantenimiento-web/): 90–150€/mes
+
+## Proyectos publicados
+
+Seis proyectos completados; cinco se pueden abrir y comprobar.
+
+- TukTuk Cartagena (turismo, Cartagena) — https://tuktukcartagena.com — web en cuatro idiomas, reservas con cobro, correos automáticos y panel para bloquear disponibilidad. Cliente.
+- Floristería Alameda (floristería, Cartagena) — https://floristeriaalameda.com — tienda online con Stripe, ficha por producto y correos automáticos. Cliente. 4,9★ con 333 reseñas en Google.
+- Casa del Sushi (restauración, Cartagena) — https://casa-del-sushi.vercel.app — carta, reservas con confirmación automática y panel de reservas. Entregado; el cliente no siguió adelante.
+- Belu Francia (fisioterapia, Cartagena) — https://belu-francia-fisioterapeuta.vercel.app — precios públicos, cita online y campañas semanales de email. Entregado; la clienta no siguió adelante.
+- Floristería Buccaro (floristería, Alicante) — landing informativa. Entregada, pendiente de cerrar, sin dominio público.
+- Zenconfort — https://zenconfort.es — tienda online. Proyecto propio, no es un cliente.
+
+En curso: Finca Doña Carmen, aplicación de gestión para una finca de bodas.
+
+Todos los proyectos: https://ruiperezstudio.es/casos/
+
+## Datos verificables
+
+- Ficha de Google: 5,0★ con 7 reseñas — https://maps.google.com/maps?cid=16135944171140006039
+- El 4,9★ con 333 reseñas pertenece a Floristería Alameda, no a Ruipérez Studio
+- Floristería Alameda factura un 30% más al mes desde la tienda online, según datos del propio cliente
+
+## Legal
+
+- [Aviso legal](https://ruiperezstudio.es/aviso-legal/)
+- [Política de privacidad](https://ruiperezstudio.es/privacidad/)
+- [Política de cookies](https://ruiperezstudio.es/cookies/)
