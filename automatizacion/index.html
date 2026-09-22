@@ -332,6 +332,8 @@ html.js .rv.in{opacity:1;transform:none;
 .caso-b h4{font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:.4rem;font-family:var(--fs);font-weight:700}
 .caso-b p{font-size:.86rem;color:var(--soft);line-height:1.5;margin:0}
 .caso-nota{font-size:.76rem;color:var(--faint);margin-top:1rem;font-style:italic}
+.caso-intro{font-size:.95rem;color:var(--soft);line-height:1.6;margin:0 0 .4rem;max-width:62ch}
+.caso-img{width:100%;height:auto;border-radius:11px;margin-top:1.3rem;border:1px solid var(--line2)}
 /* incluye */
 .inc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem 1.6rem}
 .inc div{display:flex;gap:.65rem;align-items:flex-start;font-size:.95rem;color:var(--soft);line-height:1.5}
@@ -411,14 +413,16 @@ html.js .rv.in{opacity:1;transform:none;
 <section class="sec">
   <div class="wrap">
     <div class="caso rv">
-      <span class="caso-t caso-tipo">Caso tipo · ejemplo ilustrativo</span>
-      <h3>Caso tipo · Taller mecánico en Murcia</h3>
+      <span class="caso-t caso-real">Caso real · cliente verificable</span>
+      <h3>TukTuk Cartagena · reservas sin intervención</h3>
+      <p class="caso-intro">Un tour de una hora que se vende sobre todo a turistas que ya están en la calle, en cuatro idiomas y a cualquier hora. Cada reserva atendida a mano es una llamada, un mensaje y un hueco en la agenda que alguien tiene que apuntar.</p>
       <div class="caso-g">
-        <div class="caso-b"><h4>El problema</h4><p>Cada cita se apunta a mano en una agenda de papel y se llama al cliente el día antes para recordárselo.</p></div>
-        <div class="caso-b"><h4>Qué hice</h4><p>Formulario que entra directo al calendario, recordatorio automático por WhatsApp 24 horas antes y aviso al taller.</p></div>
-        <div class="caso-b"><h4>El resultado</h4><p>Se acaban las llamadas de recordatorio y las citas olvidadas dejan de ser un hueco muerto en el taller.</p></div>
+        <div class="caso-b"><h4>Qué monté</h4><p>El cliente elige tour, día, hora y cuántos van. La web comprueba el aforo —hasta 12 personas, que son tres tuk tuks—, calcula el total y cobra en el momento.</p></div>
+        <div class="caso-b"><h4>Qué deja de hacerse a mano</h4><p>Nadie tiene que contestar para dar precio, confirmar hueco ni apuntar la reserva. Entra sola, con el pago hecho.</p></div>
+        <div class="caso-b"><h4>Por qué importa aquí</h4><p>Un turista que pregunta por WhatsApp a las once de la noche y no recibe respuesta hasta mañana, mañana ya está en otra ciudad.</p></div>
       </div>
-      <p class="caso-nota">Ejemplo ilustrativo de cómo se aplica este servicio. No corresponde a un cliente concreto.</p>
+      <img class="caso-img" src="/img/tuktuk-reserva.webp" alt="Formulario de reserva de TukTuk Cartagena: tour, fecha, hora de salida, número de personas con el máximo de aforo, total a pagar y botón de confirmar y pagar" width="900" height="475" loading="lazy">
+      <p class="caso-nota">Puedes probarlo tú mismo en <a href="https://tuktukcartagena.com/" target="_blank" rel="noopener noreferrer nofollow"><strong>tuktukcartagena.com</strong></a>, sin llegar a pagar.</p>
     </div>
   </div>
 </section>

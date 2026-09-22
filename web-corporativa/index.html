@@ -332,6 +332,14 @@ html.js .rv.in{opacity:1;transform:none;
 .caso-b h4{font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin-bottom:.4rem;font-family:var(--fs);font-weight:700}
 .caso-b p{font-size:.86rem;color:var(--soft);line-height:1.5;margin:0}
 .caso-nota{font-size:.76rem;color:var(--faint);margin-top:1rem;font-style:italic}
+.caso-intro{font-size:.95rem;color:var(--soft);line-height:1.6;margin:0 0 .4rem;max-width:62ch}
+.caso-img{width:100%;height:auto;border-radius:11px;margin-top:1.3rem;border:1px solid var(--line2)}
+.gal{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.1rem;margin-top:1.5rem}
+.gal figure{margin:0}
+.gal img{width:100%;height:auto;border-radius:11px;border:1px solid var(--line2);display:block}
+.gal figure:last-child{grid-column:1/-1}
+.gal figcaption{font-size:.8rem;color:var(--soft);line-height:1.5;margin-top:.55rem}
+@media(max-width:700px){.gal{grid-template-columns:1fr;gap:1.4rem}}
 /* incluye */
 .inc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem 1.6rem}
 .inc div{display:flex;gap:.65rem;align-items:flex-start;font-size:.95rem;color:var(--soft);line-height:1.5}
@@ -389,7 +397,7 @@ html.js .rv.in{opacity:1;transform:none;
         <div><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="#56663F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Trato directo conmigo, sin comerciales</span></div>
       </div>
     </div>
-    <div><div class="mock" style="padding:0;overflow:hidden"><div class="brw" style="border:0;box-shadow:none;border-radius:0"><div class="brw-bar"><div class="brw-dots"><span></span><span></span><span></span></div><div class="brw-url">floristeriaalameda.com</div></div><img src="/img/casa-del-sushi.webp" alt="Web corporativa de Casa del Sushi en Cartagena, diseñada por Ruipérez Studio" width="900" height="442" loading="lazy"></div></div></div>
+    <div><div class="mock" style="padding:0;overflow:hidden"><div class="brw" style="border:0;box-shadow:none;border-radius:0"><div class="brw-bar"><div class="brw-dots"><span></span><span></span><span></span></div><div class="brw-url">tuktukcartagena.com</div></div><img src="/img/tuktuk-home.webp" alt="Portada de la web de TukTuk Cartagena, con vídeo de fondo y botón de reserva" width="900" height="475" loading="lazy"></div></div></div>
   </div>
 </section>
 
@@ -418,7 +426,25 @@ html.js .rv.in{opacity:1;transform:none;
         <div class="caso-b"><h4>Qué hice</h4><p>Web corporativa con el precio por persona y la reserva de mesa en la primera pantalla, fotos reales del local y carta consultable desde el móvil.</p></div>
         <div class="caso-b"><h4>El resultado</h4><p>El precio dejó de estar escondido en un PDF. Filtra a quien no va a venir y convence a quien sí, antes de entrar por la puerta. Ábrela en <a href="https://casa-del-sushi.vercel.app/" target="_blank" rel="noopener noreferrer nofollow">casa-del-sushi.vercel.app</a>.</p></div>
       </div>
+      <img class="caso-img" src="/img/casa-del-sushi.webp" alt="Web de Casa del Sushi con el precio del buffet y la reserva de mesa en la primera pantalla" width="900" height="451" loading="lazy">
       
+    </div>
+
+    <div class="caso rv" style="margin-top:1.6rem">
+      <span class="caso-t caso-real">Caso real · cliente verificable</span>
+      <h3>TukTuk Cartagena · turismo</h3>
+      <p class="caso-intro">Una empresa de tours en tuk tuk por Cartagena. Su cliente es un turista que decide en el móvil, muchas veces sin hablar español y estando ya en la ciudad.</p>
+      <div class="caso-g">
+        <div class="caso-b"><h4>Cuatro idiomas desde el primer día</h4><p>Español, inglés, alemán y francés. No es una traducción automática encima: cada idioma tiene su versión de la web, que es lo que espera quien llega en crucero.</p></div>
+        <div class="caso-b"><h4>Cada tour, explicado</h4><p>Recorrido, duración y mapa de la ruta. El turista sabe exactamente por dónde va a pasar antes de pagar.</p></div>
+        <div class="caso-b"><h4>Se reserva y se paga en la web</h4><p>Elige tour, día, hora y número de personas; la web calcula el total y cobra. Sin llamadas ni mensajes de ida y vuelta.</p></div>
+      </div>
+      <div class="gal">
+        <figure><img src="/img/tuktuk-tours.webp" alt="Sección de tours de TukTuk Cartagena con el recorrido, la duración y el mapa de cada ruta" width="900" height="475" loading="lazy"><figcaption>Cada tour con su mapa y su duración. Nada que preguntar antes de reservar.</figcaption></figure>
+        <figure><img src="/img/tuktuk-reserva.webp" alt="Formulario de reserva de TukTuk Cartagena con tour, fecha, hora, número de personas, total a pagar y botón de confirmar y pagar" width="900" height="475" loading="lazy"><figcaption>La reserva completa en una pantalla, con el total calculado y el cobro dentro.</figcaption></figure>
+        <figure><img src="/img/tuktuk-galeria.webp" alt="Galería de fotos reales de los tuk tuks de Cartagena con clientes a bordo" width="900" height="475" loading="lazy"><figcaption>Fotos reales de sus tuk tuks y de sus clientes. Ni una imagen de banco.</figcaption></figure>
+      </div>
+      <p class="caso-nota">Puedes comprobarlo: <a href="https://tuktukcartagena.com/" target="_blank" rel="noopener noreferrer nofollow"><strong>tuktukcartagena.com</strong></a> está publicada y aceptando reservas.</p>
     </div>
   </div>
 </section>
