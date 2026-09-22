@@ -69,5 +69,47 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/diseno-web-cartagena",
+      "destination": "/diseno-web",
+      "permanent": true
+    },
+    {
+      "source": "/diseno-web-cartagena/",
+      "destination": "/diseno-web/",
+      "permanent": true
+    },
+    {
+      "source": "/diseno-web-murcia",
+      "destination": "/diseno-web",
+      "permanent": true
+    },
+    {
+      "source": "/diseno-web-murcia/",
+      "destination": "/diseno-web/",
+      "permanent": true
+    },
+    {
+      "source": "/automatizacion-procesos-murcia",
+      "destination": "/automatizacion",
+      "permanent": true
+    },
+    {
+      "source": "/automatizacion-procesos-murcia/",
+      "destination": "/automatizacion/",
+      "permanent": true
+    },
+    {
+      "source": "/chatbot-whatsapp-cartagena",
+      "destination": "/chatbot-whatsapp",
+      "permanent": true
+    },
+    {
+      "source": "/chatbot-whatsapp-cartagena/",
+      "destination": "/chatbot-whatsapp/",
+      "permanent": true
+    }
   ]
 }
