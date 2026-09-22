@@ -23,18 +23,18 @@ HTML + CSS + JavaScript **estático puro**. Sin `package.json`, sin npm, sin bun
 
 ## Estructura
 
-21 páginas, una carpeta por URL:
+22 páginas, una carpeta por URL:
 
 | Grupo | Rutas |
 |---|---|
 | Home | `/` |
-| Servicios (9) | `/web-corporativa/` `/landing-page/` `/tienda-online/` `/automatizacion/` `/chatbot-whatsapp/` `/seo-local/` `/email-marketing/` `/mantenimiento-web/` `/gestion-redes-sociales/` |
+| Servicios (10) | `/web-corporativa/` `/landing-page/` `/tienda-online/` `/aplicaciones-web/` `/automatizacion/` `/chatbot-whatsapp/` `/seo-local/` `/email-marketing/` `/mantenimiento-web/` `/gestion-redes-sociales/` |
 | Ciudad (4) | `/diseno-web-cartagena/` `/diseno-web-murcia/` `/automatizacion-procesos-murcia/` `/chatbot-whatsapp-cartagena/` |
 | Legales (3) | `/aviso-legal/` `/privacidad/` `/cookies/` |
 | Estudio (2) | `/sobre-mi/` · `/casos/` |
 | Tráfico de pago (2) | `/lp/hosteleria/` `/lp/comercio-local/` — noindex, sin menú, un solo CTA. **Nunca mandar tráfico de pago a la home.** |
 
-Otros archivos: `sitemap.xml` (19 URLs — las noindex quedan fuera), `robots.txt`, `fonts/` (3 WOFF2), `vercel.json` (CSP, HSTS, X-Frame-Options, cache de `/img/`), `favicon.svg`, `apple-touch-icon.png`, `img/`.
+Otros archivos: `sitemap.xml` (20 URLs — las noindex quedan fuera), `robots.txt`, `fonts/` (3 WOFF2), `vercel.json` (CSP, HSTS, X-Frame-Options, cache de `/img/`), `favicon.svg`, `apple-touch-icon.png`, `img/`.
 
 ## Precios oficiales
 
@@ -47,6 +47,7 @@ Otros archivos: `sitemap.xml` (19 URLs — las noindex quedan fuera), `robots.tx
 | Landing page | desde 590€ · pago único |
 | Web corporativa | desde 890€ · pago único |
 | Tienda online | desde 1.990€ · pago único |
+| Aplicación web de gestión | desde 2.900€ · pago único + 90€/mes |
 | Automatización de procesos | desde 900€ |
 | Chatbot IA para WhatsApp | desde 1.200€ + 120€/mes |
 | Email marketing | desde 190€/mes |
@@ -68,7 +69,9 @@ Solo estos tres son clientes reales verificables y pueden aparecer como tales:
 
 **Floristería Buccaro (Alicante) no es cliente.** Es una propuesta comercial que Álvaro diseñó para captarla, y aparece en `/landing-page/` etiquetada «Diseño de muestra · todavía no es un cliente». Sus precios son orientativos. Si algún día la contrata, se reetiqueta; mientras tanto, no se cuenta como caso real ni se le atribuyen resultados.
 
-En curso: **Finca Doña Carmen** (aplicación a medida). Se añade a `/casos/` cuando esté publicada, no antes.
+En curso: **Finca Doña Carmen** — aplicación con panel de administración para la finca y acceso privado para cada pareja (Next.js + Supabase + Vercel). **No está publicada.** Aparece en `/aplicaciones-web/` etiquetada «Proyecto en curso · cliente real», describiendo qué hace y **sin ninguna cifra de resultado**, porque todavía no las hay. Se añade a `/casos/` el día que esté en producción.
+
+**El precio de la aplicación (2.900€ + 90€/mes) se fijó el 22/09/2026** comparando con el mercado español: las agencias parten de 5.000–8.000€ para un desarrollo acotado y los freelance se mueven entre 8.000 y 25.000€. La cuota mensual **no es un extra comercial**: una aplicación tiene base de datos y usuarios vivos 24 h y eso cuesta todos los meses. Si se quita la cuota, el servicio pierde dinero.
 
 **Zenconfort es un proyecto propio, no un cliente.** Nunca debe salir en «negocios que ya confían». En `/casos/` aparece etiquetado «Proyecto propio · No es un cliente», que es la única forma correcta de mostrarlo.
 

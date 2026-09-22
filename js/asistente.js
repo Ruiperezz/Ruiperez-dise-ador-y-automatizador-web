@@ -24,7 +24,7 @@
   var KB = [
     { k:["precio","cuesta","cuanto cuesta","cuanto vale","cuanto seria","vale","cobras","tarifa","presupuesto","caro","barato","coste","cuanto me","precios"],
       t:"Los precios están publicados, sin tener que preguntar:",
-      l:["Landing page: desde 590€","Web corporativa: desde 890€","Tienda online: desde 1.990€",
+      l:["Landing page: desde 590€","Web corporativa: desde 890€","Tienda online: desde 1.990€","Aplicación de gestión: desde 2.900€ + 90€/mes",
          "Automatización: desde 900€","Chatbot de WhatsApp: desde 1.200€ + 120€/mes",
          "SEO local: desde 290€/mes","Redes sociales: desde 350€/mes","Email marketing: desde 190€/mes",
          "Mantenimiento: 90–150€/mes"],
@@ -32,7 +32,7 @@
 
     { k:["tarda","cuanto tardas","cuanto tarda","plazo","plazos","cuando estaria","rapido","entrega","semanas","urgente","tiempo"],
       t:"Depende del tipo de proyecto:",
-      l:["Landing page: 1 semana","Web corporativa: 2–3 semanas","Tienda online: 3–4 semanas"],
+      l:["Landing page: 1 semana","Web corporativa: 2–3 semanas","Tienda online: 3–4 semanas","Aplicación de gestión: 4–8 semanas"],
       n:"El plazo cuenta desde que me pasas el contenido, y te lo digo exacto antes de empezar." },
 
     { k:["cuota","mensual","permanencia","suscripcion","pago unico","pagos","fraccionar","financiar"],
@@ -52,6 +52,12 @@
     { k:["hosting","alojamiento","dominio","servidor","anual"],
       t:"El alojamiento va en Vercel y en el plan que uso no tiene coste.",
       n:"El único gasto recurrente es el dominio, unos 12€ al año. Lo gestiono yo y te lo repercuto sin recargo, o lo pones a tu nombre si lo prefieres." },
+
+    { k:["aplicacion","aplicacion web","app","cuesta una aplicacion","precio aplicacion","precio de la aplicacion","cuesta una app","precio app","panel de gestion","panel de administracion","software a medida","programa de gestion","area privada","zona de clientes"],
+      t:"Una aplicación web de gestión: desde 2.900€ más 90€/mes.",
+      l:["Panel de administración solo para ti","Cada cliente entra con su usuario y ve solo lo suyo",
+         "Base de datos propia, no una hoja de cálculo","De 4 a 8 semanas"],
+      n:"Los 90€/mes cubren alojamiento, base de datos, copias de seguridad y soporte. Sin permanencia.", u:"/aplicaciones-web/" },
 
     { k:["automatizacion","automatizar","n8n","make","procesos","tareas","repetitiv","integrar","conectar"],
       t:"Automatizo las tareas que hoy haces a mano y podrían hacerse solas.",
@@ -131,7 +137,7 @@
         var c = normalizar(clave).trim();
         if (!c) return;
         var re = new RegExp("(^| )" + c.replace(/ +/g, " ") + (c.length >= 4 ? "[a-z]*" : "") + "( |$)");
-        if (re.test(n)) p += c.indexOf(" ") > -1 ? 5 : (c.length >= 6 ? 3 : 2);
+        if (re.test(n)) p += c.indexOf(" ") > -1 ? 4 + c.split(" ").length : (c.length >= 6 ? 3 : 2);
       });
       if (p > max) { max = p; mejor = e; }
     });
