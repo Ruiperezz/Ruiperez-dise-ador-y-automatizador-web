@@ -10,7 +10,7 @@ Web de marca y escaparate comercial de **Álvaro Ruipérez** (Ruipérez Studio),
 - **URL de producción:** https://ruiperezstudio.es
 - **Repositorio:** github.com/Ruiperezz/Ruiperez-dise-ador-y-automatizador-web
 - **Despliegue:** Vercel, proyecto `ruiperez-dise-ador-y-automatizador-web`. La rama `main` va directa a producción.
-- **Objetivo actual:** dejar la web lista para invertir en Meta Ads y TikTok Ads. Ver `PLAN.md`.
+- **Objetivo actual:** dejar la web lista para invertir en Meta Ads y TikTok Ads. **Ámbito: sureste de España** (Región de Murcia, Alicante y Almería), decidido el 23/09/2026. La sede sigue en Cartagena. Ver `PLAN.md`.
 
 ## Stack
 
@@ -59,11 +59,27 @@ Cambios puntuales fuera de contrato: 55€/hora.
 
 ## Clientes
 
-Solo estos tres son clientes reales verificables y pueden aparecer como tales:
+**Seis proyectos, y no todos son clientes.** La distinción importa y está reflejada en las etiquetas del sitio:
+
+| Proyecto | Estado | Enlace |
+|---|---|---|
+| TukTuk Cartagena | **Cliente** | `tuktukcartagena.com` |
+| Floristería Alameda | **Cliente** | `floristeriaalameda.com` |
+| Casa del Sushi | Entregado, el cliente no siguió | `casa-del-sushi.vercel.app` |
+| Belu Francia (fisioterapia) | Entregado, la clienta no siguió | `belu-francia-fisioterapeuta.vercel.app` |
+| Floristería Buccaro (Alicante) | Entregado, pendiente de cerrar | sin dominio público |
+| Zenconfort | Proyecto propio | `zenconfort.es` |
+| Finca Doña Carmen | En curso | no publicado |
+
+**Nunca digas «+10 proyectos» ni ninguna cifra inflada.** Son seis completados y se enseñan los seis. La banda de la home usa cifras que se pueden contar una a una: 6 proyectos, 4 sistemas de reserva o pago, 3 paneles. Eso es verificable; un número redondo inventado se cae en cuanto alguien entra en `/casos/` y cuenta.
+
+**Mantenimiento mensual (100€ cada uno, hasta 10 cambios al mes):** Floristería Alameda, TukTuk Cartagena y Finca Doña Carmen.
+
+Los clientes verificables como tales:
 
 - **TukTuk Cartagena** — turismo. `tuktukcartagena.com`. Web desde cero en 4 idiomas (ES/EN/DE/FR), **sistema de reservas** (servicio, personas, número de tuk tuks y cobro), **correos automáticos** de confirmación al cliente y al empresario, y un **panel de administración** donde el dueño bloquea días, horas o parte de la flota (avería, festivo) y eso desaparece al instante de la web. Ese panel es el caso real de `/aplicaciones-web/`. **Es privado: no hay captura y no se puede enseñar.**
 - **Floristería Alameda** — Cartagena, **4,9★ con 333 reseñas** (verificado en floristeriaalameda.com). Es una **tienda online** con catálogo, carrito y pasarela de pago. No la etiquetes como web corporativa.
-- **Casa del Sushi** — Cartagena, restauración. `casa-del-sushi.vercel.app`. Carta, info del local, ubicación y reseñas, **reserva de mesa con correo de confirmación automático** y un **panel de administración** donde el dueño ve sus reservas. **Álvaro dice que el trabajo no está cerrado del todo** (22/09/2026): sigue etiquetado como caso real porque la web está publicada y se puede abrir, pero confirma con él antes de llamarle «cliente» en copy nuevo. **Álvaro confirmó el 21/09/2026 que Perico Del Rey NO es Casa del Sushi.** Casa del Sushi es cliente y tiene su caso en `/web-corporativa/` y `/casos/`, pero **no ha dejado reseña en Google**: no le atribuyas ninguna.
+- **Casa del Sushi** — Cartagena, restauración. **Entregado, el cliente no siguió adelante.** `casa-del-sushi.vercel.app`. Carta, info del local, ubicación y reseñas, **reserva de mesa con correo de confirmación automático** y un **panel de administración** donde el dueño ve sus reservas. **Álvaro dice que el trabajo no está cerrado del todo** (22/09/2026): sigue etiquetado como caso real porque la web está publicada y se puede abrir, pero confirma con él antes de llamarle «cliente» en copy nuevo. **Álvaro confirmó el 21/09/2026 que Perico Del Rey NO es Casa del Sushi.** Casa del Sushi es cliente y tiene su caso en `/web-corporativa/` y `/casos/`, pero **no ha dejado reseña en Google**: no le atribuyas ninguna.
 
 **Ficha de Google propia: `locations/10546771556631248285`.** 5,0★ con 7 reseñas, verificada. Enlace público `https://maps.google.com/maps?cid=16135944171140006039`; para pedir reseñas, `https://search.google.com/local/writereview?placeid=ChIJoxdRJpnbFWoRl8BVVLtj7t8`. **El 4,9★ con 333 reseñas es de Alameda, no suyo**: donde aparezca hay que decir de quién es. En el hero va su 5,0★ real.
 
