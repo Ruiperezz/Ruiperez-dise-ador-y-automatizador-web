@@ -61,7 +61,7 @@ Cambios puntuales fuera de contrato: 55€/hora.
 
 Solo estos tres son clientes reales verificables y pueden aparecer como tales:
 
-- **TukTuk Cartagena** — turismo. Web desde cero en 4 idiomas (ES/EN/DE/FR). `tuktukcartagena.com`
+- **TukTuk Cartagena** — turismo. `tuktukcartagena.com`. Web desde cero en 4 idiomas (ES/EN/DE/FR), **sistema de reservas** (servicio, personas, número de tuk tuks y cobro), **correos automáticos** de confirmación al cliente y al empresario, y un **panel de administración** donde el dueño bloquea días, horas o parte de la flota (avería, festivo) y eso desaparece al instante de la web. Ese panel es el caso real de `/aplicaciones-web/`. **Es privado: no hay captura y no se puede enseñar.**
 - **Floristería Alameda** — Cartagena, **4,9★ con 333 reseñas** (verificado en floristeriaalameda.com). Es una **tienda online** con catálogo, carrito y pasarela de pago. No la etiquetes como web corporativa.
 - **Casa del Sushi** — Cartagena, restauración. **Álvaro confirmó el 21/09/2026 que Perico Del Rey NO es Casa del Sushi.** Casa del Sushi es cliente y tiene su caso en `/web-corporativa/` y `/casos/`, pero **no ha dejado reseña en Google**: no le atribuyas ninguna.
 
@@ -87,8 +87,9 @@ Un caso repetido en todas partes no es prueba social. Cada página lleva el suyo
 |---|---|
 | Home · `/tienda-online/` · `/seo-local/` | Floristería Alameda |
 | `/web-corporativa/` | Casa del Sushi **y** TukTuk Cartagena |
-| `/diseno-web-cartagena/` | TukTuk Cartagena |
-| `/automatizacion/` | TukTuk Cartagena (el sistema de reservas) |
+| `/diseno-web-cartagena/` | TukTuk Cartagena **y** Floristería Alameda |
+| `/automatizacion/` | TukTuk (reservas) **y** Alameda (correos automáticos) |
+| `/aplicaciones-web/` | TukTuk (panel de disponibilidad) **y** Finca Doña Carmen (en curso) |
 | `/landing-page/` | Buccaro (propuesta, no cliente) |
 | `/casos/` | los cuatro |
 
@@ -119,7 +120,7 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 - El pie tiene que ser idéntico en las 15 páginas que lo llevan. Si añades una página, añádela al pie de todas.
 - **En móvil el mockup del hero va ANTES del texto** (`.scene{order:-1}`). Su portfolio vende con fotografía real; el escaparate no puede esconder su única prueba tras 800px de texto, que es justo donde aterriza el tráfico de pago. Con ese orden, el elemento LCP en móvil pasa a ser la imagen y el `fetchpriority="high"` por fin sirve para algo. Medido: mismo LCP que con el texto delante.
 - Las webs de los clientes se enlazan de verdad, con `rel="noopener noreferrer nofollow"`: floristeriaalameda.com, zenconfort.es, tuktukcartagena.com y casa-del-sushi.vercel.app. La página promete «puedes abrirlas y comprobarlo», así que tienen que ser enlaces, no texto.
-- **Capturas reales en `/img/`:** `alameda-catalogo`, `alameda-tienda`, `alameda-producto` y `alameda-resenas` (tienda online de Alameda); `tuktuk-home`, `tuktuk-tours`, `tuktuk-reserva` y `tuktuk-galeria` (TukTuk Cartagena); `buccaro-alicante` y `buccaro-catalogo` (propuesta de landing). 900px de ancho y WebP a calidad 82, como el resto. **No pongas mockups inventados donde haya una captura real**: los mockups en CSS con productos y precios de mentira se han ido sustituyendo por capturas de webs publicadas.
+- **Capturas reales en `/img/`:** `alameda-catalogo`, `alameda-tienda`, `alameda-producto` y `alameda-resenas` (tienda online de Alameda); `tuktuk-home`, `tuktuk-tours`, `tuktuk-reserva` y `tuktuk-galeria` (TukTuk Cartagena); `alameda-carrito` (el carrito con Stripe); `buccaro-alicante` y `buccaro-catalogo` (propuesta de landing). 900px de ancho y WebP a calidad 82, como el resto. **No pongas mockups inventados donde haya una captura real**: los mockups en CSS con productos y precios de mentira se han ido sustituyendo por capturas de webs publicadas.
 - **La ficha de Google se gestiona por Windsor.ai**, conector `google_my_business`. Requiere que Álvaro tenga activado *Settings → API Access → Enable write actions*. Desde ahí se puede cambiar descripción, categorías, servicios, horarios, atributos, fotos, publicaciones y respuestas a reseñas. **Hecho el 21/09/2026:** descripción reescrita en primera persona del singular, los 9 servicios con precio y descripción, y las 7 reseñas respondidas una a una. **Categorías (21/09/2026):** principal `gcid:website_designer`; secundarias `gcid:internet_marketing_service`, `gcid:marketing_agency` y `gcid:software_company`. Un `update_location` con teléfono o web da 400: mándalos solo si de verdad cambian. **La dirección no se toca:** cambiarla dispara la re-verificación de Google y puede tumbar la ficha. Search Console (`searchconsole`, propiedades `ruiperezstudio.es` y `zenconfort.es`) es **solo lectura**.
 - **La URL de la barra del navegador (`.brw-url`) tiene que ser la de la captura que hay debajo.** En `/web-corporativa/` ponía `floristeriaalameda.com` sobre una captura de Casa del Sushi: si el visitante abre esa URL y ve otra cosa, la prueba se vuelve en contra. Corregido el 23/09/2026.
 - Referencia medida el 30/08/2026 con Lighthouse móvil: rendimiento 98, accesibilidad 100, buenas prácticas 100, SEO 100. LCP 1,9s · CLS 0,04.
