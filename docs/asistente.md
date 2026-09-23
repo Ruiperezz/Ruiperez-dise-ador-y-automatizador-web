@@ -14,7 +14,7 @@ Si ninguna entrada llega a la puntuación mínima, **no improvisa**: dice que no
 
 1. Una web estática no puede ejecutar un LLM. Haría falta un backend.
 2. Poner una clave de API en el navegador es regalarla: cualquiera abre el código fuente y la usa a tu costa.
-3. **Álvaro vende chatbots con IA de verdad, desde 1.200€.** Si aquí se anunciara como «IA» un buscador de palabras clave, el primer visitante que lo probara y notara la diferencia concluiría que los chatbots que vende son igual de flojos. El daño comercial sería mayor que el beneficio.
+3. **Álvaro vende chatbots con IA de verdad, desde 890€.** Si aquí se anunciara como «IA» un buscador de palabras clave, el primer visitante que lo probara y notara la diferencia concluiría que los chatbots que vende son igual de flojos. El daño comercial sería mayor que el beneficio.
 
 Por eso en la interfaz pone «Resuelvo tus dudas» y «Respuestas automáticas sobre lo que ya está publicado en la web». En ningún sitio dice «IA».
 

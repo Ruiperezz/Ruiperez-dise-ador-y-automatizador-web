@@ -10,7 +10,7 @@ Web de marca y escaparate comercial de **Álvaro Ruipérez** (Ruipérez Studio),
 - **URL de producción:** https://ruiperezstudio.es
 - **Repositorio:** github.com/Ruiperezz/Ruiperez-dise-ador-y-automatizador-web
 - **Despliegue:** Vercel, proyecto `ruiperez-dise-ador-y-automatizador-web`. La rama `main` va directa a producción.
-- **Objetivo actual:** dejar la web lista para invertir en Meta Ads y TikTok Ads. **Ámbito: sureste de España** (Región de Murcia, Alicante y Almería), decidido el 23/09/2026. La sede sigue en Cartagena. Ver `PLAN.md`.
+- **Objetivo actual:** dejar la web lista para invertir en Meta Ads y TikTok Ads. **Ámbito: sureste de España** (Región de Murcia, Alicante, Almería y **Valencia**, añadida el 23/09/2026 porque Álvaro tiene familia allí y contactos que explotar). La sede sigue en Cartagena. La sede sigue en Cartagena. Ver `PLAN.md`.
 
 ## Stack
 
@@ -44,19 +44,23 @@ Otros archivos: `sitemap.xml` (18 URLs — las noindex quedan fuera), `robots.tx
 
 | Servicio | Precio |
 |---|---|
-| Landing page | desde 590€ · pago único |
-| Web corporativa | desde 890€ · pago único |
-| Tienda online | desde 1.990€ · pago único |
-| Aplicación web de gestión | desde 2.900€ · pago único + 90€/mes |
-| Automatización de procesos | desde 900€ |
-| Chatbot IA para WhatsApp | desde 1.200€ + 120€/mes |
-| Email marketing | desde 190€/mes |
-| SEO local | desde 290€/mes |
-| Gestión de redes sociales | desde 350€/mes |
-| Auditoría de accesibilidad | desde 490€ · con correcciones 990€ · monitorización 90€/mes |
-| Mantenimiento web | 90–150€/mes |
+| Landing page | desde 450€ · pago único |
+| Web corporativa | desde 690€ · pago único |
+| Tienda online | desde 1.290€ · pago único |
+| Aplicación web de gestión | desde 1.990€ · pago único + 90€/mes |
+| Automatización de procesos | desde 690€ |
+| Chatbot IA para WhatsApp | desde 890€ + 120€/mes |
+| Email marketing | desde 160€/mes |
+| SEO local | desde 240€/mes |
+| Gestión de redes sociales | desde 290€/mes |
+| Auditoría de accesibilidad | desde 390€ · con correcciones 790€ · monitorización 75€/mes |
+| Mantenimiento web | 75–120€/mes |
 
-Cambios puntuales fuera de contrato: 55€/hora.
+Cambios puntuales fuera de contrato: 45€/hora.
+
+**Bajada de precios del 23/09/2026.** Álvaro los baja entre un 16% y un 35% para captar volumen mientras se da a conocer, con la idea de subirlos cuando tenga reputación. **El 90€/mes de la aplicación de gestión NO bajó**: cubre base de datos y alojamiento, que son coste real y no margen. Si se toca, el servicio pierde dinero desde el primer mes.
+
+**Aviso escrito el mismo día:** a 1.290€, una tienda online como la de Alameda (50–70 horas) sale a unos 20€/hora, menos de la mitad de los 45€/hora que él mismo publica para cambios sueltos. Es una decisión suya, tomada sabiéndolo. **Si los márgenes aprietan, el primer sitio donde mirar es esta tabla, no las horas.**
 
 ## Clientes
 
@@ -88,7 +92,7 @@ Los clientes verificables como tales:
 
 En curso: **Finca Doña Carmen** — aplicación con panel de administración para la finca y acceso privado para cada pareja (Next.js + Supabase + Vercel). **No está publicada.** Aparece en `/aplicaciones-web/` etiquetada «Proyecto en curso · cliente real», describiendo qué hace y **sin ninguna cifra de resultado**, porque todavía no las hay. Se añade a `/casos/` el día que esté en producción.
 
-**El precio de la aplicación (2.900€ + 90€/mes) se fijó el 22/09/2026** comparando con el mercado español: las agencias parten de 5.000–8.000€ para un desarrollo acotado y los freelance se mueven entre 8.000 y 25.000€. La cuota mensual **no es un extra comercial**: una aplicación tiene base de datos y usuarios vivos 24 h y eso cuesta todos los meses. Si se quita la cuota, el servicio pierde dinero.
+**El precio de la aplicación (1.990€ + 90€/mes) se fijó el 22/09/2026** comparando con el mercado español: las agencias parten de 5.000–8.000€ para un desarrollo acotado y los freelance se mueven entre 8.000 y 25.000€. La cuota mensual **no es un extra comercial**: una aplicación tiene base de datos y usuarios vivos 24 h y eso cuesta todos los meses. Si se quita la cuota, el servicio pierde dinero.
 
 **Zenconfort es un proyecto propio, no un cliente.** Nunca debe salir en «negocios que ya confían». En `/casos/` aparece etiquetado «Proyecto propio · No es un cliente», que es la única forma correcta de mostrarlo.
 
@@ -127,7 +131,7 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 - La CSP de `vercel.json` solo permite los dominios de Meta, TikTok y Google Analytics. `font-src` y `style-src` están en `'self'`. Cualquier otro recurso externo **se bloquea sin aviso en consola**.
 - **Las tipografías se sirven desde `/fonts/`, no desde Google.** Son tres WOFF2 del subconjunto `latin` (54 KB): Instrument Serif normal e italic, y Karla variable 400–700. Traerlas de Google bloqueaba el renderizado ~1,8s y comunicaba la IP del visitante a Google. Si añades un peso o un idioma, descarga el archivo a `/fonts/` — no vuelvas a enlazar `fonts.googleapis.com`.
 - `←`, `→` y `★` no están en ningún subconjunto de Google: usan la fuente del sistema. Es así a propósito.
-- **El asistente vive en `/js/asistente.js`.** Es un buscador sobre una base de conocimiento escrita a mano, **NO un modelo de lenguaje**: una web estática no puede ejecutar uno y una clave de API en el navegador se regala. **Nunca lo llames «IA»** — Álvaro vende chatbots con IA de verdad desde 1.200€, y anunciar como IA un buscador de palabras clave haría dudar de su producto. Ver `docs/asistente.md`. Si cambias un precio, cámbialo también en su `KB`: no se sincroniza sola.
+- **El asistente vive en `/js/asistente.js`.** Es un buscador sobre una base de conocimiento escrita a mano, **NO un modelo de lenguaje**: una web estática no puede ejecutar uno y una clave de API en el navegador se regala. **Nunca lo llames «IA»** — Álvaro vende chatbots con IA de verdad desde 890€, y anunciar como IA un buscador de palabras clave haría dudar de su producto. Ver `docs/asistente.md`. Si cambias un precio, cámbialo también en su `KB`: no se sincroniza sola.
 - **El botón flotante de WhatsApp también sale de `/js/asistente.js`**, apilado bajo el lanzador del asistente (`.rsa-stack`). Su `href` lleva `text=` obligatoriamente: es lo que `consent.js` exige para contar el evento `Contact`. Sin mensaje precargado el clic no se mide como lead. En móvil se oculta en la home, porque ahí la barra fija `.mcta` ya es ese mismo botón y saldría dos veces.
 - El consentimiento y la medición viven en `/js/consent.js`, compartido por las 17 páginas. Ver `docs/medicion.md`. No lo dupliques en línea.
 - Imágenes con `width` y `height` reales y **`height:auto` en el CSS de esa página**. Sin `height:auto`, el navegador usa el atributo `height` y deforma la imagen. Pasó en 17 páginas a la vez: si creas una página nueva, comprueba la regla `img{}`.
@@ -150,7 +154,7 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 - **Accesibilidad: las 20 páginas pasan axe-core 4.10.2 con CERO violaciones WCAG 2.1 A y AA** (23/09/2026). **Esto es ahora un argumento de venta**: `/accesibilidad-web/` lo dice por escrito e invita a comprobarlo. Si rompes una regla, dejas de poder venderlo. Comprueba axe antes de tocar una página, no después.
 - **Enlace de salto (`a.skip`) en las 20 páginas**, apuntando a `#main-content`. Si creas una página nueva, ponlo: sin él, la web que vende accesibilidad tendría una página que no la cumple.
 - **El servicio de accesibilidad NO se apoya en auditorías previas a clientes**, porque no las hay. Lo que hizo Álvaro a Alameda y TukTuk fue una auditoría digital de negocio, que es otra cosa. La única prueba que se usa es la propia web medida con axe. **No insinúes experiencia en accesibilidad que no existe.**
-- **Precios de accesibilidad (23/09/2026):** el mercado español cobra 800–2.500€ por una auditoría básica y 400–1.200€/mes de monitorización. Álvaro sale por debajo a propósito para darse a conocer, y la FAQ lo dice abiertamente. **Están pensados para subir.**
+- **Precios de accesibilidad (23/09/2026):** el mercado español cobra 800–2.500€ por una auditoría básica y 400–890€/mes de monitorización. Álvaro sale por debajo a propósito para darse a conocer, y la FAQ lo dice abiertamente. **Están pensados para subir.**
 - **Nunca prometas conformidad.** Ni «cumplimiento garantizado», ni «100% conforme», ni «sin riesgo de multa». La FAQ responde que no se garantiza y por qué.
 - Referencia medida el 30/08/2026 con Lighthouse móvil: rendimiento 98, accesibilidad 100, buenas prácticas 100, SEO 100. LCP 1,9s · CLS 0,04.
 
