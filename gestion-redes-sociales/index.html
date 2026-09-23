@@ -34,6 +34,9 @@
 <link rel="preload" as="font" type="font/woff2" href="/fonts/instrument-serif-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="/fonts/karla-latin.woff2" crossorigin>
 <style>
+.skip{position:absolute;left:-9999px;top:0;z-index:999;background:var(--ink);color:var(--bg);padding:.7rem 1.1rem;border-radius:0 0 9px 0;font:700 .9rem/1 var(--fs);text-decoration:none}
+.skip:focus{left:0}
+
 /* Tipografías servidas desde este mismo dominio. Antes venían de Google, que
    bloqueaba el renderizado ~1,8s y comunicaba la IP del visitante a Google. */
 @font-face{font-family:'Instrument Serif';font-style:normal;font-weight:400;font-display:swap;
@@ -370,6 +373,8 @@ html.js .rv.in{opacity:1;transform:none;
 </style>
 </head>
 <body>
+<a class="skip" href="#main-content">Saltar al contenido</a>
+
 <script>document.documentElement.className+=" js";</script>
 <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 <header id="nav">
@@ -480,7 +485,7 @@ html.js .rv.in{opacity:1;transform:none;
       
       <div>
         <div class="ft-h">Servicios</div>
-        <div class="ft-l"><a href="/web-corporativa/">Web corporativa</a><a href="/landing-page/">Landing page</a><a href="/tienda-online/">Tienda online</a><a href="/automatizacion/">Automatización de procesos</a><a href="/chatbot-whatsapp/">Chatbot IA para WhatsApp</a><a href="/seo-local/">SEO local</a><a href="/email-marketing/">Email marketing</a><a href="/gestion-redes-sociales/">Gestión de redes sociales</a><a href="/aplicaciones-web/">Aplicación web de gestión</a><a href="/mantenimiento-web/">Mantenimiento web</a></div>
+        <div class="ft-l"><a href="/web-corporativa/">Web corporativa</a><a href="/landing-page/">Landing page</a><a href="/tienda-online/">Tienda online</a><a href="/automatizacion/">Automatización de procesos</a><a href="/chatbot-whatsapp/">Chatbot IA para WhatsApp</a><a href="/seo-local/">SEO local</a><a href="/email-marketing/">Email marketing</a><a href="/gestion-redes-sociales/">Gestión de redes sociales</a><a href="/aplicaciones-web/">Aplicación web de gestión</a><a href="/accesibilidad-web/">Accesibilidad web (Ley 11/2023)</a><a href="/mantenimiento-web/">Mantenimiento web</a></div>
       </div>
       <div>
         <div class="ft-h">Estudio</div>

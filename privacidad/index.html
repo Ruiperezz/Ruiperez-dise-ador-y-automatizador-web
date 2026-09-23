@@ -34,6 +34,9 @@
 <link rel="preload" as="font" type="font/woff2" href="/fonts/instrument-serif-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="/fonts/karla-latin.woff2" crossorigin>
 <style>
+.skip{position:absolute;left:-9999px;top:0;z-index:999;background:var(--ink);color:var(--bg);padding:.7rem 1.1rem;border-radius:0 0 9px 0;font:700 .9rem/1 var(--fs);text-decoration:none}
+.skip:focus{left:0}
+
 /* Tipografías servidas desde este mismo dominio. Antes venían de Google, que
    bloqueaba el renderizado ~1,8s y comunicaba la IP del visitante a Google. */
 @font-face{font-family:'Instrument Serif';font-style:normal;font-weight:400;font-display:swap;
@@ -94,6 +97,8 @@ footer{border-top:1px solid var(--line);padding:1.6rem 0;margin-top:2rem}
 </style>
 </head>
 <body>
+<a class="skip" href="#main-content">Saltar al contenido</a>
+
 <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 <header>
   <div class="wrap hd">

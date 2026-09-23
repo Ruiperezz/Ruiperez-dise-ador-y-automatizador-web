@@ -35,6 +35,9 @@
 <link rel="preload" as="font" type="font/woff2" href="/fonts/instrument-serif-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="/fonts/karla-latin.woff2" crossorigin>
 <style>
+.skip{position:absolute;left:-9999px;top:0;z-index:999;background:var(--ink);color:var(--bg);padding:.7rem 1.1rem;border-radius:0 0 9px 0;font:700 .9rem/1 var(--fs);text-decoration:none}
+.skip:focus{left:0}
+
 /* Tipografías servidas desde este mismo dominio. Antes venían de Google, que
    bloqueaba el renderizado ~1,8s y comunicaba la IP del visitante a Google. */
 @font-face{font-family:'Instrument Serif';font-style:normal;font-weight:400;font-display:swap;
@@ -504,6 +507,8 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 </style>
 </head>
 <body>
+<a class="skip" href="#main-content">Saltar al contenido</a>
+
 <script>document.documentElement.className+=" js";</script>
 <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
@@ -706,6 +711,14 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
         <div class="chips"><span class="chip">Panel de administración</span><span class="chip">Usuarios y contraseñas</span><span class="chip">Base de datos propia</span></div>
         <div class="svc-foot"><div><div class="svc-pr"><span class="pfx">Desde</span>2.900€</div><div class="svc-q">+ 90€/mes</div><span class="iva">+ 21% IVA</span></div><span class="svc-go">Ver detalle <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
       </a>
+      <a class="card svc rv" style="--d:315ms" href="/accesibilidad-web/">
+        <div class="svc-top"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v.01M11 12h1v4h1"/></svg></span><div class="svc-lab">Obligatorio desde 2025</div></div>
+        <h3>Accesibilidad web</h3>
+        <p>Desde el 28 de junio de 2025 hay negocios obligados a que su web sea accesible. Te digo si eres uno, qué falla y en qué orden arreglarlo.</p>
+        <div class="forwho"><b>Para ti si:</b> vendes, reservas o cobras desde la web y no sabes si la Ley 11/2023 te afecta.</div>
+        <div class="chips"><span class="chip">WCAG 2.1 AA</span><span class="chip">EN 301 549</span><span class="chip">Sin overlays</span></div>
+        <div class="svc-foot"><div><div class="svc-pr"><span class="pfx">Desde</span>490€</div><span class="iva">+ 21% IVA</span></div><span class="svc-go">Ver detalle <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+      </a>
       <a class="card svc rv" style="--d:90ms" href="/chatbot-whatsapp/">
         <div class="svc-top"><span class="sico" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"/><path d="M9 11h.01M12 11h.01M15 11h.01"/></svg></span><div class="svc-lab">IA aplicada al negocio</div></div>
         <h3>Chatbot IA para WhatsApp</h3>
@@ -877,7 +890,7 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
       
       <div>
         <div class="ft-h">Servicios</div>
-        <div class="ft-l"><a href="/web-corporativa/">Web corporativa</a><a href="/landing-page/">Landing page</a><a href="/tienda-online/">Tienda online</a><a href="/automatizacion/">Automatización de procesos</a><a href="/chatbot-whatsapp/">Chatbot IA para WhatsApp</a><a href="/seo-local/">SEO local</a><a href="/email-marketing/">Email marketing</a><a href="/gestion-redes-sociales/">Gestión de redes sociales</a><a href="/aplicaciones-web/">Aplicación web de gestión</a><a href="/mantenimiento-web/">Mantenimiento web</a></div>
+        <div class="ft-l"><a href="/web-corporativa/">Web corporativa</a><a href="/landing-page/">Landing page</a><a href="/tienda-online/">Tienda online</a><a href="/automatizacion/">Automatización de procesos</a><a href="/chatbot-whatsapp/">Chatbot IA para WhatsApp</a><a href="/seo-local/">SEO local</a><a href="/email-marketing/">Email marketing</a><a href="/gestion-redes-sociales/">Gestión de redes sociales</a><a href="/aplicaciones-web/">Aplicación web de gestión</a><a href="/accesibilidad-web/">Accesibilidad web (Ley 11/2023)</a><a href="/mantenimiento-web/">Mantenimiento web</a></div>
       </div>
       <div>
         <div class="ft-h">Estudio</div>
