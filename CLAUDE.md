@@ -160,6 +160,10 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 - **`refactoring-ui`** y **`web-typography`** (`.agents/skills/`, de `wondelai/skills`) — jerarquía visual, espaciado, color, tipografía. Sustituyen a `ui-ux-pro-max`, que no existe.
 - `web-design-guidelines` y `vercel-optimize` — layout, accesibilidad y rendimiento.
 
+## Mantenimiento recurrente
+
+`docs/mantenimiento.md` es el encargo permanente para quien lleve el mantenimiento semanal y mensual (Cowork o cualquier sesión con el repo y Windsor conectados). Cubre publicaciones en la ficha, respuesta a reseñas, los tres mantenimientos de clientes, las revisiones trimestrales de axe y Lighthouse, y la lista de cosas que se rompen sin avisar. **Si cambias una de esas rutinas, cámbiala ahí también.**
+
 ## Cómo trabajar
 
 ```bash
