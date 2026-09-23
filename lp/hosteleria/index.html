@@ -12,6 +12,9 @@
 <link rel="preload" as="font" type="font/woff2" href="/fonts/instrument-serif-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="/fonts/karla-latin.woff2" crossorigin>
 <style>
+.skip{position:absolute;left:-9999px;top:0;z-index:999;background:var(--ink);color:var(--bg);padding:.7rem 1.1rem;border-radius:0 0 9px 0;font:700 .9rem/1 var(--fs);text-decoration:none}
+.skip:focus{left:0}
+
 /* Tipografías servidas desde este mismo dominio. Antes venían de Google, que
    bloqueaba el renderizado ~1,8s y comunicaba la IP del visitante a Google. */
 @font-face{font-family:'Instrument Serif';font-style:normal;font-weight:400;font-display:swap;
@@ -98,12 +101,14 @@ html.js .rv.in{opacity:1;transform:none;
 </style>
 </head>
 <body>
+<a class="skip" href="#main-content">Saltar al contenido</a>
+
 <script>document.documentElement.className+=" js";</script>
 <div class="wrap">
   <div class="mark"><svg viewBox="0 0 120 120" width="32" height="32" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="miter"><path d="M21.05 102.00 L21.05 15.05 L60.00 15.05 A30.95 30.95 0 0 1 90.95 46.00 L90.95 44.00 A30.95 30.95 0 0 1 60.00 74.95 L21.05 74.95 M80.87 74.95 L99.81 102.00" stroke-width="8.0"/><path d="M34.00 102.00 L34.00 28.00 L60.00 28.00 A18.00 18.00 0 0 1 78.00 46.00 L78.00 44.00 A18.00 18.00 0 0 1 60.00 62.00 L34.00 62.00 M56.00 62.00 L84.00 102.00" stroke-width="9.5"/></g></svg><span class="mk-t"><span class="mk-n">RUIPÉREZ</span><span class="mk-s">STUDIO</span></span></div>
 </div>
 
-<main>
+<main id="main-content">
 <section class="hero"><div class="wrap">
   <span class="obj">Restaurantes, bares y cafeterías de Cartagena</span>
   <h1>No, no necesitas pagar 300 € al mes por la web de <em>tu restaurante</em>.</h1>

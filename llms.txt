@@ -23,6 +23,7 @@ Contacto: WhatsApp y teléfono +34 642 08 40 42 · https://ruiperezstudio.es
 - SEO local: desde 290€/mes
 - Gestión de redes sociales: desde 350€/mes
 - Email marketing: desde 190€/mes
+- Auditoría de accesibilidad web (Ley 11/2023): desde 490€. Con correcciones aplicadas, 990€. Monitorización mensual, 90€/mes
 - Mantenimiento web: 90–150€/mes
 - Cambios puntuales fuera de contrato: 55€/hora
 
@@ -41,6 +42,7 @@ semanas, aplicación de gestión 4–8 semanas. El plazo se cierra antes de empe
 - [SEO local](https://ruiperezstudio.es/seo-local/): desde 290€/mes
 - [Email marketing](https://ruiperezstudio.es/email-marketing/): desde 190€/mes
 - [Gestión de redes sociales](https://ruiperezstudio.es/gestion-redes-sociales/): desde 350€/mes
+- [Auditoría de accesibilidad web](https://ruiperezstudio.es/accesibilidad-web/): WCAG 2.1 AA según la Ley 11/2023 y la EN 301 549, desde 490€
 - [Mantenimiento web](https://ruiperezstudio.es/mantenimiento-web/): 90–150€/mes
 
 ## Proyectos publicados
@@ -59,6 +61,8 @@ En curso: Finca Doña Carmen, aplicación de gestión para una finca de bodas.
 Todos los proyectos: https://ruiperezstudio.es/casos/
 
 ## Datos verificables
+
+- Las 20 páginas de ruiperezstudio.es pasan axe-core 4.10.2 sin una sola violación WCAG 2.1 nivel A ni AA (medido el 23/09/2026)
 
 - Ficha de Google: 5,0★ con 7 reseñas — https://maps.google.com/maps?cid=16135944171140006039
 - El 4,9★ con 333 reseñas pertenece a Floristería Alameda, no a Ruipérez Studio

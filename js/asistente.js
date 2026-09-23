@@ -27,7 +27,7 @@
       l:["Landing page: desde 590€","Web corporativa: desde 890€","Tienda online: desde 1.990€","Aplicación de gestión: desde 2.900€ + 90€/mes",
          "Automatización: desde 900€","Chatbot de WhatsApp: desde 1.200€ + 120€/mes",
          "SEO local: desde 290€/mes","Redes sociales: desde 350€/mes","Email marketing: desde 190€/mes",
-         "Mantenimiento: 90–150€/mes"],
+         "Accesibilidad (Ley 11/2023): desde 490€","Mantenimiento: 90–150€/mes"],
       n:"Todos sin IVA. El precio se cierra por escrito antes de empezar.", u:"/#servicios" },
 
     { k:["tarda","cuanto tardas","cuanto tarda","plazo","plazos","cuando estaria","rapido","entrega","semanas","urgente","tiempo"],
@@ -52,6 +52,12 @@
     { k:["hosting","alojamiento","dominio","servidor","anual"],
       t:"El alojamiento va en Vercel y en el plan que uso no tiene coste.",
       n:"El único gasto recurrente es el dominio, unos 12€ al año. Lo gestiono yo y te lo repercuto sin recargo, o lo pones a tu nombre si lo prefieres." },
+
+    { k:["accesibilidad","accesible","wcag","ley 11/2023","eaa","discapacidad","lector de pantalla","contraste","multa accesibilidad","en 301 549"],
+      t:"Auditoría de accesibilidad: desde 490€, informe en 5 días.",
+      l:["Auditoría sola: 490€","Auditoría más correcciones: 990€","Monitorización mensual: 90€/mes",
+         "WCAG 2.1 AA a través de la EN 301 549"],
+      n:"La exención de microempresa solo vale para servicios y exige menos de 10 empleados Y hasta 2 millones de facturación. Escríbeme y te digo si te aplica, sin cobrarte.", u:"/accesibilidad-web/" },
 
     { k:["aplicacion","aplicacion web","app","cuesta una aplicacion","precio aplicacion","precio de la aplicacion","cuesta una app","precio app","panel de gestion","panel de administracion","software a medida","programa de gestion","area privada","zona de clientes"],
       t:"Una aplicación web de gestión: desde 2.900€ más 90€/mes.",
