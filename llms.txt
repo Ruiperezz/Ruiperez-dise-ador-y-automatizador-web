@@ -53,7 +53,7 @@ Seis proyectos completados; cinco se pueden abrir y comprobar.
 - Floristería Alameda (floristería, Cartagena) — https://floristeriaalameda.com — tienda online con Stripe, ficha por producto y correos automáticos. Cliente. 4,9★ con 333 reseñas en Google.
 - Casa del Sushi (restauración, Cartagena) — https://casa-del-sushi.vercel.app — carta, reservas con confirmación automática y panel de reservas. Entregado; el cliente no siguió adelante.
 - Belu Francia (fisioterapia, Cartagena) — https://belu-francia-fisioterapeuta.vercel.app — precios públicos, cita online y campañas semanales de email. Entregado; la clienta no siguió adelante.
-- Floristería Buccaro (floristería, Alicante) — landing informativa. Entregada, pendiente de cerrar, sin dominio público.
+- Floristería Buccaro (floristería, Alicante) — landing informativa. Entregada; el cliente no siguió adelante. Sin dominio público.
 - Zenconfort — https://zenconfort.es — tienda online. Proyecto propio, no es un cliente.
 
 En curso: Finca Doña Carmen, aplicación de gestión para una finca de bodas.

@@ -79,8 +79,8 @@
       t:"Tienda online completa: catálogo, carrito, pasarela de pago y gestión de pedidos.",
       n:"Desde 1.290€. La de Floristería Alameda la puedes ver funcionando en floristeriaalameda.com.", u:"/tienda-online/" },
 
-    { k:["zona","donde trabajas","donde estas","cartagena","murcia","desplaz","presencial","reunion","vernos","lejos","trabajas en","vives"],
-      t:"Estoy en Cartagena y trabajo en toda la Región de Murcia.",
+    { k:["zona","donde trabajas","donde estas","cartagena","murcia","alicante","almeria","almería","elche","valencia","sureste","desplaz","presencial","reunion","vernos","lejos","trabajas en","vives"],
+      t:"Estoy en Cartagena y trabajo en la Región de Murcia, Alicante, Almería y Valencia.",
       n:"Si prefieres que nos veamos en tu negocio, me muevo. Y si te va mejor por WhatsApp o videollamada, también." },
 
     { k:["texto","contenido","fotos","redactar","escribir","aportar","material"],

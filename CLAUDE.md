@@ -10,7 +10,8 @@ Web de marca y escaparate comercial de **Álvaro Ruipérez** (Ruipérez Studio),
 - **URL de producción:** https://ruiperezstudio.es
 - **Repositorio:** github.com/Ruiperezz/Ruiperez-dise-ador-y-automatizador-web
 - **Despliegue:** Vercel, proyecto `ruiperez-dise-ador-y-automatizador-web`. La rama `main` va directa a producción.
-- **Objetivo actual:** dejar la web lista para invertir en Meta Ads y TikTok Ads. **Ámbito: sureste de España** (Región de Murcia, Alicante, Almería y **Valencia**, añadida el 23/09/2026 porque Álvaro tiene familia allí y contactos que explotar). La sede sigue en Cartagena. La sede sigue en Cartagena. Ver `PLAN.md`.
+- **Objetivo actual:** dejar la web lista para invertir en Meta Ads y TikTok Ads. **Ámbito: sureste de España** (Región de Murcia, Alicante, Almería y **Valencia**, añadida el 23/09/2026 porque Álvaro tiene familia allí y contactos que explotar). La sede sigue en Cartagena. Ver `PLAN.md`.
+- **Dónde está aplicado el ámbito:** titles, `areaServed` del JSON-LD, la ficha de Google, `llms.txt` y, desde la rama `fix/clientes-y-sureste` (23/09/2026), **toda la home** (insignia del hero «Sureste de España · Acepto proyectos», que cabe en una línea a 390px; subtítulo; Open Graph; Twitter; nombre y descripción del JSON-LD), **el pie de las 15 páginas** y la respuesta de zona del asistente. **Pendiente:** el texto visible y el JSON-LD de las páginas de servicio siguen diciendo «Cartagena y Murcia» en muchos sitios. No se cambia sin que Álvaro decida: esas páginas pueden estar posicionando por «Cartagena».
 
 ## Stack
 
@@ -66,31 +67,33 @@ Cambios puntuales fuera de contrato: 45€/hora.
 
 ## Clientes
 
-**Seis proyectos, y no todos son clientes.** La distinción importa y está reflejada en las etiquetas del sitio:
+**Clientes actuales: solo tres** (confirmado por Álvaro el 23/09/2026): **TukTuk Cartagena, Floristería Alameda y Finca Doña Carmen.** Zenconfort es suyo. Casa del Sushi, Belu Francia y Floristería Buccaro **ya no trabajan con él**: se entregaron, el cliente no siguió, **no están en uso** y se enseñan como muestra del trabajo hecho. La distinción importa y está reflejada en las etiquetas del sitio:
 
 | Proyecto | Estado | Enlace |
 |---|---|---|
-| TukTuk Cartagena | **Cliente** | `tuktukcartagena.com` |
-| Floristería Alameda | **Cliente** | `floristeriaalameda.com` |
-| Casa del Sushi | Entregado, el cliente no siguió | `casa-del-sushi.vercel.app` |
-| Belu Francia (fisioterapia) | Entregado, la clienta no siguió | `belu-francia-fisioterapeuta.vercel.app` |
-| Floristería Buccaro (Alicante) | Entregado, pendiente de cerrar | sin dominio público |
+| TukTuk Cartagena | **Cliente actual** · web en uso | `tuktukcartagena.com` |
+| Floristería Alameda | **Cliente actual** · web en uso | `floristeriaalameda.com` |
+| Finca Doña Carmen | **Cliente actual** · en curso | no publicado |
 | Zenconfort | Proyecto propio | `zenconfort.es` |
-| Finca Doña Carmen | En curso | no publicado |
+| Casa del Sushi | Entregado, el cliente no siguió · no está en uso | `casa-del-sushi.vercel.app` |
+| Belu Francia (fisioterapia) | Entregado, la clienta no siguió · no está en uso | `belu-francia-fisioterapeuta.vercel.app` |
+| Floristería Buccaro (Alicante) | Entregado, el cliente no siguió · no está en uso | sin dominio público |
 
-**Nunca digas «+10 proyectos» ni ninguna cifra inflada.** Son seis completados y se enseñan los seis. La banda de la home usa cifras que se pueden contar una a una: 6 proyectos, 4 sistemas de reserva o pago, 3 paneles. Eso es verificable; un número redondo inventado se cae en cuanto alguien entra en `/casos/` y cuenta.
+**Solo TukTuk y Alameda se describen como webs en uso** («ahí se reserva y se compra de verdad»). De Casa del Sushi, Belu y Buccaro se cuenta **lo que se construyó**, nunca como si hoy estuviera funcionando para ese negocio: nada de «sus pacientes reciben», «al restaurante le entran» ni «proyectos funcionando».
 
-**Mantenimiento mensual (100€ cada uno, hasta 10 cambios al mes):** Floristería Alameda, TukTuk Cartagena y Finca Doña Carmen.
+**Nunca digas «+10 proyectos» ni ninguna cifra inflada.** Son seis terminados (TukTuk, Alameda, Casa del Sushi, Belu, Buccaro y Zenconfort), cinco se pueden abrir, y se enseñan los seis. La banda de la home usa cifras que se pueden contar una a una: 6 proyectos, 4 sistemas de reserva o pago, 3 paneles. Eso es verificable; un número redondo inventado se cae en cuanto alguien entra en `/casos/` y cuenta.
+
+**Mantenimiento mensual (100€ cada uno, hasta 10 cambios al mes):** Floristería Alameda, TukTuk Cartagena y Finca Doña Carmen. **Lo gestiona Álvaro directamente con cada cliente**; no forma parte del mantenimiento de esta web.
 
 Los clientes verificables como tales:
 
 - **TukTuk Cartagena** — turismo. `tuktukcartagena.com`. Web desde cero en 4 idiomas (ES/EN/DE/FR), **sistema de reservas** (servicio, personas, número de tuk tuks y cobro), **correos automáticos** de confirmación al cliente y al empresario, y un **panel de administración** donde el dueño bloquea días, horas o parte de la flota (avería, festivo) y eso desaparece al instante de la web. Ese panel es el caso real de `/aplicaciones-web/`. **Es privado: no hay captura y no se puede enseñar.**
 - **Floristería Alameda** — Cartagena, **4,9★ con 333 reseñas** (verificado en floristeriaalameda.com). Es una **tienda online** con catálogo, carrito y pasarela de pago. No la etiquetes como web corporativa.
-- **Casa del Sushi** — Cartagena, restauración. **Entregado, el cliente no siguió adelante.** `casa-del-sushi.vercel.app`. Carta, info del local, ubicación y reseñas, **reserva de mesa con correo de confirmación automático** y un **panel de administración** donde el dueño ve sus reservas. **Álvaro dice que el trabajo no está cerrado del todo** (22/09/2026): sigue etiquetado como caso real porque la web está publicada y se puede abrir, pero confirma con él antes de llamarle «cliente» en copy nuevo. **Álvaro confirmó el 21/09/2026 que Perico Del Rey NO es Casa del Sushi.** Casa del Sushi es cliente y tiene su caso en `/web-corporativa/` y `/casos/`, pero **no ha dejado reseña en Google**: no le atribuyas ninguna.
+- **Casa del Sushi** — Cartagena, restauración. **Entregado, el cliente no siguió adelante.** `casa-del-sushi.vercel.app`. Carta, info del local, ubicación y reseñas, **reserva de mesa con correo de confirmación automático** y un **panel de administración** donde el dueño ve sus reservas. **No es cliente actual** (confirmado el 23/09/2026): se enseña como proyecto entregado porque la web se puede abrir, pero **nunca la llames «cliente» en copy nuevo**. **Álvaro confirmó el 21/09/2026 que Perico Del Rey NO es Casa del Sushi.** Tiene su caso en `/web-corporativa/` y `/casos/`, pero **no ha dejado reseña en Google**: no le atribuyas ninguna.
 
 **Ficha de Google propia: `locations/10546771556631248285`.** 5,0★ con 7 reseñas, verificada. Enlace público `https://maps.google.com/maps?cid=16135944171140006039`; para pedir reseñas, `https://search.google.com/local/writereview?placeid=ChIJoxdRJpnbFWoRl8BVVLtj7t8`. **El 4,9★ con 333 reseñas es de Alameda, no suyo**: donde aparezca hay que decir de quién es. En el hero va su 5,0★ real.
 
-**Floristería Buccaro (Alicante): landing informativa entregada, pendiente de cerrar.** No era una maqueta: es un encargo real al precio oficial de landing page. Aparece en `/landing-page/` etiquetada «Proyecto entregado · pendiente de cerrar». **El precio no va en el caso**, va en el bloque de precio del servicio, como todos. No se le atribuyen resultados porque no los hay.
+**Floristería Buccaro (Alicante): landing informativa entregada; el cliente no siguió** (23/09/2026). No era una maqueta: fue un encargo real. Aparece en `/landing-page/` etiquetada «Proyecto entregado · el cliente no siguió». **El precio no va en el caso**, va en el bloque de precio del servicio, como todos. No se le atribuyen resultados porque no los hay.
 
 En curso: **Finca Doña Carmen** — aplicación con panel de administración para la finca y acceso privado para cada pareja (Next.js + Supabase + Vercel). **No está publicada.** Aparece en `/aplicaciones-web/` etiquetada «Proyecto en curso · cliente real», describiendo qué hace y **sin ninguna cifra de resultado**, porque todavía no las hay. Se añade a `/casos/` el día que esté en producción.
 
@@ -98,7 +101,7 @@ En curso: **Finca Doña Carmen** — aplicación con panel de administración pa
 
 **Zenconfort es un proyecto propio, no un cliente.** Nunca debe salir en «negocios que ya confían». En `/casos/` aparece etiquetado «Proyecto propio · No es un cliente», que es la única forma correcta de mostrarlo.
 
-**No insinúes volumen que no existe.** Nada de «algunos de los muchos proyectos». Son cuatro y se enseñan los cuatro: lo que convence es que se pueden abrir y comprobar, no que parezcan muchos.
+**No insinúes volumen que no existe.** Nada de «algunos de los muchos proyectos». Son seis y se enseñan los seis: lo que convence es que se pueden abrir y comprobar, no que parezcan muchos.
 
 No uses ningún otro nombre de negocio. Si necesitas un dato, una cifra o un testimonio que no tienes, deja `[PEDIR AL CLIENTE]` y sigue. **Nunca inventes clientes, cifras ni reseñas.**
 
@@ -114,8 +117,8 @@ Un caso repetido en todas partes no es prueba social. Cada página lleva el suyo
 | `/automatizacion/` | TukTuk (reservas) **y** Alameda (correos automáticos) |
 | `/aplicaciones-web/` | TukTuk (panel de disponibilidad), Casa del Sushi (panel de reservas) **y** Finca Doña Carmen (en curso) |
 | `/email-marketing/` | los tres correos automáticos: Alameda, TukTuk y Casa del Sushi |
-| `/landing-page/` | Buccaro (propuesta, no cliente) |
-| `/casos/` | los cuatro |
+| `/landing-page/` | Buccaro (entregado, el cliente no siguió) |
+| `/casos/` | los seis |
 
 Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias a propósito y van etiquetadas como tales. En cuanto haya un caso real de ese servicio, se sustituye.
 
@@ -143,8 +146,8 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 - `--terra` (#B5522F) da 4,47:1 sobre el fondo crema: **no vale para texto pequeño**. Para texto usa `--terra-txt` (#A84A28, 5,12:1). Para rellenos, `--terra`.
 - El pie tiene que ser idéntico en las 15 páginas que lo llevan. Si añades una página, añádela al pie de todas.
 - **En móvil el mockup del hero va ANTES del texto** (`.scene{order:-1}`). Su portfolio vende con fotografía real; el escaparate no puede esconder su única prueba tras 800px de texto, que es justo donde aterriza el tráfico de pago. Con ese orden, el elemento LCP en móvil pasa a ser la imagen y el `fetchpriority="high"` por fin sirve para algo. Medido: mismo LCP que con el texto delante.
-- Las webs de los clientes se enlazan de verdad, con `rel="noopener noreferrer nofollow"`: floristeriaalameda.com, zenconfort.es, tuktukcartagena.com y casa-del-sushi.vercel.app. La página promete «puedes abrirlas y comprobarlo», así que tienen que ser enlaces, no texto.
-- **Capturas reales en `/img/`:** `alameda-catalogo`, `alameda-tienda`, `alameda-producto` y `alameda-resenas` (tienda online de Alameda); `tuktuk-home`, `tuktuk-tours`, `tuktuk-reserva` y `tuktuk-galeria` (TukTuk Cartagena); `alameda-carrito` (el carrito con Stripe); `buccaro-alicante` y `buccaro-catalogo` (propuesta de landing). 900px de ancho y WebP a calidad 82, como el resto. **No pongas mockups inventados donde haya una captura real**: los mockups en CSS con productos y precios de mentira se han ido sustituyendo por capturas de webs publicadas.
+- Las webs de los clientes se enlazan de verdad, con `rel="noopener noreferrer nofollow"`: floristeriaalameda.com, zenconfort.es, tuktukcartagena.com, casa-del-sushi.vercel.app y belu-francia-fisioterapeuta.vercel.app. La página promete «puedes abrirlas y comprobarlo», así que tienen que ser enlaces, no texto.
+- **Capturas reales en `/img/`:** `alameda-catalogo`, `alameda-tienda`, `alameda-producto` y `alameda-resenas` (tienda online de Alameda); `tuktuk-home`, `tuktuk-tours`, `tuktuk-reserva` y `tuktuk-galeria` (TukTuk Cartagena); `alameda-carrito` (el carrito con Stripe); `buccaro-alicante` y `buccaro-catalogo` (landing entregada de Buccaro). 900px de ancho y WebP a calidad 82, como el resto. **No pongas mockups inventados donde haya una captura real**: los mockups en CSS con productos y precios de mentira se han ido sustituyendo por capturas de webs publicadas.
 - **Las páginas de ciudad se fusionaron el 23/09/2026.** `/diseno-web-cartagena/` y `/diseno-web-murcia/` → `/diseno-web/`; `/automatizacion-procesos-murcia/` → `/automatizacion/`; `/chatbot-whatsapp-cartagena/` → `/chatbot-whatsapp/`. Decisión de Álvaro: repetían contenido y competían contra la home, que ya rankeaba por encima de ellas. **Las ocho redirecciones 301 viven en `vercel.json`: no las borres**, son lo único que evita que esas URLs devuelvan 404 a quien las tenga guardadas o a lo que Google ya tenía indexado.
 - **IndexNow activo (23/09/2026).** La clave es `a8577673437441do892Fddobbmi810doF4mi2` y vive en un archivo de ese mismo nombre en la raíz. **No lo borres ni lo renombres:** si desaparece, Bing deja de aceptar los avisos y no lo dice. No es un secreto — tiene que ser público para que funcione. Cada vez que cambien URLs importantes, avisa con un POST a `api.indexnow.org/indexnow` con el host, la clave y la lista.
 - **Bing Webmaster Tools** está dado de alta con `ruiperezstudio.es`. Importa porque **ChatGPT busca en Bing**: sin estar bien indexado ahí, ChatGPT no te cita.
@@ -156,7 +159,7 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 - **Accesibilidad: las 20 páginas pasan axe-core 4.10.2 con CERO violaciones WCAG 2.1 A y AA** (23/09/2026). **Esto es ahora un argumento de venta**: `/accesibilidad-web/` lo dice por escrito e invita a comprobarlo. Si rompes una regla, dejas de poder venderlo. Comprueba axe antes de tocar una página, no después.
 - **Enlace de salto (`a.skip`) en las 20 páginas**, apuntando a `#main-content`. Si creas una página nueva, ponlo: sin él, la web que vende accesibilidad tendría una página que no la cumple.
 - **El servicio de accesibilidad NO se apoya en auditorías previas a clientes**, porque no las hay. Lo que hizo Álvaro a Alameda y TukTuk fue una auditoría digital de negocio, que es otra cosa. La única prueba que se usa es la propia web medida con axe. **No insinúes experiencia en accesibilidad que no existe.**
-- **Precios de accesibilidad (23/09/2026):** el mercado español cobra 800–2.500€ por una auditoría básica y 400–890€/mes de monitorización. Álvaro sale por debajo a propósito para darse a conocer, y la FAQ lo dice abiertamente. **Están pensados para subir.**
+- **Precios de accesibilidad (23/09/2026):** el mercado español cobra 800–2.500€ por una auditoría básica y 400–1.200€/mes de monitorización. Álvaro sale por debajo a propósito para darse a conocer, y la FAQ lo dice abiertamente. **Están pensados para subir.**
 - **Nunca prometas conformidad.** Ni «cumplimiento garantizado», ni «100% conforme», ni «sin riesgo de multa». La FAQ responde que no se garantiza y por qué.
 - Referencia medida el 30/08/2026 con Lighthouse móvil: rendimiento 98, accesibilidad 100, buenas prácticas 100, SEO 100. LCP 1,9s · CLS 0,04.
 
@@ -168,7 +171,7 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 
 ## Mantenimiento recurrente
 
-`docs/mantenimiento.md` es el encargo permanente para quien lleve el mantenimiento semanal y mensual (Cowork o cualquier sesión con el repo y Windsor conectados). Cubre publicaciones en la ficha, respuesta a reseñas, los tres mantenimientos de clientes, las revisiones trimestrales de axe y Lighthouse, y la lista de cosas que se rompen sin avisar. **Si cambias una de esas rutinas, cámbiala ahí también.**
+`docs/mantenimiento.md` es el encargo permanente para quien lleve el mantenimiento de **esta web** (Cowork o cualquier sesión con el repo y Windsor conectados). Cubre la comprobación diaria de que las webs siguen en pie, las reseñas en menos de 24 horas, la publicación semanal en la ficha, las revisiones trimestrales de axe y Lighthouse, y la lista de cosas que se rompen sin avisar. Se ejecuta con tareas programadas de Cowork (lista en ese documento). **Los mantenimientos de clientes no entran: los lleva Álvaro.** **Si cambias una de esas rutinas, cámbiala ahí también.**
 
 ## Cómo trabajar
 
