@@ -52,11 +52,13 @@ Otros archivos: `sitemap.xml` (18 URLs — las noindex quedan fuera), `robots.tx
 | Chatbot IA para WhatsApp | desde 890€ + 120€/mes |
 | Email marketing | desde 160€/mes |
 | SEO local | desde 240€/mes |
-| Gestión de redes sociales | desde 290€/mes |
+| Gestión de redes sociales | desde 290€/mes · **8 publicaciones, 2 en vídeo, 1 red** |
 | Auditoría de accesibilidad | desde 390€ · con correcciones 790€ · monitorización 75€/mes |
 | Mantenimiento web | 75–120€/mes |
 
 Cambios puntuales fuera de contrato: 45€/hora.
+
+**Gestión de redes, acotada el 23/09/2026.** Prometía 12 publicaciones, historias semanales **y contestar comentarios y mensajes**: unas 17–22 h/mes a 290€, o sea 13–17€/hora, y encima de guardia. Ahora son **8 publicaciones (2 en vídeo), 2 historias, 1 red social** y **no se contestan mensajes** — en su lugar se entrega un guion de respuestas, que es trabajo de una vez y no una correa. **Lo que hacía inviable el servicio no era el volumen, era la mensajería:** las publicaciones se hacen del tirón un día, los mensajes interrumpen todos los días. Si alguien vuelve a meter «contesto los mensajes» en el copy, el servicio vuelve a perder dinero.
 
 **Bajada de precios del 23/09/2026.** Álvaro los baja entre un 16% y un 35% para captar volumen mientras se da a conocer, con la idea de subirlos cuando tenga reputación. **El 90€/mes de la aplicación de gestión NO bajó**: cubre base de datos y alojamiento, que son coste real y no margen. Si se toca, el servicio pierde dinero desde el primer mes.
 

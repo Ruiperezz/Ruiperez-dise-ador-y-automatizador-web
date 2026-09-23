@@ -95,9 +95,10 @@
       t:"Las webs de 180–300€ son plantillas genéricas.",
       n:"Tienen su lugar si el presupuesto no da para más. El problema es lo que no incluyen: SEO local real, diseño propio y los costes anuales ocultos de hosting, plugins y renovación del tema." },
 
-    { k:["redes","instagram","facebook","publicar","social","community"],
-      t:"Llevo las redes de tu negocio: calendario, doce publicaciones al mes, historias y la ficha de Google al día.",
-      n:"Desde 290€/mes, sin permanencia. Los comentarios y mensajes los contesto yo.", u:"/gestion-redes-sociales/" },
+    { k:["redes","redes sociales","instagram","tiktok","facebook","publicaciones","publicar","cuantas publicaciones","contestas los mensajes","contestar mensajes","comentarios","community manager","contenido","reels","videos"],
+      t:"Gestión de redes: 8 publicaciones al mes, dos de ellas en vídeo, desde 290€/mes.",
+      l:["8 publicaciones al mes, 2 en vídeo","2 historias al mes","Una red social incluida; la segunda, 90€/mes más","Calendario que apruebas tú antes de publicar"],
+      n:"Lo que NO incluye: contestar comentarios y mensajes. Eso es estar de guardia todo el día y a este precio no se hace bien. Te dejo escritas las respuestas que más se repiten.", u:"/gestion-redes-sociales/" },
 
     { k:["email","newsletter","mailing","correos","brevo","mailchimp"],
       t:"Correos que se envían solos: bienvenida, seguimiento post-compra, recordatorios y recuperación de carritos.",
