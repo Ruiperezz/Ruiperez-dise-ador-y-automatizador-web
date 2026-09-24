@@ -53,6 +53,11 @@
       t:"El alojamiento va en Vercel y en el plan que uso no tiene coste.",
       n:"El único gasto recurrente es el dominio, unos 12€ al año. Lo gestiono yo y te lo repercuto sin recargo, o lo pones a tu nombre si lo prefieres." },
 
+    { k:["meta ads","facebook ads","instagram ads","anuncios","publicidad","campañas","promocionar","anuncios de facebook","anuncios de instagram","publicidad de pago","gestion de anuncios","cuanto cuesta anunciarse","presupuesto anuncios","inversion publicitaria"],
+      t:"Gestión de Meta Ads: 240€/mes, con los límites escritos.",
+      l:["240€/mes para una inversión de hasta 1.000€/mes","Hasta 3 campañas y 6 anuncios","Una revisión a la semana","Informe mensual en una página","Por encima de 1.000€ de inversión, 15% de la inversión"],
+      n:"Los 240€ son mi trabajo: el dinero de los anuncios lo pagas tú a Meta con tu tarjeta y nunca pasa por mí. Cuenta con unos 300€/mes de inversión para empezar a ver algo.", u:"/meta-ads/" },
+
     { k:["accesibilidad","accesible","wcag","ley 11/2023","eaa","discapacidad","lector de pantalla","contraste","multa accesibilidad","en 301 549"],
       t:"Auditoría de accesibilidad: desde 590€, informe en 5 días.",
       l:["Auditoría sola: 590€","Auditoría más correcciones: 1.190€","Monitorización mensual: 95€/mes",
