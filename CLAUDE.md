@@ -44,25 +44,27 @@ Otros archivos: `sitemap.xml` (18 URLs — las noindex quedan fuera), `robots.tx
 
 | Servicio | Precio |
 |---|---|
-| Landing page | desde 450€ · pago único |
-| Web corporativa | desde 690€ · pago único |
-| Tienda online | desde 1.290€ · pago único |
-| Aplicación web de gestión | desde 1.990€ · pago único + 90€/mes |
-| Automatización de procesos | desde 690€ |
-| Chatbot IA para WhatsApp | desde 890€ + 120€/mes |
-| Email marketing | desde 160€/mes |
-| SEO local | desde 240€/mes |
-| Gestión de redes sociales | desde 290€/mes · **8 publicaciones, 2 en vídeo, 1 red** |
-| Auditoría de accesibilidad | desde 390€ · con correcciones 790€ · monitorización 75€/mes |
-| Mantenimiento web | 75–120€/mes |
+| Landing page | desde 690€ · pago único |
+| Web corporativa | desde 1.490€ · pago único |
+| Tienda online | desde 2.490€ · pago único |
+| Aplicación web de gestión | desde 3.900€ · pago único + 90€/mes |
+| Automatización de procesos | desde 1.200€ |
+| Chatbot IA para WhatsApp | desde 1.590€ + 120€/mes |
+| Email marketing | desde 290€/mes |
+| SEO local | desde 390€/mes |
+| Gestión de redes sociales | desde 450€/mes · **8 publicaciones, 2 en vídeo, 1 red** |
+| Auditoría de accesibilidad | desde 590€ · con correcciones 1.190€ · monitorización 95€/mes |
+| Mantenimiento web | 95–190€/mes |
 
-Cambios puntuales fuera de contrato: 45€/hora.
+Cambios puntuales fuera de contrato: 60€/hora.
 
-**Gestión de redes, acotada el 23/09/2026.** Prometía 12 publicaciones, historias semanales **y contestar comentarios y mensajes**: unas 17–22 h/mes a 290€, o sea 13–17€/hora, y encima de guardia. Ahora son **8 publicaciones (2 en vídeo), 2 historias, 1 red social** y **no se contestan mensajes** — en su lugar se entrega un guion de respuestas, que es trabajo de una vez y no una correa. **Lo que hacía inviable el servicio no era el volumen, era la mensajería:** las publicaciones se hacen del tirón un día, los mensajes interrumpen todos los días. Si alguien vuelve a meter «contesto los mensajes» en el copy, el servicio vuelve a perder dinero.
+**Gestión de redes, acotada el 23/09/2026.** Prometía 12 publicaciones, historias semanales **y contestar comentarios y mensajes**: unas 17–22 h/mes a 450€, o sea 13–17€/hora, y encima de guardia. Ahora son **8 publicaciones (2 en vídeo), 2 historias, 1 red social** y **no se contestan mensajes** — en su lugar se entrega un guion de respuestas, que es trabajo de una vez y no una correa. **Lo que hacía inviable el servicio no era el volumen, era la mensajería:** las publicaciones se hacen del tirón un día, los mensajes interrumpen todos los días. Si alguien vuelve a meter «contesto los mensajes» en el copy, el servicio vuelve a perder dinero.
 
-**Bajada de precios del 23/09/2026.** Álvaro los baja entre un 16% y un 35% para captar volumen mientras se da a conocer, con la idea de subirlos cuando tenga reputación. **El 90€/mes de la aplicación de gestión NO bajó**: cubre base de datos y alojamiento, que son coste real y no margen. Si se toca, el servicio pierde dinero desde el primer mes.
+**Subida del 25/09/2026, y por qué el vaivén.** El 23 bajaron un 16–35% para captar volumen entre micronegocios. El 24 Álvaro decidió enfocarse en **medianas**, que es donde está el dinero, así que suben. **Bajar precio y querer medianas tiran en direcciones contrarias: el precio posiciona.** Referencia de mercado: web corporativa con agencia 1.500–5.500€, desarrollo a medida acotado 5.000–15.000€, tienda online a medida más de 8.000€, freelance desde 800€. La tabla de arriba queda por debajo de agencia en todo y por encima del suelo freelance, que es donde tiene que estar quien vende a medianas.
 
-**Aviso escrito el mismo día:** a 1.290€, una tienda online como la de Alameda (50–70 horas) sale a unos 20€/hora, menos de la mitad de los 45€/hora que él mismo publica para cambios sueltos. Es una decisión suya, tomada sabiéndolo. **Si los márgenes aprietan, el primer sitio donde mirar es esta tabla, no las horas.**
+**Los dos mensuales NO subieron:** los 90€/mes de la aplicación y los 120€/mes del chatbot. Son coste (base de datos, alojamiento, llamadas a la API), no margen.
+
+⚠️ **Pendiente:** la publicación de Google Business del 23/09 dice «acabo de bajarlos» y lista los precios viejos. **Hay que reescribirla.** Windsor estaba caído el 24 y no se pudo.
 
 ## Clientes
 
@@ -94,7 +96,7 @@ Los clientes verificables como tales:
 
 En curso: **Finca Doña Carmen** — aplicación con panel de administración para la finca y acceso privado para cada pareja (Next.js + Supabase + Vercel). **No está publicada.** Aparece en `/aplicaciones-web/` etiquetada «Proyecto en curso · cliente real», describiendo qué hace y **sin ninguna cifra de resultado**, porque todavía no las hay. Se añade a `/casos/` el día que esté en producción.
 
-**El precio de la aplicación (1.990€ + 90€/mes) se fijó el 22/09/2026** comparando con el mercado español: las agencias parten de 5.000–8.000€ para un desarrollo acotado y los freelance se mueven entre 8.000 y 25.000€. La cuota mensual **no es un extra comercial**: una aplicación tiene base de datos y usuarios vivos 24 h y eso cuesta todos los meses. Si se quita la cuota, el servicio pierde dinero.
+**El precio de la aplicación (3.900€ + 90€/mes) se fijó el 22/09/2026** comparando con el mercado español: las agencias parten de 5.000–8.000€ para un desarrollo acotado y los freelance se mueven entre 8.000 y 25.000€. La cuota mensual **no es un extra comercial**: una aplicación tiene base de datos y usuarios vivos 24 h y eso cuesta todos los meses. Si se quita la cuota, el servicio pierde dinero.
 
 **Zenconfort es un proyecto propio, no un cliente.** Nunca debe salir en «negocios que ya confían». En `/casos/` aparece etiquetado «Proyecto propio · No es un cliente», que es la única forma correcta de mostrarlo.
 
@@ -123,7 +125,7 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 
 **Empresas pequeñas y, sobre todo, MEDIANAS del sureste español** (decidido el 24/09/2026). La sede sigue en Cartagena.
 
-**Tensión anotada el mismo día, sin resolver del todo:** todo el sitio venía escrito para micronegocios —«el de al lado», «tu local», «el mostrador»— y el portfolio son floristería, restaurante, tuktuk y fisio. Además los precios bajaron un 35% el día antes. **Una empresa mediana que lee «desde 450€» no piensa «qué barato», piensa «esto es para tiendas pequeñas».** El precio posiciona.
+**Tensión anotada el mismo día, sin resolver del todo:** todo el sitio venía escrito para micronegocios —«el de al lado», «tu local», «el mostrador»— y el portfolio son floristería, restaurante, tuktuk y fisio. Además los precios bajaron un 35% el día antes. **Una empresa mediana que lee «desde 690€» no piensa «qué barato», piensa «esto es para tiendas pequeñas».** El precio posiciona.
 
 **Lo que sí acerca a medianas es el trabajo real, no el copy:** 4 sistemas de reserva con cobro, 3 paneles de administración, correos automáticos y Stripe. Ese es el eje del mensaje ahora. Un freelance que hace webs bonitas hay uno en cada esquina; uno que entrega un panel donde bloqueas parte de la flota, no.
 
@@ -132,6 +134,8 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 ## Reglas de contenido
 
 - **Primera persona del singular en todo el sitio.** «Diseño», «te respondo yo», «lo gestiono yo». Nada de «nosotros», «gestionamos», «nuestro equipo». El trato directo es el único diferenciador real frente a las agencias, y el plural lo desmiente.
+- **«Trabajo solo» está prohibido desde el 25/09/2026.** Tranquiliza a un comercio y asusta a una empresa de veinte personas, que es el público nuevo. **Pero NO se sustituye por empleados inventados:** se dice lo que es cierto —«hablas directamente con quien programa, sin comerciales ni juniors»— y se responde la objeción de fondo en `/sobre-mi/`: el código es tuyo, va documentado y cualquier programador puede continuarlo. Esa respuesta vale más que una plantilla ficticia que se cae en la primera reunión.
+- **Las redes las lleva otra persona** (un socio de Álvaro, especializado en contenido). Está dicho en `/sobre-mi/` sin nombre ni cifras. **Pendiente de Álvaro: su nombre y si se pueden citar sus cuentas.** Ojo: si esas cuentas son suyas y no de clientes, hay que decirlo así — «ha hecho crecer sus propias cuentas», no «gestionamos cuentas de 300.000 seguidores».
 - Toda cifra de resultado va atribuida: «según datos del propio cliente». Marco: Ley 3/1991 de Competencia Desleal, art. 5 — la carga de la prueba es de quien lo anuncia.
 - Un mismo dato de resultado aparece **como máximo tres veces** en todo el sitio.
 - Prohibido en el copy: `soluciones`, `a medida` sin ejemplo concreto al lado, `profesional`, `calidad`, `tu aliado digital`, `llevamos tu negocio al siguiente nivel`, `equipo multidisciplinar`.
@@ -144,7 +148,7 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 - La CSP de `vercel.json` solo permite los dominios de Meta, TikTok y Google Analytics. `font-src` y `style-src` están en `'self'`. Cualquier otro recurso externo **se bloquea sin aviso en consola**.
 - **Las tipografías se sirven desde `/fonts/`, no desde Google.** Son tres WOFF2 del subconjunto `latin` (54 KB): Instrument Serif normal e italic, y Karla variable 400–700. Traerlas de Google bloqueaba el renderizado ~1,8s y comunicaba la IP del visitante a Google. Si añades un peso o un idioma, descarga el archivo a `/fonts/` — no vuelvas a enlazar `fonts.googleapis.com`.
 - `←`, `→` y `★` no están en ningún subconjunto de Google: usan la fuente del sistema. Es así a propósito.
-- **El asistente vive en `/js/asistente.js`.** Es un buscador sobre una base de conocimiento escrita a mano, **NO un modelo de lenguaje**: una web estática no puede ejecutar uno y una clave de API en el navegador se regala. **Nunca lo llames «IA»** — Álvaro vende chatbots con IA de verdad desde 890€, y anunciar como IA un buscador de palabras clave haría dudar de su producto. Ver `docs/asistente.md`. Si cambias un precio, cámbialo también en su `KB`: no se sincroniza sola.
+- **El asistente vive en `/js/asistente.js`.** Es un buscador sobre una base de conocimiento escrita a mano, **NO un modelo de lenguaje**: una web estática no puede ejecutar uno y una clave de API en el navegador se regala. **Nunca lo llames «IA»** — Álvaro vende chatbots con IA de verdad desde 1.590€, y anunciar como IA un buscador de palabras clave haría dudar de su producto. Ver `docs/asistente.md`. Si cambias un precio, cámbialo también en su `KB`: no se sincroniza sola.
 - **El botón flotante de WhatsApp también sale de `/js/asistente.js`**, apilado bajo el lanzador del asistente (`.rsa-stack`). Su `href` lleva `text=` obligatoriamente: es lo que `consent.js` exige para contar el evento `Contact`. Sin mensaje precargado el clic no se mide como lead. En móvil se oculta en la home, porque ahí la barra fija `.mcta` ya es ese mismo botón y saldría dos veces.
 - El consentimiento y la medición viven en `/js/consent.js`, compartido por las 17 páginas. Ver `docs/medicion.md`. No lo dupliques en línea.
 - Imágenes con `width` y `height` reales y **`height:auto` en el CSS de esa página**. Sin `height:auto`, el navegador usa el atributo `height` y deforma la imagen. Pasó en 17 páginas a la vez: si creas una página nueva, comprueba la regla `img{}`.
@@ -167,7 +171,7 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 - **Accesibilidad: las 20 páginas pasan axe-core 4.10.2 con CERO violaciones WCAG 2.1 A y AA** (23/09/2026). **Esto es ahora un argumento de venta**: `/accesibilidad-web/` lo dice por escrito e invita a comprobarlo. Si rompes una regla, dejas de poder venderlo. Comprueba axe antes de tocar una página, no después.
 - **Enlace de salto (`a.skip`) en las 20 páginas**, apuntando a `#main-content`. Si creas una página nueva, ponlo: sin él, la web que vende accesibilidad tendría una página que no la cumple.
 - **El servicio de accesibilidad NO se apoya en auditorías previas a clientes**, porque no las hay. Lo que hizo Álvaro a Alameda y TukTuk fue una auditoría digital de negocio, que es otra cosa. La única prueba que se usa es la propia web medida con axe. **No insinúes experiencia en accesibilidad que no existe.**
-- **Precios de accesibilidad (23/09/2026):** el mercado español cobra 800–2.500€ por una auditoría básica y 400–890€/mes de monitorización. Álvaro sale por debajo a propósito para darse a conocer, y la FAQ lo dice abiertamente. **Están pensados para subir.**
+- **Precios de accesibilidad (23/09/2026):** el mercado español cobra 800–2.500€ por una auditoría básica y 400–1.590€/mes de monitorización. Álvaro sale por debajo a propósito para darse a conocer, y la FAQ lo dice abiertamente. **Están pensados para subir.**
 - **Nunca prometas conformidad.** Ni «cumplimiento garantizado», ni «100% conforme», ni «sin riesgo de multa». La FAQ responde que no se garantiza y por qué.
 - Referencia medida el 30/08/2026 con Lighthouse móvil: rendimiento 98, accesibilidad 100, buenas prácticas 100, SEO 100. LCP 1,9s · CLS 0,04.
 

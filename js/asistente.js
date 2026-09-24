@@ -24,10 +24,10 @@
   var KB = [
     { k:["precio","cuesta","cuanto cuesta","cuanto vale","cuanto seria","vale","cobras","tarifa","presupuesto","caro","barato","coste","cuanto me","precios"],
       t:"Los precios están publicados, sin tener que preguntar:",
-      l:["Landing page: desde 450€","Web corporativa: desde 690€","Tienda online: desde 1.290€","Aplicación de gestión: desde 1.990€ + 90€/mes",
-         "Automatización: desde 690€","Chatbot de WhatsApp: desde 890€ + 120€/mes",
-         "SEO local: desde 240€/mes","Redes sociales: desde 290€/mes","Email marketing: desde 160€/mes",
-         "Accesibilidad (Ley 11/2023): desde 390€","Mantenimiento: 75–120€/mes"],
+      l:["Landing page: desde 690€","Web corporativa: desde 1.490€","Tienda online: desde 2.490€","Aplicación de gestión: desde 3.900€ + 90€/mes",
+         "Automatización: desde 1.200€","Chatbot de WhatsApp: desde 1.590€ + 120€/mes",
+         "SEO local: desde 390€/mes","Redes sociales: desde 450€/mes","Email marketing: desde 290€/mes",
+         "Accesibilidad (Ley 11/2023): desde 590€","Mantenimiento: 95–190€/mes"],
       n:"Todos sin IVA. El precio se cierra por escrito antes de empezar.", u:"/#servicios" },
 
     { k:["tarda","cuanto tardas","cuanto tarda","plazo","plazos","cuando estaria","rapido","entrega","semanas","urgente","tiempo"],
@@ -47,20 +47,20 @@
       t:"El SEO local va incluido en todas las webs, sin coste añadido.",
       l:["Estructura optimizada y datos estructurados","Velocidad de carga","Ficha de Google Business configurada",
          "Contenido orientado a lo que busca la gente de tu zona"],
-      n:"Si además quieres trabajo continuo mes a mes, eso es el SEO local mensual, desde 240€/mes.", u:"/seo-local/" },
+      n:"Si además quieres trabajo continuo mes a mes, eso es el SEO local mensual, desde 390€/mes.", u:"/seo-local/" },
 
     { k:["hosting","alojamiento","dominio","servidor","anual"],
       t:"El alojamiento va en Vercel y en el plan que uso no tiene coste.",
       n:"El único gasto recurrente es el dominio, unos 12€ al año. Lo gestiono yo y te lo repercuto sin recargo, o lo pones a tu nombre si lo prefieres." },
 
     { k:["accesibilidad","accesible","wcag","ley 11/2023","eaa","discapacidad","lector de pantalla","contraste","multa accesibilidad","en 301 549"],
-      t:"Auditoría de accesibilidad: desde 390€, informe en 5 días.",
-      l:["Auditoría sola: 390€","Auditoría más correcciones: 790€","Monitorización mensual: 75€/mes",
+      t:"Auditoría de accesibilidad: desde 590€, informe en 5 días.",
+      l:["Auditoría sola: 590€","Auditoría más correcciones: 1.190€","Monitorización mensual: 95€/mes",
          "WCAG 2.1 AA a través de la EN 301 549"],
       n:"La exención de microempresa solo vale para servicios y exige menos de 10 empleados Y hasta 2 millones de facturación. Escríbeme y te digo si te aplica, sin cobrarte.", u:"/accesibilidad-web/" },
 
     { k:["aplicacion","aplicacion web","app","cuesta una aplicacion","precio aplicacion","precio de la aplicacion","cuesta una app","precio app","panel de gestion","panel de administracion","software a medida","programa de gestion","area privada","zona de clientes"],
-      t:"Una aplicación web de gestión: desde 1.990€ más 90€/mes.",
+      t:"Una aplicación web de gestión: desde 3.900€ más 90€/mes.",
       l:["Panel de administración solo para ti","Cada cliente entra con su usuario y ve solo lo suyo",
          "Base de datos propia, no una hoja de cálculo","De 4 a 8 semanas"],
       n:"Los 90€/mes cubren alojamiento, base de datos, copias de seguridad y soporte. Sin permanencia.", u:"/aplicaciones-web/" },
@@ -68,16 +68,16 @@
     { k:["automatizacion","automatizar","n8n","make","procesos","tareas","repetitiv","integrar","conectar"],
       t:"Automatizo las tareas que hoy haces a mano y podrían hacerse solas.",
       l:["Email automático cuando entra un pedido o un lead","Avisos y recordatorios","Sincronización entre las apps que ya usas"],
-      n:"Desde 690€. Si pierdes horas copiando datos de un sitio a otro, esto es lo que más te va a rentar.", u:"/automatizacion/" },
+      n:"Desde 1.200€. Si pierdes horas copiando datos de un sitio a otro, esto es lo que más te va a rentar.", u:"/automatizacion/" },
 
     { k:["chatbot","bot","inteligencia artificial","inteligencia","responder solo","24 horas","whatsapp business","contestar solo","robot"],
       t:"Monto asistentes con IA de verdad sobre WhatsApp Business.",
       l:["Responden preguntas de tus clientes las 24 horas","Toman reservas","Escalan a ti cuando no saben algo"],
-      n:"Desde 890€ más 120€/mes. Se entrenan con tus precios, horarios y servicios.", u:"/chatbot-whatsapp/" },
+      n:"Desde 1.590€ más 120€/mes. Se entrenan con tus precios, horarios y servicios.", u:"/chatbot-whatsapp/" },
 
     { k:["tienda","ecommerce","vender online","carrito","pasarela","pago tarjeta","productos","stock"],
       t:"Tienda online completa: catálogo, carrito, pasarela de pago y gestión de pedidos.",
-      n:"Desde 1.290€. La de Floristería Alameda la puedes ver funcionando en floristeriaalameda.com.", u:"/tienda-online/" },
+      n:"Desde 2.490€. La de Floristería Alameda la puedes ver funcionando en floristeriaalameda.com.", u:"/tienda-online/" },
 
     { k:["zona","donde trabajas","donde estas","cartagena","murcia","desplaz","presencial","reunion","vernos","lejos","trabajas en","vives"],
       t:"Estoy en Cartagena y trabajo en toda la Región de Murcia.",
@@ -89,27 +89,27 @@
 
     { k:["mantenimiento","despues","soporte","actualiza","copias","backup","averia","se rompe"],
       t:"Los primeros 30 días incluyen ajustes sin coste.",
-      n:"Después, plan de mantenimiento opcional desde 75€/mes o cambios puntuales a 45€/hora. Sin permanencia.", u:"/mantenimiento-web/" },
+      n:"Después, plan de mantenimiento opcional desde 95€/mes o cambios puntuales a 60€/hora. Sin permanencia.", u:"/mantenimiento-web/" },
 
     { k:["barata","180","300","wix","wordpress","plantilla","mas barato","competencia"],
       t:"Las webs de 180–300€ son plantillas genéricas.",
       n:"Tienen su lugar si el presupuesto no da para más. El problema es lo que no incluyen: SEO local real, diseño propio y los costes anuales ocultos de hosting, plugins y renovación del tema." },
 
     { k:["redes","redes sociales","instagram","tiktok","facebook","publicaciones","publicar","cuantas publicaciones","contestas los mensajes","contestar mensajes","comentarios","community manager","contenido","reels","videos"],
-      t:"Gestión de redes: 8 publicaciones al mes, dos de ellas en vídeo, desde 290€/mes.",
+      t:"Gestión de redes: 8 publicaciones al mes, dos de ellas en vídeo, desde 450€/mes.",
       l:["8 publicaciones al mes, 2 en vídeo","2 historias al mes","Una red social incluida; la segunda, 90€/mes más","Calendario que apruebas tú antes de publicar"],
       n:"Lo que NO incluye: contestar comentarios y mensajes. Eso es estar de guardia todo el día y a este precio no se hace bien. Te dejo escritas las respuestas que más se repiten.", u:"/gestion-redes-sociales/" },
 
     { k:["email","newsletter","mailing","correos","brevo","mailchimp"],
       t:"Correos que se envían solos: bienvenida, seguimiento post-compra, recordatorios y recuperación de carritos.",
-      n:"Desde 160€/mes, sin permanencia.", u:"/email-marketing/" },
+      n:"Desde 290€/mes, sin permanencia.", u:"/email-marketing/" },
 
     { k:["landing","una pagina","promocion","campaña","anuncios"],
       t:"Una sola página diseñada para convertir visitas en clientes.",
-      n:"Desde 450€, lista en una semana. Va bien si quieres probar sin gastar mucho o vas a promocionar una oferta concreta.", u:"/landing-page/" },
+      n:"Desde 690€, lista en una semana. Va bien si quieres probar sin gastar mucho o vas a promocionar una oferta concreta.", u:"/landing-page/" },
 
     { k:["quien eres","sobre ti","experiencia","trabajos","portfolio","proyectos","casos","clientes"],
-      t:"Soy Álvaro Ruipérez, freelance en Cartagena. Trabajo solo: quien te contesta es quien programa.",
+      t:"Soy Álvaro Ruipérez. Construyo webs, tiendas y aplicaciones de gestión en el sureste.",
       n:"Tengo cuatro proyectos publicados que puedes abrir y comprobar ahora mismo.", u:"/casos/" },
 
     { k:["factura","iva","autonomo","pagar","transferencia","bizum"],
