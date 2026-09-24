@@ -119,12 +119,23 @@ Un caso repetido en todas partes no es prueba social. Cada página lleva el suyo
 
 Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias a propósito y van etiquetadas como tales. En cuanto haya un caso real de ese servicio, se sustituye.
 
+## A quién le hablamos
+
+**Empresas pequeñas y, sobre todo, MEDIANAS del sureste español** (decidido el 24/09/2026). La sede sigue en Cartagena.
+
+**Tensión anotada el mismo día, sin resolver del todo:** todo el sitio venía escrito para micronegocios —«el de al lado», «tu local», «el mostrador»— y el portfolio son floristería, restaurante, tuktuk y fisio. Además los precios bajaron un 35% el día antes. **Una empresa mediana que lee «desde 450€» no piensa «qué barato», piensa «esto es para tiendas pequeñas».** El precio posiciona.
+
+**Lo que sí acerca a medianas es el trabajo real, no el copy:** 4 sistemas de reserva con cobro, 3 paneles de administración, correos automáticos y Stripe. Ese es el eje del mensaje ahora. Un freelance que hace webs bonitas hay uno en cada esquina; uno que entrega un panel donde bloqueas parte de la flota, no.
+
+**Objeción pendiente de responder en la web:** una mediana pregunta «¿qué pasa si te pones malo?». «Trabajo solo» tranquiliza a un comercio y asusta a una empresa de veinte personas. Hoy el sitio no lo responde en ninguna parte.
+
 ## Reglas de contenido
 
 - **Primera persona del singular en todo el sitio.** «Diseño», «te respondo yo», «lo gestiono yo». Nada de «nosotros», «gestionamos», «nuestro equipo». El trato directo es el único diferenciador real frente a las agencias, y el plural lo desmiente.
 - Toda cifra de resultado va atribuida: «según datos del propio cliente». Marco: Ley 3/1991 de Competencia Desleal, art. 5 — la carga de la prueba es de quien lo anuncia.
 - Un mismo dato de resultado aparece **como máximo tres veces** en todo el sitio.
 - Prohibido en el copy: `soluciones`, `a medida` sin ejemplo concreto al lado, `profesional`, `calidad`, `tu aliado digital`, `llevamos tu negocio al siguiente nivel`, `equipo multidisciplinar`.
+- **Los titulares atacan un problema concreto, no describen el servicio.** «La web que tu negocio merece» no dice nada; «En tres segundos deciden si te llaman o cierran» sí. Pero la consecuencia tiene que ser **cierta y específica**: nada de meter miedo con multas o plazos falsos — eso es justo lo que `/accesibilidad-web/` critica, y contradecirse ahí sale más caro que un titular flojo.
 - Cifras absolutas antes que porcentajes: «de 4 a 11 pedidos por semana» convence más que «+175%».
 
 ## Reglas técnicas
