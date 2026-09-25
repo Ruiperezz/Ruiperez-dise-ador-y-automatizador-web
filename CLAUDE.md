@@ -23,18 +23,18 @@ HTML + CSS + JavaScript **estático puro**. Sin `package.json`, sin npm, sin bun
 
 ## Estructura
 
-20 páginas, una carpeta por URL:
+21 páginas, una carpeta por URL:
 
 | Grupo | Rutas |
 |---|---|
 | Home | `/` |
-| Servicios (11) | `/web-corporativa/` `/landing-page/` `/tienda-online/` `/aplicaciones-web/` `/automatizacion/` `/chatbot-whatsapp/` `/seo-local/` `/email-marketing/` `/mantenimiento-web/` `/gestion-redes-sociales/` `/accesibilidad-web/` |
+| Servicios (12) | `/web-corporativa/` `/landing-page/` `/tienda-online/` `/aplicaciones-web/` `/automatizacion/` `/chatbot-whatsapp/` `/seo-local/` `/email-marketing/` `/mantenimiento-web/` `/gestion-redes-sociales/` `/accesibilidad-web/` `/meta-ads/` |
 | General (1) | `/diseno-web/` |
 | Legales (3) | `/aviso-legal/` `/privacidad/` `/cookies/` |
 | Estudio (2) | `/sobre-mi/` · `/casos/` |
 | Tráfico de pago (2) | `/lp/hosteleria/` `/lp/comercio-local/` — noindex, sin menú, un solo CTA. **Nunca mandar tráfico de pago a la home.** |
 
-Otros archivos: `sitemap.xml` (18 URLs — las noindex quedan fuera), `robots.txt`, `fonts/` (3 WOFF2), `vercel.json` (CSP, HSTS, X-Frame-Options, cache de `/img/`), `favicon.svg`, `apple-touch-icon.png`, `img/`.
+Otros archivos: `sitemap.xml` (19 URLs — las noindex quedan fuera), `robots.txt`, `fonts/` (3 WOFF2), `vercel.json` (CSP, HSTS, X-Frame-Options, cache de `/img/`), `favicon.svg`, `apple-touch-icon.png`, `img/`.
 
 ## Precios oficiales
 
@@ -55,8 +55,36 @@ Otros archivos: `sitemap.xml` (18 URLs — las noindex quedan fuera), `robots.tx
 | Gestión de redes sociales | desde 450€/mes · **8 publicaciones, 2 en vídeo, 1 red** |
 | Auditoría de accesibilidad | desde 590€ · con correcciones 1.190€ · monitorización 95€/mes |
 | Mantenimiento web | 95–190€/mes |
+| **Gestión de Meta Ads** | **240€/mes** hasta 1.000€/mes de inversión · por encima, 15% de la inversión |
 
 Cambios puntuales fuera de contrato: 60€/hora.
+
+**Packs (25/09/2026).** Tres combinaciones, en la sección `#packs` de la home y
+enlazadas desde el bloque de precio de las seis páginas implicadas:
+
+| Pack | Lleva | Suelto | Pack |
+|---|---|---|---|
+| **Capta** | Landing page + 3 meses de Meta Ads | 1.410€ | **1.190€** |
+| **Vende online** | Tienda online + automatización de pedidos | 3.690€ | **2.990€** |
+| **Atiende solo** | Web corporativa + automatización + chatbot IA | 4.280€ | **3.490€** |
+
+Descuento del 16–19%. **Tres, no más:** con cuatro o cinco el cliente no elige, se va.
+**La escalera 1.190 / 2.990 / 3.490 es la respuesta a «¿pymes o negocios pequeños?»:**
+el pack de entrada abre puerta al pequeño y el de arriba a la mediana, sin tener que
+mover la tabla de precios por cuarta vez. Si cambias un precio de la tabla, recalcula
+las tres columnas: el «suelto» tiene que cuadrar con la suma real o el descuento es mentira.
+
+**Meta Ads, servicio nuevo del 25/09/2026.** El mercado español cobra el 15–20% de la
+inversión con un mínimo de 300–500€/mes, y un freelance especializado entre 400 y
+1.200€/mes. Se entra a 240€/mes, por debajo del suelo.
+
+⚠️ **Álvaro está aprendiendo Meta Ads mientras lo vende.** Aquí el dinero del cliente se
+quema directo, no como en una web que solo queda sosa. **El tope de 1.000€ de inversión
+no es solo comercial: limita el daño mientras coge oficio.** No lo subas hasta que haya
+campañas con resultados. Los límites (3 campañas, 6 anuncios, revisión semanal) van
+escritos en la página y en el JSON-LD: es la lección de la gestión de redes, que se
+comió el margen justo por no tenerlos. La FAQ dice abiertamente que este servicio es
+más nuevo que los demás y que no hay casos publicados. **No le inventes un caso real.**
 
 **Gestión de redes, acotada el 23/09/2026.** Prometía 12 publicaciones, historias semanales **y contestar comentarios y mensajes**: unas 17–22 h/mes a 450€, o sea 13–17€/hora, y encima de guardia. Ahora son **8 publicaciones (2 en vídeo), 2 historias, 1 red social** y **no se contestan mensajes** — en su lugar se entrega un guion de respuestas, que es trabajo de una vez y no una correa. **Lo que hacía inviable el servicio no era el volumen, era la mensajería:** las publicaciones se hacen del tirón un día, los mensajes interrumpen todos los días. Si alguien vuelve a meter «contesto los mensajes» en el copy, el servicio vuelve a perder dinero.
 
@@ -145,6 +173,7 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 ## Reglas técnicas
 
 - Las preguntas y respuestas del `FAQPage` en JSON-LD **deben coincidir literalmente** con el FAQ visible. Si cambias una, cambia la otra en el mismo commit.
+- **Los precios del JSON-LD también se cambian.** El 25/09/2026 los doce estaban en los valores de antes de las dos subidas: Google enseñaba «890€» en resultados enriquecidos y la página decía 1.490€. **No se ve en la web, así que nadie lo nota:** cada vez que toques la tabla de precios, comprueba `"price"` en las doce páginas.
 - La CSP de `vercel.json` solo permite los dominios de Meta, TikTok y Google Analytics. `font-src` y `style-src` están en `'self'`. Cualquier otro recurso externo **se bloquea sin aviso en consola**.
 - **Las tipografías se sirven desde `/fonts/`, no desde Google.** Son tres WOFF2 del subconjunto `latin` (54 KB): Instrument Serif normal e italic, y Karla variable 400–700. Traerlas de Google bloqueaba el renderizado ~1,8s y comunicaba la IP del visitante a Google. Si añades un peso o un idioma, descarga el archivo a `/fonts/` — no vuelvas a enlazar `fonts.googleapis.com`.
 - `←`, `→` y `★` no están en ningún subconjunto de Google: usan la fuente del sistema. Es así a propósito.
@@ -156,7 +185,7 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 - **GA4 activo:** `G-D61B7R46V5`, en `RS_CONFIG` de `js/consent.js`. Meta y TikTok siguen con el ID vacío, así que no cargan. Si añades uno, actualiza también la tabla de `/cookies/` en el mismo commit.
 - Contraste WCAG AA, foco visible, `alt` en todas las imágenes, objetivos táctiles de 44px o más.
 - `--terra` (#B5522F) da 4,47:1 sobre el fondo crema: **no vale para texto pequeño**. Para texto usa `--terra-txt` (#A84A28, 5,12:1). Para rellenos, `--terra`.
-- El pie tiene que ser idéntico en las 15 páginas que lo llevan. Si añades una página, añádela al pie de todas.
+- El pie tiene que ser idéntico en las 16 páginas que lo llevan (las tres legales llevan un pie reducido, sin lista de servicios). Si añades una página, añádela al pie de todas.
 - **En móvil el mockup del hero va ANTES del texto** (`.scene{order:-1}`). Su portfolio vende con fotografía real; el escaparate no puede esconder su única prueba tras 800px de texto, que es justo donde aterriza el tráfico de pago. Con ese orden, el elemento LCP en móvil pasa a ser la imagen y el `fetchpriority="high"` por fin sirve para algo. Medido: mismo LCP que con el texto delante.
 - Las webs de los clientes se enlazan de verdad, con `rel="noopener noreferrer nofollow"`: floristeriaalameda.com, zenconfort.es, tuktukcartagena.com y casa-del-sushi.vercel.app. La página promete «puedes abrirlas y comprobarlo», así que tienen que ser enlaces, no texto.
 - **Capturas reales en `/img/`:** `alameda-catalogo`, `alameda-tienda`, `alameda-producto` y `alameda-resenas` (tienda online de Alameda); `tuktuk-home`, `tuktuk-tours`, `tuktuk-reserva` y `tuktuk-galeria` (TukTuk Cartagena); `alameda-carrito` (el carrito con Stripe); `buccaro-alicante` y `buccaro-catalogo` (propuesta de landing). 900px de ancho y WebP a calidad 82, como el resto. **No pongas mockups inventados donde haya una captura real**: los mockups en CSS con productos y precios de mentira se han ido sustituyendo por capturas de webs publicadas.
@@ -168,8 +197,8 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 **Pendiente de Álvaro: la fecha de apertura del negocio**, que está vacía. Dice «+2 años» pero no tengo el mes ni el año exactos y no me los invento.
 **Categorías (21/09/2026):** principal `gcid:website_designer`; secundarias `gcid:internet_marketing_service`, `gcid:marketing_agency` y `gcid:software_company`. Un `update_location` con teléfono o web da 400: mándalos solo si de verdad cambian. **La dirección no se toca:** cambiarla dispara la re-verificación de Google y puede tumbar la ficha. Search Console (`searchconsole`, propiedades `ruiperezstudio.es` y `zenconfort.es`) es **solo lectura**.
 - **La URL de la barra del navegador (`.brw-url`) tiene que ser la de la captura que hay debajo.** En `/web-corporativa/` ponía `floristeriaalameda.com` sobre una captura de Casa del Sushi: si el visitante abre esa URL y ve otra cosa, la prueba se vuelve en contra. Corregido el 23/09/2026.
-- **Accesibilidad: las 20 páginas pasan axe-core 4.10.2 con CERO violaciones WCAG 2.1 A y AA** (23/09/2026). **Esto es ahora un argumento de venta**: `/accesibilidad-web/` lo dice por escrito e invita a comprobarlo. Si rompes una regla, dejas de poder venderlo. Comprueba axe antes de tocar una página, no después.
-- **Enlace de salto (`a.skip`) en las 20 páginas**, apuntando a `#main-content`. Si creas una página nueva, ponlo: sin él, la web que vende accesibilidad tendría una página que no la cumple.
+- **Accesibilidad: las 21 páginas pasan axe-core 4.10.2 con CERO violaciones WCAG 2.1 A y AA** (25/09/2026). **Esto es ahora un argumento de venta**: `/accesibilidad-web/` lo dice por escrito e invita a comprobarlo. Si rompes una regla, dejas de poder venderlo. Comprueba axe antes de tocar una página, no después.
+- **Enlace de salto (`a.skip`) en las 21 páginas**, apuntando a `#main-content`. Si creas una página nueva, ponlo: sin él, la web que vende accesibilidad tendría una página que no la cumple.
 - **El servicio de accesibilidad NO se apoya en auditorías previas a clientes**, porque no las hay. Lo que hizo Álvaro a Alameda y TukTuk fue una auditoría digital de negocio, que es otra cosa. La única prueba que se usa es la propia web medida con axe. **No insinúes experiencia en accesibilidad que no existe.**
 - **Precios de accesibilidad (23/09/2026):** el mercado español cobra 800–2.500€ por una auditoría básica y 400–1.590€/mes de monitorización. Álvaro sale por debajo a propósito para darse a conocer, y la FAQ lo dice abiertamente. **Están pensados para subir.**
 - **Nunca prometas conformidad.** Ni «cumplimiento garantizado», ni «100% conforme», ni «sin riesgo de multa». La FAQ responde que no se garantiza y por qué.
