@@ -203,6 +203,14 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 - **Precios de accesibilidad (23/09/2026):** el mercado español cobra 800–2.500€ por una auditoría básica y 400–1.590€/mes de monitorización. Álvaro sale por debajo a propósito para darse a conocer, y la FAQ lo dice abiertamente. **Están pensados para subir.**
 - **Nunca prometas conformidad.** Ni «cumplimiento garantizado», ni «100% conforme», ni «sin riesgo de multa». La FAQ responde que no se garantiza y por qué.
 - Referencia medida el 30/08/2026 con Lighthouse móvil: rendimiento 98, accesibilidad 100, buenas prácticas 100, SEO 100. LCP 1,9s · CLS 0,04.
+- ⚠️ **Ese 98 está sin comprobar desde el 30/08 y la home ha doblado de tamaño.** El
+  27/08 pesaba 48 KB al quitar GSAP; el 25/09 pesa **105 KB** (36 KB de CSS en línea,
+  13 KB de JS, 10 KB de SVG en línea), y el salto grande no fue el de los packs sino
+  el acumulado de las tarjetas de servicio, la comparativa y los testimonios.
+  **Hay que volver a medir Lighthouse antes de meter dinero en anuncios**, porque el
+  tráfico de pago llega en móvil y el LCP es lo que decide si se queda. Si hay que
+  recortar, el CSS en línea de la home es donde está la grasa: mucho se repite en
+  las 21 páginas y no se cachea entre ellas.
 
 ## Skills de este proyecto
 
