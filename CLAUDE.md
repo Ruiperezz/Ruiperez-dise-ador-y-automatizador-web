@@ -166,6 +166,12 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 - **Las redes las lleva otra persona** (un socio de Álvaro, especializado en contenido). Está dicho en `/sobre-mi/` sin nombre ni cifras. **Pendiente de Álvaro: su nombre y si se pueden citar sus cuentas.** Ojo: si esas cuentas son suyas y no de clientes, hay que decirlo así — «ha hecho crecer sus propias cuentas», no «gestionamos cuentas de 300.000 seguidores».
 - Toda cifra de resultado va atribuida: «según datos del propio cliente». Marco: Ley 3/1991 de Competencia Desleal, art. 5 — la carga de la prueba es de quien lo anuncia.
 - Un mismo dato de resultado aparece **como máximo tres veces** en todo el sitio.
+  ⚠️ **Esta regla y la tabla «Qué caso va en qué página» se contradicen** (detectado el
+  25/09/2026): la tabla asigna Floristería Alameda a la home, `/tienda-online/`,
+  `/seo-local/` y `/diseno-web/`, y su 4,9★ con 333 reseñas aparece además en `/casos/`
+  y en las dos landings de pago. **Son siete páginas para un límite de tres.** Está
+  atribuido en todas, así que no es deshonesto, pero repetirlo tanto deja claro que
+  solo hay un caso fuerte. **Pendiente de decidir cuál de las dos reglas gana.**
 - Prohibido en el copy: `soluciones`, `a medida` sin ejemplo concreto al lado, `profesional`, `calidad`, `tu aliado digital`, `llevamos tu negocio al siguiente nivel`, `equipo multidisciplinar`.
 - **Los titulares atacan un problema concreto, no describen el servicio.** «La web que tu negocio merece» no dice nada; «En tres segundos deciden si te llaman o cierran» sí. Pero la consecuencia tiene que ser **cierta y específica**: nada de meter miedo con multas o plazos falsos — eso es justo lo que `/accesibilidad-web/` critica, y contradecirse ahí sale más caro que un titular flojo.
 - Cifras absolutas antes que porcentajes: «de 4 a 11 pedidos por semana» convence más que «+175%».
@@ -217,6 +223,23 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 - **`auditoria-web-preads`** (`.claude/skills/`) — propia. Auditoría de web de negocio local antes de invertir en publicidad. Define el orden de trabajo: bloqueantes legales → medición → coherencia de oferta → encaje mensaje/tráfico → copy → estética.
 - **`refactoring-ui`** y **`web-typography`** (`.agents/skills/`, de `wondelai/skills`) — jerarquía visual, espaciado, color, tipografía. Sustituyen a `ui-ux-pro-max`, que no existe.
 - `web-design-guidelines` y `vercel-optimize` — layout, accesibilidad y rendimiento.
+
+## Auditoría del 25/09/2026
+
+`AUDITORIA-2026-09-25.md` es la auditoría pre-campaña completa hecha con la skill
+`auditoria-web-preads`, con verificación en producción y lectura de nueve competidores
+reales del sureste. **Léela antes de tocar precios o copy de venta.** Lo que cambia
+respecto a lo que este archivo daba por bueno:
+
+- **«Publico mis precios» ya NO es diferencial.** Seis de nueve competidores del sureste
+  publican precio. e-creativos (Murcia) coincide en el número exacto de entrada: 690€.
+- **«Entrego paneles y reservas» está parcialmente reclamado** por Dvesign, Ridaly y
+  Grita Internet, aunque con plugins genéricos (Amelia, WooCommerce) sobre WordPress.
+  **La palabra «panel» ya no vende; la captura del panel sí.**
+- **La franja peligrosa es Dvesign (Cartagena):** tienda a 977€ contra 2.490€, «empieza
+  a vender en 3 días» y reservas con Amelia. Mismo mercado, mitad de precio.
+- **Lo único que sigue libre: ningún competidor usa un titular que ataque un problema.**
+  Los nueve H1 leídos son «servicio + ciudad» o un precio desnudo.
 
 ## Mantenimiento recurrente
 
