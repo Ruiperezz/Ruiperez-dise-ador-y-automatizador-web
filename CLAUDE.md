@@ -59,6 +59,19 @@ Otros archivos: `sitemap.xml` (19 URLs — las noindex quedan fuera), `robots.tx
 
 Cambios puntuales fuera de contrato: 60€/hora.
 
+**Plazo de entrega: UNA SEMANA para todo (25/09/2026).** Antes iba de 5-7 días una
+landing a 4-8 semanas una aplicación de gestión. Decisión de Álvaro: dice tener
+experiencia de sobra para cualquier servicio en ese tiempo.
+
+**Se escribe siempre «desde que me pasas el contenido»**, nunca «desde que firmamos».
+El plazo solo corre cuando el cliente ha entregado, y eso es lo único que evita la
+discusión de quién retrasó qué.
+
+⚠️ **Aviso escrito el mismo día:** la tienda de Alameda fueron 50-70 horas, que en
+siete días son 10-14 horas diarias sin parar. La aplicación de gestión es el caso más
+apretado de todos. **Si empiezan a incumplirse plazos, el primer sitio donde mirar es
+esta línea, no las horas.** Es una decisión suya tomada sabiéndolo.
+
 **Packs (25/09/2026).** Tres combinaciones, en la sección `#packs` de la home y
 enlazadas desde el bloque de precio de las seis páginas implicadas:
 
@@ -165,13 +178,14 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 - **«Trabajo solo» está prohibido desde el 25/09/2026.** Tranquiliza a un comercio y asusta a una empresa de veinte personas, que es el público nuevo. **Pero NO se sustituye por empleados inventados:** se dice lo que es cierto —«hablas directamente con quien programa, sin comerciales ni juniors»— y se responde la objeción de fondo en `/sobre-mi/`: el código es tuyo, va documentado y cualquier programador puede continuarlo. Esa respuesta vale más que una plantilla ficticia que se cae en la primera reunión.
 - **Las redes las lleva otra persona** (un socio de Álvaro, especializado en contenido). Está dicho en `/sobre-mi/` sin nombre ni cifras. **Pendiente de Álvaro: su nombre y si se pueden citar sus cuentas.** Ojo: si esas cuentas son suyas y no de clientes, hay que decirlo así — «ha hecho crecer sus propias cuentas», no «gestionamos cuentas de 300.000 seguidores».
 - Toda cifra de resultado va atribuida: «según datos del propio cliente». Marco: Ley 3/1991 de Competencia Desleal, art. 5 — la carga de la prueba es de quien lo anuncia.
-- Un mismo dato de resultado aparece **como máximo tres veces** en todo el sitio.
-  ⚠️ **Esta regla y la tabla «Qué caso va en qué página» se contradicen** (detectado el
-  25/09/2026): la tabla asigna Floristería Alameda a la home, `/tienda-online/`,
-  `/seo-local/` y `/diseno-web/`, y su 4,9★ con 333 reseñas aparece además en `/casos/`
-  y en las dos landings de pago. **Son siete páginas para un límite de tres.** Está
-  atribuido en todas, así que no es deshonesto, pero repetirlo tanto deja claro que
-  solo hay un caso fuerte. **Pendiente de decidir cuál de las dos reglas gana.**
+- Un mismo dato de resultado aparece **como máximo tres veces** en todo el sitio,
+  **salvo el 4,9★ con 333 reseñas de Alameda, que Álvaro fijó en CUATRO páginas
+  indexadas el 25/09/2026** y no debe salir en más: la home, `/casos/`,
+  `/tienda-online/` y `/seo-local/`. Se retiró de `/diseno-web/` y `/lp/hosteleria/`
+  **conservando el caso**, que sigue contado y enlazado: lo que se quita es la cifra
+  repetida, no la prueba. La quinta es `/lp/comercio-local/`, que es `noindex` y cuyo
+  hero entero ES el antes y después de Alameda, así que nunca se ve junto a las otras.
+  **Si añades una página con ese dato, quítalo de otra.**
 - Prohibido en el copy: `soluciones`, `a medida` sin ejemplo concreto al lado, `profesional`, `calidad`, `tu aliado digital`, `llevamos tu negocio al siguiente nivel`, `equipo multidisciplinar`.
 - **Los titulares atacan un problema concreto, no describen el servicio.** «La web que tu negocio merece» no dice nada; «En tres segundos deciden si te llaman o cierran» sí. Pero la consecuencia tiene que ser **cierta y específica**: nada de meter miedo con multas o plazos falsos — eso es justo lo que `/accesibilidad-web/` critica, y contradecirse ahí sale más caro que un titular flojo.
 - Cifras absolutas antes que porcentajes: «de 4 a 11 pedidos por semana» convence más que «+175%».
@@ -200,6 +214,13 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 - **Bing Webmaster Tools** está dado de alta con `ruiperezstudio.es`. Importa porque **ChatGPT busca en Bing**: sin estar bien indexado ahí, ChatGPT no te cita.
 - **`llms.txt` en la raíz** resume el negocio para los modelos. Si cambias precios o proyectos, cámbialo también ahí: no se sincroniza solo.
 - **La ficha de Google se gestiona por Windsor.ai**, conector `google_my_business`. Requiere que Álvaro tenga activado *Settings → API Access → Enable write actions*. Desde ahí se puede cambiar descripción, categorías, servicios, horarios, atributos, fotos, publicaciones y respuestas a reseñas. **Hecho el 21/09/2026:** descripción reescrita en primera persona del singular, los 9 servicios con precio y descripción, y las 7 reseñas respondidas una a una. **Ficha actualizada al sureste el 23/09/2026:** descripción reescrita a «Región de Murcia, Alicante y Almería» (límite duro de **750 caracteres**, la primera versión se pasó y dio error), 12 servicios con precio incluyendo accesibilidad y aplicación de gestión, y **las 4 primeras publicaciones** (accesibilidad, Alameda, TukTuk y precios publicados). **Las imágenes de las publicaciones van en `/img/gbp/` en JPG o PNG**: Google no acepta WebP y todas las capturas del sitio lo son. **Cadencia a partir de ahora: una publicación por semana.** Las cuatro se publicaron de golpe porque la API no permite programarlas.
+**Ficha actualizada el 25/09/2026:** los 11 servicios tenían los precios de antes de
+la subida (390€, 690€, 450€, 1.290€, 1.990€, 240€, 890€, 690€, 290€, 160€, 75€), todos
+obsoletos. Ahora hay **16 servicios** con la tabla al día, incluidos Meta Ads y los tres
+packs. Las **7 publicaciones** están reescritas: las cinco que quedaban llevaban precios
+viejos o estaban en plural («diseñamos», «Te atendemos», «integramos»), y se ha añadido
+una octava con los packs. **Pendiente: añadir Alicante, Almería y Valencia al área de
+servicio** — hace falta el `place_id` de Google Maps de cada una.
 **Pendiente de Álvaro: la fecha de apertura del negocio**, que está vacía. Dice «+2 años» pero no tengo el mes ni el año exactos y no me los invento.
 **Categorías (21/09/2026):** principal `gcid:website_designer`; secundarias `gcid:internet_marketing_service`, `gcid:marketing_agency` y `gcid:software_company`. Un `update_location` con teléfono o web da 400: mándalos solo si de verdad cambian. **La dirección no se toca:** cambiarla dispara la re-verificación de Google y puede tumbar la ficha. Search Console (`searchconsole`, propiedades `ruiperezstudio.es` y `zenconfort.es`) es **solo lectura**.
 - **La URL de la barra del navegador (`.brw-url`) tiene que ser la de la captura que hay debajo.** En `/web-corporativa/` ponía `floristeriaalameda.com` sobre una captura de Casa del Sushi: si el visitante abre esa URL y ve otra cosa, la prueba se vuelve en contra. Corregido el 23/09/2026.
@@ -223,6 +244,22 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 - **`auditoria-web-preads`** (`.claude/skills/`) — propia. Auditoría de web de negocio local antes de invertir en publicidad. Define el orden de trabajo: bloqueantes legales → medición → coherencia de oferta → encaje mensaje/tráfico → copy → estética.
 - **`refactoring-ui`** y **`web-typography`** (`.agents/skills/`, de `wondelai/skills`) — jerarquía visual, espaciado, color, tipografía. Sustituyen a `ui-ux-pro-max`, que no existe.
 - `web-design-guidelines` y `vercel-optimize` — layout, accesibilidad y rendimiento.
+
+## Decisiones de Álvaro que no hay que revertir (25/09/2026)
+
+La auditoría de ese día levantó cuatro cosas y él decidió sobre las cuatro. **No las
+vuelvas a marcar como fallo ni las "arregles" por tu cuenta:**
+
+- **El domicilio del aviso legal se queda como está.** La auditoría lo marcó como
+  bloqueante por el art. 10.1.a LSSI (hoy solo consta la localidad, no la calle).
+  Álvaro dijo literalmente «ignóralo, no hay problema en eso». El comentario con el
+  detalle sigue en `aviso-legal/index.html` por si algún día cambia de idea.
+- **El email en dominio propio lo comprará más adelante.** Sigue
+  `ruiperezyasociadoss@gmail.com` en las tres páginas legales. No es un olvido.
+- **El ID del píxel de Meta lo pasa él.** Hasta entonces `metaPixelId: ""` y los
+  anuncios no se pueden medir. Todo lo demás está montado: CSP, cookies, banner y el
+  evento `Contact` antes de la redirección.
+- **Alameda en cuatro páginas está bien**, y en ninguna más. Ver la regla de arriba.
 
 ## Auditoría del 25/09/2026
 
