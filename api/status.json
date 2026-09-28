@@ -1,0 +1,10 @@
+{
+  "estado": "ok",
+  "tipo": "sitio estático",
+  "actualizado": "2026-09-28",
+  "nota": "Esta API son archivos JSON estáticos servidos desde CDN. No hay servidor de aplicaciones detrás, así que si esta respuesta llega, el servicio está disponible. No hay límite de peticiones ni autenticación.",
+  "endpoints": [
+    "https://ruiperezstudio.es/api/servicios.json",
+    "https://ruiperezstudio.es/api/status.json"
+  ]
+}

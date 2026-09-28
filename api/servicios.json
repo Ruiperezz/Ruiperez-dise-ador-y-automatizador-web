@@ -1,0 +1,224 @@
+{
+  "$schema": "https://ruiperezstudio.es/api/openapi.json",
+  "proveedor": {
+    "nombre": "Ruipérez Studio",
+    "titular": "Álvaro Ruipérez",
+    "tipo": "freelance",
+    "url": "https://ruiperezstudio.es",
+    "telefono": "+34642084042",
+    "whatsapp": "https://wa.me/34642084042",
+    "sede": {
+      "localidad": "Cartagena",
+      "region": "Región de Murcia",
+      "pais": "ES"
+    },
+    "zona_de_servicio": [
+      "Región de Murcia",
+      "Alicante",
+      "Almería",
+      "Valencia"
+    ],
+    "idioma": "es"
+  },
+  "moneda": "EUR",
+  "iva_nota": "Todos los precios son sin IVA. Se añade el 21% en factura.",
+  "plazos_nota": "El plazo cuenta desde que el cliente entrega el contenido, no desde la firma.",
+  "precio_hora_fuera_de_contrato_eur_sin_iva": 60,
+  "actualizado": "2026-09-28",
+  "servicios": [
+    {
+      "id": "landing-page",
+      "nombre": "Landing page",
+      "url": "https://ruiperezstudio.es/landing-page/",
+      "descripcion": "Una sola página con un solo objetivo: que el visitante escriba. Pensada para recibir tráfico de anuncios.",
+      "precio": {
+        "modelo": "pago_unico",
+        "desde_eur_sin_iva": 690,
+        "iva_pct": 21,
+        "plazo_entrega_dias": 7
+      }
+    },
+    {
+      "id": "web-corporativa",
+      "nombre": "Web corporativa",
+      "url": "https://ruiperezstudio.es/web-corporativa/",
+      "descripcion": "Web completa con servicios, precios y contacto. Código propio, sin plantillas. SEO local incluido.",
+      "precio": {
+        "modelo": "pago_unico",
+        "desde_eur_sin_iva": 1490,
+        "iva_pct": 21,
+        "plazo_entrega_dias": 7
+      }
+    },
+    {
+      "id": "tienda-online",
+      "nombre": "Tienda online",
+      "url": "https://ruiperezstudio.es/tienda-online/",
+      "descripcion": "Catálogo, carrito y cobro con tarjeta. El pedido llega pagado y con la dirección escrita.",
+      "precio": {
+        "modelo": "pago_unico",
+        "desde_eur_sin_iva": 2490,
+        "iva_pct": 21,
+        "plazo_entrega_dias": 7
+      }
+    },
+    {
+      "id": "aplicaciones-web",
+      "nombre": "Aplicación web de gestión",
+      "url": "https://ruiperezstudio.es/aplicaciones-web/",
+      "descripcion": "Panel de administración y acceso privado por cliente, sobre base de datos propia.",
+      "precio": {
+        "modelo": "pago_unico",
+        "desde_eur_sin_iva": 3900,
+        "iva_pct": 21,
+        "cuota_mensual_eur_sin_iva": 90,
+        "plazo_entrega_dias": 14,
+        "nota": "Los 90€/mes cubren base de datos, alojamiento y soporte. Es coste real, no margen."
+      }
+    },
+    {
+      "id": "automatizacion",
+      "nombre": "Automatización de procesos",
+      "url": "https://ruiperezstudio.es/automatizacion/",
+      "descripcion": "Correos de confirmación, avisos al móvil y paso de datos entre programas, sin intervención manual.",
+      "precio": {
+        "modelo": "pago_unico",
+        "desde_eur_sin_iva": 1200,
+        "iva_pct": 21
+      }
+    },
+    {
+      "id": "chatbot-whatsapp",
+      "nombre": "Chatbot con IA para WhatsApp",
+      "url": "https://ruiperezstudio.es/chatbot-whatsapp/",
+      "descripcion": "Contesta por WhatsApp a cualquier hora, coge reservas y filtra las conversaciones que merecen atención.",
+      "precio": {
+        "modelo": "pago_unico",
+        "desde_eur_sin_iva": 1590,
+        "iva_pct": 21,
+        "cuota_mensual_eur_sin_iva": 120,
+        "nota": "Los 120€/mes son el coste de tenerlo encendido y las llamadas a la API del modelo."
+      }
+    },
+    {
+      "id": "seo-local",
+      "nombre": "SEO local",
+      "url": "https://ruiperezstudio.es/seo-local/",
+      "descripcion": "Trabajo mensual en Google y Google Maps, con informe de posiciones reales.",
+      "precio": {
+        "modelo": "suscripcion_mensual",
+        "desde_eur_sin_iva": 390,
+        "iva_pct": 21,
+        "permanencia": false
+      }
+    },
+    {
+      "id": "email-marketing",
+      "nombre": "Email marketing",
+      "url": "https://ruiperezstudio.es/email-marketing/",
+      "descripcion": "Correos automáticos: bienvenida, seguimiento de compra, recordatorio de cita y carrito abandonado.",
+      "precio": {
+        "modelo": "suscripcion_mensual",
+        "desde_eur_sin_iva": 290,
+        "iva_pct": 21,
+        "permanencia": false
+      }
+    },
+    {
+      "id": "gestion-redes-sociales",
+      "nombre": "Gestión de redes sociales",
+      "url": "https://ruiperezstudio.es/gestion-redes-sociales/",
+      "descripcion": "8 publicaciones al mes, dos en vídeo, más 2 historias y la ficha de Google al día. Una red social.",
+      "precio": {
+        "modelo": "suscripcion_mensual",
+        "desde_eur_sin_iva": 450,
+        "iva_pct": 21,
+        "permanencia": false,
+        "nota": "No incluye contestar comentarios ni mensajes. Se entrega un guion de respuestas."
+      }
+    },
+    {
+      "id": "meta-ads",
+      "nombre": "Gestión de Meta Ads",
+      "url": "https://ruiperezstudio.es/meta-ads/",
+      "descripcion": "Campañas de Facebook e Instagram con límites escritos: hasta 3 campañas, hasta 6 anuncios, revisión semanal e informe mensual.",
+      "precio": {
+        "modelo": "suscripcion_mensual",
+        "desde_eur_sin_iva": 240,
+        "iva_pct": 21,
+        "permanencia": false,
+        "nota": "Para una inversión publicitaria de hasta 1.000€/mes, que paga el cliente directamente a Meta y no está incluida. Por encima de 1.000€/mes, 15% de la inversión."
+      }
+    },
+    {
+      "id": "accesibilidad-web",
+      "nombre": "Auditoría de accesibilidad web",
+      "url": "https://ruiperezstudio.es/accesibilidad-web/",
+      "descripcion": "Auditoría WCAG 2.1 AA según la Ley 11/2023 y la EN 301 549, con los problemas ordenados por gravedad.",
+      "precio": {
+        "modelo": "pago_unico",
+        "desde_eur_sin_iva": 590,
+        "iva_pct": 21,
+        "nota": "Con las correcciones aplicadas, 1.190€. Monitorización mensual, 95€/mes. No se garantiza conformidad: se informa de lo que falla y se arregla."
+      }
+    },
+    {
+      "id": "mantenimiento-web",
+      "nombre": "Mantenimiento web",
+      "url": "https://ruiperezstudio.es/mantenimiento-web/",
+      "descripcion": "Revisiones, copias de seguridad y hasta diez cambios al mes, por WhatsApp.",
+      "precio": {
+        "modelo": "suscripcion_mensual",
+        "desde_eur_sin_iva": 95,
+        "hasta_eur_sin_iva": 190,
+        "iva_pct": 21,
+        "permanencia": false
+      }
+    }
+  ],
+  "packs": [
+    {
+      "id": "capta",
+      "nombre": "Pack Capta",
+      "url": "https://ruiperezstudio.es/#packs",
+      "incluye": [
+        "landing-page",
+        "meta-ads (3 meses)"
+      ],
+      "precio_eur_sin_iva": 1190,
+      "precio_suelto_eur_sin_iva": 1410,
+      "ahorro_eur": 220,
+      "iva_pct": 21,
+      "nota": "A partir del cuarto mes, 240€/mes si se continúa con los anuncios. La inversión publicitaria va aparte."
+    },
+    {
+      "id": "vende-online",
+      "nombre": "Pack Vende online",
+      "url": "https://ruiperezstudio.es/#packs",
+      "incluye": [
+        "tienda-online",
+        "automatizacion"
+      ],
+      "precio_eur_sin_iva": 2990,
+      "precio_suelto_eur_sin_iva": 3690,
+      "ahorro_eur": 700,
+      "iva_pct": 21,
+      "nota": "Sin cuota obligatoria. El mantenimiento es opcional, desde 95€/mes."
+    },
+    {
+      "id": "atiende-solo",
+      "nombre": "Pack Atiende solo",
+      "url": "https://ruiperezstudio.es/#packs",
+      "incluye": [
+        "web-corporativa",
+        "automatizacion",
+        "chatbot-whatsapp"
+      ],
+      "precio_eur_sin_iva": 3490,
+      "precio_suelto_eur_sin_iva": 4280,
+      "ahorro_eur": 790,
+      "iva_pct": 21,
+      "nota": "El chatbot lleva 120€/mes desde el primer mes."
+    }
+  ]
+}

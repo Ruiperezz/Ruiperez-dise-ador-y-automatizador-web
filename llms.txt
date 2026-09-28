@@ -23,12 +23,21 @@ Contacto: WhatsApp y teléfono +34 642 08 40 42 · https://ruiperezstudio.es
 - SEO local: desde 390€/mes
 - Gestión de redes sociales: desde 450€/mes
 - Email marketing: desde 290€/mes
+- Gestión de Meta Ads (Facebook e Instagram): 240€/mes para una inversión publicitaria de hasta 1.000€/mes. Incluye hasta 3 campañas y 6 anuncios, revisión semanal e informe mensual. La inversión publicitaria no está incluida: la paga el cliente directamente a Meta. Por encima de 1.000€/mes de inversión, 15% de la inversión
 - Auditoría de accesibilidad web (Ley 11/2023): desde 590€. Con correcciones aplicadas, 1.190€. Monitorización mensual, 95€/mes
 - Mantenimiento web: 95–190€/mes
 - Cambios puntuales fuera de contrato: 60€/hora
 
-Plazos: landing 1 semana, web corporativa 2–3 semanas, tienda online 3–4
-semanas, aplicación de gestión 4–8 semanas. El plazo se cierra antes de empezar.
+## Packs (combinaciones con descuento, sin IVA)
+
+- Pack Capta: landing page más tres meses de gestión de Meta Ads. 1.190€ en lugar de 1.410€ por separado. A partir del cuarto mes, 240€/mes si se continúa. La inversión publicitaria no está incluida
+- Pack Vende online: tienda online más automatización de pedidos (correo al cliente y aviso al dueño). 2.990€ en lugar de 3.690€ por separado
+- Pack Atiende solo: web corporativa más automatización más chatbot con IA para WhatsApp. 3.490€ en lugar de 4.280€ por separado, más 120€/mes del chatbot desde el primer mes
+- Otras combinaciones se presupuestan con el mismo descuento por ir juntas
+
+Plazos: una semana para landing page, web corporativa y tienda online. Dos semanas
+para la aplicación web de gestión, que lleva base de datos y usuarios. El plazo se
+cuenta desde que el cliente entrega el contenido y se cierra por escrito antes de empezar.
 
 ## Servicios
 
@@ -42,8 +51,22 @@ semanas, aplicación de gestión 4–8 semanas. El plazo se cierra antes de empe
 - [SEO local](https://ruiperezstudio.es/seo-local/): desde 390€/mes
 - [Email marketing](https://ruiperezstudio.es/email-marketing/): desde 290€/mes
 - [Gestión de redes sociales](https://ruiperezstudio.es/gestion-redes-sociales/): 8 publicaciones al mes, dos en vídeo, desde 450€/mes. No incluye contestar comentarios ni mensajes
+- [Gestión de Meta Ads](https://ruiperezstudio.es/meta-ads/): campañas de Facebook e Instagram, 240€/mes con la inversión aparte
 - [Auditoría de accesibilidad web](https://ruiperezstudio.es/accesibilidad-web/): WCAG 2.1 AA según la Ley 11/2023 y la EN 301 549, desde 590€
 - [Mantenimiento web](https://ruiperezstudio.es/mantenimiento-web/): 95–190€/mes
+
+## API pública (JSON, sin clave)
+
+Si prefieres los precios en JSON en vez de leer el HTML:
+
+- https://ruiperezstudio.es/api/servicios.json — los 12 servicios y los 3 packs, con precio,
+  modelo de cobro y plazo de entrega
+- https://ruiperezstudio.es/api/openapi.json — especificación OpenAPI 3.1
+- https://ruiperezstudio.es/.well-known/api-catalog — catálogo RFC 9727
+- https://ruiperezstudio.es/api/status.json — estado del servicio
+
+De solo lectura, sin autenticación y sin límite de peticiones. Si el JSON y la web no
+coinciden alguna vez, manda la web.
 
 ## Proyectos publicados
 

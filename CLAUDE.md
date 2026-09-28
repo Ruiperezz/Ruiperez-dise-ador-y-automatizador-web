@@ -23,18 +23,18 @@ HTML + CSS + JavaScript **estático puro**. Sin `package.json`, sin npm, sin bun
 
 ## Estructura
 
-20 páginas, una carpeta por URL:
+21 páginas, una carpeta por URL:
 
 | Grupo | Rutas |
 |---|---|
 | Home | `/` |
-| Servicios (11) | `/web-corporativa/` `/landing-page/` `/tienda-online/` `/aplicaciones-web/` `/automatizacion/` `/chatbot-whatsapp/` `/seo-local/` `/email-marketing/` `/mantenimiento-web/` `/gestion-redes-sociales/` `/accesibilidad-web/` |
+| Servicios (12) | `/web-corporativa/` `/landing-page/` `/tienda-online/` `/aplicaciones-web/` `/automatizacion/` `/chatbot-whatsapp/` `/seo-local/` `/email-marketing/` `/mantenimiento-web/` `/gestion-redes-sociales/` `/accesibilidad-web/` `/meta-ads/` |
 | General (1) | `/diseno-web/` |
 | Legales (3) | `/aviso-legal/` `/privacidad/` `/cookies/` |
 | Estudio (2) | `/sobre-mi/` · `/casos/` |
 | Tráfico de pago (2) | `/lp/hosteleria/` `/lp/comercio-local/` — noindex, sin menú, un solo CTA. **Nunca mandar tráfico de pago a la home.** |
 
-Otros archivos: `sitemap.xml` (18 URLs — las noindex quedan fuera), `robots.txt`, `fonts/` (3 WOFF2), `vercel.json` (CSP, HSTS, X-Frame-Options, cache de `/img/`), `favicon.svg`, `apple-touch-icon.png`, `img/`.
+Otros archivos: `sitemap.xml` (19 URLs — las noindex quedan fuera), `robots.txt`, `fonts/` (3 WOFF2), `vercel.json` (CSP, HSTS, X-Frame-Options, cache de `/img/`), `favicon.svg`, `apple-touch-icon.png`, `img/`.
 
 ## Precios oficiales
 
@@ -55,8 +55,55 @@ Otros archivos: `sitemap.xml` (18 URLs — las noindex quedan fuera), `robots.tx
 | Gestión de redes sociales | desde 450€/mes · **8 publicaciones, 2 en vídeo, 1 red** |
 | Auditoría de accesibilidad | desde 590€ · con correcciones 1.190€ · monitorización 95€/mes |
 | Mantenimiento web | 95–190€/mes |
+| **Gestión de Meta Ads** | **240€/mes** hasta 1.000€/mes de inversión · por encima, 15% de la inversión |
 
 Cambios puntuales fuera de contrato: 60€/hora.
+
+**Plazos de entrega (28/09/2026):**
+
+| Servicio | Plazo |
+|---|---|
+| Landing page · web corporativa · tienda online | **1 semana** |
+| **Aplicación web de gestión** | **2 semanas** — lleva base de datos y usuarios |
+
+Antes iban de 5-7 días una landing a 4-8 semanas una aplicación. Se bajaron a una
+semana el 25/09 y la aplicación subió a dos el 28/09, a petición de Álvaro.
+
+**Se escribe siempre «desde que me pasas el contenido»**, nunca «desde que firmamos».
+El plazo solo corre cuando el cliente ha entregado, y eso es lo único que evita la
+discusión de quién retrasó qué.
+
+**Sobre las 50-70 horas de la tienda de Alameda:** esa cifra NO es la referencia de
+lo que tarda una tienda. Álvaro explicó el 28/09/2026 que fue **su primera web y su
+primera tienda online a la vez**, así que lleva dentro toda la curva de aprendizaje.
+Tomarla como ritmo normal era un error mío. **No la uses para estimar plazos.**
+
+**Packs (25/09/2026).** Tres combinaciones, en la sección `#packs` de la home y
+enlazadas desde el bloque de precio de las seis páginas implicadas:
+
+| Pack | Lleva | Suelto | Pack |
+|---|---|---|---|
+| **Capta** | Landing page + 3 meses de Meta Ads | 1.410€ | **1.190€** |
+| **Vende online** | Tienda online + automatización de pedidos | 3.690€ | **2.990€** |
+| **Atiende solo** | Web corporativa + automatización + chatbot IA | 4.280€ | **3.490€** |
+
+Descuento del 16–19%. **Tres, no más:** con cuatro o cinco el cliente no elige, se va.
+**La escalera 1.190 / 2.990 / 3.490 es la respuesta a «¿pymes o negocios pequeños?»:**
+el pack de entrada abre puerta al pequeño y el de arriba a la mediana, sin tener que
+mover la tabla de precios por cuarta vez. Si cambias un precio de la tabla, recalcula
+las tres columnas: el «suelto» tiene que cuadrar con la suma real o el descuento es mentira.
+
+**Meta Ads, servicio nuevo del 25/09/2026.** El mercado español cobra el 15–20% de la
+inversión con un mínimo de 300–500€/mes, y un freelance especializado entre 400 y
+1.200€/mes. Se entra a 240€/mes, por debajo del suelo.
+
+⚠️ **Álvaro está aprendiendo Meta Ads mientras lo vende.** Aquí el dinero del cliente se
+quema directo, no como en una web que solo queda sosa. **El tope de 1.000€ de inversión
+no es solo comercial: limita el daño mientras coge oficio.** No lo subas hasta que haya
+campañas con resultados. Los límites (3 campañas, 6 anuncios, revisión semanal) van
+escritos en la página y en el JSON-LD: es la lección de la gestión de redes, que se
+comió el margen justo por no tenerlos. La FAQ dice abiertamente que este servicio es
+más nuevo que los demás y que no hay casos publicados. **No le inventes un caso real.**
 
 **Gestión de redes, acotada el 23/09/2026.** Prometía 12 publicaciones, historias semanales **y contestar comentarios y mensajes**: unas 17–22 h/mes a 450€, o sea 13–17€/hora, y encima de guardia. Ahora son **8 publicaciones (2 en vídeo), 2 historias, 1 red social** y **no se contestan mensajes** — en su lugar se entrega un guion de respuestas, que es trabajo de una vez y no una correa. **Lo que hacía inviable el servicio no era el volumen, era la mensajería:** las publicaciones se hacen del tirón un día, los mensajes interrumpen todos los días. Si alguien vuelve a meter «contesto los mensajes» en el copy, el servicio vuelve a perder dinero.
 
@@ -137,7 +184,14 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 - **«Trabajo solo» está prohibido desde el 25/09/2026.** Tranquiliza a un comercio y asusta a una empresa de veinte personas, que es el público nuevo. **Pero NO se sustituye por empleados inventados:** se dice lo que es cierto —«hablas directamente con quien programa, sin comerciales ni juniors»— y se responde la objeción de fondo en `/sobre-mi/`: el código es tuyo, va documentado y cualquier programador puede continuarlo. Esa respuesta vale más que una plantilla ficticia que se cae en la primera reunión.
 - **Las redes las lleva otra persona** (un socio de Álvaro, especializado en contenido). Está dicho en `/sobre-mi/` sin nombre ni cifras. **Pendiente de Álvaro: su nombre y si se pueden citar sus cuentas.** Ojo: si esas cuentas son suyas y no de clientes, hay que decirlo así — «ha hecho crecer sus propias cuentas», no «gestionamos cuentas de 300.000 seguidores».
 - Toda cifra de resultado va atribuida: «según datos del propio cliente». Marco: Ley 3/1991 de Competencia Desleal, art. 5 — la carga de la prueba es de quien lo anuncia.
-- Un mismo dato de resultado aparece **como máximo tres veces** en todo el sitio.
+- Un mismo dato de resultado aparece **como máximo tres veces** en todo el sitio,
+  **salvo el 4,9★ con 333 reseñas de Alameda, que Álvaro fijó en CUATRO páginas
+  indexadas el 25/09/2026** y no debe salir en más: la home, `/casos/`,
+  `/tienda-online/` y `/seo-local/`. Se retiró de `/diseno-web/` y `/lp/hosteleria/`
+  **conservando el caso**, que sigue contado y enlazado: lo que se quita es la cifra
+  repetida, no la prueba. La quinta es `/lp/comercio-local/`, que es `noindex` y cuyo
+  hero entero ES el antes y después de Alameda, así que nunca se ve junto a las otras.
+  **Si añades una página con ese dato, quítalo de otra.**
 - Prohibido en el copy: `soluciones`, `a medida` sin ejemplo concreto al lado, `profesional`, `calidad`, `tu aliado digital`, `llevamos tu negocio al siguiente nivel`, `equipo multidisciplinar`.
 - **Los titulares atacan un problema concreto, no describen el servicio.** «La web que tu negocio merece» no dice nada; «En tres segundos deciden si te llaman o cierran» sí. Pero la consecuencia tiene que ser **cierta y específica**: nada de meter miedo con multas o plazos falsos — eso es justo lo que `/accesibilidad-web/` critica, y contradecirse ahí sale más caro que un titular flojo.
 - Cifras absolutas antes que porcentajes: «de 4 a 11 pedidos por semana» convence más que «+175%».
@@ -145,6 +199,7 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 ## Reglas técnicas
 
 - Las preguntas y respuestas del `FAQPage` en JSON-LD **deben coincidir literalmente** con el FAQ visible. Si cambias una, cambia la otra en el mismo commit.
+- **Los precios del JSON-LD también se cambian.** El 25/09/2026 los doce estaban en los valores de antes de las dos subidas: Google enseñaba «890€» en resultados enriquecidos y la página decía 1.490€. **No se ve en la web, así que nadie lo nota:** cada vez que toques la tabla de precios, comprueba `"price"` en las doce páginas.
 - La CSP de `vercel.json` solo permite los dominios de Meta, TikTok y Google Analytics. `font-src` y `style-src` están en `'self'`. Cualquier otro recurso externo **se bloquea sin aviso en consola**.
 - **Las tipografías se sirven desde `/fonts/`, no desde Google.** Son tres WOFF2 del subconjunto `latin` (54 KB): Instrument Serif normal e italic, y Karla variable 400–700. Traerlas de Google bloqueaba el renderizado ~1,8s y comunicaba la IP del visitante a Google. Si añades un peso o un idioma, descarga el archivo a `/fonts/` — no vuelvas a enlazar `fonts.googleapis.com`.
 - `←`, `→` y `★` no están en ningún subconjunto de Google: usan la fuente del sistema. Es así a propósito.
@@ -156,7 +211,7 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 - **GA4 activo:** `G-D61B7R46V5`, en `RS_CONFIG` de `js/consent.js`. Meta y TikTok siguen con el ID vacío, así que no cargan. Si añades uno, actualiza también la tabla de `/cookies/` en el mismo commit.
 - Contraste WCAG AA, foco visible, `alt` en todas las imágenes, objetivos táctiles de 44px o más.
 - `--terra` (#B5522F) da 4,47:1 sobre el fondo crema: **no vale para texto pequeño**. Para texto usa `--terra-txt` (#A84A28, 5,12:1). Para rellenos, `--terra`.
-- El pie tiene que ser idéntico en las 15 páginas que lo llevan. Si añades una página, añádela al pie de todas.
+- El pie tiene que ser idéntico en las 16 páginas que lo llevan (las tres legales llevan un pie reducido, sin lista de servicios). Si añades una página, añádela al pie de todas.
 - **En móvil el mockup del hero va ANTES del texto** (`.scene{order:-1}`). Su portfolio vende con fotografía real; el escaparate no puede esconder su única prueba tras 800px de texto, que es justo donde aterriza el tráfico de pago. Con ese orden, el elemento LCP en móvil pasa a ser la imagen y el `fetchpriority="high"` por fin sirve para algo. Medido: mismo LCP que con el texto delante.
 - Las webs de los clientes se enlazan de verdad, con `rel="noopener noreferrer nofollow"`: floristeriaalameda.com, zenconfort.es, tuktukcartagena.com y casa-del-sushi.vercel.app. La página promete «puedes abrirlas y comprobarlo», así que tienen que ser enlaces, no texto.
 - **Capturas reales en `/img/`:** `alameda-catalogo`, `alameda-tienda`, `alameda-producto` y `alameda-resenas` (tienda online de Alameda); `tuktuk-home`, `tuktuk-tours`, `tuktuk-reserva` y `tuktuk-galeria` (TukTuk Cartagena); `alameda-carrito` (el carrito con Stripe); `buccaro-alicante` y `buccaro-catalogo` (propuesta de landing). 900px de ancho y WebP a calidad 82, como el resto. **No pongas mockups inventados donde haya una captura real**: los mockups en CSS con productos y precios de mentira se han ido sustituyendo por capturas de webs publicadas.
@@ -164,22 +219,104 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 - **IndexNow activo (23/09/2026).** La clave es `a8577673437441do892Fddobbmi810doF4mi2` y vive en un archivo de ese mismo nombre en la raíz. **No lo borres ni lo renombres:** si desaparece, Bing deja de aceptar los avisos y no lo dice. No es un secreto — tiene que ser público para que funcione. Cada vez que cambien URLs importantes, avisa con un POST a `api.indexnow.org/indexnow` con el host, la clave y la lista.
 - **Bing Webmaster Tools** está dado de alta con `ruiperezstudio.es`. Importa porque **ChatGPT busca en Bing**: sin estar bien indexado ahí, ChatGPT no te cita.
 - **`llms.txt` en la raíz** resume el negocio para los modelos. Si cambias precios o proyectos, cámbialo también ahí: no se sincroniza solo.
+- **Content Signals en `robots.txt` (28/09/2026):** `search=yes, ai-input=yes, ai-train=yes`.
+  **Los tres en SÍ a propósito.** El objetivo de esta web es que ChatGPT, Gemini y
+  Perplexity la citen: negar el entrenamiento sería dispararse en el pie. El ejemplo que
+  circula en las auditorías de «agent readiness» trae `ai-train=no`. **No lo copies.**
+- **API pública en JSON (28/09/2026).** Álvaro pidió el `api-catalog` de la RFC 9727 y
+  se hizo bien: en vez de publicar un catálogo que apunta a una API inexistente, **se
+  creó la API.** Son cuatro archivos estáticos, sin servidor detrás:
+
+  | Ruta | Qué es |
+  |---|---|
+  | `api/servicios.json` | Los 12 servicios y 3 packs con precio, modelo de cobro y plazo |
+  | `api/openapi.json` | Especificación OpenAPI 3.1 de los dos endpoints |
+  | `api/status.json` | Disponibilidad. Al ser estático, si responde, está vivo |
+  | `.well-known/api-catalog` | Catálogo RFC 9727 en `application/linkset+json` |
+
+  **`scripts/verifica-api.py` cruza los precios del JSON contra el precio visible de
+  cada página y falla si divergen.** Ejecútalo siempre que toques la tabla de precios:
+  una API con precios distintos a la web es peor que no tener API. La cabecera `Link`
+  de `vercel.json` anuncia siete relaciones: `api-catalog`, `service-desc`, `service-doc`,
+  `describedby` (a `llms.txt`), `privacy-policy`, `terms-of-service` y `author`.
+  **Las siete están en el registro de IANA y las siete apuntan a algo que existe.**
+  Ojo: `rel="sitemap"` se probó y se quitó — es de uso común pero **NO está registrado**,
+  y la RFC 8288 exige que una relación no registrada sea una URI, no un token suelto.
+  El sitemap ya se declara en `robots.txt`, que es el mecanismo canónico. El `api-catalog` no tiene extensión, así que su `Content-Type` va a mano en
+  `vercel.json`: **si lo borras, se sirve como texto y deja de validar.**
+
+- **Lo que NO se publica, y por qué.** El mismo informe de «agent readiness» pedía
+  `openid-configuration`, `oauth-authorization-server`, `oauth-protected-resource`,
+  `auth.md`, una tarjeta de servidor MCP, un índice de `agent-skills`, DNS-AID, WebMCP
+  y un manifiesto ARD. **Se descartaron los nueve:** esta web no tiene autenticación,
+  ni formularios, ni servidor MCP, ni herramientas que exponer. **Publicar un descriptor
+  de algo que no existe no es estar preparado para agentes, es ruido** — y puede
+  confundir justo a los rastreadores que interesan. Si algún día hay área privada,
+  entonces tocará revisarlo.
 - **La ficha de Google se gestiona por Windsor.ai**, conector `google_my_business`. Requiere que Álvaro tenga activado *Settings → API Access → Enable write actions*. Desde ahí se puede cambiar descripción, categorías, servicios, horarios, atributos, fotos, publicaciones y respuestas a reseñas. **Hecho el 21/09/2026:** descripción reescrita en primera persona del singular, los 9 servicios con precio y descripción, y las 7 reseñas respondidas una a una. **Ficha actualizada al sureste el 23/09/2026:** descripción reescrita a «Región de Murcia, Alicante y Almería» (límite duro de **750 caracteres**, la primera versión se pasó y dio error), 12 servicios con precio incluyendo accesibilidad y aplicación de gestión, y **las 4 primeras publicaciones** (accesibilidad, Alameda, TukTuk y precios publicados). **Las imágenes de las publicaciones van en `/img/gbp/` en JPG o PNG**: Google no acepta WebP y todas las capturas del sitio lo son. **Cadencia a partir de ahora: una publicación por semana.** Las cuatro se publicaron de golpe porque la API no permite programarlas.
+**Ficha actualizada el 25/09/2026:** los 11 servicios tenían los precios de antes de
+la subida (390€, 690€, 450€, 1.290€, 1.990€, 240€, 890€, 690€, 290€, 160€, 75€), todos
+obsoletos. Ahora hay **16 servicios** con la tabla al día, incluidos Meta Ads y los tres
+packs. Las **7 publicaciones** están reescritas: las cinco que quedaban llevaban precios
+viejos o estaban en plural («diseñamos», «Te atendemos», «integramos»), y se ha añadido
+una octava con los packs. **Pendiente: añadir Alicante, Almería y Valencia al área de
+servicio** — hace falta el `place_id` de Google Maps de cada una.
 **Pendiente de Álvaro: la fecha de apertura del negocio**, que está vacía. Dice «+2 años» pero no tengo el mes ni el año exactos y no me los invento.
 **Categorías (21/09/2026):** principal `gcid:website_designer`; secundarias `gcid:internet_marketing_service`, `gcid:marketing_agency` y `gcid:software_company`. Un `update_location` con teléfono o web da 400: mándalos solo si de verdad cambian. **La dirección no se toca:** cambiarla dispara la re-verificación de Google y puede tumbar la ficha. Search Console (`searchconsole`, propiedades `ruiperezstudio.es` y `zenconfort.es`) es **solo lectura**.
 - **La URL de la barra del navegador (`.brw-url`) tiene que ser la de la captura que hay debajo.** En `/web-corporativa/` ponía `floristeriaalameda.com` sobre una captura de Casa del Sushi: si el visitante abre esa URL y ve otra cosa, la prueba se vuelve en contra. Corregido el 23/09/2026.
-- **Accesibilidad: las 20 páginas pasan axe-core 4.10.2 con CERO violaciones WCAG 2.1 A y AA** (23/09/2026). **Esto es ahora un argumento de venta**: `/accesibilidad-web/` lo dice por escrito e invita a comprobarlo. Si rompes una regla, dejas de poder venderlo. Comprueba axe antes de tocar una página, no después.
-- **Enlace de salto (`a.skip`) en las 20 páginas**, apuntando a `#main-content`. Si creas una página nueva, ponlo: sin él, la web que vende accesibilidad tendría una página que no la cumple.
+- **Accesibilidad: las 21 páginas pasan axe-core 4.10.2 con CERO violaciones WCAG 2.1 A y AA** (25/09/2026). **Esto es ahora un argumento de venta**: `/accesibilidad-web/` lo dice por escrito e invita a comprobarlo. Si rompes una regla, dejas de poder venderlo. Comprueba axe antes de tocar una página, no después.
+- **Enlace de salto (`a.skip`) en las 21 páginas**, apuntando a `#main-content`. Si creas una página nueva, ponlo: sin él, la web que vende accesibilidad tendría una página que no la cumple.
 - **El servicio de accesibilidad NO se apoya en auditorías previas a clientes**, porque no las hay. Lo que hizo Álvaro a Alameda y TukTuk fue una auditoría digital de negocio, que es otra cosa. La única prueba que se usa es la propia web medida con axe. **No insinúes experiencia en accesibilidad que no existe.**
 - **Precios de accesibilidad (23/09/2026):** el mercado español cobra 800–2.500€ por una auditoría básica y 400–1.590€/mes de monitorización. Álvaro sale por debajo a propósito para darse a conocer, y la FAQ lo dice abiertamente. **Están pensados para subir.**
 - **Nunca prometas conformidad.** Ni «cumplimiento garantizado», ni «100% conforme», ni «sin riesgo de multa». La FAQ responde que no se garantiza y por qué.
 - Referencia medida el 30/08/2026 con Lighthouse móvil: rendimiento 98, accesibilidad 100, buenas prácticas 100, SEO 100. LCP 1,9s · CLS 0,04.
+- ⚠️ **Ese 98 está sin comprobar desde el 30/08 y la home ha doblado de tamaño.** El
+  27/08 pesaba 48 KB al quitar GSAP; el 25/09 pesa **105 KB** (36 KB de CSS en línea,
+  13 KB de JS, 10 KB de SVG en línea), y el salto grande no fue el de los packs sino
+  el acumulado de las tarjetas de servicio, la comparativa y los testimonios.
+  **Hay que volver a medir Lighthouse antes de meter dinero en anuncios**, porque el
+  tráfico de pago llega en móvil y el LCP es lo que decide si se queda. Si hay que
+  recortar, el CSS en línea de la home es donde está la grasa: mucho se repite en
+  las 21 páginas y no se cachea entre ellas.
 
 ## Skills de este proyecto
 
 - **`auditoria-web-preads`** (`.claude/skills/`) — propia. Auditoría de web de negocio local antes de invertir en publicidad. Define el orden de trabajo: bloqueantes legales → medición → coherencia de oferta → encaje mensaje/tráfico → copy → estética.
 - **`refactoring-ui`** y **`web-typography`** (`.agents/skills/`, de `wondelai/skills`) — jerarquía visual, espaciado, color, tipografía. Sustituyen a `ui-ux-pro-max`, que no existe.
 - `web-design-guidelines` y `vercel-optimize` — layout, accesibilidad y rendimiento.
+
+## Decisiones de Álvaro que no hay que revertir (25/09/2026)
+
+La auditoría de ese día levantó cuatro cosas y él decidió sobre las cuatro. **No las
+vuelvas a marcar como fallo ni las "arregles" por tu cuenta:**
+
+- **El domicilio del aviso legal se queda como está.** La auditoría lo marcó como
+  bloqueante por el art. 10.1.a LSSI (hoy solo consta la localidad, no la calle).
+  Álvaro dijo literalmente «ignóralo, no hay problema en eso». El comentario con el
+  detalle sigue en `aviso-legal/index.html` por si algún día cambia de idea.
+- **El email en dominio propio lo comprará más adelante.** Sigue
+  `ruiperezyasociadoss@gmail.com` en las tres páginas legales. No es un olvido.
+- **El ID del píxel de Meta lo pasa él.** Hasta entonces `metaPixelId: ""` y los
+  anuncios no se pueden medir. Todo lo demás está montado: CSP, cookies, banner y el
+  evento `Contact` antes de la redirección.
+- **Alameda en cuatro páginas está bien**, y en ninguna más. Ver la regla de arriba.
+
+## Auditoría del 25/09/2026
+
+`AUDITORIA-2026-09-25.md` es la auditoría pre-campaña completa hecha con la skill
+`auditoria-web-preads`, con verificación en producción y lectura de nueve competidores
+reales del sureste. **Léela antes de tocar precios o copy de venta.** Lo que cambia
+respecto a lo que este archivo daba por bueno:
+
+- **«Publico mis precios» ya NO es diferencial.** Seis de nueve competidores del sureste
+  publican precio. e-creativos (Murcia) coincide en el número exacto de entrada: 690€.
+- **«Entrego paneles y reservas» está parcialmente reclamado** por Dvesign, Ridaly y
+  Grita Internet, aunque con plugins genéricos (Amelia, WooCommerce) sobre WordPress.
+  **La palabra «panel» ya no vende; la captura del panel sí.**
+- **La franja peligrosa es Dvesign (Cartagena):** tienda a 977€ contra 2.490€, «empieza
+  a vender en 3 días» y reservas con Amelia. Mismo mercado, mitad de precio.
+- **Lo único que sigue libre: ningún competidor usa un titular que ataque un problema.**
+  Los nueve H1 leídos son «servicio + ciudad» o un precio desnudo.
 
 ## Mantenimiento recurrente
 

@@ -1,0 +1,38 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://ruiperezstudio.es/api/servicios.json",
+      "service-desc": [
+        {
+          "href": "https://ruiperezstudio.es/api/openapi.json",
+          "type": "application/openapi+json",
+          "title": "Especificación OpenAPI 3.1"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://ruiperezstudio.es/diseno-web/",
+          "type": "text/html",
+          "title": "Servicios y precios, en lenguaje humano",
+          "hreflang": [
+            "es"
+          ]
+        }
+      ],
+      "service-meta": [
+        {
+          "href": "https://ruiperezstudio.es/llms.txt",
+          "type": "text/plain",
+          "title": "Resumen del negocio para modelos de lenguaje"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://ruiperezstudio.es/api/status.json",
+          "type": "application/json",
+          "title": "Estado del servicio"
+        }
+      ]
+    }
+  ]
+}

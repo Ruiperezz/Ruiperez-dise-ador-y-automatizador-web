@@ -1,6 +1,12 @@
 # ruiperezstudio.es
 
 User-agent: *
+# Content Signals (contentsignals.org). Declaran para qué se puede usar este
+# contenido. Van en SÍ los tres a propósito: el objetivo de esta web es que
+# ChatGPT, Gemini y Perplexity la citen, así que negar el entrenamiento sería
+# dispararse en el pie. El ejemplo que circula por ahí trae "ai-train=no":
+# NO lo copies aquí.
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # Rastreadores de IA, permitidos de forma explícita.
@@ -50,5 +56,9 @@ Allow: /
 # Meta · Llama
 User-agent: meta-externalagent
 Allow: /
+
+# API pública en JSON, de solo lectura y sin clave. Rastreable a propósito:
+# es para que un agente lea los precios sin interpretar el HTML.
+# /api/servicios.json · /api/openapi.json · /.well-known/api-catalog
 
 Sitemap: https://ruiperezstudio.es/sitemap.xml
