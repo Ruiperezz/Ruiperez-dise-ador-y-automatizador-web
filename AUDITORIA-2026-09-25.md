@@ -66,7 +66,7 @@ independiente del canal. Es la diferencia entre optimizar la campaña y adivinar
 
 | Fallo | Detalle | Severidad |
 |---|---|---|
-| **Email en Gmail** *(lo comprará más adelante, decisión suya)* | `ruiperezyasociadoss@gmail.com` en las tres páginas legales y como vía de ejercicio de derechos RGPD **(Seguro)**. Una mediana que va a firmar 3.900€ lo lee antes de firmar. `hola@ruiperezstudio.es` es trabajo de una tarde | GRAVE (posicionamiento) |
+| ~~**Email en Gmail**~~ *(28/09: cambiado a `ruiperezstudio.info@gmail.com`, que al menos lleva la marca; el dominio propio queda para más adelante)* | `ruiperezyasociadoss@gmail.com` en las tres páginas legales y como vía de ejercicio de derechos RGPD **(Seguro)**. Una mediana que va a firmar 3.900€ lo lee antes de firmar. `hola@ruiperezstudio.es` es trabajo de una tarde | GRAVE (posicionamiento) |
 | **Las landings de pago no encajan con la estrategia** | `/lp/hosteleria/` y `/lp/comercio-local/` apuntan a restaurantes y tiendas de barrio. Si los anuncios van a medianas, falta una tercera | GRAVE |
 | **El 4,9★ de Alameda sale en 7 páginas** | La regla propia dice máximo 3. Está atribuido en todas, así que no es deshonesto, pero repetirlo deja claro que solo hay un caso fuerte | MEDIO |
 | ⚠️ **`CLAUDE.md` se contradice consigo mismo** | Su tabla «qué caso va en qué página» asigna Alameda a **4** páginas, y tres líneas más arriba la regla dice **máximo 3 veces**. Hay que decidir cuál gana | MEDIO |
