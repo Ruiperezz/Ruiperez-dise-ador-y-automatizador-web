@@ -64,7 +64,23 @@ ganancia aquí es que un validador estricto vea el dato como autenticado. Para u
 escaparate, mal cambio. Si algún día se activa, hazlo **otro día distinto** que este
 registro, para saber qué rompió qué.
 
-## Si IONOS no lo ofrece
+## COMPROBADO EL 28/09/2026: IONOS NO LO OFRECE
+
+Álvaro entró en `my.ionos.es/choose-dns-record-type/ruiperezstudio.es` y la lista de
+tipos disponibles es: **A, AAAA, CAA, CNAME, MX, NS, SRV, IONOS SPF (TXT), SPF (TXT),
+DMARC (TXT) y TXT.** No hay SVCB ni HTTPS. Alfabéticamente SVCB iría detrás de SRV, y
+no está.
+
+Los docs de IONOS que listan SVCB son de **IONOS Cloud DNS**, que es otro producto.
+`ruiperezstudio.es` usa los nameservers del panel de dominios (`ns*.ui-dns.*`).
+
+**Decisión: se deja sin hacer.** El índice `.well-known/agents.json` está publicado y
+es lo que aporta algo. El registro DNS habría exigido mover el DNS del dominio a otro
+proveedor, y **eso no se hace por un borrador que caduca en noviembre de 2026.**
+
+**No vuelvas a mandar a Álvaro al panel de IONOS a buscar SVCB: no está.**
+
+## Si algún día cambia el proveedor de DNS
 
 El tipo SVCB está documentado en *IONOS Cloud DNS*, pero `ruiperezstudio.es` usa los
 nameservers del panel de dominios normal (`ns*.ui-dns.*`), que es otro producto y puede

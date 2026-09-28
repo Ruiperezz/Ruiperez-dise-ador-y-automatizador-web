@@ -251,8 +251,12 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
   **Declara `"agents": []` porque no hay agentes**: ni A2A ni servidor MCP. Lo que lista
   es la API de solo lectura. Un índice que dice la verdad le ahorra al consumidor sondear
   el dominio; inventarse un agente para rellenarlo sería justo lo contrario.
-  **El registro DNS SVCB queda pendiente de Álvaro** y está escrito entero, con los
-  parámetros del borrador y el `cap-sha256` calculado, en `docs/dns-aid.md`.
+  **El registro DNS SVCB NO se hace: comprobado el 28/09/2026 que el panel de dominios
+  de IONOS no ofrece ese tipo.** Su lista es A, AAAA, CAA, CNAME, MX, NS, SRV y las de
+  TXT. Los docs de IONOS que sí lo listan son de *IONOS Cloud DNS*, otro producto.
+  Habría que mover el DNS del dominio entero, y eso no se hace por un borrador que
+  caduca el 28/11/2026. Queda escrito en `docs/dns-aid.md` por si algún día cambia el
+  proveedor. **No mandes a Álvaro a buscar SVCB en IONOS: no está.**
   ⚠️ **DNSSEC no hace falta:** el borrador dice «SHOULD», no «MUST». No lo actives por
   esto — si la firma y el DS se desincronizan, el dominio deja de resolver y se cae la web
   y el correo. Si algún día se activa, otro día distinto que el registro SVCB.
