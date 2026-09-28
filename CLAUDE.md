@@ -59,18 +59,24 @@ Otros archivos: `sitemap.xml` (19 URLs — las noindex quedan fuera), `robots.tx
 
 Cambios puntuales fuera de contrato: 60€/hora.
 
-**Plazo de entrega: UNA SEMANA para todo (25/09/2026).** Antes iba de 5-7 días una
-landing a 4-8 semanas una aplicación de gestión. Decisión de Álvaro: dice tener
-experiencia de sobra para cualquier servicio en ese tiempo.
+**Plazos de entrega (28/09/2026):**
+
+| Servicio | Plazo |
+|---|---|
+| Landing page · web corporativa · tienda online | **1 semana** |
+| **Aplicación web de gestión** | **2 semanas** — lleva base de datos y usuarios |
+
+Antes iban de 5-7 días una landing a 4-8 semanas una aplicación. Se bajaron a una
+semana el 25/09 y la aplicación subió a dos el 28/09, a petición de Álvaro.
 
 **Se escribe siempre «desde que me pasas el contenido»**, nunca «desde que firmamos».
 El plazo solo corre cuando el cliente ha entregado, y eso es lo único que evita la
 discusión de quién retrasó qué.
 
-⚠️ **Aviso escrito el mismo día:** la tienda de Alameda fueron 50-70 horas, que en
-siete días son 10-14 horas diarias sin parar. La aplicación de gestión es el caso más
-apretado de todos. **Si empiezan a incumplirse plazos, el primer sitio donde mirar es
-esta línea, no las horas.** Es una decisión suya tomada sabiéndolo.
+**Sobre las 50-70 horas de la tienda de Alameda:** esa cifra NO es la referencia de
+lo que tarda una tienda. Álvaro explicó el 28/09/2026 que fue **su primera web y su
+primera tienda online a la vez**, así que lleva dentro toda la curva de aprendizaje.
+Tomarla como ritmo normal era un error mío. **No la uses para estimar plazos.**
 
 **Packs (25/09/2026).** Tres combinaciones, en la sección `#packs` de la home y
 enlazadas desde el bloque de precio de las seis páginas implicadas:

@@ -185,3 +185,14 @@ implica reescribir toda su web.
     (el `eventID` ya está puesto para deduplicar).
 11. Backlinks. Sigue siendo el freno real del SEO.
 12. Subir los precios de accesibilidad y Meta Ads cuando haya casos publicados.
+
+---
+
+## Anexo · 28/09/2026
+
+**Plazos corregidos.** La aplicación web de gestión pasa a **2 semanas**; el resto se
+queda en 1. Y una corrección a esta auditoría: usé las 50-70 horas de la tienda de
+Alameda como referencia de lo que cuesta una tienda, y no lo es — fue la primera web y
+la primera tienda de Álvaro a la vez, así que esa cifra lleva dentro la curva de
+aprendizaje. **El aviso sobre los plazos que dejé en su día se apoyaba en un dato mal
+interpretado.**
