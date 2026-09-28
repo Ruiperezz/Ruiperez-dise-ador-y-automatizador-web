@@ -1,0 +1,69 @@
+{
+  "version": "1.0",
+  "spec": "draft-mozleywilliams-dnsop-dnsaid-02",
+  "updated": "2026-09-28",
+  "organization": {
+    "name": "Ruipérez Studio",
+    "legalName": "Álvaro Ruipérez",
+    "url": "https://ruiperezstudio.es",
+    "description": "Diseñador web freelance en Cartagena (España). Webs, tiendas online, sistemas de reserva con cobro, automatizaciones y paneles de administración.",
+    "language": "es",
+    "contact": {
+      "whatsapp": "https://wa.me/34642084042",
+      "tel": "+34642084042"
+    }
+  },
+  "agents": [],
+  "agentsNote": "Este dominio NO expone agentes interactivos: no hay agente A2A ni servidor MCP. Lo que hay es una API HTTP de solo lectura con el catálogo de servicios y precios. Si buscas un endpoint conversacional, no existe aquí.",
+  "capabilities": [
+    {
+      "type": "http-api",
+      "role": "api-catalog",
+      "href": "https://ruiperezstudio.es/.well-known/api-catalog",
+      "mediaType": "application/linkset+json",
+      "spec": "RFC 9727",
+      "description": "Catálogo de API. Punto de entrada recomendado."
+    },
+    {
+      "type": "http-api",
+      "role": "service-desc",
+      "href": "https://ruiperezstudio.es/api/openapi.json",
+      "mediaType": "application/openapi+json",
+      "spec": "OpenAPI 3.1",
+      "description": "Especificación de los dos endpoints de lectura."
+    },
+    {
+      "type": "http-api",
+      "role": "data",
+      "href": "https://ruiperezstudio.es/api/servicios.json",
+      "mediaType": "application/json",
+      "description": "12 servicios y 3 packs, con precio sin IVA, modelo de cobro y plazo."
+    },
+    {
+      "type": "http-api",
+      "role": "status",
+      "href": "https://ruiperezstudio.es/api/status.json",
+      "mediaType": "application/json",
+      "description": "Disponibilidad del servicio."
+    },
+    {
+      "type": "text",
+      "role": "summary",
+      "href": "https://ruiperezstudio.es/llms.txt",
+      "mediaType": "text/plain",
+      "description": "Resumen del negocio en texto plano para modelos de lenguaje."
+    }
+  ],
+  "auth": {
+    "required": false,
+    "note": "Todo es público y de solo lectura. No hay claves, tokens ni límite de peticiones."
+  },
+  "policy": {
+    "contentSignals": {
+      "search": "yes",
+      "ai-input": "yes",
+      "ai-train": "yes"
+    },
+    "note": "Declarado también en /robots.txt. Se permite citar y entrenar."
+  }
+}

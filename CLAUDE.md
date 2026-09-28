@@ -235,7 +235,8 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
   | `.well-known/api-catalog` | Catálogo RFC 9727 en `application/linkset+json` |
 
   **`scripts/verifica-api.py` cruza los precios del JSON contra el precio visible de
-  cada página y falla si divergen.** Ejecútalo siempre que toques la tabla de precios:
+  cada página, comprueba que el `cap-sha256` de `docs/dns-aid.md` cuadre con
+  `api-catalog` y que todo lo que lista `agents.json` exista. Falla si algo no cuadra.** Ejecútalo siempre que toques la tabla de precios:
   una API con precios distintos a la web es peor que no tener API. La cabecera `Link`
   de `vercel.json` anuncia siete relaciones: `api-catalog`, `service-desc`, `service-doc`,
   `describedby` (a `llms.txt`), `privacy-policy`, `terms-of-service` y `author`.
@@ -245,10 +246,23 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
   El sitemap ya se declara en `robots.txt`, que es el mecanismo canónico. El `api-catalog` no tiene extensión, así que su `Content-Type` va a mano en
   `vercel.json`: **si lo borras, se sirve como texto y deja de validar.**
 
+- **DNS-AID (28/09/2026), a medias a propósito.** El índice de descubrimiento está
+  publicado en `.well-known/agents.json` y anunciado con `rel="service-meta"` (RFC 8631).
+  **Declara `"agents": []` porque no hay agentes**: ni A2A ni servidor MCP. Lo que lista
+  es la API de solo lectura. Un índice que dice la verdad le ahorra al consumidor sondear
+  el dominio; inventarse un agente para rellenarlo sería justo lo contrario.
+  **El registro DNS SVCB queda pendiente de Álvaro** y está escrito entero, con los
+  parámetros del borrador y el `cap-sha256` calculado, en `docs/dns-aid.md`.
+  ⚠️ **DNSSEC no hace falta:** el borrador dice «SHOULD», no «MUST». No lo actives por
+  esto — si la firma y el DS se desincronizan, el dominio deja de resolver y se cae la web
+  y el correo. Si algún día se activa, otro día distinto que el registro SVCB.
+  El `cap-sha256` depende del contenido de `api-catalog`: **si tocas ese archivo, el
+  registro DNS deja de cuadrar.** `scripts/verifica-api.py` lo comprueba y falla.
+
 - **Lo que NO se publica, y por qué.** El mismo informe de «agent readiness» pedía
   `openid-configuration`, `oauth-authorization-server`, `oauth-protected-resource`,
-  `auth.md`, una tarjeta de servidor MCP, un índice de `agent-skills`, DNS-AID, WebMCP
-  y un manifiesto ARD. **Se descartaron los nueve:** esta web no tiene autenticación,
+  `auth.md`, una tarjeta de servidor MCP, un índice de `agent-skills`, WebMCP
+  y un manifiesto ARD. **Se descartaron los ocho:** esta web no tiene autenticación,
   ni formularios, ni servidor MCP, ni herramientas que exponer. **Publicar un descriptor
   de algo que no existe no es estar preparado para agentes, es ruido** — y puede
   confundir justo a los rastreadores que interesan. Si algún día hay área privada,
