@@ -337,8 +337,14 @@ vuelvas a marcar como fallo ni las "arregles" por tu cuenta:**
   bloqueante por el art. 10.1.a LSSI (hoy solo consta la localidad, no la calle).
   Álvaro dijo literalmente «ignóralo, no hay problema en eso». El comentario con el
   detalle sigue en `aviso-legal/index.html` por si algún día cambia de idea.
-- **El email en dominio propio lo comprará más adelante.** Sigue
-  `ruiperezyasociadoss@gmail.com` en las tres páginas legales. No es un olvido.
+- **Correo oficial desde el 28/09/2026: `ruiperezstudio.info@gmail.com`.** Sustituye a
+  `ruiperezyasociadoss@gmail.com` en las tres páginas legales, el JSON-LD de la home y
+  `api/openapi.json`. **Es el correo por el que Álvaro quiere que le escriban los
+  clientes**, así que también está en el pie de las 16 páginas como `mailto:`, junto al
+  teléfono como `tel:`. Antes no había ni uno ni otro en todo el sitio: el único camino
+  era WhatsApp, que era el bloqueante GRAVE que levantó la auditoría del 25/09.
+  Sigue siendo un Gmail y no un correo del dominio propio; esa parte la compra él
+  más adelante. **Si cambia otra vez, son 6 sitios y el pie de 16 páginas.**
 - **El ID del píxel de Meta lo pasa él.** Hasta entonces `metaPixelId: ""` y los
   anuncios no se pueden medir. Todo lo demás está montado: CSP, cookies, banner y el
   evento `Contact` antes de la redirección.

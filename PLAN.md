@@ -78,7 +78,8 @@ Estos son fallos verificados. Corrígelos exactamente como se indica.
 - **Corrección:** sácalo de ahí. Si se quiere mostrar, va en una sección aparte etiquetada «Proyecto propio».
 
 ### 1.6 Email de contacto
-- El aviso legal expone `ruiperezyasociadoss@gmail.com`. Gmail + «y asociados» contradice el posicionamiento de freelance individual.
+- ~~El aviso legal expone `ruiperezyasociadoss@gmail.com`~~ → cambiado el 28/09/2026 a
+  `ruiperezstudio.info@gmail.com`, que lleva el nombre de la marca. Sigue siendo Gmail. Gmail + «y asociados» contradice el posicionamiento de freelance individual.
 - **Corrección:** sustituir por `hola@ruiperezstudio.es` en todo el sitio. Déjame una nota recordándome que debo crear ese buzón antes del deploy.
 
 ### 1.7 Reseñas duplicadas en estructura
