@@ -32,3 +32,23 @@ for pk in d['packs']:
 if fallos:
     print("  DESAJUSTES:"); [print("   ·", x) for x in fallos]; sys.exit(1)
 print(f"  {len(d['servicios'])} servicios y {len(d['packs'])} packs: todos los precios cuadran con las páginas")
+
+# ── DNS-AID: el cap-sha256 del registro SVCB tiene que cuadrar con api-catalog ──
+import hashlib, base64
+cap = open('.well-known/api-catalog', 'rb').read()
+dig = base64.urlsafe_b64encode(hashlib.sha256(cap).digest()).decode().rstrip('=')
+doc = open('docs/dns-aid.md', encoding='utf-8').read()
+if dig not in doc:
+    print(f"  DESAJUSTE: el cap-sha256 de docs/dns-aid.md no cuadra con api-catalog.\n"
+          f"   valor correcto: {dig}")
+    sys.exit(1)
+print(f"  cap-sha256 cuadra con api-catalog: {dig}")
+
+# ── El índice de agentes no debe declarar agentes que no existen ──
+idx = json.load(open('.well-known/agents.json', encoding='utf-8'))
+for c in idx['capabilities']:
+    ruta = c['href'].replace('https://ruiperezstudio.es/', '')
+    if not os.path.exists(ruta):
+        print(f"  DESAJUSTE: agents.json apunta a {c['href']} y no existe {ruta}")
+        sys.exit(1)
+print(f"  agents.json: {len(idx['capabilities'])} capacidades, todas existen · {len(idx['agents'])} agentes declarados")
