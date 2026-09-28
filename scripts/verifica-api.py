@@ -52,3 +52,14 @@ for c in idx['capabilities']:
         print(f"  DESAJUSTE: agents.json apunta a {c['href']} y no existe {ruta}")
         sys.exit(1)
 print(f"  agents.json: {len(idx['capabilities'])} capacidades, todas existen · {len(idx['agents'])} agentes declarados")
+
+# ── El markdown no puede quedarse desfasado del HTML ──
+import subprocess
+r = subprocess.run([sys.executable, 'scripts/genera-markdown.py', '--check'],
+                   capture_output=True, text=True)
+if r.returncode != 0:
+    print("  DESAJUSTE: el markdown de md/ no coincide con el HTML.")
+    print("   " + r.stdout.strip())
+    print("   Ejecuta: python3 scripts/genera-markdown.py")
+    sys.exit(1)
+print("  md/: el markdown coincide con el HTML")
