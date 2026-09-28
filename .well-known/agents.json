@@ -56,7 +56,8 @@
   ],
   "auth": {
     "required": false,
-    "note": "Todo es público y de solo lectura. No hay claves, tokens ni límite de peticiones."
+    "schemes": [],
+    "note": "Todo es público y de solo lectura. No hay claves, tokens ni límite de peticiones. No se publica metadatos de OAuth ni OIDC porque no hay servidor de autorización: este dominio no tiene nada protegido que autenticar."
   },
   "policy": {
     "contentSignals": {
