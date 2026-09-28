@@ -263,6 +263,14 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
   El `cap-sha256` depende del contenido de `api-catalog`: **si tocas ese archivo, el
   registro DNS deja de cuadrar.** `scripts/verifica-api.py` lo comprueba y falla.
 
+- **Autenticación: se declara que NO hay, explícitamente (28/09/2026).** `api/openapi.json`
+  lleva `security: []` global y en cada operación, y `agents.json` lo dice con palabras.
+  Sin eso, un cliente no distingue «es público a propósito» de «se les olvidó
+  documentarlo». **Esa es la respuesta correcta a «¿cómo se autentica un agente?»: no
+  tiene que hacerlo.** No se publica `/.well-known/openid-configuration` ni
+  `oauth-authorization-server` porque no hay servidor de autorización: declararlos
+  apuntando a endpoints que dan 404 es peor que no tenerlos.
+
 - **Lo que NO se publica, y por qué.** El mismo informe de «agent readiness» pedía
   `openid-configuration`, `oauth-authorization-server`, `oauth-protected-resource`,
   `auth.md`, una tarjeta de servidor MCP, un índice de `agent-skills`, WebMCP
@@ -343,8 +351,9 @@ vuelvas a marcar como fallo ni las "arregles" por tu cuenta:**
   clientes**, así que también está en el pie de las 16 páginas como `mailto:`, junto al
   teléfono como `tel:`. Antes no había ni uno ni otro en todo el sitio: el único camino
   era WhatsApp, que era el bloqueante GRAVE que levantó la auditoría del 25/09.
-  Sigue siendo un Gmail y no un correo del dominio propio; esa parte la compra él
-  más adelante. **Si cambia otra vez, son 6 sitios y el pie de 16 páginas.**
+  **Es Gmail y se queda así:** Álvaro comprobó el 28/09/2026 que no tiene buzón en el
+  dominio propio y decidió no comprarlo de momento. **No vuelvas a proponérselo.**
+  Si algún día cambia, son 6 sitios y el pie de 16 páginas.
 - **El ID del píxel de Meta lo pasa él.** Hasta entonces `metaPixelId: ""` y los
   anuncios no se pueden medir. Todo lo demás está montado: CSP, cookies, banner y el
   evento `Contact` antes de la redirección.

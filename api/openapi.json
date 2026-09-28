@@ -4,7 +4,7 @@
     "title": "API pública de Ruipérez Studio",
     "version": "1.0.0",
     "summary": "Catálogo de servicios, precios y packs en JSON.",
-    "description": "API de solo lectura. Devuelve el catálogo de servicios de Ruipérez Studio con sus precios, plazos y packs, para no tener que interpretar el HTML del sitio.\n\nNo requiere autenticación ni clave. No hay límite de peticiones porque son archivos estáticos servidos desde CDN. Los precios son los mismos que están publicados en la web; si alguna vez no coinciden, manda la web.\n\nTodos los importes van sin IVA: se añade el 21% en factura.",
+    "description": "API de solo lectura. Devuelve el catálogo de servicios de Ruipérez Studio con sus precios, plazos y packs, para no tener que interpretar el HTML del sitio.\n\nNo requiere autenticación ni clave. No hay límite de peticiones porque son archivos estáticos servidos desde CDN. Los precios son los mismos que están publicados en la web; si alguna vez no coinciden, manda la web.\n\nTodos los importes van sin IVA: se añade el 21% en factura.\n\nAutenticación: ninguna. `security: []` está declarado de forma explícita, a nivel global y en cada operación, para que quede claro que es público a propósito y no un olvido de documentación. No hay OAuth, ni OIDC, ni claves de API, ni límite de peticiones: son archivos estáticos servidos desde CDN.",
     "contact": {
       "name": "Álvaro Ruipérez",
       "url": "https://ruiperezstudio.es",
@@ -21,6 +21,7 @@
       "description": "Producción"
     }
   ],
+  "security": [],
   "paths": {
     "/api/servicios.json": {
       "get": {
@@ -41,7 +42,8 @@
               }
             }
           }
-        }
+        },
+        "security": []
       }
     },
     "/api/status.json": {
@@ -63,7 +65,8 @@
               }
             }
           }
-        }
+        },
+        "security": []
       }
     }
   },
