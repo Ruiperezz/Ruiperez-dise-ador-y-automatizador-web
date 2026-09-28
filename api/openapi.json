@@ -1,0 +1,269 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "API pública de Ruipérez Studio",
+    "version": "1.0.0",
+    "summary": "Catálogo de servicios, precios y packs en JSON.",
+    "description": "API de solo lectura. Devuelve el catálogo de servicios de Ruipérez Studio con sus precios, plazos y packs, para no tener que interpretar el HTML del sitio.\n\nNo requiere autenticación ni clave. No hay límite de peticiones porque son archivos estáticos servidos desde CDN. Los precios son los mismos que están publicados en la web; si alguna vez no coinciden, manda la web.\n\nTodos los importes van sin IVA: se añade el 21% en factura.",
+    "contact": {
+      "name": "Álvaro Ruipérez",
+      "url": "https://ruiperezstudio.es",
+      "email": "ruiperezyasociadoss@gmail.com"
+    },
+    "license": {
+      "name": "Uso libre para consulta y citación",
+      "identifier": "CC-BY-4.0"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://ruiperezstudio.es",
+      "description": "Producción"
+    }
+  ],
+  "paths": {
+    "/api/servicios.json": {
+      "get": {
+        "operationId": "getCatalogo",
+        "summary": "Catálogo completo de servicios y packs",
+        "description": "Devuelve los 12 servicios con precio, modelo de cobro y plazo, más los 3 packs con su descuento.",
+        "tags": [
+          "catalogo"
+        ],
+        "responses": {
+          "200": {
+            "description": "Catálogo",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Catalogo"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/status.json": {
+      "get": {
+        "operationId": "getEstado",
+        "summary": "Estado del servicio",
+        "description": "Comprobación de disponibilidad. Responde 200 mientras el sitio esté publicado.",
+        "tags": [
+          "estado"
+        ],
+        "responses": {
+          "200": {
+            "description": "Estado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Estado"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Precio": {
+        "type": "object",
+        "required": [
+          "modelo",
+          "desde_eur_sin_iva",
+          "iva_pct"
+        ],
+        "properties": {
+          "modelo": {
+            "type": "string",
+            "enum": [
+              "pago_unico",
+              "suscripcion_mensual"
+            ]
+          },
+          "desde_eur_sin_iva": {
+            "type": "integer",
+            "description": "Precio de entrada, sin IVA"
+          },
+          "hasta_eur_sin_iva": {
+            "type": "integer",
+            "description": "Tope del rango, cuando el precio es una horquilla"
+          },
+          "cuota_mensual_eur_sin_iva": {
+            "type": "integer",
+            "description": "Cuota recurrente añadida al pago único, cuando existe"
+          },
+          "plazo_entrega_dias": {
+            "type": "integer",
+            "description": "Días naturales desde que el cliente entrega el contenido"
+          },
+          "iva_pct": {
+            "type": "integer",
+            "const": 21
+          },
+          "permanencia": {
+            "type": "boolean"
+          },
+          "nota": {
+            "type": "string"
+          }
+        }
+      },
+      "Servicio": {
+        "type": "object",
+        "required": [
+          "id",
+          "nombre",
+          "url",
+          "descripcion",
+          "precio"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "nombre": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "descripcion": {
+            "type": "string"
+          },
+          "precio": {
+            "$ref": "#/components/schemas/Precio"
+          }
+        }
+      },
+      "Pack": {
+        "type": "object",
+        "required": [
+          "id",
+          "nombre",
+          "incluye",
+          "precio_eur_sin_iva"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "nombre": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "incluye": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Identificadores de los servicios que entran"
+          },
+          "precio_eur_sin_iva": {
+            "type": "integer"
+          },
+          "precio_suelto_eur_sin_iva": {
+            "type": "integer",
+            "description": "Lo que costaría contratado por separado"
+          },
+          "ahorro_eur": {
+            "type": "integer"
+          },
+          "iva_pct": {
+            "type": "integer",
+            "const": 21
+          },
+          "nota": {
+            "type": "string"
+          }
+        }
+      },
+      "Catalogo": {
+        "type": "object",
+        "required": [
+          "proveedor",
+          "servicios",
+          "packs",
+          "actualizado"
+        ],
+        "properties": {
+          "proveedor": {
+            "type": "object"
+          },
+          "moneda": {
+            "type": "string",
+            "const": "EUR"
+          },
+          "iva_nota": {
+            "type": "string"
+          },
+          "plazos_nota": {
+            "type": "string"
+          },
+          "precio_hora_fuera_de_contrato_eur_sin_iva": {
+            "type": "integer"
+          },
+          "actualizado": {
+            "type": "string",
+            "format": "date"
+          },
+          "servicios": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Servicio"
+            }
+          },
+          "packs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Pack"
+            }
+          }
+        }
+      },
+      "Estado": {
+        "type": "object",
+        "required": [
+          "estado",
+          "actualizado"
+        ],
+        "properties": {
+          "estado": {
+            "type": "string",
+            "enum": [
+              "ok",
+              "degradado"
+            ]
+          },
+          "tipo": {
+            "type": "string"
+          },
+          "actualizado": {
+            "type": "string",
+            "format": "date"
+          },
+          "nota": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "catalogo",
+      "description": "Servicios y precios"
+    },
+    {
+      "name": "estado",
+      "description": "Disponibilidad"
+    }
+  ]
+}

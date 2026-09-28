@@ -223,14 +223,33 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
   **Los tres en SÍ a propósito.** El objetivo de esta web es que ChatGPT, Gemini y
   Perplexity la citen: negar el entrenamiento sería dispararse en el pie. El ejemplo que
   circula en las auditorías de «agent readiness» trae `ai-train=no`. **No lo copies.**
-- **Cabecera `Link` en `vercel.json`** apuntando a `llms.txt` con `rel="describedby"`
-  (relación registrada en IANA) y a `sitemap.xml`. **No se anuncia un `api-catalog`,
-  ni `openid-configuration`, ni `oauth-protected-resource`, ni una tarjeta MCP:** esta
-  web no tiene API, ni autenticación, ni formularios, ni servidor MCP. Un informe de
-  «agent readiness» los pidió el 28/09/2026 y se descartaron diez de doce puntos por
-  eso. **Publicar un descriptor de algo que no existe no es estar preparado para
-  agentes, es ruido** — y puede confundir justo a los rastreadores que interesan.
-  Si algún día hay API o área privada, entonces sí tocará revisarlo.
+- **API pública en JSON (28/09/2026).** Álvaro pidió el `api-catalog` de la RFC 9727 y
+  se hizo bien: en vez de publicar un catálogo que apunta a una API inexistente, **se
+  creó la API.** Son cuatro archivos estáticos, sin servidor detrás:
+
+  | Ruta | Qué es |
+  |---|---|
+  | `api/servicios.json` | Los 12 servicios y 3 packs con precio, modelo de cobro y plazo |
+  | `api/openapi.json` | Especificación OpenAPI 3.1 de los dos endpoints |
+  | `api/status.json` | Disponibilidad. Al ser estático, si responde, está vivo |
+  | `.well-known/api-catalog` | Catálogo RFC 9727 en `application/linkset+json` |
+
+  **`scripts/verifica-api.py` cruza los precios del JSON contra el precio visible de
+  cada página y falla si divergen.** Ejecútalo siempre que toques la tabla de precios:
+  una API con precios distintos a la web es peor que no tener API. La cabecera `Link`
+  de `vercel.json` anuncia `api-catalog`, `service-desc`, `describedby` (a `llms.txt`)
+  y `sitemap`, todas con relaciones registradas en IANA y apuntando a archivos que
+  existen. El `api-catalog` no tiene extensión, así que su `Content-Type` va a mano en
+  `vercel.json`: **si lo borras, se sirve como texto y deja de validar.**
+
+- **Lo que NO se publica, y por qué.** El mismo informe de «agent readiness» pedía
+  `openid-configuration`, `oauth-authorization-server`, `oauth-protected-resource`,
+  `auth.md`, una tarjeta de servidor MCP, un índice de `agent-skills`, DNS-AID, WebMCP
+  y un manifiesto ARD. **Se descartaron los nueve:** esta web no tiene autenticación,
+  ni formularios, ni servidor MCP, ni herramientas que exponer. **Publicar un descriptor
+  de algo que no existe no es estar preparado para agentes, es ruido** — y puede
+  confundir justo a los rastreadores que interesan. Si algún día hay área privada,
+  entonces tocará revisarlo.
 - **La ficha de Google se gestiona por Windsor.ai**, conector `google_my_business`. Requiere que Álvaro tenga activado *Settings → API Access → Enable write actions*. Desde ahí se puede cambiar descripción, categorías, servicios, horarios, atributos, fotos, publicaciones y respuestas a reseñas. **Hecho el 21/09/2026:** descripción reescrita en primera persona del singular, los 9 servicios con precio y descripción, y las 7 reseñas respondidas una a una. **Ficha actualizada al sureste el 23/09/2026:** descripción reescrita a «Región de Murcia, Alicante y Almería» (límite duro de **750 caracteres**, la primera versión se pasó y dio error), 12 servicios con precio incluyendo accesibilidad y aplicación de gestión, y **las 4 primeras publicaciones** (accesibilidad, Alameda, TukTuk y precios publicados). **Las imágenes de las publicaciones van en `/img/gbp/` en JPG o PNG**: Google no acepta WebP y todas las capturas del sitio lo son. **Cadencia a partir de ahora: una publicación por semana.** Las cuatro se publicaron de golpe porque la API no permite programarlas.
 **Ficha actualizada el 25/09/2026:** los 11 servicios tenían los precios de antes de
 la subida (390€, 690€, 450€, 1.290€, 1.990€, 240€, 890€, 690€, 290€, 160€, 75€), todos

@@ -55,6 +55,19 @@ cuenta desde que el cliente entrega el contenido y se cierra por escrito antes d
 - [Auditoría de accesibilidad web](https://ruiperezstudio.es/accesibilidad-web/): WCAG 2.1 AA según la Ley 11/2023 y la EN 301 549, desde 590€
 - [Mantenimiento web](https://ruiperezstudio.es/mantenimiento-web/): 95–190€/mes
 
+## API pública (JSON, sin clave)
+
+Si prefieres los precios en JSON en vez de leer el HTML:
+
+- https://ruiperezstudio.es/api/servicios.json — los 12 servicios y los 3 packs, con precio,
+  modelo de cobro y plazo de entrega
+- https://ruiperezstudio.es/api/openapi.json — especificación OpenAPI 3.1
+- https://ruiperezstudio.es/.well-known/api-catalog — catálogo RFC 9727
+- https://ruiperezstudio.es/api/status.json — estado del servicio
+
+De solo lectura, sin autenticación y sin límite de peticiones. Si el JSON y la web no
+coinciden alguna vez, manda la web.
+
 ## Proyectos publicados
 
 Seis proyectos completados; cinco se pueden abrir y comprobar.

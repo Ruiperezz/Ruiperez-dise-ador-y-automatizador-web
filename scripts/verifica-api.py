@@ -1,0 +1,34 @@
+# -*- coding: utf-8 -*-
+"""Cruza api/servicios.json contra el precio visible de cada página."""
+import json, re, html, sys, os
+os.chdir(os.path.dirname(os.path.abspath(__file__)) if False else '.')
+d = json.load(open('api/servicios.json', encoding='utf-8'))
+fallos = []
+def fmt(n): return f"{n:,}".replace(",", ".")
+
+for s in d['servicios']:
+    slug = s['id']; f = f"{slug}/index.html"
+    if not os.path.exists(f): fallos.append(f"{slug}: no existe {f}"); continue
+    txt = html.unescape(re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', open(f, encoding='utf-8').read())))
+    p = s['precio']
+    esperado = fmt(p['desde_eur_sin_iva']) + "€"
+    if esperado not in txt:
+        fallos.append(f"{slug}: la API dice {esperado} y la página no lo contiene")
+    if 'cuota_mensual_eur_sin_iva' in p:
+        cuota = f"{p['cuota_mensual_eur_sin_iva']}€/mes"
+        if cuota not in txt: fallos.append(f"{slug}: la API dice {cuota} y la página no lo contiene")
+    if 'hasta_eur_sin_iva' in p:
+        tope = fmt(p['hasta_eur_sin_iva']) + "€"
+        if tope not in txt: fallos.append(f"{slug}: la API dice hasta {tope} y la página no lo contiene")
+
+home = html.unescape(re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', open('index.html', encoding='utf-8').read())))
+for pk in d['packs']:
+    for campo, etiq in (('precio_eur_sin_iva','pack'), ('precio_suelto_eur_sin_iva','suelto')):
+        v = fmt(pk[campo]) + "€"
+        if v not in home: fallos.append(f"pack {pk['id']}: la API dice {v} ({etiq}) y la home no lo contiene")
+    if pk['precio_suelto_eur_sin_iva'] - pk['precio_eur_sin_iva'] != pk['ahorro_eur']:
+        fallos.append(f"pack {pk['id']}: el ahorro no cuadra con la resta")
+
+if fallos:
+    print("  DESAJUSTES:"); [print("   ·", x) for x in fallos]; sys.exit(1)
+print(f"  {len(d['servicios'])} servicios y {len(d['packs'])} packs: todos los precios cuadran con las páginas")
