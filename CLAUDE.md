@@ -303,6 +303,31 @@ servicio** — hace falta el `place_id` de Google Maps de cada una.
 - **`refactoring-ui`** y **`web-typography`** (`.agents/skills/`, de `wondelai/skills`) — jerarquía visual, espaciado, color, tipografía. Sustituyen a `ui-ux-pro-max`, que no existe.
 - `web-design-guidelines` y `vercel-optimize` — layout, accesibilidad y rendimiento.
 
+## Markdown para agentes: PROBADO Y NO FUNCIONA EN VERCEL (28/09/2026)
+
+`md/*.md` **está publicado** y son 21 archivos generados del propio HTML con
+`scripts/genera-markdown.py`. Se enlazan desde `llms.txt` y se pueden pedir por su URL:
+`https://ruiperezstudio.es/md/meta-ads.md`.
+
+**Lo que NO funciona es la negociación por `Accept: text/markdown`.** Se montó con 21
+`rewrites` condicionados con `has`, se desplegó y se midió en producción: **devuelve HTML
+igual.** El motivo está en los propios docs de Vercel: *«The source property should NOT be
+a file because precedence is given to the filesystem prior to rewrites being applied»*.
+En un sitio estático, `/meta-ads/` ES un archivo, así que el rewrite nunca se dispara.
+La configuración muerta se ha quitado, junto con el `Vary: Accept` que sin negociación
+solo fragmentaba la caché.
+
+**Se podría forzar con `routes`**, que permite colocar reglas antes del sistema de
+archivos con `{"handle": "filesystem"}`. **No se ha hecho a propósito:** obliga a
+reescribir el enrutado completo, incluidas las 8 redirecciones, y un error ahí tumba el
+sitio entero. Para una ganancia que hoy es cero —ningún rastreador envía esa cabecera—,
+mal cambio. **Si alguien lo intenta, que sea en vista previa y con el sitio medido antes
+y después.**
+
+⚠️ **Este entorno no alcanza `*.vercel.app`**, así que las vistas previas no se pueden
+probar con `curl` desde aquí. Para leerlas hay que usar `web_fetch_vercel_url` del MCP de
+Vercel, que no permite cabeceras propias. Por eso esto se midió en producción.
+
 ## Decisiones de Álvaro que no hay que revertir (25/09/2026)
 
 La auditoría de ese día levantó cuatro cosas y él decidió sobre las cuatro. **No las
