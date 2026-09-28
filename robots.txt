@@ -1,6 +1,12 @@
 # ruiperezstudio.es
 
 User-agent: *
+# Content Signals (contentsignals.org). Declaran para qué se puede usar este
+# contenido. Van en SÍ los tres a propósito: el objetivo de esta web es que
+# ChatGPT, Gemini y Perplexity la citen, así que negar el entrenamiento sería
+# dispararse en el pie. El ejemplo que circula por ahí trae "ai-train=no":
+# NO lo copies aquí.
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # Rastreadores de IA, permitidos de forma explícita.
