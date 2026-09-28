@@ -237,9 +237,12 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
   **`scripts/verifica-api.py` cruza los precios del JSON contra el precio visible de
   cada página y falla si divergen.** Ejecútalo siempre que toques la tabla de precios:
   una API con precios distintos a la web es peor que no tener API. La cabecera `Link`
-  de `vercel.json` anuncia `api-catalog`, `service-desc`, `describedby` (a `llms.txt`)
-  y `sitemap`, todas con relaciones registradas en IANA y apuntando a archivos que
-  existen. El `api-catalog` no tiene extensión, así que su `Content-Type` va a mano en
+  de `vercel.json` anuncia siete relaciones: `api-catalog`, `service-desc`, `service-doc`,
+  `describedby` (a `llms.txt`), `privacy-policy`, `terms-of-service` y `author`.
+  **Las siete están en el registro de IANA y las siete apuntan a algo que existe.**
+  Ojo: `rel="sitemap"` se probó y se quitó — es de uso común pero **NO está registrado**,
+  y la RFC 8288 exige que una relación no registrada sea una URI, no un token suelto.
+  El sitemap ya se declara en `robots.txt`, que es el mecanismo canónico. El `api-catalog` no tiene extensión, así que su `Content-Type` va a mano en
   `vercel.json`: **si lo borras, se sirve como texto y deja de validar.**
 
 - **Lo que NO se publica, y por qué.** El mismo informe de «agent readiness» pedía
