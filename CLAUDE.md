@@ -306,10 +306,30 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 
   **Fuera de las dos landings de pago**, que son `noindex`, de un solo CTA y sin asistente.
 
+- **Manifiestos ARD (29/09/2026).** `.well-known/ai-catalog.json` y `.well-known/ard.json`,
+  con **6 entradas cada uno: la API, el OpenAPI, el api-catalog, la habilidad, `llms.txt` y
+  las páginas en markdown.** Todas existen y `scripts/verifica-api.py` lo comprueba.
+  **Ni servidor MCP ni agente A2A**, que es lo que la spec pone de ejemplo: no los hay.
+
+  ⚠️ **El informe de «agent readiness» mezcla DOS especificaciones distintas.** Pide
+  `/.well-known/ai-catalog.json` con `specVersion`, `host` y `representationQueries`, pero:
+  - La **ARD oficial** (`ards-project/ard-spec`, v0.91) usa `/.well-known/ard.json`, **no**
+    tiene `specVersion` ni `host`, y el campo se llama **`representativeQueries`**.
+  - **`ai-catalog`** (`Agent-Card/ai-catalog`) es otro proyecto: sí usa `specVersion: "1.0"`
+    y `host`, pero **en su especificación no existe ningún campo de consultas**.
+
+  Se publican **los dos, cada uno en su formato correcto**, porque son pequeños y describen
+  los mismos recursos reales. **No mezcles campos entre ellos** aunque el informe lo sugiera.
+
+  Las `representativeQueries` de `ard.json` (15, entre 2 y 4 por entrada) son preguntas que
+  alguien haría de verdad: «cuánto cuesta una tienda online en Cartagena», «los precios de
+  ruiperezstudio.es llevan IVA incluido». Sirven para que un registro construya su índice
+  semántico. **Es lo más cercano a AEO que hay en todo este montaje: si se tocan, que sigan
+  siendo preguntas reales y no palabras clave apiladas.**
+
 - **Lo que NO se publica, y por qué.** El mismo informe de «agent readiness» pedía
   `openid-configuration`, `oauth-authorization-server`, `oauth-protected-resource`,
-  `auth.md`, una tarjeta de servidor MCP
-  y un manifiesto ARD. **Se descartaron los seis:** esta web no tiene autenticación,
+  `auth.md` y una tarjeta de servidor MCP. **Se descartaron los cinco:** esta web no tiene autenticación,
   ni formularios, ni servidor MCP, ni herramientas que exponer. **Publicar un descriptor
   de algo que no existe no es estar preparado para agentes, es ruido** — y puede
   confundir justo a los rastreadores que interesan. Si algún día hay área privada,
