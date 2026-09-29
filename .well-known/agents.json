@@ -58,7 +58,7 @@
       "role": "content-markdown",
       "href": "https://ruiperezstudio.es/md/index.md",
       "mediaType": "text/markdown",
-      "description": "Las 21 páginas en markdown. Se pueden pedir de dos formas: por su URL directa bajo /md/, o pidiendo la página normal con la cabecera Accept: text/markdown, que devuelve markdown en vez de HTML."
+      "description": "Cada página del sitio existe también en markdown, en /md/ (mismo nombre que la ruta, barras cambiadas por guiones). La cabecera Accept: text/markdown NO funciona: es alojamiento estático sin negociación de contenido. Pide el archivo .md directamente."
     }
   ],
   "auth": {
