@@ -1,6 +1,21 @@
 # Enlaces entrantes · qué hacer, por orden
 
-Estado: **cero enlaces entrantes.** Es el freno real del SEO, y ninguna mejora técnica
+> **ACTUALIZADO 29/09/2026 — dos enlaces ya puestos y verificados.**
+>
+> | Sitio | Enlace | `nofollow` | Texto |
+> |---|:-:|:-:|---|
+> | floristeriaalameda.com | ✅ 2 en el pie | **no** | «Diseño web por Ruipérez Studio» y «Ruiperez Studio» |
+> | tuktukcartagena.com | ✅ 1 en el pie | **no** | «Diseño web por Ruipérez Studio» |
+>
+> Los dos son `<a href>` de verdad en el HTML servido, no inyectados por JavaScript, y
+> llevan solo `rel="noopener"`. **Sin `nofollow`, que era lo único que podía anularlos.**
+> Falta el de Finca Doña Carmen, que se pondrá cuando se publique.
+>
+> Pendiente: que Google los rastree. Son sitios activos, así que es cuestión de días o
+> pocas semanas. No hay forma de acelerarlo desde aquí: IndexNow solo vale para el
+> dominio propio.
+
+Estado anterior: **cero enlaces entrantes.** Es el freno real del SEO, y ninguna mejora técnica
 lo sustituye. Google necesita que otras webs te señalen para creerse que existes.
 
 Esto no es una lista de «ideas de link building». Es lo que Álvaro puede hacer con lo
@@ -40,6 +55,13 @@ comprados. Que cada una diga algo distinto y natural:
 | Floristería Alameda | `Ruipérez Studio` |
 | TukTuk Cartagena | `diseño web en Cartagena` |
 | Finca Doña Carmen | `Álvaro Ruipérez` |
+
+**Cómo quedó en realidad (29/09):** los dos puestos dicen «Diseño web por Ruipérez
+Studio». Con dos sitios da igual — el patrón que Google asocia a enlaces comprados son
+decenas de anclas idénticas, no dos, y en un crédito de diseñador es lo natural.
+**No merece la pena tocarlo solo por esto.** Si algún día se editan esos pies por otro
+motivo, variar el de TukTuk. Y en el segundo enlace de Alameda pone «Ruiperez» sin
+tilde: cosmético, se arregla si se pasa por ahí.
 
 ### El mensaje para pedirlo
 
