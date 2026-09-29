@@ -63,3 +63,16 @@ if r.returncode != 0:
     print("   Ejecuta: python3 scripts/genera-markdown.py")
     sys.exit(1)
 print("  md/: el markdown coincide con el HTML")
+
+# ── El digest del índice de habilidades tiene que cuadrar con el SKILL.md ──
+idx = json.load(open('.well-known/agent-skills/index.json', encoding='utf-8'))
+for sk in idx['skills']:
+    ruta = sk['url'].lstrip('/')
+    if not os.path.exists(ruta):
+        print(f"  DESAJUSTE: la habilidad «{sk['name']}» apunta a {sk['url']} y no existe")
+        sys.exit(1)
+    real = 'sha256:' + hashlib.sha256(open(ruta, 'rb').read()).hexdigest()
+    if real != sk['digest']:
+        print(f"  DESAJUSTE: el digest de «{sk['name']}» no cuadra.\n   correcto: {real}")
+        sys.exit(1)
+print(f"  agent-skills: {len(idx['skills'])} habilidad(es), digest correcto")
