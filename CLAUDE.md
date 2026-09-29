@@ -284,10 +284,32 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
   `scripts/verifica-api.py` lo comprueba y falla. **No añadas habilidades inventadas para
   engordar el índice:** una que dice la verdad vale más que cinco de relleno.
 
+- **WebMCP (29/09/2026), a petición de Álvaro.** `js/webmcp.js` expone dos herramientas a
+  agentes que operen dentro del navegador: `listar_servicios` y `calcular_presupuesto`,
+  que suma servicios, separa las cuotas mensuales, calcula el IVA y **avisa si un pack
+  cubre esa combinación más barato**. Esa última parte es lo único no duplicado: un agente
+  sumando por su cuenta se olvidaría del descuento.
+
+  **Coste para un visitante real: cero.** El arranque es un `if (navigator.modelContext)`
+  en línea de 148 bytes; el archivo solo se descarga si esa API existe, y a fecha de hoy
+  **no existe en ningún navegador público** — está en el Early Preview Program de Chrome,
+  que exige apuntarse. No está en Firefox, Safari ni Edge.
+
+  **Los precios NO se duplican en ese archivo:** las herramientas piden
+  `/api/servicios.json` cuando se las invoca. Una segunda copia de precios se habría
+  quedado desfasada, que es exactamente lo que pasó con el JSON-LD.
+
+  ⚠️ **El formateo de miles va a mano, no con `toLocaleString`.** En español un número de
+  cuatro cifras no lleva punto, así que `toLocaleString("es-ES")` devuelve «1490» mientras
+  la web escribe «1.490€». Se usa una expresión regular que pone el punto siempre, para
+  que herramienta y página digan lo mismo.
+
+  **Fuera de las dos landings de pago**, que son `noindex`, de un solo CTA y sin asistente.
+
 - **Lo que NO se publica, y por qué.** El mismo informe de «agent readiness» pedía
   `openid-configuration`, `oauth-authorization-server`, `oauth-protected-resource`,
-  `auth.md`, una tarjeta de servidor MCP, WebMCP
-  y un manifiesto ARD. **Se descartaron los siete:** esta web no tiene autenticación,
+  `auth.md`, una tarjeta de servidor MCP
+  y un manifiesto ARD. **Se descartaron los seis:** esta web no tiene autenticación,
   ni formularios, ni servidor MCP, ni herramientas que exponer. **Publicar un descriptor
   de algo que no existe no es estar preparado para agentes, es ruido** — y puede
   confundir justo a los rastreadores que interesan. Si algún día hay área privada,
