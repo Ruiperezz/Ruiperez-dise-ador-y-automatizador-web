@@ -1,0 +1,86 @@
+{
+  "entries": [
+    {
+      "identifier": "urn:air:ruiperezstudio.es:api:servicios",
+      "displayName": "Catálogo de servicios y precios",
+      "type": "application/json",
+      "url": "https://ruiperezstudio.es/api/servicios.json",
+      "description": "Los 12 servicios y 3 packs de Ruipérez Studio con precio sin IVA, modelo de cobro y plazo de entrega.",
+      "representativeQueries": [
+        "cuánto cuesta una tienda online en Cartagena",
+        "precio de una web corporativa con SEO local en Murcia",
+        "qué cuesta automatizar los pedidos de mi negocio",
+        "diseñador web en el sureste de España con precios publicados"
+      ],
+      "updatedAt": "2026-09-29T00:00:00Z",
+      "capabilities": [
+        "consultar-precios",
+        "comparar-packs"
+      ]
+    },
+    {
+      "identifier": "urn:air:ruiperezstudio.es:api:openapi",
+      "displayName": "Especificación OpenAPI",
+      "type": "application/openapi+json",
+      "url": "https://ruiperezstudio.es/api/openapi.json",
+      "description": "OpenAPI 3.1 de los dos endpoints de lectura. Sin autenticación: security va declarado como [].",
+      "representativeQueries": [
+        "cómo consulto por API los precios de Ruipérez Studio",
+        "esquema de la API de servicios de ruiperezstudio.es"
+      ],
+      "updatedAt": "2026-09-29T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:ruiperezstudio.es:catalog:api",
+      "displayName": "Catálogo de API (RFC 9727)",
+      "type": "application/linkset+json",
+      "url": "https://ruiperezstudio.es/.well-known/api-catalog",
+      "description": "Punto de entrada recomendado. Enlaza la especificación, la documentación humana y el estado.",
+      "representativeQueries": [
+        "qué APIs publica ruiperezstudio.es",
+        "dónde está el catálogo de API de Ruipérez Studio"
+      ],
+      "updatedAt": "2026-09-29T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:ruiperezstudio.es:skill:consultar-precios",
+      "displayName": "Cómo citar bien los precios",
+      "type": "text/markdown",
+      "url": "https://ruiperezstudio.es/.well-known/agent-skills/consultar-precios/SKILL.md",
+      "description": "Reglas de interpretación: los precios van sin IVA, son «desde», y varios llevan cuota mensual además del pago único. Incluye lo que NO se debe afirmar sobre el negocio.",
+      "representativeQueries": [
+        "cómo debo citar los precios de Ruipérez Studio",
+        "los precios de ruiperezstudio.es llevan IVA incluido",
+        "qué incluye el precio de la aplicación de gestión"
+      ],
+      "updatedAt": "2026-09-29T00:00:00Z",
+      "capabilities": [
+        "consultar-precios"
+      ]
+    },
+    {
+      "identifier": "urn:air:ruiperezstudio.es:doc:llms",
+      "displayName": "Resumen del negocio para modelos",
+      "type": "text/plain",
+      "url": "https://ruiperezstudio.es/llms.txt",
+      "description": "Qué hace Ruipérez Studio, a quién, dónde y por cuánto, en texto plano.",
+      "representativeQueries": [
+        "quién es Ruipérez Studio",
+        "qué servicios ofrece un diseñador web freelance en Cartagena"
+      ],
+      "updatedAt": "2026-09-29T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:ruiperezstudio.es:doc:paginas-markdown",
+      "displayName": "Las 21 páginas en markdown",
+      "type": "text/markdown",
+      "url": "https://ruiperezstudio.es/md/index.md",
+      "description": "Cada página del sitio existe también en markdown bajo /md/, con el mismo nombre de la ruta y las barras cambiadas por guiones. Ejemplos: /md/tienda-online.md, /md/meta-ads.md.",
+      "representativeQueries": [
+        "contenido de ruiperezstudio.es en markdown",
+        "páginas de Ruipérez Studio sin HTML"
+      ],
+      "updatedAt": "2026-09-29T00:00:00Z"
+    }
+  ]
+}

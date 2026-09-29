@@ -76,3 +76,16 @@ for sk in idx['skills']:
         print(f"  DESAJUSTE: el digest de «{sk['name']}» no cuadra.\n   correcto: {real}")
         sys.exit(1)
 print(f"  agent-skills: {len(idx['skills'])} habilidad(es), digest correcto")
+
+# ── Los manifiestos ARD no pueden apuntar a recursos que no existan ──
+for man in ['.well-known/ai-catalog.json', '.well-known/ard.json']:
+    m = json.load(open(man, encoding='utf-8'))
+    for e in m['entries']:
+        ruta = e['url'].replace('https://ruiperezstudio.es/', '')
+        if not os.path.exists(ruta):
+            print(f"  DESAJUSTE: {man} apunta a {e['url']} y no existe {ruta}")
+            sys.exit(1)
+        if not e['identifier'].startswith('urn:air:ruiperezstudio.es:'):
+            print(f"  DESAJUSTE: identificador mal formado en {man}: {e['identifier']}")
+            sys.exit(1)
+    print(f"  {man.split('/')[-1]}: {len(m['entries'])} entradas, todas existen")
