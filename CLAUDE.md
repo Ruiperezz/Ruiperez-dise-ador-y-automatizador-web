@@ -271,10 +271,23 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
   `oauth-authorization-server` porque no hay servidor de autorización: declararlos
   apuntando a endpoints que dan 404 es peor que no tenerlos.
 
+- **Índice de habilidades para agentes (29/09/2026).**
+  `.well-known/agent-skills/index.json` según la RFC v0.2.0 de Cloudflare, con **una sola
+  habilidad**: `consultar-precios`. No es relleno — resuelve un riesgo real. Un modelo que
+  lea el JSON de precios puede decir «una web corporativa cuesta 1.490€» y callarse que es
+  **sin IVA**, que es un precio **«desde»**, o que la aplicación lleva **90€/mes además**
+  del pago único. Ese cliente llega con la expectativa equivocada y la culpa parece suya.
+  El SKILL.md dice esas reglas de interpretación por escrito, y además lo que NO se debe
+  afirmar: el 4,9★ es de Alameda y no suyo, son seis proyectos y no diez, no se promete
+  conformidad legal, y el asistente de la web no es IA.
+  **El `digest` es un sha256 del SKILL.md: si se edita el documento, hay que recalcularlo.**
+  `scripts/verifica-api.py` lo comprueba y falla. **No añadas habilidades inventadas para
+  engordar el índice:** una que dice la verdad vale más que cinco de relleno.
+
 - **Lo que NO se publica, y por qué.** El mismo informe de «agent readiness» pedía
   `openid-configuration`, `oauth-authorization-server`, `oauth-protected-resource`,
-  `auth.md`, una tarjeta de servidor MCP, un índice de `agent-skills`, WebMCP
-  y un manifiesto ARD. **Se descartaron los ocho:** esta web no tiene autenticación,
+  `auth.md`, una tarjeta de servidor MCP, WebMCP
+  y un manifiesto ARD. **Se descartaron los siete:** esta web no tiene autenticación,
   ni formularios, ni servidor MCP, ni herramientas que exponer. **Publicar un descriptor
   de algo que no existe no es estar preparado para agentes, es ruido** — y puede
   confundir justo a los rastreadores que interesan. Si algún día hay área privada,

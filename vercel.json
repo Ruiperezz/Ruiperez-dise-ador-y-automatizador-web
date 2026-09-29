@@ -29,7 +29,7 @@
         },
         {
           "key": "Link",
-          "value": "</.well-known/api-catalog>; rel=\"api-catalog\"; type=\"application/linkset+json\", </api/openapi.json>; rel=\"service-desc\"; type=\"application/openapi+json\", </diseno-web/>; rel=\"service-doc\"; type=\"text/html\", </.well-known/agents.json>; rel=\"service-meta\"; type=\"application/json\", </llms.txt>; rel=\"describedby\"; type=\"text/plain\", </privacidad/>; rel=\"privacy-policy\"; type=\"text/html\", </aviso-legal/>; rel=\"terms-of-service\"; type=\"text/html\", </sobre-mi/>; rel=\"author\"; type=\"text/html\""
+          "value": "</.well-known/api-catalog>; rel=\"api-catalog\"; type=\"application/linkset+json\", </api/openapi.json>; rel=\"service-desc\"; type=\"application/openapi+json\", </diseno-web/>; rel=\"service-doc\"; type=\"text/html\", </.well-known/agents.json>; rel=\"service-meta\"; type=\"application/json\", </.well-known/agent-skills/index.json>; rel=\"service-meta\"; type=\"application/json\", </llms.txt>; rel=\"describedby\"; type=\"text/plain\", </privacidad/>; rel=\"privacy-policy\"; type=\"text/html\", </aviso-legal/>; rel=\"terms-of-service\"; type=\"text/html\", </sobre-mi/>; rel=\"author\"; type=\"text/html\""
         }
       ]
     },
@@ -143,6 +143,40 @@
     },
     {
       "source": "/md/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    },
+    {
+      "source": "/.well-known/agent-skills/index.json",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    },
+    {
+      "source": "/.well-known/agent-skills/(.*)/SKILL.md",
       "headers": [
         {
           "key": "Content-Type",
