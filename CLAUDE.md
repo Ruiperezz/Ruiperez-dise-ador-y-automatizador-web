@@ -390,8 +390,11 @@ respecto a lo que este archivo daba por bueno:
 
 ## Enlaces entrantes
 
-`docs/enlaces-entrantes.md` es el plan. **Sigue en cero enlaces, y es el freno real del
-SEO**: ninguna mejora técnica lo sustituye. Lo de más valor son los tres sitios que
+`docs/enlaces-entrantes.md` es el plan. **Ya NO está en cero: el 29/09/2026 Álvaro puso
+el crédito en floristeriaalameda.com (2 enlaces) y tuktukcartagena.com (1)**, verificados
+en el HTML servido, sin `nofollow` y sin depender de JavaScript. Falta Finca Doña Carmen,
+que se pondrá al publicarse. Quedan pendientes Bing Places —importa porque ChatGPT busca
+en Bing— y los directorios locales. Lo de más valor son los tres sitios que
 Álvaro ya mantiene y cobra (Alameda, TukTuk, Finca Doña Carmen): un crédito de diseñador
 en el pie, **pedido y no puesto a escondidas**, sin `nofollow` y con el texto del enlace
 distinto en cada uno para no parecer comprado. Ahí está el HTML y el mensaje para pedirlo.
