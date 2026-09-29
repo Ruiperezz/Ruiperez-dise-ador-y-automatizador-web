@@ -530,6 +530,9 @@ document.querySelectorAll(".fq").forEach(function(q){q.addEventListener("click",
 </script>
 <script src="/js/consent.js" defer></script>
 <script src="/js/asistente.js" defer></script>
+<!-- WebMCP: solo se descarga si el navegador trae la API. Hoy (29/09/2026) eso no es
+     ningún navegador público, así que para un visitante real esto es un «if» y nada más. -->
+<script>if(navigator.modelContext){var s=document.createElement("script");s.src="/js/webmcp.js";s.defer=true;document.head.appendChild(s);}</script>
 <script>
 (function(){"use strict";
 if(!("IntersectionObserver" in window)){
