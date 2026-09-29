@@ -75,10 +75,11 @@
       "displayName": "Las 21 páginas en markdown",
       "type": "text/markdown",
       "url": "https://ruiperezstudio.es/md/index.md",
-      "description": "Cada página del sitio existe también en markdown bajo /md/, con el mismo nombre de la ruta y las barras cambiadas por guiones. Ejemplos: /md/tienda-online.md, /md/meta-ads.md.",
+      "description": "Cada página del sitio existe también en markdown. Dos formas de pedirla: por su URL bajo /md/ (mismo nombre que la ruta, barras cambiadas por guiones), o pidiendo la página normal con la cabecera Accept: text/markdown, que devuelve markdown en vez de HTML.",
       "representativeQueries": [
         "contenido de ruiperezstudio.es en markdown",
-        "páginas de Ruipérez Studio sin HTML"
+        "páginas de Ruipérez Studio sin HTML",
+        "cómo pido la web de Ruipérez Studio en markdown"
       ],
       "updatedAt": "2026-09-29T00:00:00Z"
     }

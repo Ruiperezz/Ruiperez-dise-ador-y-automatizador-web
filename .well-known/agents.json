@@ -51,7 +51,14 @@
       "role": "summary",
       "href": "https://ruiperezstudio.es/llms.txt",
       "mediaType": "text/plain",
-      "description": "Resumen del negocio en texto plano para modelos de lenguaje."
+      "description": "Resumen del negocio en texto plano para modelos de lenguaje. Explica también cómo pedir cualquier página en markdown."
+    },
+    {
+      "type": "http",
+      "role": "content-markdown",
+      "href": "https://ruiperezstudio.es/md/index.md",
+      "mediaType": "text/markdown",
+      "description": "Las 21 páginas en markdown. Se pueden pedir de dos formas: por su URL directa bajo /md/, o pidiendo la página normal con la cabecera Accept: text/markdown, que devuelve markdown en vez de HTML."
     }
   ],
   "auth": {

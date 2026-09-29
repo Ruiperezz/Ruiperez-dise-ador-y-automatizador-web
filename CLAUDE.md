@@ -378,30 +378,41 @@ servicio** — hace falta el `place_id` de Google Maps de cada una.
 - **`refactoring-ui`** y **`web-typography`** (`.agents/skills/`, de `wondelai/skills`) — jerarquía visual, espaciado, color, tipografía. Sustituyen a `ui-ux-pro-max`, que no existe.
 - `web-design-guidelines` y `vercel-optimize` — layout, accesibilidad y rendimiento.
 
-## Markdown para agentes: PROBADO Y NO FUNCIONA EN VERCEL (28/09/2026)
+## Markdown para agentes: FUNCIONA, con `routes` (29/09/2026)
 
-`md/*.md` **está publicado** y son 21 archivos generados del propio HTML con
-`scripts/genera-markdown.py`. Se enlazan desde `llms.txt` y se pueden pedir por su URL:
-`https://ruiperezstudio.es/md/meta-ads.md`.
+Un agente que pida `Accept: text/markdown` recibe la página en markdown; un navegador
+recibe HTML. **Medido en producción**, no supuesto:
 
-**Lo que NO funciona es la negociación por `Accept: text/markdown`.** Se montó con 21
-`rewrites` condicionados con `has`, se desplegó y se midió en producción: **devuelve HTML
-igual.** El motivo está en los propios docs de Vercel: *«The source property should NOT be
-a file because precedence is given to the filesystem prior to rewrites being applied»*.
-En un sitio estático, `/meta-ads/` ES un archivo, así que el rewrite nunca se dispara.
-La configuración muerta se ha quitado, junto con el `Vary: Accept` que sin negociación
-solo fragmentaba la caché.
+```
+Accept: text/markdown  →  text/markdown; charset=utf-8  ·  # Le das a «Promocionar»…
+Accept: text/html      →  text/html; charset=utf-8      ·  <!DOCTYPE html>
+```
 
-**Se podría forzar con `routes`**, que permite colocar reglas antes del sistema de
-archivos con `{"handle": "filesystem"}`. **No se ha hecho a propósito:** obliga a
-reescribir el enrutado completo, incluidas las 8 redirecciones, y un error ahí tumba el
-sitio entero. Para una ganancia que hoy es cero —ningún rastreador envía esa cabecera—,
-mal cambio. **Si alguien lo intenta, que sea en vista previa y con el sitio medido antes
-y después.**
+**La clave es `routes`, no `rewrites`.** Se intentó primero con 21 `rewrites` y `has`, se
+desplegó, y devolvía HTML igual: los `rewrites` se evalúan **después** del sistema de
+archivos, y en un sitio estático `/meta-ads/` ES un archivo, así que la regla nunca se
+ejecutaba. Está en los propios docs de Vercel. Con `routes`, las reglas colocadas **antes**
+de `{"handle": "filesystem"}` se evalúan primero, que es justo lo que faltaba.
+
+⚠️ **`routes` es una primitiva de bajo nivel: un error ahí no deja la web fea, la deja sin
+resolver.** Por eso se probó en una **vista previa** antes de fusionar, confirmando que
+servía el HTML completo con su H1, su pie y sus precios. **Si tocas `routes`, haz lo mismo:
+rama aparte, esperar el despliegue de vista previa, comprobar, y solo entonces fusionar.**
+Comprobado tras fusionar: las 8 redirecciones siguen en 308 y las 21 páginas en 200.
+
+**`Vary: Accept` es obligatorio ahora** y está en `/(.*)` y en `/md/(.*)`. Sin él, la CDN
+puede cachear el HTML y servírselo a quien pidió markdown, o al revés. Se había quitado
+cuando la negociación no funcionaba; volvió al reactivarla.
+
+Los 21 `md/*.md` se generan con `scripts/genera-markdown.py` desde el propio HTML.
+**No es un paso de build** —este proyecto no tiene ninguno— sino un script que se ejecuta
+a mano y cuyo resultado se comitea. `scripts/verifica-api.py` lo vuelve a ejecutar y falla
+si difiere, que es lo que impide que el markdown se quede desfasado del HTML.
 
 ⚠️ **Este entorno no alcanza `*.vercel.app`**, así que las vistas previas no se pueden
-probar con `curl` desde aquí. Para leerlas hay que usar `web_fetch_vercel_url` del MCP de
-Vercel, que no permite cabeceras propias. Por eso esto se midió en producción.
+probar con `curl` desde aquí. Se leen con `web_fetch_vercel_url` del MCP de Vercel, que
+**no permite cabeceras propias**: sirve para confirmar que el sitio no está roto, no para
+probar la negociación. Esa parte se mide en producción, justo después de fusionar.
 
 ## Decisiones de Álvaro que no hay que revertir (25/09/2026)
 

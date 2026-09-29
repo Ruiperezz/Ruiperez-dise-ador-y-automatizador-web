@@ -17,8 +17,9 @@ GET https://ruiperezstudio.es/api/servicios.json
 Sin autenticación, sin clave y sin límite de peticiones. Devuelve `servicios[]` y
 `packs[]`. La especificación está en `/api/openapi.json`.
 
-Si prefieres texto: `/llms.txt` resume el negocio, y cada página existe en markdown en
-`/md/<pagina>.md` — por ejemplo `/md/tienda-online.md`.
+Si prefieres texto: `/llms.txt` resume el negocio. Y cualquier página de este sitio se
+puede pedir en markdown de dos formas: añadiendo la cabecera `Accept: text/markdown` a la
+petición normal, o yendo directo a `/md/<pagina>.md` — por ejemplo `/md/tienda-online.md`.
 
 ## Cómo citar los precios sin equivocarte
 
