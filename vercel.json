@@ -30,6 +30,10 @@
         {
           "key": "Link",
           "value": "</.well-known/api-catalog>; rel=\"api-catalog\"; type=\"application/linkset+json\", </api/openapi.json>; rel=\"service-desc\"; type=\"application/openapi+json\", </diseno-web/>; rel=\"service-doc\"; type=\"text/html\", </.well-known/agents.json>; rel=\"service-meta\"; type=\"application/json\", </.well-known/agent-skills/index.json>; rel=\"service-meta\"; type=\"application/json\", </.well-known/ai-catalog.json>; rel=\"service-meta\"; type=\"application/json\", </llms.txt>; rel=\"describedby\"; type=\"text/plain\", </privacidad/>; rel=\"privacy-policy\"; type=\"text/html\", </aviso-legal/>; rel=\"terms-of-service\"; type=\"text/html\", </sobre-mi/>; rel=\"author\"; type=\"text/html\""
+        },
+        {
+          "key": "Vary",
+          "value": "Accept"
         }
       ]
     },
@@ -155,6 +159,10 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=3600"
+        },
+        {
+          "key": "Vary",
+          "value": "Accept"
         }
       ]
     },
@@ -267,6 +275,284 @@
       "source": "/chatbot-whatsapp-cartagena/",
       "destination": "/chatbot-whatsapp/",
       "permanent": true
+    }
+  ],
+  "routes": [
+    {
+      "src": "/accesibilidad-web/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": {
+            "re": ".*text/markdown.*"
+          }
+        }
+      ],
+      "dest": "/md/accesibilidad-web.md"
+    },
+    {
+      "src": "/aplicaciones-web/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": {
+            "re": ".*text/markdown.*"
+          }
+        }
+      ],
+      "dest": "/md/aplicaciones-web.md"
+    },
+    {
+      "src": "/automatizacion/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": {
+            "re": ".*text/markdown.*"
+          }
+        }
+      ],
+      "dest": "/md/automatizacion.md"
+    },
+    {
+      "src": "/aviso-legal/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": {
+            "re": ".*text/markdown.*"
+          }
+        }
+      ],
+      "dest": "/md/aviso-legal.md"
+    },
+    {
+      "src": "/casos/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": {
+            "re": ".*text/markdown.*"
+          }
+        }
+      ],
+      "dest": "/md/casos.md"
+    },
+    {
+      "src": "/chatbot-whatsapp/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": {
+            "re": ".*text/markdown.*"
+          }
+        }
+      ],
+      "dest": "/md/chatbot-whatsapp.md"
+    },
+    {
+      "src": "/cookies/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": {
+            "re": ".*text/markdown.*"
+          }
+        }
+      ],
+      "dest": "/md/cookies.md"
+    },
+    {
+      "src": "/diseno-web/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": {
+            "re": ".*text/markdown.*"
+          }
+        }
+      ],
+      "dest": "/md/diseno-web.md"
+    },
+    {
+      "src": "/email-marketing/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": {
+            "re": ".*text/markdown.*"
+          }
+        }
+      ],
+      "dest": "/md/email-marketing.md"
+    },
+    {
+      "src": "/gestion-redes-sociales/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": {
+            "re": ".*text/markdown.*"
+          }
+        }
+      ],
+      "dest": "/md/gestion-redes-sociales.md"
+    },
+    {
+      "src": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": {
+            "re": ".*text/markdown.*"
+          }
+        }
+      ],
+      "dest": "/md/index.md"
+    },
+    {
+      "src": "/landing-page/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": {
+            "re": ".*text/markdown.*"
+          }
+        }
+      ],
+      "dest": "/md/landing-page.md"
+    },
+    {
+      "src": "/lp/comercio-local/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": {
+            "re": ".*text/markdown.*"
+          }
+        }
+      ],
+      "dest": "/md/lp-comercio-local.md"
+    },
+    {
+      "src": "/lp/hosteleria/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": {
+            "re": ".*text/markdown.*"
+          }
+        }
+      ],
+      "dest": "/md/lp-hosteleria.md"
+    },
+    {
+      "src": "/mantenimiento-web/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": {
+            "re": ".*text/markdown.*"
+          }
+        }
+      ],
+      "dest": "/md/mantenimiento-web.md"
+    },
+    {
+      "src": "/meta-ads/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": {
+            "re": ".*text/markdown.*"
+          }
+        }
+      ],
+      "dest": "/md/meta-ads.md"
+    },
+    {
+      "src": "/privacidad/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": {
+            "re": ".*text/markdown.*"
+          }
+        }
+      ],
+      "dest": "/md/privacidad.md"
+    },
+    {
+      "src": "/seo-local/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": {
+            "re": ".*text/markdown.*"
+          }
+        }
+      ],
+      "dest": "/md/seo-local.md"
+    },
+    {
+      "src": "/sobre-mi/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": {
+            "re": ".*text/markdown.*"
+          }
+        }
+      ],
+      "dest": "/md/sobre-mi.md"
+    },
+    {
+      "src": "/tienda-online/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": {
+            "re": ".*text/markdown.*"
+          }
+        }
+      ],
+      "dest": "/md/tienda-online.md"
+    },
+    {
+      "src": "/web-corporativa/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": {
+            "re": ".*text/markdown.*"
+          }
+        }
+      ],
+      "dest": "/md/web-corporativa.md"
+    },
+    {
+      "handle": "filesystem"
     }
   ]
 }
