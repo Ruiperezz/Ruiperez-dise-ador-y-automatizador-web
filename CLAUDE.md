@@ -295,15 +295,27 @@ servicio** — hace falta el `place_id` de Google Maps de cada una.
 - **El servicio de accesibilidad NO se apoya en auditorías previas a clientes**, porque no las hay. Lo que hizo Álvaro a Alameda y TukTuk fue una auditoría digital de negocio, que es otra cosa. La única prueba que se usa es la propia web medida con axe. **No insinúes experiencia en accesibilidad que no existe.**
 - **Precios de accesibilidad (23/09/2026):** el mercado español cobra 800–2.500€ por una auditoría básica y 400–1.590€/mes de monitorización. Álvaro sale por debajo a propósito para darse a conocer, y la FAQ lo dice abiertamente. **Están pensados para subir.**
 - **Nunca prometas conformidad.** Ni «cumplimiento garantizado», ni «100% conforme», ni «sin riesgo de multa». La FAQ responde que no se garantiza y por qué.
-- Referencia medida el 30/08/2026 con Lighthouse móvil: rendimiento 98, accesibilidad 100, buenas prácticas 100, SEO 100. LCP 1,9s · CLS 0,04.
-- ⚠️ **Ese 98 está sin comprobar desde el 30/08 y la home ha doblado de tamaño.** El
-  27/08 pesaba 48 KB al quitar GSAP; el 25/09 pesa **105 KB** (36 KB de CSS en línea,
-  13 KB de JS, 10 KB de SVG en línea), y el salto grande no fue el de los packs sino
-  el acumulado de las tarjetas de servicio, la comparativa y los testimonios.
-  **Hay que volver a medir Lighthouse antes de meter dinero en anuncios**, porque el
-  tráfico de pago llega en móvil y el LCP es lo que decide si se queda. Si hay que
-  recortar, el CSS en línea de la home es donde está la grasa: mucho se repite en
-  las 21 páginas y no se cachea entre ellas.
+- **Lighthouse móvil, medido el 29/09/2026** con Lighthouse 13.5.0 contra producción:
+
+  | Página | Rend. | Acces. | B. prác. | SEO | LCP | CLS | TBT |
+  |---|:-:|:-:|:-:|:-:|--:|--:|--:|
+  | `/` | **100** | 100 | 100 | 100 | 1,5s | 0,008 | 0ms |
+  | `/meta-ads/` | **100** | 100 | 100 | 100 | 1,2s | 0,001 | 0ms |
+  | `/lp/hosteleria/` | **100** | 100 | 100 | 66¹ | 1,6s | 0,002 | 0ms |
+
+  ¹ El 66 de SEO es correcto y esperado: la única auditoría que falla es «Page is blocked
+  from indexing», y esa página es `noindex` a propósito por ser de tráfico de pago.
+  **No lo "arregles".**
+
+  **El aviso anterior sobre el peso queda cancelado.** Se temía que la home doblara de
+  48 KB a 105 KB hubiera hundido el rendimiento. Medido: no lo hizo. Subió de 98 a 100 y
+  el LCP bajó de 1,9s a 1,5s. El CSS en línea pesa pero no bloquea, y las fuentes locales
+  con `preload` más el mockup del hero antes del texto en móvil hacen el resto.
+
+  Para repetir la medida sin tocar el repositorio: instalar `lighthouse` con npm **fuera**
+  del proyecto (en un directorio temporal), exportar `CHROME_PATH` y lanzarlo contra la
+  URL de producción. La API de PageSpeed Insights tiene cuota diaria compartida y suele
+  estar agotada.
 
 ## Skills de este proyecto
 
@@ -375,6 +387,14 @@ respecto a lo que este archivo daba por bueno:
   a vender en 3 días» y reservas con Amelia. Mismo mercado, mitad de precio.
 - **Lo único que sigue libre: ningún competidor usa un titular que ataque un problema.**
   Los nueve H1 leídos son «servicio + ciudad» o un precio desnudo.
+
+## Enlaces entrantes
+
+`docs/enlaces-entrantes.md` es el plan. **Sigue en cero enlaces, y es el freno real del
+SEO**: ninguna mejora técnica lo sustituye. Lo de más valor son los tres sitios que
+Álvaro ya mantiene y cobra (Alameda, TukTuk, Finca Doña Carmen): un crédito de diseñador
+en el pie, **pedido y no puesto a escondidas**, sin `nofollow` y con el texto del enlace
+distinto en cada uno para no parecer comprado. Ahí está el HTML y el mensaje para pedirlo.
 
 ## Mantenimiento recurrente
 
