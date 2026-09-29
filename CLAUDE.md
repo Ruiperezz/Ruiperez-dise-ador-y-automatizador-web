@@ -378,41 +378,45 @@ servicio** — hace falta el `place_id` de Google Maps de cada una.
 - **`refactoring-ui`** y **`web-typography`** (`.agents/skills/`, de `wondelai/skills`) — jerarquía visual, espaciado, color, tipografía. Sustituyen a `ui-ux-pro-max`, que no existe.
 - `web-design-guidelines` y `vercel-optimize` — layout, accesibilidad y rendimiento.
 
-## Markdown para agentes: FUNCIONA, con `routes` (29/09/2026)
+## Markdown para agentes: los archivos SÍ, la negociación NO (29/09/2026)
 
-Un agente que pida `Accept: text/markdown` recibe la página en markdown; un navegador
-recibe HTML. **Medido en producción**, no supuesto:
+**Publicado y funcionando:** los 21 `md/*.md`, con `Content-Type: text/markdown`,
+anunciados en `llms.txt`, en `agents.json` y en los dos manifiestos ARD. Un modelo que
+quiera el contenido sin HTML lo tiene en `https://ruiperezstudio.es/md/<pagina>.md`.
 
+**NO funciona:** pedir la página normal con `Accept: text/markdown`. Se intentó dos veces.
+
+1. **Con `rewrites` + `has`:** desplegado y medido — devolvía HTML. Los `rewrites` se
+   evalúan **después** del sistema de archivos, y en un sitio estático `/meta-ads/` ES un
+   archivo, así que la regla nunca se ejecuta. Está en los docs de Vercel.
+2. **Con `routes` + `{"handle": "filesystem"}`:** la negociación **sí funcionó**, pero
+   rompió algo mucho peor. **Con `routes` activo, Vercel deja de aplicar la propiedad
+   `headers` entera.** En producción desaparecieron `Content-Security-Policy`,
+   `X-Frame-Options`, `Referrer-Policy`, `Permissions-Policy`, `X-Content-Type-Options`,
+   `Link` y `Vary`, y la HSTS perdió `includeSubDomains; preload`. **Revertido en minutos.**
+   Los docs de Vercel dicen que `routes` convive con `headers`. En la práctica, no.
+
+⚠️ **EL FALLO DE MÉTODO, que vale más que la conclusión.** Probé la vista previa antes de
+fusionar, pero solo comprobé que la página se servía bien — **no que las cabeceras
+siguieran ahí.** Medí lo que había ido a buscar en vez de la respuesta completa. Por eso
+la regresión llegó a producción. **Cuando cambies enrutado o cabeceras, compara la
+respuesta ENTERA contra el estado anterior**, no solo la parte que te interesa:
+
+```bash
+curl -s -D- -o /dev/null https://ruiperezstudio.es/ | grep -iE \
+  '^(content-security-policy|x-frame-options|referrer-policy|permissions-policy|x-content-type-options|strict-transport-security|link|vary):'
 ```
-Accept: text/markdown  →  text/markdown; charset=utf-8  ·  # Le das a «Promocionar»…
-Accept: text/html      →  text/html; charset=utf-8      ·  <!DOCTYPE html>
-```
 
-**La clave es `routes`, no `rewrites`.** Se intentó primero con 21 `rewrites` y `has`, se
-desplegó, y devolvía HTML igual: los `rewrites` se evalúan **después** del sistema de
-archivos, y en un sitio estático `/meta-ads/` ES un archivo, así que la regla nunca se
-ejecutaba. Está en los propios docs de Vercel. Con `routes`, las reglas colocadas **antes**
-de `{"handle": "filesystem"}` se evalúan primero, que es justo lo que faltaba.
+**Se podría intentar metiendo las cabeceras dentro de `routes`**, que sí acepta un campo
+`headers` por regla. **No se ha hecho:** reescribir siete cabeceras de seguridad a mano,
+en una primitiva que ya demostró comportarse distinto a su documentación, para ganar un
+mecanismo que hoy no usa ningún rastreador, es mucho riesgo por muy poco. **Si alguien lo
+intenta, que compare la respuesta entera antes y después.**
 
-⚠️ **`routes` es una primitiva de bajo nivel: un error ahí no deja la web fea, la deja sin
-resolver.** Por eso se probó en una **vista previa** antes de fusionar, confirmando que
-servía el HTML completo con su H1, su pie y sus precios. **Si tocas `routes`, haz lo mismo:
-rama aparte, esperar el despliegue de vista previa, comprobar, y solo entonces fusionar.**
-Comprobado tras fusionar: las 8 redirecciones siguen en 308 y las 21 páginas en 200.
-
-**`Vary: Accept` es obligatorio ahora** y está en `/(.*)` y en `/md/(.*)`. Sin él, la CDN
-puede cachear el HTML y servírselo a quien pidió markdown, o al revés. Se había quitado
-cuando la negociación no funcionaba; volvió al reactivarla.
-
-Los 21 `md/*.md` se generan con `scripts/genera-markdown.py` desde el propio HTML.
-**No es un paso de build** —este proyecto no tiene ninguno— sino un script que se ejecuta
-a mano y cuyo resultado se comitea. `scripts/verifica-api.py` lo vuelve a ejecutar y falla
-si difiere, que es lo que impide que el markdown se quede desfasado del HTML.
-
-⚠️ **Este entorno no alcanza `*.vercel.app`**, así que las vistas previas no se pueden
-probar con `curl` desde aquí. Se leen con `web_fetch_vercel_url` del MCP de Vercel, que
-**no permite cabeceras propias**: sirve para confirmar que el sitio no está roto, no para
-probar la negociación. Esa parte se mide en producción, justo después de fusionar.
+⚠️ **Este entorno no alcanza `*.vercel.app`**, así que las vistas previas no se prueban con
+`curl` desde aquí. Se leen con `web_fetch_vercel_url` del MCP de Vercel, que **no permite
+cabeceras propias ni muestra las de respuesta con detalle**: sirve para ver que el sitio no
+está roto, no para validar cabeceras. Esa limitación es parte de por qué falló el método.
 
 ## Decisiones de Álvaro que no hay que revertir (25/09/2026)
 

@@ -89,3 +89,13 @@ for man in ['.well-known/ai-catalog.json', '.well-known/ard.json']:
             print(f"  DESAJUSTE: identificador mal formado en {man}: {e['identifier']}")
             sys.exit(1)
     print(f"  {man.split('/')[-1]}: {len(m['entries'])} entradas, todas existen")
+
+# ── Nada debe prometer que la negociación por Accept funciona: no funciona ──
+import re as _re
+for _f in ['llms.txt', '.well-known/agents.json', '.well-known/ard.json',
+           '.well-known/ai-catalog.json', '.well-known/agent-skills/consultar-precios/SKILL.md']:
+    _t = open(_f, encoding='utf-8').read()
+    if _re.search(r'Accept:\s*text/markdown', _t) and not _re.search(r'(NO funciona|no funciona)', _t):
+        print(f"  DESAJUSTE: {_f} menciona Accept: text/markdown sin decir que NO funciona.")
+        sys.exit(1)
+print("  ningún archivo promete la negociación por Accept")
