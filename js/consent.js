@@ -18,7 +18,7 @@
 
   /* ═══ CONFIGURACIÓN ═══ */
   var RS_CONFIG = {
-    metaPixelId:   "",              // [PEDIR AL CLIENTE] Meta Events Manager → ID del píxel (15-16 dígitos)
+    metaPixelId:   "3145125662545354", // Meta · conjunto de datos «ruiperezstudio.es» (29/09/2026)
     tiktokPixelId: "",              // [PEDIR AL CLIENTE] TikTok Events Manager → ID del píxel
     ga4Id:         "G-D61B7R46V5", // Google Analytics 4 · propiedad ruiperezstudio.es
     vercelAnalytics: true,

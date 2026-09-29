@@ -208,7 +208,13 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 - El consentimiento y la medición viven en `/js/consent.js`, compartido por las 17 páginas. Ver `docs/medicion.md`. No lo dupliques en línea.
 - Imágenes con `width` y `height` reales y **`height:auto` en el CSS de esa página**. Sin `height:auto`, el navegador usa el atributo `height` y deforma la imagen. Pasó en 17 páginas a la vez: si creas una página nueva, comprueba la regla `img{}`.
 - Ningún script de terceros se ejecuta antes del consentimiento de cookies.
-- **GA4 activo:** `G-D61B7R46V5`, en `RS_CONFIG` de `js/consent.js`. Meta y TikTok siguen con el ID vacío, así que no cargan. Si añades uno, actualiza también la tabla de `/cookies/` en el mismo commit.
+- **GA4 y Meta Pixel activos**, en `RS_CONFIG` de `js/consent.js`: GA4 `G-D61B7R46V5` y
+  Meta `3145125662545354` (conjunto de datos «ruiperezstudio.es», activado el 29/09/2026).
+  **TikTok sigue con el ID vacío**, así que no carga. Si añades uno, actualiza también la
+  tabla de `/cookies/` en el mismo commit — a Meta ya se le retiró el «(pendiente)».
+  **Ninguno carga sin consentimiento de la categoría de publicidad:** `cargarPublicidad()`
+  solo se llama desde `aplicar(v)` cuando `v.publicidad` es cierto, y el Consent Mode v2
+  arranca con los cuatro permisos en `denied`.
 - Contraste WCAG AA, foco visible, `alt` en todas las imágenes, objetivos táctiles de 44px o más.
 - `--terra` (#B5522F) da 4,47:1 sobre el fondo crema: **no vale para texto pequeño**. Para texto usa `--terra-txt` (#A84A28, 5,12:1). Para rellenos, `--terra`.
 - El pie tiene que ser idéntico en las 16 páginas que lo llevan (las tres legales llevan un pie reducido, sin lista de servicios). Si añades una página, añádela al pie de todas.
@@ -436,9 +442,8 @@ vuelvas a marcar como fallo ni las "arregles" por tu cuenta:**
   **Es Gmail y se queda así:** Álvaro comprobó el 28/09/2026 que no tiene buzón en el
   dominio propio y decidió no comprarlo de momento. **No vuelvas a proponérselo.**
   Si algún día cambia, son 6 sitios y el pie de 16 páginas.
-- **El ID del píxel de Meta lo pasa él.** Hasta entonces `metaPixelId: ""` y los
-  anuncios no se pueden medir. Todo lo demás está montado: CSP, cookies, banner y el
-  evento `Contact` antes de la redirección.
+- ~~El ID del píxel de Meta lo pasa él.~~ **Entregado y activo desde el 29/09/2026.**
+  Ya no bloquea nada: se puede lanzar campaña.
 - **Alameda en cuatro páginas está bien**, y en ninguna más. Ver la regla de arriba.
 
 ## Auditoría del 25/09/2026
