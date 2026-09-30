@@ -252,7 +252,13 @@ Los clientes verificables como tales:
 - **Floristería Alameda** — Cartagena, **4,9★ con 333 reseñas** (verificado en floristeriaalameda.com). Es una **tienda online** con catálogo, carrito y pasarela de pago. No la etiquetes como web corporativa.
 - **Casa del Sushi** — Cartagena, restauración. **Entregado, el cliente no siguió adelante.** `casa-del-sushi.vercel.app`. Carta, info del local, ubicación y reseñas, **reserva de mesa con correo de confirmación automático** y un **panel de administración** donde el dueño ve sus reservas. **Álvaro dice que el trabajo no está cerrado del todo** (22/09/2026): sigue etiquetado como caso real porque la web está publicada y se puede abrir, pero confirma con él antes de llamarle «cliente» en copy nuevo. **Álvaro confirmó el 21/09/2026 que Perico Del Rey NO es Casa del Sushi.** Casa del Sushi es cliente y tiene su caso en `/web-corporativa/` y `/casos/`, pero **no ha dejado reseña en Google**: no le atribuyas ninguna.
 
-**Ficha de Google propia: `locations/10546771556631248285`.** **11 reseñas y 4,6★** (dato leído en vivo por Windsor el 30/09/2026; antes este archivo decía 7 y 5,0★, que ya era falso). **Compruébalo en vivo antes de escribirlo en ninguna página**, no te fíes de esta línea. Enlace público `https://maps.google.com/maps?cid=16135944171140006039`; para pedir reseñas, `https://search.google.com/local/writereview?placeid=ChIJoxdRJpnbFWoRl8BVVLtj7t8`. **El 4,9★ con 333 reseñas es de Alameda, no suyo**: donde aparezca hay que decir de quién es. En el hero va su 5,0★ real.
+**Ficha de Google propia: `locations/10546771556631248285`.** **11 reseñas y 4,6★** (dato leído en vivo por Windsor el 30/09/2026; antes este archivo decía 7 y 5,0★, que ya era falso). **Compruébalo en vivo antes de escribirlo en ninguna página**, no te fíes de esta línea. Enlace público `https://maps.google.com/maps?cid=16135944171140006039`; para pedir reseñas, `https://search.google.com/local/writereview?placeid=ChIJoxdRJpnbFWoRl8BVVLtj7t8`. **El 4,9★ con 333 reseñas es de Alameda, no suyo**: donde aparezca hay que decir de quién es. En el hero van sus 11 reseñas y su 4,6★ reales.
+
+⚠️ **Hay una reseña de UNA estrella, del 29/09/2026, sin comentario y SIN CONTESTAR.** Es la que
+baja la media de 5,0 a 4,6 (diez de cinco más una de una = 4,64). **Pendiente de Álvaro: decir si
+reconoce al autor como cliente.** Si no lo reconoce se puede reportar a Google como reseña no
+basada en una experiencia real; en cualquier caso conviene contestarla en público, porque una de
+una estrella sin respuesta pesa más que diez de cinco con respuesta.
 
 **Floristería Buccaro (Alicante): landing informativa entregada, pendiente de cerrar.** No era una maqueta: es un encargo real al precio oficial de landing page. Aparece en `/landing-page/` etiquetada «Proyecto entregado · pendiente de cerrar». **El precio no va en el caso**, va en el bloque de precio del servicio, como todos. No se le atribuyen resultados porque no los hay.
 
@@ -315,6 +321,14 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 
 - Las preguntas y respuestas del `FAQPage` en JSON-LD **deben coincidir literalmente** con el FAQ visible. Si cambias una, cambia la otra en el mismo commit.
 - **Los precios del JSON-LD también se cambian.** El 25/09/2026 los doce estaban en los valores de antes de las dos subidas: Google enseñaba «890€» en resultados enriquecidos y la página decía 1.490€. **No se ve en la web, así que nadie lo nota:** cada vez que toques la tabla de precios, comprueba `"price"` en las doce páginas.
+- **La CSP dejaba fuera las dos vías de respaldo del píxel de Meta (corregido el 30/09/2026).**
+  `frame-src 'none'` y `form-action 'self'` bloqueaban el iframe y el POST por formulario que
+  `fbevents.js` usa cuando el GET no vale (payload largo, Safari con ITP). **El evento se perdía
+  sin error visible en la página.** Ahora las dos permiten `https://www.facebook.com`. Medido en
+  producción con Playwright: `PageView` y `Contact` llegan, cero errores de consola, y **las siete
+  cabeceras de seguridad siguen intactas con la HSTS completa**.
+  ⚠️ Los otros dos bloqueos de consola —`stats.g.doubleclick.net` y `google.es/ads/ga-audiences`—
+  **se quedan bloqueados a propósito**: son Google Signals y remarketing de Google Ads.
 - La CSP de `vercel.json` solo permite los dominios de Meta, TikTok y Google Analytics. `font-src` y `style-src` están en `'self'`. Cualquier otro recurso externo **se bloquea sin aviso en consola**.
 - **Las tipografías se sirven desde `/fonts/`, no desde Google.** Son tres WOFF2 del subconjunto `latin` (54 KB): Instrument Serif normal e italic, y Karla variable 400–700. Traerlas de Google bloqueaba el renderizado ~1,8s y comunicaba la IP del visitante a Google. Si añades un peso o un idioma, descarga el archivo a `/fonts/` — no vuelvas a enlazar `fonts.googleapis.com`.
 - `←`, `→` y `★` no están en ningún subconjunto de Google: usan la fuente del sistema. Es así a propósito.
@@ -461,9 +475,18 @@ la subida (390€, 690€, 450€, 1.290€, 1.990€, 240€, 890€, 690€, 2
 obsoletos. Ahora hay **16 servicios** con la tabla al día, incluidos Meta Ads y los tres
 packs. Las **7 publicaciones** están reescritas: las cinco que quedaban llevaban precios
 viejos o estaban en plural («diseñamos», «Te atendemos», «integramos»), y se ha añadido
-una octava con los packs. **Pendiente: añadir Alicante, Almería y Valencia al área de
-servicio** — hace falta el `place_id` de Google Maps de cada una.
-**Pendiente de Álvaro: la fecha de apertura del negocio**, que está vacía. Dice «+2 años» pero no tengo el mes ni el año exactos y no me los invento.
+una octava con los packs. ~~Pendiente: añadir Alicante, Almería y Valencia al área de servicio.~~ **HECHO**, comprobado el
+30/09/2026: son siete lugares — Murcia, Alicante, Almería, Valencia, Elche, Cartagena y Región de
+Murcia.
+~~Pendiente de Álvaro: la fecha de apertura.~~ **HECHA: septiembre de 2024**, leída del conector.
+
+**Ficha actualizada el 30/09/2026 con la última bajada.** Descripción reescrita (724 de los 750
+caracteres), **19 servicios** con la tabla nueva —incluidos Automatización esencial y el pack
+Arranca, que no estaban—, **siete publicaciones corregidas** y una octava nueva sobre los tres
+planes de mantenimiento.
+⚠️ **Dos publicaciones llevaban la tienda online a 2.490€**, un precio que no era el vigente ni
+antes de esta bajada. **Las publicaciones de la ficha no se actualizan solas cuando cambias la
+tabla: hay que repasarlas una a una.**
 **Categorías (21/09/2026):** principal `gcid:website_designer`; secundarias `gcid:internet_marketing_service`, `gcid:marketing_agency` y `gcid:software_company`. Un `update_location` con teléfono o web da 400: mándalos solo si de verdad cambian. **La dirección no se toca:** cambiarla dispara la re-verificación de Google y puede tumbar la ficha. Search Console (`searchconsole`, propiedades `ruiperezstudio.es` y `zenconfort.es`) es **solo lectura**.
 - **La URL de la barra del navegador (`.brw-url`) tiene que ser la de la captura que hay debajo.** En `/web-corporativa/` ponía `floristeriaalameda.com` sobre una captura de Casa del Sushi: si el visitante abre esa URL y ve otra cosa, la prueba se vuelve en contra. Corregido el 23/09/2026.
 - **Accesibilidad: las 21 páginas pasan axe-core 4.10.2 con CERO violaciones WCAG 2.1 A y AA** (25/09/2026). **Esto es ahora un argumento de venta**: `/accesibilidad-web/` lo dice por escrito e invita a comprobarlo. Si rompes una regla, dejas de poder venderlo. Comprueba axe antes de tocar una página, no después.
@@ -561,6 +584,22 @@ vuelvas a marcar como fallo ni las "arregles" por tu cuenta:**
   Ya no bloquea nada: se puede lanzar campaña.
 - **Alameda en cuatro páginas está bien**, y en ninguna más. Ver la regla de arriba.
 
+## Auditoría del 30/09/2026
+
+`AUDITORIA-2026-09-30.md`, hecha con los cuatro conectores en vivo. **El dato que manda sobre
+todos los demás:**
+
+| Fuente | Septiembre 2026 |
+|---|---|
+| Google Search (España) | 773 impresiones · **14 clics** · posición media 26,8 |
+| Ficha de Google | 62 impresiones · **1 clic a la web** · 0 llamadas · 0 mensajes |
+| Página de Facebook | **0 seguidores · 0 alcance** |
+| Meta Ads | cuenta activa, **ninguna campaña, nunca** |
+| Instagram | **sin conectar** |
+
+**Quince visitas en todo el mes.** El precio nunca fue el cuello de botella: **no había tráfico al
+que enseñárselo.** Cualquier discusión de copy o de precio es secundaria hasta que eso cambie.
+
 ## Auditoría del 25/09/2026
 
 `AUDITORIA-2026-09-25.md` es la auditoría pre-campaña completa hecha con la skill
@@ -597,9 +636,10 @@ días de aprendizaje y unos 50 eventos por conjunto—, se decide por **coste po
 y no por clics ni por `ViewContent`, y **el CPA que muestra Meta está subestimado** porque
 el evento solo se dispara con consentimiento de publicidad.
 
-⚠️ **El conector `facebook` de Windsor NO está conectado** a 30/09/2026. Hasta que Álvaro
-autorice en onboard.windsor.ai no hay datos, y el informe del día debe decir eso en vez de
-estimar nada.
+✅ **El conector `facebook` de Windsor SÍ está conectado** (comprobado el 30/09/2026): cuenta
+`1086058157249572`, estado `ACTIVE`, **0€ gastados y ninguna campaña creada nunca**. También
+están `facebook_organic` (páginas RuiperezStudio y Zenconfort), `google_my_business` y
+`searchconsole`. **Falta `instagram`**, que es el que hace falta para el orgánico.
 
 **Los umbrales de CPA son provisionales:** salen de un ticket medio de 1.442€ y una tasa de
 cierre supuesta de 1 de cada 7. **Hay que pedirle a Álvaro cuántos presupuestos cierra de
