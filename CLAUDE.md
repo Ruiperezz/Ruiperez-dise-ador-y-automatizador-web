@@ -60,12 +60,17 @@ Otros archivos: `sitemap.xml` (19 URLs — las noindex quedan fuera), `robots.tx
 
 Cambios puntuales fuera de contrato: 60€/hora.
 
-**Plazos de entrega (28/09/2026):**
+**Plazos de entrega (30/09/2026):**
 
 | Servicio | Plazo |
 |---|---|
-| Landing page · web corporativa · tienda online | **1 semana** |
-| **Aplicación web de gestión** | **2 semanas** — lleva base de datos y usuarios |
+| Landing page · web esencial · web corporativa · tienda online | **1-2 semanas** |
+| **Aplicación web de gestión** | **2-3 semanas** — lleva base de datos y usuarios |
+
+**Ampliados el 30/09/2026 a petición de Álvaro:** «no me da tiempo si no». Es el cambio
+correcto — **un plazo que se incumple hace más daño que uno más largo que se cumple**, y
+aun con la horquilla sigue muy por debajo de Corbax (6-10 semanas), Ovalles (4-6) y
+Alicante Developers (3-5).
 
 Antes iban de 5-7 días una landing a 4-8 semanas una aplicación. Se bajaron a una
 semana el 25/09 y la aplicación subió a dos el 28/09, a petición de Álvaro.
@@ -177,7 +182,7 @@ Los clientes verificables como tales:
 - **Floristería Alameda** — Cartagena, **4,9★ con 333 reseñas** (verificado en floristeriaalameda.com). Es una **tienda online** con catálogo, carrito y pasarela de pago. No la etiquetes como web corporativa.
 - **Casa del Sushi** — Cartagena, restauración. **Entregado, el cliente no siguió adelante.** `casa-del-sushi.vercel.app`. Carta, info del local, ubicación y reseñas, **reserva de mesa con correo de confirmación automático** y un **panel de administración** donde el dueño ve sus reservas. **Álvaro dice que el trabajo no está cerrado del todo** (22/09/2026): sigue etiquetado como caso real porque la web está publicada y se puede abrir, pero confirma con él antes de llamarle «cliente» en copy nuevo. **Álvaro confirmó el 21/09/2026 que Perico Del Rey NO es Casa del Sushi.** Casa del Sushi es cliente y tiene su caso en `/web-corporativa/` y `/casos/`, pero **no ha dejado reseña en Google**: no le atribuyas ninguna.
 
-**Ficha de Google propia: `locations/10546771556631248285`.** 5,0★ con 7 reseñas, verificada. Enlace público `https://maps.google.com/maps?cid=16135944171140006039`; para pedir reseñas, `https://search.google.com/local/writereview?placeid=ChIJoxdRJpnbFWoRl8BVVLtj7t8`. **El 4,9★ con 333 reseñas es de Alameda, no suyo**: donde aparezca hay que decir de quién es. En el hero va su 5,0★ real.
+**Ficha de Google propia: `locations/10546771556631248285`.** **11 reseñas y 4,6★** (dato leído en vivo por Windsor el 30/09/2026; antes este archivo decía 7 y 5,0★, que ya era falso). **Compruébalo en vivo antes de escribirlo en ninguna página**, no te fíes de esta línea. Enlace público `https://maps.google.com/maps?cid=16135944171140006039`; para pedir reseñas, `https://search.google.com/local/writereview?placeid=ChIJoxdRJpnbFWoRl8BVVLtj7t8`. **El 4,9★ con 333 reseñas es de Alameda, no suyo**: donde aparezca hay que decir de quién es. En el hero va su 5,0★ real.
 
 **Floristería Buccaro (Alicante): landing informativa entregada, pendiente de cerrar.** No era una maqueta: es un encargo real al precio oficial de landing page. Aparece en `/landing-page/` etiquetada «Proyecto entregado · pendiente de cerrar». **El precio no va en el caso**, va en el bloque de precio del servicio, como todos. No se le atribuyen resultados porque no los hay.
 

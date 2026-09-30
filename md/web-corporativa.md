@@ -1,6 +1,6 @@
 # Te piden la web y les mandas el Instagram.
 
-> Web corporativa con código propio y SEO local para empresas del sureste español. Entrega en 1 semana, desde 1.490€ + IVA. Casos reales que puedes abrir.
+> Web corporativa con código propio y SEO local para empresas del sureste español. Entrega en 1-2 semanas, desde 1.490€ + IVA. Casos reales que puedes abrir.
 >
 > Página: https://ruiperezstudio.es/web-corporativa/
 
@@ -10,7 +10,7 @@ Una web donde se ve qué haces, cuánto cuesta y cómo escribirte. Sin plantilla
 
 **De un vistazo**
 
-- 1.490€ (+ 21% IVA) · Pago único · entrega en 1 semana
+- 1.490€ (+ 21% IVA) · Pago único · entrega en 1-2 semanas
 - Precio cerrado antes de empezar
 - Trato directo conmigo, sin comerciales
 
@@ -79,7 +79,7 @@ Elige tour, día, hora y número de personas; la web calcula el total y cobra. S
 
 Puedes comprobarlo: [tuktukcartagena.com](https://tuktukcartagena.com/) está publicada y aceptando reservas.
 
-**Precio: 1.490€ · Pago único · entrega en 1 semana** (+ 21% IVA)
+**Precio: 1.490€ · Pago único · entrega en 1-2 semanas** (+ 21% IVA)
 
 - Diseño propio, sin plantillas
 - SEO local completo
@@ -101,7 +101,7 @@ Te respondo yo, sin compromiso y con precio cerrado.
 
 **¿Cuánto tiempo tarda exactamente?**
 
-Una semana desde que me aportas el contenido. El plazo va cerrado por escrito antes de empezar y lo cumplo.
+Entre una y dos semanas desde que me aportas el contenido, según el tamaño. El plazo va cerrado por escrito antes de empezar y lo cumplo.
 
 **¿Necesito aportar los textos yo?**
 

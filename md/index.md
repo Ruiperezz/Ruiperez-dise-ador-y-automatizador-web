@@ -11,7 +11,7 @@ Reservas que se pagan solas, correos que salen sin que los escribas y un panel d
 **De un vistazo**
 
 - Desde 690€ (+ 21% IVA), pago único y precio cerrado
-- Entrega en 1 semana, sin permanencia
+- Entrega en 1-2 semanas, sin permanencia
 - El código es tuyo desde la entrega
 
 ## 333 reseñas y una web que no las merecía.
@@ -171,7 +171,7 @@ Una agencia mantiene oficina, comerciales y departamentos. Yo no, y eso lo notas
 - Automatización de procesos incluida en el catálogo
 - Chatbot de WhatsApp con IA
 - Código fuente entregado al completo
-- Interlocutor único, lista en 1 semana
+- Interlocutor único, lista en 1-2 semanas
 - SEO local incluido en todas las webs
 
 ## Cuatro pasos. Sabes en cuál estás en todo momento.
@@ -196,7 +196,7 @@ Tu web en vivo, el código es tuyo y tienes 30 días de ajustes incluidos.
 
 ## Lo que dicen en Google
 
-Copiadas literalmente de mi ficha de Google, donde llevo 5,0 de media sobre 7 reseñas. Puedes abrirlas y comprobarlo.
+Copiadas literalmente de mi ficha de Google, donde llevo 4,6 de media sobre 11 reseñas. Puedes abrirlas y comprobarlo.
 
 Quiero agradecer a Ruipérez el excelente trabajo realizado en la creación de nuestra página web. Desde el primer momento demostró una gran profesionalidad, creatividad y dedicación. Supo entender perfectamente nuestras necesidades y transformarlas en una web moderna, atractiva y fácil de usar.
 
@@ -216,7 +216,7 @@ El pago por la web es único. No hay cuotas mensuales obligatorias. El código t
 
 **¿En cuánto tiempo tienes lista mi web?**
 
-Una semana desde que me das el contenido, sea una landing, una web corporativa o una tienda. La aplicación de gestión son dos, porque lleva base de datos y usuarios. El plazo va cerrado por escrito antes de empezar.
+Entre una y dos semanas desde que me das el contenido, sea una landing, una web corporativa o una tienda. La aplicación de gestión son de dos a tres, porque lleva base de datos y usuarios. El plazo va cerrado por escrito antes de empezar.
 
 **¿La web es mía o dependo de ti?**
 
