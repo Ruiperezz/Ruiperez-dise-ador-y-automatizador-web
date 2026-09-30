@@ -42,7 +42,7 @@
       "id": "web-esencial",
       "nombre": "Web esencial",
       "url": "https://ruiperezstudio.es/web-corporativa/#esencial",
-      "descripcion": "Web de hasta 4 páginas con diseño propio, sin plantillas. Los textos los escribo yo. Opción de sistema de reservas con correo de confirmación automático, presupuestado aparte.",
+      "descripcion": "Web de hasta 4 páginas con diseño propio, sin plantillas. Los textos los escribo yo. Incluye sistema de reservas si el negocio lo necesita; los correos automáticos de confirmación van aparte, dentro de la automatización de procesos.",
       "precio": {
         "modelo": "pago_unico",
         "desde_eur_sin_iva": 790,

@@ -91,7 +91,7 @@ Puedes comprobarlo: [tuktukcartagena.com](https://tuktukcartagena.com/) está pu
 - Tu ficha de Google al día
 - El código es tuyo desde la entrega
 - 30 días de ajustes
-- Opción: sistema de reservas con correo de confirmación automático, presupuestado aparte
+- Sistema de reservas incluido si lo necesitas. Los correos automáticos de confirmación van aparte, con la automatización
 
 ## ¿Hablamos de tu negocio?
 

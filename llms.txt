@@ -15,7 +15,8 @@ Contacto: WhatsApp y teléfono +34 642 08 40 42 · https://ruiperezstudio.es
 ## Precios (sin IVA, se añade el 21%)
 
 - Landing page: desde 690€, pago único
-- Web esencial: desde 790€, pago único. Hasta 4 páginas. Opción de sistema de reservas, presupuestada aparte
+- Web esencial: desde 790€, pago único. Hasta 4 páginas. Incluye sistema de reservas si el negocio
+  lo necesita; los correos automáticos de confirmación van aparte, con la automatización de procesos
 - Web corporativa: desde 1.490€, pago único
 - Tienda online: desde 1.900€, pago único
 - Aplicación web de gestión: desde 3.900€ más 90€/mes
