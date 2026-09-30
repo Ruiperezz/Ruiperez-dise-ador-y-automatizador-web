@@ -1,6 +1,6 @@
 # Pagas el clic, llega a tu web y se va sin escribirte.
 
-> Una sola página pensada para convertir visitas en clientes: código propio, rápida en móvil y con la llamada a la acción siempre a la vista. Desde 690€.
+> Una sola página pensada para convertir visitas en clientes: código propio, rápida en móvil y con la llamada a la acción siempre a la vista. Desde 590€.
 >
 > Página: https://ruiperezstudio.es/landing-page/
 
@@ -10,7 +10,7 @@ Una sola página, una sola cosa que hacer y ningún menú por el que perderse. E
 
 **De un vistazo**
 
-- 690€ (+ 21% IVA) · Pago único · lista en 1-2 semanas
+- 590€ (+ 21% IVA) · Pago único · lista en 1-2 semanas
 - Precio cerrado antes de empezar
 - Trato directo conmigo, sin comerciales
 
@@ -59,7 +59,7 @@ Una floristería se compra por impulso. Si pides un email antes de enseñar la f
 
 Landing informativa entregada, pendiente de cerrar. Los precios que aparecen en las fotos son los de la floristería y están sin confirmar.
 
-**Precio: 690€ · Pago único · lista en 1-2 semanas** (+ 21% IVA)
+**Precio: 590€ · Pago único · lista en 1-2 semanas** (+ 21% IVA)
 
 - Diseño propio, sin plantilla
 - Botón de WhatsApp
@@ -95,7 +95,7 @@ La landing es una sola página con un solo objetivo (que te contacten). La web c
 
 **¿Qué pasa después de los 30 días de soporte?**
 
-Puedes contratar mantenimiento mensual (95€/mes) o pedirme cambios puntuales (60€/hora). Sin permanencia en ningún caso.
+Puedes contratar mantenimiento mensual (desde 39€/mes, con el alojamiento dentro) o pedirme cambios puntuales (60€/hora). Sin permanencia en ningún caso.
 
 ---
 

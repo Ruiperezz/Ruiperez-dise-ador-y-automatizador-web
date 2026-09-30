@@ -44,19 +44,68 @@ Otros archivos: `sitemap.xml` (19 URLs — las noindex quedan fuera), `robots.tx
 
 | Servicio | Precio |
 |---|---|
-| Landing page | desde 690€ · pago único |
-| **Web esencial** | **desde 790€** · pago único · **hasta 4 páginas** · reservas como opción, presupuestadas aparte |
-| Web corporativa | desde 1.490€ · pago único |
-| Tienda online | desde 1.900€ · pago único |
-| Aplicación web de gestión | desde 3.900€ · pago único + 90€/mes |
-| Automatización de procesos | desde 1.200€ |
-| Chatbot IA para WhatsApp | desde 1.590€ + 120€/mes |
+| Landing page | desde 590€ · pago único |
+| Web esencial (hasta 4 páginas) | desde 690€ · pago único |
+| Web corporativa | desde 1.190€ · pago único |
+| Tienda online | desde 1.490€ · pago único |
+| Aplicación web de gestión | desde 2.900€ · pago único + 90€/mes |
+| Automatización esencial | desde 390€ |
+| Automatización de procesos | desde 990€ |
+| Chatbot IA para WhatsApp | desde 1.290€ + 120€/mes |
 | Email marketing | desde 290€/mes |
 | SEO local | desde 390€/mes |
 | Gestión de redes sociales | desde 450€/mes · **8 publicaciones, 2 en vídeo, 1 red** |
 | Auditoría de accesibilidad | desde 590€ · con correcciones 1.190€ · monitorización 95€/mes |
-| Mantenimiento web | 95–190€/mes |
+| **Mantenimiento web** | **39 / 69 / 99€/mes · alojamiento incluido** |
 | **Gestión de Meta Ads** | **240€/mes** hasta 1.000€/mes de inversión · por encima, 15% de la inversión |
+
+**Bajada del 30/09/2026, la última.** Álvaro la pidió con un objetivo explícito:
+**captar y cerrar clientes pequeños cuanto antes para ganar experiencia**, porque
+hoy solo ingresa 100€/mes de mantenimiento y el resto sale de sus ahorros. Se
+comparó contra **freelances del sureste que publican precio**, no contra agencias:
+Ferrís (landing 300€, web 550-800€, tienda 800-950€), TomyFlow (350€), Fran López
+(599€), Pablo Alcaraz (900€ / 1.190€ / «a medida desde 2.900€»), Blanco (800€ /
+1.200-1.500€), González (tienda 1.400€). La tabla queda **por debajo de agencia en
+todo y dentro de la banda junior de 18-30€/hora**: 590€/20h = 29,5€/h · 690€/25h =
+27,6€/h · 1.190€/40h = 29,8€/h · 1.490€/55h = 27,1€/h. **Bajar más lo saca de esa
+banda**: sería trabajar por debajo de lo que vale su hora, no ser competitivo.
+
+**Los dos mensuales de coste NO bajan** (90€/mes de la aplicación, 120€/mes del
+chatbot) ni los cuatro servicios mensuales (SEO 390, redes 450, email 290, Meta Ads
+240): lo que se bajó es el pago único, que es lo que frena la primera venta.
+
+**Mantenimiento en tres niveles (30/09/2026).** Antes eran 95-190€/mes con diez
+cambios; el mercado cobra 15-50€/mes con media hora. **Daba más que nadie y por eso
+parecía caro.** Ahora:
+
+| Plan | €/mes | Cambios incluidos |
+|---|---|---|
+| Básico | 39 | ninguno · a 60€/hora |
+| Estándar | 69 | 4 al mes |
+| Completo | 99 | 10 al mes |
+
+**El alojamiento va incluido en los tres.** El dominio no: se gestiona sin recargo
+o se pone a nombre del cliente, que es lo que recomienda la FAQ y lo que ya decía
+`js/asistente.js`.
+
+⚠️ **Si la web lleva automatización, el plan mínimo es el Estándar.** Decisión de
+Álvaro: una automatización vive en una base de datos (Supabase) que cuesta dinero
+todos los meses. **Un Básico de 39€ con automatización pierde dinero.** Está escrito
+en la página, en la FAQ, en el JSON-LD y en `api/servicios.json`.
+
+**Los tres clientes actuales siguen a 100€/mes**, que es lo que hoy es el Completo.
+Los tres niveles son para clientes nuevos.
+
+**Packs recalculados al 16% (30/09/2026):**
+
+| Pack | Lleva | Suelto | Pack |
+|---|---|---|---|
+| **Arranca** | Web esencial + automatización esencial | 1.080€ | **910€** |
+| **Capta** | Landing page + 3 meses de Meta Ads | 1.310€ | **1.100€** |
+| **Vende online** | Tienda online + automatización | 2.480€ | **2.080€** |
+| **Atiende solo** | Web corporativa + automatización + chatbot IA | 3.470€ | **2.910€** |
+
+`scripts/verifica-api.py` comprueba que el «suelto» cuadra con la suma real.
 
 Cambios puntuales fuera de contrato: 60€/hora.
 
@@ -157,6 +206,27 @@ más nuevo que los demás y que no hay casos publicados. **No le inventes un cas
 **Los dos mensuales NO subieron:** los 90€/mes de la aplicación y los 120€/mes del chatbot. Son coste (base de datos, alojamiento, llamadas a la API), no margen.
 
 ⚠️ **Pendiente:** la publicación de Google Business del 23/09 dice «acabo de bajarlos» y lista los precios viejos. **Hay que reescribirla.** Windsor estaba caído el 24 y no se pudo.
+
+
+⚠️ **Lección del 30/09/2026, sobre cómo NO hacer una bajada de precios.** Se migró
+con un script de reemplazos en cadena y dos reglas se pisaron entre sí:
+
+1. `"1200"` tenía que ser el `price` del JSON-LD, pero también pilló
+   `og:image:width content="1200"` **en las 21 páginas**, que es la miniatura al
+   compartir en WhatsApp y Facebook.
+2. La regla `490€ → 390€` corrió **antes** que `3.490€ → 2.910€`, así que el pack
+   Atiende solo salió **3.390€**, un precio que no existe.
+
+Las dos se pillaron, la segunda gracias a `scripts/verifica-api.py`. **Si vuelves a
+tocar la tabla de precios: usa tokens intermedios (`@@x@@`) para que un reemplazo no
+pise el resultado de otro, ordena las reglas de más específica a más general, y
+ejecuta `verifica-api.py` antes de commitear.** Un precio mal puesto en una página
+es peor que no haberla tocado.
+
+⚠️ **El JSON-LD de la home llevaba semanas desfasado** y nadie lo vio, porque no se
+ve en la web: decía tienda 1.990€, automatización 900€, SEO 290€, email 190€, redes
+350€ y mantenimiento 90€. **Ninguno era un precio real de ninguna tabla.** Google
+enseñaba eso en los resultados enriquecidos. Corregido y ahora comprobado.
 
 ## Clientes
 

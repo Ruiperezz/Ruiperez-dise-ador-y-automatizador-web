@@ -6,7 +6,7 @@
       "type": "skill-md",
       "description": "Consultar los servicios, precios y plazos de Ruipérez Studio sin interpretar HTML, y citarlos sin equivocarse: los importes van sin IVA, son precios «desde», y varios llevan cuota mensual además del pago único.",
       "url": "/.well-known/agent-skills/consultar-precios/SKILL.md",
-      "digest": "sha256:78d92452dfefa5e40c6e98d898bc87257055d95e0e4e235d2733b4e4cca15a28"
+      "digest": "sha256:c63b29779a3738f6d4dd8f60fe86caeb60f4ad0c9bd2a2f6d9e5060724f5060c"
     }
   ]
 }

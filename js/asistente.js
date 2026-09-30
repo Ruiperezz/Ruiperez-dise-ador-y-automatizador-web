@@ -24,10 +24,10 @@
   var KB = [
     { k:["precio","cuesta","cuanto cuesta","cuanto vale","cuanto seria","vale","cobras","tarifa","presupuesto","caro","barato","coste","cuanto me","precios"],
       t:"Los precios están publicados, sin tener que preguntar:",
-      l:["Landing page: desde 690€","Web esencial (hasta 4 páginas): desde 790€","Web corporativa: desde 1.490€","Tienda online: desde 1.900€","Aplicación de gestión: desde 3.900€ + 90€/mes",
-         "Automatización: desde 1.200€","Chatbot de WhatsApp: desde 1.590€ + 120€/mes",
+      l:["Landing page: desde 590€","Web esencial (hasta 4 páginas): desde 690€","Web corporativa: desde 1.190€","Tienda online: desde 1.490€","Aplicación de gestión: desde 2.900€ + 90€/mes",
+         "Automatización: desde 990€ (esencial, 390€)","Chatbot de WhatsApp: desde 1.290€ + 120€/mes",
          "SEO local: desde 390€/mes","Redes sociales: desde 450€/mes","Email marketing: desde 290€/mes",
-         "Accesibilidad (Ley 11/2023): desde 590€","Mantenimiento: 95–190€/mes"],
+         "Accesibilidad (Ley 11/2023): desde 590€","Mantenimiento: 39–99€/mes, alojamiento incluido"],
       n:"Todos sin IVA. El precio se cierra por escrito antes de empezar.", u:"/#servicios" },
 
     { k:["tarda","cuanto tardas","cuanto tarda","plazo","plazos","cuando estaria","rapido","entrega","semanas","urgente","tiempo"],
@@ -55,9 +55,9 @@
 
     { k:["pack","packs","packs de servicios","combinacion","todo junto","varios servicios","descuento","oferta","promocion","mas barato si contrato varios","junto","lote"],
       t:"Hay tres packs, entre un 16% y un 19% más baratos que contratando suelto.",
-      l:["Arranca: web esencial + automatización esencial · 1.099€ (suelto 1.280€)","Capta: landing + 3 meses de Meta Ads · 1.190€ (suelto 1.410€)",
-         "Vende online: tienda + automatización de pedidos · 2.590€ (suelto 3.100€)",
-         "Atiende solo: web + automatización + chatbot IA · 3.490€ (suelto 4.280€)"],
+      l:["Arranca: web esencial + automatización esencial · 910€ (suelto 1.080€)","Capta: landing + 3 meses de Meta Ads · 1.100€ (suelto 1.310€)",
+         "Vende online: tienda + automatización de pedidos · 2.080€ (suelto 2.480€)",
+         "Atiende solo: web + automatización + chatbot IA · 2.910€ (suelto 3.470€)"],
       n:"Si necesitas otra combinación, dime qué dos o tres cosas te hacen falta y te la presupuesto con el mismo descuento por ir juntas.", u:"/#packs" },
 
     { k:["meta ads","facebook ads","instagram ads","anuncios","publicidad","campañas","promocionar","anuncios de facebook","anuncios de instagram","publicidad de pago","gestion de anuncios","cuanto cuesta anunciarse","presupuesto anuncios","inversion publicitaria"],
@@ -72,7 +72,7 @@
       n:"La exención de microempresa solo vale para servicios y exige menos de 10 empleados Y hasta 2 millones de facturación. Escríbeme y te digo si te aplica, sin cobrarte.", u:"/accesibilidad-web/" },
 
     { k:["aplicacion","aplicacion web","app","cuesta una aplicacion","precio aplicacion","precio de la aplicacion","cuesta una app","precio app","panel de gestion","panel de administracion","software a medida","programa de gestion","area privada","zona de clientes"],
-      t:"Una aplicación web de gestión: desde 3.900€ más 90€/mes.",
+      t:"Una aplicación web de gestión: desde 2.900€ más 90€/mes.",
       l:["Panel de administración solo para ti","Cada cliente entra con su usuario y ve solo lo suyo",
          "Base de datos propia, no una hoja de cálculo","De 4 a 8 semanas"],
       n:"Los 90€/mes cubren alojamiento, base de datos, copias de seguridad y soporte. Sin permanencia.", u:"/aplicaciones-web/" },
@@ -80,16 +80,16 @@
     { k:["automatizacion","automatizar","n8n","make","procesos","tareas","repetitiv","integrar","conectar"],
       t:"Automatizo las tareas que hoy haces a mano y podrían hacerse solas.",
       l:["Email automático cuando entra un pedido o un lead","Avisos y recordatorios","Sincronización entre las apps que ya usas"],
-      n:"Desde 1.200€. Si pierdes horas copiando datos de un sitio a otro, esto es lo que más te va a rentar.", u:"/automatizacion/" },
+      n:"Desde 990€, o 390€ la versión esencial. Si pierdes horas copiando datos de un sitio a otro, esto es lo que más te va a rentar.", u:"/automatizacion/" },
 
     { k:["chatbot","bot","inteligencia artificial","inteligencia","responder solo","24 horas","whatsapp business","contestar solo","robot"],
       t:"Monto asistentes con IA de verdad sobre WhatsApp Business.",
       l:["Responden preguntas de tus clientes las 24 horas","Toman reservas","Escalan a ti cuando no saben algo"],
-      n:"Desde 1.590€ más 120€/mes. Se entrenan con tus precios, horarios y servicios.", u:"/chatbot-whatsapp/" },
+      n:"Desde 1.290€ más 120€/mes. Se entrenan con tus precios, horarios y servicios.", u:"/chatbot-whatsapp/" },
 
     { k:["tienda","ecommerce","vender online","carrito","pasarela","pago tarjeta","productos","stock"],
       t:"Tienda online completa: catálogo, carrito, pasarela de pago y gestión de pedidos.",
-      n:"Desde 1.900€. La de Floristería Alameda la puedes ver funcionando en floristeriaalameda.com.", u:"/tienda-online/" },
+      n:"Desde 1.490€. La de Floristería Alameda la puedes ver funcionando en floristeriaalameda.com.", u:"/tienda-online/" },
 
     { k:["zona","donde trabajas","donde estas","cartagena","murcia","desplaz","presencial","reunion","vernos","lejos","trabajas en","vives"],
       t:"Estoy en Cartagena y trabajo en toda la Región de Murcia.",
@@ -101,7 +101,7 @@
 
     { k:["mantenimiento","despues","soporte","actualiza","copias","backup","averia","se rompe"],
       t:"Los primeros 30 días incluyen ajustes sin coste.",
-      n:"Después, plan de mantenimiento opcional desde 95€/mes o cambios puntuales a 60€/hora. Sin permanencia.", u:"/mantenimiento-web/" },
+      n:"Después, plan de mantenimiento opcional desde 39€/mes con el alojamiento incluido, o cambios puntuales a 60€/hora. Sin permanencia.", u:"/mantenimiento-web/" },
 
     { k:["barata","180","300","wix","wordpress","plantilla","mas barato","competencia"],
       t:"Las webs de 180–300€ son plantillas genéricas.",
@@ -118,7 +118,7 @@
 
     { k:["landing","una pagina","promocion","campaña","anuncios"],
       t:"Una sola página diseñada para convertir visitas en clientes.",
-      n:"Desde 690€, lista en una semana. Va bien si quieres probar sin gastar mucho o vas a promocionar una oferta concreta.", u:"/landing-page/" },
+      n:"Desde 590€, lista en una semana. Va bien si quieres probar sin gastar mucho o vas a promocionar una oferta concreta.", u:"/landing-page/" },
 
     { k:["quien eres","sobre ti","experiencia","trabajos","portfolio","proyectos","casos","clientes"],
       t:"Soy Álvaro Ruipérez. Construyo webs, tiendas y aplicaciones de gestión en el sureste.",

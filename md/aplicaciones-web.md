@@ -1,6 +1,6 @@
 # El dato bueno está en el ordenador de otra persona.
 
-> Un panel para ti y un acceso privado para cada cliente, sobre una base de datos propia. Desde 3.900€ más 90€/mes. Murcia, Alicante, Almería y Valencia.
+> Un panel para ti y un acceso privado para cada cliente, sobre una base de datos propia. Desde 2.900€ más 90€/mes. Murcia, Alicante, Almería y Valencia.
 >
 > Página: https://ruiperezstudio.es/aplicaciones-web/
 
@@ -10,7 +10,7 @@ Un programa hecho para tu negocio al que entráis con usuario y contraseña, y c
 
 **De un vistazo**
 
-- 3.900€ (+ 21% IVA) · desde · más 90€/mes · entrega en 2-3 semanas
+- 2.900€ (+ 21% IVA) · desde · más 90€/mes · entrega en 2-3 semanas
 - Precio cerrado antes de empezar
 - Trato directo conmigo, sin comerciales
 
@@ -95,7 +95,7 @@ Next.js, base de datos en Supabase y despliegue en Vercel. Lo mismo que usaría 
 
 Proyecto en curso, todavía no publicado. Lo añado a los proyectos que puedes abrir el día que esté en producción, no antes.
 
-**Precio: 3.900€ · Desde · pago único, más 90€/mes de servicio** (+ 21% IVA)
+**Precio: 2.900€ · Desde · pago único, más 90€/mes de servicio** (+ 21% IVA)
 
 - Panel de administración y acceso privado para tus clientes
 - Base de datos propia con copias de seguridad
@@ -117,7 +117,7 @@ Una web enseña información. Una aplicación la guarda, la protege y le da a ca
 
 Porque una aplicación tiene una base de datos funcionando las 24 horas. Los 90€/mes cubren el alojamiento, la base de datos, las copias de seguridad y el soporte. Una web estática no necesita nada de eso, y por eso no la cobro.
 
-**3.900€ frente a lo que pide una agencia, ¿dónde está la trampa?**
+**2.900€ frente a lo que pide una agencia, ¿dónde está la trampa?**
 
 No hay trampa: hay menos estructura. Una agencia parte de 5.000€ o más porque tiene comercial, jefe de proyecto y oficina que pagar. Aquí hablas conmigo y programo yo. Te ahorras la estructura, no el trabajo.
 

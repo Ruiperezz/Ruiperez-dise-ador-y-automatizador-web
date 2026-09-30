@@ -1,16 +1,16 @@
 # Pides tres presupuestos de web y te dan tres cifras distintas.
 
-> Lo que cuesta una web, publicado: landing desde 690€ y web corporativa desde 1.490€ + IVA. Código propio, sin plantillas. Murcia, Alicante y Valencia.
+> Lo que cuesta una web, publicado: landing desde 590€ y web corporativa desde 1.190€ + IVA. Código propio, sin plantillas. Murcia, Alicante y Valencia.
 >
 > Página: https://ruiperezstudio.es/diseno-web/
 
 *Diseño web · Sureste de España*
 
-Los míos están publicados y son cerrados: lo que ves es lo que pagas. Desde 790€ una web esencial de hasta 4 páginas. Trabajo desde Cartagena para negocios de Murcia, Alicante, Almería y Valencia, con código propio y sin plantillas.
+Los míos están publicados y son cerrados: lo que ves es lo que pagas. Desde 690€ una web esencial de hasta 4 páginas. Trabajo desde Cartagena para negocios de Murcia, Alicante, Almería y Valencia, con código propio y sin plantillas.
 
 **De un vistazo**
 
-- 690€ (+ 21% IVA) · Desde · pago único
+- 590€ (+ 21% IVA) · Desde · pago único
 - Estoy en Cartagena, a media hora de Murcia
 - Precio cerrado antes de empezar
 
@@ -70,7 +70,7 @@ Tienda online entera: ficha por producto, carrito, cobro con Stripe y avisos aut
 
 Vendía en el mostrador y algún pedido suelto a domicilio. Hoy factura un 30% más al mes, según datos del propio cliente. Ábrela en [floristeriaalameda.com](https://floristeriaalameda.com/).
 
-**Precio: 690€ · 1.490€ · Landing page desde 690€ · Web corporativa desde 1.490€. Pago único.** (+ 21% IVA)
+**Precio: 590€ · 1.190€ · Landing page desde 590€ · Web corporativa desde 1.190€. Pago único.** (+ 21% IVA)
 
 ## ¿Hablamos de tu negocio en Cartagena?
 
@@ -84,7 +84,7 @@ Sí. Vivo en Cartagena y puedo reunirme contigo en tu negocio si lo prefieres. T
 
 **¿Cuánto cuesta una web para un negocio de Cartagena?**
 
-Una landing page desde 690€ y una web corporativa completa desde 1.490€, ambas con IVA aparte y pago único. El precio se cierra por escrito antes de empezar.
+Una landing page desde 590€ y una web corporativa completa desde 1.190€, ambas con IVA aparte y pago único. El precio se cierra por escrito antes de empezar.
 
 **¿Aparecerá mi negocio en Google cuando busquen en Cartagena?**
 

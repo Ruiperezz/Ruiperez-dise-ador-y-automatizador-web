@@ -1,6 +1,6 @@
 # 333 reseñas de 4,9★ y una web con los textos de ejemplo sin quitar.
 
-> Web para tu tienda, floristería, óptica o clínica en Cartagena. Pago único desde 690€, sin cuota mensual y con el código tuyo desde la entrega.
+> Web para tu tienda, floristería, óptica o clínica en Cartagena. Pago único desde 590€, sin cuota mensual y con el código tuyo desde la entrega.
 
 ## Lo que lleva la web de un comercio que quiere que le escriban
 
@@ -15,7 +15,7 @@
 
 Quiero agradecer a Ruipérez el excelente trabajo realizado en la creación de nuestra página web. Desde el primer momento demostró una gran profesionalidad, creatividad y dedicación. Supo entender perfectamente nuestras necesidades y transformarlas en una web moderna, atractiva y fácil de usar.
 
-**Precio: Desde 690€ · Pago único · lista en 1-2 semanas** (+ 21% IVA)
+**Precio: Desde 590€ · Pago único · lista en 1-2 semanas** (+ 21% IVA)
 
 - Sin cuota mensual obligatoria
 - El código es tuyo desde la entrega

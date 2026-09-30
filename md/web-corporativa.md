@@ -1,6 +1,6 @@
 # Te piden la web y les mandas el Instagram.
 
-> Web corporativa con código propio y SEO local para empresas del sureste español. Entrega en 1-2 semanas, desde 1.490€ + IVA. Casos reales que puedes abrir.
+> Web corporativa con código propio y SEO local para empresas del sureste español. Entrega en 1-2 semanas, desde 1.190€ + IVA. Casos reales que puedes abrir.
 >
 > Página: https://ruiperezstudio.es/web-corporativa/
 
@@ -10,7 +10,7 @@ Una web donde se ve qué haces, cuánto cuesta y cómo escribirte. Sin plantilla
 
 **De un vistazo**
 
-- 1.490€ (+ 21% IVA) · Pago único · entrega en 1-2 semanas
+- 1.190€ (+ 21% IVA) · Pago único · entrega en 1-2 semanas
 - Precio cerrado antes de empezar
 - Trato directo conmigo, sin comerciales
 
@@ -79,7 +79,7 @@ Elige tour, día, hora y número de personas; la web calcula el total y cobra. S
 
 Puedes comprobarlo: [tuktukcartagena.com](https://tuktukcartagena.com/) está publicada y aceptando reservas.
 
-**Precio: 1.490€ · Pago único · entrega en 1-2 semanas** (+ 21% IVA)
+**Precio: 1.190€ · Pago único · entrega en 1-2 semanas** (+ 21% IVA)
 
 - Diseño propio, sin plantillas
 - SEO local completo
@@ -113,7 +113,7 @@ El dominio no está incluido en el precio base (cuesta ~12€/año). Lo gestiono
 
 **¿Puedo actualizar el contenido yo mismo?**
 
-Si lo necesitas, añado un panel de administración sencillo. Si prefieres que lo haga yo, tienes el plan de mantenimiento (95€/mes) o cambios puntuales (60€/hora).
+Si lo necesitas, añado un panel de administración sencillo. Si prefieres que lo haga yo, tienes el plan de mantenimiento Estándar (69€/mes, cuatro cambios al mes) o cambios puntuales (60€/hora).
 
 **¿Incluye Google Business Profile?**
 
@@ -121,7 +121,7 @@ Sí. Configuro o completo tu perfil de Google Business incluido en el precio. Es
 
 **¿Qué pasa si necesito cambios después?**
 
-Los primeros 30 días los ajustes son sin coste. Después puedes contratar mantenimiento mensual (95€/mes) o cambios puntuales (60€/hora). Sin permanencia.
+Los primeros 30 días los ajustes son sin coste. Después puedes contratar mantenimiento mensual (desde 39€/mes, con el alojamiento dentro) o cambios puntuales (60€/hora). Sin permanencia.
 
 ---
 
