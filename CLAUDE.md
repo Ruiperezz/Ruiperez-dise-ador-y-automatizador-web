@@ -88,7 +88,17 @@ enlazadas desde el bloque de precio de las seis páginas implicadas:
 | **Vende online** | Tienda online + automatización de pedidos | 3.100€ | **2.590€** |
 | **Atiende solo** | Web corporativa + automatización + chatbot IA | 4.280€ | **3.490€** |
 
-Descuento del 16–19%. **Tres, no más:** con cuatro o cinco el cliente no elige, se va.
+Descuento del 14–18%. **Cuatro desde el 30/09/2026**, cuando entró Arranca. La regla
+anterior decía «tres, no más», y sigue valiendo el motivo —con demasiados el cliente no
+elige—, pero cuatro funcionan porque la escalera 1.099 / 1.190 / 2.590 / 3.490 está clara
+y cada uno resuelve algo distinto. **No añadas un quinto.**
+
+⚠️ **Arranca existe porque Álvaro pidió un pack de 1.099€ y ese número no cuadraba.**
+Web esencial 790€ + automatización completa 1.200€ son 1.990€: a 1.099€ el descuento
+habría sido del 45% y **el pack habría costado menos que la automatización sola**, lo que
+revienta su precio. La solución fue crear **Automatización esencial a 490€** —solo el
+correo de confirmación y el aviso al móvil— y armar el pack sobre ella: 1.280€ sueltos,
+1.099€ en pack, 14%. **Si tocas alguno de esos dos precios, recalcula el pack.**
 **La escalera 1.190 / 2.990 / 3.490 es la respuesta a «¿pymes o negocios pequeños?»:**
 el pack de entrada abre puerta al pequeño y el de arriba a la mediana, sin tener que
 mover la tabla de precios por cuarta vez. Si cambias un precio de la tabla, recalcula

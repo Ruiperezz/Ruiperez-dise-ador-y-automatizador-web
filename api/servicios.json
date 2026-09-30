@@ -89,6 +89,17 @@
       }
     },
     {
+      "id": "automatizacion-esencial",
+      "nombre": "Automatización esencial",
+      "url": "https://ruiperezstudio.es/automatizacion/#esencial",
+      "descripcion": "Correo de confirmación automático al cliente y aviso al móvil con los datos ordenados. Para una web con reservas o formulario. Es la versión pequeña: la completa analiza los procesos y conecta varios programas entre sí.",
+      "precio": {
+        "modelo": "pago_unico",
+        "desde_eur_sin_iva": 490,
+        "iva_pct": 21
+      }
+    },
+    {
       "id": "automatizacion",
       "nombre": "Automatización de procesos",
       "url": "https://ruiperezstudio.es/automatizacion/",
@@ -189,6 +200,20 @@
     }
   ],
   "packs": [
+    {
+      "id": "arranca",
+      "nombre": "Pack Arranca",
+      "url": "https://ruiperezstudio.es/#packs",
+      "incluye": [
+        "web-esencial",
+        "automatizacion-esencial"
+      ],
+      "precio_eur_sin_iva": 1099,
+      "precio_suelto_eur_sin_iva": 1280,
+      "ahorro_eur": 181,
+      "iva_pct": 21,
+      "nota": "Entrega en una semana desde que el cliente entrega el contenido. Sin cuota obligatoria."
+    },
     {
       "id": "capta",
       "nombre": "Pack Capta",
