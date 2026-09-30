@@ -504,6 +504,22 @@ en Bing— y los directorios locales. Lo de más valor son los tres sitios que
 en el pie, **pedido y no puesto a escondidas**, sin `nofollow` y con el texto del enlace
 distinto en cada uno para no parecer comprado. Ahí está el HTML y el mensaje para pedirlo.
 
+## Meta Ads: informe diario
+
+`docs/cowork-meta-ads.md` es el encargo permanente para Cowork o cualquier sesión con
+Windsor conectado. Lo esencial: **no se toca nada hasta el día 7** —Meta necesita de 3 a 7
+días de aprendizaje y unos 50 eventos por conjunto—, se decide por **coste por `Contact`**
+y no por clics ni por `ViewContent`, y **el CPA que muestra Meta está subestimado** porque
+el evento solo se dispara con consentimiento de publicidad.
+
+⚠️ **El conector `facebook` de Windsor NO está conectado** a 30/09/2026. Hasta que Álvaro
+autorice en onboard.windsor.ai no hay datos, y el informe del día debe decir eso en vez de
+estimar nada.
+
+**Los umbrales de CPA son provisionales:** salen de un ticket medio de 1.442€ y una tasa de
+cierre supuesta de 1 de cada 7. **Hay que pedirle a Álvaro cuántos presupuestos cierra de
+verdad** y recalcularlos.
+
 ## Mantenimiento recurrente
 
 `docs/mantenimiento.md` es el encargo permanente para quien lleve el mantenimiento semanal y mensual (Cowork o cualquier sesión con el repo y Windsor conectados). Cubre publicaciones en la ficha, respuesta a reseñas, los tres mantenimientos de clientes, las revisiones trimestrales de axe y Lighthouse, y la lista de cosas que se rompen sin avisar. **Si cambias una de esas rutinas, cámbiala ahí también.**
