@@ -24,7 +24,7 @@
   "iva_nota": "Todos los precios son sin IVA. Se añade el 21% en factura.",
   "plazos_nota": "El plazo cuenta desde que el cliente entrega el contenido, no desde la firma.",
   "precio_hora_fuera_de_contrato_eur_sin_iva": 60,
-  "actualizado": "2026-09-28",
+  "actualizado": "2026-09-30",
   "servicios": [
     {
       "id": "landing-page",
@@ -34,6 +34,18 @@
       "precio": {
         "modelo": "pago_unico",
         "desde_eur_sin_iva": 690,
+        "iva_pct": 21,
+        "plazo_entrega_dias": 7
+      }
+    },
+    {
+      "id": "web-esencial",
+      "nombre": "Web esencial",
+      "url": "https://ruiperezstudio.es/web-corporativa/#esencial",
+      "descripcion": "Web de hasta 4 páginas con diseño propio, sin plantillas. Los textos los escribo yo. Opción de sistema de reservas con correo de confirmación automático, presupuestado aparte.",
+      "precio": {
+        "modelo": "pago_unico",
+        "desde_eur_sin_iva": 790,
         "iva_pct": 21,
         "plazo_entrega_dias": 7
       }
@@ -57,7 +69,7 @@
       "descripcion": "Catálogo, carrito y cobro con tarjeta. El pedido llega pagado y con la dirección escrita.",
       "precio": {
         "modelo": "pago_unico",
-        "desde_eur_sin_iva": 2490,
+        "desde_eur_sin_iva": 1900,
         "iva_pct": 21,
         "plazo_entrega_dias": 7
       }
@@ -199,9 +211,9 @@
         "tienda-online",
         "automatizacion"
       ],
-      "precio_eur_sin_iva": 2990,
-      "precio_suelto_eur_sin_iva": 3690,
-      "ahorro_eur": 700,
+      "precio_eur_sin_iva": 2590,
+      "precio_suelto_eur_sin_iva": 3100,
+      "ahorro_eur": 510,
       "iva_pct": 21,
       "nota": "Sin cuota obligatoria. El mantenimiento es opcional, desde 95€/mes."
     },

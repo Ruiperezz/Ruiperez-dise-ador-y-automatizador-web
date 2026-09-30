@@ -45,8 +45,9 @@ Otros archivos: `sitemap.xml` (19 URLs — las noindex quedan fuera), `robots.tx
 | Servicio | Precio |
 |---|---|
 | Landing page | desde 690€ · pago único |
+| **Web esencial** | **desde 790€** · pago único · **hasta 4 páginas** · reservas como opción, presupuestadas aparte |
 | Web corporativa | desde 1.490€ · pago único |
-| Tienda online | desde 2.490€ · pago único |
+| Tienda online | desde 1.900€ · pago único |
 | Aplicación web de gestión | desde 3.900€ · pago único + 90€/mes |
 | Automatización de procesos | desde 1.200€ |
 | Chatbot IA para WhatsApp | desde 1.590€ + 120€/mes |
@@ -84,7 +85,7 @@ enlazadas desde el bloque de precio de las seis páginas implicadas:
 | Pack | Lleva | Suelto | Pack |
 |---|---|---|---|
 | **Capta** | Landing page + 3 meses de Meta Ads | 1.410€ | **1.190€** |
-| **Vende online** | Tienda online + automatización de pedidos | 3.690€ | **2.990€** |
+| **Vende online** | Tienda online + automatización de pedidos | 3.100€ | **2.590€** |
 | **Atiende solo** | Web corporativa + automatización + chatbot IA | 4.280€ | **3.490€** |
 
 Descuento del 16–19%. **Tres, no más:** con cuatro o cinco el cliente no elige, se va.
@@ -92,6 +93,35 @@ Descuento del 16–19%. **Tres, no más:** con cuatro o cinco el cliente no elig
 el pack de entrada abre puerta al pequeño y el de arriba a la mediana, sin tener que
 mover la tabla de precios por cuarta vez. Si cambias un precio de la tabla, recalcula
 las tres columnas: el «suelto» tiene que cuadrar con la suma real o el descuento es mentira.
+
+**Cambios del 30/09/2026, decididos por Álvaro tras estudiar 17 competidores del sureste
+con precio publicado:**
+
+- **Tienda online 2.490€ → 1.900€.** La investigación le dio la razón: para un negocio
+  pequeño era 2,5-4× las tiendas locales de 650-995€. A 1.900€ queda **entre las de
+  plantilla y las de agencia** (2.500-2.900€), que es una posición defendible.
+  ⚠️ **Es el cuarto movimiento de precios en ocho días y el único que BAJA algo ya
+  publicado.** Queda dicho; fue decisión suya con los datos delante.
+- **Web esencial, 790€, escalón NUEVO** en `/web-corporativa/#esencial`. **Hasta 4
+  páginas.** No baja la corporativa: es la respuesta del mercado —**ninguno de los 17
+  competidores tiene un solo producto de web; todos tienen de 3 a 6 niveles, y ninguno
+  baja el precio del que ya tiene**. Los textos los escribe Álvaro, igual que en la
+  corporativa: la diferencia es el tamaño, no el alcance.
+  **Pendiente: el precio del sistema de reservas opcional.** Hoy dice «presupuestado
+  aparte» porque él no dio cifra. **No te la inventes.**
+- **El pack Vende online se recalculó:** suelto 3.100€ (1.900 + 1.200), pack **2.590€**,
+  ahorro 510€, descuento del 16%. Los tres packs siguen en la banda 16-18%.
+
+**Lo que la investigación del 30/09 dejó claro y no hay que olvidar:**
+- Una web de 500-800€ del sureste **no incluye textos redactados, ni diseño propio, ni
+  hosting a partir del año 2** (70-300€/año). Corbax cobra el diseño propio aparte:
+  +400-1.200€. **La web de 1.490€ no compite con una de 600€, compite con 600€ + 400€ de
+  diseño + 300€ de textos.**
+- **Su plazo de 1 semana machaca a casi todos:** Corbax 6-10 semanas, Ovalles 4-6,
+  Alicante Developers 3-5. Solo Dvesign (3 días) y Tu Estudio Web (5 días) igualan.
+  **Ese argumento está infrautilizado.**
+- **Ni un solo proveedor local publica precio de chatbot ni de automatización.** En webs
+  «publico mis precios» ya no distingue, pero **ahí sigue siendo territorio vacío**.
 
 **Meta Ads, servicio nuevo del 25/09/2026.** El mercado español cobra el 15–20% de la
 inversión con un mínimo de 300–500€/mes, y un freelance especializado entre 400 y

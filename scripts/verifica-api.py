@@ -7,7 +7,11 @@ fallos = []
 def fmt(n): return f"{n:,}".replace(",", ".")
 
 for s in d['servicios']:
-    slug = s['id']; f = f"{slug}/index.html"
+    # La página sale de la URL, no del id: un servicio puede vivir en un ancla de
+    # otra página (web-esencial → /web-corporativa/#esencial) y no tener carpeta propia.
+    slug = s['id']
+    ruta = s['url'].replace('https://ruiperezstudio.es/', '').split('#')[0].rstrip('/')
+    f = f"{ruta}/index.html" if ruta else 'index.html'
     if not os.path.exists(f): fallos.append(f"{slug}: no existe {f}"); continue
     txt = html.unescape(re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', open(f, encoding='utf-8').read())))
     p = s['precio']

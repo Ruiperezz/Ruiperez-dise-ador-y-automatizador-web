@@ -24,7 +24,7 @@
   var KB = [
     { k:["precio","cuesta","cuanto cuesta","cuanto vale","cuanto seria","vale","cobras","tarifa","presupuesto","caro","barato","coste","cuanto me","precios"],
       t:"Los precios están publicados, sin tener que preguntar:",
-      l:["Landing page: desde 690€","Web corporativa: desde 1.490€","Tienda online: desde 2.490€","Aplicación de gestión: desde 3.900€ + 90€/mes",
+      l:["Landing page: desde 690€","Web esencial (hasta 4 páginas): desde 790€","Web corporativa: desde 1.490€","Tienda online: desde 1.900€","Aplicación de gestión: desde 3.900€ + 90€/mes",
          "Automatización: desde 1.200€","Chatbot de WhatsApp: desde 1.590€ + 120€/mes",
          "SEO local: desde 390€/mes","Redes sociales: desde 450€/mes","Email marketing: desde 290€/mes",
          "Accesibilidad (Ley 11/2023): desde 590€","Mantenimiento: 95–190€/mes"],
@@ -56,7 +56,7 @@
     { k:["pack","packs","packs de servicios","combinacion","todo junto","varios servicios","descuento","oferta","promocion","mas barato si contrato varios","junto","lote"],
       t:"Hay tres packs, entre un 16% y un 19% más baratos que contratando suelto.",
       l:["Capta: landing + 3 meses de Meta Ads · 1.190€ (suelto 1.410€)",
-         "Vende online: tienda + automatización de pedidos · 2.990€ (suelto 3.690€)",
+         "Vende online: tienda + automatización de pedidos · 2.590€ (suelto 3.100€)",
          "Atiende solo: web + automatización + chatbot IA · 3.490€ (suelto 4.280€)"],
       n:"Si necesitas otra combinación, dime qué dos o tres cosas te hacen falta y te la presupuesto con el mismo descuento por ir juntas.", u:"/#packs" },
 
@@ -89,7 +89,7 @@
 
     { k:["tienda","ecommerce","vender online","carrito","pasarela","pago tarjeta","productos","stock"],
       t:"Tienda online completa: catálogo, carrito, pasarela de pago y gestión de pedidos.",
-      n:"Desde 2.490€. La de Floristería Alameda la puedes ver funcionando en floristeriaalameda.com.", u:"/tienda-online/" },
+      n:"Desde 1.900€. La de Floristería Alameda la puedes ver funcionando en floristeriaalameda.com.", u:"/tienda-online/" },
 
     { k:["zona","donde trabajas","donde estas","cartagena","murcia","desplaz","presencial","reunion","vernos","lejos","trabajas en","vives"],
       t:"Estoy en Cartagena y trabajo en toda la Región de Murcia.",
