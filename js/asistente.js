@@ -55,7 +55,7 @@
 
     { k:["pack","packs","packs de servicios","combinacion","todo junto","varios servicios","descuento","oferta","promocion","mas barato si contrato varios","junto","lote"],
       t:"Hay tres packs, entre un 16% y un 19% más baratos que contratando suelto.",
-      l:["Capta: landing + 3 meses de Meta Ads · 1.190€ (suelto 1.410€)",
+      l:["Arranca: web esencial + automatización esencial · 1.099€ (suelto 1.280€)","Capta: landing + 3 meses de Meta Ads · 1.190€ (suelto 1.410€)",
          "Vende online: tienda + automatización de pedidos · 2.590€ (suelto 3.100€)",
          "Atiende solo: web + automatización + chatbot IA · 3.490€ (suelto 4.280€)"],
       n:"Si necesitas otra combinación, dime qué dos o tres cosas te hacen falta y te la presupuesto con el mismo descuento por ir juntas.", u:"/#packs" },

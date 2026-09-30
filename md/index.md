@@ -111,6 +111,12 @@ Ocho publicaciones al mes con su texto y su diseño, dos de ellas en vídeo, má
 
 Una web sin nada detrás es un folleto. Estas tres combinaciones son las que de verdad se piden juntas, y salen entre un 16% y un 19% más baratas que contratándolas una a una.
 
+### Arranca
+
+Para cuando necesitas estar en internet y que las reservas te lleguen solas, sin más.
+
+Contratado por separado: 1.280€
+
 ### Capta
 
 Para cuando lo que necesitas son clientes este mes, no una web bonita.
@@ -129,6 +135,11 @@ Para cuando el negocio funciona pero funciona porque estás tú delante contesta
 
 Contratado por separado: 4.280€
 
+- Una web esencial de hasta 4 páginas, con diseño propio
+- Sistema de reservas incluido si te hace falta
+- Correo de confirmación automático al cliente
+- Aviso a tu móvil con los datos ya ordenados
+- El código es tuyo desde la entrega
 - Una landing page: una sola página con un solo botón
 - Tres meses de Meta Ads gestionados (Facebook e Instagram)
 - Hasta 3 campañas y 6 anuncios
