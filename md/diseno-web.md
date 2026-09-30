@@ -6,7 +6,7 @@
 
 *Diseño web · Sureste de España*
 
-Los míos están publicados y son cerrados: lo que ves es lo que pagas. Trabajo desde Cartagena para negocios de Murcia, Alicante, Almería y Valencia, con código propio y sin plantillas.
+Los míos están publicados y son cerrados: lo que ves es lo que pagas. Desde 790€ una web esencial de hasta 4 páginas. Trabajo desde Cartagena para negocios de Murcia, Alicante, Almería y Valencia, con código propio y sin plantillas.
 
 **De un vistazo**
 

@@ -121,7 +121,7 @@ Contratado por separado: 1.410€
 
 Para cuando ya te piden productos por WhatsApp y quieres dejar de apuntarlo a mano.
 
-Contratado por separado: 3.690€
+Contratado por separado: 3.100€
 
 ### Atiende solo
 
@@ -197,7 +197,7 @@ Sin comerciales, sin compromiso y con precio cerrado antes de empezar.
 
 **¿Cuánto cuesta exactamente una web?**
 
-Una landing page parte desde 690€ y una web corporativa completa desde 1.490€. Con tienda online desde 2.490€. Todos los precios son sin IVA (+ 21%). Precio cerrado siempre, antes de empezar. Sin extras ni sorpresas.
+Una landing page parte desde 690€, una web esencial de hasta 4 páginas desde 790€ y una web corporativa completa desde 1.490€. Con tienda online desde 1.900€. Todos los precios son sin IVA (+ 21%). Precio cerrado siempre, antes de empezar. Sin extras ni sorpresas.
 
 **¿El pago es único o hay cuotas mensuales?**
 

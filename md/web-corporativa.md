@@ -86,6 +86,12 @@ Puedes comprobarlo: [tuktukcartagena.com](https://tuktukcartagena.com/) está pu
 - Tu ficha de Google al día
 - El código es tuyo desde la entrega
 - 30 días de ajustes
+- Hasta 4 páginas
+- Diseño propio, sin plantillas
+- Tu ficha de Google al día
+- El código es tuyo desde la entrega
+- 30 días de ajustes
+- Opción: sistema de reservas con correo de confirmación automático, presupuestado aparte
 
 ## ¿Hablamos de tu negocio?
 

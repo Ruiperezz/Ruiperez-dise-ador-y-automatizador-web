@@ -15,8 +15,9 @@ Contacto: WhatsApp y teléfono +34 642 08 40 42 · https://ruiperezstudio.es
 ## Precios (sin IVA, se añade el 21%)
 
 - Landing page: desde 690€, pago único
+- Web esencial: desde 790€, pago único. Hasta 4 páginas. Opción de sistema de reservas, presupuestada aparte
 - Web corporativa: desde 1.490€, pago único
-- Tienda online: desde 2.490€, pago único
+- Tienda online: desde 1.900€, pago único
 - Aplicación web de gestión: desde 3.900€ más 90€/mes
 - Automatización de procesos: desde 1.200€
 - Chatbot con IA para WhatsApp: desde 1.590€ más 120€/mes
@@ -31,7 +32,7 @@ Contacto: WhatsApp y teléfono +34 642 08 40 42 · https://ruiperezstudio.es
 ## Packs (combinaciones con descuento, sin IVA)
 
 - Pack Capta: landing page más tres meses de gestión de Meta Ads. 1.190€ en lugar de 1.410€ por separado. A partir del cuarto mes, 240€/mes si se continúa. La inversión publicitaria no está incluida
-- Pack Vende online: tienda online más automatización de pedidos (correo al cliente y aviso al dueño). 2.990€ en lugar de 3.690€ por separado
+- Pack Vende online: tienda online más automatización de pedidos (correo al cliente y aviso al dueño). 2.590€ en lugar de 3.100€ por separado
 - Pack Atiende solo: web corporativa más automatización más chatbot con IA para WhatsApp. 3.490€ en lugar de 4.280€ por separado, más 120€/mes del chatbot desde el primer mes
 - Otras combinaciones se presupuestan con el mismo descuento por ir juntas
 
@@ -44,7 +45,7 @@ cuenta desde que el cliente entrega el contenido y se cierra por escrito antes d
 - [Diseño web y precios](https://ruiperezstudio.es/diseno-web/): qué cuesta una web y qué incluye
 - [Web corporativa](https://ruiperezstudio.es/web-corporativa/): desde 1.490€
 - [Landing page](https://ruiperezstudio.es/landing-page/): una página, un objetivo, desde 690€
-- [Tienda online](https://ruiperezstudio.es/tienda-online/): catálogo, carrito y pasarela de pago, desde 2.490€
+- [Tienda online](https://ruiperezstudio.es/tienda-online/): catálogo, carrito y pasarela de pago, desde 1.900€
 - [Aplicación web de gestión](https://ruiperezstudio.es/aplicaciones-web/): panel de administración y acceso privado por cliente, desde 3.900€
 - [Automatización de procesos](https://ruiperezstudio.es/automatizacion/): desde 1.200€
 - [Chatbot con IA para WhatsApp](https://ruiperezstudio.es/chatbot-whatsapp/): desde 1.590€
