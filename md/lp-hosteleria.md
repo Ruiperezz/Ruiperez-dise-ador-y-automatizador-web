@@ -15,7 +15,7 @@
 
 Hace un trabajo espectacular, un trato increíble y muy profesional, calidad precio inmejorable y lo mejor, cumple con el tiempo de entrega.
 
-**Precio: Desde 690€ · Pago único · lista en 1 semana** (+ 21% IVA)
+**Precio: Desde 690€ · Pago único · lista en 1-2 semanas** (+ 21% IVA)
 
 - Sin cuota mensual obligatoria
 - El código es tuyo desde la entrega

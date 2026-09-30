@@ -10,7 +10,7 @@ Una sola página, una sola cosa que hacer y ningún menú por el que perderse. E
 
 **De un vistazo**
 
-- 690€ (+ 21% IVA) · Pago único · lista en 1 semana
+- 690€ (+ 21% IVA) · Pago único · lista en 1-2 semanas
 - Precio cerrado antes de empezar
 - Trato directo conmigo, sin comerciales
 
@@ -59,7 +59,7 @@ Una floristería se compra por impulso. Si pides un email antes de enseñar la f
 
 Landing informativa entregada, pendiente de cerrar. Los precios que aparecen en las fotos son los de la floristería y están sin confirmar.
 
-**Precio: 690€ · Pago único · lista en 1 semana** (+ 21% IVA)
+**Precio: 690€ · Pago único · lista en 1-2 semanas** (+ 21% IVA)
 
 - Diseño propio, sin plantilla
 - Botón de WhatsApp
@@ -75,7 +75,7 @@ Te respondo yo, sin compromiso y con precio cerrado.
 
 **¿En cuánto tiempo entregas la landing?**
 
-Una semana desde que me aportas el contenido (textos, fotos, logo). Si no tienes los textos, los escribo yo incluido en el precio.
+Entre una y dos semanas desde que me aportas el contenido (textos, fotos, logo). Si no tienes los textos, los escribo yo incluido en el precio.
 
 **¿Qué necesito aportar yo?**
 

@@ -92,7 +92,7 @@ Todas las webs incluyen SEO local: datos estructurados, tu ficha de Google Busin
 
 **¿Cuánto tardas en entregar?**
 
-Una semana, sea una landing, una web corporativa o una tienda online. Cuenta desde que me pasas el contenido, no desde que firmamos. La aplicación de gestión son dos semanas.
+Entre una y dos semanas, sea una landing, una web corporativa o una tienda online. Cuenta desde que me pasas el contenido, no desde que firmamos. La aplicación de gestión son de dos a tres.
 
 ---
 

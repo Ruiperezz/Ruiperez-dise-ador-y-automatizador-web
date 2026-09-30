@@ -10,7 +10,7 @@ Un programa hecho para tu negocio al que entráis con usuario y contraseña, y c
 
 **De un vistazo**
 
-- 3.900€ (+ 21% IVA) · desde · más 90€/mes · entrega en 2 semanas
+- 3.900€ (+ 21% IVA) · desde · más 90€/mes · entrega en 2-3 semanas
 - Precio cerrado antes de empezar
 - Trato directo conmigo, sin comerciales
 
@@ -123,7 +123,7 @@ No hay trampa: hay menos estructura. Una agencia parte de 5.000€ o más porque
 
 **¿Cuánto se tarda?**
 
-Dos semanas desde que tenemos decidido qué tiene que hacer la aplicación. Es el único servicio que pasa de una semana, porque lleva base de datos y usuarios. Te doy el plazo cerrado antes de empezar, como en todo lo demás.
+Entre dos y tres semanas desde que tenemos decidido qué tiene que hacer la aplicación. Es el servicio más largo porque lleva base de datos y usuarios. Te doy el plazo cerrado antes de empezar, como en todo lo demás.
 
 **¿La aplicación es mía?**
 

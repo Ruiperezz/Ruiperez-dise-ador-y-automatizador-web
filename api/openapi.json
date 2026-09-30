@@ -99,10 +99,6 @@
             "type": "integer",
             "description": "Cuota recurrente añadida al pago único, cuando existe"
           },
-          "plazo_entrega_dias": {
-            "type": "integer",
-            "description": "Días naturales desde que el cliente entrega el contenido"
-          },
           "iva_pct": {
             "type": "integer",
             "const": 21
@@ -112,6 +108,14 @@
           },
           "nota": {
             "type": "string"
+          },
+          "plazo_entrega_dias_min": {
+            "type": "integer",
+            "description": "Días naturales mínimos desde que el cliente entrega el contenido"
+          },
+          "plazo_entrega_dias_max": {
+            "type": "integer",
+            "description": "Días naturales máximos desde que el cliente entrega el contenido"
           }
         }
       },

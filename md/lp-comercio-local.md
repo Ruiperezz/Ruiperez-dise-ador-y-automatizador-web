@@ -15,7 +15,7 @@
 
 Quiero agradecer a Ruipérez el excelente trabajo realizado en la creación de nuestra página web. Desde el primer momento demostró una gran profesionalidad, creatividad y dedicación. Supo entender perfectamente nuestras necesidades y transformarlas en una web moderna, atractiva y fácil de usar.
 
-**Precio: Desde 690€ · Pago único · lista en 1 semana** (+ 21% IVA)
+**Precio: Desde 690€ · Pago único · lista en 1-2 semanas** (+ 21% IVA)
 
 - Sin cuota mensual obligatoria
 - El código es tuyo desde la entrega

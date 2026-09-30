@@ -22,7 +22,7 @@
   },
   "moneda": "EUR",
   "iva_nota": "Todos los precios son sin IVA. Se añade el 21% en factura.",
-  "plazos_nota": "El plazo cuenta desde que el cliente entrega el contenido, no desde la firma.",
+  "plazos_nota": "El plazo cuenta desde que el cliente entrega el contenido, no desde la firma. De una a dos semanas para webs y tiendas; de dos a tres para la aplicación de gestión.",
   "precio_hora_fuera_de_contrato_eur_sin_iva": 60,
   "actualizado": "2026-09-30",
   "servicios": [
@@ -35,7 +35,8 @@
         "modelo": "pago_unico",
         "desde_eur_sin_iva": 690,
         "iva_pct": 21,
-        "plazo_entrega_dias": 7
+        "plazo_entrega_dias_min": 7,
+        "plazo_entrega_dias_max": 14
       }
     },
     {
@@ -47,7 +48,8 @@
         "modelo": "pago_unico",
         "desde_eur_sin_iva": 790,
         "iva_pct": 21,
-        "plazo_entrega_dias": 7
+        "plazo_entrega_dias_min": 7,
+        "plazo_entrega_dias_max": 14
       }
     },
     {
@@ -59,7 +61,8 @@
         "modelo": "pago_unico",
         "desde_eur_sin_iva": 1490,
         "iva_pct": 21,
-        "plazo_entrega_dias": 7
+        "plazo_entrega_dias_min": 7,
+        "plazo_entrega_dias_max": 14
       }
     },
     {
@@ -71,7 +74,8 @@
         "modelo": "pago_unico",
         "desde_eur_sin_iva": 1900,
         "iva_pct": 21,
-        "plazo_entrega_dias": 7
+        "plazo_entrega_dias_min": 7,
+        "plazo_entrega_dias_max": 14
       }
     },
     {
@@ -84,8 +88,9 @@
         "desde_eur_sin_iva": 3900,
         "iva_pct": 21,
         "cuota_mensual_eur_sin_iva": 90,
-        "plazo_entrega_dias": 14,
-        "nota": "Los 90€/mes cubren base de datos, alojamiento y soporte. Es coste real, no margen."
+        "nota": "Los 90€/mes cubren base de datos, alojamiento y soporte. Es coste real, no margen.",
+        "plazo_entrega_dias_min": 14,
+        "plazo_entrega_dias_max": 21
       }
     },
     {
