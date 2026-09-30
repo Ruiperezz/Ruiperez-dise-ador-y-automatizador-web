@@ -41,7 +41,29 @@ No hay que etiquetar los botones uno a uno: el listener coge todos los que lleve
 
 ### Configurar el evento de conversión
 
-En Meta Events Manager, marca `Contact` como **conversión personalizada** y usa esa conversión como objetivo de la campaña. Si dejas el objetivo en «tráfico» o «clics en el enlace», todo lo anterior no sirve de nada.
+⚠️ **Corregido el 01/10/2026: `Contact` es un evento ESTÁNDAR de Meta, no una conversión
+personalizada.** Lo que decía antes esta sección —«créalo como conversión personalizada»— era
+impreciso: funcionaría, pero añade una capa que no hace falta y que además tarda en acumular
+datos. Un evento estándar se elige directamente al crear la campaña.
+
+Lo que sí hay que hacer, en este orden:
+
+**1 · Verificar el dominio** (Configuración del negocio → Seguridad de marca → Dominios).
+Sin el dominio verificado no se puede hacer el paso 2, y el paso 2 es el que decide cuántas
+conversiones de iPhone se te cuentan.
+
+**2 · Configuración de eventos web** (Events Manager → el conjunto de datos → pestaña
+*Configuración de eventos web* / *Aggregated Event Measurement*). Añade `ruiperezstudio.es` y
+coloca **`Contact` como prioridad 1**, por encima de `PageView`. Con la ATT de Apple, Meta solo
+cuenta **un evento por usuario de iOS: el de mayor prioridad.** Si `PageView` está arriba, una
+visita desde un iPhone consume el hueco y el `Contact` de esa persona **no se cuenta nunca**.
+Esto es lo que más conversiones pierde y es lo que casi nadie configura.
+
+**3 · Al crear la campaña**: objetivo **Clientes potenciales (Leads)** → lugar de conversión
+**Sitio web** → conjunto de datos «ruiperezstudio.es» → evento **`Contact`**.
+
+**Si dejas el objetivo en «tráfico» o «clics en el enlace», todo lo anterior no sirve de nada:**
+Meta te traerá el clic más barato posible, que es justo el que no compra.
 
 ## Origen de campaña
 
@@ -111,8 +133,9 @@ Si en el paso 3 no aparece nada, mira la consola por si es la CSP: cualquier dom
 - [x] `metaPixelId` puesto — `3145125662545354`, el 29/09/2026
 - [x] `/cookies/` con el «(pendiente)» retirado de Meta. **TikTok lo conserva**, porque sigue apagado
 - [x] Las landings de pago existen: `/lp/hosteleria/` y `/lp/comercio-local/`, ambas `noindex`
-- [ ] **Marcar `Contact` como conversión en Meta Events Manager.** Sin esto la campaña
-      optimiza a «clic en enlace» y trae el tráfico que no compra. Es el siguiente paso
-      y no se puede hacer desde aquí: hay que entrar en Events Manager
+- [ ] **Verificar el dominio y poner `Contact` como prioridad 1** en Configuración de eventos
+      web. Sin eso se pierden las conversiones de iPhone. No se puede hacer desde aquí
+- [ ] **Añadir método de pago a la cuenta de Meta Ads** `1086058157249572`. Sin él la campaña
+      se crea pero no arranca
 - [ ] Comprobar con Pixel Helper los seis pasos de arriba
 - [ ] `tiktokPixelId`, cuando toque TikTok Ads
