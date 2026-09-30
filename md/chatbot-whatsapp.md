@@ -1,6 +1,6 @@
 # Las mismas cinco preguntas, cuarenta veces al día.
 
-> Un asistente con IA que responde por WhatsApp, toma reservas y filtra leads a cualquier hora. Sureste de España. Desde 1.590€ + 120€/mes.
+> Un asistente con IA que responde por WhatsApp, toma reservas y filtra leads a cualquier hora. Sureste de España. Desde 1.290€ + 120€/mes.
 >
 > Página: https://ruiperezstudio.es/chatbot-whatsapp/
 
@@ -10,7 +10,7 @@ Horarios, precios, si queda sitio el sábado. Un asistente con inteligencia arti
 
 **De un vistazo**
 
-- 1.590€ · + 120€/mes de mantenimiento (ambos + 21% IVA)
+- 1.290€ · + 120€/mes de mantenimiento (ambos + 21% IVA)
 - Precio cerrado antes de empezar
 - Trato directo conmigo, sin comerciales
 
@@ -57,7 +57,7 @@ La reserva llega ya cerrada al móvil del encargado y el equipo deja de contesta
 
 Ejemplo ilustrativo de cómo se aplica este servicio. No corresponde a un cliente concreto.
 
-**Precio: 1.590€ · + 120€/mes de mantenimiento** (+ 21% IVA)
+**Precio: 1.290€ · + 120€/mes de mantenimiento** (+ 21% IVA)
 
 - Asistente entrenado con tus precios, horarios y servicios
 - Reservas automáticas

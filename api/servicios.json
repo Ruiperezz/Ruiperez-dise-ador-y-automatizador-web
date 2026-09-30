@@ -33,7 +33,7 @@
       "descripcion": "Una sola página con un solo objetivo: que el visitante escriba. Pensada para recibir tráfico de anuncios.",
       "precio": {
         "modelo": "pago_unico",
-        "desde_eur_sin_iva": 690,
+        "desde_eur_sin_iva": 590,
         "iva_pct": 21,
         "plazo_entrega_dias_min": 7,
         "plazo_entrega_dias_max": 14
@@ -46,7 +46,7 @@
       "descripcion": "Web de hasta 4 páginas con diseño propio, sin plantillas. Los textos los escribo yo. Incluye sistema de reservas si el negocio lo necesita; los correos automáticos de confirmación van aparte, dentro de la automatización de procesos.",
       "precio": {
         "modelo": "pago_unico",
-        "desde_eur_sin_iva": 790,
+        "desde_eur_sin_iva": 690,
         "iva_pct": 21,
         "plazo_entrega_dias_min": 7,
         "plazo_entrega_dias_max": 14
@@ -59,7 +59,7 @@
       "descripcion": "Web completa con servicios, precios y contacto. Código propio, sin plantillas. SEO local incluido.",
       "precio": {
         "modelo": "pago_unico",
-        "desde_eur_sin_iva": 1490,
+        "desde_eur_sin_iva": 1190,
         "iva_pct": 21,
         "plazo_entrega_dias_min": 7,
         "plazo_entrega_dias_max": 14
@@ -72,7 +72,7 @@
       "descripcion": "Catálogo, carrito y cobro con tarjeta. El pedido llega pagado y con la dirección escrita.",
       "precio": {
         "modelo": "pago_unico",
-        "desde_eur_sin_iva": 1900,
+        "desde_eur_sin_iva": 1490,
         "iva_pct": 21,
         "plazo_entrega_dias_min": 7,
         "plazo_entrega_dias_max": 14
@@ -85,7 +85,7 @@
       "descripcion": "Panel de administración y acceso privado por cliente, sobre base de datos propia.",
       "precio": {
         "modelo": "pago_unico",
-        "desde_eur_sin_iva": 3900,
+        "desde_eur_sin_iva": 2900,
         "iva_pct": 21,
         "cuota_mensual_eur_sin_iva": 90,
         "nota": "Los 90€/mes cubren base de datos, alojamiento y soporte. Es coste real, no margen.",
@@ -100,7 +100,7 @@
       "descripcion": "Correo de confirmación automático al cliente y aviso al móvil con los datos ordenados. Para una web con reservas o formulario. Es la versión pequeña: la completa analiza los procesos y conecta varios programas entre sí.",
       "precio": {
         "modelo": "pago_unico",
-        "desde_eur_sin_iva": 490,
+        "desde_eur_sin_iva": 390,
         "iva_pct": 21
       }
     },
@@ -111,7 +111,7 @@
       "descripcion": "Correos de confirmación, avisos al móvil y paso de datos entre programas, sin intervención manual.",
       "precio": {
         "modelo": "pago_unico",
-        "desde_eur_sin_iva": 1200,
+        "desde_eur_sin_iva": 990,
         "iva_pct": 21
       }
     },
@@ -122,7 +122,7 @@
       "descripcion": "Contesta por WhatsApp a cualquier hora, coge reservas y filtra las conversaciones que merecen atención.",
       "precio": {
         "modelo": "pago_unico",
-        "desde_eur_sin_iva": 1590,
+        "desde_eur_sin_iva": 1290,
         "iva_pct": 21,
         "cuota_mensual_eur_sin_iva": 120,
         "nota": "Los 120€/mes son el coste de tenerlo encendido y las llamadas a la API del modelo."
@@ -194,13 +194,34 @@
       "id": "mantenimiento-web",
       "nombre": "Mantenimiento web",
       "url": "https://ruiperezstudio.es/mantenimiento-web/",
-      "descripcion": "Revisiones, copias de seguridad y hasta diez cambios al mes, por WhatsApp.",
+      "descripcion": "Alojamiento incluido, vigilancia de caídas 24/7, copias de seguridad y actualizaciones. Tres planes según cuántos cambios de contenido hago yo cada mes.",
       "precio": {
         "modelo": "suscripcion_mensual",
-        "desde_eur_sin_iva": 95,
-        "hasta_eur_sin_iva": 190,
+        "desde_eur_sin_iva": 39,
+        "hasta_eur_sin_iva": 99,
         "iva_pct": 21,
-        "permanencia": false
+        "permanencia": false,
+        "planes": [
+          {
+            "nombre": "Básico",
+            "eur_mes_sin_iva": 39,
+            "cambios_incluidos_mes": 0,
+            "nota": "Alojamiento, SSL, vigilancia 24/7, copias y actualizaciones. Los cambios van a 60€/hora."
+          },
+          {
+            "nombre": "Estándar",
+            "eur_mes_sin_iva": 69,
+            "cambios_incluidos_mes": 4,
+            "nota": "Plan mínimo si la web lleva automatización: la base de datos donde viven los correos automáticos tiene un coste mensual."
+          },
+          {
+            "nombre": "Completo",
+            "eur_mes_sin_iva": 99,
+            "cambios_incluidos_mes": 10,
+            "nota": "Es el plan de los tres negocios en mantenimiento hoy."
+          }
+        ],
+        "nota": "El alojamiento va incluido en los tres planes. El dominio se paga aparte al proveedor del cliente."
       }
     }
   ],
@@ -213,9 +234,9 @@
         "web-esencial",
         "automatizacion-esencial"
       ],
-      "precio_eur_sin_iva": 1099,
-      "precio_suelto_eur_sin_iva": 1280,
-      "ahorro_eur": 181,
+      "precio_eur_sin_iva": 910,
+      "precio_suelto_eur_sin_iva": 1080,
+      "ahorro_eur": 170,
       "iva_pct": 21,
       "nota": "Entrega en una semana desde que el cliente entrega el contenido. Sin cuota obligatoria."
     },
@@ -227,9 +248,9 @@
         "landing-page",
         "meta-ads (3 meses)"
       ],
-      "precio_eur_sin_iva": 1190,
-      "precio_suelto_eur_sin_iva": 1410,
-      "ahorro_eur": 220,
+      "precio_eur_sin_iva": 1100,
+      "precio_suelto_eur_sin_iva": 1310,
+      "ahorro_eur": 210,
       "iva_pct": 21,
       "nota": "A partir del cuarto mes, 240€/mes si se continúa con los anuncios. La inversión publicitaria va aparte."
     },
@@ -241,11 +262,11 @@
         "tienda-online",
         "automatizacion"
       ],
-      "precio_eur_sin_iva": 2590,
-      "precio_suelto_eur_sin_iva": 3100,
-      "ahorro_eur": 510,
+      "precio_eur_sin_iva": 2080,
+      "precio_suelto_eur_sin_iva": 2480,
+      "ahorro_eur": 400,
       "iva_pct": 21,
-      "nota": "Sin cuota obligatoria. El mantenimiento es opcional, desde 95€/mes."
+      "nota": "Sin cuota obligatoria. El mantenimiento es opcional, desde 39€/mes."
     },
     {
       "id": "atiende-solo",
@@ -256,9 +277,9 @@
         "automatizacion",
         "chatbot-whatsapp"
       ],
-      "precio_eur_sin_iva": 3490,
-      "precio_suelto_eur_sin_iva": 4280,
-      "ahorro_eur": 790,
+      "precio_eur_sin_iva": 2910,
+      "precio_suelto_eur_sin_iva": 3470,
+      "ahorro_eur": 560,
       "iva_pct": 21,
       "nota": "El chatbot lleva 120€/mes desde el primer mes."
     }

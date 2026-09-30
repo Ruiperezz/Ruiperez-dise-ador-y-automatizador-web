@@ -1,6 +1,6 @@
 # Tu negocio funciona. Pero funciona porque estás tú delante.
 
-> Diseño web, sistemas de reserva con cobro y automatización para empresas del sureste español. Precios publicados desde 690€ + IVA. Cartagena.
+> Diseño web, sistemas de reserva con cobro y automatización para empresas del sureste español. Precios publicados desde 590€ + IVA. Cartagena.
 >
 > Página: https://ruiperezstudio.es
 
@@ -10,7 +10,7 @@ Reservas que se pagan solas, correos que salen sin que los escribas y un panel d
 
 **De un vistazo**
 
-- Desde 690€ (+ 21% IVA), pago único y precio cerrado
+- Desde 590€ (+ 21% IVA), pago único y precio cerrado
 - Entrega en 1-2 semanas, sin permanencia
 - El código es tuyo desde la entrega
 
@@ -115,25 +115,25 @@ Una web sin nada detrás es un folleto. Estas tres combinaciones son las que de 
 
 Para cuando necesitas estar en internet y que las reservas te lleguen solas, sin más.
 
-Contratado por separado: 1.280€
+Contratado por separado: 1.080€
 
 ### Capta
 
 Para cuando lo que necesitas son clientes este mes, no una web bonita.
 
-Contratado por separado: 1.410€
+Contratado por separado: 1.310€
 
 ### Vende online
 
 Para cuando ya te piden productos por WhatsApp y quieres dejar de apuntarlo a mano.
 
-Contratado por separado: 3.100€
+Contratado por separado: 2.480€
 
 ### Atiende solo
 
 Para cuando el negocio funciona pero funciona porque estás tú delante contestando.
 
-Contratado por separado: 4.280€
+Contratado por separado: 3.470€
 
 - Una web esencial de hasta 4 páginas, con diseño propio
 - Sistema de reservas incluido si te hace falta
@@ -208,7 +208,7 @@ Sin comerciales, sin compromiso y con precio cerrado antes de empezar.
 
 **¿Cuánto cuesta exactamente una web?**
 
-Una landing page parte desde 690€, una web esencial de hasta 4 páginas desde 790€ y una web corporativa completa desde 1.490€. Con tienda online desde 1.900€. Todos los precios son sin IVA (+ 21%). Precio cerrado siempre, antes de empezar. Sin extras ni sorpresas.
+Una landing page parte desde 590€, una web esencial de hasta 4 páginas desde 690€ y una web corporativa completa desde 1.190€. Con tienda online desde 1.490€. Todos los precios son sin IVA (+ 21%). Precio cerrado siempre, antes de empezar. Sin extras ni sorpresas.
 
 **¿El pago es único o hay cuotas mensuales?**
 
@@ -228,11 +228,11 @@ El SEO local está incluido en todas las webs: estructura que Google entiende, v
 
 **¿Qué ocurre después de la entrega?**
 
-Los primeros 30 días incluyen ajustes sin coste. Después: plan de mantenimiento opcional desde 95€/mes o cambios puntuales a 60€/hora. Sin permanencia.
+Los primeros 30 días incluyen ajustes sin coste. Después: plan de mantenimiento opcional desde 39€/mes, con el alojamiento dentro, o cambios puntuales a 60€/hora. Sin permanencia.
 
 **¿Qué es exactamente la automatización de procesos?**
 
-Sistemas que hacen tareas repetitivas solos: email automático cuando llega un lead, chatbot en WhatsApp que responde y toma reservas a las 2am, alertas de pedidos, sincronización entre apps. Desde 1.200€.
+Sistemas que hacen tareas repetitivas solos: email automático cuando llega un lead, chatbot en WhatsApp que responde y toma reservas a las 2am, alertas de pedidos, sincronización entre apps. Desde 990€.
 
 **¿Por qué no contratar una web de 180–300€?**
 

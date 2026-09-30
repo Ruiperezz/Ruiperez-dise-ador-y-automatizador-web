@@ -1,6 +1,6 @@
 # Entra un pedido y tú copias, pegas, avisas y apuntas.
 
-> Automatiza con n8n y Make lo que hoy haces a mano: emails al recibir un pedido, alertas de leads y apps sincronizadas. el sureste español, desde 1.200€.
+> Automatiza con n8n y Make lo que hoy haces a mano: emails al recibir un pedido, alertas de leads y apps sincronizadas. el sureste español, desde 990€.
 >
 > Página: https://ruiperezstudio.es/automatizacion/
 
@@ -10,7 +10,7 @@ Eso lo puede hacer el ordenador solo: mandar el correo de confirmación, avisart
 
 **De un vistazo**
 
-- 1.200€ (+ 21% IVA) · Desde · rentabilidad inmediata
+- 990€ (+ 21% IVA) · Desde · rentabilidad inmediata
 - Precio cerrado antes de empezar
 - Trato directo conmigo, sin comerciales
 
@@ -77,7 +77,7 @@ Un pedido pagado y sin confirmar es una llamada preguntando «¿ha llegado mi pe
 
 La tienda está publicada en [floristeriaalameda.com](https://floristeriaalameda.com/).
 
-**Precio: 1.200€ · Desde · rentabilidad inmediata** (+ 21% IVA)
+**Precio: 990€ · Desde · rentabilidad inmediata** (+ 21% IVA)
 
 - Análisis de tus procesos
 - Automatizaciones montadas sobre tus procesos actuales
@@ -113,11 +113,11 @@ Sí. Antes de escribir una sola línea, te envío un diagrama del flujo completo
 
 **¿Qué pasa si la automatización falla?**
 
-Configuro alertas para que si algo falla, recibas una notificación inmediata. Con el plan de mantenimiento (95€/mes), lo resuelvo yo antes de que te afecte. Sin mantenimiento, te digo qué pasó y cómo arreglarlo.
+Configuro alertas para que si algo falla, recibas una notificación inmediata. Con el plan de mantenimiento (desde 39€/mes, alojamiento incluido), lo resuelvo yo antes de que te afecte. Sin mantenimiento, te digo qué pasó y cómo arreglarlo.
 
 **¿Cuánto tiempo me ahorra realmente?**
 
-Depende del proceso. Una automatización básica (formulario → email + CRM) suele ahorrar 1-3 horas semanales. A 1.200€ de inversión, se recupera en menos de un mes si tu tiempo vale 15€/hora o más.
+Depende del proceso. Una automatización básica (formulario → correo + CRM) suele ahorrar entre 1 y 3 horas a la semana. Haz la cuenta con tu hora: a 20€/hora son entre 80 y 240€ al mes, así que la versión esencial de 390€ se paga en dos a cinco meses y la completa de 990€ entre cuatro meses y un año. Si alguien te dice que se recupera en semanas, te está vendiendo humo.
 
 ---
 

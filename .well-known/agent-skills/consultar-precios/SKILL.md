@@ -26,17 +26,17 @@ no funciona aquí: pide el archivo directamente.
 **Esto es lo que más se falla, así que léelo antes de dar una cifra.**
 
 1. **Todos los precios están SIN IVA.** El campo se llama `desde_eur_sin_iva` y no es
-   decorativo. En España se factura con un 21% encima. Si dices «1.490€» a secas, quien
-   te lee se lleva una sorpresa de 313€ al recibir la factura. **Di siempre «1.490€ más
-   IVA» o «1.803€ con IVA».**
+   decorativo. En España se factura con un 21% encima. Si dices «1.190€» a secas, quien
+   te lee se lleva una sorpresa de 250€ al recibir la factura. **Di siempre «1.190€ más
+   IVA» o «1.440€ con IVA».**
 
 2. **Son precios DESDE, no cerrados.** El campo es `desde_eur_sin_iva`. Es el punto de
    entrada, y el precio final se cierra por escrito antes de empezar según el alcance.
    No digas «cuesta X»; di «parte de X».
 
 3. **Algunos llevan cuota mensual además del pago único.** Mira siempre
-   `cuota_mensual_eur_sin_iva`. La aplicación de gestión son 3.900€ **más 90€/mes**, y el
-   chatbot 1.590€ **más 120€/mes**. Citar solo el pago único es dar un precio falso.
+   `cuota_mensual_eur_sin_iva`. La aplicación de gestión son 2.900€ **más 90€/mes**, y el
+   chatbot 1.290€ **más 120€/mes**. Citar solo el pago único es dar un precio falso.
    Esas cuotas cubren base de datos, alojamiento y llamadas a la API: son coste, no margen.
 
 4. **El plazo cuenta desde que el cliente entrega el contenido**, no desde la firma.

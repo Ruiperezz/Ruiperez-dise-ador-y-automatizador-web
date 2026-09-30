@@ -1,6 +1,6 @@
 # Te piden el pedido por WhatsApp y el pago por Bizum.
 
-> Tienda online a medida con carrito, pasarela de pago y gestión de pedidos para negocios del sureste español. Vende 24 horas. Desde 1.900€.
+> Tienda online a medida con carrito, pasarela de pago y gestión de pedidos para negocios del sureste español. Vende 24 horas. Desde 1.490€.
 >
 > Página: https://ruiperezstudio.es/tienda-online/
 
@@ -10,7 +10,7 @@ Una tienda con carrito y pago con tarjeta: el cliente compra solo y a ti te lleg
 
 **De un vistazo**
 
-- 1.900€ (+ 21% IVA) · Pago único · entrega en 1-2 semanas
+- 1.490€ (+ 21% IVA) · Pago único · entrega en 1-2 semanas
 - Precio cerrado antes de empezar
 - Trato directo conmigo, sin comerciales
 
@@ -57,7 +57,7 @@ Pasó de vender solo en el mostrador a vender también online. El cliente report
 
 Puedes comprobarlo tú mismo: [floristeriaalameda.com](https://floristeriaalameda.com/) está publicada y funcionando, con sus reseñas en Google.
 
-**Precio: 1.900€ · Pago único · entrega en 1-2 semanas** (+ 21% IVA)
+**Precio: 1.490€ · Pago único · entrega en 1-2 semanas** (+ 21% IVA)
 
 - Catálogo completo
 - Pagos con tarjeta y Bizum

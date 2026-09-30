@@ -1,27 +1,27 @@
 # Te enteras de que la web está caída porque te lo dice un cliente.
 
-> Mantenimiento web para negocios del sureste español. Actualizaciones, backups, seguridad y soporte técnico. Tu web siempre funcionando. Desde 95€/mes.
+> Mantenimiento web con alojamiento incluido para negocios del sureste español. Vigilancia 24/7, copias de seguridad y cambios de contenido. Desde 39€/mes, sin permanencia.
 >
 > Página: https://ruiperezstudio.es/mantenimiento-web/
 
 *Mantenimiento web · Sureste de España*
 
-Reviso que funcione, guardo copias por si algo se rompe y te hago hasta diez cambios al mes. Me escribes por WhatsApp y ya está.
+Alojamiento, copias de seguridad y vigilancia 24 horas por 39€ al mes. Si además quieres que los cambios los haga yo, subes de plan. Me escribes por WhatsApp y ya está.
 
 **De un vistazo**
 
-- 95–190€/mes (+ 21% IVA) · Según plan · sin permanencia
+- 39–99€/mes (+ 21% IVA) · Alojamiento incluido · sin permanencia
 - Precio cerrado antes de empezar
 - Trato directo conmigo, sin comerciales
 
 ## Todo esto va dentro del precio
 
-Sin extras que aparecen a mitad del proyecto.
+Esto lo llevan los tres planes. Lo que cambia entre ellos es cuántos cambios de contenido hago yo cada mes.
 
 - Actualizaciones de seguridad
 - Copias de seguridad automáticas
 - Vigilancia de caídas 24/7
-- Cambios de contenido incluidos
+- Alojamiento incluido
 - Soporte directo por WhatsApp
 - Certificado SSL al día
 - Informe mensual de estado
@@ -43,7 +43,7 @@ Cambios de contenido sin abrir tickets ni esperar.
 
 ### Las tres que mantengo cada mes
 
-No es un plan sobre el papel: son tres negocios que pagan 100€ al mes por tener hasta diez cambios hechos sin discutir cada uno por separado.
+No es un plan sobre el papel: son tres negocios que pagan 100€ al mes —lo que hoy es el plan Completo— por tener hasta diez cambios hechos sin discutir cada uno por separado.
 
 #### Floristería Alameda
 
@@ -67,13 +67,35 @@ Rehacer una sección entera o montar algo nuevo. Eso se presupuesta aparte y con
 
 Sin permanencia: avisas y se cierra el mes en curso. Las tres webs las puedes abrir desde [mis proyectos](/casos/).
 
-**Precio: 95–190€/mes · Según plan · sin permanencia** (+ 21% IVA)
+## Tres planes, y el alojamiento va dentro
 
-- Actualizaciones y backups
-- Vigilancia 24/7
-- 1h de cambios al mes
-- Soporte por WhatsApp
-- Sin permanencia
+Todos sin permanencia y con el 21% de IVA aparte. Lo que cambia es cuántos cambios de contenido hago yo cada mes.
+
+### 39€/mes
+
+Para una web que ya está terminada y que apenas se toca.
+
+### 69€/mes
+
+Obligatorio si tu web lleva automatización: esos correos automáticos viven en una base de datos que pago yo todos los meses.
+
+### 99€/mes
+
+Para una tienda o una web que cambia de verdad todas las semanas.
+
+- Alojamiento y certificado SSL
+- Vigilancia de caídas 24/7
+- Copias de seguridad automáticas
+- Actualizaciones de seguridad
+- Informe mensual de estado
+- Los cambios que pidas, a 60€/hora
+- Todo lo del Básico
+- 4 cambios de contenido al mes
+- Base de datos de la automatización incluida
+- Me escribes por WhatsApp, sin tickets
+- Todo lo del Estándar
+- 10 cambios de contenido al mes
+- Es el plan de los tres negocios que mantengo hoy
 
 ## ¿Hablamos de tu negocio?
 
@@ -81,25 +103,29 @@ Te respondo yo, sin compromiso y con precio cerrado.
 
 ## Preguntas frecuentes
 
+**¿El alojamiento va incluido?**
+
+Sí, en los tres planes: tu web servida con certificado SSL y copias de seguridad, sin pagar un alojamiento aparte. El dominio va aparte, unos 12€ al año: lo puedo gestionar yo y repercutírtelo sin recargo, o lo pones a tu nombre. Te recomiendo lo segundo, porque así el dominio sigue siendo tuyo sin depender de mí para renovarlo.
+
+**¿Por qué el plan mínimo es el Estándar si mi web lleva automatización?**
+
+Porque una automatización no es solo código. Los correos automáticos de confirmación y los datos de las reservas viven en una base de datos que está encendida los 31 días del mes y que pago yo. El Básico no la cubre. Si tu web manda correos automáticos, coge reservas o guarda formularios, el plan es el Estándar.
+
+**¿Qué cuenta como un cambio de contenido?**
+
+Un texto, una foto, un precio, un horario, un producto nuevo, quitar una sección. El Básico no lleva ninguno incluido y van a 60€/hora; el Estándar lleva cuatro al mes y el Completo diez. Lo que no es un cambio es rehacer una sección entera o montar algo nuevo: eso se presupuesta aparte y con precio cerrado, como todo lo demás.
+
 **¿Sirve para webs que no has hecho tú?**
 
-Sí. Puedo hacerme cargo del mantenimiento de tu web aunque la hiciera otra empresa o tú mismo. Necesito un acceso al panel de administración para hacer una revisión inicial gratuita y darte presupuesto ajustado.
+Sí. Puedo hacerme cargo del mantenimiento aunque la web la hiciera otra empresa o tú mismo. Hago una revisión inicial gratuita y te digo qué plan necesitas antes de cobrarte nada. Si está hecha con WordPress necesito un acceso al panel de administración; si es código, el repositorio.
 
 **¿Qué pasa si algo se rompe con una actualización?**
 
-Antes de actualizar hago siempre un backup. Si una actualización rompe algo, restauro el estado anterior en menos de 1 hora. Por eso no hago actualizaciones automáticas sin supervisión.
+Antes de actualizar hago siempre una copia. Si algo se rompe, restauro el estado anterior en menos de una hora. Por eso no dejo actualizaciones automáticas sin supervisión: una actualización desatendida es justo la que te tira la web un sábado.
 
-**¿El 1h de soporte de contenidos qué incluye?**
+**¿Hay permanencia?**
 
-Cambios de texto, subida de imágenes, actualización de precios, añadir un nuevo servicio a la web... Cualquier modificación de contenido que tarde menos de 1 hora. Las horas adicionales se cobran a 60€/hora.
-
-**¿Funciona para webs que no son WordPress?**
-
-Para webs estáticas (como las que hace Ruipérez Studio en código puro) el mantenimiento es más simple: backups, monitorización y pequeñas actualizaciones. El plan básico suele ser suficiente. Cuéntame tu caso y lo vemos.
-
-**¿Puedo añadir soporte de contenidos extra si necesito más de 1h?**
-
-Sí. Horas adicionales de contenidos a 60€/hora. Si necesitas actualizaciones frecuentes (publicar posts del blog, añadir productos, actualizar portfolio) puedo negociar contigo un paquete de horas mensual con descuento.
+No hay permanencia en ningún plan. Avisas y se cierra el mes en curso. También puedes subir o bajar de plan cuando quieras: si un mes vas a tocar mucho la web te pones en el Completo y al siguiente vuelves al que te corresponda.
 
 ---
 

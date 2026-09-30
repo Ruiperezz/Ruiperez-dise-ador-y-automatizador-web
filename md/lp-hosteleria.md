@@ -1,6 +1,6 @@
 # No, no necesitas pagar 300 € al mes por la web de tu restaurante.
 
-> Web para tu bar, restaurante o cafetería en Cartagena: carta en el móvil y reservas por WhatsApp. Pago único desde 690€, sin cuota mensual.
+> Web para tu bar, restaurante o cafetería en Cartagena: carta en el móvil y reservas por WhatsApp. Pago único desde 590€, sin cuota mensual.
 
 ## Lo que lleva la web de un local que quiere llenar mesas
 
@@ -15,7 +15,7 @@
 
 Hace un trabajo espectacular, un trato increíble y muy profesional, calidad precio inmejorable y lo mejor, cumple con el tiempo de entrega.
 
-**Precio: Desde 690€ · Pago único · lista en 1-2 semanas** (+ 21% IVA)
+**Precio: Desde 590€ · Pago único · lista en 1-2 semanas** (+ 21% IVA)
 
 - Sin cuota mensual obligatoria
 - El código es tuyo desde la entrega
