@@ -1,6 +1,6 @@
-# Pides tres presupuestos de web y te dan tres cifras distintas.
+# Pides tres presupuestos de web en Cartagena y te dan tres cifras distintas.
 
-> Lo que cuesta una web, publicado: landing desde 590€ y web corporativa desde 1.190€ + IVA. Código propio, sin plantillas. Murcia, Alicante y Valencia.
+> Diseño web en Cartagena y Murcia con código propio, sin plantillas. Precios publicados: landing 590€, web corporativa 1.190€ + IVA. Hablas con quien programa.
 >
 > Página: https://ruiperezstudio.es/diseno-web/
 
