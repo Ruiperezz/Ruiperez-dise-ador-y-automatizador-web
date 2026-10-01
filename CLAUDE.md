@@ -489,7 +489,30 @@ antes de esta bajada. **Las publicaciones de la ficha no se actualizan solas cua
 tabla: hay que repasarlas una a una.**
 **Categorías (21/09/2026):** principal `gcid:website_designer`; secundarias `gcid:internet_marketing_service`, `gcid:marketing_agency` y `gcid:software_company`. Un `update_location` con teléfono o web da 400: mándalos solo si de verdad cambian. **La dirección no se toca:** cambiarla dispara la re-verificación de Google y puede tumbar la ficha. Search Console (`searchconsole`, propiedades `ruiperezstudio.es` y `zenconfort.es`) es **solo lectura**.
 - **La URL de la barra del navegador (`.brw-url`) tiene que ser la de la captura que hay debajo.** En `/web-corporativa/` ponía `floristeriaalameda.com` sobre una captura de Casa del Sushi: si el visitante abre esa URL y ve otra cosa, la prueba se vuelve en contra. Corregido el 23/09/2026.
-- **Accesibilidad: las 21 páginas pasan axe-core 4.10.2 con CERO violaciones WCAG 2.1 A y AA** (25/09/2026). **Esto es ahora un argumento de venta**: `/accesibilidad-web/` lo dice por escrito e invita a comprobarlo. Si rompes una regla, dejas de poder venderlo. Comprueba axe antes de tocar una página, no después.
+- **Accesibilidad: las 21 páginas pasan axe-core 4.10.2 con CERO violaciones WCAG 2.1 A y AA,
+  medido en los DOS modos** (01/10/2026).
+
+  ⚠️ **FALLO DE MÉTODO, descubierto el 01/10/2026.** Todas las medidas anteriores estaban mal.
+  **axe no analiza lo que tiene `opacity:0`**, y la animación de revelado (`.rv`) arranca justo
+  así: en la home son **52 elementos invisibles para el escáner** en el momento en que corre.
+  Se estuvo midiendo medio sitio y dando el otro medio por bueno.
+
+  Con `prefers-reduced-motion: reduce` el revelado no ocurre, todo está visible desde el
+  principio y aparecieron **18 violaciones reales en 5 páginas**:
+
+  | Dónde | Qué | Gravedad |
+  |---|---|---|
+  | `/web-corporativa/` y `/automatizacion/` | el bloque `#esencial` reutiliza `.pbox` (oscuro) con el fondo cambiado a claro, pero la regla `.pbox li` seguía pintando el texto a `rgba(247,242,233,.86)`: **#f8f3eb sobre #fdfbf7, contraste 1,06** | **texto invisible** |
+  | `/` | los números `01-04` de `.proc-n` usaban `--terra` a 16,8px: 4,47 | contraste |
+  | `/mantenimiento-web/`, `/diseno-web/` | enlaces dentro de un párrafo distinguidos solo por el color | `link-in-text-block` |
+
+  **Lo del bloque `#esencial` no era un detalle:** la lista de lo que incluye la Web esencial de
+  690€ era texto casi blanco sobre blanco. El `color` en línea del `<ul>` no ganaba porque
+  `.pbox li` apunta al `li` directamente y la herencia pierde contra una regla específica.
+
+  **MIDE SIEMPRE LAS DOS VECES**, con y sin `prefers-reduced-motion`. Si solo mides una, mides
+  la que te da la razón. Es el mismo error que el de las cabeceras con `routes`: comprobar lo
+  que fuiste a buscar en vez de la respuesta completa. **Esto es ahora un argumento de venta**: `/accesibilidad-web/` lo dice por escrito e invita a comprobarlo. Si rompes una regla, dejas de poder venderlo. Comprueba axe antes de tocar una página, no después.
 - **Enlace de salto (`a.skip`) en las 21 páginas**, apuntando a `#main-content`. Si creas una página nueva, ponlo: sin él, la web que vende accesibilidad tendría una página que no la cumple.
 - **El servicio de accesibilidad NO se apoya en auditorías previas a clientes**, porque no las hay. Lo que hizo Álvaro a Alameda y TukTuk fue una auditoría digital de negocio, que es otra cosa. La única prueba que se usa es la propia web medida con axe. **No insinúes experiencia en accesibilidad que no existe.**
 - **Precios de accesibilidad (23/09/2026):** el mercado español cobra 800–2.500€ por una auditoría básica y 400–1.590€/mes de monitorización. Álvaro sale por debajo a propósito para darse a conocer, y la FAQ lo dice abiertamente. **Están pensados para subir.**

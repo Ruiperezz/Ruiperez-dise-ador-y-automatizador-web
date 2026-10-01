@@ -1,3 +1,0 @@
-[     685ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.whatsapp.com/data/manifest.json:0
-[     697ms] [ERROR] Manifest fetch from https://api.whatsapp.com/data/manifest.json failed, code 404 @ https://api.whatsapp.com/send/?phone=34642084042&text=Hola%2C+quiero+informaci%C3%B3n+sobre+una+web+para+mi+negocio&type=phone_number&app_absent=0:0
-[    1392ms] [INFO] Launched external handler for 'whatsapp://send/?phone=34642084042&text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20una%20web%20para%20mi%20negocio&type=phone_number&app_absent=0'. @ https://api.whatsapp.com/send/?phone=34642084042&text=Hola%2C+quiero+informaci%C3%B3n+sobre+una+web+para+mi+negocio&type=phone_number&app_absent=0:0
