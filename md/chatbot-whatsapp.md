@@ -1,6 +1,6 @@
 # Las mismas cinco preguntas, cuarenta veces al día.
 
-> Un asistente con IA que responde por WhatsApp, toma reservas y filtra leads a cualquier hora. Sureste de España. Desde 1.290€ + 120€/mes.
+> Chatbot con IA de verdad en tu WhatsApp, para negocios de Murcia y Cartagena. Contesta y coge reservas a cualquier hora. 1.290€ más 120€/mes + IVA.
 >
 > Página: https://ruiperezstudio.es/chatbot-whatsapp/
 

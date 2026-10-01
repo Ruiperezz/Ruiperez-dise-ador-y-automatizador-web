@@ -1,6 +1,6 @@
 # Entra un pedido y tú copias, pegas, avisas y apuntas.
 
-> Automatiza con n8n y Make lo que hoy haces a mano: emails al recibir un pedido, alertas de leads y apps sincronizadas. el sureste español, desde 990€.
+> Automatización de procesos en Murcia y Cartagena: correos de confirmación, avisos al móvil y paso de datos entre programas. Desde 390€ + IVA.
 >
 > Página: https://ruiperezstudio.es/automatizacion/
 

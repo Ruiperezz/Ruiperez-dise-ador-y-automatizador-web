@@ -1,6 +1,6 @@
 # Te enteras de que la web está caída porque te lo dice un cliente.
 
-> Mantenimiento web con alojamiento incluido para negocios del sureste español. Vigilancia 24/7, copias de seguridad y cambios de contenido. Desde 39€/mes, sin permanencia.
+> Mantenimiento web en Murcia y Cartagena con alojamiento incluido: vigilancia 24/7, copias y cambios de contenido. Desde 39€/mes, sin permanencia.
 >
 > Página: https://ruiperezstudio.es/mantenimiento-web/
 

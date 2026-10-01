@@ -1,6 +1,6 @@
 # Te piden el pedido por WhatsApp y el pago por Bizum.
 
-> Tienda online a medida con carrito, pasarela de pago y gestión de pedidos para negocios del sureste español. Vende 24 horas. Desde 1.490€.
+> Tienda online en Murcia y Cartagena con carrito y cobro con tarjeta. El pedido llega pagado y con la dirección escrita. Desde 1.490€ + IVA, pago único.
 >
 > Página: https://ruiperezstudio.es/tienda-online/
 

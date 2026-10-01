@@ -1,6 +1,6 @@
 # Te piden la web y les mandas el Instagram.
 
-> Web corporativa con código propio y SEO local para empresas del sureste español. Entrega en 1-2 semanas, desde 1.190€ + IVA. Casos reales que puedes abrir.
+> Web corporativa en Murcia y Cartagena, diseñada desde cero y con SEO local. Desde 1.190€ + IVA, o 690€ la esencial de hasta 4 páginas.
 >
 > Página: https://ruiperezstudio.es/web-corporativa/
 

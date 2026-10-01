@@ -1,6 +1,6 @@
 # El dato bueno está en el ordenador de otra persona.
 
-> Un panel para ti y un acceso privado para cada cliente, sobre una base de datos propia. Desde 2.900€ más 90€/mes. Murcia, Alicante, Almería y Valencia.
+> Aplicaciones de gestión a medida en Murcia: panel de administración y acceso privado por cliente, sobre base de datos propia. Desde 2.900€ + 90€/mes.
 >
 > Página: https://ruiperezstudio.es/aplicaciones-web/
 
