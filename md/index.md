@@ -113,7 +113,7 @@ Ocho publicaciones al mes con su texto y su diseño, dos de ellas en vídeo, má
 
 ## Casi nadie necesita una cosa sola.
 
-Una web sin nada detrás es un folleto. Estas tres combinaciones son las que de verdad se piden juntas, y salen entre un 16% y un 19% más baratas que contratándolas una a una.
+Una web sin nada detrás es un folleto. Estas cuatro combinaciones son las que de verdad se piden juntas, y todas salen un 16% más baratas que contratándolas una a una. Están puestas de menor a mayor, y cada una dice para qué tamaño de negocio es.
 
 ### Arranca
 
