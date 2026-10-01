@@ -353,6 +353,14 @@ footer{border-top:1px solid var(--line);margin-top:clamp(3rem,6vw,4.5rem);paddin
 /* El enlace a los packs va subrayado: dentro de un parrafo, el color solo no
    basta para distinguirlo (axe: link-in-text-block). */
 .pk-link{text-decoration:underline;text-underline-offset:.18em}
+
+.btt{position:fixed;left:.8rem;bottom:.8rem;z-index:60;width:46px;height:46px;border-radius:50%;
+border:1px solid var(--line);background:var(--surf);color:var(--ink);display:flex;align-items:center;
+justify-content:center;cursor:pointer;box-shadow:0 10px 26px -14px rgba(33,29,24,.5);
+opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .25s,transform .25s,visibility .25s,border-color .2s}
+.btt.on{opacity:1;visibility:visible;transform:none}
+.btt:hover{border-color:var(--terra)}
+@media(prefers-reduced-motion:reduce){.btt{transition:opacity .01ms,visibility .01ms}}
 </style>
 </head>
 <body>
@@ -504,5 +512,18 @@ document.querySelectorAll(".fq").forEach(function(q){q.addEventListener("click",
 <!-- WebMCP: solo se descarga si el navegador trae la API. Hoy (29/09/2026) eso no es
      ningún navegador público, así que para un visitante real esto es un «if» y nada más. -->
 <script>if(navigator.modelContext){var s=document.createElement("script");s.src="/js/webmcp.js";s.defer=true;document.head.appendChild(s);}</script>
+<button class="btt" id="btt" type="button" aria-label="Volver arriba"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+<script>
+(function(){"use strict";
+var b=document.getElementById("btt");if(!b)return;
+var suave=!window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+function v(){b.classList.toggle("on",window.scrollY>window.innerHeight*2)}
+addEventListener("scroll",v,{passive:true});v();
+b.addEventListener("click",function(){
+  window.scrollTo({top:0,behavior:suave?"smooth":"auto"});
+  var m=document.getElementById("main-content");if(m){m.setAttribute("tabindex","-1");m.focus({preventScroll:true})}
+});
+})();
+</script>
 </body>
 </html>
