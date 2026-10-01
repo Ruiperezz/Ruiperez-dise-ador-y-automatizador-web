@@ -200,7 +200,7 @@ Tu web en vivo, el código es tuyo y tienes 30 días de ajustes incluidos.
 
 ## Lo que dicen en Google
 
-Copiadas literalmente de mi ficha de Google, donde llevo 4,6 de media sobre 11 reseñas. Puedes abrirlas y comprobarlo.
+Copiadas literalmente de mi ficha de Google, donde llevo 5,0 de media sobre 11 reseñas. Puedes abrirlas y comprobarlo.
 
 Quiero agradecer a Ruipérez el excelente trabajo realizado en la creación de nuestra página web. Desde el primer momento demostró una gran profesionalidad, creatividad y dedicación. Supo entender perfectamente nuestras necesidades y transformarlas en una web moderna, atractiva y fácil de usar.
 

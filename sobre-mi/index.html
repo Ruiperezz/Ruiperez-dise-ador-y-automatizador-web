@@ -371,6 +371,14 @@ html.js .rv.in{opacity:1;transform:none;
 .datos b{font-family:var(--fs);color:var(--ink);min-width:7.5rem;flex:none;font-size:.82rem;letter-spacing:.02em;padding-top:.1rem}
 @media(max-width:820px){.sm{grid-template-columns:1fr}}
 .nota-honesta{margin-top:1.5rem;background:var(--surf);border:1px solid var(--line2);border-left:3px solid var(--olive);border-radius:0 14px 14px 0;padding:1.2rem 1.5rem;font-size:.93rem;color:var(--soft);line-height:1.65}
+
+.btt{position:fixed;left:.8rem;bottom:.8rem;z-index:60;width:46px;height:46px;border-radius:50%;
+border:1px solid var(--line);background:var(--surf);color:var(--ink);display:flex;align-items:center;
+justify-content:center;cursor:pointer;box-shadow:0 10px 26px -14px rgba(33,29,24,.5);
+opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .25s,transform .25s,visibility .25s,border-color .2s}
+.btt.on{opacity:1;visibility:visible;transform:none}
+.btt:hover{border-color:var(--terra)}
+@media(prefers-reduced-motion:reduce){.btt{transition:opacity .01ms,visibility .01ms}}
 </style>
 </head>
 <body>
@@ -500,5 +508,18 @@ document.querySelectorAll(".rv").forEach(function(el){o.observe(el)});
 })();
 </script>
 
+<button class="btt" id="btt" type="button" aria-label="Volver arriba"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+<script>
+(function(){"use strict";
+var b=document.getElementById("btt");if(!b)return;
+var suave=!window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+function v(){b.classList.toggle("on",window.scrollY>window.innerHeight*2)}
+addEventListener("scroll",v,{passive:true});v();
+b.addEventListener("click",function(){
+  window.scrollTo({top:0,behavior:suave?"smooth":"auto"});
+  var m=document.getElementById("main-content");if(m){m.setAttribute("tabindex","-1");m.focus({preventScroll:true})}
+});
+})();
+</script>
 </body>
 </html>
