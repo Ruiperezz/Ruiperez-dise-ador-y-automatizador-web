@@ -1,12 +1,12 @@
-# Tu negocio funciona. Pero funciona porque estás tú delante.
+# Si no te encuentran en Google, llaman al de al lado. Y si no contestas al momento, también.
 
-> Diseño web, sistemas de reserva con cobro y automatización para empresas del sureste español. Precios publicados desde 590€ + IVA. Cartagena.
+> Automatizo procesos y monto chatbots con IA en Murcia, Cartagena, Alicante y Almería. Webs con código propio desde 590€. Hablas con quien programa.
 >
 > Página: https://ruiperezstudio.es
 
 *Sureste de España · Acepto proyectos*
 
-Reservas que se pagan solas, correos que salen sin que los escribas y un panel donde lo ves todo sin llamar a nadie. Es lo que le hice a TukTuk Cartagena y a Floristería Alameda: puedes abrir sus webs ahora mismo y comprobarlo. Sureste español, precio cerrado antes de empezar.
+Automatizo lo que hoy haces a mano: reservas que se cobran solas, correos que salen sin que los escribas y un chatbot con IA que contesta por WhatsApp a cualquier hora. Es lo que le monté a TukTuk Cartagena y a Floristería Alameda: puedes abrir sus webs ahora mismo y comprobarlo. Y si todavía no tienes web, la programo yo con código propio y SEO local. Murcia, Cartagena, Alicante, Elche, Almería y Valencia.
 
 **De un vistazo**
 
@@ -55,6 +55,10 @@ Esto es lo que no te va a montar quien solo hace webs. Una web bonita no sirve d
 
 Lo que haces a mano todos los días y puede hacer el ordenador: mandar el correo de confirmación, avisarte al móvil cuando entra un cliente nuevo y pasar los datos de un programa a otro.
 
+### Chatbot IA para WhatsApp
+
+Contesta por WhatsApp a cualquier hora las preguntas de siempre —horarios, precios, si queda sitio—, coge la reserva y te pasa a ti solo lo que merece tu tiempo.
+
 ### Aplicación web de gestión
 
 Un panel de administración para ti y un acceso privado para cada cliente, sobre una base de datos propia en vez de sobre hojas de cálculo que se pisan.
@@ -67,10 +71,6 @@ Promocionar una publicación desde el móvil trae curiosos. Monto las campañas 
 
 Desde el 28 de junio de 2025 hay negocios obligados a que su web sea accesible. Te digo si eres uno, qué falla y en qué orden arreglarlo.
 
-### Chatbot IA para WhatsApp
-
-Contesta por WhatsApp a cualquier hora las preguntas de siempre —horarios, precios, si queda sitio—, coge la reserva y te pasa a ti solo lo que merece tu tiempo.
-
 ## Los precios, sin tener que llamar a nadie
 
 Aquí está lo que cuesta cada cosa y, más importante, dónde acaba: qué entra en el precio y qué no. Sin «a consultar» y sin extras a mitad del proyecto.
@@ -78,6 +78,10 @@ Aquí está lo que cuesta cada cosa y, más importante, dónde acaba: qué entra
 ### Landing page
 
 Una sola página con un solo botón. Es la que usas cuando pagas anuncios: el visitante llega, entiende qué ofreces y te escribe, sin menú por el que perderse.
+
+### Web esencial
+
+Hasta 4 páginas con diseño propio, sin plantillas. Lo justo para que te encuentren en Google y te escriban, sin pagar por secciones que no vas a usar.
 
 ### Web corporativa
 
@@ -156,7 +160,7 @@ Contratado por separado: 3.470€
 - Reservas o citas que llegan ya cerradas a tu móvil
 - Te paso solo las conversaciones que merecen tu tiempo
 
-## No pagas su oficina. Pagas tu web.
+## No pagas la oficina de una agencia de Murcia. Pagas tu web.
 
 Una agencia mantiene oficina, comerciales y departamentos. Yo no, y eso lo notas en el presupuesto.
 
