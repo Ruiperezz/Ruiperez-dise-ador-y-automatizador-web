@@ -24,7 +24,7 @@
   "iva_nota": "Todos los precios son sin IVA. Se añade el 21% en factura.",
   "plazos_nota": "El plazo cuenta desde que el cliente entrega el contenido, no desde la firma. De una a dos semanas para webs y tiendas; de dos a tres para la aplicación de gestión.",
   "precio_hora_fuera_de_contrato_eur_sin_iva": 60,
-  "actualizado": "2026-09-30",
+  "actualizado": "2026-10-04",
   "servicios": [
     {
       "id": "landing-page",
@@ -69,13 +69,14 @@
       "id": "tienda-online",
       "nombre": "Tienda online",
       "url": "https://ruiperezstudio.es/tienda-online/",
-      "descripcion": "Catálogo, carrito y cobro con tarjeta. El pedido llega pagado y con la dirección escrita.",
+      "descripcion": "Catálogo, carrito y cobro con tarjeta. El pedido llega pagado y con la dirección escrita. El catálogo queda cobrando en 72 horas desde que el cliente entrega fotos, precios y textos; la tienda terminada, en una o dos semanas.",
       "precio": {
         "modelo": "pago_unico",
         "desde_eur_sin_iva": 1490,
         "iva_pct": 21,
-        "plazo_entrega_dias_min": 7,
-        "plazo_entrega_dias_max": 14
+        "plazo_entrega_dias_min": 3,
+        "plazo_entrega_dias_max": 14,
+        "nota": "A las 72 horas el catálogo ya cobra. El acabado completo —diseño, SEO local, fichas trabajadas y páginas legales— va en una o dos semanas."
       }
     },
     {

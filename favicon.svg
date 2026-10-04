@@ -1,7 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Ruipérez Studio">
-  <rect width="120" height="120" rx="26" fill="#0e0e1e"/>
-  <rect x="1.5" y="1.5" width="117" height="117" rx="24.5" fill="none" stroke="rgba(163,230,53,.22)" stroke-width="2.4"/>
-  <g transform="translate(18.55 18.33) scale(0.74)" fill="none" stroke="#f5f4f1" stroke-linecap="butt" stroke-linejoin="miter">
-    <path d="M27.52 102.00 L27.52 21.52 L60.00 21.52 A24.48 24.48 0 0 1 84.47 46.00 L84.47 44.00 A24.48 24.48 0 0 1 60.00 68.47 L27.52 68.47 M68.44 68.47 L91.90 102.00" stroke-width="21.7"/>
+  <!-- Colores de la paleta actual. El anterior venía del diseño de antes del
+       27/08: fondo #0e0e1e y borde verde lima, que no están en ninguna parte
+       del sitio. La R se simplifica a un solo trazo porque a 16px, que es el
+       tamaño al que Google la enseña, el doble trazo se emborronaba. -->
+  <rect width="120" height="120" rx="27" fill="#211D18"/>
+  <g fill="none" stroke="#F7F2E9" stroke-width="13" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M38 94 L38 26 L62 26 A21 21 0 0 1 62 68 L38 68"/>
+    <path d="M60 68 L86 94"/>
   </g>
 </svg>

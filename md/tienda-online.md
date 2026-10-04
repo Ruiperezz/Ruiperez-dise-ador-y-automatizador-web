@@ -1,16 +1,16 @@
 # Te piden el pedido por WhatsApp y el pago por Bizum.
 
-> Tienda online en Murcia y Cartagena con carrito y cobro con tarjeta. El pedido llega pagado y con la dirección escrita. Desde 1.490€ + IVA, pago único.
+> Tu catálogo cobrando con tarjeta en 3 días y la tienda terminada en 1-2 semanas. Murcia y Cartagena. Desde 1.490€ + IVA, pago único.
 >
 > Página: https://ruiperezstudio.es/tienda-online/
 
-*Tienda online · Sureste de España*
+*Tienda online · Cobrando en 3 días*
 
 Una tienda con carrito y pago con tarjeta: el cliente compra solo y a ti te llega el pedido ya pagado y con la dirección escrita. Se acabó copiar direcciones a mano y perseguir el cobro.
 
 **De un vistazo**
 
-- 1.490€ (+ 21% IVA) · Pago único · entrega en 1-2 semanas
+- Cobrando en 3 días · la tienda terminada, en 1-2 semanas
 - Precio cerrado antes de empezar
 - Trato directo conmigo, sin comerciales
 
