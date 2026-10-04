@@ -291,6 +291,57 @@ sitio. ⚠️ **La categoría principal sigue siendo `gcid:website_designer` y N
 es la que le trae «diseño web cartagena», su consulta de más volumen (194 impresiones),
 y cambiarla puede disparar la re-verificación de Google.
 
+
+## Conectores, estado real del 04/10/2026
+
+| Conector | Estado | Dato |
+|---|---|---|
+| `google_my_business` | ✅ lectura y escritura | ficha verificada |
+| `searchconsole` | ✅ solo lectura | — |
+| `facebook` (Meta Ads) | ✅ | cuenta activa, **0€ gastados, ninguna campaña** |
+| `facebook_organic` | ✅ | **0 seguidores, 0 alcance** |
+| `facebook_leads` | ✅ nuevo | — |
+| **`instagram`** | ✅ **nuevo** | `ruiperez.studio` · ⚠️ **0 publicaciones, 0 seguidores, 0 alcance** |
+| **`googleanalytics4`** | ✅ **nuevo** | propiedad `552072025` · **`generate_lead` disparando** |
+| `klaviyo` | ✅ nuevo | — |
+| **Google Ads** | ❌ **no hay conector en Windsor** | no se puede comprobar desde aquí |
+
+⚠️ **El perfil de Instagram está VACÍO.** El botón del pie lleva a un perfil con cero
+publicaciones. **Un enlace a un perfil vacío resta más que no tenerlo**: el visitante
+pulsa, no ve nada y concluye que el negocio no existe. Pendiente de decisión de Álvaro:
+publicar primero o quitar el botón. El conector permite publicar (`create_image_post`,
+`create_carousel_post`, `create_story`).
+
+✅ **GA4 recibe datos y `generate_lead` dispara en cada clic a WhatsApp.** Eso abre el
+camino limpio para Google Ads: **vincular Google Ads con GA4 e importar `generate_lead`
+como conversión**, sin etiqueta nueva, sin tocar la CSP y sin declarar cookies nuevas.
+Ojo al leerlo: buena parte de esos eventos de finales de septiembre son pruebas hechas
+durante la verificación, no visitas reales.
+
+## Tienda online: promesa partida en dos (04/10/2026)
+
+**«Cobrando en 3 días» aprobado por Álvaro**, pero NO a secas. El plazo oficial son 1-2
+semanas, subido el 30/09 porque no le daba tiempo. Prometer 3 días sin más se
+contradiría con la propia página, la API y la ficha.
+
+| Hito | Qué hay |
+|---|---|
+| **72 horas** | Catálogo publicado, carrito, cobro con tarjeta y correos de confirmación. Ya se puede vender |
+| **1-2 semanas** | Diseño acabado, SEO local, fichas trabajadas, páginas legales, pasarela a su nombre |
+
+⚠️ **Las 72 horas cuentan desde que el cliente entrega fotos, precios y textos.** Está
+escrito en la página. Es lo único que evita la discusión de quién retrasó qué.
+
+## Favicon (04/10/2026)
+
+**El anterior era del diseño de antes del 27/08:** fondo `#0e0e1e` y borde verde lima
+`rgba(163,230,53,.22)`, **dos colores que no están en ninguna parte del sitio actual**, y
+una R con trazo de 21,7 que a 16px —el tamaño al que Google lo enseña— se emborronaba.
+
+Ahora: tinta `#211D18` y crema `#F7F2E9`, R a un solo trazo. Comprobado a 16, 32, 64 y
+120px. **El `apple-touch-icon.png` se genera RENDERIZANDO el SVG**, no redibujándolo:
+hacerlo con primitivas de PIL dejaba una muesca donde el arco se unía al trazo.
+
 ## Clientes
 
 **Seis proyectos, y no todos son clientes.** La distinción importa y está reflejada en las etiquetas del sitio:
