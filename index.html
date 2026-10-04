@@ -529,6 +529,48 @@ opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .25s,tr
 border-radius:50%;border:1px solid var(--line);color:var(--soft);background:transparent;
 transition:border-color .2s,color .2s,transform .2s}
 .ft-rrss a:hover{border-color:var(--terra);color:var(--terra-txt);transform:translateY(-2px)}
+
+.gbadge{display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:center;background:var(--surf);
+border:1px solid var(--line2);border-radius:18px;padding:1.4rem 1.6rem;margin-bottom:1.6rem}
+.gb-main{display:flex;align-items:center;gap:.95rem;text-decoration:none;color:var(--ink)}
+.gb-num{font-family:var(--fd);font-size:2.4rem;line-height:1}
+.gb-stars{color:#F4B400;letter-spacing:.08em;font-size:1.05rem}
+.gb-txt{display:flex;flex-direction:column;line-height:1.3}
+.gb-txt strong{font-size:.95rem}
+.gb-txt small{font-size:.78rem;color:var(--mute)}
+.gb-main:hover .gb-txt strong{color:var(--terra-txt)}
+.gb-qr{display:flex;align-items:center;gap:.9rem;padding-left:1.5rem;border-left:1px solid var(--line)}
+.qr{width:84px;height:84px;flex:none;background:#FDFBF7;border:1px solid var(--line);border-radius:10px;padding:5px}
+.qr svg{width:100%;height:100%;display:block}
+.gb-qrt{display:flex;flex-direction:column;gap:.2rem;max-width:15rem}
+.gb-qrt strong{font-size:.88rem}
+.gb-qrt span{font-size:.82rem;color:var(--mute);line-height:1.45}
+.gb-qrt a{text-decoration:underline;text-underline-offset:2px;font-weight:700}
+.tst-g{align-items:stretch}
+.tst{height:100%}
+.tst blockquote{margin:0;flex:1}
+.tst blockquote p{font-size:.95rem;color:var(--soft);line-height:1.62}
+.tst-w{margin-top:auto}
+.tst-w>span{display:flex;flex-direction:column;line-height:1.35}
+@media(max-width:900px){.gbadge{grid-template-columns:1fr}
+.gb-qr{padding-left:0;border-left:0;border-top:1px solid var(--line);padding-top:1.1rem}}
+
+.form-g{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.campo{display:flex;flex-direction:column;gap:.4rem}
+.campo.ancho{grid-column:1/-1}
+.campo label{font-size:.85rem;font-weight:700;color:var(--soft)}
+.campo label .req{color:var(--terra-txt)}
+.campo input,.campo select,.campo textarea{font:inherit;font-size:.95rem;color:var(--ink);background:var(--surf);
+border:1px solid var(--line);border-radius:10px;padding:.8rem .9rem;min-height:48px;width:100%;
+transition:border-color .2s,box-shadow .2s}
+.campo textarea{min-height:120px;resize:vertical;line-height:1.55}
+.campo input:focus,.campo select:focus,.campo textarea:focus{border-color:var(--terra);
+box-shadow:0 0 0 3px rgba(181,82,47,.13);outline:none}
+.campo input[aria-invalid="true"],.campo textarea[aria-invalid="true"],.campo select[aria-invalid="true"]{border-color:var(--red)}
+.campo .err{font-size:.8rem;color:var(--red);min-height:1.1rem}
+.form-pie{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:1rem;margin-top:.3rem}
+.form-nota{font-size:.82rem;color:var(--mute);max-width:30rem;line-height:1.5}
+@media(max-width:720px){.form-g{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -946,19 +988,24 @@ transition:border-color .2s,color .2s,transform .2s}
 
 <section class="sec" id="testimonios">
   <div class="wrap">
-    <div class="sec-hd rv">
-      <div><span class="ey">Reseñas reales</span><h2>Lo que dicen <em>en Google</em></h2></div>
-      <p class="sec-note">Copiadas literalmente de mi ficha de Google, donde llevo <strong>5,0 de media sobre 11 reseñas</strong>. Puedes abrirlas y comprobarlo.</p>
+    <div class="sec-hd rv"><div><span class="ey">Reseñas reales</span><h2>Lo que dicen <em>en Google</em></h2></div>
+    <p class="sec-note">Seis de las once que tengo, copiadas literalmente de mi ficha. Puedes abrirlas y comprobarlas una a una.</p></div>
+
+    <div class="gbadge rv">
+      <a class="gb-main" href="https://maps.google.com/maps?cid=16135944171140006039" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 48 48" width="34" height="34" aria-hidden="true" focusable="false"><path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-2.7-.4-4H24v7.3h12.1c-.2 1.9-1.6 4.8-4.5 6.8l-.1.3 6.5 5 .4.1c4.2-3.8 6.7-9.5 6.7-15.5"/><path fill="#34A853" d="M24 46c5.9 0 10.9-1.9 14.5-5.3l-6.9-5.3c-1.8 1.3-4.3 2.2-7.6 2.2-5.8 0-10.7-3.8-12.5-9.1l-.3 0-6.7 5.2-.1.3C8 41.6 15.4 46 24 46"/><path fill="#FBBC05" d="M11.5 28.5c-.5-1.4-.7-2.9-.7-4.5s.3-3.1.7-4.5l0-.3-6.8-5.3-.2.1C2.9 17.1 2 20.4 2 24s.9 6.9 2.5 9.9z"/><path fill="#EA4335" d="M24 10.1c4.1 0 6.9 1.8 8.5 3.3l6.2-6C34.9 3.9 29.9 2 24 2 15.4 2 8 6.4 4.5 14.1l7 5.4c1.8-5.3 6.7-9.4 12.5-9.4"/></svg>
+        <span class="gb-num">5,0</span>
+        <span class="gb-stars" aria-hidden="true">★★★★★</span>
+        <span class="gb-txt"><strong>11 reseñas en Google</strong><small>Ficha verificada · Cartagena</small></span>
+      </a>
+      <div class="gb-qr">
+        <div class="qr"><svg viewBox="0 0 41 41" aria-hidden="true" focusable="false"><path stroke="#211d18" d="M2 2.5h7m2 0h1m1 0h4m4 0h1m2 0h1m5 0h1m1 0h7m-37 1h1m5 0h1m2 0h2m2 0h2m1 0h3m2 0h2m2 0h3m2 0h1m5 0h1m-37 1h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h4m1 0h2m1 0h3m2 0h2m2 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h3m2 0h1m2 0h2m1 0h2m2 0h4m3 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h1m1 0h2m6 0h4m1 0h1m4 0h1m1 0h1m1 0h3m1 0h1m-37 1h1m5 0h1m1 0h1m2 0h1m3 0h1m1 0h1m2 0h1m5 0h2m2 0h1m5 0h1m-37 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-29 1h1m1 0h3m1 0h2m3 0h3m1 0h1m4 0h1m-29 1h1m1 0h5m5 0h2m1 0h3m4 0h3m1 0h1m1 0h1m1 0h5m-35 1h4m4 0h1m1 0h1m2 0h3m1 0h1m1 0h2m2 0h1m1 0h2m1 0h2m3 0h1m1 0h1m-36 1h2m1 0h1m2 0h1m5 0h2m1 0h2m1 0h1m3 0h1m2 0h4m1 0h1m2 0h1m1 0h2m-35 1h2m1 0h1m1 0h5m3 0h1m4 0h4m2 0h1m1 0h2m1 0h1m4 0h1m-36 1h3m1 0h2m1 0h1m1 0h1m4 0h1m1 0h1m2 0h1m1 0h1m1 0h3m2 0h8m-37 1h1m4 0h1m7 0h1m2 0h1m2 0h2m2 0h1m7 0h1m3 0h1m-36 1h9m1 0h2m2 0h3m3 0h3m2 0h1m1 0h1m1 0h1m1 0h3m1 0h2m-37 1h1m1 0h1m1 0h2m2 0h2m1 0h1m3 0h1m2 0h4m1 0h2m2 0h1m1 0h4m2 0h1m-33 1h1m2 0h1m2 0h1m1 0h1m2 0h1m2 0h4m5 0h1m2 0h2m1 0h1m1 0h2m-36 1h2m5 0h1m1 0h1m1 0h3m1 0h2m2 0h2m1 0h1m2 0h1m2 0h1m1 0h2m2 0h2m-36 1h1m2 0h1m1 0h2m2 0h3m9 0h2m1 0h4m1 0h3m1 0h1m1 0h2m-35 1h1m1 0h2m3 0h1m2 0h1m1 0h1m1 0h1m1 0h1m1 0h2m1 0h1m2 0h1m2 0h2m1 0h1m3 0h1m-37 1h3m3 0h1m1 0h1m1 0h5m2 0h1m1 0h1m2 0h1m1 0h3m2 0h2m1 0h3m-33 1h3m3 0h1m1 0h1m3 0h1m1 0h4m3 0h1m1 0h1m2 0h1m4 0h1m1 0h1m-34 1h2m2 0h4m4 0h2m2 0h1m2 0h1m2 0h2m1 0h2m1 0h4m2 0h1m-35 1h1m10 0h1m2 0h1m1 0h1m1 0h2m1 0h1m5 0h1m1 0h2m2 0h1m-34 1h1m1 0h1m1 0h2m6 0h3m1 0h2m1 0h7m1 0h2m1 0h1m1 0h3m-37 1h6m2 0h2m1 0h1m3 0h1m2 0h1m1 0h1m5 0h3m2 0h1m1 0h1m-34 1h1m4 0h2m1 0h1m2 0h2m2 0h2m5 0h1m1 0h5m1 0h2m3 0h2m-37 1h1m1 0h3m2 0h1m1 0h4m1 0h2m3 0h6m1 0h2m1 0h3m3 0h1m-36 1h1m2 0h2m1 0h1m1 0h2m2 0h1m2 0h3m4 0h1m1 0h3m1 0h8m-28 1h1m1 0h3m1 0h1m1 0h1m2 0h3m1 0h2m2 0h2m3 0h2m1 0h1m-36 1h7m5 0h2m1 0h2m1 0h1m1 0h1m7 0h1m1 0h1m1 0h1m1 0h3m-37 1h1m5 0h1m1 0h2m1 0h3m1 0h2m1 0h1m2 0h1m6 0h1m3 0h2m1 0h2m-37 1h1m1 0h3m1 0h1m1 0h4m1 0h1m1 0h1m2 0h1m1 0h3m1 0h9m1 0h3m-37 1h1m1 0h3m1 0h1m1 0h6m1 0h2m1 0h1m1 0h4m1 0h1m1 0h4m1 0h2m2 0h1m-37 1h1m1 0h3m1 0h1m1 0h7m2 0h2m5 0h1m1 0h2m1 0h1m4 0h3m-37 1h1m5 0h1m5 0h3m1 0h1m1 0h6m3 0h1m4 0h1m3 0h1m-37 1h7m1 0h1m1 0h1m2 0h2m2 0h1m4 0h5m3 0h1m1 0h5"/></svg></div>
+        <div class="gb-qrt"><strong>¿Hemos trabajado juntos?</strong>
+          <span>Escanea el código o <a href="https://search.google.com/local/writereview?placeid=ChIJoxdRJpnbFWoRl8BVVLtj7t8" target="_blank" rel="noopener noreferrer">déjame tu reseña</a>.</span></div>
+      </div>
     </div>
-    <div class="g3">
-      <div class="tst rv" style="--d:0ms"><div class="stars" aria-label="5 de 5 estrellas">★★★★★</div><p>Quiero agradecer a Ruipérez el excelente trabajo realizado en la creación de nuestra página web. Desde el primer momento demostró una gran profesionalidad, creatividad y dedicación. Supo entender perfectamente nuestras necesidades y transformarlas en una web moderna, atractiva y fácil de usar.</p><div class="tst-w"><span class="av" aria-hidden="true">FA</span><div><div class="tst-n">Floristería Alameda</div><div class="tst-r">Tienda online · Cartagena</div></div></div></div>
-      <div class="tst rv" style="--d:90ms"><div class="stars" aria-label="5 de 5 estrellas">★★★★★</div><p>Me creó una web moderna y profesional para mi negocio y estoy muy satisfecho con el resultado. Ha cuidado todos los detalles, desde el diseño hasta la velocidad de carga y la adaptación a móvil.</p><div class="tst-w"><span class="av" aria-hidden="true">CS</span><div><div class="tst-n">Perico Del Rey</div><div class="tst-r">Reseña en Google</div></div></div></div>
-      <div class="tst rv" style="--d:180ms"><div class="stars" aria-label="5 de 5 estrellas">★★★★★</div><p>Quedé muy satisfecho con el servicio. Desde el primer momento la atención fue excelente, muy profesional y cercana. Supieron entender perfectamente lo que necesitaba y lo plasmaron en un diseño moderno, funcional y adaptado a mi proyecto.</p><div class="tst-w"><span class="av" aria-hidden="true">PN</span><div><div class="tst-n">Pepe Narváez</div><div class="tst-r">Cliente · Reseña en Google</div></div></div>
-      <div class="tst rv" style="--d:270ms"><div class="stars" aria-label="5 de 5 estrellas">★★★★★</div><p>Hace un trabajo espectacular, un trato increíble y muy profesional, calidad precio inmejorable y lo mejor, cumple con el tiempo de entrega.</p><div class="tst-w"><span class="av" aria-hidden="true">AM</span><div><div class="tst-n">Ángel Murcia Muelas</div><div class="tst-r">Reseña en Google</div></div></div></div>
-      <div class="tst rv" style="--d:360ms"><div class="stars" aria-label="5 de 5 estrellas">★★★★★</div><p>Profesionalidad y brillantez. Una experiencia increíble trabajar con Ruipérez Studio, extraordinario trabajo.</p><div class="tst-w"><span class="av" aria-hidden="true">PC</span><div><div class="tst-n">Pablo Carrillo Sevilla</div><div class="tst-r">Reseña en Google</div></div></div></div>
-      <div class="tst rv" style="--d:450ms"><div class="stars" aria-label="5 de 5 estrellas">★★★★★</div><p>Buen servicio, profesional y acorde a lo que solicité. Lo recomiendo totalmente para empresas que quieran impulsar sus servicios por internet.</p><div class="tst-w"><span class="av" aria-hidden="true">SV</span><div><div class="tst-n">Samuel V. P.</div><div class="tst-r">Reseña en Google</div></div></div></div></div>
-    </div>
-    <p class="tst-link rv"><a href="https://maps.google.com/maps?cid=16135944171140006039" target="_blank" rel="noopener noreferrer">Ver las 11 reseñas en Google →</a></p>
+
+    <div class="g3 tst-g"><figure class="tst rv" style="--d:0ms"><div class="stars" aria-label="5 de 5 estrellas">★★★★★</div><blockquote><p>Quiero agradecer a Álvaro el excelente trabajo realizado en la creación de nuestra página web de Floristería Alameda en Cartagena. Desde el primer momento demostró una gran profesionalidad, creatividad y dedicación. Supo entender perfectamente nuestras necesidades y transformarlas en una web moderna, atractiva y fácil de usar.</p></blockquote><figcaption class="tst-w"><span class="av" aria-hidden="true">FA</span><span><span class="tst-n">Floristería Alameda</span><span class="tst-r">Tienda online · Cartagena</span></span></figcaption></figure><figure class="tst rv" style="--d:70ms"><div class="stars" aria-label="5 de 5 estrellas">★★★★★</div><blockquote><p>Quedé muy satisfecho con el servicio de creación de páginas web. Desde el primer momento la atención fue excelente, muy profesional y cercana. Supieron entender perfectamente lo que necesitaba y lo plasmaron en un diseño moderno, funcional y adaptado a mi proyecto. La comunicación fue fluida durante todo el proceso.</p></blockquote><figcaption class="tst-w"><span class="av" aria-hidden="true">PN</span><span><span class="tst-n">Pepe Narváez</span><span class="tst-r">Cliente · Reseña en Google</span></span></figcaption></figure><figure class="tst rv" style="--d:140ms"><div class="stars" aria-label="5 de 5 estrellas">★★★★★</div><blockquote><p>Me creó una web moderna y profesional para mi negocio y estoy muy satisfecho con el resultado. Ha cuidado todos los detalles, desde el diseño hasta la velocidad de carga y la adaptación a móviles. La web transmite mucha más confianza a mis clientes.</p></blockquote><figcaption class="tst-w"><span class="av" aria-hidden="true">PR</span><span><span class="tst-n">Perico Del Rey</span><span class="tst-r">Cliente · Reseña en Google</span></span></figcaption></figure><figure class="tst rv" style="--d:210ms"><div class="stars" aria-label="5 de 5 estrellas">★★★★★</div><blockquote><p>Me analizó mi negocio en Alicante y lo mejoró de manera online, me montó una web profesional, y automatizó varias tareas que me quitaban bastante tiempo. Me entregó todo en el plazo en el que cerramos. Un trabajo de 10.</p></blockquote><figcaption class="tst-w"><span class="av" aria-hidden="true">TB</span><span><span class="tst-n">titusbarberfx</span><span class="tst-r">Negocio en Alicante · Reseña en Google</span></span></figcaption></figure><figure class="tst rv" style="--d:280ms"><div class="stars" aria-label="5 de 5 estrellas">★★★★★</div><blockquote><p>Me hicieron la web exactamente como la pedí, un servicio espectacular. Además me llevan el seguimiento y cualquier cosa que necesito te responden al poco tiempo.</p></blockquote><figcaption class="tst-w"><span class="av" aria-hidden="true">AC</span><span><span class="tst-n">Álvaro Caparrós</span><span class="tst-r">Cliente con mantenimiento · Reseña en Google</span></span></figcaption></figure><figure class="tst rv" style="--d:350ms"><div class="stars" aria-label="5 de 5 estrellas">★★★★★</div><blockquote><p>Hace un trabajo espectacular, un trato increíble y muy profesional, calidad precio inmejorable y lo mejor, cumple con el tiempo de entrega.</p></blockquote><figcaption class="tst-w"><span class="av" aria-hidden="true">AM</span><span><span class="tst-n">Ángel Murcia Muelas</span><span class="tst-r">Cliente · Reseña en Google</span></span></figcaption></figure></div>
   </div>
 </section>
 
@@ -977,6 +1024,38 @@ transition:border-color .2s,color .2s,transform .2s}
       <div><h2>Cuéntame qué necesitas.<br>Te respondo <em>yo</em>.</h2><p>Sin comerciales, sin compromiso y con precio cerrado antes de empezar.</p></div>
       <a href="https://wa.me/34642084042?text=Hola,%20quiero%20hablar%20sobre%20un%20proyecto%20para%20mi%20negocio" target="_blank" rel="noopener noreferrer" class="btn btn-p"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg> <span>642 08 40 42</span></a>
     </div>
+  
+    <form class="form-g rv" id="fpres" novalidate>
+      <div class="campo">
+        <label for="f-nom">Tu nombre <span class="req" aria-hidden="true">*</span></label>
+        <input id="f-nom" name="nombre" type="text" autocomplete="name" required aria-describedby="e-nom">
+        <span class="err" id="e-nom" role="alert"></span>
+      </div>
+      <div class="campo">
+        <label for="f-neg">Tu negocio <span class="req" aria-hidden="true">*</span></label>
+        <input id="f-neg" name="negocio" type="text" autocomplete="organization" required aria-describedby="e-neg" placeholder="Nombre y ciudad">
+        <span class="err" id="e-neg" role="alert"></span>
+      </div>
+      <div class="campo">
+        <label for="f-tipo">Tipo de empresa</label>
+        <select id="f-tipo" name="tipo"><option>Autónomo o profesional</option><option>Comercio o tienda</option><option>Hostelería o restauración</option><option>Clínica o consulta</option><option>Empresa de servicios</option><option>Turismo</option><option>Otro</option></select>
+        <span class="err"></span>
+      </div>
+      <div class="campo">
+        <label for="f-serv">Qué necesitas <span class="req" aria-hidden="true">*</span></label>
+        <select id="f-serv" name="servicio"><option>Automatización de procesos</option><option>Chatbot con IA para WhatsApp</option><option>Aplicación de gestión a medida</option><option>Web esencial (hasta 4 páginas)</option><option>Web corporativa</option><option>Landing page</option><option>Tienda online</option><option>Mantenimiento web</option><option>SEO local</option><option>Gestión de Meta Ads</option><option>Todavía no lo sé</option></select>
+        <span class="err"></span>
+      </div>
+      <div class="campo ancho">
+        <label for="f-desc">Cuéntame un poco <span class="req" aria-hidden="true">*</span></label>
+        <textarea id="f-desc" name="descripcion" required aria-describedby="e-desc" placeholder="Qué haces, qué te está costando tiempo o clientes, y para cuándo lo necesitas."></textarea>
+        <span class="err" id="e-desc" role="alert"></span>
+      </div>
+      <div class="form-pie">
+        <button type="submit" class="btn btn-p"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg> <span>Confirmar en WhatsApp</span></button>
+        <p class="form-nota">Se abre tu WhatsApp con el mensaje ya escrito. Lo lees, lo cambias si quieres y le das a enviar. <strong>No se guarda nada en la web</strong>.</p>
+      </div>
+    </form>
   </div>
 </section>
 
@@ -1177,6 +1256,45 @@ addEventListener("scroll",v,{passive:true});v();
 b.addEventListener("click",function(){
   window.scrollTo({top:0,behavior:suave?"smooth":"auto"});
   var m=document.getElementById("main-content");if(m){m.setAttribute("tabindex","-1");m.focus({preventScroll:true})}
+});
+})();
+</script>
+<script>
+(function(){"use strict";
+var f=document.getElementById("fpres");if(!f)return;
+var TEL="34642084042";
+function err(id,msg){var c=document.getElementById(id);if(c)c.textContent=msg||"";}
+function val(){
+  var ok=true,campos=[["f-nom","e-nom","Escribe tu nombre"],["f-neg","e-neg","Dime el nombre de tu negocio"],["f-desc","e-desc","Cuéntame qué necesitas, aunque sea en una línea"]];
+  campos.forEach(function(c){
+    var el=document.getElementById(c[0]),v=(el.value||"").trim();
+    if(v.length<2){el.setAttribute("aria-invalid","true");err(c[1],c[2]);ok=false;}
+    else{el.removeAttribute("aria-invalid");err(c[1],"");}
+  });
+  return ok;
+}
+f.addEventListener("submit",function(e){
+  e.preventDefault();
+  if(!val()){var m=f.querySelector('[aria-invalid="true"]');if(m)m.focus();return;}
+  var g=function(id){return (document.getElementById(id).value||"").trim();};
+  var txt="Hola Álvaro, quiero presupuesto.\n\n"+
+    "Nombre: "+g("f-nom")+"\n"+
+    "Negocio: "+g("f-neg")+"\n"+
+    "Tipo: "+g("f-tipo")+"\n"+
+    "Servicio: "+g("f-serv")+"\n\n"+
+    g("f-desc");
+  /* Se pulsa un <a> real para que el listener de consent.js cuente el Contact.
+     Con location.href el lead no se mediría. */
+  var a=document.createElement("a");
+  a.href="https://wa.me/"+TEL+"?text="+encodeURIComponent(txt);
+  a.target="_blank";a.rel="noopener noreferrer";
+  a.style.cssText="position:absolute;left:-9999px";
+  document.body.appendChild(a);a.click();
+  setTimeout(function(){a.remove();},1500);
+});
+["f-nom","f-neg","f-desc"].forEach(function(id){
+  var el=document.getElementById(id);
+  el.addEventListener("input",function(){if(el.getAttribute("aria-invalid")==="true")val();});
 });
 })();
 </script>

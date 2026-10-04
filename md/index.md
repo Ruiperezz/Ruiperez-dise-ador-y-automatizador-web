@@ -200,13 +200,15 @@ Tu web en vivo, el código es tuyo y tienes 30 días de ajustes incluidos.
 
 ## Lo que dicen en Google
 
-Copiadas literalmente de mi ficha de Google, donde llevo 5,0 de media sobre 11 reseñas. Puedes abrirlas y comprobarlo.
+Seis de las once que tengo, copiadas literalmente de mi ficha. Puedes abrirlas y comprobarlas una a una.
 
-Quiero agradecer a Ruipérez el excelente trabajo realizado en la creación de nuestra página web. Desde el primer momento demostró una gran profesionalidad, creatividad y dedicación. Supo entender perfectamente nuestras necesidades y transformarlas en una web moderna, atractiva y fácil de usar.
+Quiero agradecer a Álvaro el excelente trabajo realizado en la creación de nuestra página web de Floristería Alameda en Cartagena. Desde el primer momento demostró una gran profesionalidad, creatividad y dedicación. Supo entender perfectamente nuestras necesidades y transformarlas en una web moderna, atractiva y fácil de usar.
 
 ## Cuéntame qué necesitas. Te respondo yo.
 
 Sin comerciales, sin compromiso y con precio cerrado antes de empezar.
+
+Se abre tu WhatsApp con el mensaje ya escrito. Lo lees, lo cambias si quieres y le das a enviar. No se guarda nada en la web.
 
 ## Preguntas frecuentes
 
