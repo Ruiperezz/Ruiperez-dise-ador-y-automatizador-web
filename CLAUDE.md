@@ -23,7 +23,7 @@ HTML + CSS + JavaScript **estático puro**. Sin `package.json`, sin npm, sin bun
 
 ## Estructura
 
-21 páginas, una carpeta por URL:
+**25 páginas** (01/10/2026), una carpeta por URL:
 
 | Grupo | Rutas |
 |---|---|
@@ -32,7 +32,13 @@ HTML + CSS + JavaScript **estático puro**. Sin `package.json`, sin npm, sin bun
 | General (1) | `/diseno-web/` |
 | Legales (3) | `/aviso-legal/` `/privacidad/` `/cookies/` |
 | Estudio (2) | `/sobre-mi/` · `/casos/` |
-| Tráfico de pago (2) | `/lp/hosteleria/` `/lp/comercio-local/` — noindex, sin menú, un solo CTA. **Nunca mandar tráfico de pago a la home.** |
+| Tráfico de pago (5) | `/lp/hosteleria/` `/lp/comercio-local/` `/lp/automatizacion/` `/lp/chatbot-ia/` `/lp/aplicaciones/` — noindex, sin menú, un solo CTA. **Nunca mandar tráfico de pago a la home.** |
+| Error (1) | `404.html` — noindex, con cuatro salidas útiles |
+
+**Las tres landings nuevas son del 01/10/2026**, para Google Ads. Cubren los servicios
+que las dos de web no cubrían. La del chatbot **dice por escrito que no hay caso
+publicado todavía**: es el servicio más nuevo e inventarle un caso sería lo que critica
+la FAQ de `/meta-ads/`.
 
 Otros archivos: `sitemap.xml` (19 URLs — las noindex quedan fuera), `robots.txt`, `fonts/` (3 WOFF2), `vercel.json` (CSP, HSTS, X-Frame-Options, cache de `/img/`), `favicon.svg`, `apple-touch-icon.png`, `img/`.
 
@@ -227,6 +233,63 @@ es peor que no haberla tocado.
 ve en la web: decía tienda 1.990€, automatización 900€, SEO 290€, email 190€, redes
 350€ y mantenimiento 90€. **Ninguno era un precio real de ninguna tabla.** Google
 enseñaba eso en los resultados enriquecidos. Corregido y ahora comprobado.
+
+
+## Estado del 04/10/2026
+
+**Reseñas: 11, todas de cinco estrellas → 5,0★.** `deku 311` cambió su valoración de 1 a
+5 el 01/10 (era un cliente que se equivocó, confirmado por Álvaro). **Compruébalo en vivo
+antes de escribirlo en ninguna página**, que en una semana ha sido 5,0 → 4,6 → 5,0.
+
+**Redes sociales (04/10/2026).** Botones de Instagram y Facebook en el pie de las 16
+páginas, con el logo real, 44×44 y `aria-label`.
+- Instagram: `https://www.instagram.com/ruiperez.studio/`
+- Facebook: `https://www.facebook.com/profile.php?id=1378239218703135`
+
+⚠️ **El enlace de Facebook que pasó Álvaro era una URL de BÚSQUEDA**
+(`facebook.com/search/top/?q=RuiperezStudio`), que lleva a resultados y no a su página.
+Se usa la canónica por ID, que sale de su propio conector `facebook_organic`. **Si algún
+día pone un nombre de usuario propio, se cambia por él.**
+
+⚠️ **El `sameAs` del JSON-LD declaraba `instagram.com/RuiperezStudio`, que no es su
+cuenta.** Un `sameAs` apuntando a un perfil ajeno le dice a Google que la entidad es
+otra. Corregido.
+
+**Titles con ciudad (01/10/2026).** Decían «Sureste de España», que no lo busca nadie,
+mientras Search Console enseñaba **413 impresiones de consultas con ciudad**. Once
+reescritos a servicio + ciudad + precio, todos bajo 60 caracteres. Ver
+`docs/seo-organico.md`, que tiene la línea base para medir si funcionó.
+
+**El pie nombra las seis ciudades** (Cartagena, Murcia, Alicante, Elche, Almería y
+Valencia) y lidera con automatización. Es el sitio convencional para la zona de servicio
+y así las seis están en las 16 páginas sin apilar palabras clave en el copy.
+
+**Botón de volver arriba** en las 19 páginas con menú, abajo a la **izquierda**: la
+derecha la ocupan el asistente y WhatsApp, y en móvil además la barra fija `.mcta`.
+Fuera de las landings de pago, que son de un solo CTA.
+
+**Métricas medidas en producción el 04/10/2026** con el navegador, sin estrangular la red:
+
+| Página | LCP | CLS | Peticiones | Peso |
+|---|--:|--:|--:|--:|
+| `/` móvil | 152 ms | **0** | 16 | 398 KB |
+| `/` escritorio | 256 ms | **0** | 16 | 398 KB |
+| `/lp/automatizacion/` móvil | 548 ms | **0** | 16 | 376 KB |
+| `/diseno-web/` móvil | 288 ms | **0** | 15 | 358 KB |
+
+⚠️ **No son puntuaciones de Lighthouse**: van sin estrangulado de red, así que no se
+comparan con los 100/100 del 29/09. Lo que sí es comparable es el **CLS 0**, que no
+depende de la red. Lighthouse 13.5 **ya no arranca con Node 26** en este entorno.
+
+**Auditoría cruzada hecha el 04/10/2026, sin contradicciones:** los 14 servicios y los 4
+packs dicen **el mismo precio en la web, en `api/servicios.json`, en `llms.txt`, en
+`js/asistente.js` y en los 18 servicios de la ficha de Google**. Comprobado con script,
+no a ojo.
+
+**La descripción de la ficha de Google lidera ahora con automatización**, igual que el
+sitio. ⚠️ **La categoría principal sigue siendo `gcid:website_designer` y NO se toca**:
+es la que le trae «diseño web cartagena», su consulta de más volumen (194 impresiones),
+y cambiarla puede disparar la re-verificación de Google.
 
 ## Clientes
 
