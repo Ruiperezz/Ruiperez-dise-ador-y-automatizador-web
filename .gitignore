@@ -3,3 +3,5 @@
 # capturas sueltas de trabajo, no forman parte del sitio
 Captura de pantalla*.png
 .playwright-mcp/
+__ig/
+__ads/
