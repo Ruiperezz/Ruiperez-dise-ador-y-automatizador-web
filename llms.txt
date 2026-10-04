@@ -18,7 +18,7 @@ Contacto: WhatsApp y teléfono +34 642 08 40 42 · https://ruiperezstudio.es
 - Web esencial: desde 690€, pago único. Hasta 4 páginas. Incluye sistema de reservas si el negocio
   lo necesita; los correos automáticos de confirmación van aparte, con la automatización de procesos
 - Web corporativa: desde 1.190€, pago único
-- Tienda online: desde 1.490€, pago único
+- Tienda online: desde 1.490€, pago único. El catálogo queda cobrando con tarjeta en 72 horas desde que el cliente entrega fotos, precios y textos; la tienda terminada en una o dos semanas
 - Aplicación web de gestión: desde 2.900€ más 90€/mes
 - Automatización esencial: desde 390€. Correo de confirmación al cliente y aviso al móvil
 - Automatización de procesos: desde 990€
@@ -48,7 +48,7 @@ cuenta desde que el cliente entrega el contenido y se cierra por escrito antes d
 - [Diseño web y precios](https://ruiperezstudio.es/diseno-web/): qué cuesta una web y qué incluye
 - [Web corporativa](https://ruiperezstudio.es/web-corporativa/): desde 1.190€
 - [Landing page](https://ruiperezstudio.es/landing-page/): una página, un objetivo, desde 590€
-- [Tienda online](https://ruiperezstudio.es/tienda-online/): catálogo, carrito y pasarela de pago, desde 1.490€
+- [Tienda online](https://ruiperezstudio.es/tienda-online/): catálogo, carrito y pasarela de pago, cobrando en 3 días, desde 1.490€
 - [Aplicación web de gestión](https://ruiperezstudio.es/aplicaciones-web/): panel de administración y acceso privado por cliente, desde 2.900€
 - [Automatización de procesos](https://ruiperezstudio.es/automatizacion/): desde 990€
 - [Chatbot con IA para WhatsApp](https://ruiperezstudio.es/chatbot-whatsapp/): desde 1.290€

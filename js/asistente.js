@@ -89,7 +89,7 @@
 
     { k:["tienda","ecommerce","vender online","carrito","pasarela","pago tarjeta","productos","stock"],
       t:"Tienda online completa: catálogo, carrito, pasarela de pago y gestión de pedidos.",
-      n:"Desde 1.490€. La de Floristería Alameda la puedes ver funcionando en floristeriaalameda.com.", u:"/tienda-online/" },
+      n:"Desde 1.490€, y el catálogo queda cobrando en 72 horas desde que me pasas fotos y precios. La de Floristería Alameda la puedes ver funcionando en floristeriaalameda.com.", u:"/tienda-online/" },
 
     { k:["zona","donde trabajas","donde estas","cartagena","murcia","desplaz","presencial","reunion","vernos","lejos","trabajas en","vives"],
       t:"Estoy en Cartagena y trabajo en toda la Región de Murcia.",
