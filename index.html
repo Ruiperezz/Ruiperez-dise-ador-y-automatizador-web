@@ -571,6 +571,23 @@ box-shadow:0 0 0 3px rgba(181,82,47,.13);outline:none}
 .form-pie{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:1rem;margin-top:.3rem}
 .form-nota{font-size:.82rem;color:var(--mute);max-width:30rem;line-height:1.5}
 @media(max-width:720px){.form-g{grid-template-columns:1fr}}
+
+.cont-g{display:grid;grid-template-columns:1fr 1.05fr;gap:2.4rem;align-items:start}
+.cont-l h2{font-size:clamp(1.9rem,3.4vw,2.7rem);margin:.5rem 0 .9rem}
+.cont-l h2 em{font-style:italic;color:var(--terra-txt)}
+.cont-sub{color:var(--soft);font-size:1rem;line-height:1.6;max-width:30rem}
+.cont-l-l{list-style:none;display:flex;flex-direction:column;gap:.6rem;margin:1.5rem 0}
+.cont-l-l li{display:flex;align-items:flex-start;gap:.65rem;font-size:.95rem;color:var(--soft);line-height:1.5}
+.cont-l-l svg{color:var(--olive);flex:none;margin-top:.18rem}
+.cont-alt{border-top:1px solid var(--line);padding-top:1.1rem;display:flex;flex-direction:column;gap:.25rem}
+.cont-alt-t{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--mute);margin-bottom:.3rem}
+.cont-alt a{font-size:.95rem;font-weight:700;color:var(--terra-txt);text-decoration:none;width:fit-content}
+.cont-alt a:hover{text-decoration:underline;text-underline-offset:2px}
+.fcard{background:var(--surf);border:1px solid var(--line2);border-radius:20px;padding:clamp(1.5rem,3vw,2.1rem);
+box-shadow:0 26px 60px -40px rgba(33,29,24,.5)}
+.fcard-btn{width:100%;justify-content:center;margin-top:1.3rem;min-height:54px;font-size:1.02rem}
+.fcard-pie{font-size:.8rem;color:var(--mute);text-align:center;margin-top:.8rem;line-height:1.45}
+@media(max-width:900px){.cont-g{grid-template-columns:1fr;gap:1.8rem}}
 </style>
 </head>
 <body>
@@ -1020,42 +1037,54 @@ box-shadow:0 0 0 3px rgba(181,82,47,.13);outline:none}
 
 <section class="sec" id="contacto">
   <div class="wrap">
-    <div class="cta rv">
-      <div><h2>Cuéntame qué necesitas.<br>Te respondo <em>yo</em>.</h2><p>Sin comerciales, sin compromiso y con precio cerrado antes de empezar.</p></div>
-      <a href="https://wa.me/34642084042?text=Hola,%20quiero%20hablar%20sobre%20un%20proyecto%20para%20mi%20negocio" target="_blank" rel="noopener noreferrer" class="btn btn-p"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg> <span>642 08 40 42</span></a>
+    <div class="cont-g">
+      <div class="cont-l rv">
+        <span class="ey">Hablemos</span>
+        <h2>Cuéntame qué necesitas.<br>Te respondo <em>yo</em>.</h2>
+        <p class="cont-sub">Rellena esto y se abre tu WhatsApp con el mensaje ya escrito. Lo lees, lo cambias si quieres y le das a enviar.</p>
+        <ul class="cont-l-l">
+          <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Te contesto yo, normalmente el mismo día</span></li>
+          <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Precio cerrado por escrito antes de empezar</span></li>
+          <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Sin comerciales y sin compromiso</span></li>
+          <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Si no te compensa, te lo digo</span></li>
+        </ul>
+        <div class="cont-alt">
+          <span class="cont-alt-t">¿Prefieres directamente?</span>
+          <a href="tel:+34642084042">642 08 40 42</a>
+          <a href="mailto:ruiperezstudio.info@gmail.com">ruiperezstudio.info@gmail.com</a>
+        </div>
+      </div>
+
+      <form class="fcard rv" id="fpres" novalidate>
+        <div class="form-g">
+          <div class="campo">
+            <label for="f-nom">Tu nombre <span class="req" aria-hidden="true">*</span></label>
+            <input id="f-nom" name="nombre" type="text" autocomplete="name" required aria-describedby="e-nom">
+            <span class="err" id="e-nom" role="alert"></span>
+          </div>
+          <div class="campo">
+            <label for="f-neg">Tu negocio <span class="req" aria-hidden="true">*</span></label>
+            <input id="f-neg" name="negocio" type="text" autocomplete="organization" required aria-describedby="e-neg" placeholder="Nombre y ciudad">
+            <span class="err" id="e-neg" role="alert"></span>
+          </div>
+          <div class="campo ancho">
+            <label for="f-tipo">Tipo de empresa</label>
+            <select id="f-tipo" name="tipo"><option>Autónomo o profesional</option><option>Comercio o tienda</option><option>Hostelería o restauración</option><option>Clínica o consulta</option><option>Empresa de servicios</option><option>Turismo</option><option>Otro</option></select>
+          </div>
+          <div class="campo ancho">
+            <label for="f-serv">Qué necesitas</label>
+            <select id="f-serv" name="servicio"><option>Automatización de procesos</option><option>Chatbot con IA para WhatsApp</option><option>Aplicación de gestión a medida</option><option>Web esencial (hasta 4 páginas)</option><option>Web corporativa</option><option>Landing page</option><option>Tienda online</option><option>Mantenimiento web</option><option>SEO local</option><option>Gestión de Meta Ads</option><option>Todavía no lo sé</option></select>
+          </div>
+          <div class="campo ancho">
+            <label for="f-desc">Cuéntame un poco <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="f-desc" name="descripcion" required aria-describedby="e-desc" placeholder="Qué haces, qué te está costando tiempo o clientes, y para cuándo lo necesitas."></textarea>
+            <span class="err" id="e-desc" role="alert"></span>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-p fcard-btn"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg> <span>Confirmar en WhatsApp</span></button>
+        <p class="fcard-pie">No se guarda nada en esta web. El mensaje se abre en tu móvil y lo envías tú.</p>
+      </form>
     </div>
-  
-    <form class="form-g rv" id="fpres" novalidate>
-      <div class="campo">
-        <label for="f-nom">Tu nombre <span class="req" aria-hidden="true">*</span></label>
-        <input id="f-nom" name="nombre" type="text" autocomplete="name" required aria-describedby="e-nom">
-        <span class="err" id="e-nom" role="alert"></span>
-      </div>
-      <div class="campo">
-        <label for="f-neg">Tu negocio <span class="req" aria-hidden="true">*</span></label>
-        <input id="f-neg" name="negocio" type="text" autocomplete="organization" required aria-describedby="e-neg" placeholder="Nombre y ciudad">
-        <span class="err" id="e-neg" role="alert"></span>
-      </div>
-      <div class="campo">
-        <label for="f-tipo">Tipo de empresa</label>
-        <select id="f-tipo" name="tipo"><option>Autónomo o profesional</option><option>Comercio o tienda</option><option>Hostelería o restauración</option><option>Clínica o consulta</option><option>Empresa de servicios</option><option>Turismo</option><option>Otro</option></select>
-        <span class="err"></span>
-      </div>
-      <div class="campo">
-        <label for="f-serv">Qué necesitas <span class="req" aria-hidden="true">*</span></label>
-        <select id="f-serv" name="servicio"><option>Automatización de procesos</option><option>Chatbot con IA para WhatsApp</option><option>Aplicación de gestión a medida</option><option>Web esencial (hasta 4 páginas)</option><option>Web corporativa</option><option>Landing page</option><option>Tienda online</option><option>Mantenimiento web</option><option>SEO local</option><option>Gestión de Meta Ads</option><option>Todavía no lo sé</option></select>
-        <span class="err"></span>
-      </div>
-      <div class="campo ancho">
-        <label for="f-desc">Cuéntame un poco <span class="req" aria-hidden="true">*</span></label>
-        <textarea id="f-desc" name="descripcion" required aria-describedby="e-desc" placeholder="Qué haces, qué te está costando tiempo o clientes, y para cuándo lo necesitas."></textarea>
-        <span class="err" id="e-desc" role="alert"></span>
-      </div>
-      <div class="form-pie">
-        <button type="submit" class="btn btn-p"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg> <span>Confirmar en WhatsApp</span></button>
-        <p class="form-nota">Se abre tu WhatsApp con el mensaje ya escrito. Lo lees, lo cambias si quieres y le das a enviar. <strong>No se guarda nada en la web</strong>.</p>
-      </div>
-    </form>
   </div>
 </section>
 

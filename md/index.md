@@ -206,9 +206,14 @@ Quiero agradecer a Álvaro el excelente trabajo realizado en la creación de nue
 
 ## Cuéntame qué necesitas. Te respondo yo.
 
-Sin comerciales, sin compromiso y con precio cerrado antes de empezar.
+Rellena esto y se abre tu WhatsApp con el mensaje ya escrito. Lo lees, lo cambias si quieres y le das a enviar.
 
-Se abre tu WhatsApp con el mensaje ya escrito. Lo lees, lo cambias si quieres y le das a enviar. No se guarda nada en la web.
+No se guarda nada en esta web. El mensaje se abre en tu móvil y lo envías tú.
+
+- Te contesto yo, normalmente el mismo día
+- Precio cerrado por escrito antes de empezar
+- Sin comerciales y sin compromiso
+- Si no te compensa, te lo digo
 
 ## Preguntas frecuentes
 
