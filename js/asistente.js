@@ -25,19 +25,19 @@
     { k:["precio","cuesta","cuanto cuesta","cuanto vale","cuanto seria","vale","cobras","tarifa","presupuesto","caro","barato","coste","cuanto me","precios"],
       t:"Los precios están publicados, sin tener que preguntar:",
       l:["Landing page: desde 590€","Web esencial (hasta 4 páginas): desde 690€","Web corporativa: desde 1.190€","Tienda online: desde 1.490€","Aplicación de gestión: desde 2.900€ + 90€/mes",
-         "Automatización: desde 990€ (esencial, 390€)","Chatbot de WhatsApp: desde 1.290€ + 120€/mes",
+         "Consultoría de IA: diagnóstico desde 490€","Automatización: desde 990€ (esencial, 390€)","Chatbot de WhatsApp: desde 1.290€ + 120€/mes",
          "SEO local: desde 390€/mes","Redes sociales: desde 450€/mes","Email marketing: desde 290€/mes",
          "Accesibilidad (Ley 11/2023): desde 590€","Mantenimiento: 39–99€/mes, alojamiento incluido","Tarjeta NFC de reseñas: desde 27€"],
       n:"Todos sin IVA. El precio se cierra por escrito antes de empezar.", u:"/#servicios" },
 
     { k:["tarda","cuanto tardas","cuanto tarda","plazo","plazos","cuando estaria","rapido","entrega","semanas","urgente","tiempo"],
       t:"Depende del tipo de proyecto:",
-      l:["Landing page: 1 semana","Web corporativa: 2–3 semanas","Tienda online: 3–4 semanas","Aplicación de gestión: 4–8 semanas"],
+      l:["Landing page, web esencial, web corporativa y tienda online: 1–2 semanas","Aplicación de gestión: 2–3 semanas"],
       n:"El plazo cuenta desde que me pasas el contenido, y te lo digo exacto antes de empezar." },
 
     { k:["cuota","mensual","permanencia","suscripcion","pago unico","pagos","fraccionar","financiar"],
       t:"La web es pago único: no tiene cuota mensual obligatoria.",
-      n:"Los servicios mensuales —mantenimiento, SEO, redes, email— sí llevan cuota, y ninguno tiene permanencia: avisas y se cierra el mes en curso." },
+      n:"Los servicios mensuales —mantenimiento, SEO, redes, email— sí llevan cuota, y ninguno tiene permanencia salvo el acompañamiento de IA, que es de tres meses: avisas y se cierra el mes en curso." },
 
     { k:["codigo","propiedad","mio","dependo","atado","migrar","llevarme","fuente"],
       t:"El código es tuyo al 100% desde la entrega, con acceso completo al código fuente.",
@@ -54,7 +54,7 @@
       n:"El único gasto recurrente es el dominio, unos 12€ al año. Lo gestiono yo y te lo repercuto sin recargo, o lo pones a tu nombre si lo prefieres." },
 
     { k:["pack","packs","packs de servicios","combinacion","todo junto","varios servicios","descuento","oferta","promocion","mas barato si contrato varios","junto","lote"],
-      t:"Hay tres packs, entre un 16% y un 19% más baratos que contratando suelto.",
+      t:"Hay cuatro packs, entre un 16% y un 18% más baratos que contratando suelto.",
       l:["Arranca: web esencial + automatización esencial + tarjeta NFC de reseñas · 910€ (suelto 1.107€)","Capta: landing + 3 meses de Meta Ads · 1.100€ (suelto 1.310€)",
          "Vende online: tienda + automatización de pedidos · 2.080€ (suelto 2.480€)",
          "Atiende solo: web + automatización + chatbot IA · 2.910€ (suelto 3.470€)"],
@@ -74,13 +74,19 @@
     { k:["aplicacion","aplicacion web","app","cuesta una aplicacion","precio aplicacion","precio de la aplicacion","cuesta una app","precio app","panel de gestion","panel de administracion","software a medida","programa de gestion","area privada","zona de clientes"],
       t:"Una aplicación web de gestión: desde 2.900€ más 90€/mes.",
       l:["Panel de administración solo para ti","Cada cliente entra con su usuario y ve solo lo suyo",
-         "Base de datos propia, no una hoja de cálculo","De 4 a 8 semanas"],
+         "Base de datos propia, no una hoja de cálculo","De 2 a 3 semanas desde que me pasas el contenido"],
       n:"Los 90€/mes cubren alojamiento, base de datos, copias de seguridad y soporte. Sin permanencia.", u:"/aplicaciones-web/" },
 
     { k:["automatizacion","automatizar","n8n","make","procesos","tareas","repetitiv","integrar","conectar"],
       t:"Automatizo las tareas que hoy haces a mano y podrían hacerse solas.",
       l:["Email automático cuando entra un pedido o un lead","Avisos y recordatorios","Sincronización entre las apps que ya usas"],
       n:"Desde 990€, o 390€ la versión esencial. Si pierdes horas copiando datos de un sitio a otro, esto es lo que más te va a rentar.", u:"/automatizacion/" },
+
+    { k:["consultoria","consultor","consultoria ia","diagnostico","diagnostico ia","chatgpt","por donde empiezo","formacion ia","taller","reglamento ia","alfabetizacion","que puedo automatizar"],
+      t:"La consultoría de IA empieza por un diagnóstico de 490€ + IVA:",
+      l:["Sesión de 90 minutos e informe en 5 días laborables","Qué tareas puede hacer la IA, cuánto cuesta montarlas y cuántas horas ahorran",
+         "Plan con taller para tu equipo: 1.390€","Acompañamiento: 240€/mes, 3 horas y una reunión al mes, mínimo 3 meses"],
+      n:"Si el informe no trae tres acciones concretas con su coste, te devuelvo el dinero. Si ya sabes lo que quieres automatizar, no te hace falta: mira la automatización esencial.", u:"/consultoria-ia/" },
 
     { k:["chatbot","bot","inteligencia artificial","inteligencia","responder solo","24 horas","whatsapp business","contestar solo","robot"],
       t:"Monto asistentes con IA de verdad sobre WhatsApp Business.",

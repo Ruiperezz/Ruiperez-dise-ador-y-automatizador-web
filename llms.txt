@@ -5,8 +5,8 @@
 > Región de Murcia, Alicante, Almería y Valencia. Todos los precios están publicados
 > y son cerrados antes de empezar.
 
-Trabaja solo: la misma persona que atiende el teléfono es la que programa.
-Sin agencia, sin comerciales y sin subcontratas. Código propio, sin plantillas
+Hablas directamente con quien programa: la misma persona que atiende el teléfono.
+Sin comerciales ni subcontratas. Código propio, sin plantillas
 ni constructores visuales. El código es del cliente desde la entrega y no hay
 cuotas obligatorias en las webs.
 
@@ -21,6 +21,7 @@ Contacto: WhatsApp y teléfono +34 642 08 40 42 · https://ruiperezstudio.es
 - Tienda online: desde 1.490€, pago único. El catálogo queda cobrando con tarjeta en 72 horas desde que el cliente entrega fotos, precios y textos; la tienda terminada en una o dos semanas
 - Aplicación web de gestión: desde 2.900€ más 90€/mes
 - Automatización esencial: desde 390€. Correo de confirmación al cliente y aviso al móvil
+- Consultoría de IA: diagnóstico desde 490€, pago único (sesión de 90 minutos e informe en cinco días laborables con las tareas que la IA puede hacer, su coste y las horas que ahorran; hasta 10 personas y una sede; si el informe no trae tres acciones concretas se devuelve el dinero; 250€ de descuento si en 30 días se contrata la automatización de procesos, el chatbot o la aplicación). Plan de IA desde 1.390€ con taller de 3 horas para el equipo. Acompañamiento 240€/mes con 3 horas y una reunión al mes, mínimo 3 meses. Taller suelto 490€. No se garantiza el cumplimiento del Reglamento de IA
 - Automatización de procesos: desde 990€
 - Chatbot con IA para WhatsApp: desde 1.290€ más 120€/mes
 - SEO local: desde 390€/mes
@@ -40,8 +41,8 @@ Contacto: WhatsApp y teléfono +34 642 08 40 42 · https://ruiperezstudio.es
 - Pack Atiende solo: web corporativa más automatización más chatbot con IA para WhatsApp. 2.910€ en lugar de 3.470€ por separado, más 120€/mes del chatbot desde el primer mes
 - Otras combinaciones se presupuestan con el mismo descuento por ir juntas
 
-Plazos: una semana para landing page, web corporativa y tienda online. Dos semanas
-para la aplicación web de gestión, que lleva base de datos y usuarios. El plazo se
+Plazos: de una a dos semanas para landing page, web esencial, web corporativa y tienda online. De dos
+a tres semanas para la aplicación web de gestión, que lleva base de datos y usuarios. El plazo se
 cuenta desde que el cliente entrega el contenido y se cierra por escrito antes de empezar.
 
 ## Servicios
@@ -51,6 +52,7 @@ cuenta desde que el cliente entrega el contenido y se cierra por escrito antes d
 - [Landing page](https://ruiperezstudio.es/landing-page/): una página, un objetivo, desde 590€
 - [Tienda online](https://ruiperezstudio.es/tienda-online/): catálogo, carrito y pasarela de pago, cobrando en 3 días, desde 1.490€
 - [Aplicación web de gestión](https://ruiperezstudio.es/aplicaciones-web/): panel de administración y acceso privado por cliente, desde 2.900€
+- [Consultoría de IA](https://ruiperezstudio.es/consultoria-ia/): qué tareas puede hacer la IA en tu negocio, cuánto cuesta y cuánto ahorra, desde 490€
 - [Automatización de procesos](https://ruiperezstudio.es/automatizacion/): desde 990€
 - [Chatbot con IA para WhatsApp](https://ruiperezstudio.es/chatbot-whatsapp/): desde 1.290€
 - [SEO local](https://ruiperezstudio.es/seo-local/): desde 390€/mes

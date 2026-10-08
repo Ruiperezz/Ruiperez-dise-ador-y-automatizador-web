@@ -59,6 +59,10 @@ Lo que haces a mano todos los días y puede hacer el ordenador: mandar el correo
 
 Contesta por WhatsApp a cualquier hora las preguntas de siempre —horarios, precios, si queda sitio—, coge la reserva y te pasa a ti solo lo que merece tu tiempo.
 
+### Consultoría de IA
+
+Una sesión de 90 minutos y un informe con las tareas de tu negocio que puede hacer la IA, lo que cuesta montar cada una y las horas que te devuelve. Si no compensa, te lo digo.
+
 ### Aplicación web de gestión
 
 Un panel de administración para ti y un acceso privado para cada cliente, sobre una base de datos propia en vez de sobre hojas de cálculo que se pisan.

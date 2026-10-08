@@ -27,7 +27,7 @@
       "get": {
         "operationId": "getCatalogo",
         "summary": "Catálogo completo de servicios y packs",
-        "description": "Devuelve los 12 servicios con precio, modelo de cobro y plazo, más los 3 packs con su descuento.",
+        "description": "Devuelve los 16 servicios con precio, modelo de cobro y plazo, más los 4 packs con su descuento.",
         "tags": [
           "catalogo"
         ],
