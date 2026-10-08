@@ -11,3 +11,11 @@ PLAN-accesibilidad.md
 PLAN-medianas.md
 AUDITORIA-2026-09-25.md
 scripts/
+# Patrones, no nombres sueltos: el 30/09 se publicó una auditoría con visitas,
+# presupuesto y reseñas porque su nombre no estaba en esta lista.
+AUDITORIA-*.md
+PLAN-*.md
+*.md.bak
+Captura*.png
+__ig/
+__ads/
