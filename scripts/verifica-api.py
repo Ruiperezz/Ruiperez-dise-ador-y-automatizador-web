@@ -32,6 +32,17 @@ for pk in d['packs']:
         if v not in home: fallos.append(f"pack {pk['id']}: la API dice {v} ({etiq}) y la home no lo contiene")
     if pk['precio_suelto_eur_sin_iva'] - pk['precio_eur_sin_iva'] != pk['ahorro_eur']:
         fallos.append(f"pack {pk['id']}: el ahorro no cuadra con la resta")
+    # El «suelto» tiene que ser la suma REAL de lo que lleva el pack. Antes solo se
+    # comprobaba la resta, así que un suelto inventado pasaba sin que nadie lo viera.
+    precios = {s_['id']: s_['precio']['desde_eur_sin_iva'] for s_ in d['servicios']}
+    suma = 0
+    for item in pk['incluye']:
+        if item.startswith('meta-ads'):
+            suma += precios['meta-ads'] * 3          # «(3 meses)»
+        else:
+            suma += precios[item]
+    if suma != pk['precio_suelto_eur_sin_iva']:
+        fallos.append(f"pack {pk['id']}: el suelto dice {pk['precio_suelto_eur_sin_iva']}€ y la suma real de lo que incluye es {suma}€")
 
 if fallos:
     print("  DESAJUSTES:"); [print("   ·", x) for x in fallos]; sys.exit(1)
