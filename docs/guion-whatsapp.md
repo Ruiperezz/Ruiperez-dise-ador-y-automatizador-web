@@ -31,7 +31,7 @@ Antes de cambiar de app, **haz copia de seguridad de tus chats.**
 | Ajuste | Qué poner |
 |---|---|
 | Perfil | Nombre «Ruipérez Studio», categoría «Servicios de diseño web», web, correo |
-| Horario | L-S 8:00-14:00 (el mismo que la ficha de Google; si no coincide, Google lo penaliza) |
+| Horario | L-V 8:00-14:00 y 16:00-21:00 · S 8:00-14:00 (el mismo que la ficha de Google; si no coincide, Google lo penaliza) |
 | Descripción | Automatización, chatbots con IA y webs a medida. Cartagena, Murcia, Alicante, Elche, Almería y Valencia |
 | Catálogo | Una entrada por servicio, con el precio publicado |
 | Mensaje de bienvenida | el de abajo |
@@ -45,13 +45,18 @@ Antes de cambiar de app, **haz copia de seguridad de tus chats.**
 > Para darte un precio cerrado sin marearte, cuéntame: ¿a qué se dedica tu negocio, en qué
 > ciudad y qué necesitas? Mis precios están publicados en ruiperezstudio.es
 
-## Mensaje de ausencia (fuera de 8:00-14:00)
+## Mensaje de ausencia (fuera de horario)
 
-> Ahora mismo no puedo contestar, pero te escribo yo mañana antes de las 9:00. Si me dejas
-> a qué se dedica tu negocio y qué necesitas, te llego con el precio ya pensado.
+WhatsApp Business solo deja programar **un** mensaje de ausencia, así que tiene que valer
+para las tres situaciones: el descanso de 14:00 a 16:00, las noches y los fines de semana.
+Por eso **no promete una hora concreta**:
 
-⚠️ **Solo prometas «antes de las 9:00» si lo vas a cumplir.** Un mensaje de ausencia que
-miente es peor que no tenerlo.
+> Ahora estoy fuera de mi horario (de lunes a viernes de 8 a 14 y de 16 a 21, y los sábados
+> de 8 a 14). Te contesto yo en persona en cuanto abra. Si me dejas a qué se dedica tu
+> negocio y qué necesitas, te llego con el precio ya pensado.
+
+Dice lo cierto, que es tu horario, y no se rompe si un martes a las 14:30 estás comiendo.
+(La versión anterior prometía «antes de las 9:00», que solo era cierta por las noches.)
 
 ## Primera respuesta personal
 

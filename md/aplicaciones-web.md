@@ -61,7 +61,7 @@ El panel es privado, así que aquí no puedo enseñarlo. Lo que sí puedes abrir
 
 ### Casa del Sushi · panel de reservas
 
-Un buffet con reserva de mesa desde la web. El cliente reserva y recibe su confirmación por correo; hasta ahí es automatización. La parte de aplicación es lo que ve el restaurante.
+Un buffet con reserva de mesa desde la web. El cliente reserva, recibe su confirmación por correo y la reserva entra en el Google Calendar del restaurante; hasta ahí es automatización. Lo hice como demo y el restaurante no llegó a contratarlo, pero el trabajo es real y funciona. La parte de aplicación es lo que ve el restaurante.
 
 #### Qué ve el dueño
 

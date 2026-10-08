@@ -23,7 +23,7 @@ HTML + CSS + JavaScript **estático puro**. Sin `package.json`, sin npm, sin bun
 
 ## Estructura
 
-**25 páginas** (01/10/2026), una carpeta por URL:
+**27 páginas** (08/10/2026), una carpeta por URL:
 
 | Grupo | Rutas |
 |---|---|
@@ -34,6 +34,7 @@ HTML + CSS + JavaScript **estático puro**. Sin `package.json`, sin npm, sin bun
 | Estudio (2) | `/sobre-mi/` · `/casos/` |
 | Tráfico de pago (5) | `/lp/hosteleria/` `/lp/comercio-local/` `/lp/automatizacion/` `/lp/chatbot-ia/` `/lp/aplicaciones/` — noindex, sin menú, un solo CTA. **Nunca mandar tráfico de pago a la home.** |
 | Error (1) | `404.html` — noindex, con cuatro salidas útiles |
+| Conversión (1) | `/presupuesto/` — noindex, sin menú, formulario que termina en WhatsApp |
 
 **Las tres landings nuevas son del 01/10/2026**, para Google Ads. Cubren los servicios
 que las dos de web no cubrían. La del chatbot **dice por escrito que no hay caso
@@ -64,6 +65,7 @@ Otros archivos: `sitemap.xml` (19 URLs — las noindex quedan fuera), `robots.tx
 | Auditoría de accesibilidad | desde 590€ · con correcciones 1.190€ · monitorización 95€/mes |
 | **Mantenimiento web** | **39 / 69 / 99€/mes · alojamiento incluido** |
 | **Gestión de Meta Ads** | **240€/mes** hasta 1.000€/mes de inversión · por encima, 15% de la inversión |
+| **Tarjeta NFC de reseñas** | **27€** la unidad · 2 por 50€ · 4 por 100€ · instalada por Álvaro |
 
 **Bajada del 30/09/2026, la última.** Álvaro la pidió con un objetivo explícito:
 **captar y cerrar clientes pequeños cuanto antes para ganar experiencia**, porque
@@ -106,7 +108,7 @@ Los tres niveles son para clientes nuevos.
 
 | Pack | Lleva | Suelto | Pack |
 |---|---|---|---|
-| **Arranca** | Web esencial + automatización esencial | 1.080€ | **910€** |
+| **Arranca** | Web esencial + automatización esencial + 1 tarjeta NFC | 1.107€ | **910€** |
 | **Capta** | Landing page + 3 meses de Meta Ads | 1.310€ | **1.100€** |
 | **Vende online** | Tienda online + automatización | 2.480€ | **2.080€** |
 | **Atiende solo** | Web corporativa + automatización + chatbot IA | 3.470€ | **2.910€** |
@@ -340,6 +342,54 @@ Ahora: tinta `#211D18` y crema `#F7F2E9`, R a un solo trazo. Comprobado a 16, 32
 120px. **El `apple-touch-icon.png` se genera RENDERIZANDO el SVG**, no redibujándolo:
 hacerlo con primitivas de PIL dejaba una muesca donde el arco se unía al trazo.
 
+
+## Decisiones y hechos del 08/10/2026
+
+**`titusbarberfx` es el dueño de Floristería Buccaro (Alicante).** Le hizo una demo, le gustó
+mucho y dejó la reseña de cinco estrellas, pero **no cerraron por problemas económicos suyos**;
+quizá cierren cuando le vaya mejor. Su reseña es real y se enseña literal, **pero NO es un
+cliente de pago**, así que la etiqueta dice «Dueño de un negocio en Alicante · reseña tras
+una demo». ⚠️ **La reseña dice «me entregó todo en el plazo en el que cerramos» y «automatizó
+varias tareas»**: describe un encargo cerrado que no existió. No la cites como caso de
+cliente, ni titules nada con «un cliente al que automaticé». Se corrigió en la home y en
+`/lp/automatizacion/`. También: la publicación de Instagram de las reseñas dice «Once clientes
+han dejado reseña» y no es del todo exacto (no se puede editar desde el conector).
+
+**El socio de las redes ya no existe.** `/sobre-mi/` decía que las llevaba «otra persona
+especializada»: ahora dice que las lleva Álvaro. Los anuncios, orgánicos y de pago, se harán
+con **Higgsfield** cuando lo pague (aún no); no hay conector de Higgsfield.
+
+**Windsor.ai, descartado por Álvaro** (cuesta demasiado para lo que es). Quiere conectar todo
+a un **panel de administración propio**. Mientras tanto Windsor sigue con las lecturas
+pausadas (plan gratuito: 1 cuenta, hay 12), pero **las escrituras SÍ funcionan** (se cambió el
+horario y los 20 servicios de la ficha el 08/10). Sin lecturas, **Claude no puede leer métricas
+de nadie**: hasta que exista el panel, los datos salen a mano de Meta, Google Ads, GA4 y Search
+Console.
+
+**Horario nuevo (08/10/2026):** lunes a viernes 8:00-14:00 y 16:00-21:00, sábado 8:00-14:00.
+Aplicado en la ficha de Google y en el JSON-LD de la home. WhatsApp Business: ver
+`docs/guion-whatsapp.md`. El «mismo día» de las páginas sigue siendo cierto.
+
+**Tarjeta NFC de reseñas, publicada (08/10/2026):** `/tarjeta-nfc-resenas/`. **27€ + IVA la
+unidad, 2 por 50€ (ahorras 4€), 4 por 100€ (ahorras 8€).** La entrega en mano y **la instala
+Álvaro en el negocio, funcionando**. Va con QR de respaldo y la página dice que el NFC no
+funciona en todos los móviles y que Google prohíbe regalar algo a cambio de reseñas. **Una
+tarjeta va incluida en el pack Arranca** (910€, suelto 1.107€, ahorro 197€ = 18%). **Álvaro
+no ha dicho cuánto le cuesta cada una**, así que no se sabe el margen. La API tiene las tres
+cantidades en `precio.opciones`.
+
+**Todos los botones de WhatsApp llevan primero a un formulario (08/10/2026).** Álvaro quiere
+tener toda la información del cliente antes de la conversación. Cada botón de contacto va a
+`/presupuesto/?s=<servicio>&p=<página>`; la página es `noindex`, sin menú, y al final abre
+WhatsApp con el mensaje ya escrito (nombre, negocio, tipo, qué necesita, si tiene web, para
+cuándo y descripción). **No se guarda nada en la web.** Llegan directos, a propósito: el pie
+(contacto), el teléfono, el correo, el botón flotante y el asistente (dudas rápidas), y el 404.
+⚠️ **Contramedida de medición:** el evento `Contact` ya no sale al pulsar el botón, sale al
+**enviar el formulario**, porque el envío pulsa un `<a href="wa.me…text=">` real que
+`consent.js` caza. Con `location.href` el lead no se mediría. **Un paso más baja la tasa de
+conversión de los anuncios**: Álvaro lo decidió sabiéndolo. Si el coste por contacto sube
+mucho, es lo primero que mirar.
+
 ## Clientes
 
 **Seis proyectos, y no todos son clientes.** La distinción importa y está reflejada en las etiquetas del sitio:
@@ -362,7 +412,7 @@ Los clientes verificables como tales:
 
 - **TukTuk Cartagena** — turismo. `tuktukcartagena.com`. Web desde cero en 4 idiomas (ES/EN/DE/FR), **sistema de reservas** (servicio, personas, número de tuk tuks y cobro), **correos automáticos** de confirmación al cliente y al empresario, y un **panel de administración** donde el dueño bloquea días, horas o parte de la flota (avería, festivo) y eso desaparece al instante de la web. Ese panel es el caso real de `/aplicaciones-web/`. **Es privado: no hay captura y no se puede enseñar.**
 - **Floristería Alameda** — Cartagena, **4,9★ con 333 reseñas** (verificado en floristeriaalameda.com). Es una **tienda online** con catálogo, carrito y pasarela de pago. No la etiquetes como web corporativa.
-- **Casa del Sushi** — Cartagena, restauración. **Demo entregada que nunca se pagó; el cliente no siguió.** NO es un cliente. `casa-del-sushi.vercel.app`. Carta, info del local, ubicación y reseñas, **reserva de mesa con correo de confirmación automático** y un **panel de administración** donde el dueño ve sus reservas. **Álvaro dice que el trabajo no está cerrado del todo** (22/09/2026): sigue etiquetado como caso real porque la web está publicada y se puede abrir, pero confirma con él antes de llamarle «cliente» en copy nuevo. **Álvaro confirmó el 21/09/2026 que Perico Del Rey NO es Casa del Sushi.** Casa del Sushi es cliente y tiene su caso en `/web-corporativa/` y `/casos/`, pero **no ha dejado reseña en Google**: no le atribuyas ninguna.
+- **Casa del Sushi** — Cartagena, restauración. **Demo entregada que nunca se pagó; el cliente no siguió.** NO es un cliente, pero **es trabajo real hecho por Álvaro**: el formulario de reservas está automatizado y conectado al **Google Calendar de la empresa**. En la web se etiqueta «Proyecto entregado · demo para el cliente». `casa-del-sushi.vercel.app`. Carta, info del local, ubicación y reseñas, **reserva de mesa con correo de confirmación automático** y un **panel de administración** donde el dueño ve sus reservas. **Álvaro dice que el trabajo no está cerrado del todo** (22/09/2026): sigue etiquetado como caso real porque la web está publicada y se puede abrir, pero confirma con él antes de llamarle «cliente» en copy nuevo. **Álvaro confirmó el 21/09/2026 que Perico Del Rey NO es Casa del Sushi.** Casa del Sushi es cliente y tiene su caso en `/web-corporativa/` y `/casos/`, pero **no ha dejado reseña en Google**: no le atribuyas ninguna.
 
 **Ficha de Google propia: `locations/10546771556631248285`.** **11 reseñas y 5,0★, las once de cinco estrellas** (leído en vivo el 04/10/2026; en una semana fue 5,0 → 4,6 → 5,0). **Compruébalo en vivo antes de escribirlo en ninguna página**, no te fíes de esta línea. Enlace público `https://maps.google.com/maps?cid=16135944171140006039`; para pedir reseñas, `https://search.google.com/local/writereview?placeid=ChIJoxdRJpnbFWoRl8BVVLtj7t8`. **El 4,9★ con 333 reseñas es de Alameda, no suyo**: donde aparezca hay que decir de quién es. En el hero van sus 11 reseñas y su 5,0★ reales.
 

@@ -13,7 +13,7 @@ Si pierdes entre una y tres horas a la semana en esto, haz la cuenta con lo que 
 - El recordatorio de cita el día antes
 - Avisar a quien dejó el carrito a medias
 
-## Lo que dice un cliente al que le automaticé tareas
+## Lo que dice el dueño de un negocio en Alicante tras una demo
 
 Trabaja muy bien, es muy responsable, me entregó todo en el plazo en el que cerramos, y me explicó todo en cada momento de manera que yo lo entendiese. Me analizó mi negocio en Alicante y lo mejoró de manera online, me montó una web profesional, y automatizó varias tareas que me quitaban bastante tiempo, un trabajo de 10.
 
