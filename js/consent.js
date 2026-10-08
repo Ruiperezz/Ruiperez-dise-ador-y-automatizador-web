@@ -190,7 +190,17 @@
      Todos los CTA van a wa.me y el píxel no ve esa conversión: sin esto Meta
      optimizaría a «clic en enlace» y traería tráfico basura. El evento se
      dispara ANTES de la redirección. */
-  function pagina() { return location.pathname.replace(/^\/|\/$/g, "") || "home"; }
+  /* En /presupuesto/ la página que cuenta es de la que viene el visitante (parámetro p),
+     no «presupuesto»: si no, todos los contactos saldrían con el mismo nombre y no se
+     sabría qué página los genera, que es lo que decide dónde poner el dinero. */
+  function pagina() {
+    var ruta = location.pathname.replace(/^\/|\/$/g, "") || "home";
+    if (ruta === "presupuesto") {
+      var p = (new URLSearchParams(location.search).get("p") || "").replace(/[^A-Za-z0-9_\/-]/g, "").slice(0, 60);
+      return p || ruta;
+    }
+    return ruta;
+  }
 
   function prepararWhatsApp() {
     document.addEventListener("click", function (e) {
