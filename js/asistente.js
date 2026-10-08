@@ -282,7 +282,7 @@
        el evento Contact. Sin mensaje precargado no se mediría como lead. */
     stack.appendChild(el("a", {
       class: "rsa-wf",
-      href: wa("Hola Álvaro, te escribo desde tu web. Quería preguntarte por..."),
+      href: wa("Hola Álvaro, vengo de tu web. Mi negocio es ___ en ___ y necesito ___"),
       target: "_blank", rel: "noopener noreferrer",
       "aria-label": "Escríbeme por WhatsApp al 642 08 40 42"
     }, IWF));
