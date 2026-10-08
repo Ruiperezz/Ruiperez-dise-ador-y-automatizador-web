@@ -28,12 +28,13 @@ Contacto: WhatsApp y teléfono +34 642 08 40 42 · https://ruiperezstudio.es
 - Email marketing: desde 290€/mes
 - Gestión de Meta Ads (Facebook e Instagram): 240€/mes para una inversión publicitaria de hasta 1.000€/mes. Incluye hasta 3 campañas y 6 anuncios, revisión semanal e informe mensual. La inversión publicitaria no está incluida: la paga el cliente directamente a Meta. Por encima de 1.000€/mes de inversión, 15% de la inversión
 - Auditoría de accesibilidad web (Ley 11/2023): desde 590€. Con correcciones aplicadas, 1.190€. Monitorización mensual, 95€/mes
+- Tarjeta NFC de reseñas: 27€, pago único. Tarjeta con chip NFC programado con el enlace de reseñas de la ficha de Google del negocio y QR impreso de respaldo. No se garantiza un número de reseñas
 - Mantenimiento web: tres planes con alojamiento incluido. Básico 39€/mes (vigilancia, copias y actualizaciones, sin cambios incluidos), Estándar 69€/mes (cuatro cambios al mes; es el plan mínimo si la web lleva automatización, porque la base de datos tiene coste mensual) y Completo 99€/mes (diez cambios al mes). El dominio se paga aparte al proveedor del cliente
 - Cambios puntuales fuera de contrato: 60€/hora
 
 ## Packs (combinaciones con descuento, sin IVA)
 
-- Pack Arranca: web esencial más automatización esencial. 910€ en lugar de 1.080€ por separado
+- Pack Arranca: web esencial, automatización esencial y tarjeta NFC de reseñas. 910€ en lugar de 1.107€ por separado
 - Pack Capta: landing page más tres meses de gestión de Meta Ads. 1.100€ en lugar de 1.310€ por separado. A partir del cuarto mes, 240€/mes si se continúa. La inversión publicitaria no está incluida
 - Pack Vende online: tienda online más automatización de pedidos (correo al cliente y aviso al dueño). 2.080€ en lugar de 2.480€ por separado
 - Pack Atiende solo: web corporativa más automatización más chatbot con IA para WhatsApp. 2.910€ en lugar de 3.470€ por separado, más 120€/mes del chatbot desde el primer mes
@@ -58,6 +59,7 @@ cuenta desde que el cliente entrega el contenido y se cierra por escrito antes d
 - [Gestión de Meta Ads](https://ruiperezstudio.es/meta-ads/): campañas de Facebook e Instagram, 240€/mes con la inversión aparte
 - [Auditoría de accesibilidad web](https://ruiperezstudio.es/accesibilidad-web/): WCAG 2.1 AA según la Ley 11/2023 y la EN 301 549, desde 590€
 - [Mantenimiento web](https://ruiperezstudio.es/mantenimiento-web/): 39–99€/mes con alojamiento incluido
+- [Tarjeta NFC de reseñas](https://ruiperezstudio.es/tarjeta-nfc-resenas/): 27€, pago único, con QR de respaldo
 
 ## API pública (JSON, sin clave)
 

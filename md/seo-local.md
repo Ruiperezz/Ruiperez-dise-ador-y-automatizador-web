@@ -62,6 +62,7 @@ Presencia en Google acorde a su reputación real y captación orgánica activa d
 - Contenido mensual
 - Informe con posiciones reales
 - Sin permanencia
+- Más reseñas: [tarjeta NFC](/tarjeta-nfc-resenas/), 27€ aparte
 
 ## ¿Hablamos de tu negocio?
 

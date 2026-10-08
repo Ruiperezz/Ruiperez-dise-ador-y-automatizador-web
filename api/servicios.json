@@ -24,7 +24,7 @@
   "iva_nota": "Todos los precios son sin IVA. Se añade el 21% en factura.",
   "plazos_nota": "El plazo cuenta desde que el cliente entrega el contenido, no desde la firma. De una a dos semanas para webs y tiendas; de dos a tres para la aplicación de gestión.",
   "precio_hora_fuera_de_contrato_eur_sin_iva": 60,
-  "actualizado": "2026-10-04",
+  "actualizado": "2026-10-08",
   "servicios": [
     {
       "id": "landing-page",
@@ -224,6 +224,18 @@
         ],
         "nota": "El alojamiento va incluido en los tres planes. El dominio se paga aparte al proveedor del cliente."
       }
+    },
+    {
+      "id": "tarjeta-nfc-resenas",
+      "nombre": "Tarjeta NFC de reseñas",
+      "url": "https://ruiperezstudio.es/tarjeta-nfc-resenas/",
+      "descripcion": "Tarjeta con chip NFC programado con el enlace de reseñas de la ficha de Google del negocio, más un QR impreso de respaldo. El cliente acerca el móvil y se abre el formulario de reseña.",
+      "precio": {
+        "modelo": "pago_unico",
+        "desde_eur_sin_iva": 27,
+        "iva_pct": 21,
+        "nota": "Una tarjeta por unidad. Funciona en iPhone desde el XS y en la mayoría de Android con NFC activado; el QR impreso cubre el resto. No se garantiza un número de reseñas: depende de que el negocio la ofrezca."
+      }
     }
   ],
   "packs": [
@@ -233,13 +245,14 @@
       "url": "https://ruiperezstudio.es/#packs",
       "incluye": [
         "web-esencial",
-        "automatizacion-esencial"
+        "automatizacion-esencial",
+        "tarjeta-nfc-resenas"
       ],
       "precio_eur_sin_iva": 910,
-      "precio_suelto_eur_sin_iva": 1080,
-      "ahorro_eur": 170,
+      "precio_suelto_eur_sin_iva": 1107,
+      "ahorro_eur": 197,
       "iva_pct": 21,
-      "nota": "Entrega en una semana desde que el cliente entrega el contenido. Sin cuota obligatoria."
+      "nota": "Incluye la tarjeta NFC de reseñas. Entrega en 1-2 semanas desde que el cliente entrega el contenido. Sin cuota obligatoria."
     },
     {
       "id": "capta",

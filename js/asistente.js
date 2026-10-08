@@ -27,7 +27,7 @@
       l:["Landing page: desde 590€","Web esencial (hasta 4 páginas): desde 690€","Web corporativa: desde 1.190€","Tienda online: desde 1.490€","Aplicación de gestión: desde 2.900€ + 90€/mes",
          "Automatización: desde 990€ (esencial, 390€)","Chatbot de WhatsApp: desde 1.290€ + 120€/mes",
          "SEO local: desde 390€/mes","Redes sociales: desde 450€/mes","Email marketing: desde 290€/mes",
-         "Accesibilidad (Ley 11/2023): desde 590€","Mantenimiento: 39–99€/mes, alojamiento incluido"],
+         "Accesibilidad (Ley 11/2023): desde 590€","Mantenimiento: 39–99€/mes, alojamiento incluido","Tarjeta NFC de reseñas: 27€"],
       n:"Todos sin IVA. El precio se cierra por escrito antes de empezar.", u:"/#servicios" },
 
     { k:["tarda","cuanto tardas","cuanto tarda","plazo","plazos","cuando estaria","rapido","entrega","semanas","urgente","tiempo"],
@@ -55,7 +55,7 @@
 
     { k:["pack","packs","packs de servicios","combinacion","todo junto","varios servicios","descuento","oferta","promocion","mas barato si contrato varios","junto","lote"],
       t:"Hay tres packs, entre un 16% y un 19% más baratos que contratando suelto.",
-      l:["Arranca: web esencial + automatización esencial · 910€ (suelto 1.080€)","Capta: landing + 3 meses de Meta Ads · 1.100€ (suelto 1.310€)",
+      l:["Arranca: web esencial + automatización esencial + tarjeta NFC de reseñas · 910€ (suelto 1.107€)","Capta: landing + 3 meses de Meta Ads · 1.100€ (suelto 1.310€)",
          "Vende online: tienda + automatización de pedidos · 2.080€ (suelto 2.480€)",
          "Atiende solo: web + automatización + chatbot IA · 2.910€ (suelto 3.470€)"],
       n:"Si necesitas otra combinación, dime qué dos o tres cosas te hacen falta y te la presupuesto con el mismo descuento por ir juntas.", u:"/#packs" },
@@ -98,6 +98,11 @@
     { k:["texto","contenido","fotos","redactar","escribir","aportar","material"],
       t:"Si no tienes los textos, los escribo yo y va incluido en el precio.",
       n:"De ti necesito saber qué vendes y a quién. Las fotos del negocio las pones tú, y te digo exactamente qué necesito y cómo hacerlas con el móvil." },
+
+    { k:["nfc","tarjeta","tarjetas","resenas","reseñas","valoraciones","opiniones google","dejar resena"],
+      t:"Tarjeta NFC de reseñas: 27€ más IVA, pago único.",
+      l:["Chip NFC programado con el enlace de reseñas de tu ficha de Google","QR impreso de respaldo, por si el móvil no lee NFC","Funciona en iPhone desde el XS y en la mayoría de Android","Incluida en el pack Arranca"],
+      n:"No te prometo cuántas reseñas conseguirás: depende de que tu equipo se la ofrezca al cliente. Es un producto nuevo y no tengo cifras que enseñarte.", u:"/tarjeta-nfc-resenas/" },
 
     { k:["mantenimiento","despues","soporte","actualiza","copias","backup","averia","se rompe"],
       t:"Los primeros 30 días incluyen ajustes sin coste.",
