@@ -366,7 +366,7 @@ horario y los 20 servicios de la ficha el 08/10). Sin lecturas, **Claude no pued
 de nadie**: hasta que exista el panel, los datos salen a mano de Meta, Google Ads, GA4 y Search
 Console.
 
-**Horario nuevo (08/10/2026):** lunes a viernes 8:00-14:00 y 16:00-21:00, sábado 8:00-14:00.
+**Horario (08/10/2026, ajustado el mismo día):** lunes a viernes 9:00-14:00 y 16:00-21:00, sábado 9:00-14:00. Abre a las 9, no a las 8: lo pidió Álvaro.
 Aplicado en la ficha de Google y en el JSON-LD de la home. WhatsApp Business: ver
 `docs/guion-whatsapp.md`. El «mismo día» de las páginas sigue siendo cierto.
 
