@@ -53,13 +53,13 @@ Precio por persona en la primera pantalla, carta consultable desde el móvil, fo
 
 #### Las reservas
 
-El cliente reserva mesa desde la web y recibe su correo de confirmación solo. Al restaurante le entra la reserva sin que nadie coja el teléfono.
+El cliente reserva mesa desde la web y recibe su correo de confirmación solo, y la reserva entra en el Google Calendar del restaurante. Sin que nadie coja el teléfono.
 
 #### El panel
 
 Y un panel de administración donde el dueño ve las reservas que tiene, sin depender de una libreta ni de acordarse.
 
-Ábrela en [casa-del-sushi.vercel.app](https://casa-del-sushi.vercel.app/).
+Lo entregué como demo y el restaurante no llegó a contratarlo, pero el trabajo es real. Ábrela en [casa-del-sushi.vercel.app](https://casa-del-sushi.vercel.app/).
 
 ### TukTuk Cartagena · turismo
 
