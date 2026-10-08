@@ -1,6 +1,6 @@
 # Tus clientes salen contentos y no te dejan reseña.
 
-> Tu cliente acerca el móvil y se abre tu ficha de Google para dejar la reseña. Tarjeta NFC con QR de respaldo, 27€ + IVA, pago único. Cartagena y sureste.
+> Tu cliente acerca el móvil y se abre tu ficha de Google para dejar la reseña. Tarjeta NFC con QR de respaldo, desde 27€ + IVA, instalada por mí en tu negocio.
 >
 > Página: https://ruiperezstudio.es/tarjeta-nfc-resenas/
 
@@ -10,8 +10,8 @@ Una tarjeta con chip NFC y un QR de respaldo. El cliente acerca el móvil y se a
 
 **De un vistazo**
 
-- 27€ (+ 21% IVA) · Pago único · Sin cuotas
-- Con QR impreso de respaldo: funciona en cualquier móvil
+- Desde 27€ (+ 21% IVA) · Pago único · Sin cuotas
+- Te la llevo y la instalo yo, funcionando
 - Para bares, clínicas, comercios, peluquerías, talleres…
 
 ## Tres pasos y ya está pidiendo
@@ -30,23 +30,26 @@ Se abre directamente el formulario de reseña de tu ficha de Google. Sin buscart
 
 Va impreso en la propia tarjeta y lleva al mismo sitio. Nadie se queda fuera.
 
-## Lo que llevas por 27€
+## Lo que llevas en cada tarjeta
 
 Es un producto nuevo y todavía no tengo cifras de resultados que enseñarte. Prefiero decírtelo yo. Tampoco te prometo cuántas reseñas vas a conseguir: eso depende de que tu equipo la ofrezca.
 
-- Una tarjeta con chip NFC
+- Chip NFC en cada tarjeta
 - Programada con el enlace de reseñas de tu ficha
 - QR impreso de respaldo
 - Funciona en iPhone desde el XS y en la mayoría de Android
+- Te la llevo en mano y la dejo instalada y funcionando
 - Sin cuotas, sin aplicación, sin registro
 - Si tu enlace cambia, te la reprogramo
 
-**Precio: 27€ · Una tarjeta · pago único** (+ 21% IVA)
+**Precio: Desde 27€ · Pago único · instalada por mí** (+ 21% IVA)
 
+- 1 tarjeta · 27€
+- 2 tarjetas · 50€ ahorras 4€
+- 4 tarjetas · 100€ ahorras 8€
 - Chip NFC programado con tu enlace
 - QR impreso de respaldo
-- Sin cuotas ni permanencia
-- Incluida en el [pack Arranca](/#packs)
+- Incluye 1 tarjeta en el [pack Arranca](/#packs)
 
 ## ¿Hablamos de tu negocio?
 
@@ -76,7 +79,11 @@ No. La tarjeta lleva a tu ficha de Google, no a una web. Si aun así quieres web
 
 **¿Cuánto cuesta y qué incluye?**
 
-27€ más IVA, pago único, sin cuotas. Incluye una tarjeta con chip NFC programado con el enlace de reseñas de tu ficha y un QR impreso de respaldo.
+Una tarjeta son 27€ más IVA. Dos, 50€ (ahorras 4€). Cuatro, 100€ (ahorras 8€). Siempre más IVA, pago único, sin cuotas. Cada tarjeta lleva un chip NFC programado con el enlace de reseñas de tu ficha y un QR impreso de respaldo.
+
+**¿Cómo la recibo?**
+
+Te la llevo yo en mano y la dejo instalada y funcionando en tu negocio. No tienes que configurar nada. Si tu negocio está lejos de Cartagena, escríbeme y vemos cómo hacerlo.
 
 ---
 

@@ -234,7 +234,24 @@
         "modelo": "pago_unico",
         "desde_eur_sin_iva": 27,
         "iva_pct": 21,
-        "nota": "Una tarjeta por unidad. Funciona en iPhone desde el XS y en la mayoría de Android con NFC activado; el QR impreso cubre el resto. No se garantiza un número de reseñas: depende de que el negocio la ofrezca."
+        "nota": "Precio por unidad: 27€. Dos tarjetas, 50€; cuatro, 100€. Se entrega en mano y se instala en el negocio, ya funcionando. Funciona en iPhone desde el XS y en la mayoría de Android con NFC activado; el QR impreso cubre el resto. No se garantiza un número de reseñas: depende de que el negocio la ofrezca.",
+        "opciones": [
+          {
+            "unidades": 1,
+            "precio_eur_sin_iva": 27,
+            "ahorro_eur": 0
+          },
+          {
+            "unidades": 2,
+            "precio_eur_sin_iva": 50,
+            "ahorro_eur": 4
+          },
+          {
+            "unidades": 4,
+            "precio_eur_sin_iva": 100,
+            "ahorro_eur": 8
+          }
+        ]
       }
     }
   ],

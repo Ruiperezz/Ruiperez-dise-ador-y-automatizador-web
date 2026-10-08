@@ -18,6 +18,9 @@ for s in d['servicios']:
     esperado = fmt(p['desde_eur_sin_iva']) + "€"
     if esperado not in txt:
         fallos.append(f"{slug}: la API dice {esperado} y la página no lo contiene")
+    for o in p.get('opciones', []):
+        if (fmt(o['precio_eur_sin_iva']) + "€") not in txt:
+            fallos.append(f"{slug}: la API dice {o['unidades']} uds a {o['precio_eur_sin_iva']}€ y la página no lo contiene")
     if 'cuota_mensual_eur_sin_iva' in p:
         cuota = f"{p['cuota_mensual_eur_sin_iva']}€/mes"
         if cuota not in txt: fallos.append(f"{slug}: la API dice {cuota} y la página no lo contiene")

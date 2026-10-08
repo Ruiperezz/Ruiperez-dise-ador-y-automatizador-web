@@ -27,7 +27,7 @@
       l:["Landing page: desde 590€","Web esencial (hasta 4 páginas): desde 690€","Web corporativa: desde 1.190€","Tienda online: desde 1.490€","Aplicación de gestión: desde 2.900€ + 90€/mes",
          "Automatización: desde 990€ (esencial, 390€)","Chatbot de WhatsApp: desde 1.290€ + 120€/mes",
          "SEO local: desde 390€/mes","Redes sociales: desde 450€/mes","Email marketing: desde 290€/mes",
-         "Accesibilidad (Ley 11/2023): desde 590€","Mantenimiento: 39–99€/mes, alojamiento incluido","Tarjeta NFC de reseñas: 27€"],
+         "Accesibilidad (Ley 11/2023): desde 590€","Mantenimiento: 39–99€/mes, alojamiento incluido","Tarjeta NFC de reseñas: desde 27€"],
       n:"Todos sin IVA. El precio se cierra por escrito antes de empezar.", u:"/#servicios" },
 
     { k:["tarda","cuanto tardas","cuanto tarda","plazo","plazos","cuando estaria","rapido","entrega","semanas","urgente","tiempo"],
@@ -101,7 +101,7 @@
 
     { k:["nfc","tarjeta","tarjetas","resenas","reseñas","valoraciones","opiniones google","dejar resena"],
       t:"Tarjeta NFC de reseñas: 27€ más IVA, pago único.",
-      l:["Chip NFC programado con el enlace de reseñas de tu ficha de Google","QR impreso de respaldo, por si el móvil no lee NFC","Funciona en iPhone desde el XS y en la mayoría de Android","Incluida en el pack Arranca"],
+      l:["1 tarjeta: 27€ · 2 tarjetas: 50€ · 4 tarjetas: 100€","Te la llevo y la dejo instalada y funcionando en tu negocio","QR impreso de respaldo, por si el móvil no lee NFC","Funciona en iPhone desde el XS y en la mayoría de Android","Una tarjeta va incluida en el pack Arranca"],
       n:"No te prometo cuántas reseñas conseguirás: depende de que tu equipo se la ofrezca al cliente. Es un producto nuevo y no tengo cifras que enseñarte.", u:"/tarjeta-nfc-resenas/" },
 
     { k:["mantenimiento","despues","soporte","actualiza","copias","backup","averia","se rompe"],
