@@ -10,7 +10,7 @@ Web de marca y escaparate comercial de **Álvaro Ruipérez** (Ruipérez Studio),
 - **URL de producción:** https://ruiperezstudio.es
 - **Repositorio:** github.com/Ruiperezz/Ruiperez-dise-ador-y-automatizador-web
 - **Despliegue:** Vercel, proyecto `ruiperez-dise-ador-y-automatizador-web`. La rama `main` va directa a producción.
-- **Objetivo actual:** dejar la web lista para invertir en Meta Ads y TikTok Ads. **Ámbito: sureste de España** (Región de Murcia, Alicante, Almería y **Valencia**, añadida el 23/09/2026 porque Álvaro tiene familia allí y contactos que explotar). La sede sigue en Cartagena. La sede sigue en Cartagena. Ver `PLAN.md`.
+- **Objetivo actual:** dejar la web lista para invertir en **Google Ads y Meta Ads** (TikTok no se usa). **Ámbito: sureste de España** (Región de Murcia, Alicante, Almería y **Valencia**, añadida el 23/09/2026 porque Álvaro tiene familia allí y contactos que explotar). La sede sigue en Cartagena. Ver `PLAN.md`.
 
 ## Stack
 
@@ -139,27 +139,19 @@ lo que tarda una tienda. Álvaro explicó el 28/09/2026 que fue **su primera web
 primera tienda online a la vez**, así que lleva dentro toda la curva de aprendizaje.
 Tomarla como ritmo normal era un error mío. **No la uses para estimar plazos.**
 
-**Packs (25/09/2026).** Tres combinaciones, en la sección `#packs` de la home y
-enlazadas desde el bloque de precio de las seis páginas implicadas:
-
-| Pack | Lleva | Suelto | Pack |
-|---|---|---|---|
-| **Capta** | Landing page + 3 meses de Meta Ads | 1.410€ | **1.190€** |
-| **Vende online** | Tienda online + automatización de pedidos | 3.100€ | **2.590€** |
-| **Atiende solo** | Web corporativa + automatización + chatbot IA | 4.280€ | **3.490€** |
-
-Descuento del 14–18%. **Cuatro desde el 30/09/2026**, cuando entró Arranca. La regla
-anterior decía «tres, no más», y sigue valiendo el motivo —con demasiados el cliente no
-elige—, pero cuatro funcionan porque la escalera 1.099 / 1.190 / 2.590 / 3.490 está clara
-y cada uno resuelve algo distinto. **No añadas un quinto.**
+**Packs: son cuatro** (desde el 30/09/2026), en `#packs` de la home y enlazados desde el
+bloque de precio de las páginas implicadas. La tabla vigente es la de arriba; **no hay
+otra**. La regla de «tres, no más» sigue valiendo por su motivo —con demasiados el cliente
+no elige—, pero cuatro funcionan porque la escalera 910 / 1.100 / 2.080 / 2.910 es clara y
+cada uno resuelve algo distinto. **No añadas un quinto.**
 
 ⚠️ **Arranca existe porque Álvaro pidió un pack de 1.099€ y ese número no cuadraba.**
 Web esencial 790€ + automatización completa 1.200€ son 1.990€: a 1.099€ el descuento
 habría sido del 45% y **el pack habría costado menos que la automatización sola**, lo que
 revienta su precio. La solución fue crear **Automatización esencial a 490€** —solo el
 correo de confirmación y el aviso al móvil— y armar el pack sobre ella: 1.280€ sueltos,
-1.099€ en pack, 14%. **Si tocas alguno de esos dos precios, recalcula el pack.**
-**La escalera 1.190 / 2.990 / 3.490 es la respuesta a «¿pymes o negocios pequeños?»:**
+910€ en pack tras la bajada del 30/09. **Si tocas alguno de esos dos precios, recalcula el pack.**
+**La escalera 910 / 1.100 / 2.080 / 2.910 es la respuesta a «¿pymes o negocios pequeños?»:**
 el pack de entrada abre puerta al pequeño y el de arriba a la mediana, sin tener que
 mover la tabla de precios por cuarta vez. Si cambias un precio de la tabla, recalcula
 las tres columnas: el «suelto» tiene que cuadrar con la suma real o el descuento es mentira.
@@ -301,16 +293,22 @@ y cambiarla puede disparar la re-verificación de Google.
 | `facebook` (Meta Ads) | ✅ | cuenta activa, **0€ gastados, ninguna campaña** |
 | `facebook_organic` | ✅ | **0 seguidores, 0 alcance** |
 | `facebook_leads` | ✅ nuevo | — |
-| **`instagram`** | ✅ **nuevo** | `ruiperez.studio` · ⚠️ **0 publicaciones, 0 seguidores, 0 alcance** |
+| **`instagram`** | ✅ | `ruiperez.studio` · **6 publicaciones desde el 04/10/2026** (carrito, reserva, precios, antes/después, automatización, reseñas) |
 | **`googleanalytics4`** | ✅ **nuevo** | propiedad `552072025` · **`generate_lead` disparando** |
 | `klaviyo` | ✅ nuevo | — |
 | **Google Ads** | ❌ **no hay conector en Windsor** | no se puede comprobar desde aquí |
 
-⚠️ **El perfil de Instagram está VACÍO.** El botón del pie lleva a un perfil con cero
-publicaciones. **Un enlace a un perfil vacío resta más que no tenerlo**: el visitante
-pulsa, no ve nada y concluye que el negocio no existe. Pendiente de decisión de Álvaro:
-publicar primero o quitar el botón. El conector permite publicar (`create_image_post`,
-`create_carousel_post`, `create_story`).
+✅ **Instagram ya tiene seis publicaciones** (04/10/2026), compuestas en HTML con las
+fuentes y colores del sitio y capturadas a 1080×1350. Las imágenes están en `/img/ig/`.
+El conector publica (`create_image_post`, `create_carousel_post`, `create_story`,
+`create_video_post`) pero **NO edita ni borra publicaciones**: una errata se corrige en la
+app. **Hay una pendiente:** la del carrito dice «Floistería» en vez de «Floristería».
+
+⚠️ **Windsor pausó las LECTURAS el 08/10/2026**: 12 cuentas conectadas y el plan gratuito
+incluye 1. Mientras dure, los datos que devuelve (por ejemplo «0 publicaciones») **NO son
+reales**: la respuesta lo dice literalmente («These are not your real numbers»). No
+tomes decisiones con ellos. Necesita plan de pago o desconectar cuentas (todo lo de
+Zenconfort y Klaviyo). No se sabe si las escrituras también están bloqueadas.
 
 ✅ **GA4 recibe datos y `generate_lead` dispara en cada clic a WhatsApp.** Eso abre el
 camino limpio para Google Ads: **vincular Google Ads con GA4 e importar `generate_lead`
@@ -364,21 +362,23 @@ Los clientes verificables como tales:
 
 - **TukTuk Cartagena** — turismo. `tuktukcartagena.com`. Web desde cero en 4 idiomas (ES/EN/DE/FR), **sistema de reservas** (servicio, personas, número de tuk tuks y cobro), **correos automáticos** de confirmación al cliente y al empresario, y un **panel de administración** donde el dueño bloquea días, horas o parte de la flota (avería, festivo) y eso desaparece al instante de la web. Ese panel es el caso real de `/aplicaciones-web/`. **Es privado: no hay captura y no se puede enseñar.**
 - **Floristería Alameda** — Cartagena, **4,9★ con 333 reseñas** (verificado en floristeriaalameda.com). Es una **tienda online** con catálogo, carrito y pasarela de pago. No la etiquetes como web corporativa.
-- **Casa del Sushi** — Cartagena, restauración. **Entregado, el cliente no siguió adelante.** `casa-del-sushi.vercel.app`. Carta, info del local, ubicación y reseñas, **reserva de mesa con correo de confirmación automático** y un **panel de administración** donde el dueño ve sus reservas. **Álvaro dice que el trabajo no está cerrado del todo** (22/09/2026): sigue etiquetado como caso real porque la web está publicada y se puede abrir, pero confirma con él antes de llamarle «cliente» en copy nuevo. **Álvaro confirmó el 21/09/2026 que Perico Del Rey NO es Casa del Sushi.** Casa del Sushi es cliente y tiene su caso en `/web-corporativa/` y `/casos/`, pero **no ha dejado reseña en Google**: no le atribuyas ninguna.
+- **Casa del Sushi** — Cartagena, restauración. **Demo entregada que nunca se pagó; el cliente no siguió.** NO es un cliente. `casa-del-sushi.vercel.app`. Carta, info del local, ubicación y reseñas, **reserva de mesa con correo de confirmación automático** y un **panel de administración** donde el dueño ve sus reservas. **Álvaro dice que el trabajo no está cerrado del todo** (22/09/2026): sigue etiquetado como caso real porque la web está publicada y se puede abrir, pero confirma con él antes de llamarle «cliente» en copy nuevo. **Álvaro confirmó el 21/09/2026 que Perico Del Rey NO es Casa del Sushi.** Casa del Sushi es cliente y tiene su caso en `/web-corporativa/` y `/casos/`, pero **no ha dejado reseña en Google**: no le atribuyas ninguna.
 
-**Ficha de Google propia: `locations/10546771556631248285`.** **11 reseñas y 4,6★** (dato leído en vivo por Windsor el 30/09/2026; antes este archivo decía 7 y 5,0★, que ya era falso). **Compruébalo en vivo antes de escribirlo en ninguna página**, no te fíes de esta línea. Enlace público `https://maps.google.com/maps?cid=16135944171140006039`; para pedir reseñas, `https://search.google.com/local/writereview?placeid=ChIJoxdRJpnbFWoRl8BVVLtj7t8`. **El 4,9★ con 333 reseñas es de Alameda, no suyo**: donde aparezca hay que decir de quién es. En el hero van sus 11 reseñas y su 4,6★ reales.
+**Ficha de Google propia: `locations/10546771556631248285`.** **11 reseñas y 5,0★, las once de cinco estrellas** (leído en vivo el 04/10/2026; en una semana fue 5,0 → 4,6 → 5,0). **Compruébalo en vivo antes de escribirlo en ninguna página**, no te fíes de esta línea. Enlace público `https://maps.google.com/maps?cid=16135944171140006039`; para pedir reseñas, `https://search.google.com/local/writereview?placeid=ChIJoxdRJpnbFWoRl8BVVLtj7t8`. **El 4,9★ con 333 reseñas es de Alameda, no suyo**: donde aparezca hay que decir de quién es. En el hero van sus 11 reseñas y su 5,0★ reales.
 
-⚠️ **Hay una reseña de UNA estrella, del 29/09/2026, sin comentario y SIN CONTESTAR.** Es la que
-baja la media de 5,0 a 4,6 (diez de cinco más una de una = 4,64). **Pendiente de Álvaro: decir si
-reconoce al autor como cliente.** Si no lo reconoce se puede reportar a Google como reseña no
-basada en una experiencia real; en cualquier caso conviene contestarla en público, porque una de
-una estrella sin respuesta pesa más que diez de cinco con respuesta.
+✅ **La reseña de una estrella ya no existe:** era una cuenta falsa que Álvaro denunció, y
+`deku 311` acabó poniendo cinco. Las once son de cinco estrellas.
 
-**Floristería Buccaro (Alicante): landing informativa entregada, pendiente de cerrar.** No era una maqueta: es un encargo real al precio oficial de landing page. Aparece en `/landing-page/` etiquetada «Proyecto entregado · pendiente de cerrar». **El precio no va en el caso**, va en el bloque de precio del servicio, como todos. No se le atribuyen resultados porque no los hay.
+**Floristería Buccaro (Alicante): landing hecha como DEMO, sin pagar.** Álvaro aclaró el
+30/09/2026 que Casa del Sushi, Belu Francia y Buccaro **se hicieron como demostración antes
+de que pagaran, y ninguno cerró** (dijeron que no lo necesitaban «de momento»). Este archivo
+decía que Buccaro era «un encargo real al precio oficial»: era falso. **Nunca los llames
+«clientes», ni «encargo», ni «caso real».** Se enseñan como lo que son: trabajo entregado
+que se puede abrir. No se les atribuyen resultados porque no los hay.
 
 En curso: **Finca Doña Carmen** — aplicación con panel de administración para la finca y acceso privado para cada pareja (Next.js + Supabase + Vercel). **No está publicada.** Aparece en `/aplicaciones-web/` etiquetada «Proyecto en curso · cliente real», describiendo qué hace y **sin ninguna cifra de resultado**, porque todavía no las hay. Se añade a `/casos/` el día que esté en producción.
 
-**El precio de la aplicación (3.900€ + 90€/mes) se fijó el 22/09/2026** comparando con el mercado español: las agencias parten de 5.000–8.000€ para un desarrollo acotado y los freelance se mueven entre 8.000 y 25.000€. La cuota mensual **no es un extra comercial**: una aplicación tiene base de datos y usuarios vivos 24 h y eso cuesta todos los meses. Si se quita la cuota, el servicio pierde dinero.
+**El precio de la aplicación se fijó en 3.900€ el 22/09/2026 y bajó a 2.900€ el 30/09/2026 (+ 90€/mes)** comparando con el mercado español: las agencias parten de 5.000–8.000€ para un desarrollo acotado y los freelance se mueven entre 8.000 y 25.000€. La cuota mensual **no es un extra comercial**: una aplicación tiene base de datos y usuarios vivos 24 h y eso cuesta todos los meses. Si se quita la cuota, el servicio pierde dinero.
 
 **Zenconfort es un proyecto propio, no un cliente.** Nunca debe salir en «negocios que ya confían». En `/casos/` aparece etiquetado «Proyecto propio · No es un cliente», que es la única forma correcta de mostrarlo.
 
@@ -405,13 +405,22 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 
 ## A quién le hablamos
 
-**Empresas pequeñas y, sobre todo, MEDIANAS del sureste español** (decidido el 24/09/2026). La sede sigue en Cartagena.
+**Microempresas y pequeñas empresas del sureste español** (decidido el 30/09/2026, revocando
+la decisión del 24/09 de ir a medianas). La sede sigue en Cartagena.
 
-**Tensión anotada el mismo día, sin resolver del todo:** todo el sitio venía escrito para micronegocios —«el de al lado», «tu local», «el mostrador»— y el portfolio son floristería, restaurante, tuktuk y fisio. Además los precios bajaron un 35% el día antes. **Una empresa mediana que lee «desde 690€» no piensa «qué barato», piensa «esto es para tiendas pequeñas».** El precio posiciona.
+Álvaro lo dijo con estas palabras: *«hasta tener algo más de experiencia hay que enfocarse
+en negocios pequeños; lo que me interesa es cerrar negocios pequeños lo antes posible»*.
+Tiene gastos y casi ningún ingreso, y quiere cerrar clientes para ganar experiencia y, más
+adelante, dar el salto a agencia.
 
-**Lo que sí acerca a medianas es el trabajo real, no el copy:** 4 sistemas de reserva con cobro, 3 paneles de administración, correos automáticos y Stripe. Ese es el eje del mensaje ahora. Un freelance que hace webs bonitas hay uno en cada esquina; uno que entrega un panel donde bloqueas parte de la flota, no.
+**Los precios ya están puestos para eso** (590 / 690 / 1.190 / 1.490), y las etiquetas de
+los packs dicen microempresa o pequeña empresa. **No pongas «perfecto para medianas»**: un
+pack de 2.910€ no lo compra una empresa de 50 personas, y decirlo le dice a la mediana que
+eres barato y a la pequeña que no eres para ella.
 
-**Objeción pendiente de responder en la web:** una mediana pregunta «¿qué pasa si te pones malo?». «Trabajo solo» tranquiliza a un comercio y asusta a una empresa de veinte personas. Hoy el sitio no lo responde en ninguna parte.
+**Objeción que sigue sin responderse:** «¿qué pasa si te pones malo?». «Trabajo solo» está
+prohibido. La respuesta cierta es: el código es tuyo, va documentado y cualquier programador
+puede continuarlo.
 
 ## Reglas de contenido
 
@@ -446,7 +455,7 @@ Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias 
 - La CSP de `vercel.json` solo permite los dominios de Meta, TikTok y Google Analytics. `font-src` y `style-src` están en `'self'`. Cualquier otro recurso externo **se bloquea sin aviso en consola**.
 - **Las tipografías se sirven desde `/fonts/`, no desde Google.** Son tres WOFF2 del subconjunto `latin` (54 KB): Instrument Serif normal e italic, y Karla variable 400–700. Traerlas de Google bloqueaba el renderizado ~1,8s y comunicaba la IP del visitante a Google. Si añades un peso o un idioma, descarga el archivo a `/fonts/` — no vuelvas a enlazar `fonts.googleapis.com`.
 - `←`, `→` y `★` no están en ningún subconjunto de Google: usan la fuente del sistema. Es así a propósito.
-- **El asistente vive en `/js/asistente.js`.** Es un buscador sobre una base de conocimiento escrita a mano, **NO un modelo de lenguaje**: una web estática no puede ejecutar uno y una clave de API en el navegador se regala. **Nunca lo llames «IA»** — Álvaro vende chatbots con IA de verdad desde 1.590€, y anunciar como IA un buscador de palabras clave haría dudar de su producto. Ver `docs/asistente.md`. Si cambias un precio, cámbialo también en su `KB`: no se sincroniza sola.
+- **El asistente vive en `/js/asistente.js`.** Es un buscador sobre una base de conocimiento escrita a mano, **NO un modelo de lenguaje**: una web estática no puede ejecutar uno y una clave de API en el navegador se regala. **Nunca lo llames «IA»** — Álvaro vende chatbots con IA de verdad desde 1.290€, y anunciar como IA un buscador de palabras clave haría dudar de su producto. Ver `docs/asistente.md`. Si cambias un precio, cámbialo también en su `KB`: no se sincroniza sola.
 - **El botón flotante de WhatsApp también sale de `/js/asistente.js`**, apilado bajo el lanzador del asistente (`.rsa-stack`). Su `href` lleva `text=` obligatoriamente: es lo que `consent.js` exige para contar el evento `Contact`. Sin mensaje precargado el clic no se mide como lead. En móvil se oculta en la home, porque ahí la barra fija `.mcta` ya es ese mismo botón y saldría dos veces.
 - El consentimiento y la medición viven en `/js/consent.js`, compartido por las 17 páginas. Ver `docs/medicion.md`. No lo dupliques en línea.
 - Imágenes con `width` y `height` reales y **`height:auto` en el CSS de esa página**. Sin `height:auto`, el navegador usa el atributo `height` y deforma la imagen. Pasó en 17 páginas a la vez: si creas una página nueva, comprueba la regla `img{}`.
