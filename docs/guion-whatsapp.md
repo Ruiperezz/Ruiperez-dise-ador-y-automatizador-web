@@ -31,7 +31,7 @@ Antes de cambiar de app, **haz copia de seguridad de tus chats.**
 | Ajuste | Qué poner |
 |---|---|
 | Perfil | Nombre «Ruipérez Studio», categoría «Servicios de diseño web», web, correo |
-| Horario | L-V 8:00-14:00 y 16:00-21:00 · S 8:00-14:00 (el mismo que la ficha de Google; si no coincide, Google lo penaliza) |
+| Horario | L-V 9:00-14:00 y 16:00-21:00 · S 9:00-14:00 (el mismo que la ficha de Google; si no coincide, Google lo penaliza) |
 | Descripción | Automatización, chatbots con IA y webs a medida. Cartagena, Murcia, Alicante, Elche, Almería y Valencia |
 | Catálogo | Una entrada por servicio, con el precio publicado |
 | Mensaje de bienvenida | el de abajo |
@@ -51,8 +51,8 @@ WhatsApp Business solo deja programar **un** mensaje de ausencia, así que tiene
 para las tres situaciones: el descanso de 14:00 a 16:00, las noches y los fines de semana.
 Por eso **no promete una hora concreta**:
 
-> Ahora estoy fuera de mi horario (de lunes a viernes de 8 a 14 y de 16 a 21, y los sábados
-> de 8 a 14). Te contesto yo en persona en cuanto abra. Si me dejas a qué se dedica tu
+> Ahora estoy fuera de mi horario (de lunes a viernes de 9 a 14 y de 16 a 21, y los sábados
+> de 9 a 14). Te contesto yo en persona en cuanto abra. Si me dejas a qué se dedica tu
 > negocio y qué necesitas, te llego con el precio ya pensado.
 
 Dice lo cierto, que es tu horario, y no se rompe si un martes a las 14:30 estás comiendo.
