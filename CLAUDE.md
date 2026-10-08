@@ -23,12 +23,12 @@ HTML + CSS + JavaScript **estático puro**. Sin `package.json`, sin npm, sin bun
 
 ## Estructura
 
-**27 páginas** (08/10/2026), una carpeta por URL:
+**28 páginas** (08/10/2026), una carpeta por URL:
 
 | Grupo | Rutas |
 |---|---|
 | Home | `/` |
-| Servicios (12) | `/web-corporativa/` `/landing-page/` `/tienda-online/` `/aplicaciones-web/` `/automatizacion/` `/chatbot-whatsapp/` `/seo-local/` `/email-marketing/` `/mantenimiento-web/` `/gestion-redes-sociales/` `/accesibilidad-web/` `/meta-ads/` |
+| Servicios (14) | `/consultoria-ia/` `/tarjeta-nfc-resenas/` `/web-corporativa/` `/landing-page/` `/tienda-online/` `/aplicaciones-web/` `/automatizacion/` `/chatbot-whatsapp/` `/seo-local/` `/email-marketing/` `/mantenimiento-web/` `/gestion-redes-sociales/` `/accesibilidad-web/` `/meta-ads/` |
 | General (1) | `/diseno-web/` |
 | Legales (3) | `/aviso-legal/` `/privacidad/` `/cookies/` |
 | Estudio (2) | `/sobre-mi/` · `/casos/` |
@@ -41,7 +41,7 @@ que las dos de web no cubrían. La del chatbot **dice por escrito que no hay cas
 publicado todavía**: es el servicio más nuevo e inventarle un caso sería lo que critica
 la FAQ de `/meta-ads/`.
 
-Otros archivos: `sitemap.xml` (19 URLs — las noindex quedan fuera), `robots.txt`, `fonts/` (3 WOFF2), `vercel.json` (CSP, HSTS, X-Frame-Options, cache de `/img/`), `favicon.svg`, `apple-touch-icon.png`, `img/`.
+Otros archivos: `sitemap.xml` (21 URLs — las noindex quedan fuera), `robots.txt`, `fonts/` (3 WOFF2), `vercel.json` (CSP, HSTS, X-Frame-Options, cache de `/img/`), `favicon.svg`, `apple-touch-icon.png`, `img/`.
 
 ## Precios oficiales
 
@@ -66,6 +66,7 @@ Otros archivos: `sitemap.xml` (19 URLs — las noindex quedan fuera), `robots.tx
 | **Mantenimiento web** | **39 / 69 / 99€/mes · alojamiento incluido** |
 | **Gestión de Meta Ads** | **240€/mes** hasta 1.000€/mes de inversión · por encima, 15% de la inversión |
 | **Tarjeta NFC de reseñas** | **27€** la unidad · 2 por 50€ · 4 por 100€ · instalada por Álvaro |
+| **Consultoría de IA** | diagnóstico **490€** · plan **1.390€** · taller **490€** · acompañamiento **240€/mes** (3 h, 1 reunión, mín. 3 meses) |
 
 **Bajada del 30/09/2026, la última.** Álvaro la pidió con un objetivo explícito:
 **captar y cerrar clientes pequeños cuanto antes para ganar experiencia**, porque
@@ -390,6 +391,40 @@ cuándo y descripción). **No se guarda nada en la web.** Llegan directos, a pro
 conversión de los anuncios**: Álvaro lo decidió sabiéndolo. Si el coste por contacto sube
 mucho, es lo primero que mirar.
 
+## Consultoría de IA (08/10/2026)
+
+**Lo pidió Álvaro** («un servicio más exclusivo y más caro», recomendado por un contacto con
+empresa de ticket alto). **Lo analizó Opus con 9 competidores con precio publicado** (BECAI,
+Soluciones Web 365, WakeUp Estratégico, NeuroFluxIA, auditoriadeia.es, IEBS, Grupo2000, Javadex,
+Webskill) y el plan está en el scratchpad de esa sesión. Lo que se decidió y por qué:
+
+- **Es la puerta de entrada, NO un servicio «exclusivo».** Sin un solo caso de consultoría,
+  «exclusivo» no aguanta la primera pregunta. **No subir el diagnóstico a 900-1.500€ hasta tener
+  casos**: esos precios son de firmas con abogado y economista o con años de casos.
+- **Precios:** diagnóstico 490€ (mediana del mercado ~650€), plan 1.390€ (NO 1.290€: chocaría con
+  el chatbot), taller 490€, acompañamiento 240€/mes. **Sale a 80-100€/hora, el triple que las webs.**
+- **Límites escritos** en la página, el JSON-LD, la API y la ficha: 3 h al mes con la reunión
+  dentro, 1 reunión de 45 min, correo con respuesta en 2 días laborables, una sola persona de
+  contacto, las horas no se acumulan, solo tras el diagnóstico, hasta 10 personas y una sede.
+- ⚠️ **El acompañamiento tiene permanencia de 3 meses**, el ÚNICO servicio que la tiene.
+  `js/asistente.js` y la API lo dicen. Si Álvaro la quita, se cambia en los dos.
+- **Garantía:** si el informe no trae tres acciones concretas con su coste, se devuelve el dinero.
+  **250€ de descuento** si en 30 días contrata automatización, chatbot o aplicación; **no se suma a
+  los packs.** No entra en ningún pack (siguen siendo cuatro).
+- **Reglamento de IA, art. 4:** la página dice lo cierto y nada más — pide «tomar medidas», no
+  exige curso oficial y el art. 99 no le pone multa directa. **Nunca «evita sanciones»** ni prometas
+  cumplimiento. Ni FUNDAE hasta confirmar requisitos.
+- ⚠️ **PENDIENTE de Álvaro, y es lo que más vende:** hacer el **diagnóstico de su propio negocio**
+  y publicarlo como informe de ejemplo, y ofrecer el diagnóstico a sus tres clientes de
+  mantenimiento (gratis o al 50%) **a cambio de permiso escrito para publicarlo.** La página NO
+  menciona ningún informe de ejemplo porque todavía no existe. **No mandar anuncios a
+  `/consultoria-ia/` hasta tenerlo**; entonces, una `/lp/consultoria-ia/` noindex.
+- **Otros servicios que Opus recomendó y NO se han publicado** (decisión pendiente): asistente
+  interno con los documentos de la empresa (490€), lectura automática de facturas (como caso de la
+  automatización de 990€, no precio nuevo), visibilidad en ChatGPT (390€ / 790€) y panel de datos
+  (después del panel propio). Descartados: agentes de voz, auditoría legal del reglamento, cursos
+  por alumno y proyectos de agentes de 7.000€+.
+
 ## Clientes
 
 **Seis proyectos, y no todos son clientes.** La distinción importa y está reflejada en las etiquetas del sitio:
@@ -449,6 +484,7 @@ Un caso repetido en todas partes no es prueba social. Cada página lleva el suyo
 | `/aplicaciones-web/` | TukTuk (panel de disponibilidad), Casa del Sushi (panel de reservas) **y** Finca Doña Carmen (en curso) |
 | `/email-marketing/` | los tres correos automáticos: Alameda, TukTuk y Casa del Sushi |
 | `/landing-page/` | Buccaro (propuesta, no cliente) |
+| `/consultoria-ia/` | **ningún caso de consultoría** (lo dice por escrito); TukTuk y Alameda como «lo que he montado» |
 | `/casos/` | los cuatro |
 
 Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias a propósito y van etiquetadas como tales. En cuanto haya un caso real de ese servicio, se sustituye.
@@ -476,7 +512,7 @@ puede continuarlo.
 
 - **Primera persona del singular en todo el sitio.** «Diseño», «te respondo yo», «lo gestiono yo». Nada de «nosotros», «gestionamos», «nuestro equipo». El trato directo es el único diferenciador real frente a las agencias, y el plural lo desmiente.
 - **«Trabajo solo» está prohibido desde el 25/09/2026.** Tranquiliza a un comercio y asusta a una empresa de veinte personas, que es el público nuevo. **Pero NO se sustituye por empleados inventados:** se dice lo que es cierto —«hablas directamente con quien programa, sin comerciales ni juniors»— y se responde la objeción de fondo en `/sobre-mi/`: el código es tuyo, va documentado y cualquier programador puede continuarlo. Esa respuesta vale más que una plantilla ficticia que se cae en la primera reunión.
-- **Las redes las lleva otra persona** (un socio de Álvaro, especializado en contenido). Está dicho en `/sobre-mi/` sin nombre ni cifras. **Pendiente de Álvaro: su nombre y si se pueden citar sus cuentas.** Ojo: si esas cuentas son suyas y no de clientes, hay que decirlo así — «ha hecho crecer sus propias cuentas», no «gestionamos cuentas de 300.000 seguidores».
+- **Las redes las lleva Álvaro** desde el 08/10/2026: el socio que las llevaba ya no está. `/sobre-mi/` lo dice así.
 - Toda cifra de resultado va atribuida: «según datos del propio cliente». Marco: Ley 3/1991 de Competencia Desleal, art. 5 — la carga de la prueba es de quien lo anuncia.
 - Un mismo dato de resultado aparece **como máximo tres veces** en todo el sitio,
   **salvo el 4,9★ con 333 reseñas de Alameda, que Álvaro fijó en CUATRO páginas

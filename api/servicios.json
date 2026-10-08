@@ -95,6 +95,46 @@
       }
     },
     {
+      "id": "consultoria-ia",
+      "nombre": "Consultoría de IA",
+      "url": "https://ruiperezstudio.es/consultoria-ia/",
+      "descripcion": "Diagnóstico de qué tareas del negocio puede hacer la IA, cuánto cuesta montar cada una y cuántas horas devuelve. Sesión de 90 minutos e informe en cinco días laborables. Para negocios de hasta 10 personas y una sede.",
+      "precio": {
+        "modelo": "pago_unico",
+        "desde_eur_sin_iva": 490,
+        "hasta_eur_sin_iva": 1390,
+        "iva_pct": 21,
+        "nota": "El informe llega en cinco días laborables desde la sesión. Si no trae tres acciones concretas con su coste, se devuelve el dinero. 250€ de descuento si en 30 días se contrata la automatización de procesos, el chatbot o la aplicación; no se suma al descuento de los packs. No se garantiza el cumplimiento del Reglamento de IA.",
+        "planes": [
+          {
+            "nombre": "Diagnóstico de IA",
+            "eur_sin_iva": 490,
+            "modelo": "pago_unico",
+            "nota": "Cuestionario previo, sesión de 90 minutos, informe y repaso de 30 minutos."
+          },
+          {
+            "nombre": "Plan de IA",
+            "eur_sin_iva": 1390,
+            "modelo": "pago_unico",
+            "nota": "Diagnóstico, hoja de ruta de seis meses, taller de 3 horas para hasta 10 personas, guía de uso, instrucciones para cinco tareas y revisión a los 30 días."
+          },
+          {
+            "nombre": "Taller de IA para el equipo",
+            "eur_sin_iva": 490,
+            "modelo": "pago_unico",
+            "nota": "3 horas, hasta 10 personas, con hoja de asistencia."
+          },
+          {
+            "nombre": "Acompañamiento",
+            "eur_mes_sin_iva": 240,
+            "modelo": "suscripcion_mensual",
+            "permanencia_meses": 3,
+            "nota": "3 horas de trabajo al mes con una reunión de 45 minutos; consultas por correo con respuesta en dos días laborables; un proceso nuevo al mes; las horas no se acumulan. Solo tras el diagnóstico o el plan. No incluye montar automatizaciones ni chatbots."
+          }
+        ]
+      }
+    },
+    {
       "id": "automatizacion-esencial",
       "nombre": "Automatización esencial",
       "url": "https://ruiperezstudio.es/automatizacion/#esencial",

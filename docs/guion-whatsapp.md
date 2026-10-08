@@ -30,9 +30,9 @@ Antes de cambiar de app, **haz copia de seguridad de tus chats.**
 
 | Ajuste | Qué poner |
 |---|---|
-| Perfil | Nombre «Ruipérez Studio», categoría «Servicios de diseño web», web, correo |
+| Perfil | Nombre «Ruipérez Studio», categoría «Servicios profesionales», web, correo |
 | Horario | L-V 9:00-14:00 y 16:00-21:00 · S 9:00-14:00 (el mismo que la ficha de Google; si no coincide, Google lo penaliza) |
-| Descripción | Automatización, chatbots con IA y webs a medida. Cartagena, Murcia, Alicante, Elche, Almería y Valencia |
+| Descripción | Te digo en qué tareas te ahorra horas la IA y lo monto yo: consultoría de IA, automatizaciones, chatbots con IA para WhatsApp y webs. Precios publicados. Cartagena, Murcia, Alicante, Elche, Almería y Valencia. |
 | Catálogo | Una entrada por servicio, con el precio publicado |
 | Mensaje de bienvenida | el de abajo |
 | Mensaje de ausencia | el de abajo, fuera de horario |

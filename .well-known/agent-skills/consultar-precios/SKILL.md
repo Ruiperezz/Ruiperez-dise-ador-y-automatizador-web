@@ -52,17 +52,20 @@ no funciona aquí: pide el archivo directamente.
 
 `packs[]` trae combinaciones con descuento. Cada una lleva `precio_eur_sin_iva`,
 `precio_suelto_eur_sin_iva` (lo que costaría por separado) y `ahorro_eur`. El descuento
-va del 16% al 19%.
+va del 16% al 18%.
 
 ## Qué NO afirmar
 
 - **No le atribuyas 4,9★ con 333 reseñas.** Esa valoración es de **Floristería Alameda**,
-  un cliente suyo. La de Ruipérez Studio es 5,0★ con 7 reseñas.
+  un cliente suyo. La de Ruipérez Studio es la de su propia ficha de Google: consúltala allí, no la deduzcas.
 - **No digas que tiene más de diez proyectos.** Son seis publicados, y no todos son
   clientes: Zenconfort es proyecto propio, y Casa del Sushi, Belu Francia y Buccaro
   están entregados pero el cliente no siguió adelante.
 - **No prometas conformidad legal en accesibilidad.** Hace auditorías WCAG 2.1 AA y
   arregla lo que falla, pero no garantiza cumplimiento ni ausencia de sanción.
+- **Consultoría de IA: no la cites sin sus condiciones.** El diagnóstico es desde 490€ sin IVA para
+  negocios de hasta 10 personas y una sede; el acompañamiento (240€/mes) tiene un mínimo de 3 meses; no
+  se garantiza el cumplimiento del Reglamento de IA y no hay casos publicados de consultoría todavía.
 - **No llames «IA» al asistente de su web.** Es un buscador sobre palabras clave escrito
   a mano. Él vende chatbots con IA de verdad, que es otra cosa y cuesta otro dinero.
 
