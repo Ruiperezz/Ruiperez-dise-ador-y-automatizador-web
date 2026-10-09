@@ -23,7 +23,7 @@ HTML + CSS + JavaScript **estático puro**. Sin `package.json`, sin npm, sin bun
 
 ## Estructura
 
-**30 páginas** (09/10/2026), una carpeta por URL:
+**31 páginas** (09/10/2026), una carpeta por URL:
 
 | Grupo | Rutas |
 |---|---|
@@ -35,6 +35,7 @@ HTML + CSS + JavaScript **estático puro**. Sin `package.json`, sin npm, sin bun
 | Tráfico de pago (5) | `/lp/hosteleria/` `/lp/comercio-local/` `/lp/automatizacion/` `/lp/chatbot-ia/` `/lp/aplicaciones/` — noindex, sin menú, un solo CTA. **Nunca mandar tráfico de pago a la home.** |
 | Error (1) | `404.html` — noindex, con cuatro salidas útiles |
 | Conversión (1) | `/presupuesto/` — noindex, sin menú, formulario que termina en WhatsApp |
+| Demostración (1) | `/consultoria-ia/diagnostico-real/` — **noindex y fuera del sitemap** hasta que haya tiempos medidos. Método, capturas de los flujos públicos de TukTuk, Alameda y esta web, y una calculadora |
 
 **Las tres landings nuevas son del 01/10/2026**, para Google Ads. Cubren los servicios
 que las dos de web no cubrían. La del chatbot **dice por escrito que no hay caso
@@ -485,6 +486,10 @@ informe y un borrador por negocio: Ruipérez Studio, TukTuk Cartagena y Floriste
 - **No se cita ninguna cifra de flota ni de aforo de TukTuk:** el formulario público dice 7 tuk tuks y 28
   personas y la leyenda de su panel dice 3. Las páginas de esta web dicen «comprueba el aforo» a secas
   hasta que Álvaro confirme la cifra.
+- **Permiso recibido el 09/10/2026** de TukTuk y Alameda para hacer el diagnóstico (Álvaro lo confirma; hay
+  que guardar el mensaje). La página `/consultoria-ia/diagnostico-real/` **no dice «ahorra X horas»**: tiene una
+  calculadora donde el visitante pone sus propios números. **Cuando haya tiempos medidos y autorizados por
+  escrito, se publican ahí con su origen y se pasa la página a `index,follow` y al sitemap.**
 - **Las cifras de facturación, pedidos o reservas de un cliente no van en el repositorio** ni en la web
   sin su permiso escrito. Las capturas de paneles se publican difuminadas y sin la dirección de acceso.
 

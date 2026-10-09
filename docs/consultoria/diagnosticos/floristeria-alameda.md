@@ -17,15 +17,22 @@ Capturas: `../capturas/alameda-01-home.png`, `alameda-02-producto.png` y `alamed
 | Un rótulo en la cabecera dice **«Abierto» o «Cerrado»** y se actualiza solo con el horario | Cabecera |
 | El panel (privado) está conectado a la tienda | Conocido del proyecto |
 
-## 2. 🔎 El hallazgo principal: dos formas de pedir, y no son equivalentes
+## 2. 🔎 El hallazgo principal: los botones de WhatsApp no llevan el producto
 
-- **Por el carrito:** el pedido llega completo (fecha, dirección, dedicatoria, pago).
-- **Por el botón «Pedir por WhatsApp»** (en la portada, la cabecera y cada ficha de producto): el
-  mensaje precargado es genérico —«Hola, quiero hacer un pedido»— y **no lleva producto, fecha,
-  dirección ni dedicatoria**. Cada pedido así obliga a preguntar lo que el carrito ya recoge.
+Comprobado en el código de la web pública el 09/10/2026:
 
-**Es exactamente el problema que tuvo la web de Álvaro con sus mensajes «buenas, necesito info».**
-Si una parte de los pedidos entra por WhatsApp, ahí hay minutos por pedido que ahorrar.
+| Dónde | Mensaje que se precarga | ¿Lleva producto, fecha o dirección? |
+|---|---|---|
+| Portada y cabecera | «Hola, quiero hacer un pedido» | No |
+| Portada (otros botones) | «quisiera un arreglo personalizado» / «información sobre vuestros arreglos» | No |
+| **Ficha de producto** | «Hola, me gustaría información sobre vuestros arreglos florales» | **No: ni siquiera el nombre del producto que se está mirando** |
+| **Carrito** | Mensaje armado por código con el contenido del pedido | **Sí** (a verificar con un pedido de prueba del propio cliente) |
+
+Es decir: quien pulsa «Pedir por WhatsApp» desde una ficha de producto manda un mensaje que **no dice
+qué producto estaba mirando**, y alguien tiene que preguntárselo. Es exactamente el problema que tuvo
+la web de Álvaro con sus mensajes «buenas, necesito info».
+
+La web tiene además un `pedido-modal.js` cuyo funcionamiento no he podido ver desde fuera.
 
 ## 3. Hipótesis de ahorro **[MEDIR]**
 
@@ -38,9 +45,9 @@ Si una parte de los pedidos entra por WhatsApp, ahí hay minutos por pedido que 
 
 ## 4. Propuesta a evaluar (no a prometer)
 
-Que el botón de WhatsApp de cada producto lleve **precargado el nombre y la referencia del
-producto** y un recordatorio de lo que falta (fecha, dirección). Es un cambio pequeño en el
-enlace; lo que hay que medir es cuántos pedidos entran hoy por esa vía antes de decidir.
+Que el botón de WhatsApp de cada ficha lleve **precargado el nombre del producto** y lo que falta
+(fecha y dirección). Es un cambio pequeño en el enlace; lo que hay que medir es cuántos pedidos
+entran hoy por esa vía antes de decidir.
 
 ## 5. Preguntas para el cuestionario (específicas)
 
