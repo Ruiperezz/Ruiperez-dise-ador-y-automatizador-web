@@ -100,6 +100,7 @@ Revisas solo lo que marca como dudoso. Es la automatización de procesos, con el
 - Conexión con tus apps actuales
 - Documentación completa
 - Soporte el primer mes
+- Plazo cerrado por escrito antes de empezar, según el alcance y desde que me pasas los accesos
 - Correo de confirmación automático al cliente
 - Aviso a tu móvil con los datos ya ordenados
 - Pensada para una web con reservas o formulario

@@ -137,8 +137,8 @@
       n:"Después, plan de mantenimiento opcional desde 39€/mes con el alojamiento incluido, o cambios puntuales a 60€/hora. Sin permanencia.", u:"/mantenimiento-web/" },
 
     { k:["barata","180","300","wix","wordpress","plantilla","mas barato","competencia"],
-      t:"Las webs de 180–300€ son plantillas genéricas.",
-      n:"Tienen su lugar si el presupuesto no da para más. El problema es lo que no incluyen: SEO local real, diseño propio y los costes anuales ocultos de hosting, plugins y renovación del tema." },
+      t:"Una web de 180–300€ puede servirte, según lo que necesites.",
+      n:"Compara qué incluye cada oferta: diseño propio o plantilla, SEO local, cuota anual de alojamiento y dominio, y si te entregan el código. Yo publico el precio y el alcance de cada servicio para que puedas comparar." },
 
     { k:["redes","redes sociales","instagram","tiktok","facebook","publicaciones","publicar","cuantas publicaciones","contestas los mensajes","contestar mensajes","comentarios","community manager","contenido","reels","videos"],
       t:"Gestión de redes: 8 publicaciones al mes, dos de ellas en vídeo, desde 450€/mes.",

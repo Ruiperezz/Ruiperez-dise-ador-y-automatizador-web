@@ -1,10 +1,10 @@
 # Algunos de mis proyectos, y puedes abrirlos
 
-> Seis proyectos publicados de Ruipérez Studio: TukTuk Cartagena, Floristería Alameda, Casa del Sushi, Belu Francia, Buccaro y Zenconfort. Ábrelos y compruébalo.
+> Seis proyectos de Ruipérez Studio: dos clientes (TukTuk Cartagena y Floristería Alameda), tres demos entregadas y uno propio. Ábrelos y compruébalo.
 >
 > Página: https://ruiperezstudio.es/casos/
 
-Cinco de los seis están publicados y los puedes abrir ahora mismo. Ninguno es una maqueta ni un diseño de concurso: son webs funcionando, con gente comprando, reservando o pidiendo cita. Tres de ellos se entregaron y el cliente no siguió adelante por motivos suyos; los dejo aquí igual, porque el trabajo está hecho y se ve.
+Son seis. Dos son clientes (TukTuk Cartagena y Floristería Alameda), tres los entregué como demostración antes de que se contratara y no siguieron adelante (Casa del Sushi, Belu Francia y Buccaro) y uno es mío (Zenconfort). Cinco tienen web pública que puedes abrir ahora mismo; Buccaro no tiene dominio. Las demostraciones no son maquetas de concurso, son webs que funcionan, pero no son clientes y aquí no se presentan como tales.
 
 ## TukTuk Cartagena
 
