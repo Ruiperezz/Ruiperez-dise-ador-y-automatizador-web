@@ -1,4 +1,4 @@
-# Si no te encuentran en Google, llaman al de al lado. Y si no contestas al momento, también.
+# Webs y automatizaciones con IA para que tu negocio funcione mejor
 
 > Automatizo procesos y monto chatbots con IA en Murcia, Cartagena, Alicante y Almería. Webs con código propio desde 590€. Hablas con quien programa.
 >
@@ -6,24 +6,13 @@
 
 *Sureste de España · Acepto proyectos*
 
-Automatizo lo que hoy haces a mano: reservas que se cobran solas, correos que salen sin que los escribas y un chatbot con IA que contesta por WhatsApp a cualquier hora. Es lo que le monté a TukTuk Cartagena y a Floristería Alameda: puedes abrir sus webs ahora mismo y comprobarlo. Y si todavía no tienes web, la programo yo con código propio y SEO local. Murcia, Cartagena, Alicante, Elche, Almería y Valencia.
+Diseño webs y monto sistemas digitales que ayudan a que te encuentren, a quitarte tareas repetitivas —reservas, correos de confirmación, preguntas que se repiten— y a contestar antes a tus clientes. Lo he hecho para TukTuk Cartagena y Floristería Alameda: puedes abrir sus webs ahora mismo y comprobarlo. Murcia, Cartagena, Alicante, Elche, Almería y Valencia.
 
 **De un vistazo**
 
 - Desde 590€ (+ 21% IVA), pago único y precio cerrado
 - Entrega en 1-2 semanas, sin permanencia
 - El código es tuyo desde la entrega
-
-## 333 reseñas y una web que no las merecía.
-
-Vendía en el mostrador y algún pedido suelto a domicilio. Le monté la tienda online entera —catálogo, carrito, pasarela de pago y pedidos por WhatsApp— y le estructuré el SEO para que la encuentren en Google. Hoy factura un 30% más al mes.
-
-- Plantilla con textos «Sample»
-- Sin identidad propia
-- Sin llamadas a la acción
-- Diseño propio con foto real
-- WhatsApp visible en cada pantalla
-- 4,9★ y 333 reseñas a la vista
 
 ## Hoy pierdes clientes sin verlo. Esto es lo que cambia.
 
@@ -47,81 +36,111 @@ Una web cuidada dice en tres segundos que tu negocio va en serio. Una plantilla 
 
 La web es pago único: no tiene cuota. Los servicios de automatización, chatbot y mantenimiento sí llevan cuota mensual, y está indicada en cada uno.
 
-## Tu negocio sigue atendiendo cuando tú ya has cerrado
+## Cuatro áreas, y entras en la que necesitas
 
-Esto es lo que no te va a montar quien solo hace webs. Una web bonita no sirve de nada si tardas seis horas en contestar.
+Primero eliges el área. Dentro de cada una ves qué incluye, cuánto cuesta y qué queda fuera.
 
-### Automatización de procesos
+### Diseño y desarrollo web
 
-Lo que haces a mano todos los días y puede hacer el ordenador: mandar el correo de confirmación, avisarte al móvil cuando entra un cliente nuevo y pasar los datos de un programa a otro.
+Una presencia digital pensada para que te encuentren y te contacten o te compren.
 
-### Chatbot IA para WhatsApp
+Beneficio: una web propia, clara y rápida, que se ve bien en el móvil.
 
-Contesta por WhatsApp a cualquier hora las preguntas de siempre —horarios, precios, si queda sitio—, coge la reserva y te pasa a ti solo lo que merece tu tiempo.
+### Inteligencia artificial y automatización
 
-### Consultoría de IA
+Lo que hoy haces a mano y se repite: confirmaciones, avisos, datos de un programa a otro, preguntas frecuentes.
 
-Una sesión de 90 minutos y un informe con las tareas de tu negocio que puede hacer la IA, lo que cuesta montar cada una y las horas que te devuelve. Si no compensa, te lo digo.
+Beneficio: menos tareas repetitivas y respuestas más rápidas. Algunas llevan cuota mensual y herramientas externas, y está indicado en cada ficha.
 
-### Panel de negocio
+### Visibilidad y captación
 
-Lo que has cobrado, los pedidos o reservas, las visitas y los clics a WhatsApp en una sola pantalla, conectada a tu web y actualizada sola.
+Que te encuentren quienes buscan lo que haces, y medir de dónde llegan tus contactos.
 
-### Aplicación web de gestión
+Beneficio: más oportunidades de que te encuentren. No se garantizan posiciones ni un número de clientes, y la inversión en anuncios se paga aparte.
 
-Un panel de administración para ti y un acceso privado para cada cliente, sobre una base de datos propia en vez de sobre hojas de cálculo que se pisan.
+### Mantenimiento y crecimiento
 
-### Gestión de Meta Ads
+Que la web siga funcionando y se mantenga al día después de entregarla.
 
-Promocionar una publicación desde el móvil trae curiosos. Monto las campañas de Facebook e Instagram, las reviso cada semana y te digo a cuánto te sale cada persona que te escribe.
+Beneficio: alguien que responde y hace los cambios, sin permanencia. Está indicado qué incluye cada plan y qué queda fuera.
 
-### Accesibilidad web
+- Web esencial y web corporativa
+- Tienda online
+- Automatización de procesos
+- Chatbot con IA para WhatsApp
+- Panel de negocio y consultoría de IA
+- Gestión de Meta Ads
+- Email marketing y visibilidad en ChatGPT
+- Mantenimiento web
+- Cambios puntuales fuera de contrato
+- Gestión de redes sociales
 
-Desde el 28 de junio de 2025 hay negocios obligados a que su web sea accesible. Te digo si eres uno, qué falla y en qué orden arreglarlo.
+## Webs y sistemas que puedes abrir y comprobar
 
-## Los precios, sin tener que llamar a nadie
+Son seis. Dos son clientes, tres son demostraciones entregadas que no llegaron a cerrarse y una es mía. Cada tarjeta dice cuál es.
 
-Aquí está lo que cuesta cada cosa y, más importante, dónde acaba: qué entra en el precio y qué no. Sin «a consultar» y sin extras a mitad del proyecto.
+### TukTuk Cartagena
 
-### Landing page
+Web en cuatro idiomas con reserva y cobro, correos de confirmación automáticos y un panel privado donde el dueño bloquea días, horas o parte de la flota.
 
-Una sola página con un solo botón. Es la que usas cuando pagas anuncios: el visitante llega, entiende qué ofreces y te escribe, sin menú por el que perderse.
+### Floristería Alameda
 
-### Web esencial
+Tienda online con catálogo, carrito y pasarela de pago, con el SEO local trabajado para que la encuentren en Google.
 
-Hasta 4 páginas con diseño propio, sin plantillas. Lo justo para que te encuentren en Google y te escriban, sin pagar por secciones que no vas a usar.
+### Casa del Sushi
 
-### Web corporativa
+Carta, información del local, reserva de mesa con correo de confirmación automático y un panel donde el dueño ve sus reservas. El cliente no siguió adelante.
 
-La web donde se ve qué haces, cuánto cuesta y cómo escribirte. Diseño propio, preparada para que Google te encuentre en tu zona, y rápida en el móvil.
+### Belu Francia
 
-### Tienda online
+Web informativa con servicios, precios y ubicación, el método explicado paso a paso y reservas para pedir cita sin llamar. La clienta no siguió adelante.
 
-Tus productos con carrito y pago con tarjeta. El cliente compra solo a la hora que le apetece, y a ti te llega el pedido ya pagado y con la dirección escrita.
+### Floristería Buccaro
 
-## Publicar la web es el principio. Ahí empieza lo que trae clientes.
+Landing con el catálogo y el precio de cada ramo, cómo pedir, bodas y eventos, y dónde está el puesto. Dos acciones: pedir por Glovo o escribir por WhatsApp. No llegó a cerrarse.
 
-Todos sin permanencia. Te quedas mientras te compense, no porque hayas firmado.
+### Zenconfort
 
-### SEO local mensual
+Tienda de bienestar y descanso montada y llevada por mí: catálogo, carrito, pasarela de pago, envíos y devoluciones, blog y consentimiento de cookies.
 
-Trabajo todos los meses para que salgas más arriba en Google y en Google Maps cuando alguien de tu zona busca lo que haces. Con informe de en qué puesto estabas y en cuál estás.
+Hay un séptimo en marcha, Finca Doña Carmen, que todavía no está publicado. Lo que ves aquí lo puedes abrir; lo que es privado, como los paneles de gestión, no se enseña.
 
-### Visibilidad en ChatGPT
+## Cuatro pasos. Sabes en cuál estás en todo momento.
 
-Miro qué contestan ChatGPT, Gemini y Perplexity cuando preguntan por tu sector en tu ciudad, y dejo tu web preparada para que te entiendan.
+Cuatro pasos. Ni reuniones de más ni sorpresas al final.
 
-### Email marketing automatizado
+### Hablamos
 
-Correos que salen solos: bienvenida al que se apunta, seguimiento después de una compra, recordatorio de cita o aviso a quien dejó el carrito a medias. Se escriben una vez y trabajan siempre.
+Me cuentas qué necesitas por WhatsApp o por teléfono. Sin formularios ni comerciales.
 
-### Mantenimiento web
+### Te paso precio cerrado
 
-Reviso que tu web funcione, guardo copias por si algo se rompe y te hago los cambios que necesites. Me escribes por WhatsApp y ya está: sin formularios ni números de incidencia.
+Alcance, plazo y precio por escrito antes de empezar. Lo que ves es lo que pagas.
 
-### Gestión de redes sociales
+### Diseño y te lo enseño
 
-Ocho publicaciones al mes con su texto y su diseño, dos de ellas en vídeo, más el calendario y la ficha de Google al día. Número cerrado, no «lo que haga falta».
+Ves el avance y me das tu opinión. Nada se publica sin que tú lo apruebes.
+
+### Publico y me quedo
+
+Tu web en vivo, el código es tuyo y tienes 30 días de ajustes incluidos.
+
+## 333 reseñas y una web que no las merecía.
+
+Vendía en el mostrador y algún pedido suelto a domicilio. Le monté la tienda online entera —catálogo, carrito, pasarela de pago y pedidos por WhatsApp— y le estructuré el SEO para que la encuentren en Google. Según los datos que me da el propio cliente, sus ventas mensuales han subido en torno a un 30%; no puedo atribuirlo solo a la web.
+
+- Plantilla con textos «Sample»
+- Sin identidad propia
+- Sin llamadas a la acción
+- Diseño propio con foto real
+- WhatsApp visible en cada pantalla
+- 4,9★ y 333 reseñas a la vista
+
+## Lo que dicen en Google
+
+Seis de las once que tengo, copiadas literalmente de mi ficha. Puedes abrirlas y comprobarlas una a una.
+
+Quiero agradecer a Álvaro el excelente trabajo realizado en la creación de nuestra página web de Floristería Alameda en Cartagena. Desde el primer momento demostró una gran profesionalidad, creatividad y dedicación. Supo entender perfectamente nuestras necesidades y transformarlas en una web moderna, atractiva y fácil de usar.
 
 ## Casi nadie necesita una cosa sola.
 
@@ -190,32 +209,6 @@ Una agencia mantiene oficina, comerciales y departamentos. Yo no, y eso lo notas
 - Código fuente entregado al completo
 - Interlocutor único, lista en 1-2 semanas
 - SEO local incluido en todas las webs
-
-## Cuatro pasos. Sabes en cuál estás en todo momento.
-
-Cuatro pasos. Ni reuniones de más ni sorpresas al final.
-
-### Hablamos
-
-Me cuentas qué necesitas por WhatsApp o por teléfono. Sin formularios ni comerciales.
-
-### Te paso precio cerrado
-
-Alcance, plazo y precio por escrito antes de empezar. Lo que ves es lo que pagas.
-
-### Diseño y te lo enseño
-
-Ves el avance y me das tu opinión. Nada se publica sin que tú lo apruebes.
-
-### Publico y me quedo
-
-Tu web en vivo, el código es tuyo y tienes 30 días de ajustes incluidos.
-
-## Lo que dicen en Google
-
-Seis de las once que tengo, copiadas literalmente de mi ficha. Puedes abrirlas y comprobarlas una a una.
-
-Quiero agradecer a Álvaro el excelente trabajo realizado en la creación de nuestra página web de Floristería Alameda en Cartagena. Desde el primer momento demostró una gran profesionalidad, creatividad y dedicación. Supo entender perfectamente nuestras necesidades y transformarlas en una web moderna, atractiva y fácil de usar.
 
 ## Cuéntame qué necesitas. Te respondo yo.
 

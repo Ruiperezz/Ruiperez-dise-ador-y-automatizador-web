@@ -10,7 +10,7 @@ Eso lo puede hacer el ordenador solo: mandar el correo de confirmación, avisart
 
 **De un vistazo**
 
-- 990€ (+ 21% IVA) · Desde · rentabilidad inmediata
+- 990€ (+ 21% IVA) · Desde · pago único
 - Precio cerrado antes de empezar
 - Trato directo conmigo, sin comerciales
 
@@ -93,7 +93,7 @@ Un modelo de IA lee cada documento y pasa los datos a tu hoja de cálculo o a tu
 
 Revisas solo lo que marca como dudoso. Es la automatización de procesos, con el precio de abajo.
 
-**Precio: 990€ · Desde · rentabilidad inmediata** (+ 21% IVA)
+**Precio: 990€ · Desde · pago único** (+ 21% IVA)
 
 - Análisis de tus procesos
 - Automatizaciones montadas sobre tus procesos actuales
