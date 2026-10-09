@@ -549,6 +549,12 @@ crema + terracota + oliva. **Revertible de una vez:** va en su propio commit (`f
   `--sand`→`--brand-lt`, `--olive`→`--ok`, `--red`→`--err`) porque `--terra` ya no era terracota.
 - ⚠️ **Lo que NO cambió y queda con la identidad anterior:** las seis publicaciones de Instagram (`img/ig/`), las
   imágenes de las publicaciones de la ficha (`img/gbp/`) y las capturas de las webs de clientes (que son de ellos).
+- ⚠️ **Lo que axe NO mide (revisión del 09/10/2026):** el texto con degradado (`background-clip:text`) y los anillos de foco.
+  El titular de la home mezclaba `#8F82F5` (2,94:1) y el foco `#A99DF7` sobre el modal blanco daba 2,37:1: **axe daba 0
+  violaciones con los dos fallos presentes**. Ahora `#7F72F0` (3,53:1) y `#6C5CE7` en `.rsc-m` (4,86:1). El foco claro
+  `#A99DF7` solo vale sobre grafito. **Si cambias un degradado o un `outline`, calcula el contraste a mano.**
+  Falsos positivos que no hay que «arreglar»: el foco violeta sobre botones violeta (va fuera, con 3 px de hueco) y la
+  pista apagada del interruptor (`#D0D2DB`, 1,51:1; lo identifica el borde `#777B87`, 4,23:1).
 - **Tipografías sin tocar:** Instrument Serif y Karla. El logo usa una sans ancha propia; no hace falta cargarla.
 - Si se añade una página nueva: copia los tokens de `:root` de otra, no inventes colores sueltos, y si necesitas uno
   nuevo, define primero su contraste con `--bg`, con `--surf` y con la ficha gris más oscura (`#EAEAF0`).
