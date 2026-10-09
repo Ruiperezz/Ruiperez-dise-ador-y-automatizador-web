@@ -388,6 +388,10 @@ transition:border-color .2s,color .2s,transform .2s}
 }
 @media(min-width:721px) and (max-width:1000px){.nlinks{display:none}.burger{display:flex}}
 </style>
+<style>
+.cta-s{display:none}
+@media(max-width:699px){.cta-l{display:none}.cta-s{display:inline}}
+</style>
 </head>
 <body>
 <a class="skip" href="#main-content">Saltar al contenido</a>
@@ -398,10 +402,9 @@ transition:border-color .2s,color .2s,transform .2s}
   <div class="nav-i">
     <a href="/" class="logo"><img src="/img/brand/logo-horizontal-claro.webp" alt="Ruipérez Studio" width="125" height="34"></a>
     <nav class="nlinks" id="nlinks" aria-label="Navegación principal">
-      <a href="/#servicios" class="nl">Servicios</a><a href="/#caso" class="nl">Casos reales</a>
-      <a href="/#comparativa" class="nl">Precios</a><a href="/casos/" class="nl">Proyectos</a><a href="/sobre-mi/" class="nl">Quién soy</a><a href="/#faq" class="nl">Dudas</a>
+      <a href="/" class="nl">Inicio</a><a href="/servicios/" class="nl">Servicios</a><a href="/casos/" class="nl">Proyectos</a><a href="/sobre-mi/" class="nl">Sobre mí</a><a href="/#contacto" class="nl">Contacto</a>
     </nav>
-    <a href="/presupuesto/?s=chatbot&amp;p=chatbot-whatsapp" class="nav-cta"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg> Presupuesto</a>
+    <a href="/presupuesto/?s=chatbot&amp;p=chatbot-whatsapp" class="nav-cta"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg><span class="cta-l">Cuéntame tu proyecto</span><span class="cta-s">Presupuesto</span></a>
     <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nlinks"><span></span><span></span></button>
   </div>
 </header>
@@ -500,7 +503,7 @@ transition:border-color .2s,color .2s,transform .2s}
       </div>
       <div>
         <div class="ft-h">Estudio</div>
-        <div class="ft-l"><a href="/diseno-web/">Diseño web</a><a href="/casos/">Proyectos reales</a><a href="/sobre-mi/">Quién soy</a></div>
+        <div class="ft-l"><a href="/servicios/">Servicios y precios</a><a href="/diseno-web/">Diseño web</a><a href="/casos/">Proyectos reales</a><a href="/sobre-mi/">Quién soy</a></div>
       </div>
       <div>
         <div class="ft-h">Contacto</div>
