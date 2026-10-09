@@ -77,6 +77,22 @@ Un pedido pagado y sin confirmar es una llamada preguntando «¿ha llegado mi pe
 
 La tienda está publicada en [floristeriaalameda.com](https://floristeriaalameda.com/).
 
+### Facturas y albaranes que se apuntan solos
+
+Es lo que más se repite en un negocio pequeño: llegan por correo, alguien las abre una a una y copia proveedor, fecha, importe e IVA en una hoja o en el programa de contabilidad.
+
+#### Qué entra
+
+Las facturas y albaranes que ya te llegan por correo, en PDF o en foto.
+
+#### Qué hace solo
+
+Un modelo de IA lee cada documento y pasa los datos a tu hoja de cálculo o a tu programa.
+
+#### Qué haces tú
+
+Revisas solo lo que marca como dudoso. Es la automatización de procesos, con el precio de abajo.
+
 **Precio: 990€ · Desde · rentabilidad inmediata** (+ 21% IVA)
 
 - Análisis de tus procesos

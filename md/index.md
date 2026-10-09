@@ -63,6 +63,10 @@ Contesta por WhatsApp a cualquier hora las preguntas de siempre —horarios, pre
 
 Una sesión de 90 minutos y un informe con las tareas de tu negocio que puede hacer la IA, lo que cuesta montar cada una y las horas que te devuelve. Si no compensa, te lo digo.
 
+### Panel de negocio
+
+Lo que has cobrado, los pedidos o reservas, las visitas y los clics a WhatsApp en una sola pantalla, conectada a tu web y actualizada sola.
+
 ### Aplicación web de gestión
 
 Un panel de administración para ti y un acceso privado para cada cliente, sobre una base de datos propia en vez de sobre hojas de cálculo que se pisan.
@@ -102,6 +106,10 @@ Todos sin permanencia. Te quedas mientras te compense, no porque hayas firmado.
 ### SEO local mensual
 
 Trabajo todos los meses para que salgas más arriba en Google y en Google Maps cuando alguien de tu zona busca lo que haces. Con informe de en qué puesto estabas y en cuál estás.
+
+### Visibilidad en ChatGPT
+
+Miro qué contestan ChatGPT, Gemini y Perplexity cuando preguntan por tu sector en tu ciudad, y dejo tu web preparada para que te entiendan.
 
 ### Email marketing automatizado
 

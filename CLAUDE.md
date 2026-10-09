@@ -23,12 +23,12 @@ HTML + CSS + JavaScript **estático puro**. Sin `package.json`, sin npm, sin bun
 
 ## Estructura
 
-**28 páginas** (08/10/2026), una carpeta por URL:
+**30 páginas** (09/10/2026), una carpeta por URL:
 
 | Grupo | Rutas |
 |---|---|
 | Home | `/` |
-| Servicios (14) | `/consultoria-ia/` `/tarjeta-nfc-resenas/` `/web-corporativa/` `/landing-page/` `/tienda-online/` `/aplicaciones-web/` `/automatizacion/` `/chatbot-whatsapp/` `/seo-local/` `/email-marketing/` `/mantenimiento-web/` `/gestion-redes-sociales/` `/accesibilidad-web/` `/meta-ads/` |
+| Servicios (16) | `/consultoria-ia/` `/panel-de-negocio/` `/visibilidad-chatgpt/` `/tarjeta-nfc-resenas/` `/web-corporativa/` `/landing-page/` `/tienda-online/` `/aplicaciones-web/` `/automatizacion/` `/chatbot-whatsapp/` `/seo-local/` `/email-marketing/` `/mantenimiento-web/` `/gestion-redes-sociales/` `/accesibilidad-web/` `/meta-ads/` |
 | General (1) | `/diseno-web/` |
 | Legales (3) | `/aviso-legal/` `/privacidad/` `/cookies/` |
 | Estudio (2) | `/sobre-mi/` · `/casos/` |
@@ -41,7 +41,7 @@ que las dos de web no cubrían. La del chatbot **dice por escrito que no hay cas
 publicado todavía**: es el servicio más nuevo e inventarle un caso sería lo que critica
 la FAQ de `/meta-ads/`.
 
-Otros archivos: `sitemap.xml` (21 URLs — las noindex quedan fuera), `robots.txt`, `fonts/` (3 WOFF2), `vercel.json` (CSP, HSTS, X-Frame-Options, cache de `/img/`), `favicon.svg`, `apple-touch-icon.png`, `img/`.
+Otros archivos: `sitemap.xml` (23 URLs — las noindex quedan fuera), `robots.txt`, `fonts/` (3 WOFF2), `vercel.json` (CSP, HSTS, X-Frame-Options, cache de `/img/`), `favicon.svg`, `apple-touch-icon.png`, `img/`.
 
 ## Precios oficiales
 
@@ -67,6 +67,9 @@ Otros archivos: `sitemap.xml` (21 URLs — las noindex quedan fuera), `robots.tx
 | **Gestión de Meta Ads** | **240€/mes** hasta 1.000€/mes de inversión · por encima, 15% de la inversión |
 | **Tarjeta NFC de reseñas** | **27€** la unidad · 2 por 50€ · 4 por 100€ · instalada por Álvaro |
 | **Consultoría de IA** | diagnóstico **490€** · plan **1.390€** · taller **490€** · acompañamiento **240€/mes** (3 h, 1 reunión, mín. 3 meses) |
+| **Asistente interno de IA** | **490€** · hasta 20 documentos · la suscripción a la plataforma la paga el cliente (`/consultoria-ia/#asistente`) |
+| **Panel de negocio** | desde **990€ + 39€/mes** · hasta 3 fuentes de datos · sin permanencia |
+| **Visibilidad en ChatGPT** | revisión **390€** · con los cambios hechos **790€** · no se garantiza que ninguna IA cite al negocio |
 
 **Bajada del 30/09/2026, la última.** Álvaro la pidió con un objetivo explícito:
 **captar y cerrar clientes pequeños cuanto antes para ganar experiencia**, porque
@@ -425,6 +428,26 @@ Webskill) y el plan está en el scratchpad de esa sesión. Lo que se decidió y 
   (después del panel propio). Descartados: agentes de voz, auditoría legal del reglamento, cursos
   por alumno y proyectos de agentes de 7.000€+.
 
+## Panel de negocio, visibilidad en ChatGPT y asistente interno (09/10/2026)
+
+Tres de los cuatro servicios extra que propuso Opus el 08/10, publicados a petición de Álvaro.
+El cuarto, la **lectura automática de facturas**, NO es un servicio nuevo: va como ejemplo
+dentro de `/automatizacion/` (990€), etiquetado como ejemplo y no como caso.
+
+- **Panel de negocio (990€ + 39€/mes):** se publica ya porque **hay tres en uso** en clientes
+  reales. Es la parte de VER; si el cliente quiere trabajar desde el panel (altas, precios,
+  bloqueos), es una aplicación de gestión (2.900€ + 90€/mes). La página lo distingue. Límite:
+  **hasta tres fuentes de datos**. Las capturas: `img/panel-tuktuk.webp`, `panel-alameda.webp` y
+  `panel-finca.webp`. **Las capturas originales con las cifras sin difuminar NO se suben al repo.**
+- **Visibilidad en ChatGPT (390€ / 790€):** ⚠️ **nunca prometas que ChatGPT cite al negocio.**
+  La página lo dice tres veces y la FAQ lo explica. La prueba es la propia web de Álvaro, no
+  capturas de ChatGPT nombrándole, que cambian de un día para otro.
+- **Asistente interno de IA (490€):** vive en `/consultoria-ia/#asistente`, como la web esencial
+  vive en un ancla. Hasta 20 documentos, sin datos personales. Es IA de verdad (Claude, ChatGPT
+  o Gemini), al contrario que el asistente de esta web.
+- **El botón de la cabecera dice «Presupuesto»**, no «Pedir presupuesto»: con el texto largo se
+  partía en dos líneas en móvil en las 20 páginas.
+
 ## Clientes
 
 **Seis proyectos, y no todos son clientes.** La distinción importa y está reflejada en las etiquetas del sitio:
@@ -445,7 +468,7 @@ Webskill) y el plan está en el scratchpad de esa sesión. Lo que se decidió y 
 
 Los clientes verificables como tales:
 
-- **TukTuk Cartagena** — turismo. `tuktukcartagena.com`. Web desde cero en 4 idiomas (ES/EN/DE/FR), **sistema de reservas** (servicio, personas, número de tuk tuks y cobro), **correos automáticos** de confirmación al cliente y al empresario, y un **panel de administración** donde el dueño bloquea días, horas o parte de la flota (avería, festivo) y eso desaparece al instante de la web. Ese panel es el caso real de `/aplicaciones-web/`. **Es privado: no hay captura y no se puede enseñar.**
+- **TukTuk Cartagena** — turismo. `tuktukcartagena.com`. Web desde cero en 4 idiomas (ES/EN/DE/FR), **sistema de reservas** (servicio, personas, número de tuk tuks y cobro), **correos automáticos** de confirmación al cliente y al empresario, y un **panel de administración** donde el dueño bloquea días, horas o parte de la flota (avería, festivo) y eso desaparece al instante de la web. Ese panel es el caso real de `/aplicaciones-web/`. **El 09/10/2026 Álvaro pasó capturas de los tres paneles** (TukTuk, Alameda y Finca Doña Carmen) y se publicaron en `/panel-de-negocio/` **recortando la barra del navegador** —no se publica la dirección de acceso de ningún panel— y **difuminando las cifras de facturación** de los clientes, que son datos de su negocio. **Si un cliente pide que se quite su captura, se quita.**
 - **Floristería Alameda** — Cartagena, **4,9★ con 333 reseñas** (verificado en floristeriaalameda.com). Es una **tienda online** con catálogo, carrito y pasarela de pago. No la etiquetes como web corporativa.
 - **Casa del Sushi** — Cartagena, restauración. **Demo entregada que nunca se pagó; el cliente no siguió.** NO es un cliente, pero **es trabajo real hecho por Álvaro**: el formulario de reservas está automatizado y conectado al **Google Calendar de la empresa**. En la web se etiqueta «Proyecto entregado · demo para el cliente». `casa-del-sushi.vercel.app`. Carta, info del local, ubicación y reseñas, **reserva de mesa con correo de confirmación automático** y un **panel de administración** donde el dueño ve sus reservas. **Álvaro dice que el trabajo no está cerrado del todo** (22/09/2026): sigue etiquetado como caso real porque la web está publicada y se puede abrir, pero confirma con él antes de llamarle «cliente» en copy nuevo. **Álvaro confirmó el 21/09/2026 que Perico Del Rey NO es Casa del Sushi.** Casa del Sushi es cliente y tiene su caso en `/web-corporativa/` y `/casos/`, pero **no ha dejado reseña en Google**: no le atribuyas ninguna.
 
@@ -485,6 +508,9 @@ Un caso repetido en todas partes no es prueba social. Cada página lleva el suyo
 | `/email-marketing/` | los tres correos automáticos: Alameda, TukTuk y Casa del Sushi |
 | `/landing-page/` | Buccaro (propuesta, no cliente) |
 | `/consultoria-ia/` | **ningún caso de consultoría** (lo dice por escrito); TukTuk y Alameda como «lo que he montado» |
+| `/panel-de-negocio/` | los tres paneles reales: TukTuk (disponibilidad), Alameda (tienda) y Finca Doña Carmen (en curso), con capturas |
+| `/visibilidad-chatgpt/` | ningún caso de cliente: la prueba es la propia web (`llms.txt`, API, datos estructurados) |
+| `/automatizacion/` (añadido) | facturas y albaranes, etiquetado «Ejemplo de lo que monto · no es un caso publicado» |
 | `/casos/` | los cuatro |
 
 Las páginas que aún llevan «Caso tipo · ejemplo ilustrativo» son ficticias a propósito y van etiquetadas como tales. En cuanto haya un caso real de ese servicio, se sustituye.

@@ -25,7 +25,7 @@
     { k:["precio","cuesta","cuanto cuesta","cuanto vale","cuanto seria","vale","cobras","tarifa","presupuesto","caro","barato","coste","cuanto me","precios"],
       t:"Los precios están publicados, sin tener que preguntar:",
       l:["Landing page: desde 590€","Web esencial (hasta 4 páginas): desde 690€","Web corporativa: desde 1.190€","Tienda online: desde 1.490€","Aplicación de gestión: desde 2.900€ + 90€/mes",
-         "Consultoría de IA: diagnóstico desde 490€","Automatización: desde 990€ (esencial, 390€)","Chatbot de WhatsApp: desde 1.290€ + 120€/mes",
+         "Consultoría de IA: diagnóstico desde 490€","Asistente interno de IA: 490€","Panel de negocio: desde 990€ + 39€/mes","Visibilidad en ChatGPT: desde 390€","Automatización: desde 990€ (esencial, 390€)","Chatbot de WhatsApp: desde 1.290€ + 120€/mes",
          "SEO local: desde 390€/mes","Redes sociales: desde 450€/mes","Email marketing: desde 290€/mes",
          "Accesibilidad (Ley 11/2023): desde 590€","Mantenimiento: 39–99€/mes, alojamiento incluido","Tarjeta NFC de reseñas: desde 27€"],
       n:"Todos sin IVA. El precio se cierra por escrito antes de empezar.", u:"/#servicios" },
@@ -87,6 +87,21 @@
       l:["Sesión de 90 minutos e informe en 5 días laborables","Qué tareas puede hacer la IA, cuánto cuesta montarlas y cuántas horas ahorran",
          "Plan con taller para tu equipo: 1.390€","Acompañamiento: 240€/mes, 3 horas y una reunión al mes, mínimo 3 meses"],
       n:"Si el informe no trae tres acciones concretas con su coste, te devuelvo el dinero. Si ya sabes lo que quieres automatizar, no te hace falta: mira la automatización esencial.", u:"/consultoria-ia/" },
+
+    { k:["panel","dashboard","estadisticas","metricas","cuanto vendo","panel de control","ver mis ventas","cuadro de mando"],
+      t:"El panel de negocio junta en una pantalla lo que has cobrado, los pedidos o reservas, las visitas y los clics a WhatsApp:",
+      l:["Desde 990€ + 39€/mes, sin permanencia","Hasta tres fuentes de datos: tu tienda, Stripe, Google Analytics…","Ya funcionan tres: TukTuk Cartagena, Floristería Alameda y Finca Doña Carmen"],
+      n:"Si además quieres trabajar desde ahí —altas, precios, bloquear días—, eso es una aplicación de gestión.", u:"/panel-de-negocio/" },
+
+    { k:["aparecer en chatgpt","salir en chatgpt","que me recomiende chatgpt","perplexity","gemini","buscadores con ia","buscadores ia","llms"],
+      t:"Reviso qué contestan ChatGPT, Gemini y Perplexity sobre tu negocio y preparo tu web para que te entiendan:",
+      l:["Revisión: 390€","Con los cambios hechos: 790€, y repetimos las preguntas a los 60 días"],
+      n:"No te prometo que te citen: nadie puede. Lo he hecho primero en mi propia web y lo puedes comprobar.", u:"/visibilidad-chatgpt/" },
+
+    { k:["asistente interno","documentos de la empresa","procedimientos","manual de la empresa","base de conocimiento"],
+      t:"El asistente interno de IA conoce los documentos de tu empresa y contesta a tu equipo con lo que pone en ellos:",
+      l:["490€, pago único","Hasta 20 documentos, probado con 20 preguntas reales","La suscripción a Claude, ChatGPT o Gemini la pagas tú"],
+      n:"Conmigo no hay cuota.", u:"/consultoria-ia/#asistente" },
 
     { k:["chatbot","bot","inteligencia artificial","inteligencia","responder solo","24 horas","whatsapp business","contestar solo","robot"],
       t:"Monto asistentes con IA de verdad sobre WhatsApp Business.",
