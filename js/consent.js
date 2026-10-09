@@ -278,6 +278,7 @@
     /* hereda el color del pie: funciona igual en la paleta crema y en la oscura */
     '.rsc-pref{background:none;border:0;padding:0;font:inherit;font-size:.82rem;color:var(--soft,#4A443C);text-decoration:underline;cursor:pointer}',
     '.rsc-pref:hover{color:var(--terra-txt,#A84A28)}',
+    '@media(pointer:coarse){.rsc-pref{min-height:44px;padding:0 .5rem}}',
     '@media (prefers-reduced-motion:reduce){.rsc-b,.rsc-sw,.rsc-sw::after{transition:none}}',
     '@media(max-width:640px){.rsc-b{justify-content:stretch}.rsc-acts{width:100%}.rsc-btn{flex:1;min-width:0}}'
   ].join("");

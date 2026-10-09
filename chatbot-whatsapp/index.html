@@ -374,6 +374,17 @@ border-radius:50%;border:1px solid var(--line);color:var(--soft);background:tran
 transition:border-color .2s,color .2s,transform .2s}
 .ft-rrss a:hover{border-color:var(--terra);color:var(--terra-txt);transform:translateY(-2px)}
 </style>
+<style>
+/* Objetivos táctiles de 44 px (auditoría 09/10/2026). En pantallas táctiles, no en escritorio, para no alargar el pie. */
+.burger{flex:none;min-width:44px}
+@media(max-width:380px){.nav-cta svg{display:none}}
+@media(max-width:350px){.lwm{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}}
+@media(pointer:coarse){
+.ft-l a{display:flex;align-items:center;min-height:44px}
+.ft-l{gap:0}
+.bread a{display:inline-block;padding:15px 8px;margin:-15px -8px}
+}
+</style>
 </head>
 <body>
 <a class="skip" href="#main-content">Saltar al contenido</a>

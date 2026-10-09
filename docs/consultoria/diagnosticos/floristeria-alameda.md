@@ -49,6 +49,19 @@ Que el botón de WhatsApp de cada ficha lleve **precargado el nombre del product
 (fecha y dirección). Es un cambio pequeño en el enlace; lo que hay que medir es cuántos pedidos
 entran hoy por esa vía antes de decidir.
 
+## 4b. Cómo estimar el reparto SIN acceso a Bizum (decidido el 09/10/2026)
+
+Álvaro no puede ver los cobros por Bizum (le llegan al cliente). Lo que sí cuenta el panel de la tienda
+son **clics**: visitas de producto, «añadir al carrito» y **clics a WhatsApp**. Con eso:
+
+    reparto aproximado = clics a WhatsApp ÷ (clics a WhatsApp + añadidos al carrito)
+
+⚠️ **Es una cota, no un dato**: un clic no es un pedido y un carrito no es una compra. Sirve para
+decidir si merece la pena medir los minutos de un pedido por WhatsApp, **no para publicar un
+porcentaje**. Hace falta leer ambos contadores sobre **30 días o más**: en la última semana vista
+(10 visitas de producto, 2 carritos, 0 clics a WhatsApp) la muestra es demasiado pequeña para
+concluir nada.
+
 ## 5. Preguntas para el cuestionario (específicas)
 
 ¿Qué porcentaje de pedidos entra por WhatsApp y qué porcentaje por el carrito? ¿Cómo se confirma un

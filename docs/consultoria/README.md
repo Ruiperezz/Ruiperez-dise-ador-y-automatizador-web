@@ -48,8 +48,8 @@ volumen aún es pequeño.
 | Negocio | Diagnóstico | Falta |
 |---|---|---|
 | Ruipérez Studio | borrador en `diagnosticos/ruiperez-studio.md` | registro de tiempos de Álvaro |
-| TukTuk Cartagena | borrador en `diagnosticos/tuktuk-cartagena.md` | **permiso recibido el 09/10/2026** (Álvaro confirma que lo dieron; guardar el mensaje), cuestionario, flota actual y tiempos |
-| Floristería Alameda | borrador en `diagnosticos/floristeria-alameda.md` | **permiso recibido el 09/10/2026** (ídem), cuestionario, % de pedidos por WhatsApp y tiempos |
+| TukTuk Cartagena | borrador en `diagnosticos/tuktuk-cartagena.md` | **permiso VERBAL del 09/10/2026**, para hacer lo necesario «mientras la web siga en funcionamiento». Cuestionario, comprobar el panel (la leyenda dice 3 tuk tuks y son 7) y tiempos |
+| Floristería Alameda | borrador en `diagnosticos/floristeria-alameda.md` | **permiso VERBAL del 09/10/2026** (misma condición). Cuestionario, leer 30 días de clics del panel y tiempos |
 
 La página pública `/consultoria-ia/diagnostico-real/` enseña el método y las capturas de los flujos
 públicos. Está en `noindex` y fuera del sitemap **hasta que haya tiempos medidos**.

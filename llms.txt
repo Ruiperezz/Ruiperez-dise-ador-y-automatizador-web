@@ -107,7 +107,7 @@ Todos los proyectos: https://ruiperezstudio.es/casos/
 
 - Las 20 páginas de ruiperezstudio.es pasan axe-core 4.10.2 sin una sola violación WCAG 2.1 nivel A ni AA (medido el 23/09/2026)
 
-- Ficha de Google: 5,0★ con 7 reseñas — https://maps.google.com/maps?cid=16135944171140006039
+- Ficha de Google: 5,0★ con 11 reseñas (comprobado el 04/10/2026) — https://maps.google.com/maps?cid=16135944171140006039
 - El 4,9★ con 333 reseñas pertenece a Floristería Alameda, no a Ruipérez Studio
 - Floristería Alameda factura un 30% más al mes desde la tienda online, según datos del propio cliente
 

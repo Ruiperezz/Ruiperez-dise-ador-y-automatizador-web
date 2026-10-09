@@ -24,7 +24,7 @@
   "iva_nota": "Todos los precios son sin IVA. Se añade el 21% en factura.",
   "plazos_nota": "El plazo cuenta desde que el cliente entrega el contenido, no desde la firma. De una a dos semanas para webs y tiendas; de dos a tres para la aplicación de gestión.",
   "precio_hora_fuera_de_contrato_eur_sin_iva": 60,
-  "actualizado": "2026-10-08",
+  "actualizado": "2026-10-09",
   "servicios": [
     {
       "id": "landing-page",

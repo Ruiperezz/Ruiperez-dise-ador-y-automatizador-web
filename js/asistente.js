@@ -88,6 +88,15 @@
          "Plan con taller para tu equipo: 1.390€","Acompañamiento: 240€/mes, 3 horas y una reunión al mes, mínimo 3 meses"],
       n:"Si el informe no trae tres acciones concretas con su coste, te devuelvo el dinero. Si ya sabes lo que quieres automatizar, no te hace falta: mira la automatización esencial.", u:"/consultoria-ia/" },
 
+    { k:["web esencial","web corporativa","pagina web","paginas web","diseno web","sitio web","hacer una web","crear una web","web para mi negocio","quiero una web","necesito una web"],
+      t:"Según el tamaño que necesites:",
+      l:["Landing page (una sola página para anuncios): desde 590€","Web esencial (hasta 4 páginas): desde 690€","Web corporativa (completa, con SEO local): desde 1.190€"],
+      n:"Todo sin IVA, con precio cerrado por escrito y de 1 a 2 semanas desde que me pasas el contenido. El código es tuyo desde la entrega.", u:"/web-corporativa/" },
+
+    { k:["eres una ia","eres un bot","eres un robot","eres humano","eres una persona","hablo con una persona","hablo con un robot","hablo con una maquina","con quien hablo","eres chatgpt"],
+      t:"No: este asistente no es una inteligencia artificial.",
+      n:"Es un buscador sobre respuestas que he escrito yo. Si quieres hablar con una persona, te contesta Álvaro por WhatsApp." },
+
     { k:["panel","dashboard","estadisticas","metricas","cuanto vendo","panel de control","ver mis ventas","cuadro de mando"],
       t:"El panel de negocio junta en una pantalla lo que has cobrado, los pedidos o reservas, las visitas y los clics a WhatsApp:",
       l:["Desde 990€ + 39€/mes, sin permanencia","Hasta tres fuentes de datos: tu tienda, Stripe, Google Analytics…","Ya funcionan tres: TukTuk Cartagena, Floristería Alameda y Finca Doña Carmen"],

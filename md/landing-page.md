@@ -87,11 +87,11 @@ Sí. La página se sube a Vercel (hosting gratuito y muy rápido). El dominio cu
 
 **¿Puedo ampliarla a web completa después?**
 
-Sí. La landing se construye con la misma base de código que una web corporativa. Ampliar cuesta la diferencia de precio (300€), no empiezo de cero.
+Sí. La landing se construye con la misma base de código que una web corporativa. Ampliar cuesta la diferencia de precio, no empiezo de cero: 100€ más hasta la web esencial (690€ + IVA, hasta 4 páginas) o 600€ más hasta la corporativa (1.190€ + IVA).
 
 **¿Qué diferencia hay entre landing y web corporativa?**
 
-La landing es una sola página con un solo objetivo (que te contacten). La web corporativa tiene varias secciones: servicios, sobre ti, portfolio, contacto. Más contenido, más tiempo, 300€ más.
+La landing es una sola página con un solo objetivo (que te contacten). La web corporativa tiene varias secciones: servicios, sobre ti, portfolio, contacto. Más contenido, más tiempo: 100€ más para la web esencial (hasta 4 páginas) y 600€ más para la corporativa.
 
 **¿Qué pasa después de los 30 días de soporte?**
 
