@@ -448,6 +448,26 @@ dentro de `/automatizacion/` (990€), etiquetado como ejemplo y no como caso.
 - **El botón de la cabecera dice «Presupuesto»**, no «Pedir presupuesto»: con el texto largo se
   partía en dos líneas en móvil en las 20 páginas.
 
+## Ayudas públicas (comprobado el 09/10/2026 en BORM y BDNS)
+
+Plan completo y fuentes en `PLAN-2026-10-09-crecimiento.md` (privado).
+
+- ❌ **Kit Digital: cerrado para empresas desde el 31/10/2025**, sin convocatoria nueva. Kit
+  Consulting cerró el 31/05/2026. **No se lo vuelvas a proponer a Álvaro** ni lo anuncies.
+- ✅ **Cheque TIC del Instituto de Fomento (Murcia):** 70% (85% en RIS4). Ayudas máximas: **BPM
+  8.000€ (= automatización), BI 6.000€ (= panel), chatbot con IA 5.000€, IA a medida 15.000€.**
+  La empresa necesita **3 o más empleados** y centro en la Región. Álvaro puede ser proveedor
+  **sin acreditación previa**: le basta con **3 certificados de buena ejecución** de trabajos
+  similares de los últimos 5 años, firmados por clientes. Tiene material para BPM y BI
+  (Alameda, TukTuk y Finca Doña Carmen); **para el chatbot no, y no se inventa.** Máximo 10
+  clientes por convocatoria, no puede presentar la solicitud en nombre de la empresa, y no se
+  subvencionan cuotas mensuales ni licencias comerciales.
+- La convocatoria 2025 salió el 27/10/2025 (BORM 249) y cerró el 19/12/2025. **La de 2026 tiene
+  900.000€ aprobados el 01/10/2026 y no estaba publicada el 09/10.** No se anuncia en la web ni
+  en los anuncios hasta que esté abierta, y entonces con las cifras de esa convocatoria.
+- Pyme Innova (Cámara): 2026 cerrado; solo empresas con más de 100.000€ de facturación y sin
+  autónomos.
+
 ## Clientes
 
 **Seis proyectos, y no todos son clientes.** La distinción importa y está reflejada en las etiquetas del sitio:
