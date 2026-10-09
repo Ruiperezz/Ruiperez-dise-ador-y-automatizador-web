@@ -11,7 +11,7 @@
       "displayName": "Catálogo de servicios y precios",
       "type": "application/json",
       "url": "https://ruiperezstudio.es/api/servicios.json",
-      "description": "Los 12 servicios y 3 packs de Ruipérez Studio con precio sin IVA, modelo de cobro y plazo de entrega.",
+      "description": "Los 17 servicios y 3 packs de Ruipérez Studio con precio sin IVA, modelo de cobro y plazo de entrega.",
       "tags": [
         "diseño-web",
         "cartagena",

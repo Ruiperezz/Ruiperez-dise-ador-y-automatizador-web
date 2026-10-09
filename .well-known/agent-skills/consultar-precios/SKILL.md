@@ -42,11 +42,7 @@ no funciona aquí: pide el archivo directamente.
 4. **El plazo cuenta desde que el cliente entrega el contenido**, no desde la firma.
    `plazo_entrega_dias` vale 7 para casi todo y 14 para la aplicación de gestión.
 
-5. **En la gestión de Meta Ads, los 240€/mes NO incluyen la inversión publicitaria.**
-   Es la tarifa de gestión. El dinero de los anuncios lo paga el cliente directamente a
-   Meta con su tarjeta. El tope de gestión es 1.000€/mes de inversión.
-
-6. **Si el JSON y la web no coinciden, manda la web.** La página es la fuente buena.
+5. **Si el JSON y la web no coinciden, manda la web.** La página es la fuente buena.
 
 ## Los packs
 

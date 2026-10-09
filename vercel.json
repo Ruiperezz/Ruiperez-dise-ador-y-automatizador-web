@@ -229,6 +229,10 @@
   ],
   "redirects": [
     {"source": "/(.*)", "has": [{"type": "host", "value": "www.ruiperezstudio.es"}], "destination": "https://ruiperezstudio.es/$1", "permanent": true},
+    {"source": "/seo-local", "destination": "/servicios/", "permanent": false},
+    {"source": "/seo-local/", "destination": "/servicios/", "permanent": false},
+    {"source": "/meta-ads", "destination": "/servicios/", "permanent": false},
+    {"source": "/meta-ads/", "destination": "/servicios/", "permanent": false},
     {
       "source": "/diseno-web-cartagena",
       "destination": "/diseno-web",
