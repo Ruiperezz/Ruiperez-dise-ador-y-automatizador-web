@@ -81,3 +81,20 @@
 Precios y condiciones comerciales (solo se corrigió la diferencia de la landing, que era una contradicción
 con la tabla oficial), NIF y domicilio del aviso legal, el contenido de los testimonios, la estructura de
 packs, y el copy salvo los cuatro casos de §2.
+
+## 7. Pasada final antes de Google Ads y Meta Ads (09/10/2026, tarde)
+
+| # | Prioridad | Hallazgo | Qué se hizo | Prueba |
+|---|---|---|---|---|
+| 1 | P1 · medición | Solo existían `generate_lead` y `Contact`; no se distinguía interés de intención | Añadidos `view_service`, `click_primary_cta`, `form_start`, `email_click`, `phone_click`, `view_project` y `ViewContent` de Meta. `generate_lead` se documenta como **intención** (WhatsApp abierto), no como mensaje enviado | Red interceptada: rechazo = 0 eventos y 0 terceros; aceptar = 1 evento de cada, sin datos personales; solo analítica = sin Meta |
+| 2 | P1 · confianza | La home comparaba con «agencias» y «freelances» con generalizaciones sin fuente (WordPress con plantilla, sin código, sin automatización…) | Sustituido por ventajas propias comprobables y por una invitación a comparar punto por punto; FAQ y asistente alineados; `/aplicaciones-web/` y `/sobre-mi/` sin la jerga de «oficina y doce sueldos» | FAQ visible = JSON-LD en todas las páginas |
+| 3 | P1 · coherencia | `/casos/` decía «ninguno es una maqueta… con gente comprando» sobre tres demos | Reescrito: dos clientes, tres demos, uno propio | Lectura |
+| 4 | P2 · plazos | Landing decía «1 semana» y «1-2 semanas»; automatización y chatbot sin plazo | Landing en 1-2 semanas; automatización y chatbot: «plazo cerrado por escrito antes de empezar» (sin inventar uno) | `verifica-api.py` |
+| 5 | P2 · accesibilidad | `/cookies/` en móvil: tres tablas con scroll sin foco de teclado | `tabindex="0"` y etiqueta accesible | axe a 390 y 1280 px |
+
+**Medido en producción el 09/10/2026** (navegador, sin estrangular la red, contexto limpio; son datos de laboratorio, **no** de campo ni Lighthouse):
+LCP 84–264 ms, CLS 0–0,003, 8–10 peticiones y 7–163 KB transferidos en las 9 páginas probadas (móvil 390 y escritorio 1280).
+axe-core 4.10.2, WCAG 2.1 A y AA, `prefers-reduced-motion`: **0 violaciones en 31 de 31 páginas a 1280 px y en 30 de 31 a 390 px** (la restante era el punto 5, ya corregido).
+Recorrido de pago completo (landing con UTM → aceptar → CTA → formulario → enviar): validación sin datos no abre WhatsApp; caracteres especiales bien codificados; teléfono correcto; `ref: meta-auto-oct` solo con consentimiento de publicidad; `generate_lead` y `Contact` una sola vez.
+
+**Pendiente en vivo (necesita tus accesos):** GA4 DebugView y «Probar eventos» de Meta con una visita de prueba; importar `generate_lead` en Google Ads; verificar el dominio en Meta; Search Console para indexación; revisión jurídica de la política de cookies y privacidad (esta auditoría no declara cumplimiento).
