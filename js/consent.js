@@ -254,7 +254,7 @@
     '.rsc-btn{font:700 .84rem/1 Karla,system-ui,sans-serif;padding:.8rem 1.25rem;border-radius:8px;cursor:pointer;',
     'min-height:44px;min-width:9rem;border:1.5px solid rgba(247,247,250,.55);background:transparent;color:#F7F7FA;transition:background .2s,border-color .2s}',
     '.rsc-btn:hover{background:rgba(247,247,250,.1);border-color:#F7F7FA}',
-    '.rsc-btn:focus-visible,.rsc-sw:focus-visible{outline:2.5px solid #A99DF7;outline-offset:3px}',
+    '.rsc-btn:focus-visible,.rsc-sw:focus-visible{outline:2.5px solid #A99DF7;outline-offset:3px}.rsc-m .rsc-btn:focus-visible,.rsc-m .rsc-sw:focus-visible{outline-color:#6C5CE7}',
     '.rsc-ov{position:fixed;inset:0;z-index:9100;background:rgba(17,19,24,.62);backdrop-filter:blur(3px);display:none;align-items:center;justify-content:center;padding:1.2rem}',
     '.rsc-ov.on{display:flex}',
     '.rsc-m{background:#FFFFFF;color:#111318;border-radius:16px;max-width:34rem;width:100%;max-height:88vh;overflow:auto;padding:clamp(1.4rem,3vw,2rem);font-family:Karla,system-ui,sans-serif}',
