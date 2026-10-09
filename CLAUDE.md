@@ -468,6 +468,26 @@ Plan completo y fuentes en `PLAN-2026-10-09-crecimiento.md` (privado).
 - Pyme Innova (Cámara): 2026 cerrado; solo empresas con más de 100.000€ de facturación y sin
   autónomos.
 
+## Kit de diagnóstico de IA y regla de «ahorro medido» (09/10/2026)
+
+`docs/consultoria/` (privado) tiene el método, el cuestionario, el registro de tiempos, la plantilla del
+informe y un borrador por negocio: Ruipérez Studio, TukTuk Cartagena y Floristería Alameda.
+
+- ⚠️ **Nunca se publica «ahorra X horas» si X no se ha medido.** Fórmula: veces al mes × (minutos antes
+  − minutos después) ÷ 60. El «antes» se mide con cronómetro una semana, no se pregunta de memoria.
+- ⚠️ **Los volúmenes reales de los tres clientes son todavía bajos** (el panel de TukTuk no tenía reservas,
+  la finca tiene una pareja de demostración y Alameda pocos pedidos). Por eso la demostración honesta es
+  **minutos ahorrados POR operación** y que cada cliente calcule con su volumen, no horas acumuladas.
+- **Alameda tiene dos formas de pedir y no son equivalentes:** el carrito recoge fecha, dirección y
+  dedicatoria; el botón «Pedir por WhatsApp» manda un mensaje genérico sin nada de eso. Es el mismo
+  problema que tuvo esta web. Pendiente de medir cuántos pedidos entran por cada vía.
+- **La web de Alameda es `floristeriaalameda.com`** (la `.es` no existe).
+- **No se cita ninguna cifra de flota ni de aforo de TukTuk:** el formulario público dice 7 tuk tuks y 28
+  personas y la leyenda de su panel dice 3. Las páginas de esta web dicen «comprueba el aforo» a secas
+  hasta que Álvaro confirme la cifra.
+- **Las cifras de facturación, pedidos o reservas de un cliente no van en el repositorio** ni en la web
+  sin su permiso escrito. Las capturas de paneles se publican difuminadas y sin la dirección de acceso.
+
 ## Clientes
 
 **Seis proyectos, y no todos son clientes.** La distinción importa y está reflejada en las etiquetas del sitio:

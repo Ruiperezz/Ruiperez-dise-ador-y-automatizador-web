@@ -47,7 +47,7 @@ Un tour de una hora que se vende sobre todo a turistas que ya están en la calle
 
 #### Qué monté
 
-El cliente elige tour, día, hora y cuántos van. La web comprueba el aforo —hasta 12 personas, que son tres tuk tuks—, calcula el total y cobra en el momento.
+El cliente elige tour, día, hora y cuántos van. La web comprueba el aforo, calcula el total y cobra en el momento.
 
 #### Qué deja de hacerse a mano
 
