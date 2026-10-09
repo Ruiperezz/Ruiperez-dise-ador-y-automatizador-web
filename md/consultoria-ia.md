@@ -55,6 +55,8 @@ Cada pedido pagado manda solo un correo al cliente y otro a la tienda. Está en 
 
 Quien te dice qué automatizar es el mismo que luego lo monta. Un informe que nadie sabe montar no te ahorra ni una hora.
 
+Estoy haciendo el diagnóstico con TukTuk, Floristería Alameda y mi propio negocio, con permiso de sus dueños. [Mira cómo lo hago, paso a paso.](/consultoria-ia/diagnostico-real/)
+
 ## Cuándo no te hace falta pagarme un diagnóstico
 
 - Si ya sabes que quieres que el cliente reciba un correo y tú un aviso en el móvil: eso es la [automatización esencial](/automatizacion/#esencial), 390€ + 21% IVA. No pagues para que te diga lo que ya sabes.
