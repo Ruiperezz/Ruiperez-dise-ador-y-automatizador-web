@@ -37,7 +37,7 @@
       "role": "data",
       "href": "https://ruiperezstudio.es/api/servicios.json",
       "mediaType": "application/json",
-      "description": "12 servicios y 3 packs, con precio sin IVA, modelo de cobro y plazo."
+      "description": "17 servicios y 3 packs, con precio sin IVA, modelo de cobro y plazo."
     },
     {
       "type": "http-api",

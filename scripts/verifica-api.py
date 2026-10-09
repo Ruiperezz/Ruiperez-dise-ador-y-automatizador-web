@@ -40,10 +40,7 @@ for pk in d['packs']:
     precios = {s_['id']: s_['precio']['desde_eur_sin_iva'] for s_ in d['servicios']}
     suma = 0
     for item in pk['incluye']:
-        if item.startswith('meta-ads'):
-            suma += precios['meta-ads'] * 3          # «(3 meses)»
-        else:
-            suma += precios[item]
+        suma += precios[item]
     if suma != pk['precio_suelto_eur_sin_iva']:
         fallos.append(f"pack {pk['id']}: el suelto dice {pk['precio_suelto_eur_sin_iva']}€ y la suma real de lo que incluye es {suma}€")
 

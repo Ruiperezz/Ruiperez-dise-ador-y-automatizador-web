@@ -91,7 +91,7 @@ Las fotos del negocio las pones tú, y te digo exactamente qué necesito y cómo
 
 **¿Esto me trae clientes de verdad?**
 
-Trae visibilidad y trae conversaciones. Si lo que buscas es que alguien que ya te está buscando te encuentre, el SEO local rinde más por el mismo dinero y te lo diría antes de venderte esto.
+Trae visibilidad y trae conversaciones. Si lo que buscas es que alguien que ya te está buscando te encuentre, una web bien hecha y tu ficha de Google al día rinden más por el mismo dinero, y te lo diría antes de venderte esto.
 
 **¿Hay permanencia?**
 

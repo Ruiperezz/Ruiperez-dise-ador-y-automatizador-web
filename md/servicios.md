@@ -60,15 +60,7 @@ Un diagnóstico de dónde puede ayudarte la IA en tu negocio, con un informe y a
 
 ## Visibilidad y captación
 
-Que te encuentren quienes buscan lo que haces. No se garantizan posiciones en Google, apariciones en asistentes de IA ni un número de clientes, y la inversión en anuncios la pagas aparte a Meta.
-
-### SEO local
-
-Trabajo mensual para aparecer en las búsquedas de tu zona y en Google Maps. No se garantizan posiciones.
-
-### Gestión de Meta Ads
-
-Campañas de Facebook e Instagram, con revisión semanal. Para una inversión de hasta 1.000€/mes que pagas tú a Meta.
+Que te encuentren quienes buscan lo que haces y que tus clientes te dejen reseñas. No se garantiza que ninguna herramienta de IA te cite ni un número de clientes.
 
 ### Visibilidad en ChatGPT y buscadores con IA
 

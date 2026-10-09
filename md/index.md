@@ -54,9 +54,9 @@ Beneficio: menos tareas repetitivas y respuestas más rápidas. Algunas llevan c
 
 ### Visibilidad y captación
 
-Que te encuentren quienes buscan lo que haces, y medir de dónde llegan tus contactos.
+Que las herramientas de IA entiendan tu negocio, mantener el contacto con tus clientes y conseguir reseñas en Google.
 
-Beneficio: más oportunidades de que te encuentren. No se garantizan posiciones ni un número de clientes, y la inversión en anuncios se paga aparte.
+Beneficio: más posibilidades de que te encuentren y de que te dejen reseñas. No se garantiza que ninguna herramienta te cite ni un número de clientes.
 
 ### Mantenimiento y crecimiento
 
@@ -69,8 +69,9 @@ Beneficio: alguien que responde y hace los cambios, sin permanencia. Está indic
 - Automatización de procesos
 - Chatbot con IA para WhatsApp
 - Panel de negocio y consultoría de IA
-- Gestión de Meta Ads
-- Email marketing y visibilidad en ChatGPT
+- Visibilidad en ChatGPT y buscadores con IA
+- Email marketing
+- Tarjeta NFC de reseñas
 - Mantenimiento web
 - Cambios puntuales fuera de contrato
 - Gestión de redes sociales
@@ -160,19 +161,13 @@ Quiero agradecer a Álvaro el excelente trabajo realizado en la creación de nue
 
 ## Casi nadie necesita una cosa sola.
 
-Una web sin nada detrás es un folleto. Estas cuatro combinaciones son las que de verdad se piden juntas, y salen entre un 16% y un 18% más baratas que contratándolas una a una. Están puestas de menor a mayor, y cada una dice para qué tamaño de negocio es.
+Una web sin nada detrás es un folleto. Estas tres combinaciones son las que de verdad se piden juntas, y salen entre un 16% y un 18% más baratas que contratándolas una a una. Están puestas de menor a mayor, y cada una dice para qué tamaño de negocio es.
 
 ### Arranca
 
 Para cuando necesitas estar en internet y que las reservas te lleguen solas, sin más.
 
 Contratado por separado: 1.107€
-
-### Capta
-
-Para cuando lo que necesitas son clientes este mes, no una web bonita.
-
-Contratado por separado: 1.310€
 
 ### Vende online
 
@@ -192,11 +187,6 @@ Contratado por separado: 3.470€
 - Aviso a tu móvil con los datos ya ordenados
 - Tarjeta NFC de reseñas para que tus clientes te las dejen en Google
 - El código es tuyo desde la entrega
-- Una landing page: una sola página con un solo botón
-- Tres meses de Meta Ads gestionados (Facebook e Instagram)
-- Hasta 3 campañas y 6 anuncios
-- Informe mensual en una página
-- La medición puesta, para saber qué anuncio trae cada mensaje
 - Una tienda online con carrito y pago con tarjeta
 - Páginas de producto con sus fotos y su precio
 - Automatización de pedidos: correo al cliente y aviso a ti

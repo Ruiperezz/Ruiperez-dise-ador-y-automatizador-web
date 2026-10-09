@@ -29,7 +29,7 @@ Te quedas el informe aunque luego no me encargues los cambios.
 
 No te enseño capturas de ChatGPT nombrándome: eso cambia de un día para otro y sería venderte humo. Lo que sí puedes abrir es lo que he hecho en ruiperezstudio.es para que una máquina lo entienda.
 
-Si tu web no aparece ni en Google, empieza por el [SEO local](/seo-local/): sin eso, esto sirve de poco.
+Si tu web no aparece ni en Google, esto sirve de poco: esta revisión se apoya en que los buscadores ya te encuentren.
 
 - Un resumen del negocio para modelos de IA: [ruiperezstudio.es/llms.txt](/llms.txt).
 - Mis precios en una [API pública](/api/servicios.json), que dice lo mismo que la web.
@@ -54,7 +54,7 @@ Si tu web no aparece ni en Google, empieza por el [SEO local](/seo-local/): sin 
 - Prometerte que ChatGPT te nombre: no depende de mí ni de nadie.
 - Reescribir la web entera: si hace falta, te lo presupuesto aparte.
 - Cambios que tu plataforma no deja hacer: te lo digo en la revisión, antes de cobrarte.
-- El trabajo mensual de posicionamiento: eso es el SEO local.
+- El posicionamiento mensual en Google, que ahora mismo no ofrezco.
 
 ## ¿Qué le preguntaría tu cliente a ChatGPT?
 
@@ -68,7 +68,7 @@ No. Nadie puede: es decisión de cada herramienta, cambia de una semana a otra y
 
 **¿Esto no es lo mismo que el SEO?**
 
-Se apoya en él: si Google y Bing no te encuentran, ChatGPT tampoco. Lo que cambia es que aquí pesa más que tu web diga claro qué haces, dónde y por cuánto, con datos que una máquina pueda leer. El SEO local mensual es otro servicio; esto es un trabajo puntual.
+Se apoya en él: si Google y Bing no te encuentran, ChatGPT tampoco. Lo que cambia es que aquí pesa más que tu web diga claro qué haces, dónde y por cuánto, con datos que una máquina pueda leer. Esto es un trabajo puntual, no un posicionamiento mensual en Google.
 
 **¿Sirve si mi web está hecha con Wix o WordPress?**
 

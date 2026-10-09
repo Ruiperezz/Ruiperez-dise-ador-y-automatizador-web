@@ -28,7 +28,7 @@ HTML + CSS + JavaScript **estático puro**. Sin `package.json`, sin npm, sin bun
 | Grupo | Rutas |
 |---|---|
 | Home | `/` |
-| Servicios (16) | `/consultoria-ia/` `/panel-de-negocio/` `/visibilidad-chatgpt/` `/tarjeta-nfc-resenas/` `/web-corporativa/` `/landing-page/` `/tienda-online/` `/aplicaciones-web/` `/automatizacion/` `/chatbot-whatsapp/` `/seo-local/` `/email-marketing/` `/mantenimiento-web/` `/gestion-redes-sociales/` `/accesibilidad-web/` `/meta-ads/` |
+| Servicios (14, más el índice `/servicios/` y las demos `/ejemplos/`) | `/consultoria-ia/` `/panel-de-negocio/` `/visibilidad-chatgpt/` `/tarjeta-nfc-resenas/` `/web-corporativa/` `/landing-page/` `/tienda-online/` `/aplicaciones-web/` `/automatizacion/` `/chatbot-whatsapp/` `/email-marketing/` `/mantenimiento-web/` `/gestion-redes-sociales/` `/accesibilidad-web/` `/meta-ads/` |
 | General (1) | `/diseno-web/` |
 | Legales (3) | `/aviso-legal/` `/privacidad/` `/cookies/` |
 | Estudio (2) | `/sobre-mi/` · `/casos/` |
@@ -53,6 +53,19 @@ Otros archivos: `sitemap.xml` (23 URLs — las noindex quedan fuera), `robots.tx
 - **Quitado el 09/10:** «clientes nuevos cada semana», «solo llegan los que van en serio», «rentabilidad inmediata». El ≈30% de Alameda queda como «según los datos que me da el propio cliente; no puedo atribuirlo solo a la web». **Pendiente de Álvaro: confirmar que esa cifra tiene respaldo.**
 - Axe mide mal las páginas con `.rv` si se ejecuta a mitad de animación (falsos positivos de contraste): scrollea la página y espera ~1,7 s, o mide con `reduce`.
 
+## ⚠️ SEO local mensual, gestión de Meta Ads y pack Capta, RETIRADOS (09/10/2026)
+
+**Decisión de Álvaro: «esos servicios vamos a quitarlos de momento».** Se quitaron `/seo-local/` y `/meta-ads/`
+(ahora **redirigen con 307 temporal a `/servicios/`**, en `vercel.json`: es «de momento», por eso no es 308), el
+pack **Capta** (quedan **tres packs**: Arranca, Vende online y Atiende solo), sus entradas en la API (17 servicios y
+3 packs), `llms.txt`, el asistente, el formulario `/presupuesto/`, el sitemap, el pie de las páginas y la habilidad
+`consultar-precios` (con su digest recalculado). **Lo que NO cambia:** el SEO local que va **incluido** en cada web
+(estructura, datos estructurados, ficha de Google) sigue siendo cierto y sigue escrito; y el **píxel y las campañas de
+Meta de la propia web de Álvaro** siguen igual (`consent.js`, `/cookies/`): lo que se quitó es venderlo a terceros.
+Si vuelven, hay que rehacer las dos páginas desde git (`git log -- seo-local meta-ads`) y recalcular el pack.
+**Pendiente de Álvaro:** quitar esos servicios y las publicaciones relacionadas de la **ficha de Google** y revisar las
+publicaciones de Instagram (el conector no edita).
+
 ## Precios oficiales
 
 **Estos son los precios buenos.** Son los que están en producción. Todos **sin IVA**; cada precio visible debe llevar «+ 21% IVA» al lado.
@@ -70,11 +83,9 @@ Otros archivos: `sitemap.xml` (23 URLs — las noindex quedan fuera), `robots.tx
 | Automatización de procesos | desde 990€ |
 | Chatbot IA para WhatsApp | desde 1.290€ + 120€/mes |
 | Email marketing | desde 290€/mes |
-| SEO local | desde 390€/mes |
 | Gestión de redes sociales | desde 450€/mes · **8 publicaciones, 2 en vídeo, 1 red** |
 | Auditoría de accesibilidad | desde 590€ · con correcciones 1.190€ · monitorización 95€/mes |
 | **Mantenimiento web** | **39 / 69 / 99€/mes · alojamiento incluido** |
-| **Gestión de Meta Ads** | **240€/mes** hasta 1.000€/mes de inversión · por encima, 15% de la inversión |
 | **Tarjeta NFC de reseñas** | **27€** la unidad · 2 por 50€ · 4 por 100€ · instalada por Álvaro |
 | **Consultoría de IA** | diagnóstico **490€** · plan **1.390€** · taller **490€** · acompañamiento **240€/mes** (3 h, 1 reunión, mín. 3 meses) |
 | **Asistente interno de IA** | **490€** · hasta 20 documentos · la suscripción a la plataforma la paga el cliente (`/consultoria-ia/#asistente`) |
@@ -123,7 +134,6 @@ Los tres niveles son para clientes nuevos.
 | Pack | Lleva | Suelto | Pack |
 |---|---|---|---|
 | **Arranca** | Web esencial + automatización esencial + 1 tarjeta NFC | 1.107€ | **910€** |
-| **Capta** | Landing page + 3 meses de Meta Ads | 1.310€ | **1.100€** |
 | **Vende online** | Tienda online + automatización | 2.480€ | **2.080€** |
 | **Atiende solo** | Web corporativa + automatización + chatbot IA | 3.470€ | **2.910€** |
 

@@ -26,7 +26,7 @@
       t:"Los precios están publicados, sin tener que preguntar:",
       l:["Landing page: desde 590€","Web esencial (hasta 4 páginas): desde 690€","Web corporativa: desde 1.190€","Tienda online: desde 1.490€","Aplicación de gestión: desde 2.900€ + 90€/mes",
          "Consultoría de IA: diagnóstico desde 490€","Asistente interno de IA: 490€","Panel de negocio: desde 990€ + 39€/mes","Visibilidad en ChatGPT: desde 390€","Automatización: desde 990€ (esencial, 390€)","Chatbot de WhatsApp: desde 1.290€ + 120€/mes",
-         "SEO local: desde 390€/mes","Redes sociales: desde 450€/mes","Email marketing: desde 290€/mes",
+         "Redes sociales: desde 450€/mes","Email marketing: desde 290€/mes",
          "Accesibilidad (Ley 11/2023): desde 590€","Mantenimiento: 39–99€/mes, alojamiento incluido","Tarjeta NFC de reseñas: desde 27€"],
       n:"Todos sin IVA. El precio se cierra por escrito antes de empezar.", u:"/#servicios" },
 
@@ -37,7 +37,7 @@
 
     { k:["cuota","mensual","permanencia","suscripcion","pago unico","pagos","fraccionar","financiar"],
       t:"La web es pago único: no tiene cuota mensual obligatoria.",
-      n:"Los servicios mensuales —mantenimiento, SEO, redes, email— sí llevan cuota, y ninguno tiene permanencia salvo el acompañamiento de IA, que es de tres meses: avisas y se cierra el mes en curso." },
+      n:"Los servicios mensuales —mantenimiento, redes, email— sí llevan cuota, y ninguno tiene permanencia salvo el acompañamiento de IA, que es de tres meses: avisas y se cierra el mes en curso." },
 
     { k:["codigo","propiedad","mio","dependo","atado","migrar","llevarme","fuente"],
       t:"El código es tuyo al 100% desde la entrega, con acceso completo al código fuente.",
@@ -47,23 +47,21 @@
       t:"El SEO local va incluido en todas las webs, sin coste añadido.",
       l:["Estructura optimizada y datos estructurados","Velocidad de carga","Ficha de Google Business configurada",
          "Contenido orientado a lo que busca la gente de tu zona"],
-      n:"Si además quieres trabajo continuo mes a mes, eso es el SEO local mensual, desde 390€/mes.", u:"/seo-local/" },
+      n:"El trabajo de posicionamiento mes a mes no lo ofrezco ahora mismo." },
 
     { k:["hosting","alojamiento","dominio","servidor","anual"],
       t:"El alojamiento va en Vercel y en el plan que uso no tiene coste.",
       n:"El único gasto recurrente es el dominio, unos 12€ al año. Lo gestiono yo y te lo repercuto sin recargo, o lo pones a tu nombre si lo prefieres." },
 
     { k:["pack","packs","packs de servicios","combinacion","todo junto","varios servicios","descuento","oferta","promocion","mas barato si contrato varios","junto","lote"],
-      t:"Hay cuatro packs, entre un 16% y un 18% más baratos que contratando suelto.",
-      l:["Arranca: web esencial + automatización esencial + tarjeta NFC de reseñas · 910€ (suelto 1.107€)","Capta: landing + 3 meses de Meta Ads · 1.100€ (suelto 1.310€)",
-         "Vende online: tienda + automatización de pedidos · 2.080€ (suelto 2.480€)",
+      t:"Hay tres packs, entre un 16% y un 18% más baratos que contratando suelto.",
+      l:["Arranca: web esencial + automatización esencial + tarjeta NFC de reseñas · 910€ (suelto 1.107€)","Vende online: tienda + automatización de pedidos · 2.080€ (suelto 2.480€)",
          "Atiende solo: web + automatización + chatbot IA · 2.910€ (suelto 3.470€)"],
       n:"Si necesitas otra combinación, dime qué dos o tres cosas te hacen falta y te la presupuesto con el mismo descuento por ir juntas.", u:"/#packs" },
 
     { k:["meta ads","facebook ads","instagram ads","anuncios","publicidad","campañas","promocionar","anuncios de facebook","anuncios de instagram","publicidad de pago","gestion de anuncios","cuanto cuesta anunciarse","presupuesto anuncios","inversion publicitaria"],
-      t:"Gestión de Meta Ads: 240€/mes, con los límites escritos.",
-      l:["240€/mes para una inversión de hasta 1.000€/mes","Hasta 3 campañas y 6 anuncios","Una revisión a la semana","Informe mensual en una página","Por encima de 1.000€ de inversión, 15% de la inversión"],
-      n:"Los 240€ son mi trabajo: el dinero de los anuncios lo pagas tú a Meta con tu tarjeta y nunca pasa por mí. Cuenta con unos 300€/mes de inversión para empezar a ver algo.", u:"/meta-ads/" },
+      t:"Ahora mismo no gestiono campañas de anuncios para clientes.",
+      n:"Lo que sí hago es la página a la que enviar ese tráfico: una landing con un único botón de contacto, desde 590€ (+ IVA).", u:"/landing-page/" },
 
     { k:["accesibilidad","accesible","wcag","ley 11/2023","eaa","discapacidad","lector de pantalla","contraste","multa accesibilidad","en 301 549"],
       t:"Auditoría de accesibilidad: desde 590€, informe en 5 días.",
@@ -153,7 +151,7 @@
 
     { k:["landing","una pagina","promocion","campaña","anuncios"],
       t:"Una sola página diseñada para convertir visitas en clientes.",
-      n:"Desde 590€, lista en una semana. Va bien si quieres probar sin gastar mucho o vas a promocionar una oferta concreta.", u:"/landing-page/" },
+      n:"Desde 590€, lista en 1-2 semanas desde que me pasas el contenido. Va bien si quieres probar sin gastar mucho o vas a promocionar una oferta concreta.", u:"/landing-page/" },
 
     { k:["quien eres","sobre ti","experiencia","trabajos","portfolio","proyectos","casos","clientes"],
       t:"Soy Álvaro Ruipérez. Construyo webs, tiendas y aplicaciones de gestión en el sureste.",

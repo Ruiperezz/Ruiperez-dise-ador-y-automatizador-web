@@ -211,18 +211,6 @@
       }
     },
     {
-      "id": "seo-local",
-      "nombre": "SEO local",
-      "url": "https://ruiperezstudio.es/seo-local/",
-      "descripcion": "Trabajo mensual en Google y Google Maps, con informe de posiciones reales.",
-      "precio": {
-        "modelo": "suscripcion_mensual",
-        "desde_eur_sin_iva": 390,
-        "iva_pct": 21,
-        "permanencia": false
-      }
-    },
-    {
       "id": "email-marketing",
       "nombre": "Email marketing",
       "url": "https://ruiperezstudio.es/email-marketing/",
@@ -245,19 +233,6 @@
         "iva_pct": 21,
         "permanencia": false,
         "nota": "No incluye contestar comentarios ni mensajes. Se entrega un guion de respuestas."
-      }
-    },
-    {
-      "id": "meta-ads",
-      "nombre": "Gestión de Meta Ads",
-      "url": "https://ruiperezstudio.es/meta-ads/",
-      "descripcion": "Campañas de Facebook e Instagram con límites escritos: hasta 3 campañas, hasta 6 anuncios, revisión semanal e informe mensual.",
-      "precio": {
-        "modelo": "suscripcion_mensual",
-        "desde_eur_sin_iva": 240,
-        "iva_pct": 21,
-        "permanencia": false,
-        "nota": "Para una inversión publicitaria de hasta 1.000€/mes, que paga el cliente directamente a Meta y no está incluida. Por encima de 1.000€/mes, 15% de la inversión."
       }
     },
     {
@@ -351,20 +326,6 @@
       "ahorro_eur": 197,
       "iva_pct": 21,
       "nota": "Incluye la tarjeta NFC de reseñas. Entrega en 1-2 semanas desde que el cliente entrega el contenido. Sin cuota obligatoria."
-    },
-    {
-      "id": "capta",
-      "nombre": "Pack Capta",
-      "url": "https://ruiperezstudio.es/#packs",
-      "incluye": [
-        "landing-page",
-        "meta-ads (3 meses)"
-      ],
-      "precio_eur_sin_iva": 1100,
-      "precio_suelto_eur_sin_iva": 1310,
-      "ahorro_eur": 210,
-      "iva_pct": 21,
-      "nota": "A partir del cuarto mes, 240€/mes si se continúa con los anuncios. La inversión publicitaria va aparte."
     },
     {
       "id": "vende-online",
