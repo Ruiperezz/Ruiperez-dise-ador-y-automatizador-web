@@ -105,6 +105,22 @@ Tienda de bienestar y descanso montada y llevada por mí: catálogo, carrito, pa
 
 Hay un séptimo en marcha, Finca Doña Carmen, que todavía no está publicado. Lo que ves aquí lo puedes abrir; lo que es privado, como los paneles de gestión, no se enseña.
 
+## Lo que puedo montar, antes de contratarlo
+
+Son demostraciones con datos inventados, no proyectos reales. Sirven para que te imagines el resultado.
+
+### Una reserva en tres pasos
+
+Servicio, día y hora, con confirmación simulada.
+
+### De un mensaje a una atención ordenada
+
+Un esquema de cómo pasa una consulta a un proceso organizado.
+
+### Un panel con datos ficticios
+
+Reservas, solicitudes y un resumen de la semana en una pantalla.
+
 ## Cuatro pasos. Sabes en cuál estás en todo momento.
 
 Cuatro pasos. Ni reuniones de más ni sorpresas al final.

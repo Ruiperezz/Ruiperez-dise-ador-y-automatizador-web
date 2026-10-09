@@ -639,6 +639,8 @@ box-shadow:0 26px 60px -40px rgba(17,19,24,.5)}
 @media(min-width:1100px){.pc{flex-basis:calc((100% - 2.2rem)/3)}}
 @media(prefers-reduced-motion:no-preference){.car-track{scroll-behavior:smooth}}
 /* categorías de servicios */
+.cats3{grid-template-columns:1fr}@media(min-width:900px){.cats3{grid-template-columns:repeat(3,1fr)}}.dm-tag{align-self:flex-start;background:#EAEAF0;color:#4B4F5C;font-size:.76rem;font-weight:700;padding:.28rem .7rem;border-radius:99px}
+
 .cats{display:grid;gap:1.1rem;grid-template-columns:1fr}
 @media(min-width:760px){.cats{grid-template-columns:1fr 1fr}}
 .cat{display:flex;flex-direction:column;gap:.7rem;padding:1.5rem}
@@ -905,6 +907,20 @@ box-shadow:0 26px 60px -40px rgba(17,19,24,.5)}
     <div class="car-cta rv"><a href="/casos/" class="btn btn-s"><span>Ver todos los proyectos</span></a></div>
   </div>
 </section>
+<section class="sec" id="ejemplos" aria-labelledby="ej-h">
+  <div class="wrap">
+    <div class="sec-hd rv">
+      <div><span class="ey">Ejemplos de soluciones</span><h2 id="ej-h">Lo que puedo montar, <em>antes de contratarlo</em></h2></div>
+      <p class="sec-note">Son demostraciones con datos inventados, no proyectos reales. Sirven para que te imagines el resultado.</p>
+    </div>
+    <div class="cats cats3">
+      <div class="card cat rv"><span class="dm-tag">Demo conceptual</span><h3>Una reserva en tres pasos</h3><p>Servicio, día y hora, con confirmación simulada.</p><a href="/ejemplos/#reserva" class="btn btn-s"><span>Probar la demo</span></a></div>
+      <div class="card cat rv" style="--d:70ms"><span class="dm-tag">Demo conceptual</span><h3>De un mensaje a una atención ordenada</h3><p>Un esquema de cómo pasa una consulta a un proceso organizado.</p><a href="/ejemplos/#atencion" class="btn btn-s"><span>Ver el esquema</span></a></div>
+      <div class="card cat rv" style="--d:140ms"><span class="dm-tag">Demo conceptual</span><h3>Un panel con datos ficticios</h3><p>Reservas, solicitudes y un resumen de la semana en una pantalla.</p><a href="/ejemplos/#panel" class="btn btn-s"><span>Ver el panel</span></a></div>
+    </div>
+  </div>
+</section>
+
 <section class="sec" id="proceso">
   <div class="wrap">
     <div class="sec-hd rv">
@@ -1125,7 +1141,7 @@ box-shadow:0 26px 60px -40px rgba(17,19,24,.5)}
       </div>
       <div>
         <div class="ft-h">Estudio</div>
-        <div class="ft-l"><a href="/diseno-web/">Diseño web</a><a href="/casos/">Proyectos reales</a><a href="/sobre-mi/">Quién soy</a></div>
+        <div class="ft-l"><a href="/servicios/">Servicios y precios</a><a href="/diseno-web/">Diseño web</a><a href="/casos/">Proyectos reales</a><a href="/sobre-mi/">Quién soy</a></div>
       </div>
       <div>
         <div class="ft-h">Contacto</div>
