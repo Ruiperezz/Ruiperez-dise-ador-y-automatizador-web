@@ -139,3 +139,32 @@ Si en el paso 3 no aparece nada, mira la consola por si es la CSP: cualquier dom
       se crea pero no arranca
 - [ ] Comprobar con Pixel Helper los seis pasos de arriba
 - [ ] `tiktokPixelId`, cuando toque TikTok Ads
+
+## Esquema de eventos y plan de pruebas (09/10/2026)
+
+**Eventos propios** (`js/consent.js`, sección «EVENTOS PROPIOS»). Ninguno lleva datos personales: solo la ruta de la página, el
+servicio (parámetro `s` saneado de la URL) y, en `generate_lead`, el origen saneado (`utm_source`-`utm_campaign`).
+
+| Evento GA4 | Cuándo | Consentimiento |
+|---|---|---|
+| `view_service` | se ve la ficha de un servicio o una landing de pago | analítica |
+| `click_primary_cta` | clic en un botón que lleva a `/presupuesto/` (`service`, `page`) | analítica |
+| `form_start` | primera interacción con el formulario de `/presupuesto/` | analítica |
+| `generate_lead` | **se abre WhatsApp con el mensaje ya escrito.** Es INTENCIÓN de contacto: no confirma que el mensaje se envíe | analítica |
+| `email_click` / `phone_click` | clic en `mailto:` / `tel:` | analítica |
+| `view_project` | clic hacia la web de un proyecto del portfolio | analítica |
+
+Meta: `PageView`, `ViewContent` (fichas de servicio y landings) y `Contact` (misma condición que `generate_lead`), solo con consentimiento de publicidad.
+
+- **Para Google Ads, importar solo `generate_lead`** como conversión principal. El resto, como eventos secundarios o de audiencia.
+- **No existen** `lead_submitted` ni `qualified_lead`: no hay servidor que confirme un envío ni forma de saber si un contacto está cualificado.
+  Cuando exista el panel propio, ahí es donde se registra el lead cualificado a mano o por integración.
+- UTM: GA4 los lee de la URL de la primera página de la visita; el origen para el mensaje de WhatsApp solo se guarda en `sessionStorage` con consentimiento de publicidad.
+- No hay Conversion API de Meta ni Enhanced Conversions de Google: **no están implementadas** y no se declaran.
+
+**Plan de pruebas sin gastar presupuesto** (hecho el 09/10/2026 en local, interceptando Google y Meta con respuestas vacías para no ensuciar GA4):
+1. Rechazar → 0 eventos, 0 peticiones a terceros, `fbq` inexistente. ✔
+2. Aceptar todo con `?utm_source=google&utm_medium=cpc&utm_campaign=tiendas` → `view_service`, `click_primary_cta`, `email_click`, `phone_click`, `generate_lead` (source `google-tiendas`) y `view_project`, **una vez cada uno**; en Meta, `init`, `PageView`, `ViewContent` y `Contact` una vez cada uno. ✔
+3. Solo analítica → eventos GA4 sin `fbq` ni píxel de Meta. ✔
+4. `/presupuesto/?s=chatbot&p=lp/chatbot-ia` → `form_start` una vez aunque se toquen varios campos. ✔
+5. **Pendiente en vivo, con tus accesos:** GA4 → Informes en tiempo real / DebugView con una visita de prueba, y Meta → Probar eventos. Confirmar que `generate_lead` aparece una sola vez por clic.

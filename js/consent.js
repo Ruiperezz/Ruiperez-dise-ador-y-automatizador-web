@@ -122,10 +122,10 @@
        tercero ni transferencia internacional por este concepto. */
     if (RS_CONFIG.vercelAnalytics) script("rs-vercel", "/_vercel/insights/script.js");
     if (RS_CONFIG.ga4Id) {
-      script("rs-ga4", "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(RS_CONFIG.ga4Id), function () {
-        gtag("js", new Date());
-        gtag("config", RS_CONFIG.ga4Id);
-      });
+      /* js y config se encolan ANTES de que llegue el script, como en el snippet
+         oficial: así los eventos propios que se encolan después no se pierden. */
+      if (!window.rsGaInit) { window.rsGaInit = true; gtag("js", new Date()); gtag("config", RS_CONFIG.ga4Id); }
+      script("rs-ga4", "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(RS_CONFIG.ga4Id));
     }
   }
 
@@ -158,6 +158,7 @@
     });
     if (v.publicidad) { persistirOrigen(); cargarPublicidad(); }
     if (v.analiticas) cargarAnaliticas();
+    vistaPagina(v);
   }
 
   /* ═══ ORIGEN DE CAMPAÑA ═══
@@ -233,6 +234,63 @@
         gtag("event", "generate_lead", { page: pagina(), source: origen() });
       }
     }, true);
+  }
+
+  /* ═══ EVENTOS PROPIOS ═══
+     Esquema (ninguno lleva datos personales; solo la ruta de la página y el
+     servicio, que sale de un parámetro saneado de la URL):
+       view_service       · se ve la ficha de un servicio o una landing de pago
+       click_primary_cta  · clic en cualquier botón que lleva al formulario /presupuesto/
+       form_start         · primera interacción con el formulario
+       generate_lead      · WhatsApp abierto con el mensaje ya escrito (ver prepararWhatsApp).
+                            Es INTENCIÓN de contacto: no confirma que el mensaje se envíe.
+       email_click · phone_click · view_project
+     No existen lead confirmado ni lead cualificado: no hay forma fiable de saberlo. */
+  var SERVICIOS = ["landing-page", "web-corporativa", "tienda-online", "aplicaciones-web", "automatizacion",
+    "chatbot-whatsapp", "email-marketing", "gestion-redes-sociales", "accesibilidad-web", "mantenimiento-web",
+    "panel-de-negocio", "visibilidad-chatgpt", "consultoria-ia", "tarjeta-nfc-resenas"];
+  var PROYECTOS = ["tuktukcartagena.com", "floristeriaalameda.com", "casa-del-sushi.vercel.app",
+    "belu-francia-fisioterapeuta.vercel.app", "zenconfort.es"];
+  var vistoGA = false, vistoMeta = false;
+
+  function evento(nombre, params) {
+    var v = leer();
+    if (v && v.analiticas && RS_CONFIG.ga4Id) gtag("event", nombre, params || {});
+  }
+  function esFichaDeServicio() {
+    var ruta = location.pathname.replace(/^\/|\/$/g, "");
+    return SERVICIOS.indexOf(ruta) !== -1 || /^lp\/[a-z-]+$/.test(ruta);
+  }
+  function vistaPagina(v) {
+    if (!esFichaDeServicio()) return;
+    var ruta = pagina();
+    if (v.analiticas && RS_CONFIG.ga4Id && !vistoGA) { vistoGA = true; gtag("event", "view_service", { service: ruta }); }
+    if (v.publicidad && window.fbq && !vistoMeta) { vistoMeta = true; window.fbq("track", "ViewContent", { content_name: ruta }); }
+  }
+  function prepararEventos() {
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest("a[href]");
+      if (!a) return;
+      var h = a.getAttribute("href") || "";
+      if (h.indexOf("/presupuesto/") === 0) {
+        var m = h.match(/[?&]s=([^&#]*)/);
+        evento("click_primary_cta", { service: limpiar(m && m[1]), page: pagina() });
+      } else if (h.indexOf("mailto:") === 0) evento("email_click", { page: pagina() });
+      else if (h.indexOf("tel:") === 0) evento("phone_click", { page: pagina() });
+      else if (/^https?:\/\//.test(h)) {
+        var host = a.hostname.replace(/^www\./, "");
+        if (PROYECTOS.indexOf(host) !== -1) evento("view_project", { project: host, page: pagina() });
+      }
+    }, true);
+    var f = document.querySelector("form");
+    if (f && location.pathname.indexOf("/presupuesto/") === 0) {
+      var iniciado = false;
+      f.addEventListener("focusin", function () {
+        if (iniciado) return; iniciado = true;
+        var s = new URLSearchParams(location.search).get("s");
+        evento("form_start", { service: limpiar(s), page: pagina() });
+      });
+    }
   }
 
   /* ═══ INTERFAZ ═══ */
@@ -403,6 +461,7 @@
     capturarOrigen();              // solo en memoria; se persiste si hay consentimiento
     construir();
     prepararWhatsApp();
+    prepararEventos();
     var v = leer();
     if (v) { banner.hidden = true; aplicar(v); }
     else setTimeout(function () { banner.classList.add("on"); banner.focus(); }, 900);
