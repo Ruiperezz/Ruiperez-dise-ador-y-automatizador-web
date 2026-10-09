@@ -343,8 +343,8 @@ escrito en la página. Es lo único que evita la discusión de quién retrasó q
 `rgba(163,230,53,.22)`, **dos colores que no están en ninguna parte del sitio actual**, y
 una R con trazo de 21,7 que a 16px —el tamaño al que Google lo enseña— se emborronaba.
 
-Ahora: tinta `#211D18` y crema `#F7F2E9`, R a un solo trazo. Comprobado a 16, 32, 64 y
-120px. **El `apple-touch-icon.png` se genera RENDERIZANDO el SVG**, no redibujándolo:
+(Histórico: tinta `#211D18` y crema `#F7F2E9`, R a un solo trazo. **Sustituido el 09/10/2026 por el logo definitivo y la paleta Grafito + Violeta**.) Comprobado a 16, 32, 64 y
+120px. **(Ya no hay SVG: desde el 09/10/2026 los iconos salen del logo definitivo.) El `apple-touch-icon.png` se generaba RENDERIZANDO el SVG**, no redibujándolo:
 hacerlo con primitivas de PIL dejaba una muesca donde el arco se unía al trazo.
 
 
@@ -513,6 +513,46 @@ completa en `docs/marca.md`. Lo que no hay que olvidar:
   en las de 6 enlaces y 840 px en la de 4**, y los enlaces no se parten (`white-space:nowrap`). **Si añades o quitas un
   enlace del menú, recalcula ese punto**: el ancho mínimo en una sola línea es ~1236 px con 7 enlaces y ~996 con 6.
 
+## Identidad cromática: Grafito + Violeta eléctrico (09/10/2026)
+
+**Álvaro eligió la «Paleta A»** y su logo definitivo (blanco y violeta sobre grafito) la confirma. Sustituye a
+crema + terracota + oliva. **Revertible de una vez:** va en su propio commit (`feat: identidad cromática`).
+
+| Token | Valor | Para qué | Contraste |
+|---|---|---|---|
+| `--ink` | `#111318` | Grafito: texto, fondos oscuros | 17,4:1 sobre `--bg` |
+| `--bg` | `#F7F7FA` | Blanco roto: fondo de página | — |
+| `--surf` | `#FFFFFF` | Tarjetas y formularios | — |
+| `--soft` / `--mute` / `--faint` | `#4B4F5C` / `#5F6371` / `#656977` | Texto secundario (de más a menos fuerte) | 7,6 / 5,6 / 5,1:1 sobre `--bg`; **≥4,56:1 incluso sobre la ficha gris más oscura** |
+| `--line` / `--line2` | `#E1E2E8` / `#E4E5EB` | Bordes | — |
+| `--brand` | `#6C5CE7` | **Violeta de marca: CTA y detalles.** Relleno con texto blanco | blanco sobre violeta 4,86:1 |
+| `--brand-txt` | `#5B4BD9` | Violeta para **texto** sobre claro | ≥5,08:1 |
+| `--brand-d` | `#5546CF` | Hover del CTA | blanco sobre él 6,64:1 |
+| `--brand-lt` | `#A99DF7` | Violeta para texto/iconos sobre **grafito** | 7,83:1 sobre `--ink` |
+| `--ok` | `#2A7553` | **Funcional:** éxito, ✓ de «incluye», «caso real», disponibilidad | ≥4,65:1 |
+| `--err` | `#B3261E` | **Funcional:** error | ≥5,5:1 |
+
+**Reglas:**
+- ⚠️ **El violeta es la marca; el verde y el rojo son SOLO estado.** No uses `--ok` como adorno ni `--brand` para
+  indicar éxito o error. En la migración los usos decorativos del verde (avatares, cifras grandes, cajas «Para ti si»,
+  viñetas de packs, iconos de contacto) pasaron a violeta o a grafito; se quedaron verdes las ✓, el punto de
+  disponibilidad, la etiqueta «Caso real» y la insignia de reseñas.
+- ⚠️ **El gris secundario de la paleta, `#777B87`, NO sirve para texto pequeño** (3,95:1 sobre `--bg`; 3,69 sobre una
+  ficha). Vale para bordes, iconos y componentes de interfaz (3:1). Se usa en el borde del interruptor de cookies.
+- ⚠️ **Violeta sobre grafito solo da 3,82:1:** para texto sobre fondo oscuro usa `--brand-lt`, nunca `--brand`.
+- **Colores que NO se tocan:** los de terceros —la «G» de Google en cuatro colores, las estrellas amarillas de Google
+  (`#F4B400`) y el verde de WhatsApp (`#128C7E`, `#0E6B60`)— y el azul `#1A4FB4` del texto de ejemplo del lector de
+  pantalla en `/accesibilidad-web/`. Cambiarlos sería falsificar marcas ajenas o la demo.
+- Los tonos arena/crema (1.057 usos) se mapearon a una **rampa gris-azulada monótona** que conserva su orden de
+  luminosidad. `rgba(33,29,24,α)` → `rgba(17,19,24,α)`, `rgba(247,242,233,α)` → `rgba(247,247,250,α)`, etc.: el alpha no cambia.
+- **Los nombres de los tokens cambiaron** (`--terra`→`--brand`, `--terra-txt`→`--brand-txt`, `--terra-d`→`--brand-d`,
+  `--sand`→`--brand-lt`, `--olive`→`--ok`, `--red`→`--err`) porque `--terra` ya no era terracota.
+- ⚠️ **Lo que NO cambió y queda con la identidad anterior:** las seis publicaciones de Instagram (`img/ig/`), las
+  imágenes de las publicaciones de la ficha (`img/gbp/`) y las capturas de las webs de clientes (que son de ellos).
+- **Tipografías sin tocar:** Instrument Serif y Karla. El logo usa una sans ancha propia; no hace falta cargarla.
+- Si se añade una página nueva: copia los tokens de `:root` de otra, no inventes colores sueltos, y si necesitas uno
+  nuevo, define primero su contraste con `--bg`, con `--surf` y con la ficha gris más oscura (`#EAEAF0`).
+
 ## Clientes
 
 **Seis proyectos, y no todos son clientes.** La distinción importa y está reflejada en las etiquetas del sitio:
@@ -645,7 +685,7 @@ puede continuarlo.
   solo se llama desde `aplicar(v)` cuando `v.publicidad` es cierto, y el Consent Mode v2
   arranca con los cuatro permisos en `denied`.
 - Contraste WCAG AA, foco visible, `alt` en todas las imágenes, objetivos táctiles de 44px o más.
-- `--terra` (#B5522F) da 4,47:1 sobre el fondo crema: **no vale para texto pequeño**. Para texto usa `--terra-txt` (#A84A28, 5,12:1). Para rellenos, `--terra`.
+- **Identidad cromática: Grafito + Violeta eléctrico (09/10/2026).** Ver la sección «Identidad cromática» más abajo. `--brand` (#6C5CE7) da 4,54:1 sobre el blanco roto: **vale para texto, pero por muy poco**; para texto usa `--brand-txt` (#5B4BD9, ≥5,08:1) y para rellenos `--brand`.
 - El pie tiene que ser idéntico en las 16 páginas que lo llevan (las tres legales llevan un pie reducido, sin lista de servicios). Si añades una página, añádela al pie de todas.
 - **En móvil el mockup del hero va ANTES del texto** (`.scene{order:-1}`). Su portfolio vende con fotografía real; el escaparate no puede esconder su única prueba tras 800px de texto, que es justo donde aterriza el tráfico de pago. Con ese orden, el elemento LCP en móvil pasa a ser la imagen y el `fetchpriority="high"` por fin sirve para algo. Medido: mismo LCP que con el texto delante.
 - Las webs de los clientes se enlazan de verdad, con `rel="noopener noreferrer nofollow"`: floristeriaalameda.com, zenconfort.es, tuktukcartagena.com y casa-del-sushi.vercel.app. La página promete «puedes abrirlas y comprobarlo», así que tienen que ser enlaces, no texto.
