@@ -125,7 +125,7 @@ No. Necesito que sepas cómo funciona tu negocio, que eso ya lo sabes. El cuesti
 
 **Otros hacen el diagnóstico gratis. ¿Por qué cobras el tuyo?**
 
-Porque una llamada gratis de 30 minutos sirve para presupuestarte algo. Esto son unas seis horas de trabajo y te quedas el informe aunque no me contrates nada más. Si luego me encargas la automatización, el chatbot o la aplicación en 30 días, te descuento 250€. Y si el informe no trae tres acciones concretas con su coste, te devuelvo los 490€.
+Porque una llamada gratis de 30 minutos sirve para presupuestarte algo. Esto son unas seis horas de trabajo y te quedas el informe aunque no me contrates nada más. Si luego me encargas la automatización, el chatbot o la aplicación en 30 días, te descuento 250€. Y si el informe no trae tres acciones concretas con su coste, te devuelvo los 490€. Me lo pides por correo en los 7 días siguientes a recibir el informe, y te lo devuelvo en un máximo de 14 días. La garantía cubre que el informe traiga esas tres acciones con su coste, no que decidas ponerlas en marcha ni un resultado concreto. Se aplica una vez por cliente.
 
 **¿No me vas a recomendar justo lo que tú vendes?**
 

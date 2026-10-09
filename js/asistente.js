@@ -84,7 +84,7 @@
       t:"La consultoría de IA empieza por un diagnóstico de 490€ + IVA:",
       l:["Sesión de 90 minutos e informe en 5 días laborables","Qué tareas puede hacer la IA, cuánto cuesta montarlas y cuántas horas ahorran",
          "Plan con taller para tu equipo: 1.390€","Acompañamiento: 240€/mes, 3 horas y una reunión al mes, mínimo 3 meses"],
-      n:"Si el informe no trae tres acciones concretas con su coste, te devuelvo el dinero. Si ya sabes lo que quieres automatizar, no te hace falta: mira la automatización esencial.", u:"/consultoria-ia/" },
+      n:"Si el informe no trae tres acciones concretas con su coste, te devuelvo los 490€: me lo pides por correo en los 7 días siguientes al informe y te los devuelvo en un máximo de 14 días. Se aplica una vez por cliente. Si ya sabes lo que quieres automatizar, no te hace falta: mira la automatización esencial.", u:"/consultoria-ia/" },
 
     { k:["web esencial","web corporativa","pagina web","paginas web","diseno web","sitio web","hacer una web","crear una web","web para mi negocio","quiero una web","necesito una web"],
       t:"Según el tamaño que necesites:",

@@ -104,7 +104,7 @@
         "desde_eur_sin_iva": 490,
         "hasta_eur_sin_iva": 1390,
         "iva_pct": 21,
-        "nota": "El informe llega en cinco días laborables desde la sesión. Si no trae tres acciones concretas con su coste, se devuelve el dinero. 250€ de descuento si en 30 días se contrata la automatización de procesos, el chatbot o la aplicación; no se suma al descuento de los packs. No se garantiza el cumplimiento del Reglamento de IA.",
+        "nota": "El informe llega en cinco días laborables desde la sesión. Si no trae tres acciones concretas con su coste, se devuelve el dinero: se pide por correo en los 7 días siguientes al informe y se devuelve en un máximo de 14 días; una vez por cliente. 250€ de descuento si en 30 días se contrata la automatización de procesos, el chatbot o la aplicación; no se suma al descuento de los packs. No se garantiza el cumplimiento del Reglamento de IA.",
         "planes": [
           {
             "nombre": "Diagnóstico de IA",
