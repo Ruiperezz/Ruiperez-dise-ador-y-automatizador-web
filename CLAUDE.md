@@ -44,6 +44,15 @@ la FAQ de `/meta-ads/`.
 
 Otros archivos: `sitemap.xml` (23 URLs — las noindex quedan fuera), `robots.txt`, `fonts/` (3 WOFF2), `vercel.json` (CSP, HSTS, X-Frame-Options, cache de `/img/`), `favicon.ico`, `apple-touch-icon.png`, `img/` y `img/brand/` (el logo).
 
+## Reorganización de la home (09/10/2026, segunda pasada)
+
+- **Orden de la home:** hero → qué cambia → **cuatro áreas de servicios** → **carrusel de proyectos reales** → ejemplos → cómo trabajo → caso Alameda → reseñas → packs → comparativa → dudas → contacto. El detalle y los precios de cada servicio viven en **`/servicios/`** (nueva, indexable), no en la home.
+- **Carrusel (`#proyectos`):** seis tarjetas, sin librería ni autoplay, CSS scroll-snap + botones + flechas de teclado. Cada una lleva su etiqueta: *Cliente* (TukTuk, Alameda), *Entregado como demo* (Casa del Sushi, Belu), *Propuesta de landing* (Buccaro) y *Proyecto propio* (Zenconfort). **Si cambia el estatus de un proyecto, cámbialo aquí y en `/casos/`.** Alameda NO lleva el 4,9★ en el carrusel (regla de las cuatro páginas).
+- **`/ejemplos/`:** tres demos con datos ficticios (reserva simulada, flujo de atención, panel). `noindex`, fuera del sitemap, enlazada desde la home. **No conectar a nada real.**
+- **Menú de 5 enlaces** en las 22 páginas con menú: Inicio, Servicios, Proyectos, Sobre mí, Contacto. Hamburguesa hasta 1000 px en todas. El CTA dice «Cuéntame tu proyecto» desde 700 px y «Presupuesto» por debajo (dos `<span>`).
+- **Quitado el 09/10:** «clientes nuevos cada semana», «solo llegan los que van en serio», «rentabilidad inmediata». El ≈30% de Alameda queda como «según los datos que me da el propio cliente; no puedo atribuirlo solo a la web». **Pendiente de Álvaro: confirmar que esa cifra tiene respaldo.**
+- Axe mide mal las páginas con `.rv` si se ejecuta a mitad de animación (falsos positivos de contraste): scrollea la página y espera ~1,7 s, o mide con `reduce`.
+
 ## Precios oficiales
 
 **Estos son los precios buenos.** Son los que están en producción. Todos **sin IVA**; cada precio visible debe llevar «+ 21% IVA» al lado.
