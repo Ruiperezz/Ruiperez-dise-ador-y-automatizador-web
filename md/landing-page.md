@@ -63,7 +63,7 @@ Landing informativa entregada, pendiente de cerrar. Los precios que aparecen en 
 
 - Diseño propio, sin plantilla
 - Botón de WhatsApp
-- Lista en 1 semana
+- Lista en 1-2 semanas
 - Se ve bien en el móvil
 - 30 días de ajustes
 

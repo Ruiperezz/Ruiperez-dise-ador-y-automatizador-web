@@ -117,9 +117,9 @@ Una web enseña información. Una aplicación la guarda, la protege y le da a ca
 
 Porque una aplicación tiene una base de datos funcionando las 24 horas. Los 90€/mes cubren el alojamiento, la base de datos, las copias de seguridad y el soporte. Una web estática no necesita nada de eso, y por eso no la cobro.
 
-**2.900€ frente a lo que pide una agencia, ¿dónde está la trampa?**
+**2.900€, ¿dónde está la trampa?**
 
-No hay trampa: hay menos estructura. Una agencia parte de 5.000€ o más porque tiene comercial, jefe de proyecto y oficina que pagar. Aquí hablas conmigo y programo yo. Te ahorras la estructura, no el trabajo.
+No hay trampa: es un precio «desde», con el alcance escrito en esta página y una cuota de 90€/mes que cubre la base de datos, el alojamiento y el soporte. Hablas conmigo y programo yo, sin comercial ni jefe de proyecto de por medio. Si algo cuesta más, te lo digo antes de empezar.
 
 **¿Cuánto se tarda?**
 

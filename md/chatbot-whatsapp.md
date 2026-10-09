@@ -64,6 +64,7 @@ Ejemplo ilustrativo de cómo se aplica este servicio. No corresponde a un client
 - WhatsApp Business oficial
 - Informe mensual
 - Ajustes incluidos
+- Plazo cerrado por escrito antes de empezar, según el alcance y desde que me pasas los accesos
 
 ## ¿Hablamos de tu negocio?
 

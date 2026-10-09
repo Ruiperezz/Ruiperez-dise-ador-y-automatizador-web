@@ -198,23 +198,20 @@ Contratado por separado: 3.470€
 - Reservas o citas que llegan ya cerradas a tu móvil
 - Te paso solo las conversaciones que merecen tu tiempo
 
-## No pagas la oficina de una agencia de Murcia. Pagas tu web.
+## Trato directo, precio cerrado y tu web es tuya.
 
-Una agencia mantiene oficina, comerciales y departamentos. Yo no, y eso lo notas en el presupuesto.
+Lo que recibes y cómo trabajo, sin letra pequeña. Sirve para comparar mi propuesta con cualquier otra.
 
-- Hablas con un comercial
-- Plazos de 1 a 3 meses
-- Cuotas mensuales obligatorias
-- Cambios = más presupuesto
-- La web suele depender de ellos
-- Casi siempre WordPress con plantilla
-- Precio cerrado y trato directo, como yo
-- Código propio, sin plantilla ni plugins
-- Automatización de procesos incluida en el catálogo
-- Chatbot de WhatsApp con IA
-- Código fuente entregado al completo
-- Interlocutor único, lista en 1-2 semanas
-- SEO local incluido en todas las webs
+- Hablas con quien programa, sin comerciales ni intermediarios
+- Te respondo yo, normalmente el mismo día
+- Un solo interlocutor durante todo el proyecto
+- Pago único en las webs; las cuotas mensuales, indicadas en cada ficha
+- Qué incluye y qué queda fuera, por escrito antes de empezar
+- Plazo de 1-2 semanas desde que me pasas el contenido
+- Diseño y código propios, sin plantilla
+- Configuración inicial de SEO local incluida en la web
+- Automatización y chatbot de WhatsApp con IA, si los necesitas
+- Si un día quieres llevarte la web a otro proveedor, te ayudo con la migración sin coste
 
 ## Cuéntame qué necesitas. Te respondo yo.
 
@@ -257,9 +254,9 @@ Los primeros 30 días incluyen ajustes sin coste. Después: plan de mantenimient
 
 Sistemas que hacen tareas repetitivas solos: email automático cuando llega un lead, chatbot en WhatsApp que responde y toma reservas a las 2am, alertas de pedidos, sincronización entre apps. Desde 990€.
 
-**¿Por qué no contratar una web de 180–300€?**
+**¿Qué diferencia hay con una web de 180–300€?**
 
-Las webs de 180-300€ son plantillas genéricas sin SEO local real, lentas en móvil y con costes anuales ocultos (hosting, dominio, plugins). Con código propio obtienes diseño único, velocidad y posicionamiento real en Google.
+Depende de lo que incluya cada oferta, y por eso conviene compararlas punto por punto: si el diseño es propio o de plantilla, si lleva SEO local, si el alojamiento y el dominio tienen cuota anual, si te entregan el código y quién tiene el control. Yo publico el precio y lo que incluye y no incluye cada servicio, para que puedas hacer esa comparación con cualquier presupuesto.
 
 ---
 
