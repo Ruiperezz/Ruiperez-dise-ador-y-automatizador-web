@@ -196,6 +196,8 @@ var f=document.getElementById("fpres");if(!f)return;
 var TEL="34642084042";
 var P=new URLSearchParams(location.search);
 var s=document.getElementById("f-serv"),pre=P.get("s");
+/* Sin servicio en el enlace, lo honesto es «Todavía no lo sé», no la primera opción de la lista. */
+for(var j=0;j<s.options.length;j++){if(s.options[j].value==="no-se"){s.selectedIndex=j;break;}}
 if(pre){for(var i=0;i<s.options.length;i++){if(s.options[i].value===pre){s.selectedIndex=i;break;}}}
 function err(id,m){var c=document.getElementById(id);if(c)c.textContent=m||"";}
 function val(){

@@ -483,11 +483,12 @@ informe y un borrador por negocio: Ruipérez Studio, TukTuk Cartagena y Floriste
   dedicatoria; el botón «Pedir por WhatsApp» manda un mensaje genérico sin nada de eso. Es el mismo
   problema que tuvo esta web. Pendiente de medir cuántos pedidos entran por cada vía.
 - **La web de Alameda es `floristeriaalameda.com`** (la `.es` no existe).
-- **No se cita ninguna cifra de flota ni de aforo de TukTuk:** el formulario público dice 7 tuk tuks y 28
-  personas y la leyenda de su panel dice 3. Las páginas de esta web dicen «comprueba el aforo» a secas
-  hasta que Álvaro confirme la cifra.
-- **Permiso recibido el 09/10/2026** de TukTuk y Alameda para hacer el diagnóstico (Álvaro lo confirma; hay
-  que guardar el mensaje). La página `/consultoria-ia/diagnostico-real/` **no dice «ahorra X horas»**: tiene una
+- **La flota de TukTuk son 7 tuk tuks** (confirmado por Álvaro el 09/10/2026). Pero la leyenda de su panel
+  dice «3 disponibles (libre)»: pendiente de comprobar que el panel maneja los 7. Las páginas de esta web no
+  citan ninguna cifra de flota ni de aforo.
+- **Permiso VERBAL del 09/10/2026** de TukTuk y Alameda para hacer lo necesario «mientras su web siga en
+  funcionamiento» (Álvaro lo aclaró; no hay nada por escrito). Si dejan de estar en marcha o lo retiran, se
+  quita la página y las capturas. La página `/consultoria-ia/diagnostico-real/` **no dice «ahorra X horas»**: tiene una
   calculadora donde el visitante pone sus propios números. **Cuando haya tiempos medidos y autorizados por
   escrito, se publican ahí con su origen y se pasa la página a `index,follow` y al sitemap.**
 - **Las cifras de facturación, pedidos o reservas de un cliente no van en el repositorio** ni en la web
@@ -630,7 +631,7 @@ puede continuarlo.
 - **En móvil el mockup del hero va ANTES del texto** (`.scene{order:-1}`). Su portfolio vende con fotografía real; el escaparate no puede esconder su única prueba tras 800px de texto, que es justo donde aterriza el tráfico de pago. Con ese orden, el elemento LCP en móvil pasa a ser la imagen y el `fetchpriority="high"` por fin sirve para algo. Medido: mismo LCP que con el texto delante.
 - Las webs de los clientes se enlazan de verdad, con `rel="noopener noreferrer nofollow"`: floristeriaalameda.com, zenconfort.es, tuktukcartagena.com y casa-del-sushi.vercel.app. La página promete «puedes abrirlas y comprobarlo», así que tienen que ser enlaces, no texto.
 - **Capturas reales en `/img/`:** `alameda-catalogo`, `alameda-tienda`, `alameda-producto` y `alameda-resenas` (tienda online de Alameda); `tuktuk-home`, `tuktuk-tours`, `tuktuk-reserva` y `tuktuk-galeria` (TukTuk Cartagena); `alameda-carrito` (el carrito con Stripe); `buccaro-alicante` y `buccaro-catalogo` (propuesta de landing). 900px de ancho y WebP a calidad 82, como el resto. **No pongas mockups inventados donde haya una captura real**: los mockups en CSS con productos y precios de mentira se han ido sustituyendo por capturas de webs publicadas.
-- **Las páginas de ciudad se fusionaron el 23/09/2026.** `/diseno-web-cartagena/` y `/diseno-web-murcia/` → `/diseno-web/`; `/automatizacion-procesos-murcia/` → `/automatizacion/`; `/chatbot-whatsapp-cartagena/` → `/chatbot-whatsapp/`. Decisión de Álvaro: repetían contenido y competían contra la home, que ya rankeaba por encima de ellas. **Las ocho redirecciones 301 viven en `vercel.json`: no las borres**, son lo único que evita que esas URLs devuelvan 404 a quien las tenga guardadas o a lo que Google ya tenía indexado.
+- **Las páginas de ciudad se fusionaron el 23/09/2026.** `/diseno-web-cartagena/` y `/diseno-web-murcia/` → `/diseno-web/`; `/automatizacion-procesos-murcia/` → `/automatizacion/`; `/chatbot-whatsapp-cartagena/` → `/chatbot-whatsapp/`. Decisión de Álvaro: repetían contenido y competían contra la home, que ya rankeaba por encima de ellas. **Las ocho redirecciones viven en `vercel.json` (son 308, permanentes; para Google equivalen a un 301): no las borres**, son lo único que evita que esas URLs devuelvan 404 a quien las tenga guardadas o a lo que Google ya tenía indexado.
 - **IndexNow activo (23/09/2026).** La clave es `a8577673437441do892Fddobbmi810doF4mi2` y vive en un archivo de ese mismo nombre en la raíz. **No lo borres ni lo renombres:** si desaparece, Bing deja de aceptar los avisos y no lo dice. No es un secreto — tiene que ser público para que funcione. Cada vez que cambien URLs importantes, avisa con un POST a `api.indexnow.org/indexnow` con el host, la clave y la lista.
 - **Bing Webmaster Tools** está dado de alta con `ruiperezstudio.es`. Importa porque **ChatGPT busca en Bing**: sin estar bien indexado ahí, ChatGPT no te cita.
 - **`llms.txt` en la raíz** resume el negocio para los modelos. Si cambias precios o proyectos, cámbialo también ahí: no se sincroniza solo.

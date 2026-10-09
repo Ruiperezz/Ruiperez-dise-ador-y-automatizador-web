@@ -19,12 +19,14 @@ Capturas: `../capturas/tuktuk-01-home.png` y `tuktuk-02-reserva.png`.
 Conocido del proyecto, **no observado hoy desde fuera**: correos automáticos al cliente y al
 empresario, y un panel privado con pagos, reservas y bloqueo de días, horas o parte de la flota.
 
-## 2. ⚠️ A confirmar antes de nada
+## 2. ⚠️ A comprobar en el panel
 
-- **La flota.** El formulario público habla de 7 tuk tuks y 28 personas. La leyenda del panel
-  (captura que pasó Álvaro) habla de «3 disponibles». Hay que saber cuál es la cifra actual: si
-  el panel arrastra una cifra vieja, el dueño podría estar viendo disponibilidad equivocada.
-  *(Las páginas de ruiperezstudio.es ya no citan ninguna cifra de flota desde hoy.)*
+- **La flota son 7 tuk tuks** (confirmado por Álvaro el 09/10/2026), como dice el formulario público.
+  Pero la leyenda del panel (captura que pasó Álvaro) habla de «3 disponibles (libre)», «1-2
+  (parcial)» y «0 (bloqueado)». **Hay que abrir el panel y comprobar si un día con los 7 libres se
+  muestra bien y si el dueño puede bloquear 4, 5, 6 o 7 tuk tuks.** Si la leyenda arrastra el 3
+  de una versión anterior, es un fallo del panel de un cliente, no de esta web.
+  *(Las páginas de ruiperezstudio.es no citan ninguna cifra de flota.)*
 - **Volumen real.** Con el volumen actual, todavía bajo, no se puede hablar de horas ahorradas
   al mes; sí de minutos ahorrados **por reserva**.
 
