@@ -27,6 +27,11 @@ Colores medidos en el original: fondo `#0A0B0F`, blanco `#F4F4F4`, violeta ≈ `
 | `../../apple-touch-icon.png`, `../../favicon.ico` | Icono de pestaña y de pantalla de inicio |
 | `../gbp/logo-ruiperez.png` | Logotipo de la ficha de Google |
 
+## Paleta
+
+Ver la sección «Identidad cromática» de `CLAUDE.md`: Grafito `#111318`, blanco roto `#F7F7FA`, violeta `#6C5CE7`.
+El violeta del logo (≈ `#6C64F8`) es algo más azul que el de la web; es el original y no se toca.
+
 ## Reglas de uso
 
 - **Sobre fondo claro, versión `claro`; sobre fondo oscuro, versión `oscuro`.** Nunca el blanco sobre claro.

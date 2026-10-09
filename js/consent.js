@@ -237,7 +237,7 @@
 
   /* ═══ INTERFAZ ═══ */
   var CSS = [
-    '.rsc-b{position:fixed;left:0;right:0;bottom:0;z-index:9000;background:#211D18;color:#F7F2E9;padding:1.1rem clamp(1rem,4vw,2.5rem);',
+    '.rsc-b{position:fixed;left:0;right:0;bottom:0;z-index:9000;background:#111318;color:#F7F7FA;padding:1.1rem clamp(1rem,4vw,2.5rem);',
     'display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:1rem 1.6rem;',
     'transform:translateY(110%);transition:transform .45s cubic-bezier(.16,1,.3,1);font-family:Karla,system-ui,sans-serif;box-shadow:0 -10px 40px -20px rgba(0,0,0,.6)}',
     '.rsc-b.on{transform:none}',
@@ -245,39 +245,39 @@
        pantalla; no es un elemento navegable, asi que no lleva anillo */
     '.rsc-b:focus{outline:none}',
     '.rsc-b[hidden]{display:none}',
-    '.rsc-b p{margin:0;font-size:.86rem;line-height:1.55;color:rgba(247,242,233,.9);max-width:40rem}',
-    '.rsc-b a{color:#E4A57F;text-decoration:underline}',
+    '.rsc-b p{margin:0;font-size:.86rem;line-height:1.55;color:rgba(247,247,250,.9);max-width:40rem}',
+    '.rsc-b a{color:#A99DF7;text-decoration:underline}',
     '.rsc-acts{display:flex;gap:.6rem;flex-wrap:wrap}',
     /* Los tres botones son idénticos en tamaño Y en tratamiento visual: destacar
        «Aceptar» sobre «Rechazar» es el patrón que las Directrices 03/2022 del
        CEPD señalan como engañoso. */
     '.rsc-btn{font:700 .84rem/1 Karla,system-ui,sans-serif;padding:.8rem 1.25rem;border-radius:8px;cursor:pointer;',
-    'min-height:44px;min-width:9rem;border:1.5px solid rgba(247,242,233,.55);background:transparent;color:#F7F2E9;transition:background .2s,border-color .2s}',
-    '.rsc-btn:hover{background:rgba(247,242,233,.1);border-color:#F7F2E9}',
-    '.rsc-btn:focus-visible,.rsc-sw:focus-visible{outline:2.5px solid #E4A57F;outline-offset:3px}',
-    '.rsc-ov{position:fixed;inset:0;z-index:9100;background:rgba(33,29,24,.62);backdrop-filter:blur(3px);display:none;align-items:center;justify-content:center;padding:1.2rem}',
+    'min-height:44px;min-width:9rem;border:1.5px solid rgba(247,247,250,.55);background:transparent;color:#F7F7FA;transition:background .2s,border-color .2s}',
+    '.rsc-btn:hover{background:rgba(247,247,250,.1);border-color:#F7F7FA}',
+    '.rsc-btn:focus-visible,.rsc-sw:focus-visible{outline:2.5px solid #A99DF7;outline-offset:3px}',
+    '.rsc-ov{position:fixed;inset:0;z-index:9100;background:rgba(17,19,24,.62);backdrop-filter:blur(3px);display:none;align-items:center;justify-content:center;padding:1.2rem}',
     '.rsc-ov.on{display:flex}',
-    '.rsc-m{background:#FDFBF7;color:#211D18;border-radius:16px;max-width:34rem;width:100%;max-height:88vh;overflow:auto;padding:clamp(1.4rem,3vw,2rem);font-family:Karla,system-ui,sans-serif}',
+    '.rsc-m{background:#FFFFFF;color:#111318;border-radius:16px;max-width:34rem;width:100%;max-height:88vh;overflow:auto;padding:clamp(1.4rem,3vw,2rem);font-family:Karla,system-ui,sans-serif}',
     '.rsc-m h2{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:1.6rem;margin:0 0 .5rem;line-height:1.15}',
-    '.rsc-m>p{font-size:.9rem;color:#4A443C;line-height:1.6;margin:0 0 1.2rem}',
-    '.rsc-row{border-top:1px solid #E5DCCB;padding:1rem 0;display:flex;gap:1rem;align-items:flex-start;justify-content:space-between}',
+    '.rsc-m>p{font-size:.9rem;color:#4B4F5C;line-height:1.6;margin:0 0 1.2rem}',
+    '.rsc-row{border-top:1px solid #E1E2E8;padding:1rem 0;display:flex;gap:1rem;align-items:flex-start;justify-content:space-between}',
     '.rsc-row h3{font-size:.98rem;font-weight:700;margin:0 0 .25rem}',
-    '.rsc-row p{font-size:.83rem;color:#5A5348;line-height:1.5;margin:0}',
+    '.rsc-row p{font-size:.83rem;color:#555966;line-height:1.5;margin:0}',
     /* el borde da 3:1 contra el fondo del panel: sin él, el estado apagado era
        indistinguible (1,58:1) */
-    '.rsc-sw{flex:none;width:46px;height:26px;border-radius:100px;border:1px solid #8A8175;background:#D6C9B4;position:relative;cursor:pointer;transition:background .2s,border-color .2s}',
-    '.rsc-sw::after{content:"";position:absolute;top:2px;left:2px;width:20px;height:20px;border-radius:50%;background:#FDFBF7;transition:transform .2s}',
-    '.rsc-sw[aria-checked="true"]{background:#56663F;border-color:#56663F}',
+    '.rsc-sw{flex:none;width:46px;height:26px;border-radius:100px;border:1px solid #777B87;background:#D0D2DB;position:relative;cursor:pointer;transition:background .2s,border-color .2s}',
+    '.rsc-sw::after{content:"";position:absolute;top:2px;left:2px;width:20px;height:20px;border-radius:50%;background:#FFFFFF;transition:transform .2s}',
+    '.rsc-sw[aria-checked="true"]{background:#2A7553;border-color:#2A7553}',
     '.rsc-sw[aria-checked="true"]::after{transform:translateX(20px)}',
     '.rsc-sw[aria-disabled="true"]{opacity:.65;cursor:not-allowed}',
-    '.rsc-f{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.4rem;border-top:1px solid #E5DCCB;padding-top:1.3rem}',
-    '.rsc-m .rsc-btn{border-color:#8A8175;color:#211D18}',
-    '.rsc-m .rsc-btn:hover{background:rgba(33,29,24,.06);border-color:#211D18}',
-    '.rsc-m .rsc-btn.pri{background:#B5522F;border-color:#B5522F;color:#FDFBF7}',
-    '.rsc-m .rsc-btn.pri:hover{background:#8E3F23;border-color:#8E3F23}',
+    '.rsc-f{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.4rem;border-top:1px solid #E1E2E8;padding-top:1.3rem}',
+    '.rsc-m .rsc-btn{border-color:#777B87;color:#111318}',
+    '.rsc-m .rsc-btn:hover{background:rgba(17,19,24,.06);border-color:#111318}',
+    '.rsc-m .rsc-btn.pri{background:#6C5CE7;border-color:#6C5CE7;color:#FFFFFF}',
+    '.rsc-m .rsc-btn.pri:hover{background:#5546CF;border-color:#5546CF}',
     /* hereda el color del pie: funciona igual en la paleta crema y en la oscura */
-    '.rsc-pref{background:none;border:0;padding:0;font:inherit;font-size:.82rem;color:var(--soft,#4A443C);text-decoration:underline;cursor:pointer}',
-    '.rsc-pref:hover{color:var(--terra-txt,#A84A28)}',
+    '.rsc-pref{background:none;border:0;padding:0;font:inherit;font-size:.82rem;color:var(--soft,#4B4F5C);text-decoration:underline;cursor:pointer}',
+    '.rsc-pref:hover{color:var(--brand-txt,#5B4BD9)}',
     '@media(pointer:coarse){.rsc-pref{min-height:44px;padding:0 .5rem}}',
     '@media (prefers-reduced-motion:reduce){.rsc-b,.rsc-sw,.rsc-sw::after{transition:none}}',
     '@media(max-width:640px){.rsc-b{justify-content:stretch}.rsc-acts{width:100%}.rsc-btn{flex:1;min-width:0}}'
