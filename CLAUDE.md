@@ -42,7 +42,7 @@ que las dos de web no cubrían. La del chatbot **dice por escrito que no hay cas
 publicado todavía**: es el servicio más nuevo e inventarle un caso sería lo que critica
 la FAQ de `/meta-ads/`.
 
-Otros archivos: `sitemap.xml` (23 URLs — las noindex quedan fuera), `robots.txt`, `fonts/` (3 WOFF2), `vercel.json` (CSP, HSTS, X-Frame-Options, cache de `/img/`), `favicon.svg`, `apple-touch-icon.png`, `img/`.
+Otros archivos: `sitemap.xml` (23 URLs — las noindex quedan fuera), `robots.txt`, `fonts/` (3 WOFF2), `vercel.json` (CSP, HSTS, X-Frame-Options, cache de `/img/`), `favicon.ico`, `apple-touch-icon.png`, `img/` y `img/brand/` (el logo).
 
 ## Precios oficiales
 
@@ -493,6 +493,25 @@ informe y un borrador por negocio: Ruipérez Studio, TukTuk Cartagena y Floriste
   escrito, se publican ahí con su origen y se pasa la página a `index,follow` y al sitemap.**
 - **Las cifras de facturación, pedidos o reservas de un cliente no van en el repositorio** ni en la web
   sin su permiso escrito. Las capturas de paneles se publican difuminadas y sin la dirección de acceso.
+
+## Identidad visual y logo (09/10/2026)
+
+**Álvaro aportó su logo definitivo** (R geométrica blanca con pierna violeta, `RUIPÉREZ — STUDIO —`). Guía
+completa en `docs/marca.md`. Lo que no hay que olvidar:
+
+- **El original está en `assets-originales/logo-ruiperez-studio-definitivo.png` y no se toca.** Los archivos de
+  `img/brand/` salen de él recortando y recoloreando (separando cada píxel en blanco, violeta y fondo para tener
+  transparencia limpia). **Nunca se redibuja a mano.** Si hay un SVG algún día, sustituye a los rasters.
+- **Cabecera y pie:** `<img src="/img/brand/logo-horizontal-claro.webp" alt="Ruipérez Studio">` en las 31 páginas.
+  Por debajo de 350 px se recorta al símbolo con `object-fit:cover`, sin segundo archivo.
+- Favicon: `favicon.ico` + `icon-192.png`; `apple-touch-icon.png`; imagen al compartir `og-ruiperez-studio.png`
+  (nombre nuevo a propósito: WhatsApp y Facebook cachean la imagen por URL).
+- **Se retiraron `favicon.svg`, `og-image.png` y `logo-ruiperezstudio.png`**, sin referencias.
+- ⚠️ **Defecto previo corregido de paso:** la home partía los siete enlaces del menú en dos líneas **a cualquier
+  ancho** (ya en producción) y las demás páginas lo hacían entre 740 y 990 px, con desbordamiento de hasta 53 px.
+  El menú de hamburguesa solo saltaba por debajo de 720 px. Ahora salta a **1240 px en la home (7 enlaces), 1000 px
+  en las de 6 enlaces y 840 px en la de 4**, y los enlaces no se parten (`white-space:nowrap`). **Si añades o quitas un
+  enlace del menú, recalcula ese punto**: el ancho mínimo en una sola línea es ~1236 px con 7 enlaces y ~996 con 6.
 
 ## Clientes
 
