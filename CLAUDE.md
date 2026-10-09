@@ -63,8 +63,10 @@ pack **Capta** (quedan **tres packs**: Arranca, Vende online y Atiende solo), su
 (estructura, datos estructurados, ficha de Google) sigue siendo cierto y sigue escrito; y el **píxel y las campañas de
 Meta de la propia web de Álvaro** siguen igual (`consent.js`, `/cookies/`): lo que se quitó es venderlo a terceros.
 Si vuelven, hay que rehacer las dos páginas desde git (`git log -- seo-local meta-ads`) y recalcular el pack.
-**Pendiente de Álvaro:** quitar esos servicios y las publicaciones relacionadas de la **ficha de Google** y revisar las
-publicaciones de Instagram (el conector no edita).
+**Ficha de Google, hecho el 09/10/2026:** quitados «SEO local», «Gestión de Meta Ads» y «Pack Capta» de los servicios (quedan 21) y
+reescritas tres publicaciones (precios, captación y packs; ahora tres packs y Arranca a 1.107€ suelto). **Pendiente de Álvaro:** las
+publicaciones de Instagram que los mencionen (el conector no edita). **Windsor queda descartado:** Álvaro está terminando un panel
+propio con Google Ads, Meta Ads y el resto conectado (previsto ~11/10/2026); cuando exista, las lecturas y escrituras irán por ahí.
 
 ## Precios oficiales
 
