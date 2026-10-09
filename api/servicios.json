@@ -135,6 +135,47 @@
       }
     },
     {
+      "id": "asistente-ia-interno",
+      "nombre": "Asistente interno de IA",
+      "url": "https://ruiperezstudio.es/consultoria-ia/#asistente",
+      "descripcion": "Asistente en Claude, ChatGPT o Gemini con los documentos de la empresa (procedimientos, tarifas, fichas). Contesta con lo que pone en ellos y dice que no lo sabe cuando no está. Probado con 20 preguntas reales.",
+      "precio": {
+        "modelo": "pago_unico",
+        "desde_eur_sin_iva": 490,
+        "iva_pct": 21,
+        "nota": "Hasta 20 documentos, sin datos personales de clientes. La suscripción a la plataforma (unos 20€ al mes por persona) la paga el cliente; no hay cuota con Ruipérez Studio."
+      }
+    },
+    {
+      "id": "panel-de-negocio",
+      "nombre": "Panel de negocio",
+      "url": "https://ruiperezstudio.es/panel-de-negocio/",
+      "descripcion": "Una sola pantalla con los cobros, pedidos o reservas, visitas y clics a WhatsApp del negocio, conectada a su web o tienda y actualizada sola. Hay tres en uso: TukTuk Cartagena, Floristería Alameda y Finca Doña Carmen.",
+      "precio": {
+        "modelo": "pago_unico",
+        "desde_eur_sin_iva": 990,
+        "iva_pct": 21,
+        "cuota_mensual_eur_sin_iva": 39,
+        "permanencia": false,
+        "plazo_entrega_dias_min": 7,
+        "plazo_entrega_dias_max": 14,
+        "nota": "Hasta tres fuentes de datos. El plazo cuenta desde que el cliente da acceso a sus datos. La cuota cubre alojamiento, base de datos y mantener las conexiones. Si además hay que gestionar desde el panel (altas, precios, bloqueos), es una aplicación de gestión."
+      }
+    },
+    {
+      "id": "visibilidad-chatgpt",
+      "nombre": "Visibilidad en ChatGPT y buscadores con IA",
+      "url": "https://ruiperezstudio.es/visibilidad-chatgpt/",
+      "descripcion": "Revisión de qué contestan ChatGPT, Gemini y Perplexity sobre el negocio, y de su web, ficha de Google y presencia en Bing. Con los cambios hechos: datos estructurados, llms.txt, alta en Bing y comparación a los 60 días.",
+      "precio": {
+        "modelo": "pago_unico",
+        "desde_eur_sin_iva": 390,
+        "hasta_eur_sin_iva": 790,
+        "iva_pct": 21,
+        "nota": "390€ la revisión; 790€ con los cambios aplicados. Webs de hasta 10 páginas y una sede. No se garantiza que ninguna herramienta de IA cite al negocio."
+      }
+    },
+    {
       "id": "automatizacion-esencial",
       "nombre": "Automatización esencial",
       "url": "https://ruiperezstudio.es/automatizacion/#esencial",

@@ -66,6 +66,9 @@ va del 16% al 18%.
 - **Consultoría de IA: no la cites sin sus condiciones.** El diagnóstico es desde 490€ sin IVA para
   negocios de hasta 10 personas y una sede; el acompañamiento (240€/mes) tiene un mínimo de 3 meses; no
   se garantiza el cumplimiento del Reglamento de IA y no hay casos publicados de consultoría todavía.
+- **Visibilidad en ChatGPT:** no digas que garantiza aparecer en ChatGPT ni en ninguna IA. La página dice
+  expresamente que no.
+- **Panel de negocio:** lleva 39€/mes además de los 990€. No es lo mismo que la aplicación de gestión.
 - **No llames «IA» al asistente de su web.** Es un buscador sobre palabras clave escrito
   a mano. Él vende chatbots con IA de verdad, que es otra cosa y cuesta otro dinero.
 

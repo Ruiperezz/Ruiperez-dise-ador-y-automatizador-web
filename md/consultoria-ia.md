@@ -79,6 +79,8 @@ El taller sirve para lo que de verdad importa: que tu equipo la use bien y no me
 
 **Precio: 240€/mes · Mínimo 3 meses · después, mes a mes** (+ 21% IVA)
 
+**Precio: 490€ · Pago único · sin cuota conmigo** (+ 21% IVA)
+
 - Cuestionario previo y sesión de 90 minutos
 - Informe en cinco días laborables
 - 30 minutos para repasarlo
@@ -97,6 +99,12 @@ El taller sirve para lo que de verdad importa: que tu equipo la use bien y no me
 - Un proceso nuevo analizado cada mes
 - Informe mensual de lo hecho y lo siguiente
 - Solo después del diagnóstico o del plan
+- Un asistente en Claude, ChatGPT o Gemini con los documentos de tu empresa: procedimientos, tarifas, fichas
+- Contesta con lo que pone en tus documentos y dice «no lo sé» cuando no está
+- Probado con 20 preguntas reales de tu equipo antes de entregártelo
+- Guía de una página para usarlo bien
+- Hasta 20 documentos, sin datos personales de tus clientes
+- La suscripción a la plataforma la pagas tú: unos 20€ al mes por persona
 - Montar las automatizaciones o el chatbot: van aparte, a los precios publicados.
 - Atender a tu equipo uno por uno: hablo con una sola persona de la empresa.
 - Urgencias o WhatsApp fuera de horario (de lunes a viernes de 9 a 14 y de 16 a 21, sábados de 9 a 14).
@@ -132,6 +140,10 @@ El cuestionario no pide datos personales de tus clientes. El borrador del inform
 **¿El taller cumple con la formación que pide el Reglamento de IA?**
 
 No te lo puedo garantizar, porque no soy abogado. El reglamento pide que tomes medidas para que tu equipo sepa usar la IA, sin exigir un curso concreto. El taller es una de esas medidas, y te dejo por escrito qué se explicó, a quién y cuándo.
+
+**¿Qué es el asistente interno de IA?**
+
+Un asistente en Claude, ChatGPT o Gemini que conoce los documentos de tu empresa: procedimientos, tarifas, fichas de producto. Tu equipo le pregunta y contesta con lo que pone en ellos, y si no lo encuentra, lo dice. Lo pruebo con 20 preguntas reales antes de dártelo. La suscripción la pagas tú a la plataforma; conmigo no hay cuota.
 
 **Si contrato el acompañamiento, ¿puedo escribirte cuando quiera?**
 

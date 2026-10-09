@@ -22,6 +22,9 @@ Contacto: WhatsApp y teléfono +34 642 08 40 42 · https://ruiperezstudio.es
 - Aplicación web de gestión: desde 2.900€ más 90€/mes
 - Automatización esencial: desde 390€. Correo de confirmación al cliente y aviso al móvil
 - Consultoría de IA: diagnóstico desde 490€, pago único (sesión de 90 minutos e informe en cinco días laborables con las tareas que la IA puede hacer, su coste y las horas que ahorran; hasta 10 personas y una sede; si el informe no trae tres acciones concretas se devuelve el dinero; 250€ de descuento si en 30 días se contrata la automatización de procesos, el chatbot o la aplicación). Plan de IA desde 1.390€ con taller de 3 horas para el equipo. Acompañamiento 240€/mes con 3 horas y una reunión al mes, mínimo 3 meses. Taller suelto 490€. No se garantiza el cumplimiento del Reglamento de IA
+- Asistente interno de IA: 490€, pago único (con los documentos de la empresa, hasta 20; la suscripción a la plataforma la paga el cliente)
+- Panel de negocio: desde 990€ más 39€/mes, sin permanencia (cobros, pedidos o reservas, visitas y clics a WhatsApp en una pantalla; hasta tres fuentes de datos)
+- Visibilidad en ChatGPT y buscadores con IA: 390€ la revisión, 790€ con los cambios aplicados. No se garantiza que ninguna IA cite al negocio
 - Automatización de procesos: desde 990€
 - Chatbot con IA para WhatsApp: desde 1.290€ más 120€/mes
 - SEO local: desde 390€/mes
@@ -53,6 +56,8 @@ cuenta desde que el cliente entrega el contenido y se cierra por escrito antes d
 - [Tienda online](https://ruiperezstudio.es/tienda-online/): catálogo, carrito y pasarela de pago, cobrando en 3 días, desde 1.490€
 - [Aplicación web de gestión](https://ruiperezstudio.es/aplicaciones-web/): panel de administración y acceso privado por cliente, desde 2.900€
 - [Consultoría de IA](https://ruiperezstudio.es/consultoria-ia/): qué tareas puede hacer la IA en tu negocio, cuánto cuesta y cuánto ahorra, desde 490€
+- [Panel de negocio](https://ruiperezstudio.es/panel-de-negocio/): tres en uso en clientes reales, desde 990€ + 39€/mes
+- [Visibilidad en ChatGPT](https://ruiperezstudio.es/visibilidad-chatgpt/): qué contesta la IA sobre tu negocio, desde 390€
 - [Automatización de procesos](https://ruiperezstudio.es/automatizacion/): desde 990€
 - [Chatbot con IA para WhatsApp](https://ruiperezstudio.es/chatbot-whatsapp/): desde 1.290€
 - [SEO local](https://ruiperezstudio.es/seo-local/): desde 390€/mes
